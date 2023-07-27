@@ -88,16 +88,15 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <EditIcon />
           <Link href="/nouns/categories/definition">Noun Definition</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
+        
           Collective Nouns
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
+         
           Archive
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
