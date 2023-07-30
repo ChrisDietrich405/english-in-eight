@@ -1,0 +1,148 @@
+/* .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px 30px 75px 30px; */
+
+.footer_logo {
+  margin-left: -1.6rem;
+}
+
+.footer-logo img {
+  margin-bottom: 64px;
+}
+
+.logo-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form {
+  width: 80%;
+}
+
+.contact-info-container {
+  margin: 16px 0 16px 150px;
+}
+
+.form-control {
+  height: 45px;
+}
+
+.text-area {
+  min-height: 135px;
+  margin-bottom: 38px;
+}
+
+.footer-submit-btn {
+  margin-bottom: 86px;
+  margin-left: 238px;
+}
+
+.contact-form-container {
+  flex-basis: 60%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-contact-container {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-container {
+    margin-top: 10px;
+  }
+
+  .logo-contact-container {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    margin: 16px 0px 16px 10px !important;
+  }
+
+  .contact-form-container {
+    flex-basis: 50%;
+  }
+
+  .footer .form {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-container {
+    align-items: center;
+  }
+
+  .page-title {
+    padding: 15px 10px 0px 10px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    .logo-email-container {
+      width: 100%;
+      margin-top: 12px !important;
+      display: flex;
+      justify-content: center;
+
+      .logo {
+        width: 40%;
+      }
+
+      .email {
+        padding-right: 15px !important;
+        width: 49%;
+      }
+    }
+
+    .contact-info-container {
+      margin: 16px 0 16px 10px !important;
+    }
+
+    .logo-contact-container {
+      display: flex !important;
+    }
+
+    .footer-logo img {
+      margin-bottom: 20px !important;
+    }
+
+    .form {
+      padding-bottom: 0;
+      width: 70% !important;
+      margin-bottom: 6px !important;
+    }
+
+    .text-area {
+      width: 100%;
+      margin-bottom: 15px !important;
+    }
+
+    .logo-email,
+    .form {
+      margin: 1rem 3rem;
+    }
+
+    .contact-form-container {
+      width: 100%;
+      display: flex;
+    }
+
+    #text-area-container {
+      margin-left: 26px;
+    }
+  }
+}

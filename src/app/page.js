@@ -1,104 +1,144 @@
-import Image from 'next/image'
-import Link from "next/link"
-import styles from './page.module.css'
+import Image from "next/image";
+import Link from "next/link";
 
+import {
+  Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  CardActions,
+  Button,
+} from "@mui/material";
 
-
+import styles from "./page.module.css";
 export default function Home() {
   return (
-    <main className={styles.home} styles={{marginTop: "300px"}}>
-
-      <div className="container">
-      
-        <h1>
-          Welcome to{" "}
-          <span className="title-span">English in Eight Minutes</span>
-        </h1>
-        <p className="title-content">
-          {" "}
-          This website offers English lessons you can complete in less than 8
-          minutes. Pick a topic, study a few minutes, and then do the
-          corresponding exercise. The focus is on English phrasal verbs,
-          grammar, and idiomatic expressions specific to{" "}
-          <b> the United States. </b>
-        </p>
-      </div>
-
-      <div className="container card-container">
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link href="/noun-categories/noun-definition">
-              <div className="noun-examples">
-                <i className="fas fa-tree" aria-hidden="true"></i>
-                <p className="content-title-second-row">Nouns</p>
-                <p className="content-definition">people, places and things</p>
-                <p>woman, tree, car</p>
-              </div>
-            </Link>
+    <main className={styles.home} styles={{ marginTop: "300px" }}>
+      <div className={styles.banner}>
+        <div
+          style={{
+            backgroundImage: 'url("./images/banner.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "100%",
+          }}
+        >
+          <div className={styles.banner_inner}>
+            <h1>
+              Welcome to{" "}
+              <span className="tagline">English in Eight Minutes</span>
+            </h1>
           </div>
-          {/* <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link to="/verbs-definition/verbs-def">
-              <div className="verb-examples">
-                <i className="fas fa-running" aria-hidden="true"></i>
-                <p className="content-title-second-row">Verbs</p>
-                <p className="content-definition">action words</p>
-                <p>run, fight, sing</p>
-              </div>
-            </Link>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link to="/adjective-categories/adjective-definition">
-              <div className="adjective-examples">
-                <i className="fas fa-angry" aria-hidden="true"></i>
-                <p className="content-title-second-row">Adjectives</p>
-                <p className="content-definition">describe nouns</p>
-                <p>smart, strong, funny</p>
-              </div>
-            </Link>
-          </div>
-
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link to="/expressions-categories/expressions-definition">
-              <div className="noun-examples">
-                <i className="fas fa-comments fa-1.5x" aria-hidden="true"></i>
-                <p className="content-title-second-row">
-                  Idiomatic Expressions
-                </p>
-                <p className="content-definition">Informal Expressions</p>
-                <p>Foolproof, Second wind</p>
-              </div>
-            </Link>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link to="/phrasal-verbs-categories/phrasal-verbs-definition">
-              <div className="verb-examples">
-                <i
-                  className="fas fa-comments comments fa-1.5x"
-                  aria-hidden="true"
-                ></i>
-                <p className="content-title-second-row">Phrasal Verbs</p>
-                <p className="content-definition">
-                  Verb/Preposition combinations
-                </p>
-                <p>Get up, Break down, Speak out</p>
-              </div>
-            </Link>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <Link to="/versus-categories/versus-definition">
-              <div className="adjective-examples">
-                <i
-                  className="fas fa-comments comments fa-1.5x"
-                  aria-hidden="true"
-                ></i>
-                <p className="content-title-second-row">Versus</p>
-                <p className="content-definition">Speak versus Talk</p>
-                <p>Remember versus Remind</p>
-              </div>
-            </Link>
-          </div> */}
         </div>
       </div>
+      <p className="title-content">
+        {" "}
+        This website offers English lessons you can complete in less than 8
+        minutes. Pick a topic, study a few minutes, and then do the
+        corresponding exercise. The focus is on English phrasal verbs, grammar,
+        and idiomatic expressions specific to <b> the United States. </b>
+      </p>
+
+      <Grid container spacing={4} my={4}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          sx={{
+            display: "flex",
+          }}
+        >
+          <Card
+            sx={{
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <CardMedia
+              component="div"
+              sx={{
+                // 16:9
+                pt: "56.25%",
+              }}
+              image="https://source.unsplash.com/random?wallpapers"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">View</Button>
+              <Button size="small">Edit</Button>
+            </CardActions>
+          </Card>
+          <Card
+            sx={{
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <CardMedia
+              component="div"
+              sx={{
+                // 16:9
+                pt: "56.25%",
+              }}
+              image="https://source.unsplash.com/random?wallpapers"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">View</Button>
+              <Button size="small">Edit</Button>
+            </CardActions>
+          </Card>
+          <Card
+            sx={{
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <CardMedia
+              component="div"
+              sx={{
+                // 16:9
+                pt: "56.25%",
+              }}
+              image="https://source.unsplash.com/random?wallpapers"
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography gutterBottom variant="h5" component="h2">
+                Heading
+              </Typography>
+              <Typography>
+                This is a media card. You can use this section to describe the
+                content.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">View</Button>
+              <Button size="small">Edit</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+      </Grid>
     </main>
-  )
+  );
 }

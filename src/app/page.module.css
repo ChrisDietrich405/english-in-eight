@@ -1,0 +1,14 @@
+.banner {
+  height: 300px;
+}
+
+.banner_inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image h1 {
+  font-size: 200px;
+}
