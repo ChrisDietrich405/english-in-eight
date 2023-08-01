@@ -1,7 +1,7 @@
 import React from "react";
 
-const pastense = () => {
+const past = () => {
   return <div>pastense</div>;
 };
 
-export default pastense;
+export default past;

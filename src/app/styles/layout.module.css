@@ -1,0 +1,30 @@
+.main_container {
+  margin-top: 100px; 
+  width: 100%;
+  min-height: 100%;
+  background-color: #f3f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.sidebar {
+  background-color: white;
+  border-radius: 9px;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_title {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.sidebar_title:hover {
+  background-color: #f3f0f0;
+  border-radius: 0 16px 16px 0;
+}

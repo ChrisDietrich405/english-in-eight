@@ -1,0 +1,39 @@
+.page_title {
+  margin-bottom: 25px;
+}
+
+.page_body {
+  margin: 10px 0;
+}
+
+.grammar_explanation_paragraph {
+  background-color: #d0e1fb;
+  color: #1b1b52;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.definition_pictures_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.definition_picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture_wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.picture_subtitle {
+  margin-bottom: 4px !important;
+}

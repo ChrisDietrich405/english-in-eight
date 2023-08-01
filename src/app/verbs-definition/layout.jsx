@@ -1,16 +1,35 @@
 import React from "react";
 import Link from "next/link";
 
+import styles from "../styles/layout.module.css";
+
 const Layout = ({ children }) => {
   console.log(children);
   return (
     <div>
-      <section className="main-container" style={{ display: "flex" }}>
-        <nav className="sidebar" style={{ marginTop: "340px" }}>
-          <Link className="sidebar-title" href="/verbs-definition">verbs definition</Link>
-          <Link href="/verbs-definition/present-tense">present</Link>
-          <Link href="/verbs-definition/past">past</Link>
-          <Link href="/verbs-definition/future">future</Link>
+      <section className={styles.main_container}>
+        <nav className={styles.sidebar}>
+          <Link className={styles.sidebar_title} href="/verbs-definition">
+            verbs definition
+          </Link>
+          <Link
+            className={styles.sidebar_title}
+            href="/verbs-definition/present-tense"
+          >
+            present
+          </Link>
+          <Link
+            className={styles.sidebar_title}
+            href="/verbs-definition/past-tense"
+          >
+            past
+          </Link>
+          <Link
+            className={styles.sidebar_title}
+            href="/verbs-definition/future"
+          >
+            future
+          </Link>
         </nav>
         <div>{children}</div>
       </section>
