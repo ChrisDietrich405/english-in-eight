@@ -4,6 +4,7 @@
 
 .page_body {
   margin: 10px 0;
+
 }
 
 .grammar_explanation_paragraph {
@@ -36,4 +37,9 @@
 
 .picture_subtitle {
   margin-bottom: 4px !important;
+}
+
+.table_container {
+  display: flex;
+  justify-content: center;
 }
