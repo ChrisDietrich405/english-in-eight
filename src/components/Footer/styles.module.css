@@ -19,8 +19,15 @@
   align-items: flex-start;
 }
 
+.form_container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
 .form {
-  width: 80%;
+  width: 100%; 
+  max-width: 400px; 
 }
 
 .contact-info-container {

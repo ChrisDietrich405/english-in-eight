@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 
 import styles from "../../styles/content-page.module.css";
 
-const Future = () => {
+const SimplePresent = () => {
   return (
     <>
       <div className={styles.page_title}>
@@ -49,4 +49,4 @@ const Future = () => {
   );
 };
 
-export default Future;
+export default SimplePresent;

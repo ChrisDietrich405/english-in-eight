@@ -2,7 +2,7 @@
 // import { useState } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { Grid, Button, TextField } from "@mui/material";
+import { Grid, Button, TextField, Container } from "@mui/material";
 
 // import emailjs from "@emailjs/browser";
 // import { ToastContainer, toast } from "react-toastify";
@@ -42,83 +42,100 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={4}>
-            {" "}
-            <div className={styles.logo}>
-              <Link href="/" className={styles.footer_logo}>
-                <img
-                  style={{ width: "130px" }}
-                  src="/images/logo.svg"
-                  alt="English in Eight Minutes Logo"
-                />
-              </Link>
-            </div>
-            <div className={styles.email}>
+        <Container>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={4}>
               {" "}
-              <p>englishineight@gmail.com</p>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={6} md={8}>
-            {" "}
-            <h2>Contact us</h2>
-            <form>
-              {/* <form onSubmit={sendEmail} className="form"> */}
-              <div className="mb-3">
-                <label
-                  htmlFor="nameControlInput"
-                  className="form-label"
-                ></label>
-                <TextField
-                  label="name"
-                  variant="outlined"
-                  id="nameControlInput"
-                />
+              <div className={styles.logo}>
+                <Link href="/" className={styles.footer_logo}>
+                  <img
+                    style={{ width: "130px" }}
+                    src="/images/logo.svg"
+                    alt="English in Eight Minutes Logo"
+                  />
+                </Link>
               </div>
-              <div className="mb-3">
-                {/* <label htmlFor="exampleFormControlInput1">Email</label> */}
-                <TextField
-                  sx={{ my: 4 }}
-                  label="email"
-                  variant="outlined"
-                  id="nameControlInput"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                {/* <input
+              <div className={styles.email}>
+                {" "}
+                <p>englishineight@gmail.com</p>
+              </div>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={8}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "end",
+              }}
+            >
+              <div className={styles.form_container}>
+                <form className={styles.form}>
+                  <h2>Contact us</h2>{" "}
+                  {/* <form onSubmit={sendEmail} className="form"> */}
+                  <div className="mb-3">
+                    <label
+                      htmlFor="nameControlInput"
+                      className="form-label"
+                    ></label>
+                    <TextField
+                      fullWidth
+                      size="small"
+                      label="name"
+                      variant="outlined"
+                      id="nameControlInput"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    {/* <label htmlFor="exampleFormControlInput1">Email</label> */}
+                    <TextField
+                      fullWidth
+                      size="small"
+                      sx={{ my: 4 }}
+                      label="email"
+                      variant="outlined"
+                      id="nameControlInput"
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    {/* <input
                   onChange={(e) => setEmail(e.target.value)}
                   className={`form-control`}
                   type="email"
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
                 /> */}
-              </div>
-              <div className="mb-3">
-                <TextField
-                  onChange={(e) => setMessage(e.target.value)}
-                  label="Add message here"
-                  multiline
-                  rows={4} // You can adjust the number of rows displayed.
-                  variant="outlined"
-                />
-                {/* <label htmlFor="exampleFormControlTextarea1">Message</label>
+                  </div>
+                  <div className="mb-3">
+                    <TextField
+                      fullWidth
+                      onChange={(e) => setMessage(e.target.value)}
+                      label="Add message here"
+                      multiline
+                      rows={4} // You can adjust the number of rows displayed.
+                      variant="outlined"
+                    />
+                    {/* <label htmlFor="exampleFormControlTextarea1">Message</label>
                 <textarea
-                  onChange={(e) => setMessage(e.target.value)}
-                  id="exampleFormControlTextarea1"
-                  placeholder="Add message here"
+                onChange={(e) => setMessage(e.target.value)}
+                id="exampleFormControlTextarea1"
+                placeholder="Add message here"
                   className={` form-control`}
                 ></textarea> */}
-              </div>
-              {/* <ToastContainer /> */}
-              {/* <div className="button-container text-center"> */}
-              <Button variant="text">Submit</Button>
-
-              {/* <button className="btn btn-primary" type="submit">
+                  </div>
+                  {/* <ToastContainer /> */}
+                  {/* <div className="button-container text-center"> */}
+                  <Button variant="text">Submit</Button>
+                  {/* <button className="btn btn-primary" type="submit">
                   Submit
-                </button>
-              </div> */}
-            </form>
+                  </button>
+                </div> */}
+                </form>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
       </footer>
     </>
   );

@@ -91,17 +91,19 @@ export default function CustomizedMenus() {
           <Link href="/nouns/categories/definition">Noun Definition</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-        
-          Collective Nouns
+          <Link href="/">Uncountable & Countable Nouns</Link>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
-         
-          Archive
+          <Link href="/">Collective Nouns</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <MoreHorizIcon />
-          More
+          <Link href="/">Noun Modifiers</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <MoreHorizIcon />
+          <Link href="/">Possessive Pronouns</Link>
         </MenuItem>
       </StyledMenu>
     </div>

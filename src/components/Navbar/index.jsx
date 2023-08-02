@@ -80,19 +80,14 @@ function DrawerAppBar(props) {
             alt="Picture of the logo"
           />
           <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <ButtonGroup
-              variant="contained"
-              color="primary"
-              aria-label="button group"
-              spacing={4}
-              gap={4}
-            >
-              
+            <Button>
               <NounsSubmenuDropdown
                 sx={{ color: "#fff", marginRight: "20px" }}
               />
+            </Button>
+            <Button>
               <VerbsSubmenuDropdown sx={{ color: "#fff" }} />
-            </ButtonGroup>
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>

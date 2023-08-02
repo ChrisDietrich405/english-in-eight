@@ -12,3 +12,16 @@
 .banner-image h1 {
   font-size: 200px;
 }
+
+.content_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro_content {
+  text-align: center;
+}
+
+.intro_content p {
+  margin: 0;
+}

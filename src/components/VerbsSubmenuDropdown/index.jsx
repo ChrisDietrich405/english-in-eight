@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
@@ -88,20 +89,22 @@ export default function CustomizedMenus() {
       >
         <MenuItem onClick={handleClose} disableRipple>
           <EditIcon />
-          Verb Definition
+          <Link href="/verbs-definition"> Verb Definition</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <FileCopyIcon />
-          Present Tense Verbs
+          <Link href="/verbs-definition/present-tense">
+            Present Tense Verbs
+          </Link>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
           <ArchiveIcon />
-          Archive
+          <Link href="/verbs-definition/past-tense"> Past Tense Verbs</Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <MoreHorizIcon />
-          More
+          <Link href="/verbs-definition/future">Future Tense Verbs</Link>
         </MenuItem>
       </StyledMenu>
     </div>
