@@ -83,8 +83,18 @@ function DrawerAppBar(props) {
             alt="Picture of the logo"
           />
           <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <Button sx={{ color: "#fff", marginRight: "20px", textDecoration: "none" }} variant="contained">
-              <Link   href="/">Home</Link>
+            <Button
+              variant="contained"
+              sx={{
+                height: "20px",
+                color: "#fff",
+                marginRight: "20px",
+                textDecoration: "none",
+              }}
+            >
+              <Link href="/" style={{ textDecoration: "none", color: "#fff" }}>
+                Home
+              </Link>
             </Button>
             <Button>
               <NounsSubmenuDropdown

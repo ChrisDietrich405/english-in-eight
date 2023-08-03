@@ -90,9 +90,12 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/Other Topics/categories/definition">
+          {/* <Link
+            className={styles.link}
+            // href="/other-topics/idiomatic-expressions"
+          >
             Idiomatic Expressions
-          </Link>
+          </Link> */}
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/">
@@ -105,7 +108,6 @@ export default function CustomizedMenus() {
             Versus
           </Link>
         </MenuItem>
-      
       </StyledMenu>
     </div>
   );
