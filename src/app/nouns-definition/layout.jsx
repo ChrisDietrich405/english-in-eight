@@ -9,30 +9,38 @@ const Layout = ({ children }) => {
     <div>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
-          <Link className={styles.sidebar_title} href="/verbs-definition">
+          <Link
+            className={`${styles.link}`}
+         
+            href="/nouns-definition"
+          >
             noun definition
           </Link>
           <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/present-tense"
+            className={styles.link}
+            //
+            href="/nouns-definition/uncountable-countable-nouns"
           >
             Uncountable & countable nouns
           </Link>
           <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/past-tense"
+            className={styles.link}
+            //
+            href="/nouns-definition/noun-modifiers"
           >
             Noun modifiers
           </Link>
           <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/future"
+            className={styles.link}
+            //
+            href="/nouns-definition/possessive-pronouns"
           >
             Possessive Pronouns
           </Link>
           <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/future"
+            className={styles.link}
+            //
+            href="/nouns-definition/collective-nouns"
           >
             Collective Nouns
           </Link>

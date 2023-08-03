@@ -11,6 +11,8 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+import styles from "../Navbar/styles.module.css";
+
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -88,22 +90,42 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <Link href="/nouns/categories/definition">Noun Definition</Link>
+          <Link className={styles.link} href="/nouns-definition">
+            Noun Definition
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <Link href="/">Uncountable & Countable Nouns</Link>
+          <Link
+            className={styles.link}
+            href="/nouns-definition/uncountable-countable-nouns"
+          >
+            Uncountable & Countable Nouns
+          </Link>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
-          <Link href="/">Collective Nouns</Link>
+          <Link
+            className={styles.link}
+            href="/nouns-definition/collective-nouns"
+          >
+            Collective Nouns
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          <Link href="/">Noun Modifiers</Link>
+          <Link
+            className={styles.link}
+            href="/nouns-definition/noun-modifiers"
+          >
+            Noun Modifiers
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          <Link href="/">Possessive Pronouns</Link>
+          <Link
+            className={styles.link}
+            href="/nouns-definition/possessive-pronouns"
+          >
+            Possessive Pronouns
+          </Link>
         </MenuItem>
       </StyledMenu>
     </div>

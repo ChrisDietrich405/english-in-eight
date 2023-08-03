@@ -47,7 +47,11 @@ export default function Footer() {
             <Grid item xs={12} sm={6} md={4}>
               {" "}
               <div className={styles.logo}>
-                <Link href="/" className={styles.footer_logo}>
+                <Link
+                  className={styles.link}
+                  href="/"
+                  className={styles.footer_logo}
+                >
                   <img
                     style={{ width: "130px" }}
                     src="/images/logo.svg"
@@ -127,7 +131,7 @@ export default function Footer() {
                   {/* <ToastContainer /> */}
                   {/* <div className="button-container text-center"> */}
                   <Button variant="text">Submit</Button>
-                  {/* <button className="btn btn-primary" type="submit">
+                  {/* <button type="submit">
                   Submit
                   </button>
                 </div> */}

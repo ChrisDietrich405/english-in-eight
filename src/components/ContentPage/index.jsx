@@ -15,12 +15,13 @@ export default function ContentPage({ links }) {
   return (
     <div className={styles.main_container}>
       <div className={styles.sidebar}>
-        <div className={styles.sidebar_title}></div>
+        <div></div>
         <ul>
           {links.map((link, i) => (
             <li key={i} className={styles.sidebar_left_links}>
               <div></div>
               <Link
+                className={styles.link}
                 className={
                   pathname == link.path
                     ? `${styles.sidebar_left_subtitle} ${styles.active}`

@@ -22,26 +22,27 @@ const Future = () => {
         </p>
         <div className="btn-container btn-flex">
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-simple"
             className=" btn btn-primary"
           >
             <Button variant="text">Past Simple</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Past Continuous</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect"
-            className="btn btn-primary"
           >
             <Button variant="text">Past Perfect</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Past Perfect Continuous</Button>
           </Link>

@@ -1,0 +1,18 @@
+.answer-option {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 27px;
+}
+
+.answer-option p {
+  margin: 0 !important;
+}
+
+.right-answer {
+  color: blue;
+}
+
+.wrong-answer {
+  color: red;
+}

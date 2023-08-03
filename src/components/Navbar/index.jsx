@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import * as React from "react";
 import PropTypes from "prop-types";
@@ -21,6 +22,8 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
 import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
+import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
+import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Nouns"];
@@ -80,6 +83,9 @@ function DrawerAppBar(props) {
             alt="Picture of the logo"
           />
           <Box style={{ display: "flex", marginLeft: "auto" }}>
+            <Button sx={{ color: "#fff", marginRight: "20px", textDecoration: "none" }} variant="contained">
+              <Link   href="/">Home</Link>
+            </Button>
             <Button>
               <NounsSubmenuDropdown
                 sx={{ color: "#fff", marginRight: "20px" }}
@@ -87,6 +93,12 @@ function DrawerAppBar(props) {
             </Button>
             <Button>
               <VerbsSubmenuDropdown sx={{ color: "#fff" }} />
+            </Button>
+            <Button>
+              <AdjectivesSubmenuDropdown sx={{ color: "#fff" }} />
+            </Button>
+            <Button>
+              <OtherTopicsSubmenuDropdown sx={{ color: "#fff" }} />
             </Button>
           </Box>
         </Toolbar>

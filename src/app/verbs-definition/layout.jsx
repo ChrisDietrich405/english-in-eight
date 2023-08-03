@@ -9,25 +9,16 @@ const Layout = ({ children }) => {
     <div>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
-          <Link className={styles.sidebar_title} href="/verbs-definition">
+          <Link className={styles.link} href="/verbs-definition">
             verbs definition
           </Link>
-          <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/present-tense"
-          >
+          <Link className={styles.link} href="/verbs-definition/present-tense">
             present
           </Link>
-          <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/past-tense"
-          >
+          <Link className={styles.link} href="/verbs-definition/past-tense">
             past
           </Link>
-          <Link
-            className={styles.sidebar_title}
-            href="/verbs-definition/future"
-          >
+          <Link className={styles.link} href="/verbs-definition/future">
             future
           </Link>
         </nav>

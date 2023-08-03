@@ -9,32 +9,32 @@ const Layout = ({ children }) => {
     <div>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
-          <Link className={styles.link} href="/verbs-definition/future">
-            future verbs definition
+          <Link className={styles.link} href="/adjectives-definition">
+            Adjective definition
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-simple"
+            href="/adjectives-definition/possessive-adjectives"
           >
-            future simple
+            Possessive Adjectives
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-continuous"
+            href="/adjectives-definition/comparative-adjectives"
           >
-            future continuous
+            Comparative Adjectives
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect"
+            href="/adjectives-definition/superlative-adjectives"
           >
-            future perfect
+            Superlative Adjectives
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect-continuous"
+            href="/nouns-definition/collective-nouns"
           >
-            future perfect continuous
+            Collective Nouns
           </Link>
         </nav>
         <div>{children}</div>

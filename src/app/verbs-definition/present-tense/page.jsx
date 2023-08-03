@@ -20,26 +20,27 @@ const SimplePresent = () => {
         </p>
         <div className="btn-container btn-flex">
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-simple"
-            className=" btn btn-primary"
+       
           >
             <Button variant="text">Present Simple</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Present Continuous</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect"
-            className="btn btn-primary"
           >
             <Button variant="text">Present Perfect</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Present Perfect Continuous</Button>
           </Link>

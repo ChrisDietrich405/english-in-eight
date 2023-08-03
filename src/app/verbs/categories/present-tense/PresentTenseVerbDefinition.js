@@ -18,26 +18,27 @@ export default function PresentTenseVerbDefinition() {
 
         <div className="btn-container btn-flex">
           <Link
+            className={styles.link}
             to="/present-verb-tenses/simple-present"
             className=" btn btn-primary"
           >
             Simple Present
           </Link>
           <Link
+            className={styles.link}
             to="/present-verb-tenses/present-continuous"
-            className="btn btn-primary"
           >
             Present Continuous
           </Link>
           <Link
+            className={styles.link}
             to="/present-verb-tenses/present-perfect"
-            className="btn btn-primary"
           >
             Present Perfect
           </Link>
           <Link
+            className={styles.link}
             to="/present-verb-tenses/present-perfect-continuous"
-            className="btn btn-primary"
           >
             Present Perfect Continuous
           </Link>

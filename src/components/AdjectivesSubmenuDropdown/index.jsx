@@ -78,7 +78,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
       >
-        Verbs
+        Adjectives
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -90,26 +90,37 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition">
-            {" "}
-            Verb Definition
+          <Link
+            className={styles.link}
+          
+            href="/adjectives-definition"
+          >
+            Adjective Definition
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/present-tense">
-            Present Tense Verbs
+          <Link
+            className={styles.link}
+            href="/adjectives-definition/possessive-adjectives"
+          >
+            Possessive Adjectives
           </Link>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/past-tense">
-            {" "}
-            Past Tense Verbs
+          <Link
+            className={styles.link}
+            href="/adjectives-definition/comparative-adjectives"
+          >
+            Comparative Adjectives
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/future">
-            Future Tense Verbs
+          <Link
+            className={styles.link}
+            href="/adjectives-definition/superlative-adjectives"
+          >
+            Superlative Adjectives
           </Link>
         </MenuItem>
       </StyledMenu>

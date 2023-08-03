@@ -17,26 +17,26 @@ const Future = () => {
         </p>
         <div className="btn-container btn-flex">
           <Link
+            className={`${styles.link} btn btn-primary`}
             href="/future-verb-tenses/future-simple"
-            className=" btn btn-primary"
           >
             <Button variant="text">Future Simple</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Future Continuous</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect"
-            className="btn btn-primary"
           >
             <Button variant="text">Future Perfect</Button>
           </Link>
           <Link
+            className={styles.link}
             href="/future-verb-tenses/future-perfect-continuous"
-            className="btn btn-primary"
           >
             <Button variant="text">Future Perfect Continuous</Button>
           </Link>
