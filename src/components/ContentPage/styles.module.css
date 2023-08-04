@@ -34,7 +34,7 @@
 .sidebar {
   background-color: white;
   border-radius: 9px;
-  flex-basis: 20%;
+  flex-basis: 60%;
 }
 
 .sidebar_left_subtitle {

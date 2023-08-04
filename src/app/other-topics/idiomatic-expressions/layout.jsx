@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
             Expressions List 4
           </Link>
         </nav>
-        <div>{children}</div>
+        <div className={styles.main_content}>{children}</div>
       </section>
     </div>
   );

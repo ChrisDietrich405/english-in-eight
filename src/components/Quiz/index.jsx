@@ -2,6 +2,8 @@
 import { useState } from "react";
 import SelectAnswer from "../SelectAnswer";
 
+import Button from "@mui/material/Button";
+
 import styles from "./styles.module.css";
 
 function AnswerIcon({ isAnswered }) {
@@ -46,12 +48,12 @@ export default function Quiz(props) {
   };
 
   return (
-    <div className="quiz-container">
+    <div className={styles.quiz_container}>
       <form onSubmit={submit} onReset={reset}>
-        <div className="quiz-title">
+        <div className={styles.quiz_title}>
           <h4>{props.title}</h4>
         </div>
-        <ol className="questions-and-answers">
+        <ol className={styles.questions_and_answers}>
           {props.questions.map((question, i) => (
             <li key={i}>
               {`${i + 1}. ${question.title}`}
@@ -83,11 +85,12 @@ export default function Quiz(props) {
             </li>
           ))}
         </ol>
-        <div className="quiz-buttons">
-          <button>Check your answers</button>
-          <button className="btn btn-secondary" type="reset">
+        <div className={styles.quiz_buttons}>
+          <p>Check your answers</p>
+          <Button type="reset">Reset</Button>
+          {/* <button className="btn btn-secondary" type="reset">
             Reset
-          </button>
+          </button> */}
         </div>
       </form>
     </div>

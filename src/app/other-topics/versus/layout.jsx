@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
             Phrasal Verbs List 4
           </Link>
         </nav>
-        <div>{children}</div>
+        <div className={styles.main_content}>{children}</div>
       </section>
     </div>
   );

@@ -13,17 +13,15 @@ const SelectAnswer = ({
   index,
   isAnswered,
 }) => {
- 
-
   const getTextColor = () => {
     if (!(i in answers)) {
       return "";
     }
     if (submitted === true) {
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
-        return "right-answer";
+        return "right_answer";
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return "wrong-answer";
+        return "wrong_answer";
       } else {
         return "";
       }
@@ -46,15 +44,17 @@ const SelectAnswer = ({
   };
 
   return (
-    <li className="answer-option">
+    <li className={styles.answer_option}>
       <input
         disabled={submitted}
         onClick={onClick}
         name={"twoPossibleAnswers" + i}
         type="radio"
-        className="radio"
+        className={styles.radio}
       />
-      <p className={getTextColor()}>{possibleAnswer.title} {getEmoji()}</p>
+      <p className={getTextColor()}>
+        {possibleAnswer.title} {getEmoji()}
+      </p>
     </li>
   );
 };

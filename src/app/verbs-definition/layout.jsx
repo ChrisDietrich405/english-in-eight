@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
             future
           </Link>
         </nav>
-        <div>{children}</div>
+        <div className={styles.main_content}>{children}</div>
       </section>
     </div>
   );
