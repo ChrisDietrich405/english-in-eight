@@ -90,21 +90,21 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          {/* <Link
+          <Link
             className={styles.link}
-            // href="/other-topics/idiomatic-expressions"
+            href="/other-topics/idiomatic-expressions"
           >
             Idiomatic Expressions
-          </Link> */}
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/other-topics/phrasal-verbs">
             Phrasal Verbs
           </Link>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/other-topics/versus">
             Versus
           </Link>
         </MenuItem>
