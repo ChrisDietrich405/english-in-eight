@@ -3,10 +3,10 @@ import Quiz from "@/src/components/Quiz";
 export default function Expressions() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Idiomatic Expressions List Four</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <ul>
           <li>
             <p>

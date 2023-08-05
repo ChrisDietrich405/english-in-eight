@@ -3,10 +3,10 @@ import Quiz from "@/src/components/Quiz";
 export default function PhrasalVerbs3() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Phrasal Verbs List Three</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <ul>
           <li>
             <b>Think over</b> - to think deeply about a decision before you make

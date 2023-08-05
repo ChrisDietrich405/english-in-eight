@@ -17,7 +17,7 @@
   left: 0;
   width: 250px; /* Adjust as needed */
   height: 100vh; /* Adjust to match viewport height */
-  background-color: green; /* Sidebar background color */
+  /* Sidebar background color */
   padding: 20px;
   box-sizing: border-box;
   border-radius: 9px;

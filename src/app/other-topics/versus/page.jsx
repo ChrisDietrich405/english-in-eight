@@ -3,10 +3,10 @@
 export default function VersusDefinition() {
   return (
     <div className="expressions">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Versus Definition</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           In this section let's compare different topics in order to clear up
           any confusion. For example many students don't really understand the
@@ -15,7 +15,7 @@ export default function VersusDefinition() {
         </p>
       </div>
 
-      <div className="content-wrapper">
+      <div className={styles.content_wrapper}>
         <img
           src="../../../images/remember-versus-remind.jpg"
           className="other-topics-image"

@@ -1,9 +1,10 @@
-// import styles from "../styles/content-page.module.css";
+import Image from "next/image";
+import styles from "../../styles/content-page.module.css";
 
 export default function ExpressionsDefinition() {
   return (
     <div className="expressions-container">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Idiomatic Expressions Definition</h2>
       </div>
       <div className="body">
@@ -11,9 +12,11 @@ export default function ExpressionsDefinition() {
           Idiomatic expressions are a type of informal language that have a
           meaning different from the meaning of the words in the expression.
         </p>
-        {/* <div className="content-wrapper">
-          <img
-            src="../../../images/timeismoney.png"
+        <div className={styles.content_wrapper}>
+          <Image
+            width={350}
+            height={200}
+            src="/time-is-money.png"
             className="other-topics-image"
             aria-hidden="true"
           />
@@ -23,9 +26,11 @@ export default function ExpressionsDefinition() {
             that time is a valuable resource.
           </p>
         </div>
-        <div className="content-wrapper"> */}
-          <img
-            src="../../../images/MindYourOwnBusiness.jpg"
+        <div className={styles.content_wrapper}>
+          <Image
+            width={230}
+            height={200}
+            src="/mind-your-business.jpg"
             className="other-topics-image"
             aria-hidden="true"
           />
@@ -35,7 +40,8 @@ export default function ExpressionsDefinition() {
             referring to any business at all. We are telling another person to
             not invade our privacy
           </p>
-        {/* </div> */}
+          {/* </div> */}
+        </div>
       </div>
     </div>
   );

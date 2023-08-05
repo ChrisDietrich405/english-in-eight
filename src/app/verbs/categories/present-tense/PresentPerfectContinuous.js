@@ -19,8 +19,8 @@ export default function PresentPerfectContinuous() {
     fetchData();
   }, []);
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Present Perfect Continuous</h2>
       </div>
       <p className="grammar-explanation-paragraph">

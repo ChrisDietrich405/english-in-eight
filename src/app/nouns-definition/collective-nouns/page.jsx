@@ -4,10 +4,10 @@ import Quiz from "../../../components/Quiz";
 export default function Collective() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Collective Nouns</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           Collective nouns are nouns which represent a group or collection of
           people or things. They include words such as <b>audience</b>,{" "}

@@ -3,10 +3,10 @@ import Quiz from "@/src/components/Quiz";
 export default function PhrasalVerbs4() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Phrasal Verbs List Four</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <ul>
           <li>
             <b>Ask around</b> - to ask a lot of different people in order to get

@@ -20,8 +20,8 @@ export default function PresentPerfect() {
     fetchData();
   }, []);
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Present Perfect </h2>
       </div>
       <div>

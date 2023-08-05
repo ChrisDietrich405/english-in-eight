@@ -5,17 +5,17 @@ import Quiz from "../../../components/Quiz";
 export default function ComparativeAdjectives() {
   return (
     <div className="comparative-adjectives">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Comparative Adjectives</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           To make the comparative form ('stronger' or 'more delicious'), the
           first thing we need to know is the number of syllables in the
           adjective.
         </p>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <h5>Adjectives with only one syllable</h5>
         <p>
           Normally if an adjective has one syllable, we add 'er' to make the
@@ -47,7 +47,7 @@ export default function ComparativeAdjectives() {
 
         <p>
           There are some adjectives that we need to use 'more' with, even though
-          they only have one syllable. Adding -er is incorrect for these verbs. 
+          they only have one syllable. Adding -er is incorrect for these verbs.
         </p>
         <ul className="page-examples">
           <li>real → more real (NOT realer)</li>
@@ -59,9 +59,7 @@ export default function ComparativeAdjectives() {
           <li>thoughtful → more thoughtful</li>
           <li>peaceful → more peaceful</li>
         </ul>
-        <p>
-          However, some two syllable adjectives can use 'er'. 
-        </p>
+        <p>However, some two syllable adjectives can use 'er'.</p>
         <ul className="page-examples">
           <li>quiet → quieter</li>
           <li>cruel → crueler</li>
@@ -70,7 +68,7 @@ export default function ComparativeAdjectives() {
         </ul>
         <p>
           For adjectives with two syllables that end in 'y' we normally add 'er'
-          (y generally changes to i). 
+          (y generally changes to i).
         </p>
         <ul className="page-examples">
           <li>funny → funnier</li>
@@ -79,9 +77,9 @@ export default function ComparativeAdjectives() {
           <li>silly → sillier</li>
         </ul>
         <h5>Adjectives that have more than two syllables</h5>
-         <p>
-          Adjectives that have more than two syllables 
-          need to use 'most' to form their comparative.
+        <p>
+          Adjectives that have more than two syllables need to use 'most' to
+          form their comparative.
         </p>
         <ul className="page-examples">
           <li>delicious → more delicious</li>
@@ -91,7 +89,8 @@ export default function ComparativeAdjectives() {
         </ul>
         <p>Irregular adjectives</p>
         <p>
-          There are also some irregular adjectives. We simply need to memorize them. 
+          There are also some irregular adjectives. We simply need to memorize
+          them.
         </p>
         <ul className="page-examples">
           <li>good → better</li>
@@ -99,7 +98,6 @@ export default function ComparativeAdjectives() {
           <li>far → further</li>
           <li>little → less</li>
           <li>much → more</li>
-          
         </ul>
       </div>
       <Quiz

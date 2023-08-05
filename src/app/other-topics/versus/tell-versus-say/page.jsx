@@ -1,11 +1,13 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function SayVersusTell() {
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Tell versus Say</h2>
       </div>
       <p className="grammar-explanation-paragraph">

@@ -26,15 +26,15 @@ const Layout = ({ children }) => {
           </Link>
           <Link
             className={styles.link}
-            href="/other-topics/phrasal-verbs/phrasal-verbs-list-3"
+            href="/other-topics/phrasal-verbs/talk-versus-speak"
           >
-            Phrasal Verbs List 3
+            Talk verus Speak
           </Link>
           <Link
             className={styles.link}
-            href="/other-topics/phrasal-verbs/phrasal-verbs-list-4"
+            href="/other-topics/phrasal-verbs/tell-versus-say"
           >
-            Phrasal Verbs List 4
+            Tell versus Say
           </Link>
         </nav>
         <div className={styles.main_content}>{children}</div>

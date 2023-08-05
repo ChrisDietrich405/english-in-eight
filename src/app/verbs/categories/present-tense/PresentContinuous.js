@@ -24,11 +24,11 @@ export default function PresentContinuous() {
   }, []);
 
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Present Continuous</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           The present progressive tense is a verb form used to describe an
           ongoing action or event that is happening at the current moment. It is

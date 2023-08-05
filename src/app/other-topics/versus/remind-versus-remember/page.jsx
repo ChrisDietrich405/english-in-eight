@@ -2,11 +2,13 @@
 
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 export default function RememberVersusRemind() {
   //whatever
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Remind versus Remember</h2>
       </div>
 
@@ -32,9 +34,13 @@ export default function RememberVersusRemind() {
         them remember it or help them not to forget it:
       </p>
       <ul className="page-examples">
-        <li>Remind me to take out the trash tonight. If you don't I’ll probably forget.</li>
         <li>
-          She’s probably forgotten she was supposed to be at the meeting. Someone should text her.
+          Remind me to take out the trash tonight. If you don't I’ll probably
+          forget.
+        </li>
+        <li>
+          She’s probably forgotten she was supposed to be at the meeting.
+          Someone should text her.
         </li>
       </ul>
       <h3>Remember</h3>
@@ -48,20 +54,23 @@ export default function RememberVersusRemind() {
         <li>I’ll always my trip to Jamaica.</li>
         <li>Suddenly I remembered I needed to pay that bill.</li>
       </ul>
-     
+
       <p>
-        Remember + the -ing form of a verb describes having a memory of something that happened in the past or of something we experienced 
+        Remember + the -ing form of a verb describes having a memory of
+        something that happened in the past or of something we experienced
       </p>
       <ul className="page-examples">
         <li>They said they didn't remember going to the parking lot.</li>
-        <li>
-          I remember talking to him. I think it was Friday.
-        </li>
+        <li>I remember talking to him. I think it was Friday.</li>
       </ul>
-      <p>Remember + infinitive describes a command, telling someone not to forget something</p>
+      <p>
+        Remember + infinitive describes a command, telling someone not to forget
+        something
+      </p>
       <ul className="page-examples">
         <li>
-          Remember to go to bed very early tonight. Tomorrow is going to be a long day. 
+          Remember to go to bed very early tonight. Tomorrow is going to be a
+          long day.
         </li>
       </ul>
 
@@ -69,8 +78,7 @@ export default function RememberVersusRemind() {
         title="Take a Quiz!"
         questions={[
           {
-            title:
-              "I don't ______________ where I left my hat.",
+            title: "I don't ______________ where I left my hat.",
             possibleAnswers: [
               { title: "remind" },
               { title: "remember", correctAnswer: true },
@@ -96,8 +104,7 @@ export default function RememberVersusRemind() {
             userAnswer: "",
           },
           {
-            title:
-              "Please ____________________ not to smoke near the church.",
+            title: "Please ____________________ not to smoke near the church.",
             possibleAnswers: [
               { title: "remind" },
               { title: "remember", correctAnswer: true },
@@ -150,15 +157,13 @@ export default function RememberVersusRemind() {
             userAnswer: "",
           },
           {
-            title:
-              "_______________ me to buy some trash bags.",
+            title: "_______________ me to buy some trash bags.",
             possibleAnswers: [
               { title: "remind", correctAnswer: true },
               { title: "remember" },
             ],
             userAnswer: "",
           },
-         
         ]}
       ></Quiz>
     </div>

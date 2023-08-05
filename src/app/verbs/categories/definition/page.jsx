@@ -10,7 +10,7 @@ export default function VerbDefinition() {
         <div className={styles.page_title}>
           <h2>Verb Definition</h2>
         </div>
-        <div className="page-body">
+        <div className={styles.page_body}>
           <p
             style={{ textAlign: "center" }}
             className={styles.grammar_explanation_paragraph}

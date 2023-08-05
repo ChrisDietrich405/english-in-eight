@@ -5,10 +5,10 @@ import Quiz from "../../../components/Quiz";
 export default function NounModifiers() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Noun Modifiers</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           We sometimes have two nouns together to demonstrate that one thing is
           a part of something else. In the following examples, the first noun is

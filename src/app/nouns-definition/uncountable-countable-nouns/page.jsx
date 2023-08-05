@@ -4,8 +4,8 @@ import Quiz from "../../../components/Quiz";
 
 export default function UncountableAndCountable() {
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h1>Countable & Uncountable Nouns </h1>
       </div>
 

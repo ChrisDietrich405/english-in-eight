@@ -21,8 +21,8 @@ export default function SimplePresent() {
   }, []);
 
   return (
-    <div className="page-body">
-      <div className="page-title">
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
         <h2>Simple Present</h2>
       </div>
 
@@ -52,7 +52,7 @@ export default function SimplePresent() {
         </table>
       </div>
 
-      <div className="page-body">
+      <div className={styles.page_body}>
         <h4>Present simple tense with irregular verbs</h4>
         <p>Some verbs have spelling changes with 'he', 'she' or 'it':</p>
 

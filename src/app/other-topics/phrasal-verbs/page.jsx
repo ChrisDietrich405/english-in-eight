@@ -3,10 +3,10 @@
 export default function PhrasalVerbs() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Phrasal Verbs</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           Phrasal Verbs are expressions consisting of a verb and another
           element, typically either an adverb, as in <b>break down</b>, or a
@@ -14,7 +14,7 @@ export default function PhrasalVerbs() {
           as <b>look down on.</b>
         </p>
       </div>
-      <div className="content-wrapper">
+      <div className={styles.content_wrapper}>
         <img
           src="../../../images/break-down.jpg"
           className="other-topics-image"
@@ -27,7 +27,7 @@ export default function PhrasalVerbs() {
           vehicle stops functioning.
         </p>
       </div>
-      <div className="content-wrapper">
+      <div className={styles.content_wrapper}>
         <img
           src="../../../images/fall-for.jpg"
           className="other-topics-image"

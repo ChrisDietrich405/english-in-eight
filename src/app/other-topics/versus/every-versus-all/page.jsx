@@ -1,12 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function AllVersusEvery() {
   return (
-    <div className="page-body">
-      <div className="page-title">
-        <h2>All Versus Every</h2>
+    <div className={styles.page_body}>
+      <div className={styles.page_title}>
+        <h2>Every versus All</h2>
       </div>
 
       <p className="grammar-explanation-paragraph">

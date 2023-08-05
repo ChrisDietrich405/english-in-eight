@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export default function PresentTenseVerbDefinition() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Present Tense Verbs</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           The present tense verbs are the most widely used verbs in the English
           language. Think about all the times you talk to friends and family

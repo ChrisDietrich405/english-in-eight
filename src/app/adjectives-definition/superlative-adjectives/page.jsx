@@ -5,10 +5,10 @@ import Quiz from "../../../components/Quiz";
 export default function SuperlativeAdjectives() {
   return (
     <div className="superlative-adjectives">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Superlative Adjectives</h2>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <p className="grammar-explanation-paragraph">
           Superlative adjectives are used to compare three or more nouns,
           indicating the highest or most extreme degree of a particular quality.
@@ -18,7 +18,7 @@ export default function SuperlativeAdjectives() {
           adjectives or use "most" before the adjective for longer adjectives.
         </p>
       </div>
-      <div className="page-body">
+      <div className={styles.page_body}>
         <h5>Adjectives with one syllable</h5>
         <p>
           If an adjective has one syllable, we usually add 'est' to make the

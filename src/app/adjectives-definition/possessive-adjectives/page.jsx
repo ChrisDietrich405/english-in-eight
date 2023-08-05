@@ -4,12 +4,12 @@ import Quiz from "../../../components/Quiz";
 
 export default function PossessiveAdjectives() {
   return (
-    <div className="page-body">
+    <div className={styles.page_body}>
       <div className="possessive-adjectives">
-        <div className="page-title">
+        <div className={styles.page_title}>
           <h2>Possessive Adjectives</h2>
         </div>
-        <div className="page-body">
+        <div className={styles.page_body}>
           <p className="grammar-explanation-paragraph">
             Possessive adjectives are words used to show ownership or
             possession. They are placed before a noun to indicate that the noun
@@ -19,13 +19,27 @@ export default function PossessiveAdjectives() {
         </div>
 
         <ul className="page-examples">
-          <li>I have a car. This is <b>my</b> car.</li>
-          <li>You have a dog. That is <b>your</b>dog</li>
-          <li>He has a car. It is  <b>his</b> car</li>
-          <li>She has a laptop. It is <b>her</b>laptop.</li>
-          <li>The car has new tires. <b>Its</b> tires are new.</li>
-          <li>We have a motorcycle. It is <b>our</b> motorcycle.</li>
-          <li>They have a boat. That is <b>their</b> boat.</li>
+          <li>
+            I have a car. This is <b>my</b> car.
+          </li>
+          <li>
+            You have a dog. That is <b>your</b>dog
+          </li>
+          <li>
+            He has a car. It is <b>his</b> car
+          </li>
+          <li>
+            She has a laptop. It is <b>her</b>laptop.
+          </li>
+          <li>
+            The car has new tires. <b>Its</b> tires are new.
+          </li>
+          <li>
+            We have a motorcycle. It is <b>our</b> motorcycle.
+          </li>
+          <li>
+            They have a boat. That is <b>their</b> boat.
+          </li>
         </ul>
       </div>
 
@@ -59,7 +73,7 @@ export default function PossessiveAdjectives() {
             ],
             userAnswer: "",
           },
-       
+
           {
             title: "(You) ______________ car is very old.",
             possibleAnswers: [
@@ -93,7 +107,8 @@ export default function PossessiveAdjectives() {
             userAnswer: "",
           },
           {
-            title: "They want to go to Egypt. They want to see (it) ________________ tourist attractions.",
+            title:
+              "They want to go to Egypt. They want to see (it) ________________ tourist attractions.",
             possibleAnswers: [
               { title: "its", correctAnswer: true },
               { title: "their" },
@@ -108,7 +123,7 @@ export default function PossessiveAdjectives() {
             ],
             userAnswer: "",
           },
-         
+
           {
             title: "(He) _____________ name is Tyrese.",
             possibleAnswers: [
