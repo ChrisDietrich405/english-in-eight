@@ -19,11 +19,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
 import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
+
+import styles from "./styles.module.css";
 
 const drawerWidth = 240;
 const navItems = ["Home", "Nouns"];
@@ -83,19 +84,12 @@ function DrawerAppBar(props) {
             alt="Picture of the logo"
           />
           <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <Button
-              variant="contained"
-              sx={{
-                height: "20px",
-                color: "#fff",
-                marginRight: "20px",
-                textDecoration: "none",
-              }}
-            >
-              <Link href="/" style={{ textDecoration: "none", color: "#fff" }}>
-                Home
-              </Link>
-            </Button>
+            <div className={styles.btn_container}>
+              <button className={styles.home_btn}>
+                <Link href="/">HOME</Link>
+              </button>
+            </div>
+
             <Button>
               <NounsSubmenuDropdown
                 sx={{ color: "#fff", marginRight: "20px" }}

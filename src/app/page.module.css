@@ -19,8 +19,10 @@
 }
 
 .intro_content {
-  margin-top: 20px; 
+  padding: 20px;
   text-align: center;
+  background: #1976d2;
+  color: #fff;
 }
 
 .intro_content p {

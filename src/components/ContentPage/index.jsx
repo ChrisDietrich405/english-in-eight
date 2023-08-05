@@ -20,8 +20,8 @@ export default function ContentPage({ links }) {
           {links.map((link, i) => (
             <li key={i} className={styles.sidebar_left_links}>
               <div></div>
-              <Link
-                className={styles.link}
+              {/* <Link
+                // className={styles.link}
                 className={
                   pathname == link.path
                     ? `${styles.sidebar_left_subtitle} ${styles.active}`
@@ -33,8 +33,8 @@ export default function ContentPage({ links }) {
                 //   active: window.location.pathname === link.path,
                 // })}
               >
-                {parser(link.title)}
-              </Link>
+                {parser(link.title)} pooooooooooooooooooooooo
+              </Link> */}
             </li>
           ))}
         </ul>

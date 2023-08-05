@@ -2,41 +2,12 @@
 
 import Quiz from "../../../components/Quiz";
 
+import styles from "../../styles/content-page.module.css";
 export default function UncountableAndCountable() {
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
         <h1>Countable & Uncountable Nouns </h1>
-      </div>
-
-      <div>
-        <h4>Countable Nouns</h4>
-        <p className="grammar-explanation-paragraph">
-          Countable nouns are nouns we can count, e.g.,1 cat, 2 dogs. They have
-          a singular and a plural form. The singular form can use "a" or "an".
-          If you need to ask about the quantity of a countable noun, you ask
-          "How many?" along with the plural countable noun, e.g., How many dogs?
-        </p>
-      </div>
-      <div>
-        <p>Examples</p>
-        <ul className="page-examples">
-          <li>
-            I own <b>a</b> house.
-          </li>
-          <li>
-            There were <b>a few</b> fights.
-          </li>
-          <li>
-            The need <b>two</b> t-shirts please.
-          </li>
-          <li>
-            <b>How many</b> people are at the party?
-          </li>
-          <li>
-            She has <b>six</b> cats.
-          </li>
-        </ul>
       </div>
       <div>
         <h4>Uncountable Nouns</h4>
@@ -52,15 +23,15 @@ export default function UncountableAndCountable() {
       <div>
         <p>Examples</p>
         <ul className="page-examples">
-          <li>water</li>
           <li>tea</li>
-          <li>sugar</li>
-          <li>fear</li>
+          <li>information</li>
           <li>rice</li>
-          <li>anger</li>
+          <li>water</li>
+          <li>happiness</li>
           <li>knowledge</li>
-          <li>beauty</li>
+          <li>advice</li>
           <li>air</li>
+          <li>sugar</li>
         </ul>
       </div>
       <p className="grammar-explanation-paragraph">
@@ -116,6 +87,37 @@ export default function UncountableAndCountable() {
           She gave me some very good <b> advice</b>
         </li>
       </ul>
+
+      <div>
+        <h4>Countable Nouns</h4>
+        <p className="grammar-explanation-paragraph">
+          Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They have
+          a singular and a plural form. The singular form can use "a" or "an".
+          If you need to ask about the quantity of a countable noun, you ask
+          "How many?" along with the plural countable noun, e.g., How many dogs?
+        </p>
+      </div>
+      <div>
+        <p>Examples</p>
+        <ul className="page-examples">
+          <li>
+            I own <b>a</b> house.
+          </li>
+          <li>
+            There were <b>a few</b> fights.
+          </li>
+          <li>
+            They need <b>two</b> t-shirts please.
+          </li>
+          <li>
+            <b>How many</b> people are at the party?
+          </li>
+          <li>
+            She has <b>six</b> cats.
+          </li>
+        </ul>
+      </div>
+
       <br />
       <Quiz
         title="Take a quiz!"

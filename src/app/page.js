@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +15,17 @@ import {
 } from "@mui/material";
 
 import styles from "./page.module.css";
+import { useEffect } from "react";
 export default function Home() {
+  // const getInvoices = async function (id) {
+  //   const response = await api.get(`/cards`);
+  //   console.log("hi");
+  // };
+
+  // useEffect(() => {
+  //   getInvoices();
+  // }, []);
+
   return (
     <main className={styles.home} styles={{ marginTop: "300px" }}>
       <div className={styles.banner}>
@@ -33,24 +45,23 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.intro_content}>
+        {" "}
+        <p>
+          This website offers English lessons you can complete in less than 8
+          minutes.
+        </p>
+        <p>
+          Pick a topic, study a few minutes, and then do the corresponding
+          exercise.
+        </p>
+        <p>
+          The focus is on English phrasal verbs, grammar, and idiomatic
+          expressions specific to <b> the United States. </b>
+        </p>
+      </div>
       <section className={styles.content_container}>
         <Container>
-          <div className={styles.intro_content}>
-            {" "}
-            <p>
-              This website offers English lessons you can complete in less than
-              8 minutes.
-            </p>
-            <p>
-              Pick a topic, study a few minutes, and then do the corresponding
-              exercise.
-            </p>
-            <p>
-              The focus is on English phrasal verbs, grammar, and idiomatic
-              expressions specific to <b> the United States. </b>
-            </p>
-          </div>
-
           <Grid container spacing={4} my={4}>
             <Grid
               item
