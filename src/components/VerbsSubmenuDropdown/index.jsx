@@ -100,7 +100,7 @@ export default function CustomizedMenus() {
             Present Tense Verbs
           </Link>
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
+
         <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/verbs-definition/past-tense">
             {" "}

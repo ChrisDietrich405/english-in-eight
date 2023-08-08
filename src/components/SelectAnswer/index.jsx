@@ -19,9 +19,9 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
-        return "right_answer";
+        return "right-answer";
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return "wrong_answer";
+        return "wrong-answer";
       } else {
         return "";
       }
@@ -50,7 +50,7 @@ const SelectAnswer = ({
         onClick={onClick}
         name={"twoPossibleAnswers" + i}
         type="radio"
-        className={styles.radio}
+        className="radio"
       />
       <p className={getTextColor()}>
         {possibleAnswer.title} {getEmoji()}

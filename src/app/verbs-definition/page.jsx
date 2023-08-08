@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "../styles/content-page.module.css";
 
 //find three new verbs
@@ -17,19 +19,34 @@ export default function VerbsDef() {
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/action-verbs-definition.png" alt="" />
+            <Image
+              src="/action-verbs-definition.png"
+              alt="picture of action verb hear"
+              width={200}
+              height={200}
+            />
           </div>
           <p className={styles.picture_subtitle}>Hear</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/state-verbs-definition.png" alt="" />
+            <Image
+              src="/state-verbs-definition.png"
+              alt="picture of action verb hear"
+              width={200}
+              height={200}
+            />
           </div>
           <p className={styles.picture_subtitle}>Become</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/occurence-verbs-definition.png" alt="" />
+            <Image
+              src="/occurence-verbs-definition.png"
+              alt="picture of action verb hear"
+              width={200}
+              height={200}
+            />
           </div>
           <p className={styles.picture_subtitle}>Happen</p>
         </div>

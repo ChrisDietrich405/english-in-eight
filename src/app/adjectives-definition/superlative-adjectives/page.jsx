@@ -2,6 +2,8 @@
 
 import Quiz from "../../../components/Quiz";
 
+import styles from "../../styles/content-page.module.css";
+
 export default function SuperlativeAdjectives() {
   return (
     <div className="superlative-adjectives">

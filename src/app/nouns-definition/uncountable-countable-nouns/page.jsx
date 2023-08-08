@@ -52,7 +52,7 @@ export default function UncountableAndCountable() {
           I need some <b>information</b> about that.
         </li>
         <li>
-          He didn't havemuch <b>money</b>.
+          He didn't have much <b>money</b>.
         </li>
         <li>
           How much <b>tea </b>do you want?
@@ -78,13 +78,13 @@ export default function UncountableAndCountable() {
           The <b>furniture</b> in this store is very expensive.
         </li>
         <li>
-          How much<b> bread </b>should I bring?
+          How much<b> bread </b> should I bring?
         </li>
         <li>
-          I didn't make much<b>progress</b> today.
+          I didn't make much <b>progress</b> today.
         </li>
         <li>
-          She gave me some very good <b> advice</b>
+          She gave me some very good <b>advice</b>
         </li>
       </ul>
 

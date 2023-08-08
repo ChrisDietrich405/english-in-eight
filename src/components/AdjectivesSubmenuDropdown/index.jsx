@@ -90,11 +90,7 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-          
-            href="/adjectives-definition"
-          >
+          <Link className={styles.link} href="/adjectives-definition">
             Adjective Definition
           </Link>
         </MenuItem>
@@ -106,7 +102,7 @@ export default function CustomizedMenus() {
             Possessive Adjectives
           </Link>
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
+
         <MenuItem onClick={handleClose} disableRipple>
           <Link
             className={styles.link}

@@ -1,16 +1,16 @@
 .banner {
   height: 300px;
+  background-color: black;
 }
 
 .banner_inner {
+ 
+  padding-bottom: 70px; 
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.banner-image h1 {
-  font-size: 200px;
+  color: #e7f3ff;
 }
 
 .content_container {

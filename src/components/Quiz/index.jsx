@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
-import SelectAnswer from "../SelectAnswer";
-
-import Button from "@mui/material/Button";
-
 import styles from "./styles.module.css";
+import SelectAnswer from "../SelectAnswer";
 
 function AnswerIcon({ isAnswered }) {
   if (!isAnswered) {
@@ -86,11 +83,10 @@ export default function Quiz(props) {
           ))}
         </ol>
         <div className={styles.quiz_buttons}>
-          <p>Check your answers</p>
-          <Button type="reset">Reset</Button>
-          {/* <button className="btn btn-secondary" type="reset">
+          <button className="btn btn-primary">Check your answers</button>
+          <button className="btn btn-secondary" type="reset">
             Reset
-          </button> */}
+          </button>
         </div>
       </form>
     </div>

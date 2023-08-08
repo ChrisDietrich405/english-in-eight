@@ -1,5 +1,5 @@
-// import "../../../styles/pages/other-topics.scss";
-
+import Image from "next/image";
+import styles from "../../styles/content-page.module.css";
 export default function PhrasalVerbs() {
   return (
     <>
@@ -15,10 +15,11 @@ export default function PhrasalVerbs() {
         </p>
       </div>
       <div className={styles.content_wrapper}>
-        <img
-          src="../../../images/break-down.jpg"
-          className="other-topics-image"
-          aria-hidden="true"
+        <Image
+          height={200}
+          width={300}
+          src="/break-down.jpg"
+          alt="Speak versus talk"
         />
         <p>
           In the phrasal verb <strong>break down</strong>, break is a verb and{" "}
@@ -28,10 +29,11 @@ export default function PhrasalVerbs() {
         </p>
       </div>
       <div className={styles.content_wrapper}>
-        <img
-          src="../../../images/fall-for.jpg"
-          className="other-topics-image"
-          aria-hidden="true"
+        <Image
+          height={200}
+          width={300}
+          src="/fall-for.jpg"
+          alt="Speak versus talk"
         />
         <p>
           In the phrasal verb <strong>fall for</strong>, fall is a verb and{" "}

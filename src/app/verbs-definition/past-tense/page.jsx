@@ -20,29 +20,31 @@ const Future = () => {
           <b>past perfect continuous</b> shows that an action that started in
           the past continued up until another time in the past.
         </p>
-        <div className="btn-container btn-flex">
+        <div
+          className="btn-container btn-flex"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-simple"
-            className=" btn btn-primary"
+            href="/verbs-definition/past-tense/past-simple"
           >
             <Button variant="text">Past Simple</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-continuous"
+            href="/verbs-definition/past-tense/past-simple"
           >
             <Button variant="text">Past Continuous</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect"
+            href="/verbs-definition/past-tense/past-simple"
           >
             <Button variant="text">Past Perfect</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect-continuous"
+            href="/verbs-definition/past-tense/past-simple"
           >
             <Button variant="text">Past Perfect Continuous</Button>
           </Link>

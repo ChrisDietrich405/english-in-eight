@@ -102,7 +102,7 @@ export default function CustomizedMenus() {
             Uncountable & Countable Nouns
           </Link>
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
+
         <MenuItem onClick={handleClose} disableRipple>
           <Link
             className={styles.link}
@@ -112,10 +112,7 @@ export default function CustomizedMenus() {
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/nouns-definition/noun-modifiers"
-          >
+          <Link className={styles.link} href="/nouns-definition/noun-modifiers">
             Noun Modifiers
           </Link>
         </MenuItem>

@@ -9,33 +9,45 @@ const Layout = ({ children }) => {
     <div>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
-          <Link className={`${styles.link}`} href="/versus">
-            Versus
-          </Link>
-          <Link
-            className={styles.link}
-            href="/other-topics/versus/remind-versus-remember"
-          >
-            Remind versus Remember
-          </Link>
-          <Link
-            className={styles.link}
-            href="/other-topics/versus/every-versus-all"
-          >
-            Every versus All
-          </Link>
-          <Link
-            className={styles.link}
-            href="/other-topics/phrasal-verbs/talk-versus-speak"
-          >
-            Talk verus Speak
-          </Link>
-          <Link
-            className={styles.link}
-            href="/other-topics/phrasal-verbs/tell-versus-say"
-          >
-            Tell versus Say
-          </Link>
+          <ul className={styles.list_container}>
+            <li>
+              <Link className={styles.link} href="/other-topics/versus">
+                Versus
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/remind-versus-remember"
+              >
+                Remind vs Remember
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/every-versus-all"
+              >
+                Every vs All
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/talk-versus-speak"
+              >
+                Talk vs Speak
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/tell-versus-say"
+              >
+                Tell vs Say
+              </Link>
+            </li>
+          </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
       </section>

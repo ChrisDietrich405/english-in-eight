@@ -20,28 +20,38 @@ export default function NounDefinition() {
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <Image
-              height={100}
-              width={100}
-              src="/../../../person-nouns-definition.png"
+          <Image
+              height={300}
+              width={300}
+              src="/person-nouns-definition.jpg"
               alt=""
             />
 
-            {/* <img src="../../../images/action-verbs-definition.png" alt="" /> */}
+    
           </div>
-          <p className={styles.picture_subtitle}>Hear</p>
+          <p className={styles.picture_subtitle}>Person - Terry Crews</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/state-verbs-definition.png" alt="" />
+          <Image
+              height={300}
+              width={300}
+              src="/place-nouns-definition.jpg"
+              alt=""
+            />
           </div>
-          <p className={styles.picture_subtitle}>Become</p>
+          <p className={styles.picture_subtitle}>Place - Taj Mahal</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/occurence-verbs-definition.png" alt="" />
+          <Image
+              height={300}
+              width={300}
+              src="/thing-nouns-definition.jpg"
+              alt=""
+            />
           </div>
-          <p className={styles.picture_subtitle}>Happen</p>
+          <p className={styles.picture_subtitle}>Thing - Iphone</p>
         </div>
       </div>
     </>

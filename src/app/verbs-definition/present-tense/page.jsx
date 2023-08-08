@@ -18,11 +18,13 @@ const SimplePresent = () => {
           the way I included all four tenses in this paragraph. Challenge
           yourself and try to identify them.
         </p>
-        <div className="btn-container btn-flex">
+        <div
+          className="btn-container btn-flex"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
           <Link
             className={styles.link}
             href="/future-verb-tenses/future-simple"
-       
           >
             <Button variant="text">Present Simple</Button>
           </Link>

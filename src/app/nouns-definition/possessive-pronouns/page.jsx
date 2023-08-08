@@ -1,155 +1,129 @@
-import Quiz from "../../../components/Quiz";
+import Quiz from "@/src/components/Quiz";
 
-//Done
+//DONE
 
-export default function NounModifiers() {
+export default function PossessivePronouns() {
   return (
     <>
-      <div className={styles.page_title}>
-        <h2>Noun Modifiers</h2>
+      <div className="page-title">
+        <h2>Possessive Pronouns</h2>
       </div>
-      <div className={styles.page_body}>
+      <div className="page-body">
         <p className="grammar-explanation-paragraph">
-          We sometimes have two nouns together to demonstrate that one thing is
-          a part of something else. In the following examples, the first noun is
-          called a noun modifier.
+          Possessive pronouns are pronouns that are used to indicate ownership
+          (possession) and replace a noun. The English possessive pronouns are
+          mine, ours, yours, his, hers, theirs,
         </p>
-
-        <ul className="page-examples">
+      </div>
+      <div className="page-examples">
+        <p>Examples</p>
+        <ul>
           <li>
-            <b>Baltimore</b> residents
+            I have a house - It's <b>mine.</b>
           </li>
           <li>
-            The <b>dog</b> bowl
+            You have a boat - That boat is <b>yours.</b>
           </li>
           <li>
-            The <b>chair</b> leg
+            He has a car - It is <b>his.</b>
           </li>
           <li>
-            My <b>gold</b> watch
+            She has a tattoo - It is <b>hers.</b>
           </li>
           <li>
-            The <b>shopping</b> list
+            We have an apartment - It is <b>ours.</b>
           </li>
-        </ul>
-        <p></p>
-        <p>
-          <b>Pay attention!</b>
-        </p>
-        <p>
-          We don’t use a possessive form for these things. We do NOT talk about:
-        </p>
-
-        <p>Noun modifiers can be used to show what something is made of:</p>
-        <ul className="page-examples">
-          <li>a metal chair</li>
-          <li>a gold watch</li>
-          <li>a wood table</li>
-        </ul>
-
-        <p>Noun modifiers can be used for values or measurements:</p>
-        <ul className="page-examples">
-          <li>an hour drive</li>
-          <li>a thousand mile trip</li>
-          <li>a twenty pound bag</li>
-        </ul>
-        <p>Noun modifiers also can be used with nouns ending in ing:</p>
-        <ul className="page-examples">
-          <li>a time machine</li>
-          <li>a waiting list</li>
-          <li>a guitar lesson</li>
-        </ul>
-        <p>Noun modifiers can be used with nouns ending in –er:</p>
-        <ul className="page-examples">
-          <li>a dress maker</li>
-          <li>a club manager</li>
-          <li>a factory worker</li>
+          <li>
+            They have a son - He is <b>theirs.</b>
+          </li>
         </ul>
       </div>
-
       <Quiz
-        title="Take a Quiz!"
+        title="Take a quiz!"
         questions={[
+          //because we are in react we need to start the array with a curly bracket (because it's inside of a component)
+
           {
-            title: "It's a door made of metal. It's a _____________.",
+            title:
+              " My headset needs to be fixed, but (you) _____________ is working.",
             possibleAnswers: [
-              { title: "door's metal" },
-              { title: "metal door", correctAnswer: true },
+              { title: " you" },
+              { title: " yours", correctAnswer: true },
+            ],
+            userAnswer: "",
+          },
+          {
+            title: "My computer is a Lenovo, but (he) _______________ is a PC.",
+            possibleAnswers: [
+              { title: " his", correctAnswer: true },
+              { title: " he" },
             ],
             userAnswer: "",
           },
           {
             title:
-              "It's a cloth that you put on a table. It's a _____________.",
+              "Nisha has already eaten her dinner , but I'm saving (I) _____________  until later.",
             possibleAnswers: [
-              { title: "table cloth", correctAnswer: true },
-              { title: "cloth table" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It's a bat used for baseballs. It's a _____________.",
-            possibleAnswers: [
-              { title: "batball" },
-              { title: "baseball bat", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It's a key for my house. It's a _____________.",
-            possibleAnswers: [
-              { title: "key car" },
-              { title: "car key", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "We need a house for a dog. We need a ______________.",
-            possibleAnswers: [
-              { title: "housedog" },
-              { title: "doghouse", correctAnswer: true },
+              { title: " mine", correctAnswer: true },
+              { title: " my" },
             ],
             userAnswer: "",
           },
           {
             title:
-              "They have a house in the trees. They have a ______________.",
+              "We gave them our number, and they gave us (they) __________________.",
             possibleAnswers: [
-              { title: "tree house", correctAnswer: true },
-              { title: "house tree" },
+              { title: " theirs" },
+              { title: " they", correctAnswer: true },
+            ],
+            userAnswer: "",
+          },
+
+          {
+            title: "My motorcycle is new, but (he)  __________ is old.",
+            possibleAnswers: [
+              { title: " he" },
+              { title: " his", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            title: "We bought a bone for our dog. We gave her a _____________.",
+            title: "She can't have any cake! It's all (I)______________ !",
             possibleAnswers: [
-              { title: "bone dog" },
-              { title: "dog bone", correctAnswer: true },
+              { title: " my" },
+              { title: " mine", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            title:
-              "Meet me where there is a station for a train. It's a ________________",
+            title: "My pen is broken. Can I use (you) ____________ ?",
             possibleAnswers: [
-              { title: "train station", correctAnswer: true },
-              { title: "station train" },
+              { title: " you" },
+              { title: " yours", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            title: "This is a ladder with steps.   It’s a ___________.",
+            title: "That money is (I) ____________.",
             possibleAnswers: [
-              { title: "step ladder", correctAnswer: true },
-              { title: "ladder step" },
+              { title: " mine", correctAnswer: true },
+              { title: " my" },
             ],
             userAnswer: "",
           },
           {
-            title: "I paid for lessons for swimming. They are _____________.",
+            title: "The desk is (we) ______________.",
             possibleAnswers: [
-              { title: "swimming lessons", correctAnswer: true },
-              { title: "swimmings lesson" },
+              { title: " ours", correctAnswer: true },
+              { title: " we" },
+            ],
+            userAnswer: "",
+          },
+          {
+            title: "The dress is (she)_____________. ",
+            possibleAnswers: [
+              { title: " hers", correctAnswer: true },
+              { title: " she" },
             ],
             userAnswer: "",
           },

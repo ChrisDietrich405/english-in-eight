@@ -1,5 +1,5 @@
-// import "../../../styles/pages/other-topics.scss";
-
+import Image from "next/image";
+import styles from "../../styles/content-page.module.css";
 export default function VersusDefinition() {
   return (
     <div className="expressions">
@@ -16,16 +16,17 @@ export default function VersusDefinition() {
       </div>
 
       <div className={styles.content_wrapper}>
-        <img
-          src="../../../images/remember-versus-remind.jpg"
-          className="other-topics-image"
-          alt=""
+        <Image
+          height={300}
+          width={300}
+          src="/remember-versus-remind.jpg"
+          alt="Remember versus remind"
         />
-
-        <img
-          src="../../../images/speak-versus-talk.png"
-          className="other-topics-image"
-          alt=""
+        <Image
+          height={300}
+          width={300}
+          src="/speak-versus-talk.png"
+          alt="Speak versus talk"
         />
       </div>
     </div>

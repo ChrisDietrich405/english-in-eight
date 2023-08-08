@@ -15,28 +15,31 @@ const Future = () => {
           tense will always describe a time 'later than now', but it may also
           express our attitude to the future event.
         </p>
-        <div className="btn-container btn-flex">
+        <div
+          className="btn-container btn-flex"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
           <Link
             className={`${styles.link} btn btn-primary`}
-            href="/future-verb-tenses/future-simple"
+            href="/verbs-definition/future/future-simple"
           >
             <Button variant="text">Future Simple</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-continuous"
+            href="/verbs-definition/future/future-continuous"
           >
             <Button variant="text">Future Continuous</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect"
+            href="/verbs-definition/future/future-perfect"
           >
             <Button variant="text">Future Perfect</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect-continuous"
+            href="/verbs-definition/future/future-perfect-continuous"
           >
             <Button variant="text">Future Perfect Continuous</Button>
           </Link>

@@ -1,5 +1,7 @@
 import Quiz from "../../../components/Quiz";
 
+import styles from "../../styles/content-page.module.css";
+
 //DONE
 
 export default function ComparativeAdjectives() {

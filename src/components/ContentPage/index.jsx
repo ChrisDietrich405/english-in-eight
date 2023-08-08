@@ -19,7 +19,7 @@ export default function ContentPage({ links }) {
         <ul>
           {links.map((link, i) => (
             <li key={i} className={styles.sidebar_left_links}>
-              <div></div>
+              <div>HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</div>
               {/* <Link
                 // className={styles.link}
                 className={

@@ -22,14 +22,14 @@ export default function Collective() {
         <p>Examples</p>
         <ul>
           <li>
-            The U.S.<b>government</b> is made up of 3 branches.
+            The U.S. <b>government</b> is made up of 3 branches.
           </li>
           <li>
-            This hockey <b>team includes</b> three players from Canada.
+            This hockey <b>team</b> includes three players from Canada.
           </li>
 
           <li>
-            Our <b>class takes</b> a field trip to the natural history museum
+            Our <b>class</b> takes a field trip to the natural history museum
             every year.
           </li>
           <li>

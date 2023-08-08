@@ -1,3 +1,7 @@
+.questions_and_answers {
+  list-style: none;
+}
+
 .answer {
   position: relative;
   bottom: 93px;

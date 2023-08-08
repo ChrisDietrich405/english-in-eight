@@ -102,7 +102,7 @@ export default function CustomizedMenus() {
             Phrasal Verbs
           </Link>
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
+
         <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/other-topics/versus">
             Versus
