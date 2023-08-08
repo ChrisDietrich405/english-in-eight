@@ -1,44 +1,45 @@
 "use client";
-// import { useState } from "react";
+import { useState } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { Grid, Button, TextField, Container } from "@mui/material";
 
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 // import { ToastContainer, toast } from "react-toastify";
 
 export default function Footer() {
-  //   const [email, setEmail] = useState("");
-  //   const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   // const notify = () => toast("Email was successfully sent");
 
-  //   const sendEmail = (e) => {
-  //     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("hi");
 
-  //     var templateParams = {
-  //       email,
-  //       message,
-  //       to_name: "Chris",
-  //     };
+    var templateParams = {
+      email,
+      message,
+      to_name: "Chris",
+    };
 
-  //     emailjs
-  //       .send(
-  //         process.env.REACT_APP_SERVICE_ID,
-  //         process.env.REACT_APP_TEMPLATE_ID,
-  //         templateParams,
-  //         process.env.REACT_APP_PUBLIC_KEY
-  //       )
-  //       .then(
-  //         (result) => {
-  //           // notify();
-  //           setEmail("");
-  //           setMessage("");
-  //         },
-  //         (error) => {
-  //           console.log(error.text);
-  //         }
-  //       );
-  //   };
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          // notify();
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <footer>
@@ -76,9 +77,8 @@ export default function Footer() {
               }}
             >
               <div className={styles.form_container}>
-                <form className={styles.form}>
+                <form onSubmit={sendEmail} className={styles.form}>
                   <h2>Contact us</h2>{" "}
-                  {/* <form onSubmit={sendEmail} className="form"> */}
                   <div className="mb-3">
                     <label
                       htmlFor="nameControlInput"
@@ -95,21 +95,18 @@ export default function Footer() {
                   <div className="mb-3">
                     {/* <label htmlFor="exampleFormControlInput1">Email</label> */}
                     <TextField
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                      className={`form-control`}
                       fullWidth
                       size="small"
                       sx={{ my: 4 }}
                       label="email"
                       variant="outlined"
-                      id="nameControlInput"
+                      // id="nameControlInput"
+                      type="email"
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                    {/* <input
-                  onChange={(e) => setEmail(e.target.value)}
-                  className={`form-control`}
-                  type="email"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                /> */}
                   </div>
                   <div className="mb-3">
                     <TextField
@@ -117,24 +114,17 @@ export default function Footer() {
                       onChange={(e) => setMessage(e.target.value)}
                       label="Add message here"
                       multiline
-                      rows={4} // You can adjust the number of rows displayed.
+                      rows={4}
                       variant="outlined"
+                      id="exampleFormControlTextarea1"
+                      placeholder="Add message here"
+                      className={` form-control`}
                     />
-                    {/* <label htmlFor="exampleFormControlTextarea1">Message</label>
-                <textarea
-                onChange={(e) => setMessage(e.target.value)}
-                id="exampleFormControlTextarea1"
-                placeholder="Add message here"
-                  className={` form-control`}
-                ></textarea> */}
                   </div>
                   {/* <ToastContainer /> */}
-                  {/* <div className="button-container text-center"> */}
-                  <Button variant="text">Submit</Button>
-                  {/* <button type="submit">
-                  Submit
-                  </button>
-                </div> */}
+                  <Button type="submit" variant="text">
+                    Submit
+                  </Button>
                 </form>
               </div>
             </Grid>
