@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Navbar style={{ marginBottom: "300px" }} />
+        <Navbar />
         {children}
         <Footer />
       </body>

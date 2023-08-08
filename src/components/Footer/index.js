@@ -27,7 +27,7 @@ export default function Footer() {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_ID
       )
       .then(
         (result) => {
@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link
                   className={styles.link}
                   href="/"
-                  className={styles.footer_logo}
+                  // className={styles.footer_logo}
                 >
                   <img
                     style={{ width: "130px" }}
