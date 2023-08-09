@@ -9,15 +9,11 @@ export default function NounDefinition() {
         <h1>Adjective Definition</h1>
       </div>
       <div className={styles.page_body}>
-        <p
-          style={{ textAlign: "center" }}
-          className={styles.grammar_explanation_paragraph}
-        >
+        <h3 className={styles.grammar_explanation_paragraph}>
           Adjectives are used to describe or modify nouns or pronouns, providing
           more information about their qualities, characteristics, or
-          attributes. In these examples, the adjectives are in bold and the
-          nouns are in italics.
-        </p>
+          attributes. In these examples, the adjectives are in bold.
+        </h3>
       </div>
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>

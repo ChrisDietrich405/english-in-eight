@@ -33,13 +33,12 @@
 .picture_wrapper {
   position: relative;
   overflow: hidden;
-  width: 200px;
-  height: 200px;
+
   border-radius: 5px;
 }
 
 .picture_subtitle {
-  margin-bottom: 4px !important;
+ margin: 0; 
 }
 
 .table_container {
@@ -50,5 +49,5 @@
 .content_wrapper {
   display: flex;
   gap: 70px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }

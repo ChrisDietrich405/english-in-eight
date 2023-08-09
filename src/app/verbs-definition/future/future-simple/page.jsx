@@ -103,7 +103,7 @@ export default function FutureSimple() {
         <ul className="page-examples">
           <li>We're going to go to the movies this weekend. (previous plan)</li>
           <li>
-            Our team is leading 65-23. They are going to win. (likely to happen)
+            The Orioles are winning 8-2. They're going to win. (likely to happen)
           </li>
         </ul>
         <p>
