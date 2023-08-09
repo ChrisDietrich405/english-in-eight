@@ -1,12 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function PastPerfect() {
   return (
     <div className="page-body">
       <div className={styles.page_title}>
-        <h2>Past Perfect</h2>
+        <h1>Past Perfect</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The past perfect is used to explain that one action in the past happened

@@ -30,7 +30,7 @@ export default function PresentContinuous() {
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
-          The present progressive tense is a verb form used to describe an
+          The present progressive or present continuous tense is a verb form used to describe an
           ongoing action or event that is happening at the current moment. It is
           formed by using the auxiliary verb "to be" in the present tense,
           followed by the main verb with "-ing" added to the end. For example,

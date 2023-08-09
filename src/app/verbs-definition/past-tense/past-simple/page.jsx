@@ -4,6 +4,8 @@ import axios from "axios";
 
 import Quiz from "@/src/components/Quiz";
 //DONE
+import styles from "../../../styles/content-page.module.css";
+
 export default function PastSimple() {
   const [verbs, setVerbs] = useState([]);
 
@@ -19,7 +21,7 @@ export default function PastSimple() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Past Simple</h2>
+        <h1>Past Simple</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         {" "}

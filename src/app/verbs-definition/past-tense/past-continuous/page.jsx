@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function PastContinuous() {
@@ -20,7 +22,7 @@ export default function PastContinuous() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Past Continuous</h2>
+        <h1>Past Continuous</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The past continuous tense is a way to talk about actions or events that

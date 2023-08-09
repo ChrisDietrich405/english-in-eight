@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Button from "@mui/material/Button";
 
+
 import styles from "../../styles/content-page.module.css";
 
 const SimplePresent = () => {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Present Tense Verbs</h2>
+        <h1>Present Tense Verbs</h1>
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
@@ -24,7 +25,7 @@ const SimplePresent = () => {
         >
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-simple"
+            href="/verbs-definition/present-tense/simple-present"
           >
             <Button variant="text">Present Simple</Button>
           </Link>

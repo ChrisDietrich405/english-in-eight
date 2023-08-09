@@ -1,12 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function FutureSimple() {
   return (
     <main>
       <div className={styles.page_title}>
-        <h2>Future Simple</h2>
+        <h1>Future Simple</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         {" "}

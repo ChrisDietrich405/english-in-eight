@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Quiz from "@/src/components/Quiz";
 import axios from "axios";
 
+import styles from "../../../styles/content-page.module.css";
+
 //DONE
 
 export default function PastPerfectContinuous() {
@@ -22,7 +24,7 @@ export default function PastPerfectContinuous() {
   return (
     <div>
       <div className={styles.page_title}>
-        <h2>Past Perfect Continuous</h2>
+        <h1>Past Perfect Continuous</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The past perfect continuous tense, also known as the past perfect

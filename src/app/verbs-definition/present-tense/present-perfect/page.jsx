@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Quiz from "../../../components/Quiz";
+import Quiz from "@/src/components/Quiz";
+
+import styles from "../../../styles/content-page.module.css";
 
 //DONE
 
@@ -23,7 +25,7 @@ export default function PresentPerfect() {
   return (
     <div className="page-body">
       <div className={styles.page_title}>
-        <h2>Present Perfect </h2>
+        <h1>Present Perfect </h1>
       </div>
       <div>
         <p className={styles.grammar_explanation_paragraph}>

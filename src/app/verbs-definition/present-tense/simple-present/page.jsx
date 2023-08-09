@@ -2,7 +2,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Quiz from "../../../components/Quiz";
+import Quiz from "@/src/components/Quiz";
+
+import styles from "../../../styles/content-page.module.css";
 
 export default function SimplePresent() {
   const [verbs, setVerbs] = useState([]);
@@ -23,7 +25,7 @@ export default function SimplePresent() {
   return (
     <div className="page-body">
       <div className={styles.page_title}>
-        <h2>Simple Present</h2>
+        <h1>Simple Present</h1>
       </div>
 
       <p className={styles.grammar_explanation_paragraph}>

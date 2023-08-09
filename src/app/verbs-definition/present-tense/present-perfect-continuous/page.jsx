@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Quiz from "../../../components/Quiz";
+import Quiz from "@/src/components/Quiz";
+
+import styles from "../../../styles/content-page.module.css"
 //DONE
 
 export default function PresentPerfectContinuous() {
@@ -22,7 +24,7 @@ export default function PresentPerfectContinuous() {
   return (
     <div className="page-body">
       <div className={styles.page_title}>
-        <h2>Present Perfect Continuous</h2>
+        <h1>Present Perfect Continuous</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The present perfect continuous expresses an action or situation that

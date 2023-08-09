@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Quiz from "../../../components/Quiz";
-import "../../../styles/components/tables.scss";
+import Quiz from "@/src/components/Quiz";
+import styles from "../../../styles/content-page.module.css";
 import axios from "axios";
 
 //DONE
@@ -27,15 +27,15 @@ export default function PresentContinuous() {
   return (
     <div className="page-body">
       <div className={styles.page_title}>
-        <h2>Present Continuous</h2>
+        <h1>Present Continuous</h1>
       </div>
       <div className="page-body">
         <p className={styles.grammar_explanation_paragraph}>
-          The present progressive tense is a verb form used to describe an
-          ongoing action, event that is happening at the current moment or even
-          a future event. It is formed by using the auxiliary verb "to be" in
-          the present tense, followed by the main verb with "-ing" added to the
-          end.
+          The present progressive or present continuous tense is a verb form
+          used to describe an ongoing action, event that is happening at the
+          current moment or even a future event. It is formed by using the
+          auxiliary verb "to be" in the present tense, followed by the main verb
+          with "-ing" added to the end.
         </p>
         <div className="table-container">
           <table className="table-body">
