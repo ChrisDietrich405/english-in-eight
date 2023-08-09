@@ -1,42 +1,40 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 export default function Expressions3() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Idiomatic Expressions List Three</h2>
+        <h1>Idiomatic Expressions List Three</h1>
       </div>
       <div className={styles.page_body}>
         <ul>
           <li>
-            <p>
-              <b>If it’s not broke don’t fix it</b> - when a situation is going
-              well it's a bad idea to interfere with it
-            </p>
+            <b>If it’s not broke don’t fix it</b> - when a situation is going
+            well it's a bad idea to interfere with it
             <br />
-            My refrigerator was making a very small noise, but it was working. I
-            was about to investigate with a screwdriver when my wife said leave
-            it alone. <b>If it’s not broke don’t fix it</b>.
+            <p>
+              My refrigerator was making a very small noise, but it was working.
+              I was about to investigate with a screwdriver when my wife said
+              leave it alone. <b>If it’s not broke don’t fix it</b>.
+            </p>
           </li>
 
           <li>
-            <p>
-              <b>Read someone’s mind</b> - to guess correctly what someone is
-              thinking
-            </p>
+            <b>Read someone’s mind</b> - to guess correctly what someone is
+            thinking
             <br />
-            When I told my wife that we should order Chinese she said “Wow!{" "}
-            <b>You read my mind</b>. That’s exactly what I wanted to have for
-            dinner.
+            <p>
+              When I told my wife that we should order Chinese she said “Wow!{" "}
+              <b>You read my mind</b>. That’s exactly what I wanted to have for
+              dinner.
+            </p>
           </li>
 
           <li>
-            <p>
-              <b>Spread the word</b> - to help a business by telling other
-              people about it
-            </p>{" "}
+            <b>Spread the word</b> - to help a business by telling other people
+            about it
             <br />
             <p>
               I ask my students to please <b>spread the word</b> about my
@@ -45,10 +43,8 @@ export default function Expressions3() {
           </li>
 
           <li>
-            <p>
-              <b>Measure twice cut once</b> - to double check your work before
-              making a final decision
-            </p>{" "}
+            <b>Measure twice cut once</b> - to double check your work before
+            making a final decision
             <br />
             <p>
               I have to go back to the store because I cut the wrong size. I
@@ -57,10 +53,8 @@ export default function Expressions3() {
           </li>
 
           <li>
-            <p>
-              <b>Binge watch</b> - watching a lot of episodes of a series in a
-              short period of time
-            </p>{" "}
+            <b>Binge watch</b> - watching a lot of episodes of a series in a
+            short period of time
             <br />
             <p>
               Over the weekend I <b>binge watched</b> Breaking Bad. I watched

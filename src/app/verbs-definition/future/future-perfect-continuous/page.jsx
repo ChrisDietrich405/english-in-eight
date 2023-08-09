@@ -5,10 +5,10 @@ import Quiz from "@/src/components/Quiz";
 export default function FuturePerfectContinuous() {
   return (
     <div>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Future Perfect Continuous</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The future perfect continuous tense is a verb form used to talk about
         actions or events that will have been happening continuously until a
         specific point in the future.

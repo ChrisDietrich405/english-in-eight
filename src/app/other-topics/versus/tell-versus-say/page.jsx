@@ -8,9 +8,9 @@ export default function SayVersusTell() {
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
-        <h2>Tell versus Say</h2>
+        <h1>Tell versus Say</h1>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The verbs tell and say have similar meanings, but are not exactly the
         same. Both of them mean "to communicate verbally with someone", but
         depending on context we use one or the other.

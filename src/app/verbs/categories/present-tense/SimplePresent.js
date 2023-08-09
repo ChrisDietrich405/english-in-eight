@@ -26,7 +26,7 @@ export default function SimplePresent() {
         <h2>Simple Present</h2>
       </div>
 
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The simple present is used to describe actions, events, or states that
         are habitual, repeated, or generally true. It is used when the action is
         happening in the present time or when something is a permanent fact. The

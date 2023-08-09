@@ -19,10 +19,10 @@ export default function PastContinuous() {
 
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Past Continuous</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The past continuous tense is a way to talk about actions or events that
         were happening in the past and were ongoing or in progress at a specific
         moment. It is formed by using the past tense of the verb "to be"
@@ -78,7 +78,7 @@ export default function PastContinuous() {
       </div>
 
       <div className="page-body">
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           We use the past continuous to describe something that was happening in
           the past when another other event interrupted it.
         </p>
@@ -98,7 +98,7 @@ export default function PastContinuous() {
             door.
           </li>
         </ul>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           When you talk about an exact time in the past, use the past continuous
           tense if the action started before that specific time and then
           continued afterward.

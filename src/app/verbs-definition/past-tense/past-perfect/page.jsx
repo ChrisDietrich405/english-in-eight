@@ -5,10 +5,10 @@ import Quiz from "@/src/components/Quiz";
 export default function PastPerfect() {
   return (
     <div className="page-body">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Past Perfect</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The past perfect is used to explain that one action in the past happened
         before another action in the past.
       </p>

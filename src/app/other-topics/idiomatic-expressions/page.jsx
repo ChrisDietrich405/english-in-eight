@@ -5,16 +5,16 @@ export default function ExpressionsDefinition() {
   return (
     <div className="expressions-container">
       <div className={styles.page_title}>
-        <h2>Idiomatic Expressions Definition</h2>
+        <h1>Idiomatic Expressions Definition</h1>
       </div>
       <div className="body">
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Idiomatic expressions are a type of informal language that have a
           meaning different from the meaning of the words in the expression.
         </p>
         <div className={styles.content_wrapper}>
           <Image
-            width={350}
+            width={375}
             height={200}
             src="/time-is-money.png"
             className="other-topics-image"

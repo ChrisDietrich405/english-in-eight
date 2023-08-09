@@ -7,9 +7,9 @@ export default function SpeakVersusTalk() {
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
-        <h2>Talk versus Speak</h2>
+        <h1>Talk versus Speak</h1>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The verbs talk and speak both have the meaning ‘say words’, but they are
         used differently depending on context. For example speak is more formal
         than talk. Talk, on the other hand focuses on a speaker and at least one
@@ -35,7 +35,7 @@ export default function SpeakVersusTalk() {
         <li>How many languages does Ahmad speak?</li>
       </ul>
 
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         Some phrasal verbs require either talk and speak. Talk and speak in
         these contexts are not interchangeable.
       </p>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Quiz from "../../../components/Quiz";
@@ -21,10 +21,10 @@ export default function PresentPerfectContinuous() {
   }, []);
   return (
     <div className="page-body">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Present Perfect Continuous</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The present perfect continuous expresses an action or situation that
         started in the past and is still continuing or has just recently stopped
         at the present moment. It is used to emphasize the length of time.

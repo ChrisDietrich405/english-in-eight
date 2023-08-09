@@ -11,7 +11,7 @@ export default function UncountableAndCountable() {
       </div>
       <div>
         <h4>Uncountable Nouns</h4>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Uncountable nouns are for nouns we don’t count. These nouns might be
           used to describe abstract ideas , e.g., anger. They can be used for
           physical objects that are too small , e.g., rice. Uncountable nouns
@@ -34,7 +34,7 @@ export default function UncountableAndCountable() {
           <li>sugar</li>
         </ul>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         We can’t use a/an with uncountable nouns. To explain a quantity of an
         uncountable noun, use an expression or word like <b>some</b>,{" "}
         <b>a lot of</b>, <b>much</b>, or else use an exact measurement like{" "}
@@ -62,7 +62,7 @@ export default function UncountableAndCountable() {
         <b>Careful!!!</b>
       </p>
 
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         There are some uncountable nouns that are countable in other languages
         but uncountable in English. Obviously they must follow the rules for
         uncountable nouns. Some common ones are: <b>advice</b>, <b>behavior</b>,{" "}
@@ -90,7 +90,7 @@ export default function UncountableAndCountable() {
 
       <div>
         <h4>Countable Nouns</h4>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They have
           a singular and a plural form. The singular form can use "a" or "an".
           If you need to ask about the quantity of a countable noun, you ask

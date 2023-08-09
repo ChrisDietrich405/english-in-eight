@@ -8,20 +8,20 @@ export default function SuperlativeAdjectives() {
   return (
     <div className="superlative-adjectives">
       <div className={styles.page_title}>
-        <h2>Superlative Adjectives</h2>
+        <h1>Superlative Adjectives</h1>
       </div>
       <div className={styles.page_body}>
-        <p className="grammar-explanation-paragraph">
+        <h3 className={styles.grammar_explanation_paragraph}>
           Superlative adjectives are used to compare three or more nouns,
           indicating the highest or most extreme degree of a particular quality.
           They are used when you want to highlight the greatest level of a
           certain characteristic within a group of items or individuals.
           Superlative adjectives typically end in "-est" for one-syllable
           adjectives or use "most" before the adjective for longer adjectives.
-        </p>
+        </h3>
       </div>
       <div className={styles.page_body}>
-        <h5>Adjectives with one syllable</h5>
+        <h4>Adjectives with one syllable</h4>
         <p>
           If an adjective has one syllable, we usually add 'est' to make the
           superlative form.

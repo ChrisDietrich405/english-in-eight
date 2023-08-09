@@ -5,10 +5,10 @@ import Quiz from "@/src/components/Quiz";
 export default function FutureSimple() {
   return (
     <main>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Future Simple</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         {" "}
         The simple future is a verb tense that's used to talk about things that
         haven't happened yet. For example, next year she <b>will change</b>{" "}

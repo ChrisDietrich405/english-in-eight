@@ -4,10 +4,10 @@ export default function PhrasalVerbs() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Phrasal Verbs</h2>
+        <h1>Phrasal Verbs</h1>
       </div>
       <div className={styles.page_body}>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Phrasal Verbs are expressions consisting of a verb and another
           element, typically either an adverb, as in <b>break down</b>, or a
           preposition, for example <b>see to</b>, or a combination of both, such
@@ -17,7 +17,7 @@ export default function PhrasalVerbs() {
       <div className={styles.content_wrapper}>
         <Image
           height={200}
-          width={300}
+          width={230}
           src="/break-down.jpg"
           alt="Speak versus talk"
         />

@@ -1,20 +1,18 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 export default function Expressions2() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Idiomatic Expressions List Two</h2>
+        <h1>Idiomatic Expressions List Two</h1>
       </div>
       <div className={styles.page_body}>
         <ul>
           <li>
-            <p>
-              <b>Hand me downs</b> - clothes that are received that were worn by
-              older relatives.
-            </p>
+            <b>Hand me downs</b> - clothes that are received that were worn by
+            older relatives.
             <br />
             <p>
               I wore a lot of my older brother’s <b>hand me downs.</b>
@@ -22,10 +20,8 @@ export default function Expressions2() {
           </li>
 
           <li>
-            <p>
-              <b>Second wind</b> - a new strength or energy to continue
-              something that is difficult.
-            </p>
+            <b>Second wind</b> - a new strength or energy to continue something
+            that is difficult.
             <br />
             <p>
               I was tired around 11pm, but got a <b>second wind</b> and finished
@@ -34,9 +30,7 @@ export default function Expressions2() {
           </li>
 
           <li>
-            <p>
-              <b>To wing it</b> - to not plan
-            </p>
+            <b>To wing it</b> - to not plan
             <br />
             <p>
               John didn’t have time to prepare for his interview so he needed{" "}
@@ -44,10 +38,8 @@ export default function Expressions2() {
             </p>
           </li>
           <li>
-            <p>
-              <b>Out of one's hands</b> - not being able to be controlled or
-              managed
-            </p>
+            <b>Out of one's hands</b> - not being able to be controlled or
+            managed
             <br />
             <p>
               The decision is <b>out of my hands.</b> I have no control in this
@@ -56,10 +48,8 @@ export default function Expressions2() {
           </li>
 
           <li>
-            <p>
-              <b>To backfire</b> - (of a plan or action) to have an opposite and
-              undesirable effect to what was intended.
-            </p>
+            <b>To backfire</b> - (of a plan or action) to have an opposite and
+            undesirable effect to what was intended.
             <br />
             <p>
               Her plans to make him jealous <b>backfired</b> on her when he

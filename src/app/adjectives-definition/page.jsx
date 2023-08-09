@@ -6,7 +6,7 @@ export default function NounDefinition() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Adjective Definition</h2>
+        <h1>Adjective Definition</h1>
       </div>
       <div className={styles.page_body}>
         <p
@@ -25,19 +25,9 @@ export default function NounDefinition() {
             <Image
               height={100}
               width={100}
-              src="/../../../person-nouns-definition.png"
+              src="/happy-child-adjectives.jpg"
               alt=""
             />
-
-            {/* <img src="../../../images/action-verbs-definition.png" alt="" /> */}
-          </div>
-          <p className={styles.picture_subtitle}>
-            <b>Strong</b> man
-          </p>
-        </div>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <img src="../../../images/state-verbs-definition.png" alt="" />
           </div>
           <p className={styles.picture_subtitle}>
             <b>Happy</b> child
@@ -45,10 +35,28 @@ export default function NounDefinition() {
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <img src="../../../images/occurence-verbs-definition.png" alt="" />
+            <Image
+              height={100}
+              width={100}
+              src="/small-dog-adjectives.jpg"
+              alt=""
+            />
           </div>
           <p className={styles.picture_subtitle}>
             <b>Small</b> dog
+          </p>
+        </div>
+        <div className={styles.definition_picture}>
+          <div className={styles.picture_wrapper}>
+            <Image
+              height={100}
+              width={100}
+              src="/strong-man-adjectives.jpg"
+              alt=""
+            />
+          </div>
+          <p className={styles.picture_subtitle}>
+            <b>Strong</b> man
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Quiz from "../../../components/Quiz";
-import styles from "../../styles/content-page.module.css"
+import styles from "../../styles/content-page.module.css";
 
 //Done
 
@@ -7,10 +7,10 @@ export default function NounModifiers() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Noun Modifiers</h2>
+        <h1>Noun Modifiers</h1>
       </div>
       <div className={styles.page_body}>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           We sometimes have two nouns together to demonstrate that one thing is
           a part of something else. In the following examples, the first noun is
           called a noun modifier.

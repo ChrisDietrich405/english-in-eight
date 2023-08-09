@@ -58,10 +58,9 @@
   flex-basis: 75%;
 }
 
-
-
 .page_title {
   margin-bottom: 25px;
+  color: blue;
 }
 
 .page_title h2 {

@@ -4,10 +4,10 @@ import Quiz from "@/src/components/Quiz";
 export default function FuturePerfect() {
   return (
     <main className="page-body">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Future Perfect</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The future perfect tense is used to demonstrate a future event that has
         a definitive end date.{" "}
       </p>

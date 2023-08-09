@@ -5,10 +5,10 @@ import Quiz from "@/src/components/Quiz";
 export default function FutureContinuous() {
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Future Continuous</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The future continuous refers to an ongoing action in the future.
       </p>
       <div className="table-container">

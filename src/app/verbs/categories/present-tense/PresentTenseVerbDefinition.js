@@ -7,7 +7,7 @@ export default function PresentTenseVerbDefinition() {
         <h2>Present Tense Verbs</h2>
       </div>
       <div className={styles.page_body}>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           The present tense verbs are the most widely used verbs in the English
           language. Think about all the times you talk to friends and family
           about what's happening today. Have you ever thought about how much you

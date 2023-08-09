@@ -1,15 +1,17 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../styles/content-page.module.css";
+
 //DONE
 
 export default function PossessivePronouns() {
   return (
     <>
-      <div className="page-title">
-        <h2>Possessive Pronouns</h2>
+      <div className={styles.page_title}>
+        <h1>Possessive Pronouns</h1>
       </div>
       <div className="page-body">
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Possessive pronouns are pronouns that are used to indicate ownership
           (possession) and replace a noun. The English possessive pronouns are
           mine, ours, yours, his, hers, theirs,

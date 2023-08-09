@@ -1,20 +1,18 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 export default function Expressions() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Idiomatic Expressions List One</h2>
+        <h1>Idiomatic Expressions List One</h1>
       </div>
       <div className={styles.page_body}>
         <ul>
           <li>
-            <p>
-              <b>Time is money</b> - time is a valuable resource, therefore it
-              is better to do things as quickly as possible
-            </p>
+            <b>Time is money</b> - time is a valuable resource, therefore it is
+            better to do things as quickly as possible
             <br />
             <p>
               Come on hurry up! <b>Time is money.</b>
@@ -22,9 +20,7 @@ export default function Expressions() {
           </li>
 
           <li>
-            <p>
-              <b>Foolproof</b> - incapable of going wrong or being misused
-            </p>
+            <b>Foolproof</b> - incapable of going wrong or being misused
             <br />
             <p>
               I have a <b>foolproof</b> security system. As dumb as I am even
@@ -33,10 +29,8 @@ export default function Expressions() {
           </li>
 
           <li>
-            <p>
-              <b>Out of nowhere</b> - appearing or happening suddenly and
-              unexpectedly
-            </p>
+            <b>Out of nowhere</b> - appearing or happening suddenly and
+            unexpectedly
             <br />
             <p>
               The car came <b>out of nowhere</b> and hit our van.
@@ -44,10 +38,8 @@ export default function Expressions() {
           </li>
 
           <li>
-            <p>
-              <b>To one up someone</b> - to make a point of outdoing,
-              outperforming, outclassing, etc., someone
-            </p>
+            <b>To one up someone</b> - to make a point of outdoing,
+            outperforming, outclassing, etc., someone
             <br />
             <p>
               I hate telling stories around Jack because he always tries{" "}
@@ -55,10 +47,8 @@ export default function Expressions() {
             </p>
           </li>
           <li>
-            <p>
-              <b>It's better to be safe than sorry</b> - it’s better to be
-              careful now so that problems do not occur later on
-            </p>
+            <b>It's better to be safe than sorry</b> - it’s better to be careful
+            now so that problems do not occur later on
             <br />
             <p>
               It's probably not necessary to check the figures again, but{" "}

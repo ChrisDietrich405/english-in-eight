@@ -9,15 +9,15 @@ export default function PossessiveAdjectives() {
     <div className={styles.page_body}>
       <div className="possessive-adjectives">
         <div className={styles.page_title}>
-          <h2>Possessive Adjectives</h2>
+          <h1>Possessive Adjectives</h1>
         </div>
         <div className={styles.page_body}>
-          <p className="grammar-explanation-paragraph">
+          <h3 className={styles.grammar_explanation_paragraph}>
             Possessive adjectives are words used to show ownership or
             possession. They are placed before a noun to indicate that the noun
             belongs to someone or something. Examples of possessive adjectives
             include "my," "your," "his," "her," "its," "our," and "their."
-          </p>
+          </h3>
         </div>
 
         <ul className="page-examples">

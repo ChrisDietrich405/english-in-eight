@@ -1,7 +1,7 @@
 import Quiz from "../../../components/Quiz";
 //DONE))
 
-import styles from "../../styles/content-page.module.css"
+import styles from "../../styles/content-page.module.css";
 
 export default function Collective() {
   return (
@@ -10,7 +10,7 @@ export default function Collective() {
         <h2>Collective Nouns</h2>
       </div>
       <div className={styles.page_body}>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           Collective nouns are nouns which represent a group or collection of
           people or things. They include words such as <b>audience</b>,{" "}
           <b>family</b>, <b>government</b>, <b>group</b>, and <b>team</b>. Most

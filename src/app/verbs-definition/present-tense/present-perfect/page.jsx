@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Quiz from "../../../components/Quiz";
@@ -22,11 +22,11 @@ export default function PresentPerfect() {
   }, []);
   return (
     <div className="page-body">
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Present Perfect </h2>
       </div>
       <div>
-        <p className="grammar-explanation-paragraph">
+        <p className={styles.grammar_explanation_paragraph}>
           The present perfect is used to connect the past with the present. It
           is often used to talk about actions or experiences that started in the
           past but have a connection to the current moment.

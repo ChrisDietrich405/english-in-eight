@@ -5,7 +5,7 @@ export default function PhrasalVerbs3() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Phrasal Verbs List Three</h2>
+        <h1>Phrasal Verbs List Three</h1>
       </div>
       <div className={styles.page_body}>
         <ul>

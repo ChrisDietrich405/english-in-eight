@@ -9,7 +9,7 @@ export default function RememberVersusRemind() {
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
-        <h2>Remind versus Remember</h2>
+        <h1>Remind versus Remember</h1>
       </div>
 
       <h3>Remind</h3>
@@ -51,7 +51,7 @@ export default function RememberVersusRemind() {
         encountered, or perceived.
       </p>
       <ul className="page-examples">
-        <li>I’ll always my trip to Jamaica.</li>
+        <li>I’ll always remember my trip to Jamaica.</li>
         <li>Suddenly I remembered I needed to pay that bill.</li>
       </ul>
 

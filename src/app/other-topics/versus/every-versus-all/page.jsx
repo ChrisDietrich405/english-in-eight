@@ -8,10 +8,10 @@ export default function AllVersusEvery() {
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
-        <h2>Every versus All</h2>
+        <h1>Every versus All</h1>
       </div>
 
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         We use both all and every to describe a total number of something. Every
         describes each member of a complete group. All describes a complete
         group.

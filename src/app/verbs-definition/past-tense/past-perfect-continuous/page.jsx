@@ -21,10 +21,10 @@ export default function PastPerfectContinuous() {
 
   return (
     <div>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Past Perfect Continuous</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         The past perfect continuous tense, also known as the past perfect
         progressive, refers to an action that was ongoing in the past and that
         was completed before another past action or point in time.

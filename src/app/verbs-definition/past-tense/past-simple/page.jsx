@@ -18,10 +18,10 @@ export default function PastSimple() {
 
   return (
     <>
-      <div className="page-title">
+      <div className={styles.page_title}>
         <h2>Past Simple</h2>
       </div>
-      <p className="grammar-explanation-paragraph">
+      <p className={styles.grammar_explanation_paragraph}>
         {" "}
         The simple past, also known as the past simple, is a verb tense used to
         describe actions, events, or states that occurred and were completed in
