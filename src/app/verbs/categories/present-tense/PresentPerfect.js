@@ -7,18 +7,18 @@ import Quiz from "../../../components/Quiz";
 export default function PresentPerfect() {
   const [verbs, setVerbs] = useState([]);
 
-  const handleGetVerbs = async () => {
-    const response = await axios.get("http://localhost:5000/present-perfect");
-    console.log(response.data);
-    setVerbs(response.data);
-  };
+  // const handleGetVerbs = async () => {
+  //   const response = await axios.get("http://localhost:5000/present-perfect");
+  //   console.log(response.data);
+  //   setVerbs(response.data);
+  // };
 
-  useEffect(() => {
-    async function fetchData() {
-      await handleGetVerbs();
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await handleGetVerbs();
+  //   }
+  //   fetchData();
+  // }, []);
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
@@ -32,7 +32,7 @@ export default function PresentPerfect() {
         </p>
       </div>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -53,7 +53,7 @@ export default function PresentPerfect() {
               );
             })}
           </tbody>
-        </table>
+        </table> */}
       </div>
       <h4>Actions began in the past and continuing into the present</h4>
       <ul className="page-examples">

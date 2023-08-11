@@ -32,7 +32,7 @@ export default function PastContinuous() {
         verb.
       </p>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -50,7 +50,7 @@ export default function PastContinuous() {
                 </tr>
               );
             })}
-            {/* <tr>
+           <tr>
               <td>I was swimming</td>
               <td>I was not swimming</td>
               <td>I wasn't swimming</td>
@@ -74,9 +74,9 @@ export default function PastContinuous() {
               <td>They were dancing</td>
               <td>They were not dancing</td>
               <td>They weren't dancing</td>
-            </tr> */}
+            </tr> 
           </tbody>
-        </table>
+        </table> */}
       </div>
 
       <div className="page-body">

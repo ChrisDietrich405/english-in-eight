@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
 import Quiz from "../../../components/Quiz";
 import "../../../styles/components/tables.scss";
-import axios from "axios";
+// import axios from "axios";
 
 //DONE
 
 export default function PresentContinuous() {
-  const [verbs, setVerbs] = useState([]);
+ const [verbs, setVerbs] = useState([]);
 
-  const handleGetVerbs = async () => {
-    const response = await axios.get(
-      "http://localhost:5000/present-progressive"
-    );
-    console.log(response.data.message);
-    setVerbs(response.data.message);
-  };
+  // const handleGetVerbs = async () => {
+  //   const response = await axios.get(
+  //     "http://localhost:5000/present-progressive"
+  //   );
+  //   console.log(response.data.message);
+  //   setVerbs(response.data.message);
+  // };
 
-  useEffect(() => {
-    async function fetchData() {
-      await handleGetVerbs();
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await handleGetVerbs();
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div className={styles.page_body}>
@@ -39,7 +39,7 @@ export default function PresentContinuous() {
           right now.
         </p>
         <div className="table-container">
-          <table className="table-body">
+          {/* <table className="table-body">
             <thead>
               <tr>
                 <th>Positive</th>
@@ -60,7 +60,7 @@ export default function PresentContinuous() {
                 );
               })}
             </tbody>
-          </table>
+          </table> */}
         </div>
         {/* <div className="table-container">
           <table className="table-body">

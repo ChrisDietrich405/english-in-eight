@@ -90,7 +90,7 @@ function DrawerAppBar(props) {
               </button>
             </div>
 
-            <Button>
+            {/* <Button>
               <NounsSubmenuDropdown
                 sx={{ color: "#fff", marginRight: "20px" }}
               />
@@ -103,7 +103,7 @@ function DrawerAppBar(props) {
             </Button>
             <Button>
               <OtherTopicsSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
+            </Button> */}
           </Box>
         </Toolbar>
       </AppBar>

@@ -33,7 +33,7 @@ export default function PastPerfectContinuous() {
       </p>
 
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -54,7 +54,7 @@ export default function PastPerfectContinuous() {
               );
             })}
 
-            {/* <tr>
+            <tr>
               <td>I had been swimming</td>
               <td>I had not been swimming</td>
               <td>I hadn't been swimming</td>
@@ -78,9 +78,9 @@ export default function PastPerfectContinuous() {
               <td>They had been dancing</td>
               <td>They had not been dancing</td>
               <td>They hadn't been dancing</td>
-            </tr> */}
+            </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
       <ul className="page-examples">
         <li>

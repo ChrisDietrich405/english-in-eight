@@ -9,18 +9,18 @@ import styles from "../../../styles/content-page.module.css";
 export default function SimplePresent() {
   const [verbs, setVerbs] = useState([]);
 
-  const handleGetVerbs = async () => {
-    const response = await axios.get("http://localhost:5000/simple-present");
-    console.log(response.data);
-    setVerbs(response.data);
-  };
+  // const handleGetVerbs = async () => {
+  //   const response = await axios.get("http://localhost:5000/simple-present");
+  //   console.log(response.data);
+  //   setVerbs(response.data);
+  // };
 
-  useEffect(() => {
-    async function fetchData() {
-      await handleGetVerbs();
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await handleGetVerbs();
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="page-body">
@@ -36,7 +36,7 @@ export default function SimplePresent() {
         an extra 's' if the subject is 'he', 'she', or 'it'.
       </p>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <tr>
             <th>Positive</th>
             <th>Negative</th>
@@ -51,7 +51,7 @@ export default function SimplePresent() {
               </tr>
             );
           })}
-        </table>
+        </table> */}
       </div>
 
       <div className="page-body">

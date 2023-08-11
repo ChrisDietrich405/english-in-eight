@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "../../styles/layout.module.css";
 
 const Layout = ({ children }) => {
-  console.log(children);
+
   return (
     <div>
       <section className={styles.main_container}>

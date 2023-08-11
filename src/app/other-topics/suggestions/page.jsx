@@ -1,12 +1,14 @@
 import React from "react";
+import { Container, Typography } from "@mui/material";
 
 const Suggestions = () => {
   return (
-    <main>
-      <h1>
+    <Container>
+      <Typography variant="h3">
         How can you be successful using this website and successful learning
         English?
-      </h1>
+      </Typography>
+      ;
       <ul>
         <li>
           Don't focus too much on the explanations, read them once and then go
@@ -41,7 +43,7 @@ const Suggestions = () => {
           you will see improvement, guaranteed.
         </li>
       </ul>
-    </main>
+    </Container>
   );
 };
 

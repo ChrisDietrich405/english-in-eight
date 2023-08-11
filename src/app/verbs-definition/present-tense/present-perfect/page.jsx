@@ -10,18 +10,18 @@ import styles from "../../../styles/content-page.module.css";
 export default function PresentPerfect() {
   const [verbs, setVerbs] = useState([]);
 
-  const handleGetVerbs = async () => {
-    const response = await axios.get("http://localhost:5000/present-perfect");
-    console.log(response.data);
-    setVerbs(response.data);
-  };
+  // const handleGetVerbs = async () => {
+  //   const response = await axios.get("http://localhost:5000/present-perfect");
+  //   console.log(response.data);
+  //   setVerbs(response.data);
+  // };
 
-  useEffect(() => {
-    async function fetchData() {
-      await handleGetVerbs();
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await handleGetVerbs();
+  //   }
+  //   fetchData();
+  // }, []);
   return (
     <div className="page-body">
       <div className={styles.page_title}>

@@ -94,10 +94,9 @@ export default function CustomizedMenus() {
   return (
     <div>
       <Button
-        id="demo-customized-button"
-        aria-controls={open ? "demo-customized-menu" : undefined}
+        aria-controls={open ? "demo-customized-menu" : ""}
         aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
+        aria-expanded={open ? "true" : ""}
         variant="contained"
         disableElevation
         onClick={handleClick}

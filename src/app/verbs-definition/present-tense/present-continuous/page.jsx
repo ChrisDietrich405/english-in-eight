@@ -9,20 +9,20 @@ import axios from "axios";
 export default function PresentContinuous() {
   const [verbs, setVerbs] = useState([]);
 
-  const handleGetVerbs = async () => {
-    const response = await axios.get(
-      "http://localhost:5000/present-progressive"
-    );
-    console.log(response.data.message);
-    setVerbs(response.data.message);
-  };
+  // const handleGetVerbs = async () => {
+  //   const response = await axios.get(
+  //     "http://localhost:5000/present-progressive"
+  //   );
+  //   console.log(response.data.message);
+  //   setVerbs(response.data.message);
+  // };
 
-  useEffect(() => {
-    async function fetchData() {
-      await handleGetVerbs();
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await handleGetVerbs();
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="page-body">
@@ -38,7 +38,7 @@ export default function PresentContinuous() {
           with "-ing" added to the end.
         </p>
         <div className="table-container">
-          <table className="table-body">
+          {/* <table className="table-body">
             <thead>
               <tr>
                 <th>Positive</th>
@@ -59,7 +59,7 @@ export default function PresentContinuous() {
                 );
               })}
             </tbody>
-          </table>
+          </table> */}
         </div>
 
         <h4>Actions currently happening</h4>

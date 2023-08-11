@@ -25,11 +25,8 @@ import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
 import styles from "./styles.module.css";
 
-
-
 const drawerWidth = 240;
 const navItems = [
-  
   <NounsSubmenuDropdown />,
   <VerbsSubmenuDropdown />,
   <AdjectivesSubmenuDropdown />,
@@ -97,20 +94,20 @@ function DrawerAppBar(props) {
               </button>
             </div>
 
-            <Button>
+            <div className={styles.div_btn}>
               <NounsSubmenuDropdown
                 sx={{ color: "#fff", marginRight: "20px" }}
               />
-            </Button>
-            <Button>
+            </div>
+            <div className={styles.div_btn}>
               <VerbsSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
-            <Button>
+            </div>
+            <div className={styles.div_btn}>
               <AdjectivesSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
-            <Button>
+            </div>
+            <div className={styles.div_btn}>
               <OtherTopicsSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
+            </div>
           </Box>
         </Toolbar>
       </AppBar>

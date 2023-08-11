@@ -14,7 +14,7 @@ export default function Footer() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("hi");
+    
 
     var templateParams = {
       email,

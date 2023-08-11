@@ -1,24 +1,34 @@
-// "use client";
-// import { useEffect, useState } from "react";
-import { getServerSideProps } from "@/src/app/api/simple_past";
-
-// import axios from "axios";
+"use client";
+import { useEffect, useState } from "react";
+// import { getServerSideProps } from "@/src/app/api/simple-past";
 
 import Quiz from "@/src/components/Quiz";
 
-//DONE
 import styles from "../../../styles/content-page.module.css";
 
+const getData = () => {
+  const res = fetch("http:localhost:3000/api/simple-past");
+  console.log(res);
+  // return res;
+  //  if (!res.ok) {
+
+  //    throw new Error("Failed to fetch data");
+  //  }
+
+  //  return res.json();
+};
+
 export default function PastSimple() {
-  // const data = getServerSideProps();
+  const data = getData();
+  console.log("hello");
 
-  // const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
-  // useEffect(() => {
-  //   setItems(data);
-  //   console.log(data);
-  // }, [data]);
-  // const [verbs, setVerbs] = useState([]);
+  useEffect(() => {
+    setItems(data);
+    console.log(data);
+  }, [data]);
+  const [verbs, setVerbs] = useState([]);
 
   return (
     <>
@@ -35,7 +45,7 @@ export default function PastSimple() {
       </p>
 
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -54,7 +64,7 @@ export default function PastSimple() {
               );
             })}
           </tbody>
-        </table>
+        </table> */}
       </div>
       <div className="page-body">
         <p>

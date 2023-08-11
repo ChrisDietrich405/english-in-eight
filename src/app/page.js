@@ -25,7 +25,7 @@ import { useEffect } from "react";
 export default function Home() {
   // const getInvoices = async function (id) {
   //   const response = await api.get(`/cards`);
-  //   console.log("hi");
+
   // };
 
   // useEffect(() => {
