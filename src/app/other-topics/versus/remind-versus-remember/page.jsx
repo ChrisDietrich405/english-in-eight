@@ -14,10 +14,9 @@ export default function RememberVersusRemind() {
 
       <h3>Remind</h3>
       <p>
-        To remind means to cause someone to remember something or to bring a
-        memory or a specific piece of information back to their attention. It
-        involves prompting or recalling an event, task, or piece of knowledge
-        that has previously been discussed or encountered.
+        If a person reminds you of someone, they have you think of that person
+        or they resemble that person. If a thing reminds you of something, they
+        have you think of that thing or they resemble that thing.
       </p>
       <ul className="page-examples">
         <li>
@@ -30,9 +29,10 @@ export default function RememberVersusRemind() {
         </li>
       </ul>
       <p>
-        If we remind another person about something or to do something, we help
+        If we remind someone to do something or about something, we help
         them remember it or help them not to forget it:
       </p>
+
       <ul className="page-examples">
         <li>
           Remind me to take out the trash tonight. If you don't I’ll probably

@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
+import { FaTreeCity } from "react-icons/fa6";
+import { FaRunning, FaAngry } from "react-icons/fa";
+
 import {
   Grid,
   Card,
@@ -32,10 +35,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Contact Us | Dietrich Land Care</title>
+        <title>Home | Dietrich Land Care</title>
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         <meta
           name="description"
-          content="Get in touch with us - Contact our team for inquiries, support, or collaborations. Reach out via email or phone to connect with our experts and discuss your needs."
+          content="Dietrich Land Care is a landscaping company specializing in brush / lot clearing & stump grinding, excavation & grading services, seeding & sod services, general maintenance services, garden bed installations & maintenance, landscape renovations & features, patios, retainings walls, turf, fence installation, stump removal, snow removal, regrades, mulch installation"
         />
 
         <meta property="og:type" content="website" />
@@ -43,16 +47,26 @@ export default function Home() {
         <meta property="og:title" content="Dietrich Land Care" />
         <meta
           property="og:description"
-          content="Get in touch with us - Contact our team for inquiries, support, or collaborations. Reach out via email or phone to connect with our experts and discuss your needs."
+          content="Dietrich Land Care is a landscaping company specializing in brush / lot clearing & stump grinding, excavation & grading services, seeding & sod services, general maintenance services, garden bed installations & maintenance, landscape renovations & features, patios, retainings walls, turf, fence installation, stump removal, snow removal, regrades, mulch installation"
         />
         <meta
           property="og:image"
           content="https://dietrichlandcare.com/images/logo.jpg"
         />
 
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" href="/logo.svg" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/logo.svg" sizes="16x16" />
+        {/* <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        /> */}
       </Head>
       <main className={styles.home} styles={{ marginTop: "300px" }}>
         <div className={styles.banner}>
@@ -102,32 +116,24 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>Nouns</h3>
+                      <h4 className={styles.content_definition}>
+                        People, Places, Things
+                      </h4>
+                      <p>Woman, City, Car</p>
+                      <div className={styles.react_icon_container}>
+                        <FaTreeCity size="5em" />
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
               <Grid
@@ -141,32 +147,24 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>Verbs</h3>
+                      <h4 className={styles.content_definition}>
+                        Action words
+                      </h4>
+                      <p>Run, Fight, Sing</p>
+                      <div className={styles.react_icon_container}>
+                        <FaRunning size="5em" />
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
               <Grid
@@ -180,32 +178,26 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>
+                        Adjectives
+                      </h3>
+                      <h4 className={styles.content_definition}>
+                        Describe Nouns
+                      </h4>
+                      <p>Strong, Angry, Funny</p>
+                      <div className={styles.react_icon_container}>
+                        <FaAngry size="5em" />
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
             </Grid>
@@ -221,32 +213,26 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>
+                        Idiomatic Expressions
+                      </h3>
+                      <h4 className={styles.content_definition}>
+                        Informal Expressions
+                      </h4>
+                      <p>Foodproof, Second Wind</p>
+                      <div className={styles.react_icon_container}>
+                        {/* <FaTreeCity size="2em" /> */}
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
               <Grid
@@ -260,32 +246,26 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>
+                        Phrasal Verbs
+                      </h3>
+                      <h4 className={styles.content_definition}>
+                        Verb/Preposition Combinations
+                      </h4>
+                      <p>Get up, Break down, Speak out</p>
+                      <div className={styles.react_icon_container}>
+                        {/* <FaTreeCity size="2em" /> */}
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
               <Grid
@@ -299,32 +279,26 @@ export default function Home() {
               >
                 <Card
                   sx={{
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
+                  <div className={styles.link_cards}>
+                    <Link href="/nouns-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>
+                        Versus
+                      </h3>
+                      <h4 className={styles.content_definition}>
+                        Similar But Different Verbs
+                      </h4>
+                      <p>Speak versus Talk</p>
+                      <div className={styles.react_icon_container}>
+                        {/* <FaTreeCity size="2em" /> */}
+                      </div>
+                    </Link>
+                  </div>
                 </Card>
               </Grid>
             </Grid>

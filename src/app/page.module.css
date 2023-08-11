@@ -30,3 +30,40 @@
 .intro_content p {
   margin: 0;
 }
+
+.link_cards {
+  color: black !important;
+  line-height: 20px;
+  height: 15rem;
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.content_title_second_row {
+  color: var(--secondary);
+  margin: 0.5rem 0;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+}
+
+.content_definition {
+  color: var(--primary);
+}
+
+.react_icon_container {
+  padding: 10px;
+  
+  color: #fff;
+  background-color: #0d6efd;
+  border-radius: 8px;
+}

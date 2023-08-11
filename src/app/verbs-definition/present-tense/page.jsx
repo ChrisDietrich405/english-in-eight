@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Button from "@mui/material/Button";
 
-
 import styles from "../../styles/content-page.module.css";
 
 const SimplePresent = () => {
@@ -31,19 +30,19 @@ const SimplePresent = () => {
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-continuous"
+            href="/verbs-definition/present-tense/present-continuous"
           >
             <Button variant="text">Present Continuous</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect"
+            href="/verbs-definition/present-tense/present-perfect"
           >
             <Button variant="text">Present Perfect</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/future-verb-tenses/future-perfect-continuous"
+            href="/verbs-definition/present-tense/present-perfect-continuous"
           >
             <Button variant="text">Present Perfect Continuous</Button>
           </Link>

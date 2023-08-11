@@ -1,22 +1,24 @@
-"use client";
-import { useEffect, useState } from "react";
-import axios from "axios";
+// "use client";
+// import { useEffect, useState } from "react";
+import { getServerSideProps } from "@/src/app/api/simple_past";
+
+// import axios from "axios";
 
 import Quiz from "@/src/components/Quiz";
+
 //DONE
 import styles from "../../../styles/content-page.module.css";
 
 export default function PastSimple() {
-  const [verbs, setVerbs] = useState([]);
+  // const data = getServerSideProps();
 
-  const fetchVerbs = async () => {
-    const response = await axios.get("http://localhost:5000/simple-past");
-    setVerbs(response.data);
-  };
+  // const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    fetchVerbs();
-  }, []);
+  // useEffect(() => {
+  //   setItems(data);
+  //   console.log(data);
+  // }, [data]);
+  // const [verbs, setVerbs] = useState([]);
 
   return (
     <>
@@ -42,12 +44,12 @@ export default function PastSimple() {
             </tr>
           </thead>
           <tbody>
-            {verbs.map((verb) => {
+            {items.map((item) => {
               return (
                 <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
+                  <td>{item.positive}</td>
+                  <td>{item.negative}</td>
+                  <td>{item.negativeShortForm}</td>
                 </tr>
               );
             })}

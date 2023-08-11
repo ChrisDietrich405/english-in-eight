@@ -8,16 +8,15 @@ export default function VersusDefinition() {
       </div>
       <div className={styles.page_body}>
         <h3 className={styles.grammar_explanation_paragraph}>
-          In this section let's compare different topics in order to clear up
-          any confusion. For example many students don't really understand the
+          In this section let's compare different verbs in order to clear up any
+          confusion. For example many students don't really understand the
           difference between the verbs talk and say or the verbs remember and
           remind.
         </h3>
       </div>
 
-      <div className={styles.content_wrapper} style={{ display: "flex"}}>
+      <div className={styles.content_wrapper} style={{ display: "flex" }}>
         <Image
-          
           height={300}
           width={300}
           src="/remember-versus-remind.jpg"

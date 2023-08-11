@@ -17,7 +17,7 @@ export default function PhrasalVerbs() {
       <div className={styles.content_wrapper}>
         <Image
           height={200}
-          width={230}
+          width={220}
           src="/break-down.jpg"
           alt="Speak versus talk"
         />
