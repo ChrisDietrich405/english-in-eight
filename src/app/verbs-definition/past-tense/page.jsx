@@ -7,7 +7,7 @@ const Future = () => {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Past Tense Verbs</h2>
+        <h1>Past Tense Verbs</h1>
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>

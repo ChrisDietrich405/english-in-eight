@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../styles/content-page.module.css";
+import styles from "../../styles/content-page.module.css";
 
 //find three new verbs
 
@@ -8,7 +8,7 @@ export default function VerbsDef() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Verbs Definition</h2>
+        <h1>Verbs Definition</h1>
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>

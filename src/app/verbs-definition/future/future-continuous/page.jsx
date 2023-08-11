@@ -1,5 +1,7 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css"
+
 //Done
 
 export default function FutureContinuous() {

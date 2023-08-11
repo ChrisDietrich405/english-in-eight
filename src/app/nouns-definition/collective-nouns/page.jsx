@@ -7,7 +7,7 @@ export default function Collective() {
   return (
     <>
       <div className={styles.page_title}>
-        <h2>Collective Nouns</h2>
+        <h1>Collective Nouns</h1>
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
@@ -15,7 +15,10 @@ export default function Collective() {
           people or things. They include words such as <b>audience</b>,{" "}
           <b>family</b>, <b>government</b>, <b>group</b>, and <b>team</b>. Most
           collective nouns are treated as a singular entity, using the singular
-          verb form.
+          verb form. Because collective nouns include multiple "members" inside
+          of it you may think you would use the "they" form of the verb, but you
+          don't. For example, you don't say the group are happy, you say the
+          group is happy.
         </p>
       </div>
       <div className="page-examples">

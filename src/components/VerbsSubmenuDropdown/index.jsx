@@ -11,6 +11,8 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+import DropdownPOC from "../DropdownPOC";
+
 import styles from "../Navbar/styles.module.css";
 
 const StyledMenu = styled((props) => (
@@ -57,6 +59,25 @@ const StyledMenu = styled((props) => (
 }));
 
 export default function CustomizedMenus() {
+  const dropdownProps = [
+    {
+      title: "Verb Definition",
+      link: "/verbs-definition",
+    },
+    {
+      title: "Present Tense Verbs",
+      link: "/verbs-definition/present-tense",
+    },
+    {
+      title: "Past Tense Verbs",
+      link: "/verbs-definition/past-tense",
+    },
+    {
+      title: "Future Tense Verbs",
+      link: "/verbs-definition/future",
+    },
+  ];
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -89,7 +110,8 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <DropdownPOC dropdownProps={dropdownProps} />
+        {/* <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/verbs-definition">
             {" "}
             Verb Definition
@@ -111,7 +133,7 @@ export default function CustomizedMenus() {
           <Link className={styles.link} href="/verbs-definition/future">
             Future Tense Verbs
           </Link>
-        </MenuItem>
+        </MenuItem> */}
       </StyledMenu>
     </div>
   );

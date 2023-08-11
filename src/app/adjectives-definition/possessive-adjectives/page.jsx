@@ -25,7 +25,7 @@ export default function PossessiveAdjectives() {
             I have a car. This is <b>my</b> car.
           </li>
           <li>
-            You have a dog. That is <b>your</b>dog
+            You have a dog. That is <b>your</b> dog
           </li>
           <li>
             He has a car. It is <b>his</b> car

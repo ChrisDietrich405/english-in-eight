@@ -227,9 +227,14 @@ export default function Home() {
                       <h4 className={styles.content_definition}>
                         Informal Expressions
                       </h4>
-                      <p>Foodproof, Second Wind</p>
+                      <p>Time is money, Second wind</p>
                       <div className={styles.react_icon_container}>
-                        {/* <FaTreeCity size="2em" /> */}
+                        <Image
+                          alt=""
+                          width={200}
+                          height={100}
+                          src="/time-is-money.jpeg"
+                        />
                       </div>
                     </Link>
                   </div>

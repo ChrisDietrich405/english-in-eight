@@ -11,6 +11,8 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+import DropdownPOC from "../DropdownPOC";
+
 import styles from "../Navbar/styles.module.css";
 
 const StyledMenu = styled((props) => (
@@ -57,6 +59,29 @@ const StyledMenu = styled((props) => (
 }));
 
 export default function CustomizedMenus() {
+  const dropdownProps = [
+    {
+      title: "Noun Definition",
+      link: "/nouns-definition",
+    },
+    {
+      title: " Uncountable & Countable Nouns",
+      link: "/nouns-definition/uncountable-countable-nouns",
+    },
+    {
+      title: " Collective Nouns",
+      link: "/nouns-definition/collective-nouns",
+    },
+    {
+      title: "Noun Modifiers",
+      link: "/nouns-definition/noun-modifiers",
+    },
+    {
+      title: " Possessive Pronouns",
+      link: "/nouns-definition/possessive-pronouns",
+    },
+  ];
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -89,7 +114,18 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <DropdownPOC dropdownProps={dropdownProps} />
+        {/* {dropdownProps.map((dropdownItem, index) => {
+          return (
+            <MenuItem key={index} onClick={handleClose} disableRipple>
+              <Link className={styles.link} href={dropdownItem.link}>
+                {dropdownItem.title}
+              </Link>
+            </MenuItem>
+          );
+        })} */}
+
+        {/* <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/nouns-definition">
             Noun Definition
           </Link>
@@ -123,7 +159,7 @@ export default function CustomizedMenus() {
           >
             Possessive Pronouns
           </Link>
-        </MenuItem>
+        </MenuItem> */}
       </StyledMenu>
     </div>
   );

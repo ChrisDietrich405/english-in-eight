@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "../../styles/layout.module.css";
 
 const Layout = ({ children }) => {
+  console.log(children);
   return (
     <div>
       <section className={styles.main_container}>
@@ -12,33 +13,19 @@ const Layout = ({ children }) => {
             <li>
               <Link
                 className={styles.link}
-                href="/verbs-definition/future/future-simple"
+                href="/verbs-definition/present-tense"
               >
-                Future Simple
+                Present Tense
               </Link>
             </li>
             <li>
-              <Link
-                className={styles.link}
-                href="/verbs-definition/future/future-continuous"
-              >
-                Future Continuous
+              <Link className={styles.link} href="/verbs-definition/past-tense">
+                Past Tense
               </Link>
             </li>
             <li>
-              <Link
-                className={styles.link}
-                href="/verbs-definition/future/future-perfect"
-              >
-                Future Perfect
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/verbs-definition/future/future-perfect-continuous"
-              >
-                Future Perfect Continuous
+              <Link className={styles.link} href="/verbs-definition/future">
+                Future Tense
               </Link>
             </li>
           </ul>

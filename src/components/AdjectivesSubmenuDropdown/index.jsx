@@ -11,6 +11,8 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+import DropdownPOC from "../DropdownPOC";
+
 import styles from "../Navbar/styles.module.css";
 
 const StyledMenu = styled((props) => (
@@ -57,6 +59,28 @@ const StyledMenu = styled((props) => (
 }));
 
 export default function CustomizedMenus() {
+  const dropdownProps = [
+    {
+      title: "Adjective Definition",
+      link: "/adjectives-definition",
+    },
+    {
+      title: "Possessive Adjectives",
+      link: "/adjectives-definition/possessive-adjectives",
+    },
+    {
+      title: " Collective Nouns",
+      link: "/nouns-definition/collective-nouns",
+    },
+    {
+      title: "Comparative Adjectives",
+      link: "/adjectives-definition/comparative-adjectives",
+    },
+    {
+      title: "Superlative Adjectives",
+      link: "/adjectives-definition/superlative-adjectives",
+    },
+  ];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -89,7 +113,8 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <DropdownPOC dropdownProps={dropdownProps} />
+        {/* <MenuItem onClick={handleClose} disableRipple>
           <Link className={styles.link} href="/adjectives-definition">
             Adjective Definition
           </Link>
@@ -118,7 +143,7 @@ export default function CustomizedMenus() {
           >
             Superlative Adjectives
           </Link>
-        </MenuItem>
+        </MenuItem> */}
       </StyledMenu>
     </div>
   );

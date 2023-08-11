@@ -11,8 +11,6 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import DropdownPOC from "../DropdownPOC";
-
 import styles from "../Navbar/styles.module.css";
 
 const StyledMenu = styled((props) => (
@@ -58,25 +56,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus() {
-  const dropdownProps = [
-    {
-      title: "Idiomatic Expressions",
-      link: "/other-topics/idiomatic-expressions",
-    },
-    {
-      title: "Phrasal Verbs",
-      link: "/other-topics/phrasal-verbs",
-    },
-    {
-      title: "Versus",
-      link: "/other-topics/versus",
-    },
-    {
-      title: "How to use the website",
-      link: "/other-topics/suggestions",
-    },
-  ];
+export default function CustomizedMenus({ dropdownProps }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -88,48 +68,15 @@ export default function CustomizedMenus() {
 
   return (
     <div>
-      <Button
-        id="demo-customized-button"
-        aria-controls={open ? "demo-customized-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        variant="contained"
-        disableElevation
-        onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
-      >
-        Other Topics
-      </Button>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <DropdownPOC dropdownProps={dropdownProps} />
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/other-topics/idiomatic-expressions"
-          >
-            Idiomatic Expressions
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/other-topics/phrasal-verbs">
-            Phrasal Verbs
-          </Link>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/other-topics/versus">
-            Versus
-          </Link>
-        </MenuItem> */}
-      </StyledMenu>
+      {dropdownProps.map((dropdownItem, index) => {
+        return (
+          <MenuItem key={index} onClick={handleClose} disableRipple>
+            <Link className={styles.link} href={dropdownItem.link}>
+              {dropdownItem.title}
+            </Link>
+          </MenuItem>
+        );
+      })}
     </div>
   );
 }
