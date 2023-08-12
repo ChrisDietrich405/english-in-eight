@@ -88,10 +88,8 @@ function DrawerAppBar(props) {
             />
           </div>
           <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <div className={styles.btn_container}>
-              <button className={styles.home_btn}>
-                <Link href="/">HOME</Link>
-              </button>
+            <div className={styles.home_btn}>
+              <Link href="/">HOME</Link>
             </div>
 
             <div className={styles.div_btn}>

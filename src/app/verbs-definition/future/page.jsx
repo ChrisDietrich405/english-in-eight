@@ -20,7 +20,7 @@ const Future = () => {
           style={{ display: "flex", justifyContent: "space-around" }}
         >
           <Link
-            className={`${styles.link} btn btn-primary`}
+            className={styles.link} 
             href="/verbs-definition/future/future-simple"
           >
             <Button variant="text">Future Simple</Button>

@@ -4,7 +4,32 @@ import styles from "../../../styles/content-page.module.css";
 
 //DONE
 
-export default function FutureSimple() {
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/future-simple-go"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getDataGo = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
+};
+
+const baseUrl2 = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint2 = "/api/future-simple-will"; // Replace with the correct endpoint
+
+const fullUrl2 = baseUrl2 + endpoint2;
+
+const getDataWill = async () => {
+  const res = await fetch(fullUrl2);
+  const results = await res.json();
+  return results;
+};
+
+export default async function FutureSimple() {
+  const dataGo = await getDataGo();
+  const dataWill = await getDataWill();
+
   return (
     <main>
       <div className={styles.page_title}>
@@ -19,81 +44,54 @@ export default function FutureSimple() {
         future. You can use <b>will</b> or <b>going to</b> depending on the
         situation.
       </p>
+      <p>The first way to express the simple future</p>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {dataGo.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
-      <div className="table-container">
-        {/* <table className="table-body">
+      <div className="page-body">
+        <p>The second way to express the simple future</p>
+        <table className={styles.table}>
           <thead>
             <tr>
               <th>Positive</th>
+              <th>Positive short form</th>
               <th>Negative</th>
               <th>Negative short form</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>I will walk</td>
-              <td>I will not walk</td>
-              <td>I won't walk</td>
-            </tr>
-            <tr>
-              <td>You will kiss</td>
-              <td>You will not kiss</td>
-              <td>You won't kiss</td>
-            </tr>
-            <tr>
-              <td>She, he, it will work</td>
-              <td>She, he, it will not work</td>
-              <td>She, he, it won't work</td>
-            </tr>
-            <tr>
-              <td>We will talk</td>
-              <td>We will not talk</td>
-              <td>We won't talk</td>
-            </tr>
-            <tr>
-              <td>They will greet</td>
-              <td>They will not greet</td>
-              <td>They won't greet</td>
-            </tr>
+            {dataWill.map((verb) => {
+              return (
+                <tr>
+                  <td>{verb.positive}</td>
+                  <td>{verb.positiveShortForm}</td>
+                  <td>{verb.negative}</td>
+                  <td>{verb.negativeShortForm}</td>
+                </tr>
+              );
+            })}
           </tbody>
-        </table> */}
-      </div>
-      <div className="page-body">
-        <p>The second way to express the simple future</p>
-        <div className="table-container">
-          <table className="table-body">
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-            <tr>
-              <td>I am going to walk</td>
-              <td>I'm going to walk</td>
-              <td>I'm not going to walk</td>
-            </tr>
-            <tr>
-              <td>You are going to kiss</td>
-              <td>You're going to kiss</td>
-              <td>You're not going to kiss</td>
-            </tr>
-            <tr>
-              <td>She, he, it is going to work</td>
-              <td>She, he, it's going to work</td>
-              <td>She, he, it's not going to work</td>
-            </tr>
-            <tr>
-              <td>We are going to talk</td>
-              <td>We're going to talk</td>
-              <td>We're not going to talk</td>
-            </tr>
-            <tr>
-              <td>They are going to greet</td>
-              <td>They're going to greet</td>
-              <td>They're not going to greet</td>
-            </tr>
-          </table>
-        </div>
+        </table>
 
         <p>
           {" "}
@@ -103,7 +101,8 @@ export default function FutureSimple() {
         <ul className="page-examples">
           <li>We're going to go to the movies this weekend. (previous plan)</li>
           <li>
-            The Orioles are winning 8-2. They're going to win. (likely to happen)
+            The Orioles are winning 8-2. They're going to win. (likely to
+            happen)
           </li>
         </ul>
         <p>

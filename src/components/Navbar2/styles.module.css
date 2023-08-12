@@ -21,7 +21,17 @@
   align-items: center;
 }
 
-/* .div_btn {
-  padding: 20px;
-  background: purple; 
-} */
+.home_btn {
+  display: flex;
+  align-items: center;
+}
+
+.home_btn:hover {
+  color: #fff !important;
+  background: var(--primary);
+}
+
+.home_btn:active {
+  color: #fff;
+  background: var(--primary);
+}

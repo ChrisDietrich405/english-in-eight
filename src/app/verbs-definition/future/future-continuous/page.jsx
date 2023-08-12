@@ -1,10 +1,23 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 //Done
 
-export default function FutureContinuous() {
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
+};
+
+export default async function FutureContinuous() {
+  const data = await getData();
+
   return (
     <>
       <div className={styles.page_title}>
@@ -13,35 +26,29 @@ export default function FutureContinuous() {
       <p className={styles.grammar_explanation_paragraph}>
         The future continuous refers to an ongoing action in the future.
       </p>
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>I will be swimming</td>
-              <td>I will not be swimming</td>
-              <td>I won't be swimming</td>
-            </tr>
-            <tr>
-              <td>You will be fighting</td>
-              <td>You will not be fighting</td>
-              <td>You won't be fighting</td>
-            </tr>
-            <tr>
-              <td>She, he, it will be working</td>
-              <td>She, he, it will not be working</td>
-              <td>She, he, it won't be working</td>
-            </tr>
-            <tr></tr>
-          </tbody>
-        </table> */}
-      </div>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
       <div className="page-body">
         <p>Examples</p>
