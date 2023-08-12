@@ -11,5 +11,5 @@ export async function GET() {
   const [rows] = await connection.execute("SELECT * FROM simple_past");
 
   connection.end();
-  return NextResponse.json({ rows });
+  return NextResponse.json(rows);
 }

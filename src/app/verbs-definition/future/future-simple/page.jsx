@@ -21,7 +21,7 @@ export default function FutureSimple() {
       </p>
 
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -56,7 +56,7 @@ export default function FutureSimple() {
               <td>They won't greet</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
       <div className="page-body">
         <p>The second way to express the simple future</p>

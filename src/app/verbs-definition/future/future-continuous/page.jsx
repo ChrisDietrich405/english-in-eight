@@ -14,7 +14,7 @@ export default function FutureContinuous() {
         The future continuous refers to an ongoing action in the future.
       </p>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -40,7 +40,7 @@ export default function FutureContinuous() {
             </tr>
             <tr></tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
 
       <div className="page-body">

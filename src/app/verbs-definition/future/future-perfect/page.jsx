@@ -14,7 +14,7 @@ export default function FuturePerfect() {
         a definitive end date.{" "}
       </p>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -49,7 +49,7 @@ export default function FuturePerfect() {
               <td>They won't danced</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
       <p>
         The future perfect is used with a future time word, (and often with

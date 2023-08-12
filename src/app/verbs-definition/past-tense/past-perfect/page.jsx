@@ -15,7 +15,7 @@ export default function PastPerfect() {
         before another action in the past.
       </p>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -50,7 +50,7 @@ export default function PastPerfect() {
               <td>They hadn't danced</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
 
       <ul className="page-examples">

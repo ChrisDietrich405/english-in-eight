@@ -38,13 +38,13 @@ const Future = () => {
           </Link>
           <Link
             className={styles.link}
-            href="/verbs-definition/past-tense/past-simple"
+            href="/verbs-definition/past-tense/past-perfect"
           >
             <Button variant="text">Past Perfect</Button>
           </Link>
           <Link
             className={styles.link}
-            href="/verbs-definition/past-tense/past-simple"
+            href="/verbs-definition/past-tense/past-perfect-continuous"
           >
             <Button variant="text">Past Perfect Continuous</Button>
           </Link>

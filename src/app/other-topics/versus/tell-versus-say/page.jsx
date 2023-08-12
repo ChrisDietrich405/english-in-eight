@@ -21,7 +21,7 @@ export default function SayVersusTell() {
         <li>You say something</li>
       </ul>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <tr>
             <th>You tell somebody something</th>
             <th>You say something</th>
@@ -38,7 +38,7 @@ export default function SayVersusTell() {
             <td>She told her brother.</td>
             <td>She said something to her brother</td>
           </tr>
-        </table>
+        </table> */}
       </div>
       <p>
         Tell is normally followed by a <b>personal object</b>. We usually use

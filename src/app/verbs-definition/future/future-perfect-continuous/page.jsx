@@ -15,7 +15,7 @@ export default function FuturePerfectContinuous() {
       </p>
 
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -50,7 +50,7 @@ export default function FuturePerfectContinuous() {
               <td>They haven't been dancing</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
 
       <Quiz

@@ -35,7 +35,7 @@ export default function PresentPerfect() {
         </p>
       </div>
       <div className="table-container">
-        <table className="table-body">
+        {/* <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -56,7 +56,7 @@ export default function PresentPerfect() {
               );
             })}
           </tbody>
-        </table>
+        </table> */}
       </div>
       <h4>Actions began in the past and continuing into the present</h4>
       <ul className="page-examples">

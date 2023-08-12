@@ -1,38 +1,28 @@
-"use client";
-import { useEffect, useState } from "react";
 // import { getServerSideProps } from "@/src/app/api/simple-past";
 
 import Quiz from "@/src/components/Quiz";
+import TablePOC from "@/src/components/TablePOC";
 
 import styles from "../../../styles/content-page.module.css";
 
-const getData = () => {
-  const res = fetch("http:localhost:3000/api/simple-past");
-  console.log(res);
-  // return res;
-  //  if (!res.ok) {
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/simple-past"; // Replace with the correct endpoint
 
-  //    throw new Error("Failed to fetch data");
-  //  }
+const fullUrl = baseUrl + endpoint;
 
-  //  return res.json();
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
 };
 
-export default function PastSimple() {
-  const data = getData();
-  console.log("hello");
-
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    setItems(data);
-    console.log(data);
-  }, [data]);
-  const [verbs, setVerbs] = useState([]);
+export default async function PastSimple() {
+  const data = await getData();
 
   return (
     <>
       <div className={styles.page_title}>
+    
         <h1>Past Simple</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
@@ -45,7 +35,7 @@ export default function PastSimple() {
       </p>
 
       <div className="table-container">
-        {/* <table className="table-body">
+        <table className="table-body">
           <thead>
             <tr>
               <th>Positive</th>
@@ -54,7 +44,7 @@ export default function PastSimple() {
             </tr>
           </thead>
           <tbody>
-            {items.map((item) => {
+            {data.map((item) => {
               return (
                 <tr>
                   <td>{item.positive}</td>
@@ -64,7 +54,7 @@ export default function PastSimple() {
               );
             })}
           </tbody>
-        </table> */}
+        </table>
       </div>
       <div className="page-body">
         <p>
@@ -73,7 +63,7 @@ export default function PastSimple() {
           form:
         </p>
         <div className="table-container">
-          <table className="table-body">
+          {/* <table className="table-body">
             <tr>
               <th>Positive</th>
               <th>Negative</th>
@@ -104,7 +94,7 @@ export default function PastSimple() {
               <td>We did not cut</td>
               <td>We didn't cut</td>
             </tr>
-          </table>
+          </table> */}
         </div>
         <p>
           {" "}
