@@ -1,23 +1,22 @@
-"use client";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
 //DONE
 
-export default function PastContinuous() {
-  const [verbs, setVerbs] = useState([]);
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/past-progressive"; // Replace with the correct endpoint
 
-  const getVerbs = async () => {
-    const response = await axios.get("http://localhost:5000/past-progressive");
-    setVerbs(response.data);
-  };
+const fullUrl = baseUrl + endpoint;
 
-  useEffect(() => {
-    getVerbs();
-  }, []);
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
+};
+
+export default async function PastContinuous() {
+  const data = await getData();
 
   return (
     <>
@@ -31,8 +30,8 @@ export default function PastContinuous() {
         (was/were) and adding the present participle (-ing form) of the main
         verb.
       </p>
-      <div className="table-container">
-        {/* <table className="table-body">
+      <div>
+        <table className={styles.table}>
           <thead>
             <tr>
               <th>Positive</th>
@@ -41,7 +40,7 @@ export default function PastContinuous() {
             </tr>
           </thead>
           <tbody>
-            {verbs.map((verb) => {
+            {data.map((verb) => {
               return (
                 <tr>
                   <td>{verb.positive}</td>
@@ -50,33 +49,8 @@ export default function PastContinuous() {
                 </tr>
               );
             })}
-           <tr>
-              <td>I was swimming</td>
-              <td>I was not swimming</td>
-              <td>I wasn't swimming</td>
-            </tr>
-            <tr>
-              <td>You were fighting</td>
-              <td>You were not fighting</td>
-              <td>You weren't fighting</td>
-            </tr>
-            <tr>
-              <td>She, he, it was working</td>
-              <td>She, he, it was not working</td>
-              <td>She, he, it wasn't working</td>
-            </tr>
-            <tr>
-              <td>We were talking</td>
-              <td>We weren't talking</td>
-              <td>We weren't talking</td>
-            </tr>
-            <tr>
-              <td>They were dancing</td>
-              <td>They were not dancing</td>
-              <td>They weren't dancing</td>
-            </tr> 
           </tbody>
-        </table> */}
+        </table>
       </div>
 
       <div className="page-body">

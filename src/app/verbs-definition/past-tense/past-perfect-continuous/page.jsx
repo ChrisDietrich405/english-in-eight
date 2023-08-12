@@ -1,25 +1,23 @@
-"use client";
-import { useState, useEffect } from "react";
 import Quiz from "@/src/components/Quiz";
-import axios from "axios";
 
 import styles from "../../../styles/content-page.module.css";
 
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/present-perfect-continuous"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+
+  return results;
+};
+
 //DONE
 
-export default function PastPerfectContinuous() {
-  const [verbs, setVerbs] = useState([]);
-
-  const getVerbs = async () => {
-    const response = await axios.get(
-      "http://localhost:5000/past-perfect-progressive"
-    );
-    setVerbs(response.data);
-  };
-
-  useEffect(() => {
-    getVerbs();
-  }, []);
+export default async function PastPerfectContinuous() {
+  const data = await getData();
 
   return (
     <div>
@@ -32,56 +30,29 @@ export default function PastPerfectContinuous() {
         was completed before another past action or point in time.
       </p>
 
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Positive short form</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            {verbs.map((verb) => {
-              return (
-                <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.positiveShortForm}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
-                </tr>
-              );
-            })}
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
-            <tr>
-              <td>I had been swimming</td>
-              <td>I had not been swimming</td>
-              <td>I hadn't been swimming</td>
-            </tr>
-            <tr>
-              <td>You had been fighting</td>
-              <td>You had not been fighting</td>
-              <td>You hadn't been fighting</td>
-            </tr>
-            <tr>
-              <td>She, he, it had been working</td>
-              <td>She, he, it had not been working</td>
-              <td>She, he, it hadn't been working</td>
-            </tr>
-            <tr>
-              <td>We had been talking</td>
-              <td>We had not been talking</td>
-              <td>We hadn't been talking</td>
-            </tr>
-            <tr>
-              <td>They had been dancing</td>
-              <td>They had not been dancing</td>
-              <td>They hadn't been dancing</td>
-            </tr>
-          </tbody>
-        </table> */}
-      </div>
       <ul className="page-examples">
         <li>
           Marcus <b>had been working </b> on the project all day before he

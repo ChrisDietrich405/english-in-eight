@@ -5,16 +5,17 @@ import Link from "next/link";
 import { Grid, Button, TextField, Container } from "@mui/material";
 
 import emailjs from "@emailjs/browser";
-// import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Footer() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  // const notify = () => toast("Email was successfully sent");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
 
     var templateParams = {
       email,
@@ -29,8 +30,11 @@ export default function Footer() {
         templateParams,
         process.env.REACT_APP_PUBLIC_ID
       )
+
       .then(
         (result) => {
+          console.log("success");
+          toast.success("your estimate was scheduled successfully");
           // notify();
           setEmail("");
           setMessage("");
@@ -44,6 +48,7 @@ export default function Footer() {
     <>
       <footer>
         <Container>
+          <ToastContainer />
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               {" "}
@@ -85,11 +90,19 @@ export default function Footer() {
                       className="form-label"
                     ></label>
                     <TextField
-                      fullWidth
-                      size="small"
-                      label="name"
+                      id="outlined-basic"
+                      label="Name"
                       variant="outlined"
-                      id="nameControlInput"
+                      fullWidth
+                      className="form-control"
+                      style={{ border: "none" }}
+                      size="small"
+                      // id="nameControlInput"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      InputLabelProps={{
+                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                      }}
                     />
                   </div>
                   <div className="mb-3">
@@ -101,8 +114,9 @@ export default function Footer() {
                       fullWidth
                       size="small"
                       sx={{ my: 4 }}
-                      label="email"
-                      variant="outlined"
+                      style={{ border: "none" }}
+                      label="Email"
+                      // variant="outlined"
                       // id="nameControlInput"
                       type="email"
                       onChange={(e) => setEmail(e.target.value)}
@@ -119,6 +133,10 @@ export default function Footer() {
                       id="exampleFormControlTextarea1"
                       placeholder="Add message here"
                       className={` form-control`}
+                      style={{ border: "none" }}
+                      InputLabelProps={{
+                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                      }}
                     />
                   </div>
                   {/* <ToastContainer /> */}

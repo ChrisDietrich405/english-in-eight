@@ -2,9 +2,20 @@ import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/past-perfect"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
 //DONE
 
-export default function PastPerfect() {
+const getData = async () => {
+  const response = await fetch(fullUrl);
+  const data = response.json();
+  return data;
+};
+
+export default async function PastPerfect() {
+  const data = await getData();
   return (
     <div className="page-body">
       <div className={styles.page_title}>
@@ -14,44 +25,27 @@ export default function PastPerfect() {
         The past perfect is used to explain that one action in the past happened
         before another action in the past.
       </p>
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>I had swum</td>
-              <td>I had not swum</td>
-              <td>I hadn't swum</td>
-            </tr>
-            <tr>
-              <td>You had fought</td>
-              <td>You had not fought</td>
-              <td>You hadn't fought</td>
-            </tr>
-            <tr>
-              <td>She, he, it had worked</td>
-              <td>She, he, it had not worked</td>
-              <td>She, he, it had not worked</td>
-            </tr>
-            <tr>
-              <td>We had talked</td>
-              <td>We had not talked</td>
-              <td>We hadn't talked</td>
-            </tr>
-            <tr>
-              <td>They had danced</td>
-              <td>They had not danced</td>
-              <td>They hadn't danced</td>
-            </tr>
-          </tbody>
-        </table> */}
-      </div>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
       <ul className="page-examples">
         <li>

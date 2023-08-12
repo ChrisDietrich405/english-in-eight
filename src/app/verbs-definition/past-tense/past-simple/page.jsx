@@ -1,5 +1,5 @@
 // import { getServerSideProps } from "@/src/app/api/simple-past";
-"use client";
+
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
@@ -17,6 +17,7 @@ const getData = async () => {
 
 export default async function PastSimple() {
   const data = await getData();
+  console.log(data);
 
   return (
     <>
@@ -32,10 +33,10 @@ export default async function PastSimple() {
         to narrate a sequence of events in the past.
       </p>
 
-      {/* <table className={styles.table}>
+      <table className={styles.table}>
         <thead>
           <tr>
-            <th>Positive</th>
+            <th className={styles.table_title}>Positive</th>
             <th>Negative</th>
             <th>Negative short form</th>
           </tr>
@@ -51,7 +52,7 @@ export default async function PastSimple() {
             );
           })}
         </tbody>
-      </table> */}
+      </table>
 
       <div className="page-body">
         <p>
@@ -59,7 +60,6 @@ export default async function PastSimple() {
           simple past tense of some irregular verbs look exactly like the root
           form:
         </p>
-
         <table className={styles.table}>
           <tr>
             <th>Positive</th>

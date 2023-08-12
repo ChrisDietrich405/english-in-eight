@@ -1,26 +1,22 @@
 //DONE
-"use client";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
-export default function SimplePresent() {
-  const [verbs, setVerbs] = useState([]);
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/simple-present"; // Replace with the correct endpoint
 
-  // const handleGetVerbs = async () => {
-  //   const response = await axios.get("http://localhost:5000/simple-present");
-  //   console.log(response.data);
-  //   setVerbs(response.data);
-  // };
+const fullUrl = baseUrl + endpoint;
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     await handleGetVerbs();
-  //   }
-  //   fetchData();
-  // }, []);
+const getVerbs = async () => {
+  const response = await fetch(fullUrl);
+  const results = response.json();
+  return results;
+};
+
+export default async function SimplePresent() {
+  const data = await getVerbs();
 
   return (
     <div className="page-body">
@@ -35,24 +31,23 @@ export default function SimplePresent() {
         positive form for regular verbs is really easy. It's just the verb with
         an extra 's' if the subject is 'he', 'she', or 'it'.
       </p>
-      <div className="table-container">
-        {/* <table className="table-body">
-          <tr>
-            <th>Positive</th>
-            <th>Negative</th>
-            <th>Negative short form</th>
-          </tr>
-          {verbs.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })}
-        </table> */}
-      </div>
+
+      <table className={styles.table}>
+        <tr>
+          <th>Positive</th>
+          <th>Negative</th>
+          <th>Negative short form</th>
+        </tr>
+        {data.map((verb) => {
+          return (
+            <tr>
+              <td>{verb.positive}</td>
+              <td>{verb.negative}</td>
+              <td>{verb.negativeShortForm}</td>
+            </tr>
+          );
+        })}
+      </table>
 
       <div className="page-body">
         <h4>Present simple tense with irregular verbs</h4>

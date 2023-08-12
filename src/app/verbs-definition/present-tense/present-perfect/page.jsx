@@ -1,27 +1,22 @@
-"use client";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
 //DONE
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/present-perfect"; // Replace with the correct endpoint
 
-export default function PresentPerfect() {
-  const [verbs, setVerbs] = useState([]);
+const fullUrl = baseUrl + endpoint;
 
-  // const handleGetVerbs = async () => {
-  //   const response = await axios.get("http://localhost:5000/present-perfect");
-  //   console.log(response.data);
-  //   setVerbs(response.data);
-  // };
+const getVerbs = async () => {
+  const response = await fetch(fullUrl);
+  const results = await response.json();
+  return results;
+};
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     await handleGetVerbs();
-  //   }
-  //   fetchData();
-  // }, []);
+export default async function PresentPerfect() {
+  const data = await getVerbs();
+
   return (
     <div className="page-body">
       <div className={styles.page_title}>
@@ -34,30 +29,29 @@ export default function PresentPerfect() {
           past but have a connection to the current moment.
         </p>
       </div>
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Positive short form</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            {verbs.map((verb) => {
-              return (
-                <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.positiveShortForm}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table> */}
-      </div>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
       <h4>Actions began in the past and continuing into the present</h4>
       <ul className="page-examples">
         <li>He has worked as a bartender for five years.</li>

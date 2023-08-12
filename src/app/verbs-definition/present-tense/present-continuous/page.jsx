@@ -1,28 +1,21 @@
-"use client";
-import { useState, useEffect } from "react";
 import Quiz from "@/src/components/Quiz";
 import styles from "../../../styles/content-page.module.css";
-import axios from "axios";
+
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/present-progressive"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getVerbs = async () => {
+  const response = await fetch(fullUrl);
+  const results = await response.json();
+  return results;
+};
 
 //DONE
 
-export default function PresentContinuous() {
-  const [verbs, setVerbs] = useState([]);
-
-  // const handleGetVerbs = async () => {
-  //   const response = await axios.get(
-  //     "http://localhost:5000/present-progressive"
-  //   );
-  //   console.log(response.data.message);
-  //   setVerbs(response.data.message);
-  // };
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     await handleGetVerbs();
-  //   }
-  //   fetchData();
-  // }, []);
+export default async function PresentContinuous() {
+  const data = await getVerbs();
 
   return (
     <div className="page-body">
@@ -37,30 +30,29 @@ export default function PresentContinuous() {
           auxiliary verb "to be" in the present tense, followed by the main verb
           with "-ing" added to the end.
         </p>
-        <div className="table-container">
-          {/* <table className="table-body">
-            <thead>
-              <tr>
-                <th>Positive</th>
-                <th>Positive Short Form</th>
-                <th>Negative</th>
-                <th>Negative Short Form</th>
-              </tr>
-            </thead>
-            <tbody>
-              {verbs.map((verb) => {
-                return (
-                  <tr>
-                    <td>{verb.positive}</td>
-                    <td>{verb.positiveShortForm}</td>
-                    <td>{verb.negative}</td>
-                    <td>{verb.negativeShortForm}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table> */}
-        </div>
+
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Positive</th>
+              <th>Positive Short Form</th>
+              <th>Negative</th>
+              <th>Negative Short Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((verb) => {
+              return (
+                <tr>
+                  <td>{verb.positive}</td>
+                  <td>{verb.positiveShortForm}</td>
+                  <td>{verb.negative}</td>
+                  <td>{verb.negativeShortForm}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
 
         <h4>Actions currently happening</h4>
         <ul className="page-examples">
