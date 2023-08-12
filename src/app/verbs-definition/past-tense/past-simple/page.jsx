@@ -1,7 +1,6 @@
 // import { getServerSideProps } from "@/src/app/api/simple-past";
-
+"use client";
 import Quiz from "@/src/components/Quiz";
-import TablePOC from "@/src/components/TablePOC";
 
 import styles from "../../../styles/content-page.module.css";
 
@@ -22,7 +21,6 @@ export default async function PastSimple() {
   return (
     <>
       <div className={styles.page_title}>
-    
         <h1>Past Simple</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
@@ -34,68 +32,67 @@ export default async function PastSimple() {
         to narrate a sequence of events in the past.
       </p>
 
-      <div className="table-container">
-        <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item) => {
-              return (
-                <tr>
-                  <td>{item.positive}</td>
-                  <td>{item.negative}</td>
-                  <td>{item.negativeShortForm}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+      {/* <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item) => {
+            return (
+              <tr>
+                <td>{item.positive}</td>
+                <td>{item.negative}</td>
+                <td>{item.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table> */}
+
       <div className="page-body">
         <p>
           For irregular verbs, things are more challenging. For example the
           simple past tense of some irregular verbs look exactly like the root
           form:
         </p>
-        <div className="table-container">
-          {/* <table className="table-body">
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-            <tr>
-              <td>I put</td>
-              <td>I did not put</td>
-              <td>I didn't put</td>
-            </tr>
-            <tr>
-              <td>They hit</td>
-              <td>They did not hit</td>
-              <td>They didn't hit</td>
-            </tr>
-            <tr>
-              <td>You set</td>
-              <td>You did not set</td>
-              <td>You didn't set</td>
-            </tr>
-            <tr>
-              <td>She, he, it cost</td>
-              <td>She, he, it did not cost</td>
-              <td>She, he, it didn't cost</td>
-            </tr>
-            <tr>
-              <td>We cut</td>
-              <td>We did not cut</td>
-              <td>We didn't cut</td>
-            </tr>
-          </table> */}
-        </div>
+
+        <table className={styles.table}>
+          <tr>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+          <tr>
+            <td>I put</td>
+            <td>I did not put</td>
+            <td>I didn't put</td>
+          </tr>
+          <tr>
+            <td>They hit</td>
+            <td>They did not hit</td>
+            <td>They didn't hit</td>
+          </tr>
+          <tr>
+            <td>You set</td>
+            <td>You did not set</td>
+            <td>You didn't set</td>
+          </tr>
+          <tr>
+            <td>She, he, it cost</td>
+            <td>She, he, it did not cost</td>
+            <td>She, he, it didn't cost</td>
+          </tr>
+          <tr>
+            <td>We cut</td>
+            <td>We did not cut</td>
+            <td>We didn't cut</td>
+          </tr>
+        </table>
+
         <p>
           {" "}
           For other irregular verbs, the simple past forms are much different

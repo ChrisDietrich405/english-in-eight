@@ -1,5 +1,9 @@
 import Navbar2 from "../components/Navbar2";
+import Head from "next/head";
+import Script from "next/script";
+
 import Footer from "../components/Footer";
+import "bootstrap/dist/css/bootstrap.css";
 import "./styles/globals.css";
 import { Roboto } from "next/font/google";
 
@@ -32,6 +36,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossOrigin="anonymous"
+        />
+      </Head>
+
+      <Script
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossOrigin="anonymous"
+      />
+
       <body className={roboto.className}>
         <Navbar2 />
         {children}
