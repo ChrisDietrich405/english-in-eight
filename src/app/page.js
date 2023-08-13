@@ -264,7 +264,12 @@ export default function Home() {
                       </h4>
                       <p>Get up, Break down, Speak out</p>
                       <div className={styles.react_icon_container}>
-                        {/* <FaTreeCity size="2em" /> */}
+                        <Image
+                          alt=""
+                          width={200}
+                          height={100}
+                          src="/getup.jpg"
+                        />
                       </div>
                     </Link>
                   </div>

@@ -3,7 +3,19 @@ import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
-export default function FuturePerfect() {
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/future-perfect"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
+};
+
+export default async function FuturePerfect() {
+  const data = await getData();
   return (
     <main className="page-body">
       <div className={styles.page_title}>
@@ -13,44 +25,28 @@ export default function FuturePerfect() {
         The future perfect tense is used to demonstrate a future event that has
         a definitive end date.{" "}
       </p>
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>I will have swum</td>
-              <td>I will have not swum</td>
-              <td>I won't have swum</td>
-            </tr>
-            <tr>
-              <td>You will have fought</td>
-              <td>You will have not fought</td>
-              <td>You won't have fought</td>
-            </tr>
-            <tr>
-              <td>She, he, it will have worked</td>
-              <td>She, he, it will not have worked</td>
-              <td>She, he, it won't have worked</td>
-            </tr>
-            <tr>
-              <td>We will have talked</td>
-              <td>We will not have talked</td>
-              <td>We won't have talked</td>
-            </tr>
-            <tr>
-              <td>They will have danced</td>
-              <td>They will have not danced</td>
-              <td>They won't danced</td>
-            </tr>
-          </tbody>
-        </table> */}
-      </div>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
       <p>
         The future perfect is used with a future time word, (and often with
         'by') to talk about an action that will finish before a specific time in

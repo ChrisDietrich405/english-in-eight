@@ -120,6 +120,9 @@ export default function Footer() {
                       // id="nameControlInput"
                       type="email"
                       onChange={(e) => setEmail(e.target.value)}
+                      InputLabelProps={{
+                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                      }}
                     />
                   </div>
                   <div className="mb-3">

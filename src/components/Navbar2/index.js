@@ -79,7 +79,13 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <div style={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+          <div
+            style={{
+              flexGrow: 1,
+
+              display: { xs: "none", sm: "block" },
+            }}
+          >
             <img
               src="/images/logo.svg"
               width={50}

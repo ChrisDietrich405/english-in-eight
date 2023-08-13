@@ -26,9 +26,17 @@
   align-items: center;
 }
 
-.home_btn:hover {
+.home_btn a {
+  display: flex;
+  align-items: center;
+  padding: 6px 24px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.home_btn a:hover {
   color: #fff !important;
-  background: var(--primary);
+  background: var(--hover);
 }
 
 .home_btn:active {

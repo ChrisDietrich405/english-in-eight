@@ -1,8 +1,23 @@
 import Quiz from "@/src/components/Quiz";
 
+import styles from "../../../styles/content-page.module.css";
+
+const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const endpoint = "/api/future-perfect"; // Replace with the correct endpoint
+
+const fullUrl = baseUrl + endpoint;
+
+const getData = async () => {
+  const res = await fetch(fullUrl);
+  const results = await res.json();
+  return results;
+};
+
 //DONE
 
-export default function FuturePerfectContinuous() {
+export default async function FuturePerfectContinuous() {
+  const data = await getData();
+
   return (
     <div>
       <div className={styles.page_title}>
@@ -14,44 +29,28 @@ export default function FuturePerfectContinuous() {
         specific point in the future.
       </p>
 
-      <div className="table-container">
-        {/* <table className="table-body">
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>I will have been swimming</td>
-              <td>I will not have been swimming</td>
-              <td>I won't have been swimming</td>
-            </tr>
-            <tr>
-              <td>You will have been fighting</td>
-              <td>You will not have been fighting</td>
-              <td>You won't have been fighting</td>
-            </tr>
-            <tr>
-              <td>She, he, it will have been working</td>
-              <td>She, he, it will not have been working</td>
-              <td>She, he, it won't have been working</td>
-            </tr>
-            <tr>
-              <td>We have been talking</td>
-              <td>We have not been talking</td>
-              <td>We haven't been talking</td>
-            </tr>
-            <tr>
-              <td>They have been dancing</td>
-              <td>They have not been dancing</td>
-              <td>They haven't been dancing</td>
-            </tr>
-          </tbody>
-        </table> */}
-      </div>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
       <Quiz
         title="Quiz"
