@@ -1,7 +1,5 @@
 "use client";
 import * as React from "react";
-import Link from "next/link";
-// import Image from "next/image";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -23,8 +21,6 @@ import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
-import styles from "./styles.module.css";
-
 const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdown />,
@@ -43,12 +39,9 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <img
-        src="/images/logo.svg"
-        width={50}
-        height={50}
-        alt="Picture of the author"
-      />
+      <Typography variant="h6" sx={{ my: 2 }}>
+        MUI
+      </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -66,7 +59,6 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar component="nav">
@@ -80,40 +72,19 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <div
-            style={{
-              flexGrow: 1,
-
-              display: { xs: "none", sm: "block" },
-            }}
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <img
-              src="/images/logo.svg"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            />
-            
-          </div>
-          <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <div className={styles.home_btn}>
-              <Link href="/">HOME</Link>
-            </div>
-
-            <div className={styles.div_btn}>
-              <NounsSubmenuDropdown
-                sx={{ color: "#fff", marginRight: "20px" }}
-              />
-            </div>
-            <div className={styles.div_btn}>
-              <VerbsSubmenuDropdown sx={{ color: "#fff" }} />
-            </div>
-            <div className={styles.div_btn}>
-              <AdjectivesSubmenuDropdown sx={{ color: "#fff" }} />
-            </div>
-            <div className={styles.div_btn}>
-              <OtherTopicsSubmenuDropdown sx={{ color: "#fff" }} />
-            </div>
+            MUI
+          </Typography>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: "#fff" }}>
+                {item}
+              </Button>
+            ))}
           </Box>
         </Toolbar>
       </AppBar>

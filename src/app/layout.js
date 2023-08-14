@@ -1,4 +1,4 @@
-import Navbar2 from "../components/Navbar2";
+import Navbar3 from "../components/Navbar3";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
       />
 
       <body className={roboto.className}>
-        <Navbar2 />
+        <Navbar3 />
         {children}
         <Footer />
       </body>

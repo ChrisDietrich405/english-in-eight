@@ -268,7 +268,7 @@ export default function Home() {
                           alt=""
                           width={200}
                           height={100}
-                          src="/getup.jpg"
+                          src="/shutup.jpg"
                         />
                       </div>
                     </Link>
