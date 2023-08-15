@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import Image from "next/image";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -21,6 +22,8 @@ import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
+import styles from "../../app/styles/content-page.module.css";
+
 const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdown />,
@@ -39,9 +42,13 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
+      <Image
+        className={styles.navbar_logo}
+        src="/images/logo.svg"
+        width={50}
+        height={50}
+        alt="Picture of the author"
+      />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -72,14 +79,18 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
+          <Image
+            className={styles.navbar_logo}
+            src="/images/logo.svg"
+            width={50}
+            height={50}
+            alt="Picture of the logo"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          />
+
+          <Box
+            sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
           >
-            MUI
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff" }}>
                 {item}
@@ -108,9 +119,9 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      {/* <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-      </Box>
+      </Box> */}
     </Box>
   );
 }

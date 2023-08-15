@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
+import Head from "next/head";
 import { Grid, Button, TextField, Container } from "@mui/material";
 
 import emailjs from "@emailjs/browser";
@@ -46,6 +47,39 @@ export default function Footer() {
   };
   return (
     <>
+      <Head>
+        <title>Contact Us | English in Eight Minutes</title>
+        <meta
+          name="description"
+          content="Have questions about English grammar rules? Contact our expert team at English in Eight Minutes. We're here to assist with your language queries and provide helpful insights. Connect with us today!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dietrichlandcare.com" />
+        <meta property="og:title" content="Dietrich Land Care" />
+        <meta
+          property="og:description"
+          content="Have questions about English grammar rules? Contact our expert team at English in Eight Minutes. We're here to assist with your language queries and provide helpful insights. Connect with us today!"
+        />
+        <meta
+          property="og:image"
+          content="https://dietrichlandcare.com/images/logo.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
       <footer>
         <Container>
           <ToastContainer />
@@ -143,7 +177,7 @@ export default function Footer() {
                     />
                   </div>
                   {/* <ToastContainer /> */}
-                  <Button type="submit" variant="text">
+                  <Button type="submit" variant="contained">
                     Submit
                   </Button>
                 </form>

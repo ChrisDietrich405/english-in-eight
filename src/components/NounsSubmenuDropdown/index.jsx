@@ -94,7 +94,7 @@ export default function CustomizedMenus() {
   return (
     <div>
       <Button
-        aria-controls={open ? "demo-customized-menu" : ""}
+        aria-controls={open && "demo-customized-menu"}
         aria-haspopup="true"
         aria-expanded={open ? "true" : ""}
         variant="contained"
@@ -114,51 +114,6 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <DropdownPOC dropdownProps={dropdownProps} />
-        {/* {dropdownProps.map((dropdownItem, index) => {
-          return (
-            <MenuItem key={index} onClick={handleClose} disableRipple>
-              <Link className={styles.link} href={dropdownItem.link}>
-                {dropdownItem.title}
-              </Link>
-            </MenuItem>
-          );
-        })} */}
-
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/nouns-definition">
-            Noun Definition
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/nouns-definition/uncountable-countable-nouns"
-          >
-            Uncountable & Countable Nouns
-          </Link>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/nouns-definition/collective-nouns"
-          >
-            Collective Nouns
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/nouns-definition/noun-modifiers">
-            Noun Modifiers
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/nouns-definition/possessive-pronouns"
-          >
-            Possessive Pronouns
-          </Link>
-        </MenuItem> */}
       </StyledMenu>
     </div>
   );

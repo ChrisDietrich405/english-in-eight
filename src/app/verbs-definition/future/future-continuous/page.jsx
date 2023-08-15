@@ -20,6 +20,39 @@ export default async function FutureContinuous() {
 
   return (
     <>
+      <Head>
+        <title>Future Continuous | English in Eight Minutes</title>
+        <meta
+          name="description"
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dietrichlandcare.com" />
+        <meta property="og:title" content="Dietrich Land Care" />
+        <meta
+          property="og:description"
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
+        />
+        <meta
+          property="og:image"
+          content="https://dietrichlandcare.com/images/logo.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
       <div className={styles.page_title}>
         <h2>Future Continuous</h2>
       </div>

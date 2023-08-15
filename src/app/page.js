@@ -9,6 +9,8 @@ import Head from "next/head";
 import { FaTreeCity } from "react-icons/fa6";
 import { FaRunning, FaAngry } from "react-icons/fa";
 
+import "./styles/globals.css";
+
 import {
   Grid,
   Card,
@@ -26,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Dietrich Land Care</title>
+        <title>Home | English in Eight</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -65,7 +67,7 @@ export default function Home() {
           sizes="16x16"
         /> */}
       </Head>
-      <main className={styles.home} styles={{ marginTop: "300px" }}>
+      <main className={styles.home} sx={{ padding: "0px !important" }}>
         <div className={styles.banner}>
           <div
             style={{
@@ -230,7 +232,7 @@ export default function Home() {
                           alt=""
                           width={200}
                           height={100}
-                          src="/time-is-money.jpeg"
+                          src="/time-is-money.svg"
                         />
                       </div>
                     </Link>
@@ -262,13 +264,13 @@ export default function Home() {
                       <h4 className={styles.content_definition}>
                         Verb/Preposition Combinations
                       </h4>
-                      <p>Get up, Break down, Speak out</p>
+                      <p>Get up, Break down, Shut up</p>
                       <div className={styles.react_icon_container}>
                         <Image
                           alt=""
                           width={200}
                           height={100}
-                          src="/shutup.jpg"
+                          src="/shut-up.svg"
                         />
                       </div>
                     </Link>
@@ -302,7 +304,12 @@ export default function Home() {
                       </h4>
                       <p>Speak versus Talk</p>
                       <div className={styles.react_icon_container}>
-                        {/* <FaTreeCity size="2em" /> */}
+                        <Image
+                          alt=""
+                          width={200}
+                          height={100}
+                          src="/speak.svg"
+                        />
                       </div>
                     </Link>
                   </div>
