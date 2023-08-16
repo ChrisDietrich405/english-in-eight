@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import { Grid, Button, TextField, Container } from "@mui/material";
+import * as Validator from "validatorjs";
 
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -15,8 +16,33 @@ export default function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const validatorObject = {
+    name,
+    email,
+    message,
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    try {
+      const validator = new Validator(
+        validatorObject,
+        {
+          name: "required",
+          email: "required|email",
+          message: "required",
+        },
+        {
+          "required.name": "The name field is required",
+          "required.email": "The email field is required",
+          "required.message": "The message field is required",
+        }
+      );
+      ///////////////////////////////////////////////////////////////////////////
+    } catch (error) {
+      console.log(error);
+    }
 
     var templateParams = {
       email,
