@@ -17,23 +17,13 @@ export default function NounDefinition() {
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/person-nouns-definition.jpg"
-              alt=""
-            />
+            <Image height={300} width={300} src="/child.jpg" alt="" />
           </div>
-          <p className={styles.picture_subtitle}>Person - Terry Crews</p>
+          <p className={styles.picture_subtitle}>Person - child</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/place-nouns-definition.jpg"
-              alt=""
-            />
+            <Image height={300} width={300} src="/tajmahal.jpg" alt="" />
           </div>
           <p className={styles.picture_subtitle}>Place - Taj Mahal</p>
         </div>

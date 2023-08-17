@@ -20,9 +20,9 @@ export default function VerbsDef() {
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
             <Image
-              src="/action-verbs-definition.png"
+              src="/hear.jpg"
               alt="picture of action verb hear"
-              width={200}
+              width={300}
               height={200}
             />
           </div>
@@ -31,20 +31,20 @@ export default function VerbsDef() {
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
             <Image
-              src="/state-verbs-definition.png"
-              alt="picture of action verb hear"
-              width={200}
+              src="/state-verbs-definition.jpg"
+              alt="picture of state verb love"
+              width={300}
               height={200}
             />
           </div>
-          <p className={styles.picture_subtitle}>Become</p>
+          <p className={styles.picture_subtitle}>Love</p>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
             <Image
-              src="/occurence-verbs-definition.png"
+              src="/happen.jpg"
               alt="picture of action verb hear"
-              width={200}
+              width={300}
               height={200}
             />
           </div>
