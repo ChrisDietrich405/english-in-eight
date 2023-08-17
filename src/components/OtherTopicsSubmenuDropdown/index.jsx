@@ -87,8 +87,8 @@ export default function CustomizedMenus() {
   };
 
   return (
-    <div>
-      <Button
+    <>
+      <div
         id="demo-customized-button"
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
@@ -96,10 +96,10 @@ export default function CustomizedMenus() {
         variant="contained"
         disableElevation
         onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
       >
         Other Topics
-      </Button>
+        <KeyboardArrowDownIcon />
+      </div>
       <StyledMenu
         id="demo-customized-menu"
         MenuListProps={{
@@ -130,6 +130,6 @@ export default function CustomizedMenus() {
           </Link>
         </MenuItem> */}
       </StyledMenu>
-    </div>
+    </>
   );
 }

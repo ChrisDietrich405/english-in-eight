@@ -232,7 +232,7 @@ export default function Home() {
                           alt=""
                           width={200}
                           height={100}
-                          src="/time-is-money.svg"
+                          src="images/time-is-money.svg"
                         />
                       </div>
                     </Link>
@@ -270,7 +270,7 @@ export default function Home() {
                           alt=""
                           width={200}
                           height={100}
-                          src="/shut-up.svg"
+                          src="images/get-up.svg"
                         />
                       </div>
                     </Link>
@@ -308,7 +308,7 @@ export default function Home() {
                           alt=""
                           width={200}
                           height={100}
-                          src="/speak.svg"
+                          src="images/speak.svg"
                         />
                       </div>
                     </Link>
