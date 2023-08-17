@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
-import styles from "../../"
 
 const Suggestions = () => {
   return (
@@ -9,7 +8,7 @@ const Suggestions = () => {
         How can you be successful using this website and successful learning
         English?
       </Typography>
-      ;
+
       <ul>
         <li>
           Don't focus too much on the explanations, read them once and then go
