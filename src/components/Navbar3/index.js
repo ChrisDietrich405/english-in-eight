@@ -85,7 +85,7 @@ function DrawerAppBar(props) {
             width={50}
             height={50}
             alt="Picture of the logo"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ marginRight: "auto", display: { xs: "none", sm: "block" } }}
           />
 
           <Box

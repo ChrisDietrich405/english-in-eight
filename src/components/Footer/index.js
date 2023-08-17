@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import styles from "./styles.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import { Grid, Button, TextField, Container } from "@mui/material";
@@ -11,10 +10,13 @@ import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import styles from "./styles.module.css";
+
 export default function Footer() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState({});
 
   const validatorObject = {
     name,
@@ -39,37 +41,43 @@ export default function Footer() {
           "required.message": "The message field is required",
         }
       );
+      const validate = validator.passes();
       ///////////////////////////////////////////////////////////////////////////
+
+      if (validate) {
+        var templateParams = {
+          email,
+          message,
+          to_name: "Chris",
+        };
+
+        emailjs
+          .send(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            templateParams,
+            process.env.REACT_APP_PUBLIC_ID
+          )
+
+          .then(
+            (result) => {
+              console.log("success");
+              toast.success("your estimate was scheduled successfully");
+              // notify();
+              setEmail("");
+              setMessage("");
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+          set
+      } else {
+        setError(validator.errors.errors);
+      }
     } catch (error) {
       console.log(error);
     }
-
-    var templateParams = {
-      email,
-      message,
-      to_name: "Chris",
-    };
-
-    emailjs
-      .send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_PUBLIC_ID
-      )
-
-      .then(
-        (result) => {
-          console.log("success");
-          toast.success("your estimate was scheduled successfully");
-          // notify();
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
   return (
     <>
@@ -164,6 +172,11 @@ export default function Footer() {
                         style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
                       }}
                     />
+                    {"name" in error && (
+                      <p className={styles.error_message}>
+                        {error.name.join(",")}
+                      </p>
+                    )}
                   </div>
                   <div className="mb-3">
                     {/* <label htmlFor="exampleFormControlInput1">Email</label> */}
@@ -184,6 +197,11 @@ export default function Footer() {
                         style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
                       }}
                     />
+                    {"email" in error && (
+                      <p className={styles.error_message}>
+                        {error.email.join(",")}
+                      </p>
+                    )}
                   </div>
                   <div className="mb-3">
                     <TextField
@@ -201,6 +219,11 @@ export default function Footer() {
                         style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
                       }}
                     />
+                    {"message" in error && (
+                      <p className={styles.error_message}>
+                        {error.message.join(",")}
+                      </p>
+                    )}
                   </div>
                   {/* <ToastContainer /> */}
                   <Button type="submit" variant="contained">

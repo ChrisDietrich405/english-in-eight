@@ -13,6 +13,12 @@
   margin-bottom: 64px;
 }
 
+.error_message {
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
 .logo-email {
   display: flex;
   flex-direction: column;
@@ -26,8 +32,8 @@
 }
 
 .form {
-  width: 100%; 
-  max-width: 400px; 
+  width: 100%;
+  max-width: 400px;
 }
 
 .contact-info-container {
