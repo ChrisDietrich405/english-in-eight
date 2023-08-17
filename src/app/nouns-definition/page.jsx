@@ -9,13 +9,10 @@ export default function NounDefinition() {
         <h1>Noun Definition</h1>
       </div>
       <div className={styles.page_body}>
-        <h3
-          style={{ textAlign: "center" }}
-          className={styles.grammar_explanation_paragraph}
-        >
+        <h5 className={styles.grammar_explanation_paragraph}>
           A noun is a word that describes an object or set of objects, such as
-          people, places or things{" "}
-        </h3>
+          people, places or things.{" "}
+        </h5>
       </div>
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>

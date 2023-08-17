@@ -1,9 +1,9 @@
-/* .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 30px 30px 75px 30px; */
+.footer {
+  margin-top: 50px;
+  margin-bottom: 425px;
+  padding-top: 20px;
+}
+
 
 .footer_logo {
   margin-left: -1.6rem;
@@ -40,7 +40,8 @@
   margin: 16px 0 16px 150px;
 }
 
-.form-control {
+.form_control {
+  padding: 0 !important;
   height: 45px;
 }
 

@@ -71,7 +71,7 @@ export default function Footer() {
               console.log(error.text);
             }
           );
-          set
+        set;
       } else {
         setError(validator.errors.errors);
       }
@@ -114,7 +114,7 @@ export default function Footer() {
           sizes="16x16"
         />
       </Head>
-      <footer>
+      <footer className={styles.footer}>
         <Container>
           <ToastContainer />
           <Grid container spacing={2}>
@@ -162,7 +162,7 @@ export default function Footer() {
                       label="Name"
                       variant="outlined"
                       fullWidth
-                      className="form-control"
+                      className={styles.form_control}
                       style={{ border: "none" }}
                       size="small"
                       // id="nameControlInput"
@@ -179,19 +179,20 @@ export default function Footer() {
                     )}
                   </div>
                   <div className="mb-3">
-                    {/* <label htmlFor="exampleFormControlInput1">Email</label> */}
+                    <label
+                      htmlFor="nameControlInput"
+                      className="form-label"
+                    ></label>
                     <TextField
-                      id="exampleFormControlInput1"
-                      placeholder="name@example.com"
-                      className={`form-control`}
-                      fullWidth
-                      size="small"
-                      sx={{ my: 4 }}
-                      style={{ border: "none" }}
+                      id="outlined-basic"
                       label="Email"
-                      // variant="outlined"
+                      variant="outlined"
+                      fullWidth
+                      className={styles.form_control}
+                      style={{ border: "none" }}
+                      size="small"
                       // id="nameControlInput"
-                      type="email"
+                      value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       InputLabelProps={{
                         style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
@@ -204,29 +205,38 @@ export default function Footer() {
                     )}
                   </div>
                   <div className="mb-3">
+                    <label
+                      htmlFor="nameControlInput"
+                      className="form-label"
+                    ></label>
                     <TextField
-                      fullWidth
-                      onChange={(e) => setMessage(e.target.value)}
-                      label="Add message here"
+                      id="outlined-basic"
+                      label="Add a Message"
                       multiline
-                      rows={4}
+                      rows={6}
                       variant="outlined"
-                      id="exampleFormControlTextarea1"
-                      placeholder="Add message here"
-                      className={` form-control`}
-                      style={{ border: "none" }}
+                      fullWidth
+                      className={styles.form_control}
+                      style={{ border: "none", marginBottom: "58px" }}
+                      size="small"
+                      // id="nameControlInput"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       InputLabelProps={{
                         style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
                       }}
                     />
                     {"message" in error && (
-                      <p className={styles.error_message}>
+                      <p
+                        className={styles.error_message}
+                        style={{ marginTop: "55px" }}
+                      >
                         {error.message.join(",")}
                       </p>
                     )}
                   </div>
                   {/* <ToastContainer /> */}
-                  <Button type="submit" variant="contained">
+                  <Button type="submit" variant="contained" style={{marginTop: "50px"}}>
                     Submit
                   </Button>
                 </form>

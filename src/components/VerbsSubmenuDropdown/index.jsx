@@ -62,7 +62,7 @@ export default function CustomizedMenus() {
   const dropdownProps = [
     {
       title: "Verb Definition",
-      link: "/verbs-definition",
+      link: "/verbs-definition/home",
     },
     {
       title: "Present Tense Verbs",

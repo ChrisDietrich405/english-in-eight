@@ -11,10 +11,10 @@ export default function VerbsDef() {
         <h1>Verbs Definition</h1>
       </div>
       <div className={styles.page_body}>
-        <p className={styles.grammar_explanation_paragraph}>
+        <h5 className={styles.grammar_explanation_paragraph}>
           A verb is a word used to describe an action (for example hear), state
           (for example become), or occurrence (for example happen)
-        </p>
+        </h5>
       </div>
       <div className={styles.definition_pictures_container}>
         <div className={styles.definition_picture}>

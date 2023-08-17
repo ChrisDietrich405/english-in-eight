@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -42,13 +43,15 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Image
-        className={styles.navbar_logo}
-        src="/images/logo.svg"
-        width={50}
-        height={50}
-        alt="Picture of the author"
-      />
+      <Link href="/">
+        <Image
+          className={styles.navbar_logo}
+          src="/images/logo.svg"
+          width={50}
+          height={50}
+          alt="Picture of the author"
+        />
+      </Link>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -79,14 +82,16 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Image
-            className={styles.navbar_logo}
-            src="/images/logo.svg"
-            width={50}
-            height={50}
-            alt="Picture of the logo"
-            sx={{ marginRight: "auto", display: { xs: "none", sm: "block" } }}
-          />
+          <Link href="/">
+            <Image
+              className={styles.navbar_logo}
+              src="/images/logo.svg"
+              width={50}
+              height={50}
+              alt="Picture of the logo"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            />
+          </Link>
 
           <Box
             sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}

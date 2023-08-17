@@ -154,11 +154,11 @@ export default function Home() {
                 >
                   <div className={styles.link_cards}>
                     <Link href="/nouns-definition" className={styles.link}>
-                      <h3 className={styles.content_title_second_row}>Verbs</h3>
+                      <h3 className={styles.content_title_second_row}>Nouns</h3>
                       <h4 className={styles.content_definition}>
-                        Action words
+                        People, Places, Things
                       </h4>
-                      <p>Run, Fight, Sing</p>
+                      <p>Woman, City, Car</p>
                       <div className={styles.react_icon_container}>
                         <FaRunning size="5em" />
                       </div>
@@ -185,13 +185,11 @@ export default function Home() {
                 >
                   <div className={styles.link_cards}>
                     <Link href="/nouns-definition" className={styles.link}>
-                      <h3 className={styles.content_title_second_row}>
-                        Adjectives
-                      </h3>
+                      <h3 className={styles.content_title_second_row}>Nouns</h3>
                       <h4 className={styles.content_definition}>
-                        Describe Nouns
+                        People, Places, Things
                       </h4>
-                      <p>Strong, Angry, Funny</p>
+                      <p>Woman, City, Car</p>
                       <div className={styles.react_icon_container}>
                         <FaAngry size="5em" />
                       </div>
@@ -267,7 +265,7 @@ export default function Home() {
                       <p>Get up, Break down, Shut up</p>
                       <div className={styles.react_icon_container}>
                         <Image
-                          alt=""
+                          alt="get up icon"
                           width={200}
                           height={100}
                           src="images/get-up.svg"
@@ -305,7 +303,7 @@ export default function Home() {
                       <p>Speak versus Talk</p>
                       <div className={styles.react_icon_container}>
                         <Image
-                          alt=""
+                          alt="speech bubble icon"
                           width={200}
                           height={100}
                           src="images/speak.svg"
