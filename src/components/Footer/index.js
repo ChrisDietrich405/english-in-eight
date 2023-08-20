@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 import { Grid, Button, TextField, Container } from "@mui/material";
 import * as Validator from "validatorjs";
@@ -118,16 +119,27 @@ export default function Footer() {
         <Container>
           <ToastContainer />
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              display="flex"
+              justifyContent="center"
+              flexDirection="column"
+              alignItems="center"
+            >
               {" "}
               <div className={styles.logo}>
                 <Link
-                  className={styles.link}
+                  // className={styles.link}
                   href="/"
                   // className={styles.footer_logo}
                 >
-                  <img
-                    style={{ width: "130px" }}
+                  <Image
+                    className={styles.logo_image}
+                    width="230"
+                    height="230"
                     src="/images/logo.svg"
                     alt="English in Eight Minutes Logo"
                   />
@@ -135,7 +147,9 @@ export default function Footer() {
               </div>
               <div className={styles.email}>
                 {" "}
-                <p>englishineight@gmail.com</p>
+                <a href="mailto:englishineight@gmail.com">
+                  englishineight@gmail.com
+                </a>
               </div>
             </Grid>
             <Grid
@@ -236,7 +250,12 @@ export default function Footer() {
                     )}
                   </div>
                   {/* <ToastContainer /> */}
-                  <Button type="submit" variant="contained" style={{marginTop: "50px"}}>
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    className={styles.form_button}
+                    style={{ marginTop: "50px" }}
+                  >
                     Submit
                   </Button>
                 </form>
@@ -244,6 +263,13 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Container>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#1976d2"
+            fill-opacity="1"
+            d="M0,224L48,192C96,160,192,96,288,106.7C384,117,480,203,576,245.3C672,288,768,288,864,272C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </footer>
     </>
   );

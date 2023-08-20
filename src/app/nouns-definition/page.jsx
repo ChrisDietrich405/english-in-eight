@@ -19,13 +19,13 @@ export default function NounDefinition() {
           <div className={styles.picture_wrapper}>
             <Image height={300} width={300} src="/child.jpg" alt="" />
           </div>
-          <p className={styles.picture_subtitle}>Person - child</p>
+          <h3 className={styles.picture_subtitle}>Person - child</h3>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
             <Image height={300} width={300} src="/tajmahal.jpg" alt="" />
           </div>
-          <p className={styles.picture_subtitle}>Place - Taj Mahal</p>
+          <h3 className={styles.picture_subtitle}>Place - Taj Mahal</h3>
         </div>
         <div className={styles.definition_picture}>
           <div className={styles.picture_wrapper}>
@@ -36,7 +36,7 @@ export default function NounDefinition() {
               alt=""
             />
           </div>
-          <p className={styles.picture_subtitle}>Thing - Iphone</p>
+          <h3 className={styles.picture_subtitle}>Thing - Iphone</h3>
         </div>
       </div>
     </>

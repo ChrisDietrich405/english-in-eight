@@ -15,7 +15,7 @@ export default function Expressions() {
             better to do things as quickly as possible
             <br />
             <p>
-              Come on hurry up! <b>Time is money.</b>
+              Example: Come on hurry up! <b>Time is money.</b>
             </p>
           </li>
 
@@ -23,8 +23,8 @@ export default function Expressions() {
             <b>Foolproof</b> - incapable of going wrong or being misused
             <br />
             <p>
-              I have a <b>foolproof</b> security system. As dumb as I am even
-              I'm able to use it.
+              Example: I have a <b>foolproof</b> security system. As dumb as I
+              am even I'm able to use it.
             </p>
           </li>
 

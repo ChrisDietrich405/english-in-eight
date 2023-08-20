@@ -79,7 +79,7 @@ export default async function PresentContinuous() {
             userAnswer: "",
           },
           {
-            title: "I ___________ (study) now. Please call me later",
+            title: "I ___________ (study) now. Please call me later.",
             possibleAnswers: [
               { title: "a. am study" },
               { title: "b. am studying", correctAnswer: true },

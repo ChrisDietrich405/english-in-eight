@@ -38,7 +38,7 @@
 }
 
 .picture_subtitle {
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .table_container {
@@ -89,6 +89,19 @@
   .navbar_logo {
     display: flex;
     margin-left: auto;
+  }
+
+  .grammar_explanation_paragraph {
+    margin-bottom: 25px;
+  }
+
+  .content_wrapper {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+
+  .content_wrapper img {
+    width: 300px;
   }
 }
 

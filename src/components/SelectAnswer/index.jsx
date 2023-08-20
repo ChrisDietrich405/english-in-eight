@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 import styles from "./styles.module.css";
 
@@ -34,9 +35,9 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
-        return "😄";
+        return <AiFillCheckCircle color="green" />;
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return "😭";
+        return <AiFillCloseCircle color="red" />;
       } else {
         return "";
       }
@@ -50,7 +51,7 @@ const SelectAnswer = ({
         onClick={onClick}
         name={"twoPossibleAnswers" + i}
         type="radio"
-        className="radio"
+        className={styles.radio_button}
       />
       <p className={getTextColor()}>
         {possibleAnswer.title} {getEmoji()}

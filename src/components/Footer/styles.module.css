@@ -1,9 +1,10 @@
 .footer {
+  height: 300px !important; 
   margin-top: 50px;
-  margin-bottom: 425px;
+  /* margin-bottom: 425px; */
   padding-top: 20px;
+  border-top: 1px solid #1976d2;
 }
-
 
 .footer_logo {
   margin-left: -1.6rem;
@@ -96,6 +97,38 @@
 @media screen and (max-width: 450px) {
   .main-container {
     align-items: center;
+  }
+
+  .logo_image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .email {
+    font-size: 24px;
+  }
+
+  .form_container {
+    display: block;
+    justify-content: start;
+  }
+
+  .form {
+    margin: 0 auto !important;
+    display: block;
+    justify-content: start;
+    width: 100% !important;
+  }
+
+  .form_control {
+    margin: 0 auto !important;
+    display: block;
+    justify-content: start;
+    width: 100% !important;
+  }
+
+  .form_button {
+    margin-top: 110px !important;
   }
 
   .page-title {

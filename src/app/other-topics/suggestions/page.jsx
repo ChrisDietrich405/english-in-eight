@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
 
+import styles from "./styles.module.css"
+
 const Suggestions = () => {
   return (
-    <Container>
+    <Container style={{margin: "100px"}}>
       <Typography variant="h3">
         How can you be successful using this website and successful learning
         English?
       </Typography>
 
-      <ul>
+      <ul className={styles.list_container}>
         <li>
           Don't focus too much on the explanations, read them once and then go
           on to the examples. I guarantee after reading the examples the

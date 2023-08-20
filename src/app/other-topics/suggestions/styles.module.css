@@ -1,0 +1,21 @@
+.list_container li {
+
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 18px;
+}
+
+.list_container li:before {
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  margin-right: 8px;
+  content: "";
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+}
