@@ -1,15 +1,13 @@
-import mysql from "mysql2/promise";
+import clientPromise from "@/lib/mongodb";
 import { NextResponse } from "next/server";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 
 export async function GET() {
-  const connection = await mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "secret",
-    database: "english_in_eight",
-  });
-  const [rows] = await connection.execute("SELECT * FROM future_continuous");
+  const client = await clientPromise;
+  const db = client.db("english_in_eight");
 
-  connection.end();
+  const rows = await db.collection("future_continuous").find({}).toArray();
+  console.log(rows);
+
   return NextResponse.json(rows);
 }

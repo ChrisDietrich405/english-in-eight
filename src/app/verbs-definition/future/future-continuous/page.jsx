@@ -1,4 +1,5 @@
 import Quiz from "@/src/components/Quiz";
+import Head from "next/head";
 
 import styles from "../../../styles/content-page.module.css";
 
@@ -16,8 +17,9 @@ const getData = async () => {
 };
 
 export default async function FutureContinuous() {
+  console.log(fullUrl);
   const data = await getData();
-
+  console.log(data);
   return (
     <>
       <Head>
