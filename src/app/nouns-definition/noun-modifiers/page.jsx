@@ -33,13 +33,8 @@ export default function NounModifiers() {
             The <b>shopping</b> list
           </li>
         </ul>
-        <p></p>
-        <p>
-          <b>Pay attention!</b>
-        </p>
-        <p>
-          We don’t use a possessive form for these things. We do NOT talk about:
-        </p>
+        
+        
 
         <p>Noun modifiers can be used to show what something is made of:</p>
         <ul className="page-examples">
@@ -54,12 +49,7 @@ export default function NounModifiers() {
           <li>a thousand mile trip</li>
           <li>a twenty pound bag</li>
         </ul>
-        <p>Noun modifiers also can be used with nouns ending in ing:</p>
-        <ul className="page-examples">
-          <li>a time machine</li>
-          <li>a waiting list</li>
-          <li>a guitar lesson</li>
-        </ul>
+     
         <p>Noun modifiers can be used with nouns ending in –er:</p>
         <ul className="page-examples">
           <li>a dress maker</li>
