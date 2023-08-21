@@ -153,12 +153,12 @@ export default function Home() {
                   }}
                 >
                   <div className={styles.link_cards}>
-                    <Link href="/nouns-definition" className={styles.link}>
-                      <h3 className={styles.content_title_second_row}>Nouns</h3>
+                    <Link href="/verbs-definition/home" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>Verbs</h3>
                       <h4 className={styles.content_definition}>
-                        People, Places, Things
+                        Action Verbs
                       </h4>
-                      <p>Woman, City, Car</p>
+                      <p>Swim, Dance, Run</p>
                       <div className={styles.react_icon_container}>
                         <FaRunning size="5em" />
                       </div>
@@ -184,12 +184,14 @@ export default function Home() {
                   }}
                 >
                   <div className={styles.link_cards}>
-                    <Link href="/nouns-definition" className={styles.link}>
-                      <h3 className={styles.content_title_second_row}>Nouns</h3>
+                    <Link href="/adjectives-definition" className={styles.link}>
+                      <h3 className={styles.content_title_second_row}>
+                        Adjectives
+                      </h3>
                       <h4 className={styles.content_definition}>
-                        People, Places, Things
+                        Describing Words
                       </h4>
-                      <p>Woman, City, Car</p>
+                      <p>Smart, Fast, Angry</p>
                       <div className={styles.react_icon_container}>
                         <FaAngry size="5em" />
                       </div>

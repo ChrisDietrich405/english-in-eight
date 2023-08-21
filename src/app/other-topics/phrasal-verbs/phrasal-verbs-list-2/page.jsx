@@ -14,7 +14,7 @@ export default function PhrasalVerbs2() {
             <b>Put together</b> - to assemble, construct something using several
             pieces
             <p>
-              I bought a desk from the store and now I need to{" "}
+             Example: I bought a desk from the store and now I need to{" "}
               <b>put it together.</b>
             </p>
           </li>

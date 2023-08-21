@@ -13,14 +13,14 @@ export default function PhrasalVerbs1() {
           <li>
             <b>Take up</b> - occupy time, space, or attention.
             <p>
-              I don't want to <b>take up</b> any more of your time.
+              Example: I don't want to <b>take up</b> any more of your time.
             </p>
           </li>
 
           <li>
             <b>Fed up with</b> - annoyed or upset at a situation or treatment.
             <p>
-              He was <b>fed up with</b> doing all the work.
+             Example: He was <b>fed up with</b> doing all the work.
             </p>
           </li>
 
@@ -28,7 +28,7 @@ export default function PhrasalVerbs1() {
             <b>Talk it out</b> - to resolve a fight, disagreement,
             misunderstanding through talking.
             <p>
-              After my wife and I <b>talked it out</b> we were fine.
+             Example: After my wife and I <b>talked it out</b> we were fine.
             </p>
           </li>
 
@@ -36,7 +36,7 @@ export default function PhrasalVerbs1() {
             <b>Hit it off</b> - to immediately have a good relationship when
             meeting someone new.
             <p>
-              I met my new boss today and we <b>hit it off</b> from the start.
+             Example: I met my new boss today and we <b>hit it off</b> from the start.
               I’m so happy.
             </p>
           </li>
@@ -45,7 +45,7 @@ export default function PhrasalVerbs1() {
             <b>Cheat on</b> - to be unfaithful to your romantic partner, or when
             being dishonest when taking tests.
             <p>
-              Skylar <b>cheated on</b> Walter (she had sex with her boss).
+             Example: Skylar <b>cheated on</b> Walter (she had sex with her boss).
             </p>
           </li>
         </ul>

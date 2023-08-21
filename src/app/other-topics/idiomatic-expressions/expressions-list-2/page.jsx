@@ -15,7 +15,7 @@ export default function Expressions2() {
             older relatives.
             <br />
             <p>
-              I wore a lot of my older brother’s <b>hand me downs.</b>
+             Example: I wore a lot of my older brother’s <b>hand me downs.</b>
             </p>
           </li>
 
@@ -24,7 +24,7 @@ export default function Expressions2() {
             that is difficult.
             <br />
             <p>
-              I was tired around 11pm, but got a <b>second wind</b> and finished
+            Example: I was tired around 11pm, but got a <b>second wind</b> and finished
               the project.
             </p>
           </li>
@@ -33,7 +33,7 @@ export default function Expressions2() {
             <b>To wing it</b> - to not plan
             <br />
             <p>
-              John didn’t have time to prepare for his interview so he needed{" "}
+             Example: John didn’t have time to prepare for his interview so he needed{" "}
               <b>to wing it.</b>
             </p>
           </li>
@@ -42,7 +42,7 @@ export default function Expressions2() {
             managed
             <br />
             <p>
-              The decision is <b>out of my hands.</b> I have no control in this
+             Example: The decision is <b>out of my hands.</b> I have no control in this
               situation.
             </p>
           </li>
@@ -52,7 +52,7 @@ export default function Expressions2() {
             undesirable effect to what was intended.
             <br />
             <p>
-              Her plans to make him jealous <b>backfired</b> on her when he
+              Example: Her plans to make him jealous <b>backfired</b> on her when he
               started dating her best friend.
             </p>
           </li>

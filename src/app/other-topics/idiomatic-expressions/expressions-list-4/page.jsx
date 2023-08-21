@@ -15,7 +15,7 @@ export default function Expressions() {
             phone or in person, in an attempt to sell goods or services
             <br />
             <p>
-              I hate <b>cold calling</b>. I never get any sales from it.{" "}
+              Example: I hate <b>cold calling</b>. I never get any sales from it.{" "}
             </p>
           </li>
 
@@ -23,7 +23,7 @@ export default function Expressions() {
             <b>B movie</b> - a low-budget commercial motion picture
             <br />
             <p>
-              My friends and I like to watch <b>B movies</b>. We like making fun
+              Example: My friends and I like to watch <b>B movies</b>. We like making fun
               of them.
             </p>
           </li>
@@ -33,7 +33,7 @@ export default function Expressions() {
             as funny when being told
             <br />
             <p>
-              After I told my mom what happened, she didn’t laugh at all and so
+              Example: After I told my mom what happened, she didn’t laugh at all and so
               I said <b>“you had to be there".</b>
             </p>
           </li>
@@ -42,14 +42,14 @@ export default function Expressions() {
             <b>(period of time) tops</b> - the longest time something will take
             <br />
             <p>
-              I’ll finish this website in <b>one week tops.</b>
+              Example: I’ll finish this website in <b>one week tops.</b>
             </p>
           </li>
           <li>
             <b>Ahead of schedule</b> - earlier than planned or expected
             <br />
             <p>
-              They finished the project 2 weeks <b>ahead of schedule.</b>
+              Example: They finished the project 2 weeks <b>ahead of schedule.</b>
             </p>
           </li>
         </ul>

@@ -9,7 +9,7 @@ export default function NounDefinition() {
         <h1>Adjective Definition</h1>
       </div>
       <div className={styles.page_body}>
-      <h5 className={styles.grammar_explanation_paragraph}>
+        <h5 className={styles.grammar_explanation_paragraph}>
           Adjectives are used to describe or modify nouns or pronouns, providing
           more information about their qualities, characteristics, or
           attributes. In these examples, the adjectives are in bold.
@@ -26,7 +26,7 @@ export default function NounDefinition() {
             />
           </div>
           <p className={styles.picture_subtitle}>
-            <b>Happy</b> child
+            <p>Happy</p>
           </p>
         </div>
         <div className={styles.definition_picture}>
@@ -39,7 +39,7 @@ export default function NounDefinition() {
             />
           </div>
           <p className={styles.picture_subtitle}>
-            <b>Small</b> dog
+            <p>Small</p>
           </p>
         </div>
         <div className={styles.definition_picture}>
@@ -52,7 +52,7 @@ export default function NounDefinition() {
             />
           </div>
           <p className={styles.picture_subtitle}>
-            <b>Strong</b> man
+            <p>Strong</p>
           </p>
         </div>
       </div>

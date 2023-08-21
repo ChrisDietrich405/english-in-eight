@@ -13,14 +13,14 @@ export default function PhrasalVerbs3() {
             <b>Think over</b> - to think deeply about a decision before you make
             it
             <p>
-              Can I <b>think it over</b> and tell you my answer tomorrow?{" "}
+             Example: Can I <b>think it over</b> and tell you my answer tomorrow?{" "}
             </p>
           </li>
 
           <li>
             <b>Put up with</b> - tolerate
             <p>
-              He couldn’t <b>put up with</b> his boss anymore so he quit.{" "}
+             Example: He couldn’t <b>put up with</b> his boss anymore so he quit.{" "}
             </p>
           </li>
 
@@ -28,14 +28,14 @@ export default function PhrasalVerbs3() {
             <b>Fall for</b> - To either become infatuated with or fall in love
             with someone
             <p>
-              I <b>fell for</b> her pretty quickly.
+             Example: I <b>fell for</b> her pretty quickly.
             </p>
           </li>
 
           <li>
             <b>Take apart</b> - to disassemble
             <p>
-              We needed to <b>take apart</b> the desk in order to take it out of
+              Example: We needed to <b>take apart</b> the desk in order to take it out of
               the room.{" "}
             </p>
           </li>
@@ -43,7 +43,7 @@ export default function PhrasalVerbs3() {
           <li>
             <b>Build up</b> - to increase in intensity.
             <p>
-              They had a big fight after the tension between them{" "}
+              Example: They had a big fight after the tension between them{" "}
               <b>built up</b>.{" "}
             </p>
           </li>

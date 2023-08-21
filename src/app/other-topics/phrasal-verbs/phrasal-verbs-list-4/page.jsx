@@ -1,6 +1,6 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 export default function PhrasalVerbs4() {
   return (
@@ -14,7 +14,7 @@ export default function PhrasalVerbs4() {
             <b>Ask around</b> - to ask a lot of different people in order to get
             information or help
             <p>
-              I’m going to <b>ask around</b> to find the best mechanic.
+              Example: I’m going to <b>ask around</b> to find the best mechanic.
             </p>
           </li>
 
@@ -22,28 +22,29 @@ export default function PhrasalVerbs4() {
             <b>Sell out</b> - to no longer have a product available in a store
             because every one of that product was purchased.
             <p>
-              All the new IPhones were <b>sold out</b> at the Apple store.
+              Example: All the new IPhones were <b>sold out</b> at the Apple
+              store.
             </p>
           </li>
 
           <li>
             <b>Look down on</b> - to feel that others are inferior
             <p>
-              Many rich people <b>look down on</b> poor people.
+              Example: Many rich people <b>look down on</b> poor people.
             </p>
           </li>
 
           <li>
             <b>Come back</b> - to return to the place you are right now
             <p>
-              I’m leaving soon, but I’m <b>coming right</b> back.
+              Example: I’m leaving soon, but I’m <b>coming right</b> back.
             </p>
           </li>
 
           <li>
             <b>Go back</b> - to return to a place where you aren’t right now
             <p>
-              I’m <b>going back</b> to Colombia in December.{" "}
+              Example: I’m <b>going back</b> to Colombia in December.{" "}
             </p>
           </li>
         </ul>

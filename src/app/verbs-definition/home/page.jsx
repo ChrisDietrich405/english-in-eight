@@ -13,7 +13,7 @@ export default function VerbsDef() {
       <div className={styles.page_body}>
         <h5 className={styles.grammar_explanation_paragraph}>
           A verb is a word used to describe an action (for example hear), state
-          (for example become), or occurrence (for example happen)
+          (for example love), or occurrence (for example happen)
         </h5>
       </div>
       <div className={styles.definition_pictures_container}>

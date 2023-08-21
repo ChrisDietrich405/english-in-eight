@@ -15,7 +15,7 @@ export default function Expressions3() {
             well it's a bad idea to interfere with it
             <br />
             <p>
-              My refrigerator was making a very small noise, but it was working.
+             Example: My refrigerator was making a very small noise, but it was working.
               I was about to investigate with a screwdriver when my wife said
               leave it alone. <b>If it’s not broke don’t fix it</b>.
             </p>
@@ -26,7 +26,7 @@ export default function Expressions3() {
             thinking
             <br />
             <p>
-              When I told my wife that we should order Chinese she said “Wow!{" "}
+             Example: When I told my wife that we should order Chinese she said “Wow!{" "}
               <b>You read my mind</b>. That’s exactly what I wanted to have for
               dinner.
             </p>
@@ -37,7 +37,7 @@ export default function Expressions3() {
             about it
             <br />
             <p>
-              I ask my students to please <b>spread the word</b> about my
+             Example:  I ask my students to please <b>spread the word</b> about my
               English classes.
             </p>
           </li>
@@ -47,7 +47,7 @@ export default function Expressions3() {
             making a final decision
             <br />
             <p>
-              I have to go back to the store because I cut the wrong size. I
+             Example: I have to go back to the store because I cut the wrong size. I
               forgot to <b>"measure twice, cut once"</b>.
             </p>
           </li>
@@ -57,7 +57,7 @@ export default function Expressions3() {
             short period of time
             <br />
             <p>
-              Over the weekend I <b>binge watched</b> Breaking Bad. I watched
+             Example:  Over the weekend I <b>binge watched</b> Breaking Bad. I watched
               the first three seasons.
             </p>
           </li>

@@ -33,7 +33,7 @@ export default function Expressions() {
             unexpectedly
             <br />
             <p>
-              The car came <b>out of nowhere</b> and hit our van.
+              Example: The car came <b>out of nowhere</b> and hit our van.
             </p>
           </li>
 
@@ -42,7 +42,7 @@ export default function Expressions() {
             outperforming, outclassing, etc., someone
             <br />
             <p>
-              I hate telling stories around Jack because he always tries{" "}
+              Example: I hate telling stories around Jack because he always tries{" "}
               <b>to one up</b> you with some amazing story of his own.
             </p>
           </li>
@@ -51,7 +51,7 @@ export default function Expressions() {
             now so that problems do not occur later on
             <br />
             <p>
-              It's probably not necessary to check the figures again, but{" "}
+              Example: It's probably not necessary to check the figures again, but{" "}
               <b>it's better to be safe than sorry.</b>
             </p>
           </li>
