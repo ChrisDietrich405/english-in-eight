@@ -12,7 +12,6 @@
 
 .banner_inner h1 {
   padding: 1px 3px;
-  background: var(--primary);
   border-radius: 2px;
   color: #fff;
   text-shadow: rgba(0, 0, 0, 1) 0px 0px 25px;

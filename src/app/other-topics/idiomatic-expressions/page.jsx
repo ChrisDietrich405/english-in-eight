@@ -14,9 +14,9 @@ export default function ExpressionsDefinition() {
         </p>
         <div className={styles.content_wrapper}>
           <Image
-            width={375}
+            width={300}
             height={200}
-            src="/time-is-money.png"
+            src="/time-is-money.jpg"
             className="other-topics-image"
             aria-hidden="true"
           />
@@ -28,7 +28,7 @@ export default function ExpressionsDefinition() {
         </div>
         <div className={styles.content_wrapper}>
           <Image
-            width={230}
+            width={300}
             height={200}
             src="/mind-your-business.jpg"
             className="other-topics-image"

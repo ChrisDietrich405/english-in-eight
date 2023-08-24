@@ -23,6 +23,7 @@ const Acknowledgements = () => {
         Photo by Maahid Photos:
         https://www.pexels.com/photo/taj-mahal-under-blue-sky-3881104/
       </p>
+      <p>Photo by Marco Verch https://www.flickr.com/photos/30478819@N08/</p>
     </div>
   );
 };
