@@ -4,7 +4,7 @@ import styles from "../../../styles/content-page.module.css";
 
 //DONE
 
-const baseUrl = "http://localhost:3000"; // Replace with your actual base URL
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
 const endpoint = "/api/future-simple-go"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
@@ -15,7 +15,7 @@ const getDataGo = async () => {
   return results;
 };
 
-const baseUrl2 = "http://localhost:3000"; // Replace with your actual base URL
+const baseUrl2 = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
 const endpoint2 = "/api/future-simple-will"; // Replace with the correct endpoint
 
 const fullUrl2 = baseUrl2 + endpoint2;
