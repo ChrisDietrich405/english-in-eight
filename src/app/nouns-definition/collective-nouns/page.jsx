@@ -95,15 +95,31 @@ export default function Collective() {
   const handleRandomQuestions = () => {
     setQuiz([
       {
-        title: "The students __________ fighting in the cafeteria.",
+        title: "The team __________ celebrating their victory.",
         possibleAnswers: [
-          { title: " are", correctAnswer: true },
-          { title: " is" },
+          { title: "is", correctAnswer: true },
+          { title: "are" },
         ],
         userAnswer: "",
       },
       {
-        title: "The group __________ decided together to file the petition.",
+        title: "The committee __________ discussing the new proposal.",
+        possibleAnswers: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "The herd of cattle __________ grazing in the field.",
+        possibleAnswers: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "The jury __________ reached a unanimous decision.",
         possibleAnswers: [
           { title: "has", correctAnswer: true },
           { title: "have" },
@@ -111,35 +127,50 @@ export default function Collective() {
         userAnswer: "",
       },
       {
-        title:
-          "The United States army _____________ a budget much larger than any other countries.",
+        title: "The swarm of bees __________ buzzing around the flowers.",
         possibleAnswers: [
-          { title: "have" },
-          { title: "has", correctAnswer: true },
+          { title: "is", correctAnswer: true },
+          { title: "are" },
         ],
         userAnswer: "",
       },
       {
-        title: "My sisters ____________ to go to the beach this weekend.",
+        title: "The orchestra __________ performing at the concert.",
         possibleAnswers: [
-          { title: "want", correctAnswer: true },
-          { title: "wants" },
+          { title: "is", correctAnswer: true },
+          { title: "are" },
         ],
         userAnswer: "",
       },
       {
-        title: "___________ the parents' committee made a decision.",
+        title: "The family __________ planning a reunion.",
         possibleAnswers: [
-          { title: "Has", correctAnswer: true },
-          { title: "Have" },
+          { title: "is", correctAnswer: true },
+          { title: "are" },
         ],
         userAnswer: "",
       },
       {
-        title: "___________ any of the soldiers hurt?",
+        title: "The staff __________ working diligently on the project.",
         possibleAnswers: [
-          { title: "Was" },
-          { title: "Were", correctAnswer: true },
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "The audience __________ clapping after the performance.",
+        possibleAnswers: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "The school of fish __________ swimming in the ocean.",
+        possibleAnswers: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
         ],
         userAnswer: "",
       },

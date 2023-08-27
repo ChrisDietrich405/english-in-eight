@@ -11,9 +11,11 @@ export default function NounModifiers() {
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
-          We sometimes have two nouns together to demonstrate that one thing is
-          a part of something else. In the following examples, the first noun is
-          called a noun modifier.
+          Noun modifiers are words or phrases that provide additional
+          information about a noun, helping to describe, specify, or quantify
+          it. We sometimes have two nouns together to demonstrate that one thing
+          is a part of something else. In the following examples, the first noun
+          is called a noun modifier.
         </p>
 
         <ul className="page-examples">
@@ -33,8 +35,6 @@ export default function NounModifiers() {
             The <b>shopping</b> list
           </li>
         </ul>
-        
-        
 
         <p>Noun modifiers can be used to show what something is made of:</p>
         <ul className="page-examples">
@@ -49,7 +49,7 @@ export default function NounModifiers() {
           <li>a thousand mile trip</li>
           <li>a twenty pound bag</li>
         </ul>
-     
+
         <p>Noun modifiers can be used with nouns ending in –er:</p>
         <ul className="page-examples">
           <li>a dress maker</li>
@@ -57,6 +57,13 @@ export default function NounModifiers() {
           <li>a factory worker</li>
         </ul>
       </div>
+      <p>Noun modifiers are always singular</p>
+      <ul className="page-examples">
+        <li>
+          a basketball player {" "}
+          <span style={{ color: "red" }}>NOT a basketballs player</span>
+        </li>
+      </ul>
 
       <Quiz
         title="Take a Quiz!"
@@ -89,16 +96,16 @@ export default function NounModifiers() {
           {
             title: "It's a key for my house. It's a _____________.",
             possibleAnswers: [
-              { title: "key car" },
-              { title: "car key", correctAnswer: true },
+              { title: "key house" },
+              { title: "house key", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            title: "We need a house for a dog. We need a ______________.",
+            title: "The park is in the city. It's a ______________.",
             possibleAnswers: [
-              { title: "housedog" },
-              { title: "doghouse", correctAnswer: true },
+              { title: "park city" },
+              { title: "city park", correctAnswer: true },
             ],
             userAnswer: "",
           },
@@ -121,7 +128,7 @@ export default function NounModifiers() {
           },
           {
             title:
-              "Meet me where there is a station for a train. It's a ________________",
+              "Meet me where there is a station for a train. It's a ________________.",
             possibleAnswers: [
               { title: "train station", correctAnswer: true },
               { title: "station train" },

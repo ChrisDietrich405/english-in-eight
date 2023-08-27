@@ -96,7 +96,7 @@ export default function Quiz(props) {
             Reset
           </Button>
           {props.shouldShowNewQuestionsBtn && (
-            <Button variant="contained" type="button" onClick={props.callback}>
+            <Button style={{marginLeft: "20px"}} variant="contained" type="button" onClick={props.callback}>
               Try More Questions
             </Button>
           )}

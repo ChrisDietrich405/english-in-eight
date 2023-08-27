@@ -9,9 +9,13 @@ const endpoint = "/api/present-perfect"; // Replace with the correct endpoint
 const fullUrl = baseUrl + endpoint;
 
 const getVerbs = async () => {
-  const response = await fetch(fullUrl);
-  const results = await response.json();
-  return results;
+  try {
+    const response = await fetch(fullUrl);
+    const results = await response.json();
+    console.log({results: results})
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export default async function PresentPerfect() {
