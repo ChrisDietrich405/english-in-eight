@@ -19,7 +19,11 @@ export async function GET(req, { params }) {
 
   // const [rows] = await connection.execute(`SELECT * FROM ${collectionName}`);
   // connection.end();
-  return NextResponse.json(rows);
+  return NextResponse.json(rows, {
+    headers: {
+      "Content-Type": "application/json", // Set the Content-Type header
+    },
+  });
 }
 
 // import mysql from "mysql2/promise";
