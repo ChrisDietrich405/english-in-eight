@@ -101,7 +101,7 @@ export default function CustomizedMenus() {
         disableElevation
         onClick={handleClick}
       >
-        Adjectives TEST DELETE AFTER
+        Adjectives 
         <KeyboardArrowDownIcon />
       </div>
       <StyledMenu
