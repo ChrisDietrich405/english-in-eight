@@ -1,0 +1,44 @@
+[debug] [2023-09-08T21:06:58.215Z] ----------------------------------------------------------------------
+[debug] [2023-09-08T21:06:58.216Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-09-08T21:06:58.217Z] CLI Version:   12.4.7
+[debug] [2023-09-08T21:06:58.217Z] Platform:      win32
+[debug] [2023-09-08T21:06:58.217Z] Node Version:  v16.14.2
+[debug] [2023-09-08T21:06:58.218Z] Time:          Fri Sep 08 2023 17:06:58 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-09-08T21:06:58.218Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-08T21:06:58.280Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-08T21:06:58.280Z] > authorizing via signed-in user (chrisdietrich3666@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\chris\OneDrive\Portfolio\english-in-eight-next
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-08T21:07:01.814Z] Using project from CLI flag: english-in-eight-next
+[debug] [2023-09-08T21:07:01.816Z] > refreshing access token with scopes: []
+[debug] [2023-09-08T21:07:01.819Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-08T21:07:01.819Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-08T21:07:01.954Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-08T21:07:01.955Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-08T21:07:01.975Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/english-in-eight-next [none]
+[debug] [2023-09-08T21:07:02.363Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/english-in-eight-next 200
+[debug] [2023-09-08T21:07:02.363Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/english-in-eight-next {"projectId":"english-in-eight-next","projectNumber":"66036830686","displayName":"english-in-eight-next","name":"projects/english-in-eight-next","resources":{"hostingSite":"english-in-eight-next"},"state":"ACTIVE","etag":"1_41b01555-ea53-4bea-b0d0-fa30a7addbbd"}
+[info] i  Using project english-in-eight-next (english-in-eight-next) 
+[info] 
+=== Hosting Setup

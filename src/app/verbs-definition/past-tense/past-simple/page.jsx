@@ -17,7 +17,7 @@ const getData = async () => {
 
 export default async function PastSimple() {
   const data = await getData();
-  console.log(data);
+
 
   return (
     <>

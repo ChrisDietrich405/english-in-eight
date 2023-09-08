@@ -29,13 +29,11 @@ export async function GET(req, { params }) {
 // import mysql from "mysql2/promise";
 // import { NextResponse } from "next/server";
 
-
 // import clientPromise from "@/lib/mongodb";
-
 
 // export async function GET() {
 //   const connection = await mysql.createConnection({
-//     host: "localhost",
+//     host: "",
 //     user: "root",
 //     password: "secret",
 //     database: "english_in_eight",
@@ -44,9 +42,7 @@ export async function GET(req, { params }) {
 //   const tables = rows.map((row) => row.Tables_in_english_in_eight);
 //   console.log(tables);
 
-
 //   //getting values for each verb
-
 
 //   const client = await clientPromise;
 //   const db = client.db("english_in_eight");
@@ -59,8 +55,6 @@ export async function GET(req, { params }) {
 //     });
 //   });
 
-
 //   connection.end();
 //   return NextResponse.json(rows);
 // }
-
