@@ -12,13 +12,14 @@ const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch(`${baseUrl}${endpoint}`);
+  const res = await fetch(fullUrl);
   const results = await res.json();
   return results;
 };
 
 export default async function FutureContinuous() {
   const data = await getData();
+  console.log(data);
   return (
     <>
       <Head>

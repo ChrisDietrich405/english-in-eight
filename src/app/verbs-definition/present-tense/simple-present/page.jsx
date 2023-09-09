@@ -8,7 +8,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual ba
 const endpoint = "/api/simple-present"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
-console.log(fullUrl);
+
 const getVerbs = async () => {
   const response = await fetch(fullUrl);
   const results = response.json();
