@@ -52,27 +52,12 @@ export default function Home() {
           property="og:image"
           content="https://dietrichlandcare.com/images/logo.jpg"
         />
-
-        {/* <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        /> */}
       </Head>
       <main className={styles.home} sx={{ padding: "0px !important" }}>
         <div className={styles.banner}>
           <div
             style={{
               backgroundImage: 'url("./images/flag.jpg")',
-              // opacity: "60%",
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "100%",
@@ -128,7 +113,7 @@ export default function Home() {
                         People, Places, Things
                       </h4>
                       <p>Woman, City, Car</p>
-                      <div className={styles.react_icon_container}>
+                      <div className={styles.run_icon_container}>
                         <FaTreeCity size="5em" />
                       </div>
                     </Link>
@@ -159,7 +144,7 @@ export default function Home() {
                         Action Verbs
                       </h4>
                       <p>Swim, Dance, Run</p>
-                      <div className={styles.react_icon_container}>
+                      <div className={styles.run_icon_container}>
                         <FaRunning size="5em" />
                       </div>
                     </Link>
@@ -192,7 +177,7 @@ export default function Home() {
                         Describing Words
                       </h4>
                       <p>Smart, Fast, Angry</p>
-                      <div className={styles.react_icon_container}>
+                      <div className={styles.run_icon_container}>
                         <FaAngry size="5em" />
                       </div>
                     </Link>
@@ -219,7 +204,10 @@ export default function Home() {
                   }}
                 >
                   <div className={styles.link_cards}>
-                    <Link href="/nouns-definition" className={styles.link}>
+                    <Link
+                      href="/other-topics/idiomatic-expressions"
+                      className={styles.link}
+                    >
                       <h3 className={styles.content_title_second_row}>
                         Idiomatic Expressions
                       </h3>
@@ -230,7 +218,7 @@ export default function Home() {
                       <div className={styles.react_icon_container}>
                         <Image
                           alt=""
-                          width={200}
+                          width={325}
                           height={100}
                           src="images/time-is-money.svg"
                         />
@@ -257,7 +245,10 @@ export default function Home() {
                   }}
                 >
                   <div className={styles.link_cards}>
-                    <Link href="/nouns-definition" className={styles.link}>
+                    <Link
+                      href="/other-topics/phrasal-verbs"
+                      className={styles.link}
+                    >
                       <h3 className={styles.content_title_second_row}>
                         Phrasal Verbs
                       </h3>
@@ -295,7 +286,7 @@ export default function Home() {
                   }}
                 >
                   <div className={styles.link_cards}>
-                    <Link href="/nouns-definition" className={styles.link}>
+                    <Link href="/other-topics/versus" className={styles.link}>
                       <h3 className={styles.content_title_second_row}>
                         Versus
                       </h3>
@@ -306,7 +297,7 @@ export default function Home() {
                       <div className={styles.react_icon_container}>
                         <Image
                           alt="speech bubble icon"
-                          width={200}
+                          width={325}
                           height={100}
                           src="images/speak.svg"
                         />

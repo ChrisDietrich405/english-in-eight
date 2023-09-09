@@ -37,6 +37,36 @@ export default async function FuturePerfectContinuous() {
             <th>Negative short form</th>
           </tr>
         </thead>
+        <tr>
+          <td>I will have been finishing</td>
+          <td>I'll have been finishing</td>
+          <td>I will not have been finishing</td>
+          <td>I'll not have been finishing</td>
+        </tr>
+        <tr>
+          <td>You will have been swimming</td>
+          <td>You'll have been swimming</td>
+          <td>You will not have been swimming</td>
+          <td>You'll not have been swimming</td>
+        </tr>
+        <tr>
+          <td>She, he, it will have been working</td>
+          <td>She, he, it'll have been working</td>
+          <td>She, he, it will not have been working</td>
+          <td>She, he, it'll not have been working</td>
+        </tr>
+        <tr>
+          <td>We will have been running</td>
+          <td>We'll have been running</td>
+          <td>We will not have been running</td>
+          <td>We'll not have been running</td>
+        </tr>
+        <tr>
+          <td>They will have been ending</td>
+          <td>They'll have been ending</td>
+          <td>They wTheyll not have been ending</td>
+          <td>They'll not have been ending</td>
+        </tr>
         <tbody>
           {/* {data.map((verb) => {
             return (
@@ -120,7 +150,7 @@ export default async function FuturePerfectContinuous() {
           },
           {
             title:
-              "By the wedding day, they will have been planning it for a whole year.",
+              "By the wedding day, they will ______________ it for a whole year.",
             possibleAnswers: [
               { title: "a. have been planning", correctAnswer: true },
               { title: "b. have planned" },

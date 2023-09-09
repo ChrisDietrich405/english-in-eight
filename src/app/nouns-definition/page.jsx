@@ -14,29 +14,27 @@ export default function NounDefinition() {
           people, places or things.{" "}
         </h5>
       </div>
-      <div className={styles.definition_pictures_container}>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image height={300} width={300} src="/child.jpg" alt="" />
+
+      <div className="container">
+        <div className="row">
+          <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image height={250} width={250} src="/child.jpg" alt="" />
+            </div>
+            <h3 className={styles.picture_subtitle}>Person - child</h3>
           </div>
-          <h3 className={styles.picture_subtitle}>Person - child</h3>
-        </div>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image height={300} width={300} src="/tajmahal.jpg" alt="" />
+          <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image height={250} width={250} src="/tajmahal.jpg" alt="" />
+            </div>
+            <h3 className={styles.picture_subtitle}>Place - Taj Mahal</h3>
           </div>
-          <h3 className={styles.picture_subtitle}>Place - Taj Mahal</h3>
-        </div>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/thing-nouns-definition.jpg"
-              alt=""
-            />
+          <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image height={250} width={250} src="/iphone.jpg" alt="" />
+            </div>
+            <h3 className={styles.picture_subtitle}>Thing - Iphone</h3>
           </div>
-          <h3 className={styles.picture_subtitle}>Thing - Iphone</h3>
         </div>
       </div>
     </>

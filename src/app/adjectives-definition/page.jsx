@@ -15,45 +15,41 @@ export default function NounDefinition() {
           attributes. In these examples, the adjectives are in bold.
         </h5>
       </div>
-      <div className={styles.definition_pictures_container}>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/happy-child-adjectives.jpg"
-              alt=""
-            />
+      <div className="container">
+        <div className="row">
+          <div className={`col-md-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image
+                height={250}
+                width={250}
+                src="/happy.jpg"
+                alt="happy child"
+              />
+            </div>
+            <p className={styles.picture_subtitle}>Happy</p>
           </div>
-          <p className={styles.picture_subtitle}>
-            <p>Happy</p>
-          </p>
-        </div>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/small-dog-adjectives.jpg"
-              alt=""
-            />
+          <div className={`col-md-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image
+                height={250}
+                width={250}
+                src="/small.jpg"
+                alt="small dog"
+              />
+            </div>
+            <p className={styles.picture_subtitle}>Small</p>
           </div>
-          <p className={styles.picture_subtitle}>
-            <p>Small</p>
-          </p>
-        </div>
-        <div className={styles.definition_picture}>
-          <div className={styles.picture_wrapper}>
-            <Image
-              height={300}
-              width={300}
-              src="/strong-man-adjectives.jpg"
-              alt=""
-            />
+          <div className={`col-md-4 ${styles.definition_picture}`}>
+            <div className={styles.picture_wrapper}>
+              <Image
+                height={250}
+                width={250}
+                src="/strong.jpg"
+                alt="strong person"
+              />
+            </div>
+            <p className={styles.picture_subtitle}>Strong</p>
           </div>
-          <p className={styles.picture_subtitle}>
-            <p>Strong</p>
-          </p>
         </div>
       </div>
     </>
