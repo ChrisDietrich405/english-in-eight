@@ -29,8 +29,39 @@ export default async function PastPerfect() {
         <thead>
           <tr>
             <th>Positive</th>
+            <th>Positive short form</th>
             <th>Negative</th>
             <th>Negative short form</th>
+          </tr>
+          <tr>
+            <td>I had eaten</td>
+            <td>I'd eaten</td>
+            <td>I had not eaten</td>
+            <td>I hadn't eaten</td>
+          </tr>
+          <tr>
+            <td>You had left</td>
+            <td>You'd left</td>
+            <td>You had not left</td>
+            <td>You hadn't left</td>
+          </tr>
+          <tr>
+            <td>She, he, it had worked</td>
+            <td>She, he, it'd worked</td>
+            <td>She, he, it had not worked</td>
+            <td>She, he, it hadn't worked</td>
+          </tr>
+          <tr>
+            <td>We had talked</td>
+            <td>We'd talked</td>
+            <td>We had not talked</td>
+            <td>We hadn't talked</td>
+          </tr>
+          <tr>
+            <td>They had thought</td>
+            <td>They'd thought</td>
+            <td>They had not thought</td>
+            <td>They hadn't thought</td>
           </tr>
         </thead>
         <tbody>

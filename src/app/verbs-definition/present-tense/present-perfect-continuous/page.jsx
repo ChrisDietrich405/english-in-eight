@@ -40,6 +40,36 @@ export default async function PresentPerfectContinuous() {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>I have been eating</td>
+            <td>I've been eating</td>
+            <td>I have not been eating</td>
+            <td>I haven't been eating</td>
+          </tr>
+          <tr>
+            <td>You have been talking</td>
+            <td>You've been talking</td>
+            <td>You have not been talking</td>
+            <td>You haven't been talking</td>
+          </tr>
+          <tr>
+            <td>She, he, it has been working</td>
+            <td>She, he, it's been working</td>
+            <td>She, he, it has not been working</td>
+            <td>She, he, it hasn't been working</td>
+          </tr>
+          <tr>
+            <td>We have been dancing</td>
+            <td>We've been dancing</td>
+            <td>We have not been dancing</td>
+            <td>We haven't been dancing</td>
+          </tr>
+          <tr>
+            <td>They have been sitting</td>
+            <td>They've been sitting</td>
+            <td>They have not been sitting</td>
+            <td>They haven't been sitting</td>
+          </tr>
           {/* {verbs.map((verb) => {
             return (
               <tr>

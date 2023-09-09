@@ -36,6 +36,31 @@ export default async function SimplePresent() {
           <th>Negative</th>
           <th>Negative short form</th>
         </tr>
+        <tr>
+          <td>I eat</td>
+          <td>I do not eat</td>
+          <td>I don't eat</td>
+        </tr>
+        <tr>
+          <td>You walk</td>
+          <td>You do not walk</td>
+          <td>You don't walk</td>
+        </tr>
+        <tr>
+          <td>She, he, it works</td>
+          <td>She, he, it does not work</td>
+          <td>She, he, it, doesn't work</td>
+        </tr>
+        <tr>
+          <td>We fight</td>
+          <td>We do not fight</td>
+          <td>We don't fight </td>
+        </tr>
+        <tr>
+          <td>They laugh</td>
+          <td>They do not laugh</td>
+          <td>They don't laugh</td>
+        </tr>
         {/* {data.map((verb) => {
           return (
             <tr>

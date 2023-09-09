@@ -38,6 +38,36 @@ export default async function PresentPerfect() {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>I have thought</td>
+            <td>I've thought</td>
+            <td>I have not thought</td>
+            <td>I haven't thought</td>
+          </tr>
+          <tr>
+            <td>You have spoken</td>
+            <td>You've spoken</td>
+            <td>You have not spoken</td>
+            <td>You haven't spoken</td>
+          </tr>
+          <tr>
+            <td>She, he, it has worked</td>
+            <td>She, he, it's worked</td>
+            <td>She, he, it has not worked</td>
+            <td>She, he, it hasn't worked</td>
+          </tr>
+          <tr>
+            <td>We have begun</td>
+            <td>We've begun</td>
+            <td>We have not begun</td>
+            <td>We haven't begun</td>
+          </tr>
+          <tr>
+            <td>They have eaten</td>
+            <td>They've eaten</td>
+            <td>They have not eaten</td>
+            <td>They haven't eaten</td>
+          </tr>
           {/* {data.map((verb) => {
             return (
               <tr>

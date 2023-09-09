@@ -36,6 +36,36 @@ export default async function PastPerfectContinuous() {
             <th>Negative</th>
             <th>Negative short form</th>
           </tr>
+          <tr>
+            <td>I have been singing</td>
+            <td>I've been singing</td>
+            <td>I have not been singing</td>
+            <td>I haven't been singing</td>
+          </tr>
+          <tr>
+            <td>You have been arguing</td>
+            <td>You've been arguing</td>
+            <td>You have not been arguing</td>
+            <td>You haven't been arguing</td>
+          </tr>
+          <tr>
+            <td>She, he, it has been working</td>
+            <td>She, he, it's been working</td>
+            <td>She, he, it has not been working</td>
+            <td>She, he, it hasn't been working</td>
+          </tr>
+          <tr>
+            <td>We have been fighting</td>
+            <td>We've been fighting</td>
+            <td>We have not been fighting</td>
+            <td>We haven't been fighting</td>
+          </tr>
+          <tr>
+            <td>They have been laughing</td>
+            <td>They've been laughing</td>
+            <td>They have not been laughing</td>
+            <td>They haven't been laughing</td>
+          </tr>
         </thead>
         <tbody>
           {/* {data.map((verb) => {

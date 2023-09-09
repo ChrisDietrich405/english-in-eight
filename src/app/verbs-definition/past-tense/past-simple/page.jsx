@@ -40,6 +40,31 @@ export default async function PastSimple() {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>I walked</td>
+            <td>I did not walk</td>
+            <td>I didn't walk</td>
+          </tr>
+          <tr>
+            <td>You ate</td>
+            <td>You did not eat</td>
+            <td>You didn't eat</td>
+          </tr>
+          <tr>
+            <td>She, he, it worked</td>
+            <td>She, he, it did not work</td>
+            <td>She, he, it didn't work</td>
+          </tr>
+          <tr>
+            <td>We talked</td>
+            <td>We did not talk</td>
+            <td>We didn't talk</td>
+          </tr>
+          <tr>
+            <td>They danced</td>
+            <td>They did not dance</td>
+            <td>They didn't dance</td>
+          </tr>
           {/* {data.map((item) => {
             return (
               <tr>

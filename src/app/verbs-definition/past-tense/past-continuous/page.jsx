@@ -39,6 +39,31 @@ export default async function PastContinuous() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>I was crying</td>
+              <td>I was not crying</td>
+              <td>I wasn't crying</td>
+            </tr>
+            <tr>
+              <td>You were explaining</td>
+              <td>You were explaining</td>
+              <td>You were explaining</td>
+            </tr>
+            <tr>
+              <td>She, he, it was working</td>
+              <td>She, he, it was not working</td>
+              <td>She, he, it wasn't working</td>
+            </tr>
+            <tr>
+              <td>We were thinking</td>
+              <td>We were not thinking</td>
+              <td>We weren't thinking</td>
+            </tr>
+            <tr>
+              <td>They were talking</td>
+              <td>They were not talking</td>
+              <td>They weren't talking</td>
+            </tr>
             {/* {data.map((verb) => {
               return (
                 <tr>

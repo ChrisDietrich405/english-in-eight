@@ -40,6 +40,36 @@ export default async function PresentContinuous() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>I am eating</td>
+              <td>I'm eating</td>
+              <td>I am not eating</td>
+              <td>I'm not eating</td>
+            </tr>
+            <tr>
+              <td>You are walking</td>
+              <td>You're walking</td>
+              <td>You are not walking</td>
+              <td>You're not walking</td>
+            </tr>
+            <tr>
+              <td>She, he, it is working</td>
+              <td>She, he, it's working</td>
+              <td>She, he, it is not working</td>
+              <td>She, he, it isn't working</td>
+            </tr>
+            <tr>
+              <td>We are thinking</td>
+              <td>We're thinking</td>
+              <td>We are not thinking</td>
+              <td>We aren't thinking</td>
+            </tr>
+            <tr>
+              <td>They are running</td>
+              <td>They're running</td>
+              <td>They are not running</td>
+              <td>They aren't running</td>
+            </tr>
             {/* {data.map((verb) => {
               return (
                 <tr>
