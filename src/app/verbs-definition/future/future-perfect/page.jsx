@@ -9,7 +9,7 @@ const endpoint = "/api/future-perfect"; // Replace with the correct endpoint
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/future-continuous");
+  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
   return res.json();
 };
 

@@ -10,7 +10,7 @@ const endpoint = "/api/present-progressive"; // Replace with the correct endpoin
 const fullUrl = baseUrl + endpoint;
 
 const getData1 = async () => {
-  const res = await fetch("http://localhost:3000/api/future-continuous");
+  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
   return res.json();
 };
 
@@ -20,7 +20,7 @@ const endpoint2 = "/api/future-simple-will"; // Replace with the correct endpoin
 const fullUrl2 = baseUrl2 + endpoint2;
 
 const getData2 = async () => {
-  const res = await fetch("http://localhost:3000/api/future-continuous");
+  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
   return res.json();
 };
 

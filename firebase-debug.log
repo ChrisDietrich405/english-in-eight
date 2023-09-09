@@ -65,7 +65,7 @@ Import trace for requested module:
 
 [info] - info Collecting page data...
 
-[info] http://localhost:3000//api/simple-present
+[info] http://127.0.0.1:3000//api/simple-present
 
 [info] - info Generating static pages (0/45)
 
@@ -136,7 +136,7 @@ TypeError: Cannot read properties of undefined (reading 'map')
   }
 }
 
-[info] http://localhost:3000//api/simple-present
+[info] http://127.0.0.1:3000//api/simple-present
 
 [info] 
 Error occurred prerendering page "/verbs-definition/future/future-simple". Read more: https://nextjs.org/docs/messages/prerender-error
@@ -221,7 +221,7 @@ Import trace for requested module:
 
 [info] - info Collecting page data...
 
-[info] http://localhost:3000//api/simple-present
+[info] http://127.0.0.1:3000//api/simple-present
 
 [info] - info Generating static pages (0/45)
 
@@ -388,7 +388,7 @@ Import trace for requested module:
 
 [info] - info Collecting page data...
 
-[info] http://localhost:3000/api/simple-present
+[info] http://127.0.0.1:3000/api/simple-present
 
 [info] - info Generating static pages (0/45)
 
@@ -519,7 +519,7 @@ TypeError: fetch failed
     at PresentPerfect (C:\Users\chris\OneDrive\Portfolio\english-in-eight-next\.next\server\app\verbs-definition\present-tense\present-perfect\page.js:429:40)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
 
-[info] http://localhost:3000/api/simple-present
+[info] http://127.0.0.1:3000/api/simple-present
 
 [info] TypeError: fetch failed
     at Object.fetch (C:\Users\chris\OneDrive\Portfolio\english-in-eight-next\node_modules\next\dist\compiled\undici\index.js:1:26669)
