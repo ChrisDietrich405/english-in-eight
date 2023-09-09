@@ -8,10 +8,8 @@ const endpoint = "/api/past-perfect-progressive"; // Replace with the correct en
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch(fullUrl);
-  const results = await res.json();
-
-  return results;
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 //DONE

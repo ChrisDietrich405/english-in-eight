@@ -9,9 +9,8 @@ const fullUrl = baseUrl + endpoint;
 //DONE
 
 const getData = async () => {
-  const response = await fetch(fullUrl);
-  const data = response.json();
-  return data;
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 export default async function PastPerfect() {

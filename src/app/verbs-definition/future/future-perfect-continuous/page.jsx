@@ -8,9 +8,8 @@ const endpoint = "/api/future-perfect-continuous"; // Replace with the correct e
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch(fullUrl);
-  const results = await res.json();
-  return results;
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 //DONE
@@ -21,7 +20,7 @@ export default async function FuturePerfectContinuous() {
   return (
     <div>
       <div className={styles.page_title}>
-        <h2>Future Perfect Continuous</h2>
+        <h1>Future Perfect Continuous</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The future perfect continuous tense is a verb form used to talk about

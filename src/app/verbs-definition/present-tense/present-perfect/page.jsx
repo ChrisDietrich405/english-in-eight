@@ -4,22 +4,17 @@ import styles from "../../../styles/content-page.module.css";
 
 //DONE
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/present-progressive" // Replace with the correct endpoint
+const endpoint = "/api/present-progressive"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getVerbs = async () => {
-  try {
-    const response = await fetch(fullUrl);
-    const results = await response.json();
-    console.log({results: results})
-  } catch (error) {
-    console.log(error);
-  }
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 export default async function PresentPerfect() {
-  const data = await getVerbs();
+  const data = await getData();
 
   return (
     <div className="page-body">

@@ -9,9 +9,8 @@ const endpoint = "/api/future-perfect"; // Replace with the correct endpoint
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch(fullUrl);
-  const results = await res.json();
-  return results;
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 export default async function FuturePerfect() {
@@ -19,7 +18,7 @@ export default async function FuturePerfect() {
   return (
     <main className="page-body">
       <div className={styles.page_title}>
-        <h2>Future Perfect</h2>
+        <h1>Future Perfect</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The future perfect tense is used to demonstrate a future event that has

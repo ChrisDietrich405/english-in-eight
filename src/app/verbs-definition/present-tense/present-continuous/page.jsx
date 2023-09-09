@@ -1,5 +1,3 @@
-
-
 import Quiz from "@/src/components/Quiz";
 import styles from "../../../styles/content-page.module.css";
 
@@ -8,16 +6,15 @@ const endpoint = "/api/present-progressive"; // Replace with the correct endpoin
 
 const fullUrl = baseUrl + endpoint;
 
-const getVerbs = async () => {
-  const response = await fetch(fullUrl);
-  const results = await response.json();
-  return results;
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 //DONE
 
 export default async function PresentContinuous() {
-  const data = await getVerbs();
+  const data = await getData();
 
   return (
     <div className="page-body">

@@ -5,14 +5,13 @@ import styles from "../../../styles/content-page.module.css";
 //DONE
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/present-progressive" // Replace with the correct endpoint
+const endpoint = "/api/present-progressive"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getDataGo = async () => {
-  const res = await fetch(fullUrl);
-  const results = await res.json();
-  return results;
+const getData1 = async () => {
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 const baseUrl2 = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
@@ -20,15 +19,14 @@ const endpoint2 = "/api/future-simple-will"; // Replace with the correct endpoin
 
 const fullUrl2 = baseUrl2 + endpoint2;
 
-const getDataWill = async () => {
-  const res = await fetch(fullUrl2);
-  const results = await res.json();
-  return results;
+const getData2 = async () => {
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 export default async function FutureSimple() {
-  const dataGo = await getDataGo();
-  const dataWill = await getDataWill();
+  const dataGo = await getData1();
+  const dataWill = await getData2();
 
   return (
     <main>

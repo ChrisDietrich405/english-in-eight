@@ -12,14 +12,13 @@ const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
 const fullUrl = baseUrl + endpoint;
 
 const getData = async () => {
-  const res = await fetch(fullUrl);
-  const results = await res.json();
-  return results;
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
 
 export default async function FutureContinuous() {
   const data = await getData();
-  console.log(data);
+
   return (
     <>
       <Head>
@@ -56,7 +55,7 @@ export default async function FutureContinuous() {
         />
       </Head>
       <div className={styles.page_title}>
-        <h2>Future Continuous</h2>
+        <h1>Future Continuous</h1>
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The future continuous refers to an ongoing action in the future.

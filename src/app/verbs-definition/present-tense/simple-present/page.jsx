@@ -9,14 +9,12 @@ const endpoint = "/api/simple-present"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getVerbs = async () => {
-  const response = await fetch(fullUrl);
-  const results = response.json();
-  return results;
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/future-continuous");
+  return res.json();
 };
-
 export default async function SimplePresent() {
-  const data = await getVerbs();
+  const data = await getData();
 
   return (
     <div className="page-body">
