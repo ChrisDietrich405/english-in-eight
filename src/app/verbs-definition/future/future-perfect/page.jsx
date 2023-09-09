@@ -33,6 +33,36 @@ export default async function FuturePerfect() {
             <th>Negative short form</th>
           </tr>
         </thead>
+        <tr>
+          <td>I will have eaten</td>
+          <td>I'll have eaten</td>
+          <td>I will not have eaten</td>
+          <td>I won't have eaten</td>
+        </tr>
+        <tr>
+          <td>You will have finished</td>
+          <td>You'll have finished</td>
+          <td>You will not have finished</td>
+          <td>You won't have finished</td>
+        </tr>
+        <tr>
+          <td>She, he, it will have worked</td>
+          <td>She, he, it'll have worked</td>
+          <td>She, he, it will not have worked</td>
+          <td>She, he, it won't have worked</td>
+        </tr>
+        <tr>
+          <td>We will have started</td>
+          <td>We'll have started</td>
+          <td>We will not have started</td>
+          <td>We won't have started</td>
+        </tr>
+        <tr>
+          <td>They will have left</td>
+          <td>They'll have left</td>
+          <td>They will not have left</td>
+          <td>They won't have left</td>
+        </tr>
         {/* <tbody>
           {data.map((verb) => {
             return (

@@ -70,6 +70,36 @@ export default async function FutureContinuous() {
             <th>Negative short form</th>
           </tr>
         </thead>
+        <tr>
+          <td>I will be swimming</td>
+          <td>I'll be swimming</td>
+          <td>I will not be swimming</td>
+          <td>I won't be swimming</td>
+        </tr>
+        <tr>
+          <td>You will be dancing</td>
+          <td>You'll be dancing</td>
+          <td>You will not be dancing</td>
+          <td>You won't be dancing</td>
+        </tr>
+        <tr>
+          <td>She, he, it will be working</td>
+          <td>She, he, it'll be working</td>
+          <td>She, he, it will not be working</td>
+          <td>She, he, it won't be working</td>
+        </tr>
+        <tr>
+          <td>We will be talking</td>
+          <td>We'll be talking</td>
+          <td>We will not be talking</td>
+          <td>We won't be talking</td>
+        </tr>
+        <tr>
+          <td>They will be running</td>
+          <td>They'll be running</td>
+          <td>They will not be running</td>
+          <td>They won't be running</td>
+        </tr>
         {/* <tbody>
           {data.map((verb) => {
             return (
