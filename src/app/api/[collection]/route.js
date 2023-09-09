@@ -1,4 +1,3 @@
-// import mysql from "mysql2/promise";
 import { NextResponse } from "next/server";
 
 import clientPromise from "@/lib/mongodb";

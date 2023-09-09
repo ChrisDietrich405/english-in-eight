@@ -9,12 +9,12 @@ const endpoint = "/api/simple-present"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   return res.json();
+// };
 export default async function SimplePresent() {
-  const data = await getData();
+  // const data = await getData();
 
   return (
     <div className="page-body">
@@ -36,7 +36,7 @@ export default async function SimplePresent() {
           <th>Negative</th>
           <th>Negative short form</th>
         </tr>
-        {data.map((verb) => {
+        {/* {data.map((verb) => {
           return (
             <tr>
               <td>{verb.positive}</td>
@@ -44,7 +44,7 @@ export default async function SimplePresent() {
               <td>{verb.negativeShortForm}</td>
             </tr>
           );
-        })}
+        })} */}
       </table>
 
       <div className="page-body">

@@ -6,15 +6,15 @@ const endpoint = "/api/present-progressive"; // Replace with the correct endpoin
 
 const fullUrl = baseUrl + endpoint;
 
-const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   return res.json();
+// };
 
 //DONE
 
 export default async function PresentContinuous() {
-  const data = await getData();
+  // const data = await getData();
 
   return (
     <div className="page-body">
@@ -40,7 +40,7 @@ export default async function PresentContinuous() {
             </tr>
           </thead>
           <tbody>
-            {data.map((verb) => {
+            {/* {data.map((verb) => {
               return (
                 <tr>
                   <td>{verb.positive}</td>
@@ -49,7 +49,7 @@ export default async function PresentContinuous() {
                   <td>{verb.negativeShortForm}</td>
                 </tr>
               );
-            })}
+            })} */}
           </tbody>
         </table>
 

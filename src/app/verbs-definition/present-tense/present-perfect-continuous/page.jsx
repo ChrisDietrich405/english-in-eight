@@ -8,13 +8,13 @@ const endpoint = "/api/past-perfect-continuous"; // Replace with the correct end
 const fullUrl = baseUrl + endpoint;
 //DONE
 
-const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   return res.json();
+// };
 
 export default async function PresentPerfectContinuous() {
-  const verbs = await getData();
+  // const verbs = await getData();
 
   return (
     <div className="page-body">
@@ -40,7 +40,7 @@ export default async function PresentPerfectContinuous() {
           </tr>
         </thead>
         <tbody>
-          {verbs.map((verb) => {
+          {/* {verbs.map((verb) => {
             return (
               <tr>
                 <td>{verb.positive}</td>
@@ -49,7 +49,7 @@ export default async function PresentPerfectContinuous() {
                 <td>{verb.negativeShortForm}</td>
               </tr>
             );
-          })}
+          })} */}
         </tbody>
       </table>
 

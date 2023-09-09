@@ -9,13 +9,13 @@ const endpoint = "/api/past-progressive"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   return res.json();
+// };
 
 export default async function PastContinuous() {
-  const data = await getData();
+  //   const data = await getData();
 
   return (
     <>
@@ -39,7 +39,7 @@ export default async function PastContinuous() {
             </tr>
           </thead>
           <tbody>
-            {data.map((verb) => {
+            {/* {data.map((verb) => {
               return (
                 <tr>
                   <td>{verb.positive}</td>
@@ -47,7 +47,7 @@ export default async function PastContinuous() {
                   <td>{verb.negativeShortForm}</td>
                 </tr>
               );
-            })}
+            })} */}
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@ export default async function PastContinuous() {
             She <b>was watching </b> a movie when her friend told her the news.
           </li>
           <li>
-            <li>
-              He <b>was talking</b> to his sister when his daughter came home.
-            </li>
+            He <b>was talking</b> to his sister when his daughter came home.
+          </li>
+          <li>
             I <b>was working</b> in the garden when the delivery guy came to the
             door.
           </li>

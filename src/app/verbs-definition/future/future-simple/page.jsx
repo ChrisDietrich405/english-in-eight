@@ -5,28 +5,28 @@ import styles from "../../../styles/content-page.module.css";
 //DONE
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/present-progressive"; // Replace with the correct endpoint
+const endpoint = "/api/present-progressive" // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-const getData1 = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData1 = async () => {
+//   const res = await fetch("http://localhost:3000/api/future-continuous");
+//   return res.json();
+// };
 
 const baseUrl2 = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
 const endpoint2 = "/api/future-simple-will"; // Replace with the correct endpoint
 
 const fullUrl2 = baseUrl2 + endpoint2;
 
-const getData2 = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  return res.json();
-};
+// const getData2 = async () => {
+//   const res = await fetch("http://localhost:3000/api/future-continuous");
+//   return res.json();
+// };
 
 export default async function FutureSimple() {
-  const dataGo = await getData1();
-  const dataWill = await getData2();
+  // const dataGo = await getData1();
+  // const dataWill = await getData2();
 
   return (
     <main>
@@ -53,7 +53,7 @@ export default async function FutureSimple() {
           </tr>
         </thead>
         <tbody>
-          {dataGo.map((verb) => {
+          {/* {dataGo.map((verb) => {
             return (
               <tr>
                 <td>{verb.positive}</td>
@@ -62,7 +62,7 @@ export default async function FutureSimple() {
                 <td>{verb.negativeShortForm}</td>
               </tr>
             );
-          })}
+          })} */}
         </tbody>
       </table>
 
@@ -78,7 +78,7 @@ export default async function FutureSimple() {
             </tr>
           </thead>
           <tbody>
-            {dataWill.map((verb) => {
+            {/* {dataWill.map((verb) => {
               return (
                 <tr>
                   <td>{verb.positive}</td>
@@ -87,7 +87,7 @@ export default async function FutureSimple() {
                   <td>{verb.negativeShortForm}</td>
                 </tr>
               );
-            })}
+            })} */}
           </tbody>
         </table>
 
