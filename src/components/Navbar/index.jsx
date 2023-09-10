@@ -1,8 +1,7 @@
 "use client";
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -16,7 +15,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+
 import Button from "@mui/material/Button";
 
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
@@ -24,10 +23,15 @@ import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
-import styles from "./styles.module.css";
+import styles from "../../app/styles/content-page.module.css";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Nouns"];
+const navItems = [
+  <NounsSubmenuDropdown />,
+  <VerbsSubmenuDropdown />,
+  <AdjectivesSubmenuDropdown />,
+  <OtherTopicsSubmenuDropdown />,
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -39,13 +43,15 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Image
-        src="/images/logo.svg"
-        width={50}
-        height={50}
-        alt="Picture of the author"
-      />
-
+      <Link href="/">
+        <Image
+          className={styles.navbar_logo}
+          src="/images/logo.svg"
+          width={50}
+          height={50}
+          alt="Picture of the author"
+        />
+      </Link>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -63,10 +69,10 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", my: "4" }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "white" }}>
-        <Toolbar style={{ display: "flex" }}>
+      <AppBar component="nav">
+        <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -76,19 +82,25 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
+          <Link href="/">
+            <Image
+              className={styles.navbar_logo}
+              src="/images/logo.svg"
+              width={50}
+              height={50}
+              alt="Picture of the logo"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            />
+          </Link>
 
-          <Image
-            src="/images/logo.svg"
-            width={50}
-            height={50}
-            alt="Picture of the logo"
-          />
-          <Box style={{ display: "flex", marginLeft: "auto" }}>
-            <div className={styles.btn_container}>
-              <button className={styles.home_btn}>
-                <Link href="/">HOME</Link>
-              </button>
-            </div>
+          <Box
+            sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
+          >
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: "#fff" }}>
+                {item}
+              </Button>
+            ))}
           </Box>
         </Toolbar>
       </AppBar>
@@ -112,6 +124,9 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
+      {/* <Box component="main" sx={{ p: 3 }}>
+        <Toolbar />
+      </Box> */}
     </Box>
   );
 }
