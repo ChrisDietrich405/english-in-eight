@@ -5,7 +5,7 @@ import styles from "../../../styles/content-page.module.css";
 //DONE
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/present-progressive" // Replace with the correct endpoint
+const endpoint = "/api/present-progressive"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
@@ -53,6 +53,36 @@ export default async function FutureSimple() {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>I am going to eat</td>
+            <td>I'm going to eat</td>
+            <td>I am not going to eat</td>
+            <td>I'm not going to eat</td>
+          </tr>
+          <tr>
+            <td>You are going to play</td>
+            <td>You're going to play</td>
+            <td>You are not going to play</td>
+            <td>You're not going to play</td>
+          </tr>
+          <tr>
+            <td>She, he, it is going to work</td>
+            <td>She, he, it's going to work</td>
+            <td>She, he, it is not going to work</td>
+            <td>She, he, it's not going to work</td>
+          </tr>
+          <tr>
+            <td>We are going to swim</td>
+            <td>We're going to swim</td>
+            <td>We are not going to swim</td>
+            <td>We're not going to swim</td>
+          </tr>
+          <tr>
+            <td>They are going to finish</td>
+            <td>They're going to finish</td>
+            <td>They are not going to finish</td>
+            <td>They're not going to finish</td>
+          </tr>
           {/* {dataGo.map((verb) => {
             return (
               <tr>
@@ -78,6 +108,36 @@ export default async function FutureSimple() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>I will eat</td>
+              <td>I'll eat</td>
+              <td>I will not eat</td>
+              <td>I won't eat</td>
+            </tr>
+            <tr>
+              <td>You will relax</td>
+              <td>You'll relax</td>
+              <td>You will not relax</td>
+              <td>You won't relax</td>
+            </tr>
+            <tr>
+              <td>She, he, it will work</td>
+              <td>She, he, it'll work</td>
+              <td>She, he, it will not work</td>
+              <td>She, he, it won't work</td>
+            </tr>
+            <tr>
+              <td>We will talk</td>
+              <td>We'll talk</td>
+              <td>We will not talk</td>
+              <td>We won't talk</td>
+            </tr>
+            <tr>
+              <td>They will fight</td>
+              <td>They'll fight</td>
+              <td>They will not fight</td>
+              <td>They won't fight</td>
+            </tr>
             {/* {dataWill.map((verb) => {
               return (
                 <tr>

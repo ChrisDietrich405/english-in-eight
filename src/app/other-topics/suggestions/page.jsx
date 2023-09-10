@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 const Suggestions = () => {
   return (
-    <Container style={{margin: "100px"}}>
-      <Typography variant="h3">
+    <Container style={{ marginTop: "100px" }}>
+      <Typography variant="h4" sx={{ marginBottom: 4 }}>
         How can you be successful using this website and successful learning
         English?
       </Typography>
