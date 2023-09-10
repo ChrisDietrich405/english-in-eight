@@ -89,21 +89,6 @@ function DrawerAppBar(props) {
                 <Link href="/">HOME</Link>
               </button>
             </div>
-
-            {/* <Button>
-              <NounsSubmenuDropdown
-                sx={{ color: "#fff", marginRight: "20px" }}
-              />
-            </Button>
-            <Button>
-              <VerbsSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
-            <Button>
-              <AdjectivesSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button>
-            <Button>
-              <OtherTopicsSubmenuDropdown sx={{ color: "#fff" }} />
-            </Button> */}
           </Box>
         </Toolbar>
       </AppBar>

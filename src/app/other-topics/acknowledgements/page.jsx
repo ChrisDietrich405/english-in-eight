@@ -1,9 +1,13 @@
+import { Container } from "@mui/material";
 import React from "react";
 
 const Acknowledgements = () => {
   return (
     //nouns, verbs, adjectives finished
-    <div>
+    <Container style={{ marginTop: "100px" }}>
+      <h1 style={{ marginBottom: "50px", textAlign: "center" }}>
+        Acknowledgements
+      </h1>
       <p>
         Photo by Brett Jordan:
         https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-white-background-10394994/
@@ -54,7 +58,7 @@ const Acknowledgements = () => {
         https://www.youtube.com/watch?app=desktop&v=0_qGkFhqeps Remember versus
         remind
       </p>
-    </div>
+    </Container>
   );
 };
 

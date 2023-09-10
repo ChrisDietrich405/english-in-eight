@@ -76,6 +76,10 @@ export default function CustomizedMenus() {
       title: "How to use the website",
       link: "/other-topics/suggestions",
     },
+    {
+      title: "Acknowledgements",
+      link: "/other-topics/acknowledgements",
+    },
   ];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

@@ -11,13 +11,13 @@ const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
 
 const fullUrl = baseUrl + endpoint;
 
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   return res.json();
-// };
+const getData = async () => {
+  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+  return res.json();
+};
 
 export default async function FutureContinuous() {
-  // const data = await getData();
+  const data = await getData();
 
   return (
     <>
@@ -70,7 +70,7 @@ export default async function FutureContinuous() {
             <th>Negative short form</th>
           </tr>
         </thead>
-        <tr>
+        {/* <tr>
           <td>I will be swimming</td>
           <td>I'll be swimming</td>
           <td>I will not be swimming</td>
@@ -99,8 +99,8 @@ export default async function FutureContinuous() {
           <td>They'll be running</td>
           <td>They will not be running</td>
           <td>They won't be running</td>
-        </tr>
-        {/* <tbody>
+        </tr> */}
+        <tbody>
           {data.map((verb) => {
             return (
               <tr>
@@ -111,7 +111,7 @@ export default async function FutureContinuous() {
               </tr>
             );
           })}
-        </tbody> */}
+        </tbody>
       </table>
 
       <div className="page-body">
