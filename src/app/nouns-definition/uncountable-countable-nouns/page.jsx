@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Quiz from "../../../components/Quiz";
+import Head from "next/head";
 //DONE))
 
 import styles from "../../styles/content-page.module.css";

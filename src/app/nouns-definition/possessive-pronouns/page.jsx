@@ -1,4 +1,5 @@
 import Quiz from "@/src/components/Quiz";
+import Head from "next/head";
 
 import styles from "../../styles/content-page.module.css";
 
