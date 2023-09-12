@@ -7,6 +7,50 @@ import styles from "../../styles/content-page.module.css";
 export default function PossessivePronouns() {
   return (
     <>
+      <Head>
+        <title>Possessive Pronouns | English Grammar</title>
+        <meta
+          content="Learn about possessive pronouns in English grammar. Discover how they indicate ownership and replace nouns with examples."
+          name="description"
+        />
+        <meta
+          content="English, Grammar, Possessive Pronouns, Ownership, Examples"
+          name="keywords"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://example.com/possessive-pronouns"
+        />
+        <meta
+          property="og:title"
+          content="Possessive Pronouns | English Grammar"
+        />
+        <meta
+          property="og:description"
+          content="Learn about possessive pronouns in English grammar. Discover how they indicate ownership and replace nouns with examples."
+        />
+        <meta
+          property="og:image"
+          content="https://example.com/images/possessive-pronouns.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
+
       <div className={styles.page_title}>
         <h1>Possessive Pronouns</h1>
       </div>

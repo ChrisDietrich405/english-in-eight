@@ -182,6 +182,44 @@ export default function NounModifiers() {
 
   return (
     <>
+      <Head>
+        <title>Noun Modifiers | English Grammar</title>
+        <meta
+          content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."
+          name="description"
+        />
+        <meta
+          content="English, Grammar, Noun Modifiers, Descriptions, Examples"
+          name="keywords"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://example.com/noun-modifiers" />
+        <meta property="og:title" content="Noun Modifiers | English Grammar" />
+        <meta
+          property="og:description"
+          content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."
+        />
+        <meta
+          property="og:image"
+          content="https://example.com/images/noun-modifiers.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
+
       <div className={styles.page_title}>
         <h1>Noun Modifiers</h1>
       </div>

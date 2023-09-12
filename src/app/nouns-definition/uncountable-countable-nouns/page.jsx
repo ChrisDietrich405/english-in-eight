@@ -195,6 +195,50 @@ export default function UncountableAndCountable() {
 
   return (
     <>
+      <Head>
+        <title>Countable & Uncountable Nouns | English Grammar</title>
+        <meta
+          content="Learn about countable and uncountable nouns in English grammar. Understand the differences and usage of both types of nouns with examples."
+          name="description"
+        />
+        <meta
+          content="English, Grammar, Countable Nouns, Uncountable Nouns, Usage, Examples"
+          name="keywords"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://example.com/countable-uncountable-nouns"
+        />
+        <meta
+          property="og:title"
+          content="Countable & Uncountable Nouns | English Grammar"
+        />
+        <meta
+          property="og:description"
+          content="Learn about countable and uncountable nouns in English grammar. Understand the differences and usage of both types of nouns with examples."
+        />
+        <meta
+          property="og:image"
+          content="https://example.com/images/countable-uncountable-nouns.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
+
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Countable & Uncountable Nouns </h1>

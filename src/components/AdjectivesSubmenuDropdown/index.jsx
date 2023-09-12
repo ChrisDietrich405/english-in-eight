@@ -69,10 +69,6 @@ export default function CustomizedMenus() {
       link: "/adjectives-definition/possessive-adjectives",
     },
     {
-      title: " Collective Nouns",
-      link: "/nouns-definition/collective-nouns",
-    },
-    {
       title: "Comparative Adjectives",
       link: "/adjectives-definition/comparative-adjectives",
     },
@@ -101,7 +97,7 @@ export default function CustomizedMenus() {
         disableElevation
         onClick={handleClick}
       >
-        Adjectives 
+        Adjectives
         <KeyboardArrowDownIcon />
       </div>
       <StyledMenu
