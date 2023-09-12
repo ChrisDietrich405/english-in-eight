@@ -104,14 +104,6 @@ export default function NounModifiers() {
         userAnswer: "",
       },
       {
-        title: "She wears it on her finger. It's a _____________.",
-        possibleAnswers: [
-          { title: "ring", correctAnswer: true },
-          { title: "finger accessory" },
-        ],
-        userAnswer: "",
-      },
-      {
         title: "It's a container for liquids. It's a _____________.",
         possibleAnswers: [
           { title: "liquid container" },
@@ -132,48 +124,6 @@ export default function NounModifiers() {
         possibleAnswers: [
           { title: "park bench", correctAnswer: true },
           { title: "bench park" },
-        ],
-        userAnswer: "",
-      },
-      {
-        title: "It's a piece of furniture for sleeping. It's a _____________.",
-        possibleAnswers: [
-          { title: "sleeping furniture" },
-          { title: "bed", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
-        title:
-          "She wears it to protect her eyes from the sun. It's a _____________.",
-        possibleAnswers: [
-          { title: "sun protection" },
-          { title: "sunglasses", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
-        title:
-          "It's a document that proves your identity. It's a _____________.",
-        possibleAnswers: [
-          { title: "identity document" },
-          { title: "passport", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
-        title: "It's a device for listening to music. It's a _____________.",
-        possibleAnswers: [
-          { title: "music player" },
-          { title: "headphones", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
-        title: "It's a piece of equipment for cooking. It's a _____________.",
-        possibleAnswers: [
-          { title: "cooking equipment" },
-          { title: "stove", correctAnswer: true },
         ],
         userAnswer: "",
       },

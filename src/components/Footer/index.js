@@ -63,6 +63,12 @@ export default function Footer() {
           .then(
             (result) => {
               console.log("success");
+              // toast.success('Customized Toast', {
+              //   style: {
+              //     background: 'blue', // Change background color
+              //     color: 'white',     // Change text color
+              //   },
+              // });
               toast.success("your message was sent successfully");
               // notify();
               setEmail("");

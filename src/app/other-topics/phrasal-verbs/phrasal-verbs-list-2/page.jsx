@@ -14,7 +14,7 @@ export default function PhrasalVerbs2() {
             <b>Put together</b> - to assemble, construct something using several
             pieces
             <p>
-             Example: I bought a desk from the store and now I need to{" "}
+              Example: I bought a desk from the store and now I need to{" "}
               <b>put it together.</b>
             </p>
           </li>
@@ -80,7 +80,7 @@ export default function PhrasalVerbs2() {
           },
           {
             title:
-              "My car's alarm is very sensitive. It ___________ if you walk past it.",
+              "My car alarm is very sensitive. It ___________ if you walk past it.",
             possibleAnswers: [
               { title: "a. puts together" },
               { title: "b. goes off", correctAnswer: true },

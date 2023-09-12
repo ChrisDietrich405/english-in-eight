@@ -13,20 +13,21 @@ export default function SpeakVersusTalk() {
         The verbs talk and speak both have the meaning ‘say words’, but they are
         used differently depending on context. For example speak is more formal
         than talk. Talk, on the other hand focuses on a speaker and at least one
-        listener, and can mean 'have a conversation
+        listener, and can mean 'have a conversation'
       </p>
       <p>
-        We use talk for more informal situations and speak for more formal ones
+        We use talk for more informal situations and speak for more formal
+        situations:
       </p>
       <ul className="page-examples">
         <li>Dante will talk to the group about the benefits of meditation. </li>
-        <li>The president will speak shortly to her advisors</li>
+        <li>The president will speak shortly to her advisors.</li>
       </ul>
       <p>We normally use to after talk and speak. We can also use with:</p>
       <ul className="page-examples">
         <li>Could I talk to you for a moment?</li>
         <li>The director needs to speak to you.</li>
-        <li>She spoke with the general for an hour </li>
+        <li>She spoke with the general for an hour. </li>
         <li>I talked with her about it</li>
       </ul>
       <p>When we refer to languages, we use speak:</p>
@@ -56,14 +57,14 @@ export default function SpeakVersusTalk() {
       </ul>
       <p>Talk can be a noun or a verb. Speak is always only a verb. </p>
       <ul className="page-examples">
-        <li>He gave a great talk about diet</li>
+        <li>He gave a great talk about diet.</li>
       </ul>
 
       <Quiz
         title="Quiz"
         questions={[
           {
-            title: "It was an fascinating ____.",
+            title: "It was a fascinating __________.",
             possibleAnswers: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
@@ -72,7 +73,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title:
-              "We tried to  ____ things over, but decided we needed to end the relationship.",
+              "We tried to  ___________ it out, but after fought more.",
             possibleAnswers: [
               { title: "spoke" },
               { title: "talk", correctAnswer: true },
@@ -80,7 +81,7 @@ export default function SpeakVersusTalk() {
             userAnswer: "",
           },
           {
-            title: "Well Bia, I’ll  ________ to you tomorrow.",
+            title: "Well Bia, I’ll  ___________ to you tomorrow.",
             possibleAnswers: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
@@ -88,7 +89,7 @@ export default function SpeakVersusTalk() {
             userAnswer: "",
           },
           {
-            title: "It's only _______. They'll never fire us.",
+            title: "It's only __________. They'll never fire us.",
             possibleAnswers: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },

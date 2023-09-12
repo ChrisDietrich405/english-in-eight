@@ -50,11 +50,11 @@ export default function ComparativeAdjectives() {
           <h1>Comparative Adjectives</h1>
         </div>
         <div className={styles.page_body}>
-          <h3 className={styles.grammar_explanation_paragraph}>
+          <p className={styles.grammar_explanation_paragraph}>
             To make the comparative form ('stronger' or 'more delicious'), the
             first thing we need to know is the number of syllables in the
             adjective.
-          </h3>
+          </p>
         </div>
         <div className={styles.page_body}>
           <h4>Adjectives with only one syllable</h4>

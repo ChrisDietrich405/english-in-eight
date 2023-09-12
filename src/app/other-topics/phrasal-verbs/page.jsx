@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Card } from "@mui/material";
 import styles from "../../styles/content-page.module.css";
 export default function PhrasalVerbs() {
   return (
@@ -14,34 +15,38 @@ export default function PhrasalVerbs() {
           as <b>look down on.</b>
         </p>
       </div>
-      <div className={styles.content_wrapper}>
-        <Image
-          height={200}
-          width={220}
-          src="/break-down.jpg"
-          alt="Speak versus talk"
-        />
-        <p>
-          In the phrasal verb <strong>break down</strong>, break is a verb and{" "}
-          <strong>down</strong>
-          &nbsp;is a preposition. <strong>Break down</strong> can mean that a
-          vehicle stops functioning.
-        </p>
-      </div>
-      <div className={styles.content_wrapper}>
-        <Image
-          height={200}
-          width={300}
-          src="/fall-for.jpg"
-          alt="Speak versus talk"
-        />
-        <p>
-          In the phrasal verb <strong>fall for</strong>, fall is a verb and{" "}
-          <strong>for</strong>
-          &nbsp;is a preposition. <strong>Fall for</strong> can mean that
-          someone falls in love.
-        </p>
-      </div>
+      <Card style={{ padding: "16px", marginBottom: "20px" }}>
+        <div className={styles.content_wrapper}>
+          <Image
+            height={200}
+            width={220}
+            src="/break-down.jpg"
+            alt="Speak versus talk"
+          />
+          <p>
+            In the phrasal verb <strong>break down</strong>, break is a verb and{" "}
+            <strong>down</strong>
+            &nbsp;is a preposition. <strong>Break down</strong> can mean that a
+            vehicle stops functioning.
+          </p>
+        </div>
+      </Card>
+      <Card style={{ padding: "16px" }}>
+        <div className={styles.content_wrapper}>
+          <Image
+            height={200}
+            width={300}
+            src="/fall-for.jpg"
+            alt="Speak versus talk"
+          />
+          <p>
+            In the phrasal verb <strong>fall for</strong>, fall is a verb and{" "}
+            <strong>for</strong>
+            &nbsp;is a preposition. <strong>Fall for</strong> can mean that
+            someone falls in love.
+          </p>
+        </div>
+      </Card>
     </>
   );
 }

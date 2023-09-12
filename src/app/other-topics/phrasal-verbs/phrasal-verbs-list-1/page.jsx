@@ -11,41 +11,44 @@ export default function PhrasalVerbs1() {
       <div className={styles.page_body}>
         <ul>
           <li>
-            <b>Take up</b> - occupy time, space, or attention.
+            <b>Take up</b> - occupy time, space, or attention
             <p>
-              Example: I don't want to <b>take up</b> any more of your time.
+              Example: Sorry for asking so many questions. I didn't want to{" "}
+              <b>take up</b> so much of your time.
             </p>
           </li>
 
           <li>
-            <b>Fed up with</b> - annoyed or upset at a situation or treatment.
+            <b>Fed up with</b> - annoyed or upset at a situation or treatment
             <p>
-             Example: He was <b>fed up with</b> doing all the work.
+              Example: He was <b>fed up with</b> doing all the work.
             </p>
           </li>
 
           <li>
             <b>Talk it out</b> - to resolve a fight, disagreement,
-            misunderstanding through talking.
+            misunderstanding through talking
             <p>
-             Example: After my wife and I <b>talked it out</b> we were fine.
+              Example: The day after the fight my wife and I{" "}
+              <b>talked it out</b> we were fine.
             </p>
           </li>
 
           <li>
             <b>Hit it off</b> - to immediately have a good relationship when
-            meeting someone new.
+            meeting someone new
             <p>
-             Example: I met my new boss today and we <b>hit it off</b> from the start.
-              I’m so happy.
+              Example: I met my new boss today and we <b>hit it off</b> from the
+              start. I’m so happy.
             </p>
           </li>
 
           <li>
             <b>Cheat on</b> - to be unfaithful to your romantic partner, or when
-            being dishonest when taking tests.
+            being dishonest when taking tests
             <p>
-             Example: Skylar <b>cheated on</b> Walter (she had sex with her boss).
+              Example: Skylar <b>cheated on</b> Walter (she had sex with her
+              boss).
             </p>
           </li>
         </ul>
@@ -88,7 +91,7 @@ export default function PhrasalVerbs1() {
             userAnswer: "",
           },
           {
-            title: "I'm ________________ my boss. He's such a jerk.",
+            title: "I'm ________________ my boss. She's such a jerk.",
             possibleAnswers: [
               { title: "a. fed up with", correctAnswer: true },
               { title: "b. talking it out" },

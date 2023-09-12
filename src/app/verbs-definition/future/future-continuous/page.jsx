@@ -11,13 +11,14 @@ import styles from "../../../styles/content-page.module.css";
 
 // const fullUrl = baseUrl + endpoint;
 
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   return res.json();
-// };
+const getData = async () => {
+  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+  const data = res.json();
+  return data;
+};
 
 export default async function FutureContinuous() {
-  // const data = await getData();
+  const verbs = await getData();
 
   return (
     <>
@@ -101,7 +102,7 @@ export default async function FutureContinuous() {
           <td>They won't be running</td>
         </tr>
         <tbody>
-          {/* {data.map((verb) => {
+          {verbs.map((verb) => {
             return (
               <tr>
                 <td>{verb.positive}</td>
@@ -110,7 +111,7 @@ export default async function FutureContinuous() {
                 <td>{verb.negativeShortForm}</td>
               </tr>
             );
-          })} */}
+          })}
         </tbody>
       </table>
 
