@@ -11,14 +11,14 @@ import styles from "../../../styles/content-page.module.css";
 
 // const fullUrl = baseUrl + endpoint;
 
-const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-  const data = res.json();
-  return data;
-};
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   const data = res.json();
+//   return data;
+// };
 
 export default async function FutureContinuous() {
-  const verbs = await getData();
+  // const verbs = await getData();
 
   return (
     <>
@@ -101,7 +101,7 @@ export default async function FutureContinuous() {
           <td>They will not be running</td>
           <td>They won't be running</td>
         </tr>
-        <tbody>
+        {/* <tbody>
           {verbs.map((verb) => {
             return (
               <tr>
@@ -112,7 +112,7 @@ export default async function FutureContinuous() {
               </tr>
             );
           })}
-        </tbody>
+        </tbody> */}
       </table>
 
       <div className="page-body">
