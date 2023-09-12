@@ -17,6 +17,8 @@ export default function Collective() {
         { title: " is" },
       ],
       userAnswer: "",
+      // explanation:
+      //   "Students are considered individuals, not a collective group",
     },
     {
       title: "The group __________ decided together to file the petition.",
@@ -219,6 +221,7 @@ export default function Collective() {
         </ul>
       </div>
       <Quiz
+        // explanation={explanation}
         title="Take a Quiz!"
         questions={quiz}
         callback={handleRandomQuestions}

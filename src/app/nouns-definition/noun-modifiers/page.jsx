@@ -1,9 +1,185 @@
+"use client";
+
+import { useState } from "react";
 import Quiz from "../../../components/Quiz";
+
 import styles from "../../styles/content-page.module.css";
 
-//Done
-
 export default function NounModifiers() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([
+    {
+      title: "It's a door made of metal. It's a _____________.",
+      possibleAnswers: [
+        { title: "door's metal" },
+        { title: "metal door", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "It's a cloth that you put on a table. It's a _____________.",
+      possibleAnswers: [
+        { title: "table cloth", correctAnswer: true },
+        { title: "cloth table" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "It's a bat used for baseballs. It's a _____________.",
+      possibleAnswers: [
+        { title: "batball" },
+        { title: "baseball bat", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "It's a key for my house. It's a _____________.",
+      possibleAnswers: [
+        { title: "key house" },
+        { title: "house key", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "The park is in the city. It's a ______________.",
+      possibleAnswers: [
+        { title: "park city" },
+        { title: "city park", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "They have a house in the trees. They have a ______________.",
+      possibleAnswers: [
+        { title: "tree house", correctAnswer: true },
+        { title: "house tree" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "We bought a bone for our dog. We gave her a _____________.",
+      possibleAnswers: [
+        { title: "bone dog" },
+        { title: "dog bone", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title:
+        "Meet me where there is a station for a train. It's a ________________.",
+      possibleAnswers: [
+        { title: "train station", correctAnswer: true },
+        { title: "station train" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "This is a ladder with steps.   It’s a ___________.",
+      possibleAnswers: [
+        { title: "step ladder", correctAnswer: true },
+        { title: "ladder step" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "I paid for lessons for swimming. They are _____________.",
+      possibleAnswers: [
+        { title: "swimming lessons", correctAnswer: true },
+        { title: "swimmings lesson" },
+      ],
+      userAnswer: "",
+    },
+  ]);
+
+  const handleRandomQuestions = () => {
+    setQuiz([
+      {
+        title: "It's a vehicle with two wheels. It's a _____________.",
+        possibleAnswers: [
+          { title: "two-wheel vehicle" },
+          { title: "bicycle", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "She wears it on her finger. It's a _____________.",
+        possibleAnswers: [
+          { title: "ring", correctAnswer: true },
+          { title: "finger accessory" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "It's a container for liquids. It's a _____________.",
+        possibleAnswers: [
+          { title: "liquid container" },
+          { title: "bottle", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "He uses it to cut paper. It's a _____________.",
+        possibleAnswers: [
+          { title: "paper cutter" },
+          { title: "scissors", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "You sit on it in the park. It's a _____________.",
+        possibleAnswers: [
+          { title: "park bench", correctAnswer: true },
+          { title: "bench park" },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "It's a piece of furniture for sleeping. It's a _____________.",
+        possibleAnswers: [
+          { title: "sleeping furniture" },
+          { title: "bed", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title:
+          "She wears it to protect her eyes from the sun. It's a _____________.",
+        possibleAnswers: [
+          { title: "sun protection" },
+          { title: "sunglasses", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title:
+          "It's a document that proves your identity. It's a _____________.",
+        possibleAnswers: [
+          { title: "identity document" },
+          { title: "passport", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "It's a device for listening to music. It's a _____________.",
+        possibleAnswers: [
+          { title: "music player" },
+          { title: "headphones", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+      {
+        title: "It's a piece of equipment for cooking. It's a _____________.",
+        possibleAnswers: [
+          { title: "cooking equipment" },
+          { title: "stove", correctAnswer: true },
+        ],
+        userAnswer: "",
+      },
+    ]);
+    setShouldShowNewQuestionsBtn(false);
+  };
+
   return (
     <>
       <div className={styles.page_title}>
@@ -60,99 +236,31 @@ export default function NounModifiers() {
       <p>Noun modifiers are always singular</p>
       <ul className="page-examples">
         <li>
-          a basketball player {" "}
+          a basketball player{" "}
           <span style={{ color: "red" }}>NOT a basketballs player</span>
         </li>
       </ul>
 
       <Quiz
+        // explanation={explanation}
         title="Take a Quiz!"
-        questions={[
-          {
-            title: "It's a door made of metal. It's a _____________.",
-            possibleAnswers: [
-              { title: "door's metal" },
-              { title: "metal door", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "It's a cloth that you put on a table. It's a _____________.",
-            possibleAnswers: [
-              { title: "table cloth", correctAnswer: true },
-              { title: "cloth table" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It's a bat used for baseballs. It's a _____________.",
-            possibleAnswers: [
-              { title: "batball" },
-              { title: "baseball bat", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It's a key for my house. It's a _____________.",
-            possibleAnswers: [
-              { title: "key house" },
-              { title: "house key", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "The park is in the city. It's a ______________.",
-            possibleAnswers: [
-              { title: "park city" },
-              { title: "city park", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "They have a house in the trees. They have a ______________.",
-            possibleAnswers: [
-              { title: "tree house", correctAnswer: true },
-              { title: "house tree" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "We bought a bone for our dog. We gave her a _____________.",
-            possibleAnswers: [
-              { title: "bone dog" },
-              { title: "dog bone", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "Meet me where there is a station for a train. It's a ________________.",
-            possibleAnswers: [
-              { title: "train station", correctAnswer: true },
-              { title: "station train" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "This is a ladder with steps.   It’s a ___________.",
-            possibleAnswers: [
-              { title: "step ladder", correctAnswer: true },
-              { title: "ladder step" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "I paid for lessons for swimming. They are _____________.",
-            possibleAnswers: [
-              { title: "swimming lessons", correctAnswer: true },
-              { title: "swimmings lesson" },
-            ],
-            userAnswer: "",
-          },
-        ]}
+        questions={quiz}
+        callback={handleRandomQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>
   );
 }
+
+//////////////////////////////////////////////////////////////////////
+
+// import Quiz from "../../../components/Quiz";
+// import styles from "../../styles/content-page.module.css";
+
+// //Done
+
+// export default function NounModifiers() {
+//   return (
+
+//   );
+// }

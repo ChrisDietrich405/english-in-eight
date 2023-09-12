@@ -12,7 +12,7 @@ function AnswerIcon({ isAnswered }) {
         <span
           style={{ marginLeft: "10px", color: "green" }}
           role="img"
-          aria-label="dog"
+          aria-label="sad face"
         >
           Not answered 😓
         </span>
@@ -51,6 +51,7 @@ export default function Quiz(props) {
       <form onSubmit={submit} onReset={reset}>
         <div className={styles.quiz_title}>
           <h4>{props.title}</h4>
+          <h1>{props.explanation}</h1>
         </div>
         <ol className={styles.questions_and_answers}>
           {props.questions.map((question, i) => (
@@ -67,7 +68,7 @@ export default function Quiz(props) {
               <ul>
                 {question.possibleAnswers.map((possibleAnswer, index) => {
                   return (
-                    <SelectAnswer
+                    <SelectAnswer                     
                       key={`answer${index}`}
                       submitted={submitted}
                       onClick={() => select(possibleAnswer, i)}
@@ -96,7 +97,12 @@ export default function Quiz(props) {
             Reset
           </Button>
           {props.shouldShowNewQuestionsBtn && (
-            <Button style={{marginLeft: "20px"}} variant="contained" type="button" onClick={props.callback}>
+            <Button
+              style={{ marginLeft: "20px" }}
+              variant="contained"
+              type="button"
+              onClick={props.callback}
+            >
               Try More Questions
             </Button>
           )}
