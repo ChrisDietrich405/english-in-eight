@@ -63,7 +63,7 @@ export default function Footer() {
           .then(
             (result) => {
               console.log("success");
-              toast.success("your estimate was scheduled successfully");
+              toast.success("your message was sent successfully");
               // notify();
               setEmail("");
               setMessage("");
