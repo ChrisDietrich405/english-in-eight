@@ -57,7 +57,7 @@ export default function Home() {
         <div className={styles.banner}>
           <div
             style={{
-              backgroundImage: 'url("./images/flag.jpg")',
+              backgroundImage: 'url("./images/flag.png")',
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "100%",

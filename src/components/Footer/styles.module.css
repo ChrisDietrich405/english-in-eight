@@ -1,7 +1,6 @@
 .footer {
-  height: 300px !important; 
+  height: 200px !important; 
   margin-top: 50px;
-  /* margin-bottom: 425px; */
   padding-top: 20px;
   border-top: 1px solid #1976d2;
 }
@@ -47,7 +46,7 @@
 }
 
 .text-area {
-  min-height: 135px;
+  min-height: 100px;
   margin-bottom: 38px;
 }
 

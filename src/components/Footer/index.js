@@ -165,7 +165,7 @@ export default function Footer() {
             >
               <div className={styles.form_container}>
                 <form onSubmit={sendEmail} className={styles.form}>
-                  <h2>Contact us</h2>{" "}
+                  <h3>Contact us</h3>{" "}
                   <div className="mb-3">
                     <label
                       htmlFor="nameControlInput"
