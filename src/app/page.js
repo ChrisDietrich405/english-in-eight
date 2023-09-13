@@ -1,10 +1,5 @@
-//https://www.hostinger.com/
-
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 import { FaTreeCity } from "react-icons/fa6";
 import { FaRunning, FaAngry } from "react-icons/fa";
@@ -23,36 +18,41 @@ import {
 } from "@mui/material";
 
 import styles from "./page.module.css";
-import { useEffect } from "react";
+
+export const metadata = {
+  title: "Home | English in Eight Minutes",
+  description:
+    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+  keywords:
+    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+  openGraph: {
+    title: "Home | English in Eight Minutes",
+    description:
+      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    images: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/favicon/apple-touch-icon.png",
+      },
+    ],
+  },
+};
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home | English in Eight</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-          crossOrigin="anonymous"
-        />
-        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
-        <meta
-          name="description"
-          content="Dietrich Land Care is a landscaping company specializing in brush / lot clearing & stump grinding, excavation & grading services, seeding & sod services, general maintenance services, garden bed installations & maintenance, landscape renovations & features, patios, retainings walls, turf, fence installation, stump removal, snow removal, regrades, mulch installation"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dietrichlandcare.com" />
-        <meta property="og:title" content="Dietrich Land Care" />
-        <meta
-          property="og:description"
-          content="Dietrich Land Care is a landscaping company specializing in brush / lot clearing & stump grinding, excavation & grading services, seeding & sod services, general maintenance services, garden bed installations & maintenance, landscape renovations & features, patios, retainings walls, turf, fence installation, stump removal, snow removal, regrades, mulch installation"
-        />
-        <meta
-          property="og:image"
-          content="https://dietrichlandcare.com/images/logo.jpg"
-        />
-      </Head>
       <main className={styles.home} sx={{ padding: "0px !important" }}>
         <div className={styles.banner}>
           <div
