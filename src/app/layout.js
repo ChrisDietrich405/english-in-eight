@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 // import Head from "next/head";
-// import Script from "next/script";
+import Script from "next/script";
 
 import Footer from "../components/Footer";
 import "bootstrap/dist/css/bootstrap.css";
@@ -49,28 +49,40 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* <Head>
+    <>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-186EYFYXC9" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'G-186EYFYXC9');
+          `}
+      </Script>
+      <html lang="en">
+        {/* <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-          crossOrigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossOrigin="anonymous"
         />
       </Head> */}
 
-      {/* <Script
+        {/* <Script
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       /> */}
 
-      <body className={roboto.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+        <body className={roboto.className}>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
