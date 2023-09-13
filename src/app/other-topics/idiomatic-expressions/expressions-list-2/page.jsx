@@ -15,7 +15,7 @@ export default function Expressions2() {
             older relatives.
             <br />
             <p>
-             Example: I wore a lot of my older brother’s <b>hand me downs.</b>
+              Example: I wore a lot of my older brother’s <b>hand me downs.</b>
             </p>
           </li>
 
@@ -24,8 +24,8 @@ export default function Expressions2() {
             that is difficult.
             <br />
             <p>
-            Example: I was tired around 11pm, but got a <b>second wind</b> and finished
-              the project.
+              Example: I was tired around 11pm, but got a <b>second wind</b> and
+              finished the project.
             </p>
           </li>
 
@@ -33,8 +33,8 @@ export default function Expressions2() {
             <b>To wing it</b> - to not plan
             <br />
             <p>
-             Example: John didn’t have time to prepare for his interview so he needed{" "}
-              <b>to wing it.</b>
+              Example: John didn’t have time to prepare for his interview so he
+              needed <b>to wing it.</b>
             </p>
           </li>
           <li>
@@ -42,8 +42,8 @@ export default function Expressions2() {
             managed
             <br />
             <p>
-             Example: The decision is <b>out of my hands.</b> I have no control in this
-              situation.
+              Example: The decision is <b>out of my hands.</b> I have no control
+              in this situation.
             </p>
           </li>
 
@@ -52,8 +52,8 @@ export default function Expressions2() {
             undesirable effect to what was intended.
             <br />
             <p>
-              Example: Her plans to make him jealous <b>backfired</b> on her when he
-              started dating her best friend.
+              Example: Her plans to make him jealous <b>backfired</b> on her
+              when he started dating her best friend.
             </p>
           </li>
         </ul>
@@ -64,7 +64,7 @@ export default function Expressions2() {
           {
             title:
               "The decision is _________________. The boss will decide now.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. backfired" },
               { title: "b. out of his hands", correctAnswer: true },
             ],
@@ -73,7 +73,7 @@ export default function Expressions2() {
           {
             title:
               "I completely forgot about my presentation today. I needed _____________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. to wing it", correctAnswer: true },
               { title: "b. second wind" },
             ],
@@ -82,7 +82,7 @@ export default function Expressions2() {
           {
             title:
               "Working extra _____________ on me. They thought I was crazy and fired me.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. winged" },
               { title: "b. backfired", correctAnswer: true },
             ],
@@ -91,7 +91,7 @@ export default function Expressions2() {
           {
             title:
               "It's better for the environment for children to wear _________________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. hand me downs", correctAnswer: true },
               { title: "b. second winds" },
             ],
@@ -100,7 +100,7 @@ export default function Expressions2() {
           {
             title:
               "Many marathon runners get a _____________ at about the 18km mark.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. backfire" },
               { title: "b. second wind", correctAnswer: true },
             ],

@@ -110,36 +110,6 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <DropdownPOC dropdownProps={dropdownProps} />
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/adjectives-definition">
-            Adjective Definition
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/adjectives-definition/possessive-adjectives"
-          >
-            Possessive Adjectives
-          </Link>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/adjectives-definition/comparative-adjectives"
-          >
-            Comparative Adjectives
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/adjectives-definition/superlative-adjectives"
-          >
-            Superlative Adjectives
-          </Link>
-        </MenuItem> */}
       </StyledMenu>
     </>
   );

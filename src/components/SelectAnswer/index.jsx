@@ -4,16 +4,13 @@ import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 import styles from "./styles.module.css";
 
 const SelectAnswer = ({
-  // explanation,
+  explanation,
   submitted,
   onClick,
   possibleAnswer,
   answers,
   i,
-  selectedAnswerTexts,
   isAnsweredCorrectly,
-  index,
-  isAnswered,
 }) => {
   const getTextColor = () => {
     if (!(i in answers)) {
@@ -40,7 +37,8 @@ const SelectAnswer = ({
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return (
           <>
-            <AiFillCloseCircle color="red" />;
+            <AiFillCloseCircle color="red" />
+            <p>{explanation}</p>
           </>
         );
       } else {

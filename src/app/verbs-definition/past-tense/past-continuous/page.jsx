@@ -121,7 +121,7 @@ export default async function PastContinuous() {
           {
             title:
               "I ___________ (think) about a solution when Nia came up with a great idea.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. was thinking" },
               { title: "b. were thinking", correctAnswer: true },
             ],
@@ -129,7 +129,7 @@ export default async function PastContinuous() {
           },
           {
             title: "You ___________ (talk) loudly when the fight started.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were talking", correctAnswer: true },
               { title: "b. was talking" },
             ],
@@ -138,7 +138,7 @@ export default async function PastContinuous() {
           {
             title:
               "It __________ (rain) a lot when I noticed my car door was broken",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were raining" },
               { title: "b. was raining", correctAnswer: true },
             ],
@@ -147,7 +147,7 @@ export default async function PastContinuous() {
           {
             title:
               "They _____________ (work) on the computer when the teacher came into the room.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. was working" },
               { title: "b. were working", correctAnswer: true },
             ],
@@ -155,7 +155,7 @@ export default async function PastContinuous() {
           },
           {
             title: "He __________ (leave) when his boss called him.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were leaving" },
               { title: "b. was leaving", correctAnswer: true },
             ],
@@ -164,7 +164,7 @@ export default async function PastContinuous() {
           {
             title:
               "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were cutting" },
               { title: "b. was cutting", correctAnswer: true },
             ],
@@ -172,7 +172,7 @@ export default async function PastContinuous() {
           },
           {
             title: "We _________ (talk) to our colleagues when they came in.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. was talking" },
               { title: "b. were talking", correctAnswer: true },
             ],
@@ -180,7 +180,7 @@ export default async function PastContinuous() {
           },
           {
             title: "He ___________ (make) dinner when the phone rang.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. was making", correctAnswer: true },
               { title: "b. were making" },
             ],
@@ -188,7 +188,7 @@ export default async function PastContinuous() {
           },
           {
             title: "They ___________ (wash) clothes when they heard a noise.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were washing", correctAnswer: true },
               { title: "b. was washing" },
             ],
@@ -196,7 +196,7 @@ export default async function PastContinuous() {
           },
           {
             title: "It ____________ (frustrate).",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. were frustrating" },
               { title: "b. was frustrating", correctAnswer: true },
             ],

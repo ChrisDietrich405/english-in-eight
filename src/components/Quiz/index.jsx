@@ -66,21 +66,26 @@ export default function Quiz(props) {
                 />
               )}
               <ul>
-                {question.possibleAnswers.map((possibleAnswer, index) => {
-                  return (
-                    <SelectAnswer                     
-                      key={`answer${index}`}
-                      submitted={submitted}
-                      onClick={() => select(possibleAnswer, i)}
-                      possibleAnswer={possibleAnswer}
-                      answers={answers}
-                      i={i}
-                      selectedAnswerTexts={selectedAnswerTexts}
-                      isAnsweredCorrectly={i in answers && answers[i] === true}
-                      index={index}
-                    />
-                  );
-                })}
+                {question.possibleAnswersAndExplanation.map(
+                  (possibleAnswer, index) => {
+                    return (
+                      <SelectAnswer
+                        explanation={question.explanation}
+                        key={`answer${index}`}
+                        submitted={submitted}
+                        onClick={() => select(possibleAnswer, i)}
+                        possibleAnswer={possibleAnswer}
+                        answers={answers}
+                        i={i}
+                        selectedAnswerTexts={selectedAnswerTexts}
+                        isAnsweredCorrectly={
+                          i in answers && answers[i] === true
+                        }
+                        index={index}
+                      />
+                    );
+                  }
+                )}
               </ul>
             </li>
           ))}

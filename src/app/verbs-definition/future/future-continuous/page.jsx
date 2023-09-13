@@ -133,7 +133,7 @@ export default async function FutureContinuous() {
         questions={[
           {
             title: "In an hour she _______________ (clean) the bathrooms.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be cleaning", correctAnswer: true },
               { title: "b. will be clean" },
             ],
@@ -141,7 +141,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "Next month they _______________ (complain) about this.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be complain" },
               { title: "b. will be complaining", correctAnswer: true },
             ],
@@ -150,7 +150,7 @@ export default async function FutureContinuous() {
           {
             title:
               "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will still be rise" },
               { title: "b. will still be rising", correctAnswer: true },
             ],
@@ -158,7 +158,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "I ______________ (see) Marcus at the conference next week.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be see" },
               { title: "b. will be seeing", correctAnswer: true },
             ],
@@ -166,7 +166,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "When he's in Morocco he _____________ with friends.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be stay" },
               { title: "b. will be staying", correctAnswer: true },
             ],
@@ -174,7 +174,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "Miguel _____________ (compete) in a marathon next month.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be competing", correctAnswer: true },
               { title: "b. will be compete" },
             ],
@@ -182,7 +182,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "I ___________  with Nia this evening so I can talk to her.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be eat" },
               { title: "b. will be eating", correctAnswer: true },
             ],
@@ -190,7 +190,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "Demarcus _______________ (run) in the race.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will also be running", correctAnswer: true },
               { title: "b. will also be run" },
             ],
@@ -198,7 +198,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "He _____________ (sleep) when you telephone him.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be sleep" },
               { title: "b. will be sleeping", correctAnswer: true },
             ],
@@ -206,7 +206,7 @@ export default async function FutureContinuous() {
           },
           {
             title: "I _____________ (play) hockey in the afternoon tomorrow.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will be play" },
               { title: "b. will be playing", correctAnswer: true },
             ],

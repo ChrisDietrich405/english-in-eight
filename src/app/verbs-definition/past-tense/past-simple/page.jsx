@@ -135,7 +135,7 @@ export default async function PastSimple() {
         questions={[
           {
             title: "I _____________ to the store.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. go" },
               { title: "b. went", correctAnswer: true },
             ],
@@ -144,7 +144,7 @@ export default async function PastSimple() {
 
           {
             title: "They _____________ house very well.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. builded" },
               { title: "b. built", correctAnswer: true },
             ],
@@ -152,7 +152,7 @@ export default async function PastSimple() {
           },
           {
             title: "I _________ to her.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. didn't talked" },
               { title: "b. didn't talk", correctAnswer: true },
             ],
@@ -160,7 +160,7 @@ export default async function PastSimple() {
           },
           {
             title: "She ___________ that movie yesterday.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. saw", correctAnswer: true },
               { title: "b. sawed" },
             ],
@@ -168,7 +168,7 @@ export default async function PastSimple() {
           },
           {
             title: "He ____________ his hand with a knife .",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. cuted" },
               { title: "b. cut", correctAnswer: true },
             ],
@@ -176,7 +176,7 @@ export default async function PastSimple() {
           },
           {
             title: "We ________ too much this morning.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. ate", correctAnswer: true },
               { title: "b. eated" },
             ],
@@ -184,7 +184,7 @@ export default async function PastSimple() {
           },
           {
             title: "I _________ her on the cheek.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. kissed", correctAnswer: true },
               { title: "b. kiss" },
             ],
@@ -192,7 +192,7 @@ export default async function PastSimple() {
           },
           {
             title: "It ____________ a lot of money.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. costed" },
               { title: "b. cost", correctAnswer: true },
             ],
@@ -200,7 +200,7 @@ export default async function PastSimple() {
           },
           {
             title: "They ___________ to the store.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. wented" },
               { title: "b. went", correctAnswer: true },
             ],
@@ -208,7 +208,7 @@ export default async function PastSimple() {
           },
           {
             title: "The car ___________ the tree.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. hit", correctAnswer: true },
               { title: "b. hited" },
             ],

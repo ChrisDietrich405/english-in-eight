@@ -29,8 +29,8 @@ export default function RememberVersusRemind() {
         </li>
       </ul>
       <p>
-        If we remind someone to do something or about something, we help
-        them remember it or help them not to forget it:
+        If we remind someone to do something or about something, we help them
+        remember it or help them not to forget it:
       </p>
 
       <ul className="page-examples">
@@ -79,7 +79,7 @@ export default function RememberVersusRemind() {
         questions={[
           {
             title: "I don't ______________ where I left my hat.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remind" },
               { title: "remember", correctAnswer: true },
             ],
@@ -88,7 +88,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "She can't ___________________ anything about her childhood.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remind" },
               { title: "remember", correctAnswer: true },
             ],
@@ -97,7 +97,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "She had to ______________________ him that they had agreed on the child custody. He acted like he had forgotten",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remember" },
               { title: "remind", correctAnswer: true },
             ],
@@ -105,7 +105,7 @@ export default function RememberVersusRemind() {
           },
           {
             title: "Please ____________________ not to smoke near the church.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remind" },
               { title: "remember", correctAnswer: true },
             ],
@@ -114,7 +114,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "My new boss ____________________ me of my best friend's sister.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "reminds", correctAnswer: true },
               { title: "remembers" },
             ],
@@ -123,7 +123,7 @@ export default function RememberVersusRemind() {
           {
             title:
               " ____________________ to turn off the computer when you leave the office.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "Remember" },
               { title: "Remind", correctAnswer: true },
             ],
@@ -132,7 +132,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "I've read that post but I don't __________________ the who wrote it.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remember", correctAnswer: true },
               { title: "remind" },
             ],
@@ -141,7 +141,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "Did you  ____________________ Malcolm to bring his umbrella?",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remind", correctAnswer: true },
               { title: "remember" },
             ],
@@ -150,7 +150,7 @@ export default function RememberVersusRemind() {
           {
             title:
               "That dress _______________ me of my cousin. She wore the same kind.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "reminds", correctAnswer: true },
               { title: "remembers" },
             ],
@@ -158,7 +158,7 @@ export default function RememberVersusRemind() {
           },
           {
             title: "_______________ me to buy some trash bags.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "remind", correctAnswer: true },
               { title: "remember" },
             ],

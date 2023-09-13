@@ -110,7 +110,7 @@ export default async function PresentPerfectContinuous() {
         questions={[
           {
             title: "She ____________________________ (study) all morning.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has been studying", correctAnswer: true },
               { title: "b. has studied" },
             ],
@@ -118,7 +118,7 @@ export default async function PresentPerfectContinuous() {
           },
           {
             title: "I _____________________ (wait) for you since three.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has waited" },
               { title: "b. have been waiting", correctAnswer: true },
             ],
@@ -126,7 +126,7 @@ export default async function PresentPerfectContinuous() {
           },
           {
             title: "Nia ____________________(live) in Nairobi since 2002.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have lived" },
               { title: "b. has been living", correctAnswer: true },
             ],
@@ -134,7 +134,7 @@ export default async function PresentPerfectContinuous() {
           },
           {
             title: "They _____________________ all week.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have fought" },
               { title: "b. have been fighting", correctAnswer: true },
             ],
@@ -143,7 +143,7 @@ export default async function PresentPerfectContinuous() {
           {
             title:
               "He ______________________ (play) basketball for five hours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have played" },
               { title: "b. has been playing", correctAnswer: true },
             ],
@@ -151,7 +151,7 @@ export default async function PresentPerfectContinuous() {
           },
           {
             title: "He ___________________ (work) for this library since 2002.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have worked" },
               { title: "b. has been working", correctAnswer: true },
             ],
@@ -159,7 +159,7 @@ export default async function PresentPerfectContinuous() {
           },
           {
             title: "How long ___________________ (learn / you) Spanish?",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has you learned" },
               { title: "b. have you been learning", correctAnswer: true },
             ],
@@ -168,7 +168,7 @@ export default async function PresentPerfectContinuous() {
           {
             title:
               "We ______________________ (look for) your house for more than an .",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have been looking", correctAnswer: true },
               { title: "b. has looked" },
             ],
@@ -177,7 +177,7 @@ export default async function PresentPerfectContinuous() {
           {
             title:
               "She ________________________ (live) without electricity for five days.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has been living", correctAnswer: true },
               { title: "b. has lived" },
             ],
@@ -186,7 +186,7 @@ export default async function PresentPerfectContinuous() {
           {
             title:
               "How long _______________________ (work / he) in the garage?",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have he worked" },
               { title: "b. has he been working", correctAnswer: true },
             ],

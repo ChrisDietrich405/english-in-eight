@@ -15,9 +15,9 @@ export default function Expressions3() {
             well it's a bad idea to interfere with it
             <br />
             <p>
-             Example: My refrigerator was making a very small noise, but it was working.
-              I was about to investigate with a screwdriver when my wife said
-              leave it alone. <b>If it’s not broke don’t fix it</b>.
+              Example: My refrigerator was making a very small noise, but it was
+              working. I was about to investigate with a screwdriver when my
+              wife said leave it alone. <b>If it’s not broke don’t fix it</b>.
             </p>
           </li>
 
@@ -26,9 +26,9 @@ export default function Expressions3() {
             thinking
             <br />
             <p>
-             Example: When I told my wife that we should order Chinese she said “Wow!{" "}
-              <b>You read my mind</b>. That’s exactly what I wanted to have for
-              dinner.
+              Example: When I told my wife that we should order Chinese she said
+              “Wow! <b>You read my mind</b>. That’s exactly what I wanted to
+              have for dinner.
             </p>
           </li>
 
@@ -37,8 +37,8 @@ export default function Expressions3() {
             about it
             <br />
             <p>
-             Example:  I ask my students to please <b>spread the word</b> about my
-              English classes.
+              Example: I ask my students to please <b>spread the word</b> about
+              my English classes.
             </p>
           </li>
 
@@ -47,8 +47,8 @@ export default function Expressions3() {
             making a final decision
             <br />
             <p>
-             Example: I have to go back to the store because I cut the wrong size. I
-              forgot to <b>"measure twice, cut once"</b>.
+              Example: I have to go back to the store because I cut the wrong
+              size. I forgot to <b>"measure twice, cut once"</b>.
             </p>
           </li>
 
@@ -57,8 +57,8 @@ export default function Expressions3() {
             short period of time
             <br />
             <p>
-             Example:  Over the weekend I <b>binge watched</b> Breaking Bad. I watched
-              the first three seasons.
+              Example: Over the weekend I <b>binge watched</b> Breaking Bad. I
+              watched the first three seasons.
             </p>
           </li>
         </ul>
@@ -69,7 +69,7 @@ export default function Expressions3() {
           {
             title:
               "Check your final numbers before you submit them to the boss. Remember ______________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. spread the word" },
               { title: "b. measure twice, cut once", correctAnswer: true },
             ],
@@ -78,7 +78,7 @@ export default function Expressions3() {
           {
             title:
               "Would you please help me to ________________ about my new restaurant.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. spread the word", correctAnswer: true },
               { title: "b. binge watch" },
             ],
@@ -87,7 +87,7 @@ export default function Expressions3() {
           {
             title:
               "I told my wife I wanted Italian food for dinner. She responded 'you ________________! I want Italian food too'.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. read my mind", correctAnswer: true },
               { title: "b. if it's not broke don't fix it" },
             ],
@@ -96,7 +96,7 @@ export default function Expressions3() {
           {
             title:
               "I don't like watching series, because sometimes I get addicted to one and ________________ watch it.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. spread the word" },
               { title: "b. binge watch", correctAnswer: true },
             ],
@@ -105,7 +105,7 @@ export default function Expressions3() {
           {
             title:
               "My wife wanted to change her resume, but it was perfect the way it was so I told her _______________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. read my mind" },
               {
                 title: "b. if it's not broke don't fix it",

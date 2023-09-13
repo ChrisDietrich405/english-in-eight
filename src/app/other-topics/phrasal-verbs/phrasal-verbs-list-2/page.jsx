@@ -55,7 +55,7 @@ export default function PhrasalVerbs2() {
           {
             title:
               "I think he could _______________ peanut butter and jelly sandwiches. I always see him eating them.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. live off of", correctAnswer: true },
               { title: "b. talk into" },
             ],
@@ -63,7 +63,7 @@ export default function PhrasalVerbs2() {
           },
           {
             title: "After their fight, she ___________ to clear her head.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. put together" },
               { title: "b. drove around", correctAnswer: true },
             ],
@@ -72,7 +72,7 @@ export default function PhrasalVerbs2() {
           {
             title:
               "I can't believe I let my wife ______________ adopting another cat.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. to go off" },
               { title: "b. talk me into", correctAnswer: true },
             ],
@@ -81,7 +81,7 @@ export default function PhrasalVerbs2() {
           {
             title:
               "My car alarm is very sensitive. It ___________ if you walk past it.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. puts together" },
               { title: "b. goes off", correctAnswer: true },
             ],
@@ -89,7 +89,7 @@ export default function PhrasalVerbs2() {
           },
           {
             title: "She has to __________________ her new dining room table.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. put together", correctAnswer: true },
               { title: "b. drive around" },
             ],

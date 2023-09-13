@@ -105,7 +105,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "She ________________ (work) at the company for three years when she got the promotion.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had worked" },
               { title: "b. had been working", correctAnswer: true },
             ],
@@ -114,7 +114,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "Alisha _______________ (go) to that store since 2013 when it moved.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had been going", correctAnswer: true },
               { title: "b. had gone" },
             ],
@@ -123,7 +123,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "The mechanic knew exactly what the problem was because he ____________  (examine) the car for a long time.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had examined" },
               { title: "b. had been examining", correctAnswer: true },
             ],
@@ -132,7 +132,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "He ______________ (drink) apple juice directly out of the carton when his dad walked into the kitchen.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had been drinking", correctAnswer: true },
               { title: "b. has drunk" },
             ],
@@ -142,7 +142,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "I _________________ (study) for hours when I fell asleep on the couch.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had studied" },
               { title: "b. had been studying", correctAnswer: true },
             ],
@@ -152,7 +152,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "She was angry because she ________________ (wait) for me for hours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had waited" },
               { title: "b. had been waiting", correctAnswer: true },
             ],
@@ -161,7 +161,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "Demetrius ____________ (teach) at the university since May.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had been teaching", correctAnswer: true },
               { title: "b. had taught" },
             ],
@@ -169,7 +169,7 @@ export default async function PastPerfectContinuous() {
           },
           {
             title: "I ______________ (feel) a little sad.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had been feeling", correctAnswer: true },
               { title: "b. have felt" },
             ],
@@ -178,7 +178,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "He ______________ (eat) too much and that's why they think he got sick.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had been eating", correctAnswer: true },
               { title: "b. have eat" },
             ],
@@ -187,7 +187,7 @@ export default async function PastPerfectContinuous() {
           {
             title:
               "They ________________ (argue) for days when Bia came up with a solution.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had argued" },
               { title: "b. had been arguing", correctAnswer: true },
             ],

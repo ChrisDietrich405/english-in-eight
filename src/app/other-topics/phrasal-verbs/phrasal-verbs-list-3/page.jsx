@@ -1,5 +1,5 @@
 import Quiz from "@/src/components/Quiz";
-import styles from "../../../styles/content-page.module.css"
+import styles from "../../../styles/content-page.module.css";
 
 export default function PhrasalVerbs3() {
   return (
@@ -13,14 +13,16 @@ export default function PhrasalVerbs3() {
             <b>Think over</b> - to think deeply about a decision before you make
             it
             <p>
-             Example: Can I <b>think it over</b> and tell you my answer tomorrow?{" "}
+              Example: Can I <b>think it over</b> and tell you my answer
+              tomorrow?{" "}
             </p>
           </li>
 
           <li>
             <b>Put up with</b> - tolerate
             <p>
-             Example: He couldn’t <b>put up with</b> his boss anymore so he quit.{" "}
+              Example: He couldn’t <b>put up with</b> his boss anymore so he
+              quit.{" "}
             </p>
           </li>
 
@@ -28,15 +30,15 @@ export default function PhrasalVerbs3() {
             <b>Fall for</b> - To either become infatuated with or fall in love
             with someone
             <p>
-             Example: I <b>fell for</b> her pretty quickly.
+              Example: I <b>fell for</b> her pretty quickly.
             </p>
           </li>
 
           <li>
             <b>Take apart</b> - to disassemble
             <p>
-              Example: We needed to <b>take apart</b> the desk in order to take it out of
-              the room.{" "}
+              Example: We needed to <b>take apart</b> the desk in order to take
+              it out of the room.{" "}
             </p>
           </li>
 
@@ -54,7 +56,7 @@ export default function PhrasalVerbs3() {
         questions={[
           {
             title: "I need to _______________ our bed before we move.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. take apart", correctAnswer: true },
               { title: "b. build up" },
             ],
@@ -62,7 +64,7 @@ export default function PhrasalVerbs3() {
           },
           {
             title: "He ________________ her during their first date.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. put up with" },
               { title: "b. fell for", correctAnswer: true },
             ],
@@ -71,7 +73,7 @@ export default function PhrasalVerbs3() {
           {
             title:
               "It's a great job offer, but because it means moving I need to __________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. build up" },
               { title: "b. think it over", correctAnswer: true },
             ],
@@ -80,7 +82,7 @@ export default function PhrasalVerbs3() {
           {
             title:
               "I'm going to tell her how I feel today. It's better than letting things _______________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. take apart" },
               { title: "b. build up", correctAnswer: true },
             ],
@@ -88,7 +90,7 @@ export default function PhrasalVerbs3() {
           },
           {
             title: "She couldn't _____________ her job anymore so she quit.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. think over" },
               { title: "b. put up with", correctAnswer: true },
             ],

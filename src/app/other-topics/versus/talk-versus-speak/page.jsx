@@ -65,16 +65,15 @@ export default function SpeakVersusTalk() {
         questions={[
           {
             title: "It was a fascinating __________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            title:
-              "We tried to  ___________ it out, but after fought more.",
-            possibleAnswers: [
+            title: "We tried to  ___________ it out, but after fought more.",
+            possibleAnswersAndExplanation: [
               { title: "spoke" },
               { title: "talk", correctAnswer: true },
             ],
@@ -82,7 +81,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "Well Bia, I’ll  ___________ to you tomorrow.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
             ],
@@ -90,7 +89,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "It's only __________. They'll never fire us.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
             ],
@@ -98,7 +97,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "________ up! Nobody can hear you.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "Speak", correctAnswer: true },
               { title: "Talk" },
             ],
@@ -106,7 +105,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "They only ever  ________ about basketball.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speak" },
               { title: "talk", correctAnswer: true },
             ],
@@ -114,7 +113,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "We ________ today with Denzel St. Clair and Robert Smith.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "spoke", correctAnswer: true },
               { title: "talk" },
             ],
@@ -122,7 +121,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "After breakfast we always go for a walk and ________ .",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "talk", correctAnswer: true },
               { title: "speak" },
             ],
@@ -130,7 +129,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "Hello, could I ________ with Mrs. Jones?",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speak", correctAnswer: true },
               { title: "talk" },
             ],
@@ -138,7 +137,7 @@ export default function SpeakVersusTalk() {
           },
           {
             title: "She ____ four languages.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "speaks", correctAnswer: true },
               { title: "talks" },
             ],

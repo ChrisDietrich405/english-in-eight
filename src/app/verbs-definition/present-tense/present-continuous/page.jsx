@@ -101,7 +101,7 @@ export default async function PresentContinuous() {
         questions={[
           {
             title: "You ___________ (play) tennis tonight right?",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are not playing", correctAnswer: true },
               { title: "b. am not playing" },
             ],
@@ -109,7 +109,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "I ___________ (study) now. Please call me later.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. am study" },
               { title: "b. am studying", correctAnswer: true },
             ],
@@ -117,7 +117,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "She ___________ (sleep).",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. isn't sleeping", correctAnswer: true },
               { title: "b. am not sleeping" },
             ],
@@ -126,7 +126,7 @@ export default async function PresentContinuous() {
 
           {
             title: "We ___________ (watch) the game.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are watch" },
               { title: "b. are watching", correctAnswer: true },
             ],
@@ -134,7 +134,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "He ____________ (work) in Baltimore.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are not working", correctAnswer: true },
               { title: "b. is not working" },
             ],
@@ -142,7 +142,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "He ___________ (wait) for the taxi.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. is waiting", correctAnswer: true },
               { title: "b. are waiting" },
             ],
@@ -150,7 +150,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "They __________ (fight).",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are fighting", correctAnswer: true },
               { title: "b. is fighting" },
             ],
@@ -158,7 +158,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "We _______________ (go) to the mall tonight.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are not going", correctAnswer: true },
               { title: "b. are not go" },
             ],
@@ -166,7 +166,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "You ___________ (read) The Shining.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are read" },
               { title: "b. are reading", correctAnswer: true },
             ],
@@ -174,7 +174,7 @@ export default async function PresentContinuous() {
           },
           {
             title: "She _________ (eat) a Kit Kat bar.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. am eating" },
               { title: "b. is eating", correctAnswer: true },
             ],

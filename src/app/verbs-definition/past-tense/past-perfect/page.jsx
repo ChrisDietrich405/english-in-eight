@@ -98,7 +98,7 @@ export default async function PastPerfect() {
           {
             title:
               "The train ____________ (leave) by the time I got to the station.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had leave" },
               { title: "b. had left", correctAnswer: true },
             ],
@@ -106,7 +106,7 @@ export default async function PastPerfect() {
           },
           {
             title: "I wished I ______________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had lied", correctAnswer: true },
               { title: "b. has lied" },
             ],
@@ -115,7 +115,7 @@ export default async function PastPerfect() {
           {
             title:
               "She _____________________ (send) the message before her brother apologized.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had send" },
               { title: "b. had sent", correctAnswer: true },
             ],
@@ -124,7 +124,7 @@ export default async function PastPerfect() {
 
           {
             title: "He _____________ (play) football until last week.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had never play" },
               { title: "b. had never played", correctAnswer: true },
             ],
@@ -133,7 +133,7 @@ export default async function PastPerfect() {
           {
             title:
               "After the storm _______________ (pass) we went outside to assess the damage.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had pass" },
               { title: "b. had passed", correctAnswer: true },
             ],
@@ -142,7 +142,7 @@ export default async function PastPerfect() {
 
           {
             title: "They ___________ (get) engaged before last year.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had get" },
               { title: "b. had gotten", correctAnswer: true },
             ],
@@ -150,7 +150,7 @@ export default async function PastPerfect() {
           },
           {
             title: "We ___________ (meet) them before the party.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had met", correctAnswer: true },
               { title: "b. has meet" },
             ],
@@ -158,7 +158,7 @@ export default async function PastPerfect() {
           },
           {
             title: "I __________ (fall) asleep before 8pm last night.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. had fall" },
               { title: "b. had fallen", correctAnswer: true },
             ],
@@ -166,7 +166,7 @@ export default async function PastPerfect() {
           },
           {
             title: "We wished we ____________ (purchase) the winning ticket.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has purchased", correctAnswer: true },
               { title: "b. had purchased" },
             ],

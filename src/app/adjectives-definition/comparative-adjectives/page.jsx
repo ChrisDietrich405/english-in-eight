@@ -1,5 +1,4 @@
 import Quiz from "../../../components/Quiz";
-import Head from "next/head";
 
 import styles from "../../styles/content-page.module.css";
 
@@ -8,44 +7,7 @@ import styles from "../../styles/content-page.module.css";
 export default function ComparativeAdjectives() {
   return (
     <>
-      <Head>
-        <title>Comparative Adjectives | English in Eight Minutes</title>
-        <meta
-          content="Learn how to form comparative adjectives in English, including one-syllable, two-syllable, and irregular adjectives. Take a quiz to test your knowledge."
-          name="description"
-        />
-        <meta
-          content="English, Comparative Adjectives, Grammar, Adjective Forms"
-          name="keywords"
-        ></meta>
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://englishineightminutes.com" />
-        <meta property="og:title" content="English in Eight Minutes" />
-        <meta
-          property="og:description"
-          content="Learn how to form comparative adjectives in English, including one-syllable, two-syllable, and irregular adjectives. Take a quiz to test your knowledge."
-        />
-        <meta
-          property="og:image"
-          content="https://englishineightminutes.com/images/logo.svg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
-      <div className="comparative-adjectives">
+      <main>
         <div className={styles.page_title}>
           <h1>Comparative Adjectives</h1>
         </div>
@@ -148,7 +110,7 @@ export default function ComparativeAdjectives() {
             {
               title:
                 "My Latin class is ______________ (interesting) than my English class. ",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "more interesting", correctAnswer: true },
                 { title: "interestinger" },
               ],
@@ -157,7 +119,7 @@ export default function ComparativeAdjectives() {
 
             {
               title: "Marcus is ______________ (old) than Nia.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "older", correctAnswer: true },
                 { title: "more old" },
               ],
@@ -165,7 +127,7 @@ export default function ComparativeAdjectives() {
             },
             {
               title: "She is ______________(quiet) than her brother.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "quietter" },
                 { title: "quieter", correctAnswer: true },
               ],
@@ -173,7 +135,7 @@ export default function ComparativeAdjectives() {
             },
             {
               title: "Buses are ________________ (large) than cars.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "largger" },
                 { title: "larger", correctAnswer: true },
               ],
@@ -183,7 +145,7 @@ export default function ComparativeAdjectives() {
             {
               title:
                 "The roads here are  _______________ (narrow) than in Baltimore.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "narrower", correctAnswer: true },
                 { title: "narroest" },
               ],
@@ -191,7 +153,7 @@ export default function ComparativeAdjectives() {
             },
             {
               title: "Dogs are _______________ (social) than cats",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "more social", correctAnswer: true },
                 { title: "socialer" },
               ],
@@ -199,7 +161,7 @@ export default function ComparativeAdjectives() {
             },
             {
               title: "Malcolm is _______________ (busy) than his brother.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "busier", correctAnswer: true },
                 { title: "busyer" },
               ],
@@ -208,7 +170,7 @@ export default function ComparativeAdjectives() {
             {
               title:
                 "Demetrius is ________________ (ambitious) than his friends.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "ambitiouser" },
                 { title: "more ambitious", correctAnswer: true },
               ],
@@ -217,7 +179,7 @@ export default function ComparativeAdjectives() {
             {
               title:
                 "My studio is  ________________  (colorful) than my art teacher's studio.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "colorfuler" },
                 { title: "more colorful", correctAnswer: true },
               ],
@@ -225,7 +187,7 @@ export default function ComparativeAdjectives() {
             },
             {
               title: "Her car is _______________ (comfortable) than my car.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "more comfortable", correctAnswer: true },
                 { title: "comfortabler" },
               ],
@@ -233,7 +195,7 @@ export default function ComparativeAdjectives() {
             },
           ]}
         ></Quiz>
-      </div>
+      </main>
     </>
   );
 }

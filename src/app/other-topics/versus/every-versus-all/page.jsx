@@ -71,7 +71,7 @@ export default function AllVersusEvery() {
         questions={[
           {
             title: "I emailed ______________ my colleagues.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "every" },
               { title: "all", correctAnswer: true },
             ],
@@ -79,7 +79,7 @@ export default function AllVersusEvery() {
           },
           {
             title: "_________ the cars in the parking lot are empty.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "every" },
               { title: "all", correctAnswer: true },
             ],
@@ -87,7 +87,7 @@ export default function AllVersusEvery() {
           },
           {
             title: "I see them ______________ couple of days.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "all" },
               { title: "every", correctAnswer: true },
             ],
@@ -96,7 +96,7 @@ export default function AllVersusEvery() {
 
           {
             title: "_________________ children need love.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "all", correctAnswer: true },
               { title: "every" },
             ],
@@ -104,7 +104,7 @@ export default function AllVersusEvery() {
           },
           {
             title: " You don’t see deer __________ day.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "all" },
               { title: "every", correctAnswer: true },
             ],
@@ -112,7 +112,7 @@ export default function AllVersusEvery() {
           },
           {
             title: "She has invited ____________ her friends.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "all", correctAnswer: true },
               { title: "every" },
             ],
@@ -120,7 +120,7 @@ export default function AllVersusEvery() {
           },
           {
             title: "People should go to their doctor ______________ year.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "every", correctAnswer: true },
               { title: "all" },
             ],
@@ -128,7 +128,7 @@ export default function AllVersusEvery() {
           },
           {
             title: " I talk to my wife ____________ day.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "every", correctAnswer: true },
               { title: "all" },
             ],
@@ -136,7 +136,7 @@ export default function AllVersusEvery() {
           },
           {
             title: "She has worked for this company ___________ my life.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "every" },
               { title: "all", correctAnswer: true },
             ],
@@ -144,7 +144,7 @@ export default function AllVersusEvery() {
           },
           {
             title: " I have washed _______________ the clothes except yours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "all", correctAnswer: true },
               { title: "every" },
             ],

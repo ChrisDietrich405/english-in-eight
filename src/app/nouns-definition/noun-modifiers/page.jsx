@@ -12,7 +12,7 @@ export default function NounModifiers() {
   const [quiz, setQuiz] = useState([
     {
       title: "It's a door made of metal. It's a _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "door's metal" },
         { title: "metal door", correctAnswer: true },
       ],
@@ -20,7 +20,7 @@ export default function NounModifiers() {
     },
     {
       title: "It's a cloth that you put on a table. It's a _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "table cloth", correctAnswer: true },
         { title: "cloth table" },
       ],
@@ -28,7 +28,7 @@ export default function NounModifiers() {
     },
     {
       title: "It's a bat used for baseballs. It's a _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "batball" },
         { title: "baseball bat", correctAnswer: true },
       ],
@@ -36,7 +36,7 @@ export default function NounModifiers() {
     },
     {
       title: "It's a key for my house. It's a _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "key house" },
         { title: "house key", correctAnswer: true },
       ],
@@ -44,7 +44,7 @@ export default function NounModifiers() {
     },
     {
       title: "The park is in the city. It's a ______________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "park city" },
         { title: "city park", correctAnswer: true },
       ],
@@ -52,7 +52,7 @@ export default function NounModifiers() {
     },
     {
       title: "They have a house in the trees. They have a ______________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "tree house", correctAnswer: true },
         { title: "house tree" },
       ],
@@ -60,7 +60,7 @@ export default function NounModifiers() {
     },
     {
       title: "We bought a bone for our dog. We gave her a _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "bone dog" },
         { title: "dog bone", correctAnswer: true },
       ],
@@ -69,7 +69,7 @@ export default function NounModifiers() {
     {
       title:
         "Meet me where there is a station for a train. It's a ________________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "train station", correctAnswer: true },
         { title: "station train" },
       ],
@@ -77,7 +77,7 @@ export default function NounModifiers() {
     },
     {
       title: "This is a ladder with steps.   It’s a ___________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "step ladder", correctAnswer: true },
         { title: "ladder step" },
       ],
@@ -85,7 +85,7 @@ export default function NounModifiers() {
     },
     {
       title: "I paid for lessons for swimming. They are _____________.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "swimming lessons", correctAnswer: true },
         { title: "swimmings lesson" },
       ],
@@ -97,7 +97,7 @@ export default function NounModifiers() {
     setQuiz([
       {
         title: "It's a vehicle with two wheels. It's a _____________.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "two-wheel vehicle" },
           { title: "bicycle", correctAnswer: true },
         ],
@@ -105,7 +105,7 @@ export default function NounModifiers() {
       },
       {
         title: "It's a container for liquids. It's a _____________.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "liquid container" },
           { title: "bottle", correctAnswer: true },
         ],
@@ -113,7 +113,7 @@ export default function NounModifiers() {
       },
       {
         title: "He uses it to cut paper. It's a _____________.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "paper cutter" },
           { title: "scissors", correctAnswer: true },
         ],
@@ -121,7 +121,7 @@ export default function NounModifiers() {
       },
       {
         title: "You sit on it in the park. It's a _____________.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "park bench", correctAnswer: true },
           { title: "bench park" },
         ],

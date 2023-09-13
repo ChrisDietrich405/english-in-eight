@@ -15,7 +15,8 @@ export default function Expressions() {
             phone or in person, in an attempt to sell goods or services
             <br />
             <p>
-              Example: I hate <b>cold calling</b>. I never get any sales from it.{" "}
+              Example: I hate <b>cold calling</b>. I never get any sales from
+              it.{" "}
             </p>
           </li>
 
@@ -23,8 +24,8 @@ export default function Expressions() {
             <b>B movie</b> - a low-budget commercial motion picture
             <br />
             <p>
-              Example: My friends and I like to watch <b>B movies</b>. We like making fun
-              of them.
+              Example: My friends and I like to watch <b>B movies</b>. We like
+              making fun of them.
             </p>
           </li>
 
@@ -33,8 +34,8 @@ export default function Expressions() {
             as funny when being told
             <br />
             <p>
-              Example: After I told my mom what happened, she didn’t laugh at all and so
-              I said <b>“you had to be there".</b>
+              Example: After I told my mom what happened, she didn’t laugh at
+              all and so I said <b>“you had to be there".</b>
             </p>
           </li>
 
@@ -49,7 +50,8 @@ export default function Expressions() {
             <b>Ahead of schedule</b> - earlier than planned or expected
             <br />
             <p>
-              Example: They finished the project 2 weeks <b>ahead of schedule.</b>
+              Example: They finished the project 2 weeks{" "}
+              <b>ahead of schedule.</b>
             </p>
           </li>
         </ul>
@@ -59,7 +61,7 @@ export default function Expressions() {
         questions={[
           {
             title: "Why didn't you laugh at my story? ____________________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. I guess it was ahead of schedule" },
               { title: "b. I guess you had to be there", correctAnswer: true },
             ],
@@ -67,7 +69,7 @@ export default function Expressions() {
           },
           {
             title: "__________ is a very ineffective way to get sales.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. B movie" },
               { title: "b. Cold calling", correctAnswer: true },
             ],
@@ -76,7 +78,7 @@ export default function Expressions() {
           {
             title:
               "I actually like ___________. They are so bad they make me laugh.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. Cold calling" },
               { title: "b. B movies", correctAnswer: true },
             ],
@@ -84,7 +86,7 @@ export default function Expressions() {
           },
           {
             title: "The project will be finished in 3 weeks ________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. you had to be there" },
               { title: "b. tops", correctAnswer: true },
             ],
@@ -92,7 +94,7 @@ export default function Expressions() {
           },
           {
             title: "Hopefully we can finish the project ________________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. tops" },
               { title: "b. ahead of schedule", correctAnswer: true },
             ],

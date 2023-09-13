@@ -72,7 +72,7 @@ export default function SayVersusTell() {
         questions={[
           {
             title: "Martin  _____________ that he would love to do it.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said", correctAnswer: true },
               { title: "told" },
             ],
@@ -80,7 +80,7 @@ export default function SayVersusTell() {
           },
           {
             title: "She ______________ him a lie. ",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "told" },
               { title: "said", correctAnswer: true },
             ],
@@ -89,7 +89,7 @@ export default function SayVersusTell() {
           {
             title:
               "They  _____________ her that they were going to leave Friday.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said" },
               { title: "told", correctAnswer: true },
             ],
@@ -97,7 +97,7 @@ export default function SayVersusTell() {
           },
           {
             title: "Demarcus  ___________ us that he didn't want to go out.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said" },
               { title: "told", correctAnswer: true },
             ],
@@ -105,7 +105,7 @@ export default function SayVersusTell() {
           },
           {
             title: "Maria _________ that she's not feeling well. ",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said", correctAnswer: true },
               { title: "told" },
             ],
@@ -113,7 +113,7 @@ export default function SayVersusTell() {
           },
           {
             title: "She  __________ her mother that she wanted to quit.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said" },
               { title: "told", correctAnswer: true },
             ],
@@ -122,7 +122,7 @@ export default function SayVersusTell() {
 
           {
             title: "Maria  _____________ that she would join us after work.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said", correctAnswer: true },
               { title: "told" },
             ],
@@ -131,7 +131,7 @@ export default function SayVersusTell() {
           {
             title:
               "Maria  _____________ that she's going to talk with her friend about it.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said", correctAnswer: true },
               { title: "told" },
             ],
@@ -139,7 +139,7 @@ export default function SayVersusTell() {
           },
           {
             title: "Dan ____________ the best stories.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "tells", correctAnswer: true },
               { title: "say" },
             ],
@@ -147,7 +147,7 @@ export default function SayVersusTell() {
           },
           {
             title: "Najha _____________ that she was going to stop helping us.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said", correctAnswer: true },
               { title: "told" },
             ],
@@ -156,7 +156,7 @@ export default function SayVersusTell() {
           {
             title:
               "They _________ that they didn't want to have the meeting Friday.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "said" },
               { title: "told", correctAnswer: true },
             ],

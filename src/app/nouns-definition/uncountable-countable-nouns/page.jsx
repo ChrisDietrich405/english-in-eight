@@ -13,7 +13,7 @@ export default function UncountableAndCountable() {
   const [quiz, setQuiz] = useState([
     {
       title: "We don't drink ____ coffee.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " many" },
         { title: " much", correctAnswer: true },
       ],
@@ -21,7 +21,7 @@ export default function UncountableAndCountable() {
     },
     {
       title: "I ate _____ soup for lunch.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " a few" },
         { title: " a little", correctAnswer: true },
       ],
@@ -29,7 +29,7 @@ export default function UncountableAndCountable() {
     },
     {
       title: "How _________ rice do we need.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " much", correctAnswer: true },
         { title: " many" },
       ],
@@ -37,7 +37,7 @@ export default function UncountableAndCountable() {
     },
     {
       title: "Eating _____ chocolate is unhealthy.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " a lot of", correctAnswer: true },
         { title: " many" },
       ],
@@ -46,7 +46,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "How ________ soy milk do you want?",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " much", correctAnswer: true },
         { title: " many" },
       ],
@@ -55,7 +55,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "There _______ many beans in the soup.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " are", correctAnswer: true },
         { title: " is" },
       ],
@@ -64,7 +64,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "______ there tofu in the salad?",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " Are" },
         { title: " Is", correctAnswer: true },
       ],
@@ -73,7 +73,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "How ___________ cups of tea do you drink in the morning?",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " much" },
         { title: " many", correctAnswer: true },
       ],
@@ -82,7 +82,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "There ______ orange juice on the table.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " is", correctAnswer: true },
         { title: " are" },
       ],
@@ -91,7 +91,7 @@ export default function UncountableAndCountable() {
 
     {
       title: "I have ________ friends in Kenya.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " a few", correctAnswer: true },
         { title: " a little" },
       ],
@@ -103,7 +103,7 @@ export default function UncountableAndCountable() {
     setQuiz([
       {
         title: "She bought _____ apples for the pie.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "a few" },
           { title: "a little", correctAnswer: true },
         ],
@@ -112,7 +112,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "How ________ water do you need for the recipe?",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "much", correctAnswer: true },
           { title: "many" },
         ],
@@ -121,7 +121,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "There _______ much sugar in that cake.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -130,7 +130,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "_____ there any milk left in the fridge?",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "Are" },
           { title: "Is", correctAnswer: true },
         ],
@@ -139,7 +139,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "I need to buy _______ flour for baking.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "a lot of", correctAnswer: true },
           { title: "many" },
         ],
@@ -148,7 +148,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "How ________ cheese is in the sandwich?",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "much" },
           { title: "many", correctAnswer: true },
         ],
@@ -157,7 +157,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "There _______ much traffic on the road this morning.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -166,7 +166,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "_____ there any time left before the meeting?",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "Are" },
           { title: "Is", correctAnswer: true },
         ],
@@ -175,7 +175,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "I enjoy having ________ free time on weekends.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "a few", correctAnswer: true },
           { title: "a little" },
         ],
@@ -184,7 +184,7 @@ export default function UncountableAndCountable() {
 
       {
         title: "How ________ hours of sleep did you get last night?",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "much" },
           { title: "many", correctAnswer: true },
         ],

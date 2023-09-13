@@ -1,7 +1,7 @@
 //DONE
 
 import Quiz from "../../../components/Quiz";
-import Head from "next/head"
+import Head from "next/head";
 
 import styles from "../../styles/content-page.module.css";
 
@@ -164,7 +164,7 @@ export default function SuperlativeAdjectives() {
           questions={[
             {
               title: "Nia is the ___________________ (old) daughter.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "oldest", correctAnswer: true },
                 { title: "most old" },
               ],
@@ -173,7 +173,7 @@ export default function SuperlativeAdjectives() {
             {
               title:
                 "His car is the _______________ (comfortable) car I’ve ever driven.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "most comfortable", correctAnswer: true },
                 { title: "comfortableist" },
               ],
@@ -181,7 +181,7 @@ export default function SuperlativeAdjectives() {
             },
             {
               title: "Bia is the _______________ (quiet) person I've ever met.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "quietest", correctAnswer: true },
                 { title: "quitest" },
               ],
@@ -189,7 +189,7 @@ export default function SuperlativeAdjectives() {
             },
             {
               title: "This restaurant has the ________________ food",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "deliciouser" },
                 { title: "most delicious", correctAnswer: true },
               ],
@@ -197,7 +197,7 @@ export default function SuperlativeAdjectives() {
             },
             {
               title: "My math class is my ______________ (hard) class. ",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "hardest", correctAnswer: true },
                 { title: "most hardest" },
               ],
@@ -206,7 +206,7 @@ export default function SuperlativeAdjectives() {
             {
               title:
                 "The roads in this neighborhood are the _______________ (narrow) in the city.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "narroest" },
                 { title: "narrowest", correctAnswer: true },
               ],
@@ -214,7 +214,7 @@ export default function SuperlativeAdjectives() {
             },
             {
               title: "Malcolm is the _______________ (busy) man in his office.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "busiest", correctAnswer: true },
                 { title: "busyest" },
               ],
@@ -223,7 +223,7 @@ export default function SuperlativeAdjectives() {
             {
               title:
                 "Pigs are the ________________________(intelligent) farm animals.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "most intelligent", correctAnswer: true },
                 { title: "intelligentest" },
               ],
@@ -232,7 +232,7 @@ export default function SuperlativeAdjectives() {
             {
               title:
                 "Demetrius is the ________________ (ambitious) director at his production company.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "ambitiousest" },
                 { title: "most ambitious", correctAnswer: true },
               ],
@@ -241,7 +241,7 @@ export default function SuperlativeAdjectives() {
             {
               title:
                 "My dog is the  ________________  (cute) in my neighborhood.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "most cutest" },
                 { title: "cutest", correctAnswer: true },
               ],

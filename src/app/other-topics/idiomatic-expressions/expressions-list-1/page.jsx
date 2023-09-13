@@ -42,8 +42,8 @@ export default function Expressions() {
             outperforming, outclassing, etc., someone
             <br />
             <p>
-              Example: I hate telling stories around Jack because he always tries{" "}
-              <b>to one up</b> you with some amazing story of his own.
+              Example: I hate telling stories around Jack because he always
+              tries <b>to one up</b> you with some amazing story of his own.
             </p>
           </li>
           <li>
@@ -51,8 +51,8 @@ export default function Expressions() {
             now so that problems do not occur later on
             <br />
             <p>
-              Example: It's probably not necessary to check the figures again, but{" "}
-              <b>it's better to be safe than sorry.</b>
+              Example: It's probably not necessary to check the figures again,
+              but <b>it's better to be safe than sorry.</b>
             </p>
           </li>
         </ul>
@@ -63,7 +63,7 @@ export default function Expressions() {
           {
             title:
               "She started yelling at me and honestly it scared me. It came _______________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. to one up someone" },
               { title: "b. out of nowhere ", correctAnswer: true },
             ],
@@ -71,7 +71,7 @@ export default function Expressions() {
           },
           {
             title: "Let's go! Hurry up! ____________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. To one up someone" },
               { title: "b. Time is money", correctAnswer: true },
             ],
@@ -80,7 +80,7 @@ export default function Expressions() {
           {
             title:
               "I bought a face shield and a mask because I don't want to take any chances. _____________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. Foolproof" },
               {
                 title: "b. It's better to be safe than sorry",
@@ -92,7 +92,7 @@ export default function Expressions() {
           {
             title:
               "He tried to devise a _________ plan for getting rid of termites.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. out of nowhere" },
               { title: "b. foolproof", correctAnswer: true },
             ],
@@ -101,7 +101,7 @@ export default function Expressions() {
           {
             title:
               "I can tell he's insecure. He's always explaining how much better his life is compared to mine and trying ____________.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a.  to one up me" },
               { title: "b. time is money", correctAnswer: true },
             ],

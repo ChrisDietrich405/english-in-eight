@@ -19,7 +19,7 @@ const SimplePresent = () => {
           yourself and try to identify them.
         </p>
         <div
-          className="btn-container btn-flex"
+          className={`${styles.links_container} btn-container btn-flex`}
           style={{ display: "flex", justifyContent: "space-around" }}
         >
           <Link

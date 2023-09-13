@@ -30,7 +30,7 @@ export default function PhrasalVerbs1() {
             misunderstanding through talking
             <p>
               Example: The day after the fight my wife and I{" "}
-              <b>talked it out</b> we were fine.
+              <b>talked it out</b> and now we are fine.
             </p>
           </li>
 
@@ -59,7 +59,7 @@ export default function PhrasalVerbs1() {
           {
             title:
               "My daughter really ___________ with her new roommate. She's very excited.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. cheat on" },
               { title: "b. hit it off", correctAnswer: true },
             ],
@@ -67,7 +67,7 @@ export default function PhrasalVerbs1() {
           },
           {
             title: "After _________________ they went on a romantic date.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. cheating on" },
               { title: "b. talking it out", correctAnswer: true },
             ],
@@ -75,7 +75,7 @@ export default function PhrasalVerbs1() {
           },
           {
             title: "My shoes ________________ a lot of space in my closet.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. take up", correctAnswer: true },
               { title: "b. fed up with" },
             ],
@@ -84,7 +84,7 @@ export default function PhrasalVerbs1() {
           {
             title:
               "He ____________ his math test and got caught by the teacher.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. hit it off" },
               { title: "b. cheated on", correctAnswer: true },
             ],
@@ -92,7 +92,7 @@ export default function PhrasalVerbs1() {
           },
           {
             title: "I'm ________________ my boss. She's such a jerk.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. fed up with", correctAnswer: true },
               { title: "b. talking it out" },
             ],

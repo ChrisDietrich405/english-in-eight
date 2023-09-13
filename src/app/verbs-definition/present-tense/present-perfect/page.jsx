@@ -123,7 +123,7 @@ export default async function PresentPerfect() {
         questions={[
           {
             title: "She ___________ (eat) tofu.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has eaten", correctAnswer: true },
               { title: "b. have eaten" },
             ],
@@ -131,7 +131,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "They ______________ (miss) their flight.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have missed", correctAnswer: true },
               { title: "b. has drunk" },
             ],
@@ -139,7 +139,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "He ___________ (go) to Tanzania.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have gone" },
               { title: "b. has gone", correctAnswer: true },
             ],
@@ -147,7 +147,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "We ___________ (read) that magazine.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has read" },
               { title: "b. have read", correctAnswer: true },
             ],
@@ -155,7 +155,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "We ____________ (live) here for thirteen years.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has lived", correctAnswer: true },
               { title: "b. have lived" },
             ],
@@ -163,7 +163,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "You ______________ Marcus for five years.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have known", correctAnswer: true },
               { title: "b. has known" },
             ],
@@ -171,7 +171,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "We ______________ (be) here for three weeks.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have been", correctAnswer: true },
               { title: "b. has been" },
             ],
@@ -179,7 +179,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "I ___________ (study) Arabic.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. has studied" },
               { title: "b. have studied", correctAnswer: true },
             ],
@@ -187,7 +187,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "I ______________ (lose) my phone.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have lost", correctAnswer: true },
               { title: "b. has lost" },
             ],
@@ -195,7 +195,7 @@ export default async function PresentPerfect() {
           },
           {
             title: "He ______________ (drink) too much soda.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. have drunk" },
               { title: "b. has drunk", correctAnswer: true },
             ],

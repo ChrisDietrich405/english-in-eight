@@ -13,17 +13,17 @@ export default function Collective() {
   const [quiz, setQuiz] = useState([
     {
       title: "The students __________ fighting in the cafeteria.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: " are", correctAnswer: true },
         { title: " is" },
       ],
+      explanation:
+        "Students are considered individuals, not a collective group",
       userAnswer: "",
-      // explanation:
-      //   "Students are considered individuals, not a collective group",
     },
     {
       title: "The group __________ decided together to file the petition.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "has", correctAnswer: true },
         { title: "have" },
       ],
@@ -32,7 +32,7 @@ export default function Collective() {
     {
       title:
         "The United States army _____________ a budget much larger than any other countries.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
@@ -40,7 +40,7 @@ export default function Collective() {
     },
     {
       title: "My sisters ____________ to go to the beach this weekend.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "want", correctAnswer: true },
         { title: "wants" },
       ],
@@ -48,7 +48,7 @@ export default function Collective() {
     },
     {
       title: "___________ the parents' committee made a decision.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "Has", correctAnswer: true },
         { title: "Have" },
       ],
@@ -56,7 +56,7 @@ export default function Collective() {
     },
     {
       title: "___________ any of the soldiers hurt?",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "Was" },
         { title: "Were", correctAnswer: true },
       ],
@@ -64,7 +64,7 @@ export default function Collective() {
     },
     {
       title: "That team __________ every game.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "wins", correctAnswer: true },
         { title: "win" },
       ],
@@ -73,7 +73,7 @@ export default function Collective() {
     {
       title:
         "The members of the jury ______________ very frustrated by the prosecuting lawyer.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "was" },
         { title: "were", correctAnswer: true },
       ],
@@ -81,7 +81,7 @@ export default function Collective() {
     },
     {
       title: "The school choir ______________ won many competitions.",
-      possibleAnswers: [
+      possibleAnswersAndExplanation: [
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
@@ -90,7 +90,10 @@ export default function Collective() {
     {
       title:
         "His family ______________ very big. He has 10 uncles and 11 aunts.",
-      possibleAnswers: [{ title: "are" }, { title: "is", correctAnswer: true }],
+      possibleAnswersAndExplanation: [
+        { title: "are" },
+        { title: "is", correctAnswer: true },
+      ],
       userAnswer: "",
     },
   ]);
@@ -99,7 +102,7 @@ export default function Collective() {
     setQuiz([
       {
         title: "The team __________ celebrating their victory.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -107,7 +110,7 @@ export default function Collective() {
       },
       {
         title: "The committee __________ discussing the new proposal.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -115,7 +118,7 @@ export default function Collective() {
       },
       {
         title: "The herd of cattle __________ grazing in the field.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -123,7 +126,7 @@ export default function Collective() {
       },
       {
         title: "The jury __________ reached a unanimous decision.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "has", correctAnswer: true },
           { title: "have" },
         ],
@@ -131,7 +134,7 @@ export default function Collective() {
       },
       {
         title: "The swarm of bees __________ buzzing around the flowers.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -139,7 +142,7 @@ export default function Collective() {
       },
       {
         title: "The orchestra __________ performing at the concert.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -147,7 +150,7 @@ export default function Collective() {
       },
       {
         title: "The family __________ planning a reunion.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -155,7 +158,7 @@ export default function Collective() {
       },
       {
         title: "The staff __________ working diligently on the project.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -163,7 +166,7 @@ export default function Collective() {
       },
       {
         title: "The audience __________ clapping after the performance.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],
@@ -171,7 +174,7 @@ export default function Collective() {
       },
       {
         title: "The school of fish __________ swimming in the ocean.",
-        possibleAnswers: [
+        possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
         ],

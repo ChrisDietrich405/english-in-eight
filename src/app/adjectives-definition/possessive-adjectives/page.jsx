@@ -100,7 +100,7 @@ export default function PossessiveAdjectives() {
           questions={[
             {
               title: "Bia loves (she) _____________ clothes!",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "her", correctAnswer: true },
                 { title: "their" },
               ],
@@ -108,7 +108,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "Where is (they) ________________  professor?",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "my" },
                 { title: "their", correctAnswer: true },
               ],
@@ -116,7 +116,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "He goes to school with (he) _____________ cousin.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "your" },
                 { title: "his", correctAnswer: true },
               ],
@@ -125,7 +125,7 @@ export default function PossessiveAdjectives() {
 
             {
               title: "(You) ______________ car is very old.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "Your", correctAnswer: true },
                 { title: "My" },
               ],
@@ -133,7 +133,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "(He)  ________________favorite hobby is running.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "Your" },
                 { title: "His", correctAnswer: true },
               ],
@@ -141,7 +141,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "Where is (I) _______________ phone?",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "my", correctAnswer: true },
                 { title: "your" },
               ],
@@ -149,7 +149,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "(I) _____________ husband is not feeling well.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "My", correctAnswer: true },
                 { title: "Her" },
               ],
@@ -158,7 +158,7 @@ export default function PossessiveAdjectives() {
             {
               title:
                 "They want to go to Egypt. They want to see (it) ________________ tourist attractions.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "its", correctAnswer: true },
                 { title: "their" },
               ],
@@ -166,7 +166,7 @@ export default function PossessiveAdjectives() {
             },
             {
               title: "(They) ________________ mother works in a restaurant.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "His" },
                 { title: "Their", correctAnswer: true },
               ],
@@ -175,7 +175,7 @@ export default function PossessiveAdjectives() {
 
             {
               title: "(He) _____________ name is Tyrese.",
-              possibleAnswers: [
+              possibleAnswersAndExplanation: [
                 { title: "Her" },
                 { title: "His", correctAnswer: true },
               ],

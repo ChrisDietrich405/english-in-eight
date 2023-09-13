@@ -180,7 +180,7 @@ export default async function FutureSimple() {
           {
             title:
               "It's Nia's birthday next week, so we _____________ buy her a microwave.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are going to", correctAnswer: true },
               { title: "b. will" },
             ],
@@ -189,7 +189,7 @@ export default async function FutureSimple() {
           {
             title:
               "Could you lend me $40? I promise  _______________ pay you back Thursday.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. am going to" },
               { title: "b. will", correctAnswer: true },
             ],
@@ -198,7 +198,7 @@ export default async function FutureSimple() {
 
           {
             title: "Look! The coach __________________! Run or we'll miss her.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are going to" },
               { title: "b. will", correctAnswer: true },
             ],
@@ -206,7 +206,7 @@ export default async function FutureSimple() {
           },
           {
             title: "They ___________ get a new computer.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are going to", correctAnswer: true },
               { title: "b. will" },
             ],
@@ -214,7 +214,7 @@ export default async function FutureSimple() {
           },
           {
             title: "Antonio's sister ____________________ have a baby.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. is going to", correctAnswer: true },
               { title: "b. will" },
             ],
@@ -223,7 +223,7 @@ export default async function FutureSimple() {
           {
             title:
               "I don't have anything to wear. That's ok. I _______ give you one of my dresses.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will", correctAnswer: true },
               { title: "b. am going to" },
             ],
@@ -232,7 +232,7 @@ export default async function FutureSimple() {
           {
             title:
               "Just a moment. I __________________ help you bring in the groceries.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. am going to" },
               { title: "b. will", correctAnswer: true },
             ],
@@ -240,7 +240,7 @@ export default async function FutureSimple() {
           },
           {
             title: "We ____________________ take a trip to Accra in June.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are going to", correctAnswer: true },
               { title: "b. will" },
             ],
@@ -249,7 +249,7 @@ export default async function FutureSimple() {
           {
             title:
               "Look at those gray clouds over there! It _________________  rain soon. ",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. is going to", correctAnswer: true },
               { title: "b. will" },
             ],
@@ -258,7 +258,7 @@ export default async function FutureSimple() {
           {
             title:
               "They ______________ have the meeting outside tomorrow. It's all planned, so I hope it won't rain.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. are going to", correctAnswer: true },
               { title: "b. will" },
             ],

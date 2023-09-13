@@ -99,7 +99,7 @@ export default async function FuturePerfect() {
         questions={[
           {
             title: "The tree _________________ by then.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have grown", correctAnswer: true },
               { title: "b. will have grew" },
             ],
@@ -107,7 +107,7 @@ export default async function FuturePerfect() {
           },
           {
             title: "She ______________ (sleep) eight hours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have slept", correctAnswer: true },
               { title: "b. will have sleep" },
             ],
@@ -115,7 +115,7 @@ export default async function FuturePerfect() {
           },
           {
             title: "Timmy ______________ by eleven.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have come back", correctAnswer: true },
               { title: "b. will have came back" },
             ],
@@ -124,7 +124,7 @@ export default async function FuturePerfect() {
 
           {
             title: "At 5, she ______________ in this office for 24 hours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have been", correctAnswer: true },
               { title: "b. will have be" },
             ],
@@ -133,7 +133,7 @@ export default async function FuturePerfect() {
           {
             title:
               "Dad ______________ our favorite dinner by the time you get home.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have cooked" },
               { title: "b. will have cook", correctAnswer: true },
             ],
@@ -141,7 +141,7 @@ export default async function FuturePerfect() {
           },
           {
             title: "It _______________ raining by then.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have stopped", correctAnswer: true },
               { title: "b. will have stop" },
             ],
@@ -150,7 +150,7 @@ export default async function FuturePerfect() {
           {
             title:
               "When we get married, I ______________ Jerome for four years.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have known", correctAnswer: true },
               { title: "b. will have knew" },
             ],
@@ -158,7 +158,7 @@ export default async function FuturePerfect() {
           },
           {
             title: "They _______________ Syria by the minister retires.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have gone" },
               { title: "b. will have go", correctAnswer: true },
             ],
@@ -167,7 +167,7 @@ export default async function FuturePerfect() {
 
           {
             title: "I _________________ for work by then .",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have left", correctAnswer: true },
               { title: "b. will have leave" },
             ],
@@ -175,7 +175,7 @@ export default async function FuturePerfect() {
           },
           {
             title: "By Thursday they _____________ 56 hours.",
-            possibleAnswers: [
+            possibleAnswersAndExplanation: [
               { title: "a. will have worked", correctAnswer: true },
               { title: "b. will have work" },
             ],
