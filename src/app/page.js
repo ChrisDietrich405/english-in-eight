@@ -9,12 +9,7 @@ import "./styles/globals.css";
 import {
   Grid,
   Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  CardActions,
   Container,
-  Button,
 } from "@mui/material";
 
 import styles from "./page.module.css";

@@ -1,5 +1,8 @@
 import Image from "next/image";
+import { Card } from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
+
 export default function VersusDefinition() {
   return (
     <div className="expressions">
@@ -14,21 +17,22 @@ export default function VersusDefinition() {
           remind.
         </p>
       </div>
-
-      <div className={styles.content_wrapper} style={{ display: "flex" }}>
-        <Image
-          height={300}
-          width={300}
-          src="/remember-versus-remind.jpg"
-          alt="Remember versus remind"
-        />
-        <Image
-          height={300}
-          width={300}
-          src="/speak-versus-talk.png"
-          alt="Speak versus talk"
-        />
-      </div>
+      <Card style={{ padding: "16px", marginBottom: "20px" }}>
+        <div className={styles.content_wrapper} style={{ display: "flex" }}>
+          <Image
+            height={300}
+            width={300}
+            src="/remember-versus-remind.jpg"
+            alt="Remember versus remind"
+          />
+          <Image
+            height={300}
+            width={300}
+            src="/speak-versus-talk.png"
+            alt="Speak versus talk"
+          />
+        </div>
+      </Card>
     </div>
   );
 }
