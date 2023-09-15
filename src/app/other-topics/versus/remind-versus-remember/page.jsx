@@ -192,7 +192,7 @@ export default function Collective() {
   return (
     <>
       <Head>
-        <title>Collective Nouns | English Grammar</title>
+        <title>Collective Nouns | English in Eight Minutes</title>
         <meta
           content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
           name="description"
@@ -209,7 +209,7 @@ export default function Collective() {
         />
         <meta
           property="og:title"
-          content="Collective Nouns | English Grammar"
+          content="Collective Nouns | English in Eight Minutes"
         />
         <meta
           property="og:description"

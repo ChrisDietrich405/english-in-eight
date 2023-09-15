@@ -134,7 +134,7 @@ export default function NounModifiers() {
   return (
     <>
       <Head>
-        <title>Noun Modifiers | English Grammar</title>
+        <title>Noun Modifiers | English in Eight Minutes</title>
         <meta
           content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."
           name="description"
@@ -146,7 +146,10 @@ export default function NounModifiers() {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://example.com/noun-modifiers" />
-        <meta property="og:title" content="Noun Modifiers | English Grammar" />
+        <meta
+          property="og:title"
+          content="Noun Modifiers | English in Eight Minutes"
+        />
         <meta
           property="og:description"
           content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."

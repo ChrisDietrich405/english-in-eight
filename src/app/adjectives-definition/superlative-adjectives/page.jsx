@@ -9,7 +9,7 @@ export default function SuperlativeAdjectives() {
   return (
     <>
       <Head>
-        <title>Superlative Adjectives | English Grammar</title>
+        <title>Superlative Adjectives | English in Eight Minutes</title>
         <meta
           content="Learn about superlative adjectives in English grammar. Understand how they compare three or more nouns and indicate the highest degree of a quality with examples."
           name="description"
@@ -26,7 +26,7 @@ export default function SuperlativeAdjectives() {
         />
         <meta
           property="og:title"
-          content="Superlative Adjectives | English Grammar"
+          content="Superlative Adjectives | English in Eight Minutes"
         />
         <meta
           property="og:description"

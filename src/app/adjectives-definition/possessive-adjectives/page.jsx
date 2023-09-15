@@ -9,7 +9,7 @@ export default function PossessiveAdjectives() {
   return (
     <>
       <Head>
-        <title>Possessive Adjectives | English Grammar</title>
+        <title>Possessive Adjectives | English in Eight Minutes</title>
         <meta
           content="Learn about possessive adjectives in English grammar. Understand how they indicate ownership and their usage with examples."
           name="description"
@@ -26,7 +26,7 @@ export default function PossessiveAdjectives() {
         />
         <meta
           property="og:title"
-          content="Possessive Adjectives | English Grammar"
+          content="Possessive Adjectives | English in Eight Minutes"
         />
         <meta
           property="og:description"

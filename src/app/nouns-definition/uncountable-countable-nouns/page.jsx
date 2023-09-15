@@ -197,7 +197,7 @@ export default function UncountableAndCountable() {
   return (
     <>
       <Head>
-        <title>Countable & Uncountable Nouns | English Grammar</title>
+        <title>Countable & Uncountable Nouns | English in Eight Minutes</title>
         <meta
           content="Learn about countable and uncountable nouns in English grammar. Understand the differences and usage of both types of nouns with examples."
           name="description"
@@ -214,7 +214,7 @@ export default function UncountableAndCountable() {
         />
         <meta
           property="og:title"
-          content="Countable & Uncountable Nouns | English Grammar"
+          content="Countable & Uncountable Nouns | English in Eight Minutes"
         />
         <meta
           property="og:description"
