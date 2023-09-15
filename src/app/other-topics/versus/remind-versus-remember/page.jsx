@@ -5,7 +5,6 @@ import Quiz from "@/src/components/Quiz";
 import styles from "../../../styles/content-page.module.css";
 
 export default function RememberVersusRemind() {
-  //whatever
   return (
     <div className={styles.page_body}>
       <div className={styles.page_title}>
@@ -16,7 +15,7 @@ export default function RememberVersusRemind() {
       <p>
         If a person reminds you of someone, they have you think of that person
         or they resemble that person. If a thing reminds you of something, they
-        have you think of that thing or they resemble that thing.
+        have you think of that thing or they resemble that thing:
       </p>
       <ul className="page-examples">
         <li>
@@ -64,8 +63,8 @@ export default function RememberVersusRemind() {
         <li>I remember talking to him. I think it was Friday.</li>
       </ul>
       <p>
-        Remember + infinitive describes a command, telling someone not to forget
-        something
+        Remember + infinitive describes a command. It tells someone not to
+        forget something:
       </p>
       <ul className="page-examples">
         <li>
@@ -96,7 +95,7 @@ export default function RememberVersusRemind() {
           },
           {
             title:
-              "She had to ______________________ him that they had agreed on the child custody. He acted like he had forgotten",
+              "She had to ______________________ him that they had agreed on the child custody. He acted like he had forgotten.",
             possibleAnswersAndExplanation: [
               { title: "remember" },
               { title: "remind", correctAnswer: true },
@@ -124,14 +123,14 @@ export default function RememberVersusRemind() {
             title:
               " ____________________ to turn off the computer when you leave the office.",
             possibleAnswersAndExplanation: [
-              { title: "Remember" },
-              { title: "Remind", correctAnswer: true },
+              { title: "Remember", correctAnswer: true },
+              { title: "Remind" },
             ],
             userAnswer: "",
           },
           {
             title:
-              "I've read that post but I don't __________________ the who wrote it.",
+              "I've read that post but I don't __________________ who wrote it.",
             possibleAnswersAndExplanation: [
               { title: "remember", correctAnswer: true },
               { title: "remind" },
@@ -159,8 +158,8 @@ export default function RememberVersusRemind() {
           {
             title: "_______________ me to buy some trash bags.",
             possibleAnswersAndExplanation: [
-              { title: "remind", correctAnswer: true },
-              { title: "remember" },
+              { title: "Remind", correctAnswer: true },
+              { title: "Remember" },
             ],
             userAnswer: "",
           },
