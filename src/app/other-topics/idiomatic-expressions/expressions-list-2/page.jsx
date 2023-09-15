@@ -30,10 +30,10 @@ export default function Expressions2() {
           </li>
 
           <li>
-            <b>To wing it</b> - to not plan
+            <b>To wing it</b> - to not plan for something
             <br />
             <p>
-              Example: John didn’t have time to prepare for his interview so he
+              Example: Malcolm didn’t have time to prepare for his interview so he
               needed <b>to wing it.</b>
             </p>
           </li>
@@ -66,7 +66,7 @@ export default function Expressions2() {
               "The decision is _________________. The boss will decide now.",
             possibleAnswersAndExplanation: [
               { title: "a. backfired" },
-              { title: "b. out of his hands", correctAnswer: true },
+              { title: "b. out of her hands", correctAnswer: true },
             ],
             userAnswer: "",
           },

@@ -117,14 +117,6 @@ export default function Collective() {
         userAnswer: "",
       },
       {
-        title: "The herd of cattle __________ grazing in the field.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-      },
-      {
         title: "The jury __________ reached a unanimous decision.",
         possibleAnswersAndExplanation: [
           { title: "has", correctAnswer: true },
@@ -149,7 +141,7 @@ export default function Collective() {
         userAnswer: "",
       },
       {
-        title: "The family __________ planning a reunion.",
+        title: "His family __________ planning a reunion.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
@@ -157,7 +149,7 @@ export default function Collective() {
         userAnswer: "",
       },
       {
-        title: "The staff __________ working diligently on the project.",
+        title: "Her staff __________ working hard this week.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
@@ -165,7 +157,7 @@ export default function Collective() {
         userAnswer: "",
       },
       {
-        title: "The audience __________ clapping after the performance.",
+        title: "The audience __________ clapping.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },

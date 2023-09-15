@@ -38,7 +38,7 @@ export default function Expressions3() {
             <br />
             <p>
               Example: I ask my students to please <b>spread the word</b> about
-              my English classes.
+              my English grammar website.
             </p>
           </li>
 
@@ -47,8 +47,9 @@ export default function Expressions3() {
             making a final decision
             <br />
             <p>
-              Example: I have to go back to the store because I cut the wrong
-              size. I forgot to <b>"measure twice, cut once"</b>.
+              Example: I have to go back to Lowe's because I cut the wrong
+              size.{" "}
+              <b>"Measure twice, cut once" </b>should be my new motto!
             </p>
           </li>
 
@@ -68,7 +69,7 @@ export default function Expressions3() {
         questions={[
           {
             title:
-              "Check your final numbers before you submit them to the boss. Remember ______________.",
+              "Check your final numbers before you submit them to the boss. Remember the saying ______________.",
             possibleAnswersAndExplanation: [
               { title: "a. spread the word" },
               { title: "b. measure twice, cut once", correctAnswer: true },
@@ -86,7 +87,7 @@ export default function Expressions3() {
           },
           {
             title:
-              "I told my wife I wanted Italian food for dinner. She responded 'you ________________! I want Italian food too'.",
+              "I told my wife that we should watch the movie Love and Basketball. She responded 'you ________________! I wanted to watch that tonight too'.",
             possibleAnswersAndExplanation: [
               { title: "a. read my mind", correctAnswer: true },
               { title: "b. if it's not broke don't fix it" },
@@ -104,7 +105,7 @@ export default function Expressions3() {
           },
           {
             title:
-              "My wife wanted to change her resume, but it was perfect the way it was so I told her _______________.",
+              "My wife wanted to change her resume, but I thought it was perfect the way it was so I told her _______________.",
             possibleAnswersAndExplanation: [
               { title: "a. read my mind" },
               {

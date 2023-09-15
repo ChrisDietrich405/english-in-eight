@@ -120,7 +120,7 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "There _______ much sugar in that cake.",
+        title: "There _______ a lot of sugar in that cake.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
@@ -129,7 +129,7 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "_____ there any milk left in the fridge?",
+        title: "_____ there any apple juice left in the fridge?",
         possibleAnswersAndExplanation: [
           { title: "Are" },
           { title: "Is", correctAnswer: true },
@@ -138,7 +138,7 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "I need to buy _______ flour for baking.",
+        title: "I need to buy _______ flour.",
         possibleAnswersAndExplanation: [
           { title: "a lot of", correctAnswer: true },
           { title: "many" },
@@ -147,7 +147,7 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "How ________ cheese is in the sandwich?",
+        title: "How ________ spinach is in the sandwich?",
         possibleAnswersAndExplanation: [
           { title: "much" },
           { title: "many", correctAnswer: true },
@@ -156,7 +156,7 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "There _______ much traffic on the road this morning.",
+        title: "There _______ a lot traffic on the road this morning.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
           { title: "are" },
@@ -174,10 +174,10 @@ export default function UncountableAndCountable() {
       },
 
       {
-        title: "I enjoy having ________ free time on weekends.",
+        title: "I like having ________ free time on the weekends.",
         possibleAnswersAndExplanation: [
-          { title: "a few", correctAnswer: true },
-          { title: "a little" },
+          { title: "some", correctAnswer: true },
+          { title: "much" },
         ],
         userAnswer: "",
       },

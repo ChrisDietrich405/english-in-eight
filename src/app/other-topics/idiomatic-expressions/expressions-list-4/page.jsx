@@ -40,7 +40,7 @@ export default function Expressions() {
           </li>
 
           <li>
-            <b>(period of time) tops</b> - the longest time something will take
+            <b>(period of time) tops</b> - the longest time something will take to finish
             <br />
             <p>
               Example: I’ll finish this website in <b>one week tops.</b>

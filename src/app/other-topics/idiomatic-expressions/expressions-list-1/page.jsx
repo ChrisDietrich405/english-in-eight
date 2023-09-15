@@ -42,7 +42,7 @@ export default function Expressions() {
             outperforming, outclassing, etc., someone
             <br />
             <p>
-              Example: I hate telling stories around Jack because he always
+              Example: I hate telling stories around Marcus because he always
               tries <b>to one up</b> you with some amazing story of his own.
             </p>
           </li>
@@ -51,7 +51,7 @@ export default function Expressions() {
             now so that problems do not occur later on
             <br />
             <p>
-              Example: It's probably not necessary to check the figures again,
+              Example: It's probably not necessary to check the numbers again,
               but <b>it's better to be safe than sorry.</b>
             </p>
           </li>
@@ -90,8 +90,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
-            title:
-              "He tried to devise a _________ plan for getting rid of termites.",
+            title: "He tried to invent a _________ piece of software.",
             possibleAnswersAndExplanation: [
               { title: "a. out of nowhere" },
               { title: "b. foolproof", correctAnswer: true },
@@ -102,8 +101,8 @@ export default function Expressions() {
             title:
               "I can tell he's insecure. He's always explaining how much better his life is compared to mine and trying ____________.",
             possibleAnswersAndExplanation: [
-              { title: "a.  to one up me" },
-              { title: "b. time is money", correctAnswer: true },
+              { title: "a.  to one up me", correctAnswer: true },
+              { title: "b. time is money" },
             ],
             userAnswer: "",
           },
