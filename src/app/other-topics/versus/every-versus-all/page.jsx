@@ -1,7 +1,6 @@
 import Quiz from "@/src/components/Quiz";
 
-
-
+import styles from "../../../styles/content-page.module.css";
 //DONE
 
 export default function AllVersusEvery() {
@@ -17,8 +16,8 @@ export default function AllVersusEvery() {
         group.
       </p>
       <ul className="page-examples">
-        <li>The food was sent to all students</li>
-        <li>The food was sent to every student</li>
+        <li>The food was sent to all students.</li>
+        <li>The food was sent to every student.</li>
       </ul>
       <p>
         In some situations we use <b>all </b>on its own. We can also use
@@ -55,16 +54,6 @@ export default function AllVersusEvery() {
         <li>Every payment is due today.</li>
         <li>All payments are due today.</li>
       </ul>
-      {/* <p>
-        We use all day, all week, all month to mean ‘one entire day/week/month’:
-      </p>
-      <ul className="page-examples">
-        <li>We spent all day at the beach yesterday.</li>
-      </ul>
-      <p>Every day (week/month) focuses on each individual day (week/month):</p>
-      <ul className="page-examples">
-        <li>We spent every day at the beach when we were on vacation .</li>
-      </ul> */}
 
       <Quiz
         title="Take a Quiz!"
@@ -78,7 +67,7 @@ export default function AllVersusEvery() {
             userAnswer: "",
           },
           {
-            title: "_________ the cars in the parking lot are empty.",
+            title: "_________ the cars on the street have been vandalized.",
             possibleAnswersAndExplanation: [
               { title: "every" },
               { title: "all", correctAnswer: true },
@@ -135,7 +124,7 @@ export default function AllVersusEvery() {
             userAnswer: "",
           },
           {
-            title: "She has worked for this company ___________ my life.",
+            title: "She has worked for this company ___________ her life.",
             possibleAnswersAndExplanation: [
               { title: "every" },
               { title: "all", correctAnswer: true },
