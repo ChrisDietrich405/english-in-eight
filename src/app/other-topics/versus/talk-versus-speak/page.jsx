@@ -1,7 +1,5 @@
 import Quiz from "@/src/components/Quiz";
 
-DONE;
-
 import styles from "../../../styles/content-page.module.css";
 
 export default function SpeakVersusTalk() {
