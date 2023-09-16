@@ -231,7 +231,7 @@ export default function SpeakVersusTalk() {
         </ul>
 
         <Quiz
-          explanation={explanation}
+          // explanation={explanation}
           title="Take a Quiz!"
           questions={quiz}
           callback={handleRandomQuestions}
