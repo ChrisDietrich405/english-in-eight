@@ -171,49 +171,7 @@ export default function SpeakVersusTalk() {
 
   return (
     <>
-      <Head>
-        <title>Talk versus Speak | English in Eight Minutes</title>
-        <meta
-          content="Learn about the differences between 'talk' and 'speak' in English grammar. Understand how they are used in different contexts."
-          name="description"
-        />
-        <meta
-          content="English, Grammar, Talk, Speak, Language, Usage"
-          name="keywords"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://example.com/talk-versus-speak"
-        />
-        <meta
-          property="og:title"
-          content="Talk versus Speak | English in Eight Minutes"
-        />
-        <meta
-          property="og:description"
-          content="Learn about the differences between 'talk' and 'speak' in English grammar. Understand how they are used in different contexts."
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/talk-versus-speak.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
+     
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Talk versus Speak</h1>

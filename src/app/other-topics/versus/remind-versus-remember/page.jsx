@@ -191,50 +191,6 @@ export default function Collective() {
 
   return (
     <>
-      <Head>
-        <title>Collective Nouns | English in Eight Minutes</title>
-        <meta
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
-          name="description"
-        />
-        <meta
-          content="English, Grammar, Collective Nouns, Singular Verbs, Examples"
-          name="keywords"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://example.com/collective-nouns"
-        />
-        <meta
-          property="og:title"
-          content="Collective Nouns | English in Eight Minutes"
-        />
-        <meta
-          property="og:description"
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/collective-nouns.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
-
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Remind versus Remember</h1>
