@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Quiz from "@/src/components/Quiz";
 
@@ -172,7 +173,6 @@ export default function SpeakVersusTalk() {
 
   return (
     <>
-     
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Talk versus Speak</h1>
