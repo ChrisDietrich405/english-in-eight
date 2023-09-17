@@ -1,3 +1,4 @@
+//https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,11 +7,7 @@ import { FaRunning, FaAngry } from "react-icons/fa";
 
 import "./styles/globals.css";
 
-import {
-  Grid,
-  Card,
-  Container,
-} from "@mui/material";
+import { Grid, Card, Container } from "@mui/material";
 
 import styles from "./page.module.css";
 
@@ -20,6 +17,19 @@ export const metadata = {
     "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
   keywords:
     "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Home | English in Eight Minutes",
     description:

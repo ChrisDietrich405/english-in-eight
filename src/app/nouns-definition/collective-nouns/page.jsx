@@ -27,6 +27,8 @@ export default function Collective() {
         { title: "has", correctAnswer: true },
         { title: "have" },
       ],
+      explanation:
+      "Students are considered individuals, not a collective group. ",
       userAnswer: "",
     },
     {
@@ -36,6 +38,8 @@ export default function Collective() {
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
+      explanation:
+      "Group is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -44,6 +48,8 @@ export default function Collective() {
         { title: "want", correctAnswer: true },
         { title: "wants" },
       ],
+      explanation:
+      "Sisters are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
@@ -52,6 +58,8 @@ export default function Collective() {
         { title: "Has", correctAnswer: true },
         { title: "Have" },
       ],
+      explanation:
+      "Committee is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -60,6 +68,8 @@ export default function Collective() {
         { title: "Was" },
         { title: "Were", correctAnswer: true },
       ],
+      explanation:
+      "Soldiers are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
@@ -68,6 +78,8 @@ export default function Collective() {
         { title: "wins", correctAnswer: true },
         { title: "win" },
       ],
+      explanation:
+      "Team is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -77,6 +89,8 @@ export default function Collective() {
         { title: "was" },
         { title: "were", correctAnswer: true },
       ],
+      explanation:
+      "are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
