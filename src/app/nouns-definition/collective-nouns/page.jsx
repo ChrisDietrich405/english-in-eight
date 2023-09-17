@@ -28,7 +28,7 @@ export default function Collective() {
         { title: "have" },
       ],
       explanation:
-      "Students are considered individuals, not a collective group. ",
+        "Students are considered individuals, not a collective group. ",
       userAnswer: "",
     },
     {
@@ -38,8 +38,7 @@ export default function Collective() {
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
-      explanation:
-      "Group is considered a collective noun.",
+      explanation: "Group is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -48,8 +47,7 @@ export default function Collective() {
         { title: "want", correctAnswer: true },
         { title: "wants" },
       ],
-      explanation:
-      "Sisters are considered individuals, not a collective group",
+      explanation: "Sisters are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
@@ -58,8 +56,7 @@ export default function Collective() {
         { title: "Has", correctAnswer: true },
         { title: "Have" },
       ],
-      explanation:
-      "Committee is considered a collective noun.",
+      explanation: "Committee is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -69,7 +66,7 @@ export default function Collective() {
         { title: "Were", correctAnswer: true },
       ],
       explanation:
-      "Soldiers are considered individuals, not a collective group",
+        "Soldiers are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
@@ -78,8 +75,7 @@ export default function Collective() {
         { title: "wins", correctAnswer: true },
         { title: "win" },
       ],
-      explanation:
-      "Team is considered a collective noun.",
+      explanation: "Team is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -89,8 +85,7 @@ export default function Collective() {
         { title: "was" },
         { title: "were", correctAnswer: true },
       ],
-      explanation:
-      "are considered individuals, not a collective group",
+      explanation: "Members are considered individuals, not a collective group",
       userAnswer: "",
     },
     {
@@ -99,6 +94,7 @@ export default function Collective() {
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
+      explanation: "Choir is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -108,6 +104,7 @@ export default function Collective() {
         { title: "are" },
         { title: "is", correctAnswer: true },
       ],
+      explanation: "Family is considered a collective noun.",
       userAnswer: "",
     },
   ]);
@@ -192,8 +189,6 @@ export default function Collective() {
 
   return (
     <>
- 
-
       <div className={styles.page_title}>
         <h1>Collective Nouns</h1>
       </div>

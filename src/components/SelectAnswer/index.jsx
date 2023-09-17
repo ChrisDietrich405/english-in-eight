@@ -36,10 +36,10 @@ const SelectAnswer = ({
         return <AiFillCheckCircle color="green" />;
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return (
-          <>
+          <div style={{ width: "300px" }}>
             <AiFillCloseCircle color="red" />
-            <p>{explanation}</p>
-          </>
+            <span>{explanation}</span>
+          </div>
         );
       } else {
         return "";
