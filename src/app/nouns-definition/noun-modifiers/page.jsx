@@ -17,6 +17,7 @@ export default function NounModifiers() {
         { title: "metal door", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Metal is a noun modifier",
     },
     {
       title: "It's a cloth that you put on a table. It's a _____________.",
@@ -25,6 +26,7 @@ export default function NounModifiers() {
         { title: "cloth table" },
       ],
       userAnswer: "",
+      explanation: "Table is a noun modifier",
     },
     {
       title: "It's a bat used for baseballs. It's a _____________.",
@@ -33,6 +35,7 @@ export default function NounModifiers() {
         { title: "baseball bat", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Baseball is a noun modifier",
     },
     {
       title: "It's a key for my house. It's a _____________.",
@@ -41,6 +44,7 @@ export default function NounModifiers() {
         { title: "house key", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "House is a noun modifier",
     },
     {
       title: "The park is in the city. It's a ______________.",
@@ -49,6 +53,7 @@ export default function NounModifiers() {
         { title: "city park", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "City is a noun modifier",
     },
     {
       title: "They have a house in the trees. They have a ______________.",
@@ -57,6 +62,7 @@ export default function NounModifiers() {
         { title: "house tree" },
       ],
       userAnswer: "",
+      explanation: "Tree is a noun modifier",
     },
     {
       title: "We bought a bone for our dog. We gave her a _____________.",
@@ -65,6 +71,7 @@ export default function NounModifiers() {
         { title: "dog bone", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Dog is a noun modifier",
     },
     {
       title:
@@ -74,6 +81,7 @@ export default function NounModifiers() {
         { title: "station train" },
       ],
       userAnswer: "",
+      explanation: "Train is a noun modifier",
     },
     {
       title: "This is a ladder with steps.   It’s a ___________.",
@@ -82,6 +90,7 @@ export default function NounModifiers() {
         { title: "ladder step" },
       ],
       userAnswer: "",
+      explanation: "Step is a noun modifier",
     },
     {
       title: "I paid for lessons for swimming. They are _____________.",
@@ -90,34 +99,20 @@ export default function NounModifiers() {
         { title: "swimmings lesson" },
       ],
       userAnswer: "",
+      explanation: "Swimming is a noun modifier",
     },
   ]);
 
   const handleRandomQuestions = () => {
     setQuiz([
       {
-        title: "It's a vehicle with two wheels. It's a _____________.",
-        possibleAnswersAndExplanation: [
-          { title: "two-wheel vehicle" },
-          { title: "bicycle", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
-        title: "It's a container for liquids. It's a _____________.",
-        possibleAnswersAndExplanation: [
-          { title: "liquid container" },
-          { title: "bottle", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-      {
         title: "He uses it to cut paper. It's a _____________.",
         possibleAnswersAndExplanation: [
-          { title: "paper cutter" },
-          { title: "scissors", correctAnswer: true },
+          { title: "paper cutter", correctAnswer: true },
+          { title: "cut paper" },
         ],
         userAnswer: "",
+        explanation: "Paper is a noun modifier",
       },
       {
         title: "You sit on it in the park. It's a _____________.",
@@ -126,6 +121,7 @@ export default function NounModifiers() {
           { title: "bench park" },
         ],
         userAnswer: "",
+        explanation: "Park is a noun modifier",
       },
     ]);
     setShouldShowNewQuestionsBtn(false);
@@ -133,47 +129,6 @@ export default function NounModifiers() {
 
   return (
     <>
-      <Head>
-        <title>Noun Modifiers | English in Eight Minutes</title>
-        <meta
-          content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."
-          name="description"
-        />
-        <meta
-          content="English, Grammar, Noun Modifiers, Descriptions, Examples"
-          name="keywords"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://example.com/noun-modifiers" />
-        <meta
-          property="og:title"
-          content="Noun Modifiers | English in Eight Minutes"
-        />
-        <meta
-          property="og:description"
-          content="Learn about noun modifiers in English grammar. Understand how they provide additional information about nouns, describe materials, values, measurements, and more with examples."
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/noun-modifiers.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
-
       <div className={styles.page_title}>
         <h1>Noun Modifiers</h1>
       </div>
@@ -234,7 +189,6 @@ export default function NounModifiers() {
       </ul>
 
       <Quiz
-        // explanation={explanation}
         title="Take a Quiz!"
         questions={quiz}
         callback={handleRandomQuestions}

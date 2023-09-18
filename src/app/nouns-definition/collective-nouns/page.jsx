@@ -118,6 +118,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Team is considered a collective noun.",
       },
       {
         title: "The committee __________ discussing the new proposal.",
@@ -126,6 +127,16 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Committee is considered a collective noun.",
+      },
+      {
+        title: "The people at the store __________ very angry.",
+        possibleAnswersAndExplanation: [
+          { title: "are", correctAnswer: true },
+          { title: "is" },
+        ],
+        userAnswer: "",
+        explanation: "People is not considered a collective noun.",
       },
       {
         title: "The jury __________ reached a unanimous decision.",
@@ -134,6 +145,7 @@ export default function Collective() {
           { title: "have" },
         ],
         userAnswer: "",
+        explanation: "Jury is considered a collective noun.",
       },
       {
         title: "The swarm of bees __________ buzzing around the flowers.",
@@ -142,6 +154,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Swarm is considered a collective noun.",
       },
       {
         title: "The orchestra __________ performing at the concert.",
@@ -150,6 +163,16 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Orchestra is considered a collective noun.",
+      },
+      {
+        title: "The students ___________ not in the class.",
+        possibleAnswersAndExplanation: [
+          { title: "were", correctAnswer: true },
+          { title: "was" },
+        ],
+        userAnswer: "",
+        explanation: "Students is not considered a collective noun.",
       },
       {
         title: "His family __________ planning a reunion.",
@@ -158,6 +181,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Family is considered a collective noun.",
       },
       {
         title: "Her staff __________ working hard this week.",
@@ -166,6 +190,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Staff is considered a collective noun.",
       },
       {
         title: "The audience __________ clapping.",
@@ -174,6 +199,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "Audience is considered a collective noun.",
       },
       {
         title: "The school of fish __________ swimming in the ocean.",
@@ -182,6 +208,7 @@ export default function Collective() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation: "School is considered a collective noun.",
       },
     ]);
     setShouldShowNewQuestionsBtn(false);

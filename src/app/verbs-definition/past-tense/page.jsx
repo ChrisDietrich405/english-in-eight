@@ -21,7 +21,7 @@ const Future = () => {
           the past continued up until another time in the past.
         </p>
         <div
-          className="btn-container btn-flex"
+          className={`${styles.links_container} btn-container btn-flex`}
           style={{ display: "flex", justifyContent: "space-around" }}
         >
           <Link

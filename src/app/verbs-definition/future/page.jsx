@@ -16,11 +16,11 @@ const Future = () => {
           express our attitude to the future event.
         </p>
         <div
-          className="btn-container btn-flex"
+          className={`${styles.links_container} btn-container btn-flex`}
           style={{ display: "flex", justifyContent: "space-around" }}
         >
           <Link
-            className={styles.link} 
+            className={styles.link}
             href="/verbs-definition/future/future-simple"
           >
             <Button variant="text">Future Simple</Button>

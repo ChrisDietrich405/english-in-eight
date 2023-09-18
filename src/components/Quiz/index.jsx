@@ -46,6 +46,11 @@ export default function Quiz(props) {
     setSubmitted(false);
   };
 
+  const getRandomQuestions = () => {
+    reset();
+    return props.callback;
+  };
+
   return (
     <div className={styles.quiz_container}>
       <form onSubmit={submit} onReset={reset}>
@@ -103,9 +108,9 @@ export default function Quiz(props) {
           </Button>
           {props.shouldShowNewQuestionsBtn && (
             <Button
+              type="reset"
               style={{ marginLeft: "20px" }}
               variant="contained"
-              type="button"
               onClick={props.callback}
             >
               Try More Questions

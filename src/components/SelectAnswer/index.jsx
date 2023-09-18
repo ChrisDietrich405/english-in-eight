@@ -27,6 +27,17 @@ const SelectAnswer = ({
     }
   };
 
+  const getExplanation = () => {
+    if (!(i in answers)) {
+      return "";
+    }
+    if (submitted === true) {
+      if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
+        return <p style={{ paddingTop: "2px" }}>{explanation}</p>;
+      }
+    }
+  };
+
   const getEmoji = () => {
     if (!(i in answers)) {
       return "";
@@ -35,12 +46,10 @@ const SelectAnswer = ({
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
         return <AiFillCheckCircle color="green" />;
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return (
-          <div style={{ width: "300px" }}>
-            <AiFillCloseCircle color="red" />
-            <span>{explanation}</span>
-          </div>
-        );
+        return <AiFillCloseCircle color="red" style={{ marginLeft: "20px" }} />;
+        {
+          /* <span>{explanation}</span> */
+        }
       } else {
         return "";
       }
@@ -59,6 +68,7 @@ const SelectAnswer = ({
       <p className={getTextColor()}>
         {possibleAnswer.title} {getEmoji()}
       </p>
+      <p>{getExplanation()}</p>
     </li>
   );
 };

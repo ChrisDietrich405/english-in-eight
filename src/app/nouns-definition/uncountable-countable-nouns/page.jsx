@@ -12,12 +12,23 @@ export default function UncountableAndCountable() {
     useState(true);
   const [quiz, setQuiz] = useState([
     {
+      title: "There _______ many beans in the soup.",
+      possibleAnswersAndExplanation: [
+        { title: " are", correctAnswer: true },
+        { title: " is" },
+      ],
+      userAnswer: "",
+      explanation:
+        "You can count beans so they are considered a countable noun",
+    },
+    {
       title: "We don't drink ____ coffee.",
       possibleAnswersAndExplanation: [
         { title: " many" },
         { title: " much", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Coffee is a liquid so it's considered an uncountable noun",
     },
     {
       title: "I ate _____ soup for lunch.",
@@ -26,6 +37,9 @@ export default function UncountableAndCountable() {
         { title: " a little", correctAnswer: true },
       ],
       userAnswer: "",
+
+      explanation:
+        "Soup doesn't have a shape so it's considered an uncountable noun",
     },
     {
       title: "How _________ rice do we need.",
@@ -34,6 +48,17 @@ export default function UncountableAndCountable() {
         { title: " many" },
       ],
       userAnswer: "",
+      explanation: "Rice is very small so it's considered an uncountable noun",
+    },
+    {
+      title: "I have ________ friends in Kenya.",
+      possibleAnswersAndExplanation: [
+        { title: " a few", correctAnswer: true },
+        { title: " a little" },
+      ],
+      userAnswer: "",
+      explanation:
+        "You can count friends so they are considered a countable noun",
     },
     {
       title: "Eating _____ chocolate is unhealthy.",
@@ -51,15 +76,8 @@ export default function UncountableAndCountable() {
         { title: " many" },
       ],
       userAnswer: "",
-    },
-
-    {
-      title: "There _______ many beans in the soup.",
-      possibleAnswersAndExplanation: [
-        { title: " are", correctAnswer: true },
-        { title: " is" },
-      ],
-      userAnswer: "",
+      explanation:
+        "Chocolate doesn't have a shape so it's considered an uncountable noun",
     },
 
     {
@@ -69,6 +87,8 @@ export default function UncountableAndCountable() {
         { title: " Is", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation:
+        "Tofu doesn't have a shape so it's considered an uncountable noun",
     },
 
     {
@@ -78,6 +98,7 @@ export default function UncountableAndCountable() {
         { title: " many", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "You can count cups so they are considered a countable noun",
     },
 
     {
@@ -87,15 +108,7 @@ export default function UncountableAndCountable() {
         { title: " are" },
       ],
       userAnswer: "",
-    },
-
-    {
-      title: "I have ________ friends in Kenya.",
-      possibleAnswersAndExplanation: [
-        { title: " a few", correctAnswer: true },
-        { title: " a little" },
-      ],
-      userAnswer: "",
+      explanation: "Juice is a liquid so it's considered an uncountable noun",
     },
   ]);
 
@@ -108,6 +121,18 @@ export default function UncountableAndCountable() {
           { title: "a little", correctAnswer: true },
         ],
         userAnswer: "",
+        explanation:
+          "You can count apples so they are considered a countable noun",
+      },
+      {
+        title: "There _________ three cats behind the house",
+        possibleAnswersAndExplanation: [
+          { title: "are", correctAnswer: true },
+          { title: "is" },
+        ],
+        userAnswer: "",
+        explanation:
+          "You can count cats so they are considered a countable noun",
       },
 
       {
@@ -117,6 +142,7 @@ export default function UncountableAndCountable() {
           { title: "many" },
         ],
         userAnswer: "",
+        explanation: "Water is a liquid so it's considered an uncountable noun",
       },
 
       {
@@ -126,6 +152,8 @@ export default function UncountableAndCountable() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation:
+          "Sugar doesn't have a shape so it's considered an uncountable noun",
       },
 
       {
@@ -135,6 +163,7 @@ export default function UncountableAndCountable() {
           { title: "Is", correctAnswer: true },
         ],
         userAnswer: "",
+        explanation: "Juice is a liquid so it's considered an uncountable noun",
       },
 
       {
@@ -144,15 +173,19 @@ export default function UncountableAndCountable() {
           { title: "many" },
         ],
         userAnswer: "",
+        explanation:
+          "Flour doesn't have a shape so it's considered an uncountable noun",
       },
 
       {
-        title: "How ________ spinach is in the sandwich?",
+        title: "How ________ tomatoes did you put in the soup?",
         possibleAnswersAndExplanation: [
           { title: "much" },
           { title: "many", correctAnswer: true },
         ],
         userAnswer: "",
+        explanation:
+          "You can count tomatoes so they are considered a countable noun",
       },
 
       {
@@ -162,6 +195,8 @@ export default function UncountableAndCountable() {
           { title: "are" },
         ],
         userAnswer: "",
+        explanation:
+          "Traffic doesn't have a shape so it's considered an uncountable noun",
       },
 
       {
@@ -171,15 +206,8 @@ export default function UncountableAndCountable() {
           { title: "Is", correctAnswer: true },
         ],
         userAnswer: "",
-      },
-
-      {
-        title: "I like having ________ free time on the weekends.",
-        possibleAnswersAndExplanation: [
-          { title: "some", correctAnswer: true },
-          { title: "much" },
-        ],
-        userAnswer: "",
+        explanation:
+          "Time is an abstract idea so it's considered an uncountable noun",
       },
 
       {
@@ -196,8 +224,6 @@ export default function UncountableAndCountable() {
 
   return (
     <>
-      
-
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Countable & Uncountable Nouns </h1>
