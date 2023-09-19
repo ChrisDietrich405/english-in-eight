@@ -20,14 +20,13 @@ export default function TellVersusSay() {
     {
       title: "She ______________ him a lie. ",
       possibleAnswersAndExplanation: [
-        { title: "told" },
-        { title: "said", correctAnswer: true },
+        { title: "said" },
+        { title: "told", correctAnswer: true },
       ],
       userAnswer: "",
     },
     {
-      title:
-        "They  _____________ her that they were going to leave Friday.",
+      title: "They  _____________ her that they were going to leave Friday.",
       possibleAnswersAndExplanation: [
         { title: "said" },
         { title: "told", correctAnswer: true },
@@ -58,7 +57,7 @@ export default function TellVersusSay() {
       ],
       userAnswer: "",
     },
-  
+
     {
       title: "Maria  _____________ that she would join us after work.",
       possibleAnswersAndExplanation: [
@@ -85,8 +84,7 @@ export default function TellVersusSay() {
       userAnswer: "",
     },
     {
-      title:
-        "Najha _____________ that she was going to stop helping us.",
+      title: "Najha _____________ that she was going to stop helping us.",
       possibleAnswersAndExplanation: [
         { title: "said", correctAnswer: true },
         { title: "told" },
@@ -94,11 +92,10 @@ export default function TellVersusSay() {
       userAnswer: "",
     },
     {
-      title:
-        "They _________ that they didn't want to have the meeting Friday.",
+      title: "They _________ that they didn't want to have the meeting Friday.",
       possibleAnswersAndExplanation: [
-        { title: "said" },
-        { title: "told", correctAnswer: true },
+        { title: "told" },
+        { title: "said", correctAnswer: true },
       ],
       userAnswer: "",
     },
@@ -107,103 +104,87 @@ export default function TellVersusSay() {
   const handleRandomQuestions = () => {
     setQuiz([
       {
-        title: "The team __________ celebrating their victory.",
+        title: "Paul _____________ that he'll be late for the party.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "said", correctAnswer: true },
+          { title: "told" },
         ],
         userAnswer: "",
-        explanation: "Team is considered a collective noun.",
       },
       {
-        title: "The committee __________ discussing the new proposal.",
+        title: "She _______________ me to meet her at the park.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "told" },
+          { title: "said", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Committee is considered a collective noun.",
       },
       {
-        title: "The people at the store __________ very angry.",
+        title:
+          "The teacher ________________ the students to complete their homework.",
         possibleAnswersAndExplanation: [
-          { title: "are", correctAnswer: true },
-          { title: "is" },
+          { title: "said" },
+          { title: "told", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "People is not considered a collective noun.",
       },
       {
-        title: "The jury __________ reached a unanimous decision.",
+        title: "Javier _____________ a funny joke at the dinner table.",
         possibleAnswersAndExplanation: [
-          { title: "has", correctAnswer: true },
-          { title: "have" },
+          { title: "said" },
+          { title: "told", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Jury is considered a collective noun.",
       },
       {
-        title: "The swarm of bees __________ buzzing around the flowers.",
+        title: "They _______________ us not to go swimming in the deep water.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "said" },
+          { title: "told", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Swarm is considered a collective noun.",
       },
       {
-        title: "The orchestra __________ performing at the concert.",
+        title:
+          "I can't _______________ the difference between Portuguese and Spanish.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "tell", correctAnswer: true },
+          { title: "say" },
         ],
         userAnswer: "",
-        explanation: "Orchestra is considered a collective noun.",
       },
       {
-        title: "The students ___________ not in the class.",
+        title: "He _____________ his friends about the exciting trip.",
         possibleAnswersAndExplanation: [
-          { title: "were", correctAnswer: true },
-          { title: "was" },
+          { title: "told" },
+          { title: "said", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Students is not considered a collective noun.",
       },
       {
-        title: "His family __________ planning a reunion.",
+        title: "The manager _____________ the team about the upcoming project.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "said" },
+          { title: "told", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Family is considered a collective noun.",
       },
       {
-        title: "Her staff __________ working hard this week.",
+        title: "Excuse me, could you ________ the time",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "tell", correctAnswer: true },
+          { title: "say" },
         ],
         userAnswer: "",
-        explanation: "Staff is considered a collective noun.",
       },
       {
-        title: "The audience __________ clapping.",
+        title:
+          "They _______________ their parents about their decision to get married.",
         possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
+          { title: "said" },
+          { title: "told", correctAnswer: true },
         ],
         userAnswer: "",
-        explanation: "Audience is considered a collective noun.",
-      },
-      {
-        title: "The school of fish __________ swimming in the ocean.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "School is considered a collective noun.",
       },
     ]);
     setShouldShowNewQuestionsBtn(false);
@@ -211,7 +192,7 @@ export default function TellVersusSay() {
 
   return (
     <>
-     <div className={styles.page_body}>
+      <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Tell versus Say</h1>
         </div>
@@ -220,7 +201,7 @@ export default function TellVersusSay() {
           same. Both of them mean "to communicate verbally with someone", but
           depending on context we use one or the other.
         </p>
-        <p>A easy explanation can start with:</p>
+        <p>An easy explanation can start with:</p>
         <ul className="page-examples">
           <li>You tell somebody something</li>
           <li>You say something</li>
@@ -271,8 +252,6 @@ export default function TellVersusSay() {
           <li>tell the time </li>
           <li>tell (somebody) a story</li>
         </ul>
-
-      
       </div>
       <Quiz
         title="Take a Quiz!"
@@ -283,20 +262,3 @@ export default function TellVersusSay() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

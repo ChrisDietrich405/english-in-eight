@@ -56,6 +56,7 @@ export default function Quiz(props) {
       <form onSubmit={submit} onReset={reset}>
         <div className={styles.quiz_title}>
           <h4>{props.title}</h4>
+          {props.subtitle ? <p>{props.subtitle} </p> : ""}
           <h1>{props.explanation}</h1>
         </div>
         <ol className={styles.questions_and_answers}>

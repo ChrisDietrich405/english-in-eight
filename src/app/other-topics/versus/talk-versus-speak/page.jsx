@@ -17,7 +17,7 @@ export default function SpeakVersusTalk() {
       userAnswer: "",
     },
     {
-      title: "We tried to  ___________ it out, but after fought more.",
+      title: "We tried to  ___________ it out, but after we fought more.",
       possibleAnswersAndExplanation: [
         { title: "spoke" },
         { title: "talk", correctAnswer: true },
@@ -133,10 +133,10 @@ export default function SpeakVersusTalk() {
         },
         {
           title:
-            "Yesterday, John and Mary ________ with their therapist to address their relationship issues.",
+            "My 6 year old son constantly _______ back to me and I don't know what to do.",
           possibleAnswersAndExplanation: [
-            { title: "spoke", correctAnswer: true },
-            { title: "talked" },
+            { title: "talks", correctAnswer: true },
+            { title: "speaks" },
           ],
           userAnswer: "",
         },
@@ -193,7 +193,10 @@ export default function SpeakVersusTalk() {
           </li>
           <li>The president will speak shortly to her advisors.</li>
         </ul>
-        <p>We normally use to after talk and speak. We can also use with:</p>
+        <p>
+          We normally use <b>to</b> after talk and speak. We can also use{" "}
+          <b>with</b>:
+        </p>
         <ul className="page-examples">
           <li>Could I talk to you for a moment?</li>
           <li>The director needs to speak to you.</li>

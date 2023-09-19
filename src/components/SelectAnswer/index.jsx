@@ -33,7 +33,7 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return <p style={{ paddingTop: "2px" }}>{explanation}</p>;
+        return <p style={{ paddingTop: "3px", paddingLeft: "2px" }}>{explanation}</p>;
       }
     }
   };
@@ -46,7 +46,7 @@ const SelectAnswer = ({
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
         return <AiFillCheckCircle color="green" />;
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return <AiFillCloseCircle color="red" style={{ marginLeft: "20px" }} />;
+        return <AiFillCloseCircle color="red" style={{ marginLeft: "15px" }} />;
         {
           /* <span>{explanation}</span> */
         }

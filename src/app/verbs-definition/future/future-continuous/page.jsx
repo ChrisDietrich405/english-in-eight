@@ -1,24 +1,219 @@
-import Quiz from "@/src/components/Quiz";
+"use client";
+import { useState } from "react";
 import Head from "next/head";
+import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
-//Done
-// const baseUrl = "https://english-in-eight-next.vercel.app"
-// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-// // Replace with your actual base URL
-// const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
+export default function FutureContinuous() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([
+    {
+      title: "In an hour she _______________ (clean) the bathrooms.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be cleaning", correctAnswer: true },
+        { title: "b. will be clean" },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "Next month they _______________ (complain) about this.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be complain" },
+        { title: "b. will be complaining", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title:
+        "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will still be rise" },
+        { title: "b. will still be rising", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "I ______________ (see) Marcus at the conference next week.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be see" },
+        { title: "b. will be seeing", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "When he's in Morocco he _____________ with friends.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be stay" },
+        { title: "b. will be staying", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "Miguel _____________ (compete) in a marathon next month.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be competing", correctAnswer: true },
+        { title: "b. will be compete" },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "I ___________  with Nia this evening so I can talk to her.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be eat" },
+        { title: "b. will be eating", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "Demarcus _______________ (run) in the race.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will also be running", correctAnswer: true },
+        { title: "b. will also be run" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "He _____________ (sleep) when you telephone him.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be sleep" },
+        { title: "b. will be sleeping", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+    {
+      title: "I _____________ (play) hockey in the afternoon tomorrow.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will be play" },
+        { title: "b. will be playing", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "With the continuous form you need an ing ending.",
+    },
+  ]);
 
-// const fullUrl = baseUrl + endpoint;
+  const handleRandomQuestions = () => {
+    setQuiz([
+      {
+        title:
+          "At this time tomorrow, she _______________ (prepare) for her big presentation.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be prepare" },
+          { title: "b. will be preparing", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
 
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   const data = res.json();
-//   return data;
-// };
+      {
+        title:
+          "By the end of the week, they _______________ (travel) to five different cities.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be travel" },
+          { title: "b. will be traveling", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
 
-export default async function FutureContinuous() {
-  // const verbs = await getData();
+      {
+        title:
+          "Tomorrow morning, I _______________ (meet) Sarah at the coffee shop.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be meet" },
+          { title: "b. will be meeting", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "In a few hours, he _______________ (take) his final exam for the semester.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be take" },
+          { title: "b. will be taking", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "While on vacation, we _______________ (explore) the beautiful beaches of Hawaii.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be explore" },
+          { title: "b. will be exploring", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "During the summer break, Miguel _______________ (work) on a special project.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be work" },
+          { title: "b. will be working", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "Later tonight, I _______________ (watch) a documentary about space exploration.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be watch" },
+          { title: "b. will be watching", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "During the holidays, Demarcus _______________ (visit) his family in another city.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be visit" },
+          { title: "b. will be visiting", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title: "Tonight, he _______________ (read) a book before going to bed.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be read" },
+          { title: "b. will be reading", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+
+      {
+        title:
+          "In the afternoon, I _______________ (practice) my guitar for a few hours.",
+        possibleAnswersAndExplanation: [
+          { title: "a. will be practice" },
+          { title: "b. will be practicing", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "With the continuous form, you need an 'ing' ending.",
+      },
+    ]);
+    setShouldShowNewQuestionsBtn(false);
+  };
 
   return (
     <>
@@ -71,48 +266,50 @@ export default async function FutureContinuous() {
             <th>Negative short form</th>
           </tr>
         </thead>
-        <tr>
-          <td>I will be swimming</td>
-          <td>I'll be swimming</td>
-          <td>I will not be swimming</td>
-          <td>I won't be swimming</td>
-        </tr>
-        <tr>
-          <td>You will be dancing</td>
-          <td>You'll be dancing</td>
-          <td>You will not be dancing</td>
-          <td>You won't be dancing</td>
-        </tr>
-        <tr>
-          <td>She, he, it will be working</td>
-          <td>She, he, it'll be working</td>
-          <td>She, he, it will not be working</td>
-          <td>She, he, it won't be working</td>
-        </tr>
-        <tr>
-          <td>We will be talking</td>
-          <td>We'll be talking</td>
-          <td>We will not be talking</td>
-          <td>We won't be talking</td>
-        </tr>
-        <tr>
-          <td>They will be running</td>
-          <td>They'll be running</td>
-          <td>They will not be running</td>
-          <td>They won't be running</td>
-        </tr>
-        {/* <tbody>
+        <tbody>
+          <tr>
+            <td>I will be swimming</td>
+            <td>I'll be swimming</td>
+            <td>I will not be swimming</td>
+            <td>I won't be swimming</td>
+          </tr>
+          <tr>
+            <td>You will be dancing</td>
+            <td>You'll be dancing</td>
+            <td>You will not be dancing</td>
+            <td>You won't be dancing</td>
+          </tr>
+          <tr>
+            <td>She, he, it will be working</td>
+            <td>She, he, it'll be working</td>
+            <td>She, he, it will not be working</td>
+            <td>She, he, it won't be working</td>
+          </tr>
+          <tr>
+            <td>We will be talking</td>
+            <td>We'll be talking</td>
+            <td>We will not be talking</td>
+            <td>We won't be talking</td>
+          </tr>
+          <tr>
+            <td>They will be running</td>
+            <td>They'll be running</td>
+            <td>They will not be running</td>
+            <td>They won't be running</td>
+          </tr>
+          {/* <tbody>
           {verbs.map((verb) => {
             return (
               <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
+              <td>{verb.positive}</td>
+              <td>{verb.positiveShortForm}</td>
+              <td>{verb.negative}</td>
+              <td>{verb.negativeShortForm}</td>
               </tr>
-            );
-          })}
-        </tbody> */}
+              );
+            })}
+          </tbody> */}
+        </tbody>
       </table>
 
       <div className="page-body">
@@ -127,102 +324,30 @@ export default async function FutureContinuous() {
         </ul>
       </div>
       <div className="page-body"></div>
-
       <Quiz
-        title="Quiz"
-        questions={[
-          {
-            title: "In an hour she _______________ (clean) the bathrooms.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be cleaning", correctAnswer: true },
-              { title: "b. will be clean" },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "Next month they _______________ (complain) about this.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be complain" },
-              { title: "b. will be complaining", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title:
-              "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will still be rise" },
-              { title: "b. will still be rising", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "I ______________ (see) Marcus at the conference next week.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be see" },
-              { title: "b. will be seeing", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "When he's in Morocco he _____________ with friends.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be stay" },
-              { title: "b. will be staying", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "Miguel _____________ (compete) in a marathon next month.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be competing", correctAnswer: true },
-              { title: "b. will be compete" },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "I ___________  with Nia this evening so I can talk to her.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be eat" },
-              { title: "b. will be eating", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "Demarcus _______________ (run) in the race.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will also be running", correctAnswer: true },
-              { title: "b. will also be run" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "He _____________ (sleep) when you telephone him.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be sleep" },
-              { title: "b. will be sleeping", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-          {
-            title: "I _____________ (play) hockey in the afternoon tomorrow.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will be play" },
-              { title: "b. will be playing", correctAnswer: true },
-            ],
-            userAnswer: "",
-            explanation: "With the continuous form you need an ing ending.",
-          },
-        ]}
+        title="Take a Quiz!"
+        questions={quiz}
+        callback={handleRandomQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>
   );
 }
+
+// import Head from "next/head";
+
+//
+
+//Done
+// const baseUrl = "https://english-in-eight-next.vercel.app"
+// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+// // Replace with your actual base URL
+// const endpoint = "/api/future-continuous"; // Replace with the correct endpoint
+
+// const fullUrl = baseUrl + endpoint;
+
+// const getData = async () => {
+//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+//   const data = res.json();
+//   return data;
+// };

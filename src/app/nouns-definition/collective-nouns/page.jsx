@@ -255,8 +255,8 @@ export default function Collective() {
         </ul>
       </div>
       <Quiz
-        
         title="Take a Quiz!"
+        subtitle="Caution! Some of these aren't collective nouns"
         questions={quiz}
         callback={handleRandomQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}

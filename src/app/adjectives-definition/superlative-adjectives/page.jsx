@@ -1,11 +1,216 @@
-//DONE
-
-import Quiz from "../../../components/Quiz";
+"use client";
+import { useState } from "react";
 import Head from "next/head";
+import Quiz from "../../../components/Quiz";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function SuperlativeAdjectives() {
+export default function PossessiveAdjectives() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([
+    {
+      title: "Nia is the ___________________ (old) daughter.",
+      possibleAnswersAndExplanation: [
+        { title: "oldest", correctAnswer: true },
+        { title: "most old" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Old has one syllable so you can add est for the superlative form.",
+    },
+    {
+      title:
+        "His car is the _______________ (comfortable) car I’ve ever driven.",
+      possibleAnswersAndExplanation: [
+        { title: "most comfortable", correctAnswer: true },
+        { title: "comfortableist" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Comfortable has three syllables so you can't add est for the superlative form.",
+    },
+    {
+      title: "Bia is the _______________ (quiet) person I've ever met.",
+      possibleAnswersAndExplanation: [
+        { title: "quietest", correctAnswer: true },
+        { title: "quitest" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Quiet is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
+    },
+    {
+      title: "This restaurant has the ________________ food",
+      possibleAnswersAndExplanation: [
+        { title: "deliciouser" },
+        { title: "most delicious", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "Delicious has three syllables so you can't add est for the superlative form.",
+    },
+    {
+      title: "My math class is my ______________ (hard) class. ",
+      possibleAnswersAndExplanation: [
+        { title: "hardest", correctAnswer: true },
+        { title: "most hardest" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Hard has one syllable so you can add est for the superlative form.",
+    },
+    {
+      title:
+        "The roads in this neighborhood are the _______________ (narrow) in the city.",
+      possibleAnswersAndExplanation: [
+        { title: "narroest" },
+        { title: "narrowest", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "Narrow is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
+    },
+    {
+      title: "Malcolm is the _______________ (busy) man in his office.",
+      possibleAnswersAndExplanation: [
+        { title: "busiest", correctAnswer: true },
+        { title: "busyest" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Busy is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
+    },
+    {
+      title: "Pigs are the ________________________(intelligent) farm animals.",
+      possibleAnswersAndExplanation: [
+        { title: "most intelligent", correctAnswer: true },
+        { title: "intelligentest" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Intelligent has three syllables so you can't add est for the superlative form.",
+    },
+    {
+      title:
+        "Demetrius is the ________________ (ambitious) director at his production company.",
+      possibleAnswersAndExplanation: [
+        { title: "ambitiousest" },
+        { title: "most ambitious", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "Ambitious has three syllables so you can't add est for the superlative form.",
+    },
+    {
+      title: "My dog is the  ________________  (cute) in my neighborhood.",
+      possibleAnswersAndExplanation: [
+        { title: "most cutest" },
+        { title: "cutest", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "Cute has one syllable so you can add est for the superlative form.",
+    },
+  ]);
+
+  const handleRandomQuestions = () => {
+    setQuiz([
+      {
+        title: "She shares (they) ________________ passion for cooking.",
+        possibleAnswersAndExplanation: [
+          { title: "my" },
+          { title: "their", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Their is the possessive adjective for they.",
+      },
+      {
+        title: "(We) _______________ cat is very playful.",
+        possibleAnswersAndExplanation: [
+          { title: "His" },
+          { title: "Our", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Our is the possessive adjective for we.",
+      },
+      {
+        title: "Lisa and Mark enjoy (she) _____________ company.",
+        possibleAnswersAndExplanation: [
+          { title: "our" },
+          { title: "her", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Her is the possessive adjective for she.",
+      },
+      {
+        title: "The children found (he) _____________ lost toy.",
+        possibleAnswersAndExplanation: [
+          { title: "my" },
+          { title: "his", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "His is the possessive adjective for he.",
+      },
+      {
+        title: "(You) _______________ friends are very kind.",
+        possibleAnswersAndExplanation: [
+          { title: "Their", correctAnswer: true },
+          { title: "My" },
+        ],
+        userAnswer: "",
+        explanation: "Their is the possessive adjective for you.",
+      },
+      {
+        title: "We often visit (I) _______________ grandparents.",
+        possibleAnswersAndExplanation: [
+          { title: "our", correctAnswer: true },
+          { title: "her" },
+        ],
+        userAnswer: "",
+        explanation: "Our is the possessive adjective for we.",
+      },
+      {
+        title: "(She) _______________ sister is a talented musician.",
+        possibleAnswersAndExplanation: [
+          { title: "My" },
+          { title: "Her", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Her is the possessive adjective for she.",
+      },
+      {
+        title:
+          "The students admired (he) _____________ dedication to their education.",
+        possibleAnswersAndExplanation: [
+          { title: "their" },
+          { title: "his", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "His is the possessive adjective for he.",
+      },
+      {
+        title: "(You) _______________ book is on the table.",
+        possibleAnswersAndExplanation: [
+          { title: "Her" },
+          { title: "Your", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Your is the possessive adjective for you.",
+      },
+      {
+        title: "David mentioned (we) _____________ favorite movie.",
+        possibleAnswersAndExplanation: [
+          { title: "his" },
+          { title: "our", correctAnswer: true },
+        ],
+        userAnswer: "",
+        explanation: "Our is the possessive adjective for we.",
+      },
+    ]);
+    setShouldShowNewQuestionsBtn(false);
+  };
+
   return (
     <>
       <Head>
@@ -51,7 +256,6 @@ export default function SuperlativeAdjectives() {
           sizes="16x16"
         />
       </Head>
-
       <div className="superlative-adjectives">
         <div className={styles.page_title}>
           <h1>Superlative Adjectives</h1>
@@ -159,117 +363,13 @@ export default function SuperlativeAdjectives() {
             <li>much → most</li>
           </ul>
         </div>
-        <Quiz
-          title="Take a Quiz!"
-          questions={[
-            {
-              title: "Nia is the ___________________ (old) daughter.",
-              possibleAnswersAndExplanation: [
-                { title: "oldest", correctAnswer: true },
-                { title: "most old" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Old has one syllable so you can add est for the superlative form.",
-            },
-            {
-              title:
-                "His car is the _______________ (comfortable) car I’ve ever driven.",
-              possibleAnswersAndExplanation: [
-                { title: "most comfortable", correctAnswer: true },
-                { title: "comfortableist" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Comfortable has three syllables so you can't add est for the superlative form.",
-            },
-            {
-              title: "Bia is the _______________ (quiet) person I've ever met.",
-              possibleAnswersAndExplanation: [
-                { title: "quietest", correctAnswer: true },
-                { title: "quitest" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Quiet is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
-            },
-            {
-              title: "This restaurant has the ________________ food",
-              possibleAnswersAndExplanation: [
-                { title: "deliciouser" },
-                { title: "most delicious", correctAnswer: true },
-              ],
-              userAnswer: "",
-              explanation:
-                "Delicious has three syllables so you can't add est for the superlative form.",
-            },
-            {
-              title: "My math class is my ______________ (hard) class. ",
-              possibleAnswersAndExplanation: [
-                { title: "hardest", correctAnswer: true },
-                { title: "most hardest" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Hard has one syllable so you can add est for the superlative form.",
-            },
-            {
-              title:
-                "The roads in this neighborhood are the _______________ (narrow) in the city.",
-              possibleAnswersAndExplanation: [
-                { title: "narroest" },
-                { title: "narrowest", correctAnswer: true },
-              ],
-              userAnswer: "",
-              explanation:
-                "Narrow is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
-            },
-            {
-              title: "Malcolm is the _______________ (busy) man in his office.",
-              possibleAnswersAndExplanation: [
-                { title: "busiest", correctAnswer: true },
-                { title: "busyest" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Busy is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
-            },
-            {
-              title:
-                "Pigs are the ________________________(intelligent) farm animals.",
-              possibleAnswersAndExplanation: [
-                { title: "most intelligent", correctAnswer: true },
-                { title: "intelligentest" },
-              ],
-              userAnswer: "",
-              explanation:
-                "Intelligent has three syllables so you can't add est for the superlative form.",
-            },
-            {
-              title:
-                "Demetrius is the ________________ (ambitious) director at his production company.",
-              possibleAnswersAndExplanation: [
-                { title: "ambitiousest" },
-                { title: "most ambitious", correctAnswer: true },
-              ],
-              userAnswer: "",
-              explanation:
-                "Ambitious has three syllables so you can't add est for the superlative form.",
-            },
-            {
-              title:
-                "My dog is the  ________________  (cute) in my neighborhood.",
-              possibleAnswersAndExplanation: [
-                { title: "most cutest" },
-                { title: "cutest", correctAnswer: true },
-              ],
-              userAnswer: "",
-              explanation:
-                "Cute has one syllable so you can add est for the superlative form.",
-            },
-          ]}
-        ></Quiz>
       </div>
+      <Quiz
+        title="Take a Quiz!"
+        questions={quiz}
+        callback={handleRandomQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
+      ></Quiz>
     </>
   );
 }
