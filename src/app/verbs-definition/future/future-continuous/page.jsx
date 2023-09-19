@@ -138,6 +138,7 @@ export default async function FutureContinuous() {
               { title: "b. will be clean" },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "Next month they _______________ (complain) about this.",
@@ -146,6 +147,7 @@ export default async function FutureContinuous() {
               { title: "b. will be complaining", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title:
@@ -155,6 +157,7 @@ export default async function FutureContinuous() {
               { title: "b. will still be rising", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "I ______________ (see) Marcus at the conference next week.",
@@ -163,6 +166,7 @@ export default async function FutureContinuous() {
               { title: "b. will be seeing", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "When he's in Morocco he _____________ with friends.",
@@ -171,6 +175,7 @@ export default async function FutureContinuous() {
               { title: "b. will be staying", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "Miguel _____________ (compete) in a marathon next month.",
@@ -179,6 +184,7 @@ export default async function FutureContinuous() {
               { title: "b. will be compete" },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "I ___________  with Nia this evening so I can talk to her.",
@@ -187,6 +193,7 @@ export default async function FutureContinuous() {
               { title: "b. will be eating", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "Demarcus _______________ (run) in the race.",
@@ -203,6 +210,7 @@ export default async function FutureContinuous() {
               { title: "b. will be sleeping", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
           {
             title: "I _____________ (play) hockey in the afternoon tomorrow.",
@@ -211,6 +219,7 @@ export default async function FutureContinuous() {
               { title: "b. will be playing", correctAnswer: true },
             ],
             userAnswer: "",
+            explanation: "With the continuous form you need an ing ending.",
           },
         ]}
       ></Quiz>
