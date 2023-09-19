@@ -1,14 +1,217 @@
+"use client";
+import { useState } from "react";
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
-
 //DONE
 
-export default function SayVersusTell() {
+export default function TellVersusSay() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([
+    {
+      title: "Martin  _____________ that he would love to do it.",
+      possibleAnswersAndExplanation: [
+        { title: "said", correctAnswer: true },
+        { title: "told" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "She ______________ him a lie. ",
+      possibleAnswersAndExplanation: [
+        { title: "told" },
+        { title: "said", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title:
+        "They  _____________ her that they were going to leave Friday.",
+      possibleAnswersAndExplanation: [
+        { title: "said" },
+        { title: "told", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "Demarcus  ___________ us that he didn't want to go out.",
+      possibleAnswersAndExplanation: [
+        { title: "said" },
+        { title: "told", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "Maria _________ that she's not feeling well. ",
+      possibleAnswersAndExplanation: [
+        { title: "said", correctAnswer: true },
+        { title: "told" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "She  __________ her mother that she wanted to quit.",
+      possibleAnswersAndExplanation: [
+        { title: "said" },
+        { title: "told", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+  
+    {
+      title: "Maria  _____________ that she would join us after work.",
+      possibleAnswersAndExplanation: [
+        { title: "said", correctAnswer: true },
+        { title: "told" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title:
+        "Maria  _____________ that she's going to talk with her friend about it.",
+      possibleAnswersAndExplanation: [
+        { title: "said", correctAnswer: true },
+        { title: "told" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title: "Dan ____________ the best stories.",
+      possibleAnswersAndExplanation: [
+        { title: "tells", correctAnswer: true },
+        { title: "say" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title:
+        "Najha _____________ that she was going to stop helping us.",
+      possibleAnswersAndExplanation: [
+        { title: "said", correctAnswer: true },
+        { title: "told" },
+      ],
+      userAnswer: "",
+    },
+    {
+      title:
+        "They _________ that they didn't want to have the meeting Friday.",
+      possibleAnswersAndExplanation: [
+        { title: "said" },
+        { title: "told", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+  ]);
+
+  const handleRandomQuestions = () => {
+    setQuiz([
+      {
+        title: "The team __________ celebrating their victory.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Team is considered a collective noun.",
+      },
+      {
+        title: "The committee __________ discussing the new proposal.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Committee is considered a collective noun.",
+      },
+      {
+        title: "The people at the store __________ very angry.",
+        possibleAnswersAndExplanation: [
+          { title: "are", correctAnswer: true },
+          { title: "is" },
+        ],
+        userAnswer: "",
+        explanation: "People is not considered a collective noun.",
+      },
+      {
+        title: "The jury __________ reached a unanimous decision.",
+        possibleAnswersAndExplanation: [
+          { title: "has", correctAnswer: true },
+          { title: "have" },
+        ],
+        userAnswer: "",
+        explanation: "Jury is considered a collective noun.",
+      },
+      {
+        title: "The swarm of bees __________ buzzing around the flowers.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Swarm is considered a collective noun.",
+      },
+      {
+        title: "The orchestra __________ performing at the concert.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Orchestra is considered a collective noun.",
+      },
+      {
+        title: "The students ___________ not in the class.",
+        possibleAnswersAndExplanation: [
+          { title: "were", correctAnswer: true },
+          { title: "was" },
+        ],
+        userAnswer: "",
+        explanation: "Students is not considered a collective noun.",
+      },
+      {
+        title: "His family __________ planning a reunion.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Family is considered a collective noun.",
+      },
+      {
+        title: "Her staff __________ working hard this week.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Staff is considered a collective noun.",
+      },
+      {
+        title: "The audience __________ clapping.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "Audience is considered a collective noun.",
+      },
+      {
+        title: "The school of fish __________ swimming in the ocean.",
+        possibleAnswersAndExplanation: [
+          { title: "is", correctAnswer: true },
+          { title: "are" },
+        ],
+        userAnswer: "",
+        explanation: "School is considered a collective noun.",
+      },
+    ]);
+    setShouldShowNewQuestionsBtn(false);
+  };
+
   return (
     <>
-  
-      <div className={styles.page_body}>
+     <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Tell versus Say</h1>
         </div>
@@ -69,105 +272,31 @@ export default function SayVersusTell() {
           <li>tell (somebody) a story</li>
         </ul>
 
-        <Quiz
-          title="Quiz"
-          questions={[
-            {
-              title: "Martin  _____________ that he would love to do it.",
-              possibleAnswersAndExplanation: [
-                { title: "said", correctAnswer: true },
-                { title: "told" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title: "She ______________ him a lie. ",
-              possibleAnswersAndExplanation: [
-                { title: "told" },
-                { title: "said", correctAnswer: true },
-              ],
-              userAnswer: "",
-            },
-            {
-              title:
-                "They  _____________ her that they were going to leave Friday.",
-              possibleAnswersAndExplanation: [
-                { title: "said" },
-                { title: "told", correctAnswer: true },
-              ],
-              userAnswer: "",
-            },
-            {
-              title: "Demarcus  ___________ us that he didn't want to go out.",
-              possibleAnswersAndExplanation: [
-                { title: "said" },
-                { title: "told", correctAnswer: true },
-              ],
-              userAnswer: "",
-            },
-            {
-              title: "Maria _________ that she's not feeling well. ",
-              possibleAnswersAndExplanation: [
-                { title: "said", correctAnswer: true },
-                { title: "told" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title: "She  __________ her mother that she wanted to quit.",
-              possibleAnswersAndExplanation: [
-                { title: "said" },
-                { title: "told", correctAnswer: true },
-              ],
-              userAnswer: "",
-            },
-
-            {
-              title: "Maria  _____________ that she would join us after work.",
-              possibleAnswersAndExplanation: [
-                { title: "said", correctAnswer: true },
-                { title: "told" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title:
-                "Maria  _____________ that she's going to talk with her friend about it.",
-              possibleAnswersAndExplanation: [
-                { title: "said", correctAnswer: true },
-                { title: "told" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title: "Dan ____________ the best stories.",
-              possibleAnswersAndExplanation: [
-                { title: "tells", correctAnswer: true },
-                { title: "say" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title:
-                "Najha _____________ that she was going to stop helping us.",
-              possibleAnswersAndExplanation: [
-                { title: "said", correctAnswer: true },
-                { title: "told" },
-              ],
-              userAnswer: "",
-            },
-            {
-              title:
-                "They _________ that they didn't want to have the meeting Friday.",
-              possibleAnswersAndExplanation: [
-                { title: "said" },
-                { title: "told", correctAnswer: true },
-              ],
-              userAnswer: "",
-            },
-          ]}
-        ></Quiz>
+      
       </div>
+      <Quiz
+        title="Take a Quiz!"
+        questions={quiz}
+        callback={handleRandomQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
+      ></Quiz>
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

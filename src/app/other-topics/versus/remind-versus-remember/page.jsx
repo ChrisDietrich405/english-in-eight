@@ -8,7 +8,7 @@ import Head from "next/head";
 
 import styles from "../../../styles/content-page.module.css";
 
-export default function Collective() {
+export default function RememberVersusRemind() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
   const [quiz, setQuiz] = useState([
