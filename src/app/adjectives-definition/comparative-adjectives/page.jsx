@@ -115,6 +115,8 @@ export default function ComparativeAdjectives() {
                 { title: "interestinger" },
               ],
               userAnswer: "",
+              explanation:
+                "Interesting is three syllables so you must use more.",
             },
 
             {
@@ -124,6 +126,8 @@ export default function ComparativeAdjectives() {
                 { title: "more old" },
               ],
               userAnswer: "",
+              explanation:
+                "Old is one syllable so you can add er to form the comparative.",
             },
             {
               title: "She is ______________(quiet) than her brother.",
@@ -132,6 +136,7 @@ export default function ComparativeAdjectives() {
                 { title: "quieter", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Quiet doesn't have any spelling changes",
             },
             {
               title: "Buses are ________________ (large) than cars.",
@@ -140,6 +145,7 @@ export default function ComparativeAdjectives() {
                 { title: "larger", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Large doesn't have any spelling changes",
             },
 
             {
@@ -150,6 +156,7 @@ export default function ComparativeAdjectives() {
                 { title: "narroest" },
               ],
               userAnswer: "",
+              explanation: "Narrow is a two syllable adjective that you can add er for the comparative form."
             },
             {
               title: "Dogs are _______________ (social) than cats",
@@ -158,6 +165,7 @@ export default function ComparativeAdjectives() {
                 { title: "socialer" },
               ],
               userAnswer: "",
+              explanation: "Social is a two syllable adjective that you can add er for the comparative form."
             },
             {
               title: "Malcolm is _______________ (busy) than his brother.",
@@ -166,6 +174,7 @@ export default function ComparativeAdjectives() {
                 { title: "busyer" },
               ],
               userAnswer: "",
+              explanation: "Busy is a two syllable adjective that you can add er for the comparative form and has a spelling change."
             },
             {
               title:
@@ -175,6 +184,7 @@ export default function ComparativeAdjectives() {
                 { title: "more ambitious", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Ambitious is a three syllable adjective so you can't use more er the comparative form."
             },
             {
               title:
@@ -184,6 +194,7 @@ export default function ComparativeAdjectives() {
                 { title: "more colorful", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Colorful is a three syllable adjective so you can't use more er the comparative form."
             },
             {
               title: "Her car is _______________ (comfortable) than my car.",
@@ -192,6 +203,7 @@ export default function ComparativeAdjectives() {
                 { title: "comfortabler" },
               ],
               userAnswer: "",
+              explanation: "Comfortable is a three syllable adjective so you can't use more er the comparative form."
             },
           ]}
         ></Quiz>

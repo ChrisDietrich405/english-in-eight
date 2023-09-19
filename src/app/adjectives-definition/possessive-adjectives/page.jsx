@@ -105,6 +105,7 @@ export default function PossessiveAdjectives() {
                 { title: "their" },
               ],
               userAnswer: "",
+              explanation: "Her is the possessive adjective for she",
             },
             {
               title: "Where is (they) ________________  professor?",
@@ -113,6 +114,7 @@ export default function PossessiveAdjectives() {
                 { title: "their", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Their is the possessive adjective for they.",
             },
             {
               title: "He goes to school with (he) _____________ cousin.",
@@ -121,6 +123,7 @@ export default function PossessiveAdjectives() {
                 { title: "his", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "His is the possessive adjective for he.",
             },
 
             {
@@ -130,6 +133,7 @@ export default function PossessiveAdjectives() {
                 { title: "My" },
               ],
               userAnswer: "",
+              explanation: "Your is the possessive adjective for you.",
             },
             {
               title: "(He)  ________________favorite hobby is running.",
@@ -138,6 +142,7 @@ export default function PossessiveAdjectives() {
                 { title: "His", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "His is the possessive adjective for he.",
             },
             {
               title: "Where is (I) _______________ phone?",
@@ -146,6 +151,7 @@ export default function PossessiveAdjectives() {
                 { title: "your" },
               ],
               userAnswer: "",
+              explanation: "Me is the possessive adjective for I.",
             },
             {
               title: "(I) _____________ husband is not feeling well.",
@@ -154,6 +160,7 @@ export default function PossessiveAdjectives() {
                 { title: "Her" },
               ],
               userAnswer: "",
+              explanation: "My is the possessive adjective for I.",
             },
             {
               title:
@@ -163,6 +170,7 @@ export default function PossessiveAdjectives() {
                 { title: "their" },
               ],
               userAnswer: "",
+              explanation: "Their is the possessive adjective for they.",
             },
             {
               title: "(They) ________________ mother works in a restaurant.",
@@ -171,6 +179,7 @@ export default function PossessiveAdjectives() {
                 { title: "Their", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Their is the possessive adjective for they.",
             },
 
             {
@@ -180,6 +189,7 @@ export default function PossessiveAdjectives() {
                 { title: "His", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation: "Their is the possessive adjective for they.",
             },
           ]}
         ></Quiz>

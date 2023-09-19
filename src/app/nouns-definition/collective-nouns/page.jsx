@@ -255,7 +255,7 @@ export default function Collective() {
         </ul>
       </div>
       <Quiz
-        // explanation={explanation}
+        
         title="Take a Quiz!"
         questions={quiz}
         callback={handleRandomQuestions}

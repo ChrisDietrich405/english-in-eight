@@ -169,6 +169,8 @@ export default function SuperlativeAdjectives() {
                 { title: "most old" },
               ],
               userAnswer: "",
+              explanation:
+                "Old has one syllable so you can add est for the superlative form.",
             },
             {
               title:
@@ -178,6 +180,8 @@ export default function SuperlativeAdjectives() {
                 { title: "comfortableist" },
               ],
               userAnswer: "",
+              explanation:
+                "Comfortable has three syllables so you can't add est for the superlative form.",
             },
             {
               title: "Bia is the _______________ (quiet) person I've ever met.",
@@ -186,6 +190,8 @@ export default function SuperlativeAdjectives() {
                 { title: "quitest" },
               ],
               userAnswer: "",
+              explanation:
+                "Quiet is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
             },
             {
               title: "This restaurant has the ________________ food",
@@ -194,6 +200,8 @@ export default function SuperlativeAdjectives() {
                 { title: "most delicious", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation:
+                "Delicious has three syllables so you can't add est for the superlative form.",
             },
             {
               title: "My math class is my ______________ (hard) class. ",
@@ -202,6 +210,8 @@ export default function SuperlativeAdjectives() {
                 { title: "most hardest" },
               ],
               userAnswer: "",
+              explanation:
+                "Hard has one syllable so you can add est for the superlative form.",
             },
             {
               title:
@@ -211,6 +221,8 @@ export default function SuperlativeAdjectives() {
                 { title: "narrowest", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation:
+                "Narrow is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
             },
             {
               title: "Malcolm is the _______________ (busy) man in his office.",
@@ -219,6 +231,8 @@ export default function SuperlativeAdjectives() {
                 { title: "busyest" },
               ],
               userAnswer: "",
+              explanation:
+                "Busy is a two syllable adjective so you can add est for the superlative form and it doesn't have a spelling change.",
             },
             {
               title:
@@ -228,6 +242,8 @@ export default function SuperlativeAdjectives() {
                 { title: "intelligentest" },
               ],
               userAnswer: "",
+              explanation:
+                "Intelligent has three syllables so you can't add est for the superlative form.",
             },
             {
               title:
@@ -237,6 +253,8 @@ export default function SuperlativeAdjectives() {
                 { title: "most ambitious", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation:
+                "Ambitious has three syllables so you can't add est for the superlative form.",
             },
             {
               title:
@@ -246,6 +264,8 @@ export default function SuperlativeAdjectives() {
                 { title: "cutest", correctAnswer: true },
               ],
               userAnswer: "",
+              explanation:
+                "Cute has one syllable so you can add est for the superlative form.",
             },
           ]}
         ></Quiz>
