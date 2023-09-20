@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Quiz from "../../../components/Quiz";
 
@@ -8,7 +8,9 @@ import styles from "../../styles/content-page.module.css";
 export default function PossessiveAdjectives() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
-  const [quiz, setQuiz] = useState([
+  const [quiz, setQuiz] = useState([]);
+
+  const questionsArray = [
     {
       title: "Nia is the ___________________ (old) daughter.",
       possibleAnswersAndExplanation: [
@@ -112,103 +114,108 @@ export default function PossessiveAdjectives() {
       explanation:
         "Cute has one syllable so you can add est for the superlative form.",
     },
-  ]);
+    {
+      title: "She shares (they) ________________ passion for cooking.",
+      possibleAnswersAndExplanation: [
+        { title: "my" },
+        { title: "their", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Their is the possessive adjective for they.",
+    },
+    {
+      title: "(We) _______________ cat is very playful.",
+      possibleAnswersAndExplanation: [
+        { title: "His" },
+        { title: "Our", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Our is the possessive adjective for we.",
+    },
+    {
+      title: "Lisa and Mark enjoy (she) _____________ company.",
+      possibleAnswersAndExplanation: [
+        { title: "our" },
+        { title: "her", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Her is the possessive adjective for she.",
+    },
+    {
+      title: "The children found (he) _____________ lost toy.",
+      possibleAnswersAndExplanation: [
+        { title: "my" },
+        { title: "his", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "His is the possessive adjective for he.",
+    },
+    {
+      title: "(You) _______________ friends are very kind.",
+      possibleAnswersAndExplanation: [
+        { title: "Their", correctAnswer: true },
+        { title: "My" },
+      ],
+      userAnswer: "",
+      explanation: "Their is the possessive adjective for you.",
+    },
+    {
+      title: "We often visit (I) _______________ grandparents.",
+      possibleAnswersAndExplanation: [
+        { title: "our", correctAnswer: true },
+        { title: "her" },
+      ],
+      userAnswer: "",
+      explanation: "Our is the possessive adjective for we.",
+    },
+    {
+      title: "(She) _______________ sister is a talented musician.",
+      possibleAnswersAndExplanation: [
+        { title: "My" },
+        { title: "Her", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Her is the possessive adjective for she.",
+    },
+    {
+      title:
+        "The students admired (he) _____________ dedication to their education.",
+      possibleAnswersAndExplanation: [
+        { title: "their" },
+        { title: "his", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "His is the possessive adjective for he.",
+    },
+    {
+      title: "(You) _______________ book is on the table.",
+      possibleAnswersAndExplanation: [
+        { title: "Her" },
+        { title: "Your", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Your is the possessive adjective for you.",
+    },
+    {
+      title: "David mentioned (we) _____________ favorite movie.",
+      possibleAnswersAndExplanation: [
+        { title: "his" },
+        { title: "our", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Our is the possessive adjective for we.",
+    },
+  ];
 
-  const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        title: "She shares (they) ________________ passion for cooking.",
-        possibleAnswersAndExplanation: [
-          { title: "my" },
-          { title: "their", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Their is the possessive adjective for they.",
-      },
-      {
-        title: "(We) _______________ cat is very playful.",
-        possibleAnswersAndExplanation: [
-          { title: "His" },
-          { title: "Our", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Our is the possessive adjective for we.",
-      },
-      {
-        title: "Lisa and Mark enjoy (she) _____________ company.",
-        possibleAnswersAndExplanation: [
-          { title: "our" },
-          { title: "her", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Her is the possessive adjective for she.",
-      },
-      {
-        title: "The children found (he) _____________ lost toy.",
-        possibleAnswersAndExplanation: [
-          { title: "my" },
-          { title: "his", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "His is the possessive adjective for he.",
-      },
-      {
-        title: "(You) _______________ friends are very kind.",
-        possibleAnswersAndExplanation: [
-          { title: "Their", correctAnswer: true },
-          { title: "My" },
-        ],
-        userAnswer: "",
-        explanation: "Their is the possessive adjective for you.",
-      },
-      {
-        title: "We often visit (I) _______________ grandparents.",
-        possibleAnswersAndExplanation: [
-          { title: "our", correctAnswer: true },
-          { title: "her" },
-        ],
-        userAnswer: "",
-        explanation: "Our is the possessive adjective for we.",
-      },
-      {
-        title: "(She) _______________ sister is a talented musician.",
-        possibleAnswersAndExplanation: [
-          { title: "My" },
-          { title: "Her", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Her is the possessive adjective for she.",
-      },
-      {
-        title:
-          "The students admired (he) _____________ dedication to their education.",
-        possibleAnswersAndExplanation: [
-          { title: "their" },
-          { title: "his", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "His is the possessive adjective for he.",
-      },
-      {
-        title: "(You) _______________ book is on the table.",
-        possibleAnswersAndExplanation: [
-          { title: "Her" },
-          { title: "Your", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Your is the possessive adjective for you.",
-      },
-      {
-        title: "David mentioned (we) _____________ favorite movie.",
-        possibleAnswersAndExplanation: [
-          { title: "his" },
-          { title: "our", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Our is the possessive adjective for we.",
-      },
-    ]);
-    setShouldShowNewQuestionsBtn(false);
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
   };
 
   return (
@@ -365,9 +372,10 @@ export default function PossessiveAdjectives() {
         </div>
       </div>
       <Quiz
+        setQuiz={setQuiz}
         title="Take a Quiz!"
         questions={quiz}
-        callback={handleRandomQuestions}
+        secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>

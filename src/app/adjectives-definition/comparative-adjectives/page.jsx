@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Quiz from "../../../components/Quiz";
 
 import styles from "../../styles/content-page.module.css";
@@ -7,7 +7,9 @@ import styles from "../../styles/content-page.module.css";
 export default function ComparativeAdjectives() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
-  const [quiz, setQuiz] = useState([
+  const [quiz, setQuiz] = useState([]);
+
+  const questionsArray = [
     {
       title:
         "My Latin class is ______________ (interesting) than my English class. ",
@@ -109,111 +111,124 @@ export default function ComparativeAdjectives() {
       explanation:
         "Comfortable is a three syllable adjective so you can't use more er the comparative form.",
     },
-  ]);
+    {
+      title: "The movie was ______________ (exciting) than I expected.",
+      possibleAnswersAndExplanation: [
+        { title: "more exciting", correctAnswer: true },
+        { title: "excitinger" },
+      ],
+      userAnswer: "",
+      explanation: "Exciting is three syllables, so you must use 'more.'",
+    },
 
-  const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        title: "The team __________ celebrating their victory.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Team is considered a collective noun.",
-      },
-      {
-        title: "The committee __________ discussing the new proposal.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Committee is considered a collective noun.",
-      },
-      {
-        title: "The people at the store __________ very angry.",
-        possibleAnswersAndExplanation: [
-          { title: "are", correctAnswer: true },
-          { title: "is" },
-        ],
-        userAnswer: "",
-        explanation: "People is not considered a collective noun.",
-      },
-      {
-        title: "The jury __________ reached a unanimous decision.",
-        possibleAnswersAndExplanation: [
-          { title: "has", correctAnswer: true },
-          { title: "have" },
-        ],
-        userAnswer: "",
-        explanation: "Jury is considered a collective noun.",
-      },
-      {
-        title: "The swarm of bees __________ buzzing around the flowers.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Swarm is considered a collective noun.",
-      },
-      {
-        title: "The orchestra __________ performing at the concert.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Orchestra is considered a collective noun.",
-      },
-      {
-        title: "The students ___________ not in the class.",
-        possibleAnswersAndExplanation: [
-          { title: "were", correctAnswer: true },
-          { title: "was" },
-        ],
-        userAnswer: "",
-        explanation: "Students is not considered a collective noun.",
-      },
-      {
-        title: "His family __________ planning a reunion.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Family is considered a collective noun.",
-      },
-      {
-        title: "Her staff __________ working hard this week.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Staff is considered a collective noun.",
-      },
-      {
-        title: "The audience __________ clapping.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Audience is considered a collective noun.",
-      },
-      {
-        title: "The school of fish __________ swimming in the ocean.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "School is considered a collective noun.",
-      },
-    ]);
-    setShouldShowNewQuestionsBtn(false);
+    {
+      title: "Sophia is ______________ (short) than her sister.",
+      possibleAnswersAndExplanation: [
+        { title: "shorter", correctAnswer: true },
+        { title: "more short" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Short is one syllable, so you can add er. More short isn't technically incorrect, but it sounds strange",
+    },
+
+    {
+      title: "He is eating _________ (little) food.",
+      possibleAnswersAndExplanation: [
+        { title: "less", correctAnswer: true },
+        { title: "littler" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Little is an irregular adjective. Less is the comparative form and you can't say more good",
+    },
+
+    {
+      title:
+        "This book is ______________ (interesting) than the one I read last week.",
+      possibleAnswersAndExplanation: [
+        { title: "more interesting", correctAnswer: true },
+        { title: "interestinger" },
+      ],
+      userAnswer: "",
+      explanation: "Interesting is three syllables, so you must use 'more.'",
+    },
+
+    {
+      title: "Macs are ______________ (good) than Lenovo.",
+      possibleAnswersAndExplanation: [
+        { title: "better", correctAnswer: true },
+        { title: "more good" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Good is an irregular adjective. Better is the comparative form and you can't say more good",
+    },
+
+    {
+      title: "Julia is ______________ (tall) than her brother.",
+      possibleAnswersAndExplanation: [
+        { title: "taller", correctAnswer: true },
+        { title: "more tall" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Tall is one syllable, so you can add er. More tall isn't technically incorrect, but it sounds strange",
+    },
+
+    {
+      title: "The city is ______________ (crowded) during rush hour.",
+      possibleAnswersAndExplanation: [
+        { title: "more crowded", correctAnswer: true },
+        { title: "crowdeder" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Crowded is a two syllable adjective that can't use er at the end in the comparative.",
+    },
+
+    {
+      title: "The test was ______________ (difficult) than I expected.",
+      possibleAnswersAndExplanation: [
+        { title: "more difficult", correctAnswer: true },
+        { title: "difficulter" },
+      ],
+      userAnswer: "",
+      explanation: "Difficult is three syllables, so you must use 'more.'",
+    },
+
+    {
+      title: "Jazz music is ______________ (relaxing) than rock.",
+      possibleAnswersAndExplanation: [
+        { title: "more relaxing", correctAnswer: true },
+        { title: "relaxinger" },
+      ],
+      userAnswer: "",
+      explanation: "Relaxing is three syllables, so you must use 'more.'",
+    },
+
+    {
+      title:
+        "The new restaurant is ______________ (cheap) than the one we used to go to.",
+      possibleAnswersAndExplanation: [
+        { title: "cheaper", correctAnswer: true },
+        { title: "more cheap" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Cheap is one syllable, so you can add er. More cheap isn't technically incorrect, but it sounds strange",
+    },
+  ];
+
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
   };
 
   return (
@@ -314,9 +329,10 @@ export default function ComparativeAdjectives() {
         </ul>
       </div>
       <Quiz
+        setQuiz={setQuiz}
         title="Take a Quiz!"
         questions={quiz}
-        callback={handleRandomQuestions}
+        secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>

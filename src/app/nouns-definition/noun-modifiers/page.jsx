@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Quiz from "../../../components/Quiz";
 import Head from "next/head";
 
@@ -9,7 +9,9 @@ import styles from "../../styles/content-page.module.css";
 export default function NounModifiers() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
-  const [quiz, setQuiz] = useState([
+  const [quiz, setQuiz] = useState([]);
+
+  const questionsArray = [
     {
       title: "It's a door made of metal. It's a _____________.",
       possibleAnswersAndExplanation: [
@@ -101,31 +103,38 @@ export default function NounModifiers() {
       userAnswer: "",
       explanation: "Swimming is a noun modifier",
     },
-  ]);
+    {
+      title: "He uses it to cut paper. It's a _____________.",
+      possibleAnswersAndExplanation: [
+        { title: "paper cutter", correctAnswer: true },
+        { title: "cut paper" },
+      ],
+      userAnswer: "",
+      explanation: "Paper is a noun modifier",
+    },
+    {
+      title: "You sit on it in the park. It's a _____________.",
+      possibleAnswersAndExplanation: [
+        { title: "park bench", correctAnswer: true },
+        { title: "bench park" },
+      ],
+      userAnswer: "",
+      explanation: "Park is a noun modifier",
+    },
+  ];
 
-  const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        title: "He uses it to cut paper. It's a _____________.",
-        possibleAnswersAndExplanation: [
-          { title: "paper cutter", correctAnswer: true },
-          { title: "cut paper" },
-        ],
-        userAnswer: "",
-        explanation: "Paper is a noun modifier",
-      },
-      {
-        title: "You sit on it in the park. It's a _____________.",
-        possibleAnswersAndExplanation: [
-          { title: "park bench", correctAnswer: true },
-          { title: "bench park" },
-        ],
-        userAnswer: "",
-        explanation: "Park is a noun modifier",
-      },
-    ]);
-    setShouldShowNewQuestionsBtn(false);
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
   };
+
+
 
   return (
     <>
@@ -189,24 +198,14 @@ export default function NounModifiers() {
       </ul>
 
       <Quiz
+        setQuiz={setQuiz}
         title="Take a Quiz!"
         questions={quiz}
-        callback={handleRandomQuestions}
+        secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>
   );
 }
 
-//////////////////////////////////////////////////////////////////////
 
-// import Quiz from "../../../components/Quiz";
-// import styles from "../../styles/content-page.module.css";
-
-// //Done
-
-// export default function NounModifiers() {
-//   return (
-
-//   );
-// }

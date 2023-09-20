@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Quiz from "../../../components/Quiz";
 import Head from "next/head";
 //DONE))
@@ -10,7 +10,9 @@ import styles from "../../styles/content-page.module.css";
 export default function UncountableAndCountable() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
-  const [quiz, setQuiz] = useState([
+  const [quiz, setQuiz] = useState([]);
+
+  const questionsArray = [
     {
       title: "There _______ many beans in the soup.",
       possibleAnswersAndExplanation: [
@@ -110,116 +112,125 @@ export default function UncountableAndCountable() {
       userAnswer: "",
       explanation: "Juice is a liquid so it's considered an uncountable noun",
     },
-  ]);
+    {
+      title: "She bought _____ apples for the pie.",
+      possibleAnswersAndExplanation: [
+        { title: "a few" },
+        { title: "a little", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "You can count apples so they are considered a countable noun",
+    },
+    {
+      title: "There _________ three cats behind the house",
+      possibleAnswersAndExplanation: [
+        { title: "are", correctAnswer: true },
+        { title: "is" },
+      ],
+      userAnswer: "",
+      explanation: "You can count cats so they are considered a countable noun",
+    },
+
+    {
+      title: "How ________ water do you need for the recipe?",
+      possibleAnswersAndExplanation: [
+        { title: "much", correctAnswer: true },
+        { title: "many" },
+      ],
+      userAnswer: "",
+      explanation: "Water is a liquid so it's considered an uncountable noun",
+    },
+
+    {
+      title: "There _______ a lot of sugar in that cake.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Sugar doesn't have a shape so it's considered an uncountable noun",
+    },
+
+    {
+      title: "_____ there any apple juice left in the fridge?",
+      possibleAnswersAndExplanation: [
+        { title: "Are" },
+        { title: "Is", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Juice is a liquid so it's considered an uncountable noun",
+    },
+
+    {
+      title: "I need to buy _______ flour.",
+      possibleAnswersAndExplanation: [
+        { title: "a lot of", correctAnswer: true },
+        { title: "many" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Flour doesn't have a shape so it's considered an uncountable noun",
+    },
+
+    {
+      title: "How ________ tomatoes did you put in the soup?",
+      possibleAnswersAndExplanation: [
+        { title: "much" },
+        { title: "many", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "You can count tomatoes so they are considered a countable noun",
+    },
+
+    {
+      title: "There _______ a lot traffic on the road this morning.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation:
+        "Traffic doesn't have a shape so it's considered an uncountable noun",
+    },
+
+    {
+      title: "_____ there any time left before the meeting?",
+      possibleAnswersAndExplanation: [
+        { title: "Are" },
+        { title: "Is", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "Time is an abstract idea so it's considered an uncountable noun",
+    },
+
+    {
+      title: "How ________ hours of sleep did you get last night?",
+      possibleAnswersAndExplanation: [
+        { title: "much" },
+        { title: "many", correctAnswer: true },
+      ],
+      userAnswer: "",
+    },
+  ];
 
   const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        title: "She bought _____ apples for the pie.",
-        possibleAnswersAndExplanation: [
-          { title: "a few" },
-          { title: "a little", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation:
-          "You can count apples so they are considered a countable noun",
-      },
-      {
-        title: "There _________ three cats behind the house",
-        possibleAnswersAndExplanation: [
-          { title: "are", correctAnswer: true },
-          { title: "is" },
-        ],
-        userAnswer: "",
-        explanation:
-          "You can count cats so they are considered a countable noun",
-      },
-
-      {
-        title: "How ________ water do you need for the recipe?",
-        possibleAnswersAndExplanation: [
-          { title: "much", correctAnswer: true },
-          { title: "many" },
-        ],
-        userAnswer: "",
-        explanation: "Water is a liquid so it's considered an uncountable noun",
-      },
-
-      {
-        title: "There _______ a lot of sugar in that cake.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation:
-          "Sugar doesn't have a shape so it's considered an uncountable noun",
-      },
-
-      {
-        title: "_____ there any apple juice left in the fridge?",
-        possibleAnswersAndExplanation: [
-          { title: "Are" },
-          { title: "Is", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation: "Juice is a liquid so it's considered an uncountable noun",
-      },
-
-      {
-        title: "I need to buy _______ flour.",
-        possibleAnswersAndExplanation: [
-          { title: "a lot of", correctAnswer: true },
-          { title: "many" },
-        ],
-        userAnswer: "",
-        explanation:
-          "Flour doesn't have a shape so it's considered an uncountable noun",
-      },
-
-      {
-        title: "How ________ tomatoes did you put in the soup?",
-        possibleAnswersAndExplanation: [
-          { title: "much" },
-          { title: "many", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation:
-          "You can count tomatoes so they are considered a countable noun",
-      },
-
-      {
-        title: "There _______ a lot traffic on the road this morning.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation:
-          "Traffic doesn't have a shape so it's considered an uncountable noun",
-      },
-
-      {
-        title: "_____ there any time left before the meeting?",
-        possibleAnswersAndExplanation: [
-          { title: "Are" },
-          { title: "Is", correctAnswer: true },
-        ],
-        userAnswer: "",
-        explanation:
-          "Time is an abstract idea so it's considered an uncountable noun",
-      },
-
-      {
-        title: "How ________ hours of sleep did you get last night?",
-        possibleAnswersAndExplanation: [
-          { title: "much" },
-          { title: "many", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
-    ]);
+    setQuiz([]);
     setShouldShowNewQuestionsBtn(false);
+  };
+
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
   };
 
   return (
@@ -341,9 +352,10 @@ export default function UncountableAndCountable() {
         <br />
       </div>
       <Quiz
+        setQuiz={setQuiz}
         title="Take a Quiz!"
         questions={quiz}
-        callback={handleRandomQuestions}
+        secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>
