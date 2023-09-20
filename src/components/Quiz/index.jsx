@@ -174,7 +174,7 @@ export default function Quiz(props) {
     const nextSetOfQuestions = props.secondSetQuestions();
 
     // Update the quiz questions with the new set of questions
-    props.setQuiz([...props.questions, ...nextSetOfQuestions]);
+    props.setQuiz([...nextSetOfQuestions]);
 
     // Reset answers and submitted status
     setAnswers({});
