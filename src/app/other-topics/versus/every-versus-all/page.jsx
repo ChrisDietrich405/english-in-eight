@@ -9,7 +9,8 @@ export default function EveryVersusAll() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
   const [quiz, setQuiz] = useState([
-    {
+    { 
+      id: 1,
       title: "I emailed ______________ my colleagues.",
       possibleAnswersAndExplanation: [
         { title: "every" },
@@ -18,6 +19,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 2,
       title: "_________ the cars on the street have been vandalized.",
       possibleAnswersAndExplanation: [
         { title: "every" },
@@ -26,6 +28,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 3,
       title: "I see them ______________ couple of days.",
       possibleAnswersAndExplanation: [
         { title: "all" },
@@ -35,6 +38,7 @@ export default function EveryVersusAll() {
     },
 
     {
+      id: 4,
       title: "_________________ children need love.",
       possibleAnswersAndExplanation: [
         { title: "all", correctAnswer: true },
@@ -43,6 +47,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 5,
       title: " You don’t see deer __________ day.",
       possibleAnswersAndExplanation: [
         { title: "all" },
@@ -51,6 +56,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 6, 
       title: "She has invited ____________ her friends.",
       possibleAnswersAndExplanation: [
         { title: "all", correctAnswer: true },
@@ -59,6 +65,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 7, 
       title: "People should go to their doctor ______________ year.",
       possibleAnswersAndExplanation: [
         { title: "every", correctAnswer: true },
@@ -67,6 +74,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 8, 
       title: " I talk to my wife ____________ day.",
       possibleAnswersAndExplanation: [
         { title: "every", correctAnswer: true },
@@ -75,6 +83,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 9, 
       title: "She has worked for this company ___________ her life.",
       possibleAnswersAndExplanation: [
         { title: "every" },
@@ -83,6 +92,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
+      id: 10, 
       title: " I have washed _______________ the clothes except yours.",
       possibleAnswersAndExplanation: [
         { title: "all", correctAnswer: true },
@@ -95,6 +105,7 @@ export default function EveryVersusAll() {
   const handleRandomQuestions = () => {
     setQuiz([
       {
+        id: 11, 
         title: "The team __________ celebrating their victory.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -104,6 +115,7 @@ export default function EveryVersusAll() {
         explanation: "Team is considered a collective noun.",
       },
       {
+        id: 12, 
         title: "The committee __________ discussing the new proposal.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -113,6 +125,7 @@ export default function EveryVersusAll() {
         explanation: "Committee is considered a collective noun.",
       },
       {
+        id: 13, 
         title: "The people at the store __________ very angry.",
         possibleAnswersAndExplanation: [
           { title: "are", correctAnswer: true },
@@ -122,6 +135,7 @@ export default function EveryVersusAll() {
         explanation: "People is not considered a collective noun.",
       },
       {
+        id: 14, 
         title: "The jury __________ reached a unanimous decision.",
         possibleAnswersAndExplanation: [
           { title: "has", correctAnswer: true },
@@ -131,6 +145,7 @@ export default function EveryVersusAll() {
         explanation: "Jury is considered a collective noun.",
       },
       {
+        id: 15, 
         title: "The swarm of bees __________ buzzing around the flowers.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -140,6 +155,7 @@ export default function EveryVersusAll() {
         explanation: "Swarm is considered a collective noun.",
       },
       {
+        id: 16, 
         title: "The orchestra __________ performing at the concert.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -149,6 +165,7 @@ export default function EveryVersusAll() {
         explanation: "Orchestra is considered a collective noun.",
       },
       {
+        id: 17, 
         title: "The students ___________ not in the class.",
         possibleAnswersAndExplanation: [
           { title: "were", correctAnswer: true },
@@ -158,6 +175,7 @@ export default function EveryVersusAll() {
         explanation: "Students is not considered a collective noun.",
       },
       {
+        id: 17, 
         title: "His family __________ planning a reunion.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -167,6 +185,7 @@ export default function EveryVersusAll() {
         explanation: "Family is considered a collective noun.",
       },
       {
+        id: 18, 
         title: "Her staff __________ working hard this week.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -176,6 +195,7 @@ export default function EveryVersusAll() {
         explanation: "Staff is considered a collective noun.",
       },
       {
+        id: 19, 
         title: "The audience __________ clapping.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },
@@ -185,6 +205,7 @@ export default function EveryVersusAll() {
         explanation: "Audience is considered a collective noun.",
       },
       {
+        id: 20, 
         title: "The school of fish __________ swimming in the ocean.",
         possibleAnswersAndExplanation: [
           { title: "is", correctAnswer: true },

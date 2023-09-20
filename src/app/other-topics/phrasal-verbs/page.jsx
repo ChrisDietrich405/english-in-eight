@@ -18,8 +18,8 @@ export default function PhrasalVerbs() {
       <Card style={{ padding: "16px", marginBottom: "20px" }}>
         <div className={styles.content_wrapper}>
           <Image
-            height={200}
-            width={220}
+            height={220}
+            width={275}
             src="/break-down.jpg"
             alt="Speak versus talk"
           />
@@ -35,7 +35,7 @@ export default function PhrasalVerbs() {
         <div className={styles.content_wrapper}>
           <Image
             height={200}
-            width={300}
+            width={400}
             src="/fall-for.jpg"
             alt="Speak versus talk"
           />

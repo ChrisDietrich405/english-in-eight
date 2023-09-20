@@ -11,7 +11,7 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import DropdownPOC from "../DropdownPOC";
+import Dropdown from "../Dropdown";
 
 import styles from "../Navbar/styles.module.css";
 
@@ -109,7 +109,7 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <DropdownPOC dropdownProps={dropdownProps} />
+        <Dropdown dropdownProps={dropdownProps} />
       </StyledMenu>
     </>
   );

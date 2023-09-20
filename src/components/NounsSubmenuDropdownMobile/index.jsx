@@ -59,22 +59,26 @@ const StyledMenu = styled((props) => (
 }));
 
 export default function CustomizedMenus() {
-  const dropdownProps = [
+  const submenuList = [
     {
-      title: "Verb Definition",
-      link: "/verbs-definition/home",
+      title: "Noun Definition",
+      link: "/nouns-definition",
     },
     {
-      title: "Present Tense Verbs",
-      link: "/verbs-definition/present-tense",
+      title: " Uncountable & Countable Nouns",
+      link: "/nouns-definition/uncountable-countable-nouns",
     },
     {
-      title: "Past Tense Verbs",
-      link: "/verbs-definition/past-tense",
+      title: " Collective Nouns",
+      link: "/nouns-definition/collective-nouns",
     },
     {
-      title: "Future Tense Verbs",
-      link: "/verbs-definition/future",
+      title: "Noun Modifiers",
+      link: "/nouns-definition/noun-modifiers",
+    },
+    {
+      title: " Possessive Pronouns",
+      link: "/nouns-definition/possessive-pronouns",
     },
   ];
 
@@ -90,15 +94,14 @@ export default function CustomizedMenus() {
   return (
     <>
       <div
-        id="demo-customized-button"
-        aria-controls={open ? "demo-customized-menu" : undefined}
+        aria-controls={open && "demo-customized-menu"}
         aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
+        aria-expanded={open ? "true" : ""}
         variant="contained"
         disableElevation
         onClick={handleClick}
       >
-        Verbs
+        Nouns
         <KeyboardArrowDownIcon />
       </div>
       <StyledMenu
@@ -110,30 +113,10 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <Dropdown dropdownProps={dropdownProps} />
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition">
-            {" "}
-            Verb Definition
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/present-tense">
-            Present Tense Verbs
-          </Link>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/past-tense">
-            {" "}
-            Past Tense Verbs
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/future">
-            Future Tense Verbs
-          </Link>
-        </MenuItem> */}
+        {/* <Dropdown submenuList={submenuList} /> */}
+        {submenuList.map(({ link, title }) => {
+          return <Link href={link}>{title}</Link>;
+        })}
       </StyledMenu>
     </>
   );
