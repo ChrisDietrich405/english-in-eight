@@ -1,188 +1,307 @@
+"use client";
+import { useState, useEffect } from "react";
+import Head from "next/head";
 import Quiz from "@/src/components/Quiz";
-//DONE
 
 import styles from "../../../styles/content-page.module.css";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/future-perfect"; // Replace with the correct endpoint
+export default function FuturePerfect() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([]);
 
-const fullUrl = baseUrl + endpoint;
+  const questionsArray = [
+    {
+      title: "The tree _________________ by then.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have grown", correctAnswer: true },
+        { title: "b. will have grew" },
+      ],
+      userAnswer: "",
+      explanation: "Grown is the past participle of grow.",
+    },
+    {
+      title: "She ______________ (sleep) eight hours.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have slept", correctAnswer: true },
+        { title: "b. will have sleep" },
+      ],
+      userAnswer: "",
+      explanation: "Slept is the past participle of sleep.",
+    },
+    {
+      title:
+        "Jerome ______________ (finish) his LinkedIn profile by this afternoon.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have finished", correctAnswer: true },
+        { title: "b. will have finished" },
+      ],
+      userAnswer: "",
+      explanation: "Come is the past participle of come .",
+    },
 
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   return res.json();
-// };
+    {
+      title: "At 5, she ______________ in this office for 24 hours.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have been", correctAnswer: true },
+        { title: "b. will have be" },
+      ],
+      userAnswer: "",
+      explanation: "Been is the past participle of be.",
+    },
+    {
+      title: "Dad ______________ our favorite dinner by the time you get home.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have cooked" },
+        { title: "b. will have cook", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Cooked is the past participle of cook.",
+    },
+    {
+      title: "It _______________ raining by then.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have stopped", correctAnswer: true },
+        { title: "b. will have stop" },
+      ],
+      userAnswer: "",
+      explanation: "Stopped is the past participle of stop.",
+    },
+    {
+      title: "When we get married, I ______________ Jerome for four years.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have known", correctAnswer: true },
+        { title: "b. will have knew" },
+      ],
+      userAnswer: "",
+      explanation: "Known is the past participle of know.",
+    },
+    {
+      title: "They _______________ Syria by the minister retires.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have gone" },
+        { title: "b. will have go", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Gone is the past participle of go.",
+    },
 
-export default async function FuturePerfect() {
-  // const data = await getData();
+    {
+      title: "I _________________ for work by then .",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have left", correctAnswer: true },
+        { title: "b. will have leave" },
+      ],
+      userAnswer: "",
+      explanation: "Left is the past participle of leave.",
+    },
+    {
+      title: "By Thursday they _____________ 56 hours.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have worked", correctAnswer: true },
+        { title: "b. will have work" },
+      ],
+      userAnswer: "",
+      explanation: "Worked is the past participle of work.",
+    },
+    {
+      title: "The old bridge _______________ a new one by next year.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have been replaced", correctAnswer: true },
+        { title: "b. will have replace" },
+      ],
+      userAnswer: "",
+      explanation: "Replaced is the past participle of replace.",
+    },
+
+    {
+      title: "The sun _______________ by the time we wake up in the morning.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have risen", correctAnswer: true },
+        { title: "b. will have rise" },
+      ],
+      userAnswer: "",
+      explanation: "Risen is the past participle of rise.",
+    },
+    {
+      title: "Timmy ______________ by eleven.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have come back", correctAnswer: true },
+        { title: "b. will have came back" },
+      ],
+      userAnswer: "",
+      explanation: "Come is the past participle of come .",
+    },
+
+    {
+      title:
+        "The astronauts _______________ in space for a month by the end of their mission.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have been", correctAnswer: true },
+        { title: "b. will have been" },
+      ],
+      userAnswer: "",
+      explanation: "Been is the past participle of be.",
+    },
+    {
+      title: "The construction _______________ by the end of the year.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have finished", correctAnswer: true },
+        { title: "b. will have finish" },
+      ],
+      userAnswer: "",
+      explanation: "Finished is the past participle of finish.",
+    },
+    {
+      title: "I think they _______________ their journey by now.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have completed", correctAnswer: true },
+        { title: "b. will have complete" },
+      ],
+      userAnswer: "",
+      explanation: "Completed is the past participle of complete.",
+    },
+    {
+      title: "The flowers _______________ by tomorrow morning.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have bloomed", correctAnswer: true },
+        { title: "b. will have bloom" },
+      ],
+      userAnswer: "",
+      explanation: "Bloomed is the past participle of bloom.",
+    },
+    {
+      title: "I think the mail _______________ by the time we get home.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have arrived", correctAnswer: true },
+        { title: "b. will have arrive" },
+      ],
+      userAnswer: "",
+      explanation: "Arrived is the past participle of arrive.",
+    },
+
+    {
+      title: "She _______________ English for five years by next summer.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have studied", correctAnswer: true },
+        { title: "b. will have study" },
+      ],
+      userAnswer: "",
+      explanation: "Studied is the past participle of study.",
+    },
+    {
+      title: "The movie ______________ by the time we get to the theater.",
+      possibleAnswersAndExplanation: [
+        { title: "a. will have started", correctAnswer: true },
+        { title: "b. will have start" },
+      ],
+      userAnswer: "",
+      explanation: "Started is the past participle of start.",
+    },
+  ];
+
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
+  };
+
   return (
-    <main className="page-body">
-      <div className={styles.page_title}>
-        <h1>Future Perfect</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        The future perfect tense is used to demonstrate a future event that has
-        a definitive end date.{" "}
-      </p>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Positive</th>
-            <th>Positive short form</th>
-            <th>Negative</th>
-            <th>Negative short form</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>I will have eaten</td>
-          <td>I'll have eaten</td>
-          <td>I will not have eaten</td>
-          <td>I won't have eaten</td>
-        </tr>
-        <tr>
-          <td>You will have finished</td>
-          <td>You'll have finished</td>
-          <td>You will not have finished</td>
-          <td>You won't have finished</td>
-        </tr>
-        <tr>
-          <td>She, he, it will have worked</td>
-          <td>She, he, it'll have worked</td>
-          <td>She, he, it will not have worked</td>
-          <td>She, he, it won't have worked</td>
-        </tr>
-        <tr>
-          <td>We will have started</td>
-          <td>We'll have started</td>
-          <td>We will not have started</td>
-          <td>We won't have started</td>
-        </tr>
-        <tr>
-          <td>They will have left</td>
-          <td>They'll have left</td>
-          <td>They will not have left</td>
-          <td>They won't have left</td>
-        </tr>
-        {/* <tbody>
+    <>
+      <main className="page-body">
+        <div className={styles.page_title}>
+          <h1>Future Perfect</h1>
+        </div>
+        <p className={styles.grammar_explanation_paragraph}>
+          The future perfect tense is used to demonstrate a future event that
+          has a definitive end date.{" "}
+        </p>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Positive</th>
+              <th>Positive short form</th>
+              <th>Negative</th>
+              <th>Negative short form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I will have eaten</td>
+              <td>I'll have eaten</td>
+              <td>I will not have eaten</td>
+              <td>I won't have eaten</td>
+            </tr>
+            <tr>
+              <td>You will have finished</td>
+              <td>You'll have finished</td>
+              <td>You will not have finished</td>
+              <td>You won't have finished</td>
+            </tr>
+            <tr>
+              <td>She, he, it will have worked</td>
+              <td>She, he, it'll have worked</td>
+              <td>She, he, it will not have worked</td>
+              <td>She, he, it won't have worked</td>
+            </tr>
+            <tr>
+              <td>We will have started</td>
+              <td>We'll have started</td>
+              <td>We will not have started</td>
+              <td>We won't have started</td>
+            </tr>
+            <tr>
+              <td>They will have left</td>
+              <td>They'll have left</td>
+              <td>They will not have left</td>
+              <td>They won't have left</td>
+            </tr>
+            {/* <tbody>
           {data.map((verb) => {
             return (
               <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
+              <td>{verb.positive}</td>
+              <td>{verb.positiveShortForm}</td>
+              <td>{verb.negative}</td>
+              <td>{verb.negativeShortForm}</td>
               </tr>
-            );
-          })}
-        </tbody> */}
-      </table>
-      <p>
-        The future perfect is used with a future time word, (and often with
-        'by') to talk about an action that will finish before a specific time in
-        the future, but we're not sure exactly when.
-      </p>
-      <ul className="page-examples">
-        <li>By the time I'm seventy, I will have retired.</li>
-        <li>By 10, he will have finished the housework.</li>
-      </ul>
-      <p>
-        The future perfect is used to indicate 'how long' an action will have
-        lasted compared to another action.{" "}
-      </p>
-      <ul className="page-examples">
-        <li>The storm will have finished by the time they arrive.</li>
-        <li>Nia will have married Demarcus by then.</li>
-      </ul>
-
-      <Quiz
-        title="Quiz"
-        questions={[
-          {
-            title: "The tree _________________ by then.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have grown", correctAnswer: true },
-              { title: "b. will have grew" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "She ______________ (sleep) eight hours.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have slept", correctAnswer: true },
-              { title: "b. will have sleep" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "Timmy ______________ by eleven.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have come back", correctAnswer: true },
-              { title: "b. will have came back" },
-            ],
-            userAnswer: "",
-          },
-
-          {
-            title: "At 5, she ______________ in this office for 24 hours.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have been", correctAnswer: true },
-              { title: "b. will have be" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "Dad ______________ our favorite dinner by the time you get home.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have cooked" },
-              { title: "b. will have cook", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It _______________ raining by then.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have stopped", correctAnswer: true },
-              { title: "b. will have stop" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "When we get married, I ______________ Jerome for four years.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have known", correctAnswer: true },
-              { title: "b. will have knew" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "They _______________ Syria by the minister retires.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have gone" },
-              { title: "b. will have go", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-
-          {
-            title: "I _________________ for work by then .",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have left", correctAnswer: true },
-              { title: "b. will have leave" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "By Thursday they _____________ 56 hours.",
-            possibleAnswersAndExplanation: [
-              { title: "a. will have worked", correctAnswer: true },
-              { title: "b. will have work" },
-            ],
-            userAnswer: "",
-          },
-        ]}
-      ></Quiz>
-    </main>
+              );
+            })}
+          </tbody> */}
+          </tbody>
+        </table>
+        <p>
+          The future perfect is used with a future time word, (and often with
+          'by') to talk about an action that will finish before a specific time
+          in the future, but we're not sure exactly when.
+        </p>
+        <ul className="page-examples">
+          <li>By the time I'm seventy, I will have retired.</li>
+          <li>By 10, he will have finished the housework.</li>
+        </ul>
+        <p>
+          The future perfect is used to indicate 'how long' an action will have
+          lasted compared to another action.{" "}
+        </p>
+        <ul className="page-examples">
+          <li>The storm will have finished by the time they arrive.</li>
+          <li>Nia will have married Demarcus by then.</li>
+        </ul>
+        <Quiz
+          setQuiz={setQuiz}
+          title="Take a Quiz!"
+          questions={quiz}
+          secondSetQuestions={secondSetQuestions}
+          shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
+        ></Quiz>
+      </main>
+    </>
   );
 }
+
+////////////////////////////////////////////////////////////////////////////////
