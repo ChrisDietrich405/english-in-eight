@@ -12,6 +12,7 @@ export default function FutureContinuous() {
 
   const questionsArray = [
     {
+      id: 1, 
       title: "In an hour she _______________ (clean) the bathrooms.",
       possibleAnswersAndExplanation: [
         { title: "a. will be cleaning", correctAnswer: true },
@@ -21,6 +22,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 2, 
       title: "Next month they _______________ (complain) about this.",
       possibleAnswersAndExplanation: [
         { title: "a. will be complain" },
@@ -30,6 +32,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 3, 
       title:
         "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
       possibleAnswersAndExplanation: [
@@ -40,6 +43,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 4, 
       title: "I ______________ (see) Marcus at the conference next week.",
       possibleAnswersAndExplanation: [
         { title: "a. will be see" },
@@ -49,6 +53,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 5, 
       title: "When he's in Morocco he _____________ with friends.",
       possibleAnswersAndExplanation: [
         { title: "a. will be stay" },
@@ -58,6 +63,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 6,
       title: "Miguel _____________ (compete) in a marathon next month.",
       possibleAnswersAndExplanation: [
         { title: "a. will be competing", correctAnswer: true },
@@ -67,6 +73,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 7, 
       title: "I ___________  with Nia this evening so I can talk to her.",
       possibleAnswersAndExplanation: [
         { title: "a. will be eat" },
@@ -76,6 +83,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 8,
       title: "Demarcus _______________ (run) in the race.",
       possibleAnswersAndExplanation: [
         { title: "a. will also be running", correctAnswer: true },
@@ -84,6 +92,7 @@ export default function FutureContinuous() {
       userAnswer: "",
     },
     {
+      id: 9,
       title: "He _____________ (sleep) when you telephone him.",
       possibleAnswersAndExplanation: [
         { title: "a. will be sleep" },
@@ -93,6 +102,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 10, 
       title: "I _____________ (play) hockey in the afternoon tomorrow.",
       possibleAnswersAndExplanation: [
         { title: "a. will be play" },
@@ -102,6 +112,7 @@ export default function FutureContinuous() {
       explanation: "With the continuous form you need an ing ending.",
     },
     {
+      id: 11, 
       title:
         "At this time tomorrow, she _______________ (prepare) for her big presentation.",
       possibleAnswersAndExplanation: [
@@ -113,6 +124,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 12, 
       title:
         "By the end of the week, they _______________ (travel) to five different cities.",
       possibleAnswersAndExplanation: [
@@ -124,6 +136,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 12, 
       title:
         "Tomorrow morning, I _______________ (meet) Sarah at the coffee shop.",
       possibleAnswersAndExplanation: [
@@ -135,6 +148,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 13, 
       title:
         "In a few hours, he _______________ (take) his final exam for the semester.",
       possibleAnswersAndExplanation: [
@@ -146,6 +160,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 14, 
       title:
         "While on vacation, we _______________ (explore) the beautiful beaches of Hawaii.",
       possibleAnswersAndExplanation: [
@@ -157,6 +172,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 16, 
       title:
         "During the summer break, Miguel _______________ (work) on a special project.",
       possibleAnswersAndExplanation: [
@@ -168,6 +184,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 17, 
       title:
         "Later tonight, I _______________ (watch) a documentary about space exploration.",
       possibleAnswersAndExplanation: [
@@ -179,6 +196,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 18, 
       title:
         "During the holidays, Demarcus _______________ (visit) his family in another city.",
       possibleAnswersAndExplanation: [
@@ -190,6 +208,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 19, 
       title: "Tonight, he _______________ (read) a book before going to bed.",
       possibleAnswersAndExplanation: [
         { title: "a. will be read" },
@@ -200,6 +219,7 @@ export default function FutureContinuous() {
     },
 
     {
+      id: 20, 
       title:
         "In the afternoon, I _______________ (practice) my guitar for a few hours.",
       possibleAnswersAndExplanation: [

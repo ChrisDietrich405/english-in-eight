@@ -12,6 +12,7 @@ export default function FuturePerfect() {
 
   const questionsArray = [
     {
+      id: 1,
       title: "The tree _________________ by then.",
       possibleAnswersAndExplanation: [
         { title: "a. will have grown", correctAnswer: true },
@@ -21,6 +22,7 @@ export default function FuturePerfect() {
       explanation: "Grown is the past participle of grow.",
     },
     {
+      id: 2,
       title: "She ______________ (sleep) eight hours.",
       possibleAnswersAndExplanation: [
         { title: "a. will have slept", correctAnswer: true },
@@ -30,6 +32,7 @@ export default function FuturePerfect() {
       explanation: "Slept is the past participle of sleep.",
     },
     {
+      id: 3,
       title:
         "Jerome ______________ (finish) his LinkedIn profile by this afternoon.",
       possibleAnswersAndExplanation: [
@@ -41,6 +44,7 @@ export default function FuturePerfect() {
     },
 
     {
+      id: 4,
       title: "At 5, she ______________ in this office for 24 hours.",
       possibleAnswersAndExplanation: [
         { title: "a. will have been", correctAnswer: true },
@@ -50,6 +54,7 @@ export default function FuturePerfect() {
       explanation: "Been is the past participle of be.",
     },
     {
+      id: 5,
       title: "Dad ______________ our favorite dinner by the time you get home.",
       possibleAnswersAndExplanation: [
         { title: "a. will have cooked" },
@@ -59,6 +64,7 @@ export default function FuturePerfect() {
       explanation: "Cooked is the past participle of cook.",
     },
     {
+      id: 6,
       title: "It _______________ raining by then.",
       possibleAnswersAndExplanation: [
         { title: "a. will have stopped", correctAnswer: true },
@@ -68,6 +74,7 @@ export default function FuturePerfect() {
       explanation: "Stopped is the past participle of stop.",
     },
     {
+      id: 7,
       title: "When we get married, I ______________ Jerome for four years.",
       possibleAnswersAndExplanation: [
         { title: "a. will have known", correctAnswer: true },
@@ -77,6 +84,7 @@ export default function FuturePerfect() {
       explanation: "Known is the past participle of know.",
     },
     {
+      id: 8,
       title: "They _______________ Syria by the minister retires.",
       possibleAnswersAndExplanation: [
         { title: "a. will have gone" },
@@ -87,6 +95,8 @@ export default function FuturePerfect() {
     },
 
     {
+      id: 9,
+
       title: "I _________________ for work by then .",
       possibleAnswersAndExplanation: [
         { title: "a. will have left", correctAnswer: true },
@@ -96,6 +106,7 @@ export default function FuturePerfect() {
       explanation: "Left is the past participle of leave.",
     },
     {
+      id: 10,
       title: "By Thursday they _____________ 56 hours.",
       possibleAnswersAndExplanation: [
         { title: "a. will have worked", correctAnswer: true },
@@ -105,6 +116,7 @@ export default function FuturePerfect() {
       explanation: "Worked is the past participle of work.",
     },
     {
+      id: 11,
       title: "The old bridge _______________ a new one by next year.",
       possibleAnswersAndExplanation: [
         { title: "a. will have been replaced", correctAnswer: true },
@@ -115,6 +127,7 @@ export default function FuturePerfect() {
     },
 
     {
+      id: 12,
       title: "The sun _______________ by the time we wake up in the morning.",
       possibleAnswersAndExplanation: [
         { title: "a. will have risen", correctAnswer: true },
@@ -124,6 +137,7 @@ export default function FuturePerfect() {
       explanation: "Risen is the past participle of rise.",
     },
     {
+      id: 12,
       title: "Timmy ______________ by eleven.",
       possibleAnswersAndExplanation: [
         { title: "a. will have come back", correctAnswer: true },
@@ -134,6 +148,7 @@ export default function FuturePerfect() {
     },
 
     {
+      id: 13,
       title:
         "The astronauts _______________ in space for a month by the end of their mission.",
       possibleAnswersAndExplanation: [
@@ -143,7 +158,9 @@ export default function FuturePerfect() {
       userAnswer: "",
       explanation: "Been is the past participle of be.",
     },
+
     {
+      id: 14,
       title: "The construction _______________ by the end of the year.",
       possibleAnswersAndExplanation: [
         { title: "a. will have finished", correctAnswer: true },
@@ -153,6 +170,7 @@ export default function FuturePerfect() {
       explanation: "Finished is the past participle of finish.",
     },
     {
+      id: 15,
       title: "I think they _______________ their journey by now.",
       possibleAnswersAndExplanation: [
         { title: "a. will have completed", correctAnswer: true },
@@ -162,6 +180,7 @@ export default function FuturePerfect() {
       explanation: "Completed is the past participle of complete.",
     },
     {
+      id: 16,
       title: "The flowers _______________ by tomorrow morning.",
       possibleAnswersAndExplanation: [
         { title: "a. will have bloomed", correctAnswer: true },
@@ -171,6 +190,7 @@ export default function FuturePerfect() {
       explanation: "Bloomed is the past participle of bloom.",
     },
     {
+      id: 17,
       title: "I think the mail _______________ by the time we get home.",
       possibleAnswersAndExplanation: [
         { title: "a. will have arrived", correctAnswer: true },
@@ -181,6 +201,7 @@ export default function FuturePerfect() {
     },
 
     {
+      id: 18,
       title: "She _______________ English for five years by next summer.",
       possibleAnswersAndExplanation: [
         { title: "a. will have studied", correctAnswer: true },
@@ -190,6 +211,7 @@ export default function FuturePerfect() {
       explanation: "Studied is the past participle of study.",
     },
     {
+      id: 19,
       title: "The movie ______________ by the time we get to the theater.",
       possibleAnswersAndExplanation: [
         { title: "a. will have started", correctAnswer: true },

@@ -1,24 +1,270 @@
+"use client";
+import { useState, useEffect } from "react";
+import Head from "next/head";
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
-//DONE
+export default function FutureContinuous() {
+  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
+    useState(true);
+  const [quiz, setQuiz] = useState([]);
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-const endpoint = "/api/past-progressive"; // Replace with the correct endpoint
+  const questionsArray = [
+    {
+      id: 1,
+      title:
+        "I ___________ (think) about a solution when Nia came up with a great idea.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was thinking" },
+        { title: "b. were thinking", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for I",
+    },
+    {
+      id: 2,
+      title: "You ___________ (talk) loudly when the fight started.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were talking", correctAnswer: true },
+        { title: "b. was talking" },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for you",
+    },
+    {
+      id: 3,
+      title: "It __________ (rain) a lot when I noticed my car door was broken",
+      possibleAnswersAndExplanation: [
+        { title: "a. were raining" },
+        { title: "b. was raining", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for it",
+    },
+    {
+      id: 4,
+      title:
+        "They _____________ (work) on the computer when the teacher came into the room.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was working" },
+        { title: "b. were working", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for they",
+    },
+    {
+      id: 5,
+      title: "He __________ (leave) when his boss called him.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were leaving" },
+        { title: "b. was leaving", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for he",
+    },
+    {
+      id: 6,
+      title:
+        "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were cutting" },
+        { title: "b. was cutting", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for I",
+    },
+    {
+      id: 7,
+      title: "We _________ (talk) to our colleagues when they came in.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was talking" },
+        { title: "b. were talking", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for we",
+    },
+    {
+      id: 8,
+      title: "He ___________ (make) dinner when the phone rang.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was making", correctAnswer: true },
+        { title: "b. were making" },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for he",
+    },
+    {
+      id: 9,
+      title: "They ___________ (wash) clothes when they heard a noise.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were washing", correctAnswer: true },
+        { title: "b. was washing" },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for they",
+    },
+    {
+      id: 10,
+      title: "It ____________ (frustrate).",
+      possibleAnswersAndExplanation: [
+        { title: "a. were frustrating" },
+        { title: "b. was frustrating", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for it",
+    },
+    {
+      id: 11,
+      title:
+        "I ___________ (think) about a solution when Nia came up with a great idea.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was thinking" },
+        { title: "b. were thinking", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for I",
+    },
+    {
+      id: 12,
+      title: "You ___________ (talk) loudly when the fight started.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were talking", correctAnswer: true },
+        { title: "b. was talking" },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for you",
+    },
+    {
+      id: 13,
+      title: "It __________ (rain) a lot when I noticed my car door was broken",
+      possibleAnswersAndExplanation: [
+        { title: "a. were raining" },
+        { title: "b. was raining", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for it",
+    },
+    {
+      id: 14,
+      title:
+        "They _____________ (work) on the computer when the teacher came into the room.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was working" },
+        { title: "b. were working", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for they",
+    },
+    {
+      id: 15,
+      title: "He __________ (leave) when his boss called him.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were leaving" },
+        { title: "b. was leaving", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for he",
+    },
+    {
+      id: 16,
+      title:
+        "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were cutting" },
+        { title: "b. was cutting", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for I",
+    },
+    {
+      id: 17,
+      title: "We _________ (talk) to our colleagues when they came in.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was talking" },
+        { title: "b. were talking", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for we",
+    },
+    {
+      id: 18,
+      title: "He ___________ (make) dinner when the phone rang.",
+      possibleAnswersAndExplanation: [
+        { title: "a. was making", correctAnswer: true },
+        { title: "b. were making" },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for he",
+    },
+    {
+      id: 19,
+      title: "They ___________ (wash) clothes when they heard a noise.",
+      possibleAnswersAndExplanation: [
+        { title: "a. were washing", correctAnswer: true },
+        { title: "b. was washing" },
+      ],
+      userAnswer: "",
+      explanation: "Were is the correct form for they",
+    },
+    {
+      id: 20,
+      title: "It ____________ (frustrate).",
+      possibleAnswersAndExplanation: [
+        { title: "a. were frustrating" },
+        { title: "b. was frustrating", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for it",
+    },
+  ];
 
-const fullUrl = baseUrl + endpoint;
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
 
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   return res.json();
-// };
-
-export default async function PastContinuous() {
-  //   const data = await getData();
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
+  };
 
   return (
     <>
+      <Head>
+        <title>Future Continuous | English in Eight Minutes</title>
+        <meta
+          name="description"
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dietrichlandcare.com" />
+        <meta property="og:title" content="Dietrich Land Care" />
+        <meta
+          property="og:description"
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
+        />
+        <meta
+          property="og:image"
+          content="https://dietrichlandcare.com/images/logo.jpg"
+        />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+        />
+      </Head>
       <div className={styles.page_title}>
         <h1>Past Continuous</h1>
       </div>
@@ -114,95 +360,12 @@ export default async function PastContinuous() {
         </ul>
       </div>
       <div className="page-body"></div>
-
       <Quiz
+        setQuiz={setQuiz}
         title="Take a Quiz!"
-        questions={[
-          {
-            title:
-              "I ___________ (think) about a solution when Nia came up with a great idea.",
-            possibleAnswersAndExplanation: [
-              { title: "a. was thinking" },
-              { title: "b. were thinking", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "You ___________ (talk) loudly when the fight started.",
-            possibleAnswersAndExplanation: [
-              { title: "a. were talking", correctAnswer: true },
-              { title: "b. was talking" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "It __________ (rain) a lot when I noticed my car door was broken",
-            possibleAnswersAndExplanation: [
-              { title: "a. were raining" },
-              { title: "b. was raining", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "They _____________ (work) on the computer when the teacher came into the room.",
-            possibleAnswersAndExplanation: [
-              { title: "a. was working" },
-              { title: "b. were working", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "He __________ (leave) when his boss called him.",
-            possibleAnswersAndExplanation: [
-              { title: "a. were leaving" },
-              { title: "b. was leaving", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title:
-              "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
-            possibleAnswersAndExplanation: [
-              { title: "a. were cutting" },
-              { title: "b. was cutting", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "We _________ (talk) to our colleagues when they came in.",
-            possibleAnswersAndExplanation: [
-              { title: "a. was talking" },
-              { title: "b. were talking", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "He ___________ (make) dinner when the phone rang.",
-            possibleAnswersAndExplanation: [
-              { title: "a. was making", correctAnswer: true },
-              { title: "b. were making" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "They ___________ (wash) clothes when they heard a noise.",
-            possibleAnswersAndExplanation: [
-              { title: "a. were washing", correctAnswer: true },
-              { title: "b. was washing" },
-            ],
-            userAnswer: "",
-          },
-          {
-            title: "It ____________ (frustrate).",
-            possibleAnswersAndExplanation: [
-              { title: "a. were frustrating" },
-              { title: "b. was frustrating", correctAnswer: true },
-            ],
-            userAnswer: "",
-          },
-        ]}
+        questions={quiz}
+        secondSetQuestions={secondSetQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
     </>
   );
