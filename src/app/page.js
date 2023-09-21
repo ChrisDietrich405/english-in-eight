@@ -61,7 +61,13 @@ export default function Home() {
     <>
       <main className={styles.home} sx={{ padding: "0px !important" }}>
         <div className={styles.banner}>
-          <div
+          <div className="image-container">
+            <Image src="/flag.png" alt="Image Alt Text" layout="fill" />
+            <div className="overlay-text">
+              <h2>Welcome to English in Eight Minutes!</h2>
+            </div>
+          </div>
+          {/* <div
             style={{
               backgroundImage: 'url("./images/flag.png")',
               backgroundSize: "cover",
@@ -75,7 +81,7 @@ export default function Home() {
                 <span className="tagline">English in Eight Minutes</span>
               </h1>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.intro_content}>
           {" "}

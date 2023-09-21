@@ -13,3 +13,26 @@
     width: 2000px;
   }
 }
+
+.image-container {
+  position: relative;
+
+  height: 300px; /* Adjust the height as needed */
+}
+
+.overlay-text {
+
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+ /* Adjust the background color and opacity as needed */
+  color: #fff; /* Adjust the text color as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  text-shadow: rgba(0, 0, 0, 1) 0px 0px 25px;
+}
+
+.overlay-text h2 {
+  font-size: 35px; 
+}
