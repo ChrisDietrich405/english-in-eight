@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "../../styles/layout.module.css";
 
 const Layout = ({ children }) => {
-
   return (
     <div>
       <section className={styles.main_container}>
@@ -45,6 +44,14 @@ const Layout = ({ children }) => {
                 href="/other-topics/versus/tell-versus-say"
               >
                 Tell vs Say
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/make-versus-do"
+              >
+                Make vs Do
               </Link>
             </li>
           </ul>
