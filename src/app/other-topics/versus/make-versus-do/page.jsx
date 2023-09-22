@@ -296,11 +296,14 @@ export default function MakeVersusDo() {
           <li>Did you really make that scarf?</li>
         </ul>
         <p className={styles.grammar_explanation_paragraph}>
-          We use 'do' for general activities. In this case, 'do' is often used
-          with 'something', 'nothing', 'anything' or 'everything':
+          We use 'do' for general activities and for actions you have to do,
+          like jobs or work. In this case, 'do' is often used with 'something',
+          'nothing', 'anything' or 'everything':
         </p>
         <ul className="page-examples">
           <li>What did you do on the weekend?</li>
+          <li>I hate doing dishes (washing dishes).</li>
+          <li>The first thing I plan to do is build my resume.</li>
           <li>I didn't do anything yesterday.</li>
           <li>
             She's fed up with doing everything herself. She needs some help.

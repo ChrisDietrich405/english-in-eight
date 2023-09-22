@@ -13,6 +13,7 @@ export default function NounModifiers() {
 
   const questionsArray = [
     {
+      id: 1,
       title: "It's a door made of metal. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "door's metal" },
@@ -22,6 +23,7 @@ export default function NounModifiers() {
       explanation: "Metal is a noun modifier",
     },
     {
+      id: 2,
       title: "It's a cloth that you put on a table. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "table cloth", correctAnswer: true },
@@ -31,6 +33,7 @@ export default function NounModifiers() {
       explanation: "Table is a noun modifier",
     },
     {
+      id: 3,
       title: "It's a bat used for baseballs. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "batball" },
@@ -40,6 +43,7 @@ export default function NounModifiers() {
       explanation: "Baseball is a noun modifier",
     },
     {
+      id: 4,
       title: "It's a key for my house. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "key house" },
@@ -49,6 +53,7 @@ export default function NounModifiers() {
       explanation: "House is a noun modifier",
     },
     {
+      id: 5,
       title: "The park is in the city. It's a ______________.",
       possibleAnswersAndExplanation: [
         { title: "park city" },
@@ -58,6 +63,7 @@ export default function NounModifiers() {
       explanation: "City is a noun modifier",
     },
     {
+      id: 6,
       title: "They have a house in the trees. They have a ______________.",
       possibleAnswersAndExplanation: [
         { title: "tree house", correctAnswer: true },
@@ -67,6 +73,7 @@ export default function NounModifiers() {
       explanation: "Tree is a noun modifier",
     },
     {
+      id: 7,
       title: "We bought a bone for our dog. We gave her a _____________.",
       possibleAnswersAndExplanation: [
         { title: "bone dog" },
@@ -76,6 +83,7 @@ export default function NounModifiers() {
       explanation: "Dog is a noun modifier",
     },
     {
+      id: 8,
       title:
         "Meet me where there is a station for a train. It's a ________________.",
       possibleAnswersAndExplanation: [
@@ -86,6 +94,7 @@ export default function NounModifiers() {
       explanation: "Train is a noun modifier",
     },
     {
+      id: 9,
       title: "This is a ladder with steps.   It’s a ___________.",
       possibleAnswersAndExplanation: [
         { title: "step ladder", correctAnswer: true },
@@ -95,6 +104,7 @@ export default function NounModifiers() {
       explanation: "Step is a noun modifier",
     },
     {
+      id: 10,
       title: "I paid for lessons for swimming. They are _____________.",
       possibleAnswersAndExplanation: [
         { title: "swimming lessons", correctAnswer: true },
@@ -104,6 +114,7 @@ export default function NounModifiers() {
       explanation: "Swimming is a noun modifier",
     },
     {
+      id: 11,
       title: "He uses it to cut paper. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "paper cutter", correctAnswer: true },
@@ -113,6 +124,7 @@ export default function NounModifiers() {
       explanation: "Paper is a noun modifier",
     },
     {
+      id: 12,
       title: "You sit on it in the park. It's a _____________.",
       possibleAnswersAndExplanation: [
         { title: "park bench", correctAnswer: true },
@@ -133,8 +145,6 @@ export default function NounModifiers() {
     const questionsVar = questionsArray.splice(11);
     return questionsVar;
   };
-
-
 
   return (
     <>
@@ -207,5 +217,3 @@ export default function NounModifiers() {
     </>
   );
 }
-
-

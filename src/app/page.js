@@ -67,21 +67,6 @@ export default function Home() {
               <h2>Welcome to English in Eight Minutes!</h2>
             </div>
           </div>
-          {/* <div
-            style={{
-              backgroundImage: 'url("./images/flag.png")',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: "100%",
-            }}
-          >
-            <div className={styles.banner_inner}>
-              <h1>
-                Welcome to{" "}
-                <span className="tagline">English in Eight Minutes</span>
-              </h1>
-            </div>
-          </div> */}
         </div>
         <div className={styles.intro_content}>
           {" "}

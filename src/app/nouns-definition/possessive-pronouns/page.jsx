@@ -1,9 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Quiz from "../../../components/Quiz";
 import Head from "next/head";
-//DONE))
+import Link from "next/link";
+
+import { Button } from "@mui/material";
+
+import Quiz from "../../../components/Quiz";
 
 import styles from "../../styles/content-page.module.css";
 
@@ -14,6 +17,7 @@ export default function PossessivePronouns() {
 
   const questionsArray = [
     {
+      id: 1,
       title:
         " My headset needs to be fixed, but (you) _____________ is working.",
       possibleAnswersAndExplanation: [
@@ -21,16 +25,20 @@ export default function PossessivePronouns() {
         { title: " yours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Yours is the possessive pronoun for you.",
     },
     {
+      id: 2,
       title: "My computer is a Lenovo, but (he) _______________ is a PC.",
       possibleAnswersAndExplanation: [
         { title: " his", correctAnswer: true },
         { title: " he" },
       ],
       userAnswer: "",
+      explanation: "His is the possessive pronoun for he.",
     },
     {
+      id: 3,
       title:
         "Nisha has already eaten her dinner , but I'm saving (I) _____________  until later.",
       possibleAnswersAndExplanation: [
@@ -38,8 +46,10 @@ export default function PossessivePronouns() {
         { title: " my" },
       ],
       userAnswer: "",
+      explanation: "Mine is the possessive pronoun for I.",
     },
     {
+      id: 4,
       title:
         "We gave them our number, and they gave us (they) __________________.",
       possibleAnswersAndExplanation: [
@@ -47,130 +57,157 @@ export default function PossessivePronouns() {
         { title: " they", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "They is the possessive pronoun for they.",
     },
 
     {
+      id: 5,
       title: "My motorcycle is new, but (he)  __________ is old.",
       possibleAnswersAndExplanation: [
         { title: " he" },
         { title: " his", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "His is the possessive pronoun for he.",
     },
     {
+      id: 6,
       title: "She can't have any cake! It's all (I)______________ !",
       possibleAnswersAndExplanation: [
         { title: " my" },
         { title: " mine", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Mine is the possessive pronoun for I.",
     },
     {
+      id: 7,
       title: "My pen is broken. Can I use (you) ____________ ?",
       possibleAnswersAndExplanation: [
         { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Yours is the possessive pronoun for you.",
     },
     {
+      id: 8,
       title: "That money is (I) ____________.",
       possibleAnswersAndExplanation: [
         { title: " mine", correctAnswer: true },
         { title: " my" },
       ],
       userAnswer: "",
+      explanation: "Mine is the possessive pronoun for I.",
     },
     {
+      id: 9,
       title: "The desk is (we) ______________.",
       possibleAnswersAndExplanation: [
         { title: " ours", correctAnswer: true },
         { title: " we" },
       ],
       userAnswer: "",
+      explanation: "Ours is the possessive pronoun for we.",
     },
     {
+      id: 10,
       title: "The dress is (she)_____________. ",
       possibleAnswersAndExplanation: [
         { title: " hers", correctAnswer: true },
         { title: " she" },
       ],
       userAnswer: "",
+      explanation: "Hers is the possessive pronoun for she.",
     },
     {
+      id: 11,
       title: "My car is blue, but (she) _____________ is red.",
       possibleAnswersAndExplanation: [
         { title: " she" },
         { title: " hers", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Hers is the possessive pronoun for she.",
     },
 
     {
+      id: 12,
       title: "I love my phone, but (you) _______________ is better.",
       possibleAnswersAndExplanation: [
         { title: " your" },
         { title: " yours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Yours is the possessive pronoun for you.",
     },
 
     {
+      id: 13,
       title: "Their dog is so cute, but (ours) _____________ is a cuter.",
       possibleAnswersAndExplanation: [
         { title: " our" },
         { title: " ours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Ours is the possessive pronoun for we.",
     },
 
     {
+      id: 14,
       title: "The book is on (he) _______________ shelf.",
       possibleAnswersAndExplanation: [
         { title: " his", correctAnswer: true },
         { title: " he" },
       ],
       userAnswer: "",
+      explanation: "His is the possessive pronoun for he.",
     },
 
     {
+      id: 15,
       title: "My cookies are good, but (they) _______________ are delicious.",
       possibleAnswersAndExplanation: [
         { title: " they" },
         { title: " theirs", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Theirs is the possessive pronoun for they.",
     },
 
     {
+      id: 16,
       title: "My friend's cat is friendly. (I) _______________ is shy.",
       possibleAnswersAndExplanation: [
         { title: " my" },
         { title: " mine", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Mine is the possessive pronoun for I.",
     },
 
     {
+      id: 17,
       title: "My TV is big, but (you) ____________ is huge",
       possibleAnswersAndExplanation: [
         { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Yours is the possessive pronoun for you.",
     },
 
     {
+      id: 18,
       title: "Her laptop is new. (We) _______________ is old.",
       possibleAnswersAndExplanation: [
         { title: "Our" },
         { title: "Ours", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Ours is the possessive pronoun for we.",
     },
   ];
-
-  
 
   useEffect(() => {
     console.log(questionsArray);
@@ -260,6 +297,15 @@ export default function PossessivePronouns() {
             They have a son - He is <b>theirs.</b>
           </li>
         </ul>
+        <Link
+          href="https://www.youtube.com/watch?v=bhzh8VDykc4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>
+            Click here to get a deeper understanding of this topic.
+          </Button>
+        </Link>
       </div>
 
       <Quiz

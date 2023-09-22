@@ -9,44 +9,56 @@ export default function SpeakVersusTalk() {
     useState(true);
   const [quiz, setQuiz] = useState([
     {
+      id: 1,
       title: "It was a fascinating __________.",
       possibleAnswersAndExplanation: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Talk is a noun here.",
     },
     {
+      id: 2,
       title: "We tried to  ___________ it out, but after we fought more.",
       possibleAnswersAndExplanation: [
         { title: "spoke" },
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation:
+        "Talk is used in the phrasal verb talk it out meaning to resolve a problem by talking about it.",
     },
     {
+      id: 3,
       title: "Well Bia, I’ll  ___________ to you tomorrow.",
       possibleAnswersAndExplanation: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Talk is used in more informal situations.",
     },
     {
+      id: 4,
       title: "It's only __________. They'll never fire us.",
       possibleAnswersAndExplanation: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Talk is a noun here.",
     },
     {
+      id: 5,
       title: "________ up! Nobody can hear you.",
       possibleAnswersAndExplanation: [
         { title: "Speak", correctAnswer: true },
         { title: "Talk" },
       ],
       userAnswer: "",
+      explanation:
+        "Speak is used in the phrasal verb speak up meaning to speak louder.",
     },
     {
       title: "They only ever  ________ about basketball.",
@@ -55,6 +67,7 @@ export default function SpeakVersusTalk() {
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Talk is used in more informal situations.",
     },
     {
       title: "We ________ today with Denzel St. Clair and Robert Smith.",
@@ -94,6 +107,7 @@ export default function SpeakVersusTalk() {
     setQuiz([
       [
         {
+          id: 1,
           title:
             "At the conference, Dr. McGregor will ________ about the nutrition.",
           possibleAnswersAndExplanation: [
@@ -101,9 +115,11 @@ export default function SpeakVersusTalk() {
             { title: "talk", correctAnswer: true },
           ],
           userAnswer: "",
+          explanation: "Speak is used in more formal situations.",
         },
 
         {
+          id: 2,
           title:
             "I hope we can ________ things out and find a solution to this problem.",
           possibleAnswersAndExplanation: [
@@ -111,18 +127,24 @@ export default function SpeakVersusTalk() {
             { title: "talk", correctAnswer: true },
           ],
           userAnswer: "",
+          explanation:
+            "Talk is used in the phrasal verb talk it out meaning to resolve a problem by talking about it.",
         },
         {
+          id: 3,
           title:
-            "The teacher asked the students to ________ louder so everyone could hear their presentations.",
+            "The teacher asked the students to ________ up so everyone could hear their presentations.",
           possibleAnswersAndExplanation: [
             { title: "speak" },
             { title: "talk", correctAnswer: true },
           ],
           userAnswer: "",
+          explanation:
+            "Speak is used in the phrasal verb speak up meaning to speak louder.",
         },
 
         {
+          id: 3,
           title:
             "During the meeting, they decided to ________  about the upcoming project in detail.",
           possibleAnswersAndExplanation: [
@@ -130,8 +152,10 @@ export default function SpeakVersusTalk() {
             { title: "talk", correctAnswer: true },
           ],
           userAnswer: "",
+          explanation: "Talk is used in more conversational situations.",
         },
         {
+          id: 4,
           title:
             "My 6 year old son constantly _______ back to me and I don't know what to do.",
           possibleAnswersAndExplanation: [
@@ -139,8 +163,11 @@ export default function SpeakVersusTalk() {
             { title: "speaks" },
           ],
           userAnswer: "",
+          explanation:
+            "Talk is used in the phrasal verb talk back meaning to be disrespectful.",
         },
         {
+          id: 5,
           title:
             "After a long day at work, she likes to ________ with her best friend on the phone.",
           possibleAnswersAndExplanation: [
@@ -148,8 +175,10 @@ export default function SpeakVersusTalk() {
             { title: "talk", correctAnswer: true },
           ],
           userAnswer: "",
+          explanation: "Talk is used in more informal situations.",
         },
         {
+          id: 6,
           title:
             "May I ________ to the manager about my concerns regarding the company policies?",
           possibleAnswersAndExplanation: [
@@ -157,14 +186,17 @@ export default function SpeakVersusTalk() {
             { title: "talk" },
           ],
           userAnswer: "",
+          explanation: "Speak is used in more formal situations.",
         },
         {
+          id: 7,
           title: "He ________ French, Spanish, German, and English fluently.",
           possibleAnswersAndExplanation: [
             { title: "speaks", correctAnswer: true },
             { title: "talks" },
           ],
           userAnswer: "",
+          explanation: "Speak is used with languages.",
         },
       ],
     ]);
