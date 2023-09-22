@@ -119,6 +119,117 @@ export default function MakeVersusDo() {
       userAnswer: "",
       explanation: "In English we do favors",
     },
+    {
+      id: 11,
+      title:
+        "When you're trying to solve a difficult puzzle, do you usually find it challenging to _________ progress?",
+      possibleAnswersAndExplanation: [
+        { title: "make" },
+        { title: "do", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make progress.",
+    },
+    {
+      id: 12,
+      title:
+        "Sarah is talented and can ________ beautiful art with just a pencil and paper.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation:
+        "In English, we make artwork because it's a creative process.",
+    },
+    {
+      id: 13,
+      title:
+        "It's important to ________ a decision about your future career path.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make decisions.",
+    },
+    {
+      id: 14,
+      title:
+        "When you're feeling ill, what do you usually need to ________ to recover? Rest or exercise?",
+      possibleAnswersAndExplanation: [
+        { title: "make" },
+        { title: "do", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation:
+        "In English, we do things to recover because it's considered an activity.",
+    },
+    {
+      id: 15,
+      title: "The chef is known for her ability to ________ delicious dishes.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make dishes because it's a creation.",
+    },
+    {
+      id: 16,
+      title:
+        "Mark decided to ________ the right thing and return the lost wallet to its owner.",
+      possibleAnswersAndExplanation: [
+        { title: "make" },
+        { title: "do", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "In English, we do the right thing.",
+    },
+    {
+      id: 17,
+      title:
+        "When you're planning a trip, what do you need to ________ first: an itinerary or reservations?",
+      possibleAnswersAndExplanation: [
+        { title: "make" },
+        { title: "do", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "In English we do things first, second, etc.....",
+    },
+    {
+      id: 18,
+      title:
+        "The construction workers will ________ repairs on the damaged bridge to ensure it's safe for use.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make repairs.",
+    },
+    {
+      id: 19,
+      title:
+        "If you want to be successful in your career, you need to ________ an effort to continually improve your skills.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make an effort.",
+    },
+    {
+      id: 20,
+      title:
+        "Every morning, I like to ________ a list of tasks for the day to stay organized and productive.",
+      possibleAnswersAndExplanation: [
+        { title: "make", correctAnswer: true },
+        { title: "do" },
+      ],
+      userAnswer: "",
+      explanation: "In English, we make a list.",
+    },
   ];
 
   useEffect(() => {
