@@ -53,6 +53,7 @@ export default function PhrasalVerbs2() {
         title="Take a quiz!"
         questions={[
           {
+            id: 1, 
             title:
               "I think he could _______________ peanut butter and jelly sandwiches. I always see him eating them.",
             possibleAnswersAndExplanation: [
@@ -62,6 +63,7 @@ export default function PhrasalVerbs2() {
             userAnswer: "",
           },
           {
+            id: 2, 
             title: "After their fight, she ___________ to clear her head.",
             possibleAnswersAndExplanation: [
               { title: "a. put together" },
@@ -70,6 +72,7 @@ export default function PhrasalVerbs2() {
             userAnswer: "",
           },
           {
+            id: 3, 
             title:
               "I can't believe I let my wife ______________ adopting another cat.",
             possibleAnswersAndExplanation: [
@@ -79,6 +82,7 @@ export default function PhrasalVerbs2() {
             userAnswer: "",
           },
           {
+            id: 4, 
             title:
               "My car alarm is very sensitive. It ___________ if you walk past it.",
             possibleAnswersAndExplanation: [
@@ -88,6 +92,7 @@ export default function PhrasalVerbs2() {
             userAnswer: "",
           },
           {
+            id: 5, 
             title: "She has to __________________ her new dining room table.",
             possibleAnswersAndExplanation: [
               { title: "a. put together", correctAnswer: true },

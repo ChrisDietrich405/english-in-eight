@@ -60,6 +60,7 @@ export default function Expressions() {
         title="Take a quiz!"
         questions={[
           {
+            id: 1, 
             title: "Why didn't you laugh at my story? ____________________.",
             possibleAnswersAndExplanation: [
               { title: "a. I guess it was ahead of schedule" },
@@ -68,6 +69,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
+            id: 2, 
             title: "__________ is a very ineffective way to get sales.",
             possibleAnswersAndExplanation: [
               { title: "a. B movie" },
@@ -76,6 +78,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
+            id: 3, 
             title:
               "I actually like ___________. They are so bad they make me laugh.",
             possibleAnswersAndExplanation: [
@@ -85,6 +88,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
+            id: 4, 
             title: "The project will be finished in 3 weeks ________.",
             possibleAnswersAndExplanation: [
               { title: "a. you had to be there" },
@@ -93,6 +97,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
+            id: 5, 
             title: "Hopefully we can finish the project ________________.",
             possibleAnswersAndExplanation: [
               { title: "a. tops" },

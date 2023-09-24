@@ -11,6 +11,7 @@ export default function ComparativeAdjectives() {
 
   const questionsArray = [
     {
+      id: 1,
       title:
         "My Latin class is ______________ (interesting) than my English class. ",
       possibleAnswersAndExplanation: [
@@ -22,6 +23,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 2, 
       title: "Marcus is ______________ (old) than Nia.",
       possibleAnswersAndExplanation: [
         { title: "older", correctAnswer: true },
@@ -32,6 +34,7 @@ export default function ComparativeAdjectives() {
         "Old is one syllable so you can add er to form the comparative.",
     },
     {
+      id: 3, 
       title: "She is ______________(quiet) than her brother.",
       possibleAnswersAndExplanation: [
         { title: "quietter" },
@@ -40,7 +43,9 @@ export default function ComparativeAdjectives() {
       userAnswer: "",
       explanation: "Quiet doesn't have any spelling changes",
     },
+
     {
+      id: 4, 
       title: "Buses are ________________ (large) than cars.",
       possibleAnswersAndExplanation: [
         { title: "largger" },
@@ -51,6 +56,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 5, 
       title: "The roads here are  _______________ (narrow) than in Baltimore.",
       possibleAnswersAndExplanation: [
         { title: "narrower", correctAnswer: true },
@@ -61,6 +67,7 @@ export default function ComparativeAdjectives() {
         "Narrow is a two syllable adjective that you can add er for the comparative form.",
     },
     {
+      id: 6, 
       title: "Dogs are _______________ (social) than cats",
       possibleAnswersAndExplanation: [
         { title: "more social", correctAnswer: true },
@@ -71,6 +78,7 @@ export default function ComparativeAdjectives() {
         "Social is a two syllable adjective that you can add er for the comparative form.",
     },
     {
+      id: 7, 
       title: "Malcolm is _______________ (busy) than his brother.",
       possibleAnswersAndExplanation: [
         { title: "busier", correctAnswer: true },
@@ -81,6 +89,7 @@ export default function ComparativeAdjectives() {
         "Busy is a two syllable adjective that you can add er for the comparative form and has a spelling change.",
     },
     {
+      id: 8, 
       title: "Demetrius is ________________ (ambitious) than his friends.",
       possibleAnswersAndExplanation: [
         { title: "ambitiouser" },
@@ -91,6 +100,7 @@ export default function ComparativeAdjectives() {
         "Ambitious is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
+      id: 9, 
       title:
         "My studio is  ________________  (colorful) than my art teacher's studio.",
       possibleAnswersAndExplanation: [
@@ -102,6 +112,7 @@ export default function ComparativeAdjectives() {
         "Colorful is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
+      id: 10, 
       title: "Her car is _______________ (comfortable) than my car.",
       possibleAnswersAndExplanation: [
         { title: "more comfortable", correctAnswer: true },
@@ -112,6 +123,7 @@ export default function ComparativeAdjectives() {
         "Comfortable is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
+      id: 11, 
       title: "The movie was ______________ (exciting) than I expected.",
       possibleAnswersAndExplanation: [
         { title: "more exciting", correctAnswer: true },
@@ -122,6 +134,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 12, 
       title: "Sophia is ______________ (short) than her sister.",
       possibleAnswersAndExplanation: [
         { title: "shorter", correctAnswer: true },
@@ -133,6 +146,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 13, 
       title: "He is eating _________ (little) food.",
       possibleAnswersAndExplanation: [
         { title: "less", correctAnswer: true },
@@ -144,6 +158,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 14, 
       title:
         "This book is ______________ (interesting) than the one I read last week.",
       possibleAnswersAndExplanation: [
@@ -155,6 +170,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 15, 
       title: "Macs are ______________ (good) than Lenovo.",
       possibleAnswersAndExplanation: [
         { title: "better", correctAnswer: true },
@@ -166,6 +182,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 16, 
       title: "Julia is ______________ (tall) than her brother.",
       possibleAnswersAndExplanation: [
         { title: "taller", correctAnswer: true },
@@ -177,6 +194,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 17, 
       title: "The city is ______________ (crowded) during rush hour.",
       possibleAnswersAndExplanation: [
         { title: "more crowded", correctAnswer: true },
@@ -188,6 +206,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 18, 
       title: "The test was ______________ (difficult) than I expected.",
       possibleAnswersAndExplanation: [
         { title: "more difficult", correctAnswer: true },
@@ -198,6 +217,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 19, 
       title: "Jazz music is ______________ (relaxing) than rock.",
       possibleAnswersAndExplanation: [
         { title: "more relaxing", correctAnswer: true },
@@ -208,6 +228,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
+      id: 20, 
       title:
         "The new restaurant is ______________ (cheap) than the one we used to go to.",
       possibleAnswersAndExplanation: [

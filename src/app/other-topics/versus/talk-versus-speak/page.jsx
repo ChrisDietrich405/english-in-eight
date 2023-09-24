@@ -61,6 +61,7 @@ export default function SpeakVersusTalk() {
         "Speak is used in the phrasal verb speak up meaning to speak louder.",
     },
     {
+      id: 6, 
       title: "They only ever  ________ about basketball.",
       possibleAnswersAndExplanation: [
         { title: "speak" },
@@ -70,6 +71,7 @@ export default function SpeakVersusTalk() {
       explanation: "Talk is used in more informal situations.",
     },
     {
+      id: 7, 
       title: "We ________ today with Denzel St. Clair and Robert Smith.",
       possibleAnswersAndExplanation: [
         { title: "spoke", correctAnswer: true },
@@ -78,6 +80,7 @@ export default function SpeakVersusTalk() {
       userAnswer: "",
     },
     {
+      id: 7, 
       title: "After breakfast we always go for a walk and ________ .",
       possibleAnswersAndExplanation: [
         { title: "talk", correctAnswer: true },
@@ -86,6 +89,7 @@ export default function SpeakVersusTalk() {
       userAnswer: "",
     },
     {
+      id: 8, 
       title: "Hello, could I ________ with Mrs. Jones?",
       possibleAnswersAndExplanation: [
         { title: "speak", correctAnswer: true },
@@ -94,6 +98,7 @@ export default function SpeakVersusTalk() {
       userAnswer: "",
     },
     {
+      id: 9, 
       title: "She ____ four languages.",
       possibleAnswersAndExplanation: [
         { title: "speaks", correctAnswer: true },
@@ -101,6 +106,117 @@ export default function SpeakVersusTalk() {
       ],
       userAnswer: "",
     },
+    {
+      id: 10,
+      title: "I need to ________ to the manager about this issue.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "In formal situations, 'speak' is often preferred when addressing higher authorities."
+    },
+    {
+      id: 11,
+      title: "Let's sit down and  ________ over a cup of coffee.",
+      possibleAnswersAndExplanation: [
+        { title: "speak" },
+        { title: "talk", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "In casual contexts, 'talk' is commonly used."
+    },
+    {
+      id: 12,
+      title: "She's an excellent public ________.",
+      possibleAnswersAndExplanation: [
+        { title: "speaker", correctAnswer: true },
+        { title: "talker" },
+      ],
+      userAnswer: "",
+      explanation: "In this context, 'speaker' is the correct term for someone who addresses an audience."
+    },
+    {
+      id: 13,
+      title: "We should ________ to the professor after class for clarification.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "In a formal business context, 'speak' is used."
+    },
+    {
+      id: 14,
+      title: "Can you ________ a foreign language fluently?",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "To indicate language proficiency, 'speak' is typically used."
+    },
+    {
+      id: 15,
+      title: "He sometimes ________ too much when he's nervous.",
+      possibleAnswersAndExplanation: [
+        { title: "speaks" },
+        { title: "talks", correctAnswer: true },
+      ],
+      userAnswer: "",
+      explanation: "Talk is used in informal settings."
+    },
+    {
+      id: 16,
+      title: "During the meeting, the CEO will ________ about the company's future plans.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "In a formal business context, 'speak' is used."
+    },
+    {
+      id: 17,
+      title: "She's known for her ability to ________ multiple languages fluently.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "When discussing language skills, 'speak' is the appropriate choice."
+    },
+    {
+      id: 18,
+      title: "Please ________ up if you have any questions during the lecture.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "Speak is used in the phrasal verb speak up meaning to speak louder.",
+    },
+    {
+      id: 19,
+      title: "They can ________ for hours about politics.",
+      possibleAnswersAndExplanation: [
+        { title: "talk", correctAnswer: true },
+        { title: "speak" },
+      ],
+      userAnswer: "",
+      explanation: "In casual conversations, 'talk' is used."
+    },
+    {
+      id: 20,
+      title: "It's important to ________ clearly in a job interview.",
+      possibleAnswersAndExplanation: [
+        { title: "speak", correctAnswer: true },
+        { title: "talk" },
+      ],
+      userAnswer: "",
+      explanation: "In formal situations, 'speak' is commonly used."
+    }
+    
   ]);
 
   const handleRandomQuestions = () => {

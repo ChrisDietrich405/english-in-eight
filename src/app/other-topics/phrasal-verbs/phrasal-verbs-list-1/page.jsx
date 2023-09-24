@@ -57,6 +57,7 @@ export default function PhrasalVerbs1() {
         title="Take a quiz!"
         questions={[
           {
+            id: 1, 
             title:
               "My daughter really ___________ with her new roommate. She's very excited.",
             possibleAnswersAndExplanation: [
@@ -66,6 +67,7 @@ export default function PhrasalVerbs1() {
             userAnswer: "",
           },
           {
+            id: 2, 
             title: "After _________________ they went on a romantic date.",
             possibleAnswersAndExplanation: [
               { title: "a. cheating on" },
@@ -74,6 +76,7 @@ export default function PhrasalVerbs1() {
             userAnswer: "",
           },
           {
+            id: 3, 
             title: "My shoes ________________ a lot of space in my closet.",
             possibleAnswersAndExplanation: [
               { title: "a. take up", correctAnswer: true },
@@ -82,6 +85,7 @@ export default function PhrasalVerbs1() {
             userAnswer: "",
           },
           {
+            id: 4, 
             title:
               "He ____________ his math test and got caught by the teacher.",
             possibleAnswersAndExplanation: [
@@ -91,6 +95,7 @@ export default function PhrasalVerbs1() {
             userAnswer: "",
           },
           {
+            id: 5, 
             title: "I'm ________________ my boss. She's such a jerk.",
             possibleAnswersAndExplanation: [
               { title: "a. fed up with", correctAnswer: true },

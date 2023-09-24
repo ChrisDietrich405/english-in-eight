@@ -55,6 +55,7 @@ export default function PhrasalVerbs3() {
         title="Take a quiz!"
         questions={[
           {
+            id: 1, 
             title: "I need to _______________ our bed before we move.",
             possibleAnswersAndExplanation: [
               { title: "a. take apart", correctAnswer: true },
@@ -63,6 +64,7 @@ export default function PhrasalVerbs3() {
             userAnswer: "",
           },
           {
+            id: 2, 
             title: "He ________________ her during their first date.",
             possibleAnswersAndExplanation: [
               { title: "a. put up with" },
@@ -71,6 +73,7 @@ export default function PhrasalVerbs3() {
             userAnswer: "",
           },
           {
+            id: 3, 
             title:
               "It's a great job offer, but because it means moving I need to __________.",
             possibleAnswersAndExplanation: [
@@ -80,6 +83,7 @@ export default function PhrasalVerbs3() {
             userAnswer: "",
           },
           {
+            id: 4, 
             title:
               "I'm going to tell her how I feel today. It's better than letting things _______________.",
             possibleAnswersAndExplanation: [
@@ -89,6 +93,7 @@ export default function PhrasalVerbs3() {
             userAnswer: "",
           },
           {
+            id: 5, 
             title: "She couldn't _____________ her job anymore so she quit.",
             possibleAnswersAndExplanation: [
               { title: "a. think over" },

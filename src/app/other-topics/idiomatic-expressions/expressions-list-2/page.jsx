@@ -62,6 +62,7 @@ export default function Expressions2() {
         title="Take a quiz!"
         questions={[
           {
+            id: 1, 
             title:
               "The decision is _________________. The boss will decide now.",
             possibleAnswersAndExplanation: [
@@ -71,6 +72,7 @@ export default function Expressions2() {
             userAnswer: "",
           },
           {
+            id: 2, 
             title:
               "I completely forgot about my presentation today. I needed _____________.",
             possibleAnswersAndExplanation: [
@@ -80,6 +82,7 @@ export default function Expressions2() {
             userAnswer: "",
           },
           {
+            id: 3, 
             title:
               "Working extra _____________ on me. They thought I was crazy and fired me.",
             possibleAnswersAndExplanation: [
@@ -89,6 +92,7 @@ export default function Expressions2() {
             userAnswer: "",
           },
           {
+            id: 4, 
             title:
               "It's better for the environment for children to wear _________________.",
             possibleAnswersAndExplanation: [
@@ -98,6 +102,7 @@ export default function Expressions2() {
             userAnswer: "",
           },
           {
+            id: 5, 
             title:
               "Many marathon runners get a _____________ at about the 18km mark.",
             possibleAnswersAndExplanation: [

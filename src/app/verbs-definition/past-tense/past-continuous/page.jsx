@@ -5,7 +5,7 @@ import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
-export default function FutureContinuous() {
+export default function PastContinuous() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
   const [quiz, setQuiz] = useState([]);
