@@ -1,227 +1,257 @@
-// //DONE
-
 "use client";
-
-import { useState } from "react";
-import Quiz from "@/src/components/Quiz";
+import { useState, useEffect } from "react";
 import Head from "next/head";
-//DONE))
-
-// import styles from "../../styles/content-page.module.css";
-
+import Quiz from "@/src/components/Quiz";
 import styles from "../../../styles/content-page.module.css";
 
-export default function SimplePresent() {
+export default function PresentPerfectContinuous() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
-  const [quiz, setQuiz] = useState([
+  const [quiz, setQuiz] = useState([]);
+
+  const questionsArray = [
     {
+      id: 1,
       title: "He ________ (love) tea.",
       possibleAnswersAndExplanation: [
         { title: "a. loves", correctAnswer: true },
         { title: "b. love" },
       ],
       userAnswer: "",
+      explanation: "Loves is the correct positive form for she, he, it.",
     },
     {
+      id: 2,
       title: "I _________ (like) dancing.",
       possibleAnswersAndExplanation: [
         { title: "a. don't like", correctAnswer: true },
         { title: "b. doesn't like" },
       ],
       userAnswer: "",
+      explanation: "Like is the correct form for I.",
     },
     {
+      id: 3,
       title: "She ____________ (play) badminton.",
       possibleAnswersAndExplanation: [
         { title: "a. plays", correctAnswer: true },
         { title: "b. play" },
       ],
       userAnswer: "",
+      explanation: "Plays is the correct positive form for she, he, it.",
     },
     {
+      id: 4,
       title: "The class (it) __________ (begin) at 11am.",
       possibleAnswersAndExplanation: [
         { title: "a. begin" },
         { title: "b. begins", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Begins is the correct positive form for she, he, it.",
     },
     {
+      id: 5,
       title: "He ________ (cry) when he watches sad movies.",
       possibleAnswersAndExplanation: [
         { title: "a. don't cry" },
         { title: "b. doesn't cry", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Crt is the correct negative form for she, he, it.",
     },
     {
+      id: 6,
       title: "They ________ (wash) the dishes.",
       possibleAnswersAndExplanation: [
         { title: "a. washes" },
         { title: "b. wash", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Wash is the correct positive form for they.",
     },
 
     {
+      id: 7,
       title: "I ________ (study) Arabic.",
       possibleAnswersAndExplanation: [
         { title: "a. study", correctAnswer: true },
         { title: "b. studies" },
       ],
       userAnswer: "",
+      explanation: "Study is the correct positive form for I.",
     },
     {
+      id: 8,
       title: "They _________ (live) in Tunisia.",
       possibleAnswersAndExplanation: [
         { title: "a. live", correctAnswer: true },
         { title: "b. lives" },
       ],
       userAnswer: "",
+      explanation: "Live is the correct positive form for They.",
     },
     {
+      id: 9,
       title: "She _______ (work) at a mall.",
       possibleAnswersAndExplanation: [
         { title: "a. works", correctAnswer: true },
         { title: "b. work" },
       ],
       userAnswer: "",
+      explanation: "Works is the correct positive form for she, he, it.",
     },
     {
+      id: 10,
       title: "Nia _______ (play) the piano very well.",
       possibleAnswersAndExplanation: [
         { title: "a. don't play" },
         { title: "b. doesn't play", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation: "Plays is the correct positive form for she, he, it.",
     },
-  ]);
+    {
+      id: 11,
+      title: "He ________________ (enjoy) hiking.",
+      possibleAnswersAndExplanation: [
+        { title: "a. enjoys", correctAnswer: true },
+        { title: "b. enjoy" },
+      ],
+      userAnswer: "",
+      explanation: "Enjoys is the correct positive form for he.",
+    },
 
-  const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        title: "They ________ (read) books every night.",
-        possibleAnswersAndExplanation: [
-          { title: "a. reads" },
-          { title: "b. read", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 12,
+      title: "They ________________ (play) chess every weekend.",
+      possibleAnswersAndExplanation: [
+        { title: "a. play", correctAnswer: true },
+        { title: "b. plays" },
+      ],
+      userAnswer: "",
+      explanation: "Play is the correct positive form for they.",
+    },
 
-      {
-        title: "I _________ (enjoy) listening to jazz music.",
-        possibleAnswersAndExplanation: [
-          { title: "a. enjoys" },
-          { title: "b. enjoy", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 13,
+      title: "She ________________ (read) a book every night before bed.",
+      possibleAnswersAndExplanation: [
+        { title: "a. reads", correctAnswer: true },
+        { title: "b. read" },
+      ],
+      userAnswer: "",
+      explanation: "Reads is the correct positive form for she.",
+    },
 
-      {
-        title: "He ____________ (drive) his brother's car to work.",
-        possibleAnswersAndExplanation: [
-          { title: "a. drives", correctAnswer: true },
-          { title: "b. drive" },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 14,
+      title: "The cat ________________ (sleep) in the sun every afternoon.",
+      possibleAnswersAndExplanation: [
+        { title: "a. sleeps", correctAnswer: true },
+        { title: "b. sleep" },
+      ],
+      userAnswer: "",
+      explanation: "Sleeps is the correct positive form for she, he, it.",
+    },
 
-      {
-        title: "The cat (she) __________ (sleep) on the couch.",
-        possibleAnswersAndExplanation: [
-          { title: "a. sleeps", correctAnswer: true },
-          { title: "b. sleep" },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 15,
+      title: "I ________________ (write) a lot of emails every day.",
+      possibleAnswersAndExplanation: [
+        { title: "a. write", correctAnswer: true },
+        { title: "b. writes" },
+      ],
+      userAnswer: "",
+      explanation: "Write is the correct positive form for I.",
+    },
 
-      {
-        title: "He ________ (cook) dinner for his family every night.",
-        possibleAnswersAndExplanation: [
-          { title: "a. cooks", correctAnswer: true },
-          { title: "b. cook" },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 16,
+      title: "We ________________ (watch) a movie every Friday night.",
+      possibleAnswersAndExplanation: [
+        { title: "a. watch", correctAnswer: true },
+        { title: "b. watches" },
+      ],
+      userAnswer: "",
+      explanation: "Watch is the correct positive form for we.",
+    },
 
-      {
-        title: "We ________ (watch) movies Friday nights.",
-        possibleAnswersAndExplanation: [
-          { title: "a. watches" },
-          { title: "b. watch", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 17,
+      title: "He ________________ (paint) in his studio.",
+      possibleAnswersAndExplanation: [
+        { title: "a. paints", correctAnswer: true },
+        { title: "b. paint" },
+      ],
+      userAnswer: "",
+      explanation: "Paints is the correct positive form for he.",
+    },
 
-      {
-        title: "He ________ (paint).",
-        possibleAnswersAndExplanation: [
-          { title: "a. paints", correctAnswer: true },
-          { title: "b. paint" },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 18,
+      title: "They ________________ (dance) professionally.",
+      possibleAnswersAndExplanation: [
+        { title: "a. dance", correctAnswer: true },
+        { title: "b. dances" },
+      ],
+      userAnswer: "",
+      explanation: "Dance is the correct positive form for they.",
+    },
 
-      {
-        title: "They _________ (travel) to Gabon every summer.",
-        possibleAnswersAndExplanation: [
-          { title: "a. travels" },
-          { title: "b. travel", correctAnswer: true },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 19,
+      title: "He ________________ (cook) delicious meals for her family.",
+      possibleAnswersAndExplanation: [
+        { title: "a. cooks", correctAnswer: true },
+        { title: "b. cook" },
+      ],
+      userAnswer: "",
+      explanation: "Cooks is the correct positive form for she, he, it.",
+    },
 
-      {
-        title: "My dog _______ (bark) a lot.",
-        possibleAnswersAndExplanation: [
-          { title: "a. barks", correctAnswer: true },
-          { title: "b. bark" },
-        ],
-        userAnswer: "",
-      },
+    {
+      id: 20,
+      title: "I ________________ (play) the guitar in a band.",
+      possibleAnswersAndExplanation: [
+        { title: "a. play", correctAnswer: true },
+        { title: "b. plays" },
+      ],
+      userAnswer: "",
+      explanation: "Play is the correct positive form for I.",
+    },
+  ];
 
-      {
-        title: "She _______ (teach) English.",
-        possibleAnswersAndExplanation: [
-          { title: "a. teaches", correctAnswer: true },
-          { title: "b. teach" },
-        ],
-        userAnswer: "",
-      },
-    ]);
-    setShouldShowNewQuestionsBtn(false);
+  useEffect(() => {
+    console.log(questionsArray);
+    const questionsVar = questionsArray.splice(0, 10);
+    setQuiz(questionsVar);
+  }, []);
+
+  const secondSetQuestions = () => {
+    const questionsVar = questionsArray.splice(11);
+    return questionsVar;
   };
 
   return (
     <>
       <Head>
-        <title>Simple Present | English in Eight Minutes</title>
+        <title>Future Continuous | English in Eight Minutes</title>
         <meta
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
           name="description"
-        />
-        <meta
-          content="English, Grammar, Collective Nouns, Singular Verbs, Examples"
-          name="keywords"
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
         />
 
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://example.com/collective-nouns"
-        />
-        <meta
-          property="og:title"
-          content="Collective Nouns | English in Eight Minutes"
-        />
+        <meta property="og:url" content="https://dietrichlandcare.com" />
+        <meta property="og:title" content="Dietrich Land Care" />
         <meta
           property="og:description"
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
+          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
         />
         <meta
           property="og:image"
-          content="https://example.com/images/collective-nouns.jpg"
+          content="https://dietrichlandcare.com/images/logo.jpg"
         />
 
         <link rel="icon" href="/favicon.ico" />
@@ -238,7 +268,6 @@ export default function SimplePresent() {
           sizes="16x16"
         />
       </Head>
-
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Simple Present</h1>
@@ -329,14 +358,46 @@ export default function SimplePresent() {
           </ul>
           <p>He buys a lot of clothes</p>{" "}
         </div>
-        <br />{" "}
-        <Quiz
-          title="Take a Quiz!"
-          questions={quiz}
-          callback={handleRandomQuestions}
-          shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-        ></Quiz>
       </div>
+      <Quiz
+        setQuiz={setQuiz}
+        title="Take a Quiz!"
+        questions={quiz}
+        secondSetQuestions={secondSetQuestions}
+        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
+      ></Quiz>
     </>
   );
 }
+
+// {
+//   /* import Quiz from "@/src/components/Quiz";
+// import styles from "../../../styles/content-page.module.css"; */
+// }
+
+// import Quiz from "@/src/components/Quiz";
+
+// import styles from "../../../styles/content-page.module.css";
+// //DONE
+// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
+// const endpoint = "/api/past-perfect-continuous"; // Replace with the correct endpoint
+
+// const fullUrl = baseUrl + endpoint;
+// //DONE
+
+// // const getData = async () => {
+// //   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
+// //   return res.json();
+// // };
+
+// export default async function PresentPerfectContinuous() {
+//   // const verbs = await getData();
+
+//   return (
+//     <div className="page-body">
+
+//     </div>
+//   );
+// }
+
+// //DONE
