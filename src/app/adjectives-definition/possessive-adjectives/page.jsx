@@ -5,6 +5,51 @@ import Quiz from "../../../components/Quiz";
 
 import styles from "../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Home | English in Eight Minutes",
+  description:
+    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+  keywords:
+    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Home | English in Eight Minutes",
+    description:
+      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    images: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/favicon/apple-touch-icon.png",
+      },
+    ],
+  },
+};
+
 export default function PossessiveAdjectives() {
   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
     useState(true);
@@ -230,7 +275,7 @@ export default function PossessiveAdjectives() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Possessive Adjectives | English in Eight Minutes</title>
         <meta
           content="Learn about possessive adjectives in English grammar. Understand how they indicate ownership and their usage with examples."
@@ -272,7 +317,7 @@ export default function PossessiveAdjectives() {
           href="/favicon-16x16.png"
           sizes="16x16"
         />
-      </Head>
+      </Head> */}
       <div className={styles.page_body}>
         <div className="possessive-adjectives">
           <div className={styles.page_title}>
@@ -299,7 +344,7 @@ export default function PossessiveAdjectives() {
               He has a car. It is <b>his</b> car
             </li>
             <li>
-              She has a laptop. It is <b>her</b>laptop.
+              She has a laptop. It is <b>her</b> laptop.
             </li>
             <li>
               The car has new tires. <b>Its</b> tires are new.
@@ -327,3 +372,5 @@ export default function PossessiveAdjectives() {
     </>
   );
 }
+
+
