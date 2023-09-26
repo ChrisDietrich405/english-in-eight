@@ -266,6 +266,23 @@ export default function ListenVersusHear() {
           <h1>Listen versus Hear</h1>
         </div>
 
+        <p>Listen is something you focus on doing:</p>
+        <ul className="page-examples">
+          <li>
+            I listened very carefully to what she said and wrote it all down.
+          </li>
+          <li>Do you listen to music in bed?</li>
+        </ul>
+
+        <p className={styles.grammar_explanation_paragraph}>
+          We <b>always</b> use <b>to</b> after listen before an object:
+          <ul>
+            <li>
+              Every morning I <b> listen to</b> my Mozart CD while I’m having
+              breakfast. It prepares me mentally for the day
+            </li>
+          </ul>
+        </p>
         <p className={styles.grammar_explanation_paragraph}>
           <b>Hear</b> is the act of naturally perceiving sounds with your ears,
           while <b>listen</b> involves actively paying attention and processing
@@ -278,23 +295,6 @@ export default function ListenVersusHear() {
           <li>Did you hear the thunder last night?</li>
           <li>The connection is very bad. I can’t hear you.</li>
         </ul>
-        <p>Listen is something you focus on doing:</p>
-        <ul className="page-examples">
-          <li>
-            I listened very carefully to what she said and wrote it all down.
-          </li>
-          <li>Do you listen to music in bed?</li>
-        </ul>
-
-        <p className={styles.grammar_explanation_paragraph}>
-          We use to after listen before an object:
-          <ul>
-            <li>
-              Every morning I listen to my Mozart CD while I’m having breakfast.
-              It prepares me mentally for the day
-            </li>
-          </ul>
-        </p>
       </div>
 
       <Quiz
