@@ -11,6 +11,8 @@ const SelectAnswer = ({
   answers,
   i,
   isAnsweredCorrectly,
+  questionId,
+  index,
 }) => {
   const getTextColor = () => {
     if (!(i in answers)) {
@@ -33,7 +35,9 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return <p style={{ paddingTop: "3px", paddingLeft: "2px" }}>{explanation}</p>;
+        return (
+          <p style={{ paddingTop: "3px", paddingLeft: "2px" }}>{explanation}</p>
+        );
       }
     }
   };
@@ -56,19 +60,24 @@ const SelectAnswer = ({
     }
   };
 
+
+
   return (
     <li className={styles.answer_option}>
       <input
+        id={"input_field" + questionId + index}
         disabled={submitted}
         onClick={onClick}
-        name={"twoPossibleAnswers" + i}
+        name={"twoPossibleAnswers" + questionId}
         type="radio"
         className={styles.radio_button}
       />
-      <p className={getTextColor()}>
-        {possibleAnswer.title} {getEmoji()}
-      </p>
-      <p>{getExplanation()}</p>
+      <label htmlFor={"input_field" + questionId + index }>
+        <span className={getTextColor()}>
+          {possibleAnswer.title} {getEmoji()}
+        </span>
+        <span>{getExplanation()}</span>
+      </label>
     </li>
   );
 };

@@ -200,6 +200,7 @@ export default function Quiz(props) {
                   (possibleAnswer, index) => {
                     return (
                       <SelectAnswer
+                        questionId={question.id}
                         explanation={question.explanation}
                         key={`answer${index}`}
                         submitted={submitted}
