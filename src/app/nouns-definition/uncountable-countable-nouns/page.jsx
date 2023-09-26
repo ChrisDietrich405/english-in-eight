@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@mui/material";
+
 import Quiz from "../../../components/Quiz";
-import Head from "next/head";
-//DONE))
 
 import styles from "../../styles/content-page.module.css";
 
@@ -14,7 +15,7 @@ export default function UncountableAndCountable() {
 
   const questionsArray = [
     {
-      id: 1, 
+      id: 1,
       title: "There _______ many beans in the soup.",
       possibleAnswersAndExplanation: [
         { title: " are", correctAnswer: true },
@@ -25,7 +26,7 @@ export default function UncountableAndCountable() {
         "You can count beans so they are considered a countable noun",
     },
     {
-      id: 2, 
+      id: 2,
       title: "We don't drink ____ coffee.",
       possibleAnswersAndExplanation: [
         { title: " many" },
@@ -35,7 +36,7 @@ export default function UncountableAndCountable() {
       explanation: "Coffee is a liquid so it's considered an uncountable noun",
     },
     {
-      id: 3, 
+      id: 3,
       title: "I ate _____ soup for lunch.",
       possibleAnswersAndExplanation: [
         { title: " a few" },
@@ -47,7 +48,7 @@ export default function UncountableAndCountable() {
         "Soup doesn't have a shape so it's considered an uncountable noun",
     },
     {
-      id: 4, 
+      id: 4,
       title: "How _________ rice do we need.",
       possibleAnswersAndExplanation: [
         { title: " much", correctAnswer: true },
@@ -57,7 +58,7 @@ export default function UncountableAndCountable() {
       explanation: "Rice is very small so it's considered an uncountable noun",
     },
     {
-      id: 5, 
+      id: 5,
       title: "I have ________ friends in Kenya.",
       possibleAnswersAndExplanation: [
         { title: " a few", correctAnswer: true },
@@ -68,7 +69,7 @@ export default function UncountableAndCountable() {
         "You can count friends so they are considered a countable noun",
     },
     {
-      id: 6, 
+      id: 6,
       title: "Eating _____ chocolate is unhealthy.",
       possibleAnswersAndExplanation: [
         { title: " a lot of", correctAnswer: true },
@@ -78,7 +79,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 7, 
+      id: 7,
       title: "How ________ soy milk do you want?",
       possibleAnswersAndExplanation: [
         { title: " much", correctAnswer: true },
@@ -90,7 +91,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 8, 
+      id: 8,
       title: "______ there tofu in the salad?",
       possibleAnswersAndExplanation: [
         { title: " Are" },
@@ -102,7 +103,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 9, 
+      id: 9,
       title: "How ___________ cups of tea do you drink in the morning?",
       possibleAnswersAndExplanation: [
         { title: " much" },
@@ -113,7 +114,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 10, 
+      id: 10,
       title: "There ______ orange juice on the table.",
       possibleAnswersAndExplanation: [
         { title: " is", correctAnswer: true },
@@ -123,7 +124,7 @@ export default function UncountableAndCountable() {
       explanation: "Juice is a liquid so it's considered an uncountable noun",
     },
     {
-      id: 11, 
+      id: 11,
       title: "She bought _____ apples for the pie.",
       possibleAnswersAndExplanation: [
         { title: "a few" },
@@ -134,7 +135,7 @@ export default function UncountableAndCountable() {
         "You can count apples so they are considered a countable noun",
     },
     {
-      id: 12, 
+      id: 12,
       title: "There _________ three cats behind the house",
       possibleAnswersAndExplanation: [
         { title: "are", correctAnswer: true },
@@ -145,7 +146,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 13, 
+      id: 13,
       title: "How ________ water do you need for the recipe?",
       possibleAnswersAndExplanation: [
         { title: "much", correctAnswer: true },
@@ -156,7 +157,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 14, 
+      id: 14,
       title: "There _______ a lot of sugar in that cake.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -168,7 +169,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 15, 
+      id: 15,
       title: "_____ there any apple juice left in the fridge?",
       possibleAnswersAndExplanation: [
         { title: "Are" },
@@ -179,7 +180,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 16, 
+      id: 16,
       title: "I need to buy _______ flour.",
       possibleAnswersAndExplanation: [
         { title: "a lot of", correctAnswer: true },
@@ -191,7 +192,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 16, 
+      id: 16,
       title: "How ________ tomatoes did you put in the soup?",
       possibleAnswersAndExplanation: [
         { title: "much" },
@@ -203,7 +204,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 17, 
+      id: 17,
       title: "There _______ a lot traffic on the road this morning.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -215,7 +216,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 18, 
+      id: 18,
       title: "_____ there any time left before the meeting?",
       possibleAnswersAndExplanation: [
         { title: "Are" },
@@ -227,7 +228,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 19, 
+      id: 19,
       title: "How ________ hours of sleep did you get last night?",
       possibleAnswersAndExplanation: [
         { title: "much" },
@@ -237,13 +238,7 @@ export default function UncountableAndCountable() {
     },
   ];
 
-  const handleRandomQuestions = () => {
-    setQuiz([]);
-    setShouldShowNewQuestionsBtn(false);
-  };
-
   useEffect(() => {
-    console.log(questionsArray);
     const questionsVar = questionsArray.splice(0, 10);
     setQuiz(questionsVar);
   }, []);
@@ -367,6 +362,12 @@ export default function UncountableAndCountable() {
               She has <b>six</b> cats.
             </li>
           </ul>
+          <Link
+            href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
+            target="_blank"
+          >
+            <Button>Interested in getting a better understanding?</Button>
+          </Link>
         </div>
 
         <br />

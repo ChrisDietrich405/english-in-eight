@@ -111,29 +111,7 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <Dropdown dropdownProps={dropdownProps} />
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition">
-            {" "}
-            Verb Definition
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/present-tense">
-            Present Tense Verbs
-          </Link>
-        </MenuItem>
 
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/past-tense">
-            {" "}
-            Past Tense Verbs
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/verbs-definition/future">
-            Future Tense Verbs
-          </Link>
-        </MenuItem> */}
       </StyledMenu>
     </>
   );

@@ -161,22 +161,16 @@ export default function Quiz(props) {
     setSubmitted(true);
   };
 
-  // const { questions } = props;
-  // const firstSet = questions.slice(0, 10);
-
   const reset = (e) => {
     setAnswers({});
     setSubmitted(false);
   };
 
   const loadNextSetOfQuestions = () => {
-    // Call the secondSetQuestions function passed as a prop to get the next set of questions
     const nextSetOfQuestions = props.secondSetQuestions();
 
-    // Update the quiz questions with the new set of questions
     props.setQuiz([...nextSetOfQuestions]);
 
-    // Reset answers and submitted status
     setAnswers({});
     setSubmitted(false);
   };

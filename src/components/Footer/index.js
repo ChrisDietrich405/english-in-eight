@@ -137,11 +137,7 @@ export default function Footer() {
             >
               {" "}
               <div className={styles.logo}>
-                <Link
-                  // className={styles.link}
-                  href="/"
-                  // className={styles.footer_logo}
-                >
+                <Link href="/">
                   <Image
                     className={styles.logo_image}
                     width="230"
