@@ -12,7 +12,7 @@ export default function Expressions2() {
         <ul>
           <li>
             <b>Hand me downs</b> - clothes that are received that were worn by
-            older relatives.
+            older relatives
             <br />
             <p>
               Example: I wore a lot of my older brother’s <b>hand me downs.</b>
@@ -21,7 +21,7 @@ export default function Expressions2() {
 
           <li>
             <b>Second wind</b> - a new strength or energy to continue something
-            that is difficult.
+            that is difficult
             <br />
             <p>
               Example: I was tired around 11pm, but got a <b>second wind</b> and
@@ -49,7 +49,7 @@ export default function Expressions2() {
 
           <li>
             <b>To backfire</b> - (of a plan or action) to have an opposite and
-            undesirable effect to what was intended.
+            undesirable effect to what was intended
             <br />
             <p>
               Example: Her plans to make him jealous <b>backfired</b> on her
@@ -97,7 +97,7 @@ export default function Expressions2() {
               "It's better for the environment for children to wear _________________.",
             possibleAnswersAndExplanation: [
               { title: "a. hand me downs", correctAnswer: true },
-              { title: "b. second winds" },
+              { title: "b. second wind" },
             ],
             userAnswer: "",
           },

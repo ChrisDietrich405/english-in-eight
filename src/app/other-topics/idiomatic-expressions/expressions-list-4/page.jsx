@@ -21,7 +21,7 @@ export default function Expressions() {
           </li>
 
           <li>
-            <b>B movie</b> - a low-budget commercial motion picture
+            <b>B movie</b> - a low-budget commercial movie
             <br />
             <p>
               Example: My friends and I like to watch <b>B movies</b>. We like
@@ -40,7 +40,8 @@ export default function Expressions() {
           </li>
 
           <li>
-            <b>(period of time) tops</b> - the longest time something will take to finish
+            <b>(period of time) tops</b> - the longest time something will take
+            to finish
             <br />
             <p>
               Example: I’ll finish this website in <b>one week tops.</b>
@@ -60,7 +61,7 @@ export default function Expressions() {
         title="Take a quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title: "Why didn't you laugh at my story? ____________________.",
             possibleAnswersAndExplanation: [
               { title: "a. I guess it was ahead of schedule" },
@@ -69,7 +70,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title: "__________ is a very ineffective way to get sales.",
             possibleAnswersAndExplanation: [
               { title: "a. B movie" },
@@ -78,7 +79,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title:
               "I actually like ___________. They are so bad they make me laugh.",
             possibleAnswersAndExplanation: [
@@ -88,7 +89,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title: "The project will be finished in 3 weeks ________.",
             possibleAnswersAndExplanation: [
               { title: "a. you had to be there" },
@@ -97,7 +98,7 @@ export default function Expressions() {
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title: "Hopefully we can finish the project ________________.",
             possibleAnswersAndExplanation: [
               { title: "a. tops" },

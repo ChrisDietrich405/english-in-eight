@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Quiz from "../../../components/Quiz";
-import Head from "next/head";
+import Link from "next/link";
+import { Button } from "@mui/material";
 
 import styles from "../../styles/content-page.module.css";
 
@@ -206,6 +207,12 @@ export default function NounModifiers() {
           <span style={{ color: "red" }}>NOT a basketballs player</span>
         </li>
       </ul>
+      <Link
+        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
+        target="_blank"
+      >
+        <Button>Interested in getting a better understanding?</Button>
+      </Link>
 
       <Quiz
         setQuiz={setQuiz}

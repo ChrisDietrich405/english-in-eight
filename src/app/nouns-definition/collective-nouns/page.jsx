@@ -15,7 +15,7 @@ export default function Collective() {
 
   const questionsArray = [
     {
-      id: 1, 
+      id: 1,
       title: "The students __________ fighting in the cafeteria.",
       possibleAnswersAndExplanation: [
         { title: " are", correctAnswer: true },
@@ -26,7 +26,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 2, 
+      id: 2,
       title: "The group __________ decided together to file the petition.",
       possibleAnswersAndExplanation: [
         { title: "has", correctAnswer: true },
@@ -37,7 +37,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 3, 
+      id: 3,
       title:
         "The United States army _____________ a budget much larger than any other countries.",
       possibleAnswersAndExplanation: [
@@ -48,7 +48,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 4, 
+      id: 4,
       title: "My sisters ____________ to go to the beach this weekend.",
       possibleAnswersAndExplanation: [
         { title: "want", correctAnswer: true },
@@ -58,7 +58,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 5, 
+      id: 5,
       title: "___________ the parents' committee made a decision?",
       possibleAnswersAndExplanation: [
         { title: "Has", correctAnswer: true },
@@ -68,7 +68,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 7, 
+      id: 7,
       title: "___________ any of the soldiers hurt?",
       possibleAnswersAndExplanation: [
         { title: "Was" },
@@ -79,7 +79,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 8, 
+      id: 8,
       title: "That team __________ every game.",
       possibleAnswersAndExplanation: [
         { title: "wins", correctAnswer: true },
@@ -89,7 +89,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 9, 
+      id: 9,
       title:
         "The members of the jury ______________ very frustrated by the prosecuting lawyer.",
       possibleAnswersAndExplanation: [
@@ -100,7 +100,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 10, 
+      id: 10,
       title: "The school choir ______________ won many competitions.",
       possibleAnswersAndExplanation: [
         { title: "have" },
@@ -110,7 +110,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 11, 
+      id: 11,
       title:
         "His family ______________ very big. He has 10 uncles and 11 aunts.",
       possibleAnswersAndExplanation: [
@@ -121,7 +121,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 12, 
+      id: 12,
       title: "The team __________ celebrating their victory.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -131,7 +131,7 @@ export default function Collective() {
       explanation: "Team is considered a collective noun.",
     },
     {
-      id: 13, 
+      id: 13,
       title: "The committee __________ discussing the new proposal.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -141,7 +141,7 @@ export default function Collective() {
       explanation: "Committee is considered a collective noun.",
     },
     {
-      id: 14, 
+      id: 14,
       title: "The people at the store __________ very angry.",
       possibleAnswersAndExplanation: [
         { title: "are", correctAnswer: true },
@@ -151,7 +151,7 @@ export default function Collective() {
       explanation: "People is not considered a collective noun.",
     },
     {
-      id: 15, 
+      id: 15,
       title: "The jury __________ reached a unanimous decision.",
       possibleAnswersAndExplanation: [
         { title: "has", correctAnswer: true },
@@ -161,7 +161,7 @@ export default function Collective() {
       explanation: "Jury is considered a collective noun.",
     },
     {
-      id: 16, 
+      id: 16,
       title: "The swarm of bees __________ buzzing around the flowers.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -171,7 +171,7 @@ export default function Collective() {
       explanation: "Swarm is considered a collective noun.",
     },
     {
-      id: 17, 
+      id: 17,
       title: "The orchestra __________ performing at the concert.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -181,7 +181,7 @@ export default function Collective() {
       explanation: "Orchestra is considered a collective noun.",
     },
     {
-      id: 18, 
+      id: 18,
       title: "The students ___________ not in the class.",
       possibleAnswersAndExplanation: [
         { title: "were", correctAnswer: true },
@@ -191,7 +191,7 @@ export default function Collective() {
       explanation: "Students is not considered a collective noun.",
     },
     {
-      id: 19, 
+      id: 19,
       title: "His family __________ planning a reunion.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -201,7 +201,7 @@ export default function Collective() {
       explanation: "Family is considered a collective noun.",
     },
     {
-      id: 20, 
+      id: 20,
       title: "Her staff __________ working hard this week.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -211,7 +211,7 @@ export default function Collective() {
       explanation: "Staff is considered a collective noun.",
     },
     {
-      id: 21, 
+      id: 21,
       title: "The audience __________ clapping.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -221,7 +221,7 @@ export default function Collective() {
       explanation: "Audience is considered a collective noun.",
     },
     {
-      id: 22, 
+      id: 22,
       title: "The school of fish __________ swimming in the ocean.",
       possibleAnswersAndExplanation: [
         { title: "is", correctAnswer: true },
@@ -255,8 +255,8 @@ export default function Collective() {
           <b>family</b>, <b>government</b>, <b>group</b>, and <b>team</b>. Most
           collective nouns are treated as a singular entity, using the singular
           verb form. Because collective nouns include multiple "members" inside
-          of them you may think you would use the "they" form of the verb, but you
-          don't. For example, you don't say the group are happy, you say the
+          of them you may think you would use the "they" form of the verb, but
+          you don't. For example, you don't say the group are happy, you say the
           group is happy.
         </p>
       </div>
@@ -282,12 +282,6 @@ export default function Collective() {
             The city <b>council</b> is rejecting the proposal.
           </li>
         </ul>
-        <Link
-            href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-            target="_blank"
-          >
-            <Button>Interested in getting a better understanding?</Button>
-          </Link>
       </div>
       <Quiz
         setQuiz={setQuiz}
@@ -297,6 +291,12 @@ export default function Collective() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
+      <Link
+        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
+        target="_blank"
+      >
+        <Button>Interested in getting a better understanding?</Button>
+      </Link>
     </>
   );
 }

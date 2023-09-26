@@ -100,7 +100,7 @@ export default function Expressions3() {
           {
             id: 4, 
             title:
-              "I don't like watching series, because sometimes I get addicted to one and ________________ watch it.",
+              "I don't like watching series, because sometimes I get addicted to one and ________________ it.",
             possibleAnswersAndExplanation: [
               { title: "a. spread the word" },
               { title: "b. binge watch", correctAnswer: true },

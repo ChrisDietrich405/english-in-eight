@@ -362,12 +362,6 @@ export default function UncountableAndCountable() {
               She has <b>six</b> cats.
             </li>
           </ul>
-          <Link
-            href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-            target="_blank"
-          >
-            <Button>Interested in getting a better understanding?</Button>
-          </Link>
         </div>
 
         <br />
@@ -379,6 +373,21 @@ export default function UncountableAndCountable() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/bhgzqbv9Rxk?si=88fwhbkbJoDjm85j"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      {/* <Link
+        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
+        target="_blank"
+      >
+        <Button>Interested in getting a better understanding?</Button>
+      </Link> */}
     </>
   );
 }
