@@ -406,6 +406,16 @@ export default function FutureSimple() {
           secondSetQuestions={secondSetQuestions}
           shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
         ></Quiz>
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tri7u632AaA?si=Br_dxsWwJec0QBq9"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </main>
     </>
   );

@@ -291,12 +291,16 @@ export default function Collective() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
-      <Link
-        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-        target="_blank"
-      >
-        <Button>Interested in getting a better understanding?</Button>
-      </Link>
+      <iframe
+       className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BPPsqCGrYWw?si=of1j_EmmyDulr696"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }

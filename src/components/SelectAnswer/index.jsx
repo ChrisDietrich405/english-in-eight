@@ -36,7 +36,9 @@ const SelectAnswer = ({
     if (submitted === true) {
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return (
-          <p style={{ paddingTop: "3px", paddingLeft: "2px" }}>{explanation}</p>
+          <span style={{  }}>
+            {explanation}
+          </span>
         );
       }
     }
@@ -52,15 +54,12 @@ const SelectAnswer = ({
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return <AiFillCloseCircle color="red" style={{ marginLeft: "15px" }} />;
         {
-          /* <span>{explanation}</span> */
         }
       } else {
         return "";
       }
     }
   };
-
-
 
   return (
     <li className={styles.answer_option}>
@@ -72,8 +71,8 @@ const SelectAnswer = ({
         type="radio"
         className={styles.radio_button}
       />
-      <label htmlFor={"input_field" + questionId + index }>
-        <span className={getTextColor()}>
+      <label htmlFor={"input_field" + questionId + index}>
+        <span style={{marginRight: "3px"}} className={getTextColor()}>
           {possibleAnswer.title} {getEmoji()}
         </span>
         <span>{getExplanation()}</span>

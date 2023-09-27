@@ -14,6 +14,12 @@ const Suggestions = () => {
 
         <ul className={styles.list_container}>
           <li>
+            This website is intended to give you fast lessons and exercises so
+            that you can immediately learn and practice. For a deeper
+            understanding of each topic please watch the accompanying videos at
+            the bottom of each page.
+          </li>
+          <li>
             Don't focus too much on the explanations, read them once and then go
             on to the examples. I guarantee after reading the examples the
             explanations will make more sense (be easier to understand).

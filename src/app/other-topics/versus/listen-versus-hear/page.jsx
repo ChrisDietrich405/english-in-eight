@@ -295,6 +295,11 @@ export default function ListenVersusHear() {
           <li>Did you hear the thunder last night?</li>
           <li>The connection is very bad. I can’t hear you.</li>
         </ul>
+        <h3>
+          This lesson is not easy, so don't worry if you make a lot of mistakes
+          with the quiz. Remember practice makes perfect. Do the quiz as many
+          time as you need.{" "}
+        </h3>
       </div>
 
       <Quiz

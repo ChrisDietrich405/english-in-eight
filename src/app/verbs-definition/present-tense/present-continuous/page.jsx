@@ -63,7 +63,7 @@ export default function PresentContinuous() {
       explanation: "For ongoing actions you use the present continuous",
     },
     {
-      id: 5,
+      id: 6,
       title: "He ___________ (wait) for the taxi.",
       possibleAnswersAndExplanation: [
         { title: "a. is waiting", correctAnswer: true },
@@ -73,7 +73,7 @@ export default function PresentContinuous() {
       explanation: "For current actions you use the present continuous",
     },
     {
-      id: 6,
+      id: 7,
       title: "They __________ (fight).",
       possibleAnswersAndExplanation: [
         { title: "a. are fighting", correctAnswer: true },
@@ -83,7 +83,7 @@ export default function PresentContinuous() {
       explanation: "For current actions you use the present continuous",
     },
     {
-      id: 7,
+      id: 8,
       title: "We _______________ (go) to the mall tonight.",
       possibleAnswersAndExplanation: [
         { title: "a. are not going", correctAnswer: true },
@@ -93,7 +93,7 @@ export default function PresentContinuous() {
       explanation: "For future actions you can use the present continuous",
     },
     {
-      id: 8,
+      id: 9,
       title: "You ___________ (read) The Shining.",
       possibleAnswersAndExplanation: [
         { title: "a. are read" },
@@ -103,7 +103,7 @@ export default function PresentContinuous() {
       explanation: "For ongoing actions you use the present continuous",
     },
     {
-      id: 9,
+      id: 10,
       title: "She _________ (eat) a Kit Kat bar.",
       possibleAnswersAndExplanation: [
         { title: "a. am eating" },
@@ -113,7 +113,7 @@ export default function PresentContinuous() {
       explanation: "For current actions you use the present continuous",
     },
     {
-      id: 10,
+      id: 11,
       title: "They ___________ (travel) to Paris next week.",
       possibleAnswersAndExplanation: [
         { title: "a. are not traveling", correctAnswer: true },
@@ -124,7 +124,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 11,
+      id: 12,
       title: "I ___________ (read) a book right now.",
       possibleAnswersAndExplanation: [
         { title: "a. am read" },
@@ -135,7 +135,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 12,
+      id: 13,
       title: "He ___________ (cook) dinner for us.",
       possibleAnswersAndExplanation: [
         { title: "a. are cooking" },
@@ -146,7 +146,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 13,
+      id: 14,
       title: "We ___________ (wait) for the bus.",
       possibleAnswersAndExplanation: [
         { title: "a. are wait" },
@@ -157,7 +157,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 14,
+      id: 15,
       title: "She ___________ (play) the piano beautifully.",
       possibleAnswersAndExplanation: [
         { title: "a. are playing" },
@@ -168,7 +168,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 15,
+      id: 16,
       title: "They ___________ (visit) their grandparents tomorrow.",
       possibleAnswersAndExplanation: [
         { title: "a. are not visiting", correctAnswer: true },
@@ -179,7 +179,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 16,
+      id: 17,
       title: "I ___________ (talk) to the manager about the issue.",
       possibleAnswersAndExplanation: [
         { title: "a. am talk" },
@@ -190,7 +190,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 17,
+      id: 18,
       title: "They ___________ (study) for their exams all day.",
       possibleAnswersAndExplanation: [
         { title: "a. are study" },
@@ -201,7 +201,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 18,
+      id: 19,
       title: "He ___________ (clean) the house right now.",
       possibleAnswersAndExplanation: [
         { title: "a. are clean" },
@@ -212,7 +212,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 19,
+      id: 20,
       title: "We ___________ (play) basketball on Saturday.",
       possibleAnswersAndExplanation: [
         { title: "a. are not playing", correctAnswer: true },
@@ -223,7 +223,7 @@ export default function PresentContinuous() {
     },
 
     {
-      id: 20,
+      id: 21,
       title: "She ___________ (read) a novel in the library.",
       possibleAnswersAndExplanation: [
         { title: "a. are reading" },
@@ -369,6 +369,16 @@ export default function PresentContinuous() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/w04YVmJR4w4?si=kJySTWwESHESBsyC"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }

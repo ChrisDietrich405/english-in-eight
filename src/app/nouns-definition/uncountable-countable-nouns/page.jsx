@@ -374,6 +374,7 @@ export default function UncountableAndCountable() {
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
       <iframe
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/bhgzqbv9Rxk?si=88fwhbkbJoDjm85j"
@@ -382,12 +383,6 @@ export default function UncountableAndCountable() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      {/* <Link
-        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-        target="_blank"
-      >
-        <Button>Interested in getting a better understanding?</Button>
-      </Link> */}
     </>
   );
 }

@@ -54,11 +54,11 @@ export default function PresentPerfectContinuous() {
       id: 5,
       title: "He ________ (cry) when he watches sad movies.",
       possibleAnswersAndExplanation: [
-        { title: "a. don't cry" },
-        { title: "b. doesn't cry", correctAnswer: true },
+        { title: "a. cry" },
+        { title: "b. cries", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Crt is the correct negative form for she, he, it.",
+      explanation: "Cries the correct positive form for she, he, it.",
     },
     {
       id: 6,
@@ -334,7 +334,7 @@ export default function PresentPerfectContinuous() {
             <li>pass becomes passes</li>
             <li>crash becomes crashes</li>{" "}
           </ul>
-          <p>She boxes on Friday nights</p>{" "}
+          <p>Example: She boxes on Friday nights.</p>{" "}
           <p>
             Verbs that end in <b>'y'</b> often change to <b>'ie'</b> before 's':{" "}
           </p>{" "}
@@ -345,7 +345,7 @@ export default function PresentPerfectContinuous() {
             <li>marry becomes marries</li>
             <li>fly becomes flies</li>{" "}
           </ul>
-          <p>He cries a lot</p>{" "}
+          <p>Example: He cries a lot.</p>{" "}
           <p>
             Be careful! <b>'y'</b> doesn't change to <b>'ie'</b> if the ending
             is 'ay', 'ey', 'oy', 'uy'.{" "}
@@ -356,7 +356,7 @@ export default function PresentPerfectContinuous() {
             <li>buy becomes buys</li>
             <li>enjoy becomes enjoys</li>{" "}
           </ul>
-          <p>He buys a lot of clothes</p>{" "}
+          <p>Example: He buys a lot of clothes.</p>{" "}
         </div>
       </div>
       <Quiz
@@ -366,6 +366,17 @@ export default function PresentPerfectContinuous() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
+
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/47LEelX7nhg?si=8-fSboWd7KD3Fawh"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }

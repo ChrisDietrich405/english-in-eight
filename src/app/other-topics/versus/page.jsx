@@ -18,7 +18,10 @@ export default function VersusDefinition() {
         </p>
       </div>
       <Card style={{ padding: "16px", marginBottom: "20px" }}>
-        <div className={styles.content_wrapper} style={{ display: "flex" }}>
+        <div
+          className={styles.content_wrapper}
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
           <Image
             height={300}
             width={300}

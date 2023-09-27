@@ -15,7 +15,7 @@ export default function PhrasalVerbs() {
           as <b>look down on.</b>
         </p>
       </div>
-      <Card style={{ padding: "16px", marginBottom: "20px" }}>
+      <Card style={{ padding: "16px", marginBottom: "60px" }}>
         <div className={styles.content_wrapper}>
           <Image
             height={220}
@@ -47,6 +47,16 @@ export default function PhrasalVerbs() {
           </p>
         </div>
       </Card>
+      <iframe
+        className={{styles.iframe_wrapper}}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nIlnxm8m2ec?si=BomnRA_Wd0bjpocr"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }
