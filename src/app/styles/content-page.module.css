@@ -115,9 +115,9 @@
   .links_container {
     flex-direction: column;
   }
-
+  
   .iframe_wrapper {
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 280px;
     height: 157px;
   }

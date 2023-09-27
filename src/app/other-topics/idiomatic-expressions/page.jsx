@@ -44,9 +44,18 @@ export default function ExpressionsDefinition() {
               aren't referring to any business at all. We are telling another
               person to not invade our privacy
             </p>
-            {/* </div> */}
           </div>
         </Card>
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/to8VoiepB3I?si=Bm00_lxelJfDjVjx"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );

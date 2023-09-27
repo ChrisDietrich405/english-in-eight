@@ -31,7 +31,7 @@ export default function PhrasalVerbs() {
           </p>
         </div>
       </Card>
-      <Card style={{ padding: "16px" }}>
+      <Card style={{ padding: "16px", marginBottom: "60px" }}>
         <div className={styles.content_wrapper}>
           <Image
             height={200}
@@ -47,8 +47,9 @@ export default function PhrasalVerbs() {
           </p>
         </div>
       </Card>
+      <div className={styles.divider}></div>
       <iframe
-        className={{styles.iframe_wrapper}}
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/nIlnxm8m2ec?si=BomnRA_Wd0bjpocr"
