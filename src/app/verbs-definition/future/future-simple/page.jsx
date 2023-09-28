@@ -14,7 +14,7 @@ export default function FutureSimple() {
     {
       id: 1,
       title:
-        "It's Nia's birthday next week, so we _____________ buy her a microwave.",
+        "It's Nia's birthday next week, so we _____________ buy her a microwave. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
@@ -25,7 +25,7 @@ export default function FutureSimple() {
     {
       id: 2,
       title:
-        "Could you lend me $40? I promise  _______________ pay you back Thursday.",
+        "Could you lend me $40? I promise  _______________ pay you back Thursday. (promise)",
       possibleAnswersAndExplanation: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
@@ -36,7 +36,8 @@ export default function FutureSimple() {
 
     {
       id: 3,
-      title: "The coach __________________ to retire! It's very sad.",
+      title:
+        "The coach __________________ to retire! It's very sad. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. will" },
         { title: "b. is going to", correctAnswer: true },
@@ -46,7 +47,7 @@ export default function FutureSimple() {
     },
     {
       id: 4,
-      title: "They ___________ get a new computer.",
+      title: "They ___________ get a new computer. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
@@ -56,7 +57,7 @@ export default function FutureSimple() {
     },
     {
       id: 5,
-      title: "Antonio's sister ____________________ have a baby.",
+      title: "Antonio's sister ____________________ have a baby. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
@@ -67,7 +68,7 @@ export default function FutureSimple() {
     {
       id: 6,
       title:
-        "I don't have anything to wear. That's ok. I _______ give you one of my dresses.",
+        "I don't have anything to wear. That's ok. I _______ give you one of my dresses.(offer)",
       possibleAnswersAndExplanation: [
         { title: "a. will", correctAnswer: true },
         { title: "b. am going to" },
@@ -78,7 +79,7 @@ export default function FutureSimple() {
     {
       id: 7,
       title:
-        "Just a moment. I __________________ help you bring in the groceries.",
+        "Just a moment. I __________________ help you bring in the groceries. (offer)",
       possibleAnswersAndExplanation: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
@@ -88,7 +89,8 @@ export default function FutureSimple() {
     },
     {
       id: 8,
-      title: "We ____________________ take a trip to Accra in June.",
+      title:
+        "We ____________________ take a trip to Accra in June.(prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
@@ -99,18 +101,18 @@ export default function FutureSimple() {
     {
       id: 9,
       title:
-        "Look at those gray clouds over there! It _________________  rain soon. ",
+        "Look at those gray clouds over there! It _________________  rain soon. (prediction) ",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "b. will", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "This is a probability so it requires going to",
+      explanation: "This is a prediction so it can use either",
     },
     {
       id: 10,
       title:
-        "They ______________ have the meeting outside tomorrow. It's all planned, so I hope it won't rain.",
+        "They ______________ have the meeting outside tomorrow. It's all planned, so I hope it won't rain. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
@@ -121,14 +123,13 @@ export default function FutureSimple() {
     {
       id: 11,
       title:
-        "I can't find my phone anywhere! I ___________ call it to locate it.",
+        "I can't find my phone anywhere! I ___________ call it to find it for you.(offer)",
       possibleAnswersAndExplanation: [
-        { title: "a. am going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "a. am going to" },
+        { title: "b. will", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation:
-        "This is a plan or intention to locate the phone, so it requires 'am going to.'",
+      explanation: "This is an offer so it requires will",
     },
     {
       id: 12,
@@ -136,70 +137,65 @@ export default function FutureSimple() {
         "The restaurant is really busy tonight. We ________________ have to wait for a table.",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "b. will", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation:
-        "This is a prediction based on the current situation, so it requires 'are going to.'",
+      explanation: "This is a prediction so it can use either.'",
     },
     {
       id: 13,
       title:
-        "I heard Sarah ________________________ her own business next year.",
+        "I heard Sarah ________________________ her own business next year. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a plan or intention for the future, so it requires 'is going to.'",
+      explanation: "This is a prior plan, so it requires 'is going to.'",
     },
     {
       id: 14,
       title:
-        "My parents ___________________ celebrate their 25th anniversary next month.",
+        "My parents ___________________ celebrate their 25th anniversary next month. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a planned event in the future, so it requires 'are going to.'",
+      explanation: "This is a prior plan so it requires 'are going to.'",
     },
     {
       id: 15,
       title:
-        "I ____________________ pick you up at the airport tomorrow. What time does your flight arrive?",
+        "I ____________________ pick you up at the airport tomorrow. What time does your flight arrive? (offer)",
       possibleAnswersAndExplanation: [
         { title: "a. will", correctAnswer: true },
         { title: "b. am going to" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a future action based on an arrangement, so it requires 'will.'",
+      explanation: "This is an offer so it requires will",
     },
     {
       id: 16,
       title:
-        "The company ___________________ introduce a new product line next year.",
+        "The company ___________________ introduce a new product line next year. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a planned action in the future, so it requires 'is going to.'",
+      explanation: "This is a prior plan so it requires 'is going to.'",
     },
     {
       id: 17,
-      title: "I have a feeling that it ____________________ snow tomorrow.",
+      title:
+        "I have a feeling that it ____________________ snow tomorrow. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "b. will", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation:
-        "This is a prediction based on a feeling, so it requires 'is going to.'",
+      explanation: "This is a prediction so it can use either'",
     },
     {
       id: 18,
@@ -210,31 +206,29 @@ export default function FutureSimple() {
         { title: "b. is going to" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a statement of what the forecast predicts, so it requires 'will.'",
+      explanation: "This is a prediction so it can use either'",
     },
     {
       id: 19,
       title:
-        "I ___________________ call the plumber to fix the leaky faucet in the morning.",
+        "I ___________________ call the electrician to fix the light. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. am going to", correctAnswer: true },
         { title: "b. will" },
       ],
       userAnswer: "",
-      explanation:
-        "This is a planned action for the near future, so it requires 'am going to.'",
+      explanation: "This is a prior plan so it requires going to ",
     },
     {
       id: 20,
       title:
-        "They ________________________ have a surprise party for their friend on Saturday.",
+        "They ________________________ have a surprise party for their friend on Saturday. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
       userAnswer: "",
-      explanation: "This is a planned event, so it requires 'are going to.'",
+      explanation: "This is a prior plan, so it requires 'are going to.'",
     },
   ];
 
@@ -383,8 +377,7 @@ export default function FutureSimple() {
               We're going to go to the movies this weekend. (previous plan)
             </li>
             <li>
-              The Orioles are winning 8-2. They're going to win. (likely to
-              happen)
+              My team is winning 8-2. They're going to win. (likely to happen)
             </li>
           </ul>
           <p>
@@ -395,7 +388,14 @@ export default function FutureSimple() {
             <li>She won't listen to me. (refusal)</li>
             <li>You look tired. I will help you with your homework. (offer)</li>
             <li>I love you very much. I will never leave you. (promise)</li>
-            <li>I predict she will win the election. (prediction)</li>
+          </ul>
+          <p>
+            {" "}
+            We can use <b>will</b> or <b>going to</b>for predictions.
+          </p>
+          <ul className="page-examples">
+            <li>I predict she will win the election.</li>
+            <li>I predict she's going to win the election.</li>
           </ul>
         </div>
 

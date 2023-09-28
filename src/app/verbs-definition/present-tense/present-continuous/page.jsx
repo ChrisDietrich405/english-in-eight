@@ -16,7 +16,7 @@ export default function PresentContinuous() {
       title: "You ___________ (play) tennis tonight right?",
       possibleAnswersAndExplanation: [
         { title: "a. are not playing", correctAnswer: true },
-        { title: "b. am not playing" },
+        { title: "b. play" },
       ],
       userAnswer: "",
       explanation: "For future events you can use the present continuous.",
@@ -25,7 +25,7 @@ export default function PresentContinuous() {
       id: 2,
       title: "I ___________ (study) now. Please call me later.",
       possibleAnswersAndExplanation: [
-        { title: "a. am study" },
+        { title: "a. study" },
         { title: "b. am studying", correctAnswer: true },
       ],
       userAnswer: "",
@@ -36,7 +36,7 @@ export default function PresentContinuous() {
       title: "She ___________ (sleep).",
       possibleAnswersAndExplanation: [
         { title: "a. isn't sleeping", correctAnswer: true },
-        { title: "b. am not sleeping" },
+        { title: "b.  doesn't sleeps" },
       ],
       userAnswer: "",
       explanation: "For current actions you use the present continuous",
@@ -46,7 +46,7 @@ export default function PresentContinuous() {
       id: 4,
       title: "We ___________ (watch) the game.",
       possibleAnswersAndExplanation: [
-        { title: "a. are watch" },
+        { title: "a. watch" },
         { title: "b. are watching", correctAnswer: true },
       ],
       userAnswer: "",
@@ -56,8 +56,8 @@ export default function PresentContinuous() {
       id: 5,
       title: "He ____________ (work) in Baltimore.",
       possibleAnswersAndExplanation: [
-        { title: "a. are not working", correctAnswer: true },
-        { title: "b. is not working" },
+        { title: "a. doesn't work" },
+        { title: "b. is not working", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "For ongoing actions you use the present continuous",
@@ -67,7 +67,7 @@ export default function PresentContinuous() {
       title: "He ___________ (wait) for the taxi.",
       possibleAnswersAndExplanation: [
         { title: "a. is waiting", correctAnswer: true },
-        { title: "b. are waiting" },
+        { title: "b. waits" },
       ],
       userAnswer: "",
       explanation: "For current actions you use the present continuous",
@@ -77,7 +77,7 @@ export default function PresentContinuous() {
       title: "They __________ (fight).",
       possibleAnswersAndExplanation: [
         { title: "a. are fighting", correctAnswer: true },
-        { title: "b. is fighting" },
+        { title: "b. fight" },
       ],
       userAnswer: "",
       explanation: "For current actions you use the present continuous",
@@ -87,7 +87,7 @@ export default function PresentContinuous() {
       title: "We _______________ (go) to the mall tonight.",
       possibleAnswersAndExplanation: [
         { title: "a. are not going", correctAnswer: true },
-        { title: "b. are not go" },
+        { title: "b. don't go" },
       ],
       userAnswer: "",
       explanation: "For future actions you can use the present continuous",
@@ -96,7 +96,7 @@ export default function PresentContinuous() {
       id: 9,
       title: "You ___________ (read) The Shining.",
       possibleAnswersAndExplanation: [
-        { title: "a. are read" },
+        { title: "a. read" },
         { title: "b. are reading", correctAnswer: true },
       ],
       userAnswer: "",
@@ -106,7 +106,7 @@ export default function PresentContinuous() {
       id: 10,
       title: "She _________ (eat) a Kit Kat bar.",
       possibleAnswersAndExplanation: [
-        { title: "a. am eating" },
+        { title: "a. eats" },
         { title: "b. is eating", correctAnswer: true },
       ],
       userAnswer: "",
@@ -117,7 +117,7 @@ export default function PresentContinuous() {
       title: "They ___________ (travel) to Paris next week.",
       possibleAnswersAndExplanation: [
         { title: "a. are not traveling", correctAnswer: true },
-        { title: "b. are not travel" },
+        { title: "b. don't travel" },
       ],
       userAnswer: "",
       explanation: "For future actions you can use the present continuous.",
@@ -127,7 +127,7 @@ export default function PresentContinuous() {
       id: 12,
       title: "I ___________ (read) a book right now.",
       possibleAnswersAndExplanation: [
-        { title: "a. am read" },
+        { title: "a. read" },
         { title: "b. am reading", correctAnswer: true },
       ],
       userAnswer: "",
@@ -138,7 +138,7 @@ export default function PresentContinuous() {
       id: 13,
       title: "He ___________ (cook) dinner for us.",
       possibleAnswersAndExplanation: [
-        { title: "a. are cooking" },
+        { title: "a. cooks" },
         { title: "b. is cooking", correctAnswer: true },
       ],
       userAnswer: "",
@@ -149,7 +149,7 @@ export default function PresentContinuous() {
       id: 14,
       title: "We ___________ (wait) for the bus.",
       possibleAnswersAndExplanation: [
-        { title: "a. are wait" },
+        { title: "a. wait" },
         { title: "b. are waiting", correctAnswer: true },
       ],
       userAnswer: "",
@@ -160,7 +160,7 @@ export default function PresentContinuous() {
       id: 15,
       title: "She ___________ (play) the piano beautifully.",
       possibleAnswersAndExplanation: [
-        { title: "a. are playing" },
+        { title: "a. plays" },
         { title: "b. is playing", correctAnswer: true },
       ],
       userAnswer: "",
@@ -172,7 +172,7 @@ export default function PresentContinuous() {
       title: "They ___________ (visit) their grandparents tomorrow.",
       possibleAnswersAndExplanation: [
         { title: "a. are not visiting", correctAnswer: true },
-        { title: "b. are not visit" },
+        { title: "b. don't visit" },
       ],
       userAnswer: "",
       explanation: "For future actions you can use the present continuous.",
@@ -182,7 +182,7 @@ export default function PresentContinuous() {
       id: 17,
       title: "I ___________ (talk) to the manager about the issue.",
       possibleAnswersAndExplanation: [
-        { title: "a. am talk" },
+        { title: "a. talk" },
         { title: "b. am talking", correctAnswer: true },
       ],
       userAnswer: "",
@@ -193,7 +193,7 @@ export default function PresentContinuous() {
       id: 18,
       title: "They ___________ (study) for their exams all day.",
       possibleAnswersAndExplanation: [
-        { title: "a. are study" },
+        { title: "a. study" },
         { title: "b. are studying", correctAnswer: true },
       ],
       userAnswer: "",
@@ -204,7 +204,7 @@ export default function PresentContinuous() {
       id: 19,
       title: "He ___________ (clean) the house right now.",
       possibleAnswersAndExplanation: [
-        { title: "a. are clean" },
+        { title: "a. cleans" },
         { title: "b. is cleaning", correctAnswer: true },
       ],
       userAnswer: "",
@@ -216,7 +216,7 @@ export default function PresentContinuous() {
       title: "We ___________ (play) basketball on Saturday.",
       possibleAnswersAndExplanation: [
         { title: "a. are not playing", correctAnswer: true },
-        { title: "b. are not play" },
+        { title: "b. play" },
       ],
       userAnswer: "",
       explanation: "For future actions you can use the present continuous.",
@@ -226,7 +226,7 @@ export default function PresentContinuous() {
       id: 21,
       title: "She ___________ (read) a novel in the library.",
       possibleAnswersAndExplanation: [
-        { title: "a. are reading" },
+        { title: "a. readings" },
         { title: "b. is reading", correctAnswer: true },
       ],
       userAnswer: "",
