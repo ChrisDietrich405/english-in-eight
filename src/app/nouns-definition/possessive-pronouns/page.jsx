@@ -297,15 +297,6 @@ export default function PossessivePronouns() {
             They have a son - He is <b>theirs.</b>
           </li>
         </ul>
-        <Link
-          href="https://www.youtube.com/watch?v=bhzh8VDykc4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button>
-            Click here to get a deeper understanding of this topic.
-          </Button>
-        </Link>
       </div>
 
       <Quiz
@@ -316,7 +307,7 @@ export default function PossessivePronouns() {
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
       <iframe
-       className={styles.iframe_wrapper}
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/bhzh8VDykc4?si=oBDWfOw4d_XEMmfi"

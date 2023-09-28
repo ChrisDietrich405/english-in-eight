@@ -177,6 +177,7 @@ export default function Quiz(props) {
 
   return (
     <div className={styles.quiz_container}>
+    <p>shoe</p>
       <form onSubmit={submit} onReset={reset}>
         <div className={styles.quiz_title}>
           <h4>{props.title}</h4>

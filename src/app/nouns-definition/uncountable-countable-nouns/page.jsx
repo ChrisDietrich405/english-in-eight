@@ -23,7 +23,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "You can count beans so they are considered a countable noun",
+        "You can count beans so they are considered a countable noun.",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function UncountableAndCountable() {
         { title: " much", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Coffee is a liquid so it's considered an uncountable noun",
+      explanation: "Coffee is a liquid so it's considered an uncountable noun.",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export default function UncountableAndCountable() {
       userAnswer: "",
 
       explanation:
-        "Soup doesn't have a shape so it's considered an uncountable noun",
+        "Soup doesn't have a shape so it's considered an uncountable noun.",
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ export default function UncountableAndCountable() {
         { title: " many" },
       ],
       userAnswer: "",
-      explanation: "Rice is very small so it's considered an uncountable noun",
+      explanation: "Rice is very small so it's considered an uncountable noun.",
     },
     {
       id: 5,
@@ -66,7 +66,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "You can count friends so they are considered a countable noun",
+        "You can count friends so they are considered a countable noun.",
     },
     {
       id: 6,
@@ -76,6 +76,8 @@ export default function UncountableAndCountable() {
         { title: " many" },
       ],
       userAnswer: "",
+      explanation:
+        "Chocolate doesn't have a shape so it's considered an uncountable noun.",
     },
 
     {
@@ -87,7 +89,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Chocolate doesn't have a shape so it's considered an uncountable noun",
+        "Soy milk is a liquid so it's considered an uncountable noun.",
     },
 
     {
@@ -99,7 +101,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Tofu doesn't have a shape so it's considered an uncountable noun",
+        "Tofu doesn't have a shape so it's considered an uncountable noun.",
     },
 
     {
@@ -110,7 +112,8 @@ export default function UncountableAndCountable() {
         { title: " many", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "You can count cups so they are considered a countable noun",
+      explanation:
+        "You can count cups so they are considered a countable noun.",
     },
 
     {
@@ -121,7 +124,7 @@ export default function UncountableAndCountable() {
         { title: " are" },
       ],
       userAnswer: "",
-      explanation: "Juice is a liquid so it's considered an uncountable noun",
+      explanation: "Juice is a liquid so it's considered an uncountable noun.",
     },
     {
       id: 11,
@@ -132,7 +135,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "You can count apples so they are considered a countable noun",
+        "You can count apples so they are considered a countable noun.",
     },
     {
       id: 12,
@@ -142,7 +145,8 @@ export default function UncountableAndCountable() {
         { title: "is" },
       ],
       userAnswer: "",
-      explanation: "You can count cats so they are considered a countable noun",
+      explanation:
+        "You can count cats so they are considered a countable noun.",
     },
 
     {
@@ -153,7 +157,7 @@ export default function UncountableAndCountable() {
         { title: "many" },
       ],
       userAnswer: "",
-      explanation: "Water is a liquid so it's considered an uncountable noun",
+      explanation: "Water is a liquid so it's considered an uncountable noun.",
     },
 
     {
@@ -165,7 +169,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Sugar doesn't have a shape so it's considered an uncountable noun",
+        "Sugar doesn't have a shape so it's considered an uncountable noun.",
     },
 
     {
@@ -176,7 +180,7 @@ export default function UncountableAndCountable() {
         { title: "Is", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Juice is a liquid so it's considered an uncountable noun",
+      explanation: "Juice is a liquid so it's considered an uncountable noun.",
     },
 
     {
@@ -188,7 +192,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Flour doesn't have a shape so it's considered an uncountable noun",
+        "Flour doesn't have a shape so it's considered an uncountable noun.",
     },
 
     {
@@ -200,7 +204,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "You can count tomatoes so they are considered a countable noun",
+        "You can count tomatoes so they are considered a countable noun.",
     },
 
     {
@@ -212,7 +216,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Traffic doesn't have a shape so it's considered an uncountable noun",
+        "Traffic doesn't have a shape so it's considered an uncountable noun.",
     },
 
     {
@@ -224,7 +228,7 @@ export default function UncountableAndCountable() {
       ],
       userAnswer: "",
       explanation:
-        "Time is an abstract idea so it's considered an uncountable noun",
+        "Time is an abstract idea so it's considered an uncountable noun.",
     },
 
     {
@@ -235,6 +239,8 @@ export default function UncountableAndCountable() {
         { title: "many", correctAnswer: true },
       ],
       userAnswer: "",
+      explanation:
+        "You can count hours so they are considered a countable noun.",
     },
   ];
 
