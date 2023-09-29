@@ -160,8 +160,7 @@ export default function RemindVersusRemember() {
     },
     {
       id: 14,
-      title:
-        "Could you ____________________ me to bring my ID to the airport?",
+      title: "Could you ____________________ me to bring my ID to the airport?",
       possibleAnswersAndExplanation: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
@@ -172,7 +171,7 @@ export default function RemindVersusRemember() {
     },
     {
       id: 15,
-      title: "The old photo ____________________ me of our family vacation.",
+      title: "This photo ____________________ me of our family vacation.",
       possibleAnswersAndExplanation: [
         { title: "reminds", correctAnswer: true },
         { title: "remembers" },
@@ -326,9 +325,7 @@ export default function RemindVersusRemember() {
         <h3>Remember</h3>
         <p>
           The term "remember" refers to the mental process of recalling or
-          retaining information, experiences, or events from the past. It
-          involves the ability to retrieve things that have been previously
-          learned, encountered, or perceived.
+          retaining information, experiences, or events from the past:
         </p>
         <ul className="page-examples">
           <li>I’ll always remember my trip to Jamaica.</li>
@@ -337,7 +334,7 @@ export default function RemindVersusRemember() {
 
         <p>
           Remember + the -ing form of a verb describes having a memory of
-          something that happened in the past or of something we experienced
+          something that happened in the past or of something we experienced:
         </p>
         <ul className="page-examples">
           <li>They said they didn't remember going to the parking lot.</li>
@@ -356,7 +353,7 @@ export default function RemindVersusRemember() {
         <h4 style={{ color: "#1976d2" }}>
           CAUTION! This lesson is extremely hard. Read the explanations two
           times and don't worry if you are not successful the first two or three
-          times with the exercise. Practice Makes Perfect
+          times with the exercise. Practice Makes Perfect. 
         </h4>
       </div>
       <Quiz
@@ -367,29 +364,17 @@ export default function RemindVersusRemember() {
         secondSetQuestions={secondSetQuestions}
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JlaQTu8UQ-I?si=aT2jAqdTCsfZ7yms"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }
 
-
-
-
-
-
-
-
-// import { useState } from "react";
-// import Quiz from "@/src/components/Quiz";
-// import Head from "next/head";
-
-// import styles from "../../../styles/content-page.module.css";
-
-// export default function RememberVersusRemind() {
-//   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-//     useState(true);
-//   const [quiz, setQuiz] = useState([
-  
-//   ]);
-
-
-// }
