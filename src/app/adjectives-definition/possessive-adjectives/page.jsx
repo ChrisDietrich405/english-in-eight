@@ -269,13 +269,12 @@ export default function PossessiveAdjectives() {
   }, []);
 
   const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(11);
+    const questionsVar = questionsArray.splice(10);
     return questionsVar;
   };
 
   return (
     <>
-
       <div className={styles.page_body}>
         <div className="possessive-adjectives">
           <div className={styles.page_title}>
@@ -330,5 +329,3 @@ export default function PossessiveAdjectives() {
     </>
   );
 }
-
-

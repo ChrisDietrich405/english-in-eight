@@ -241,7 +241,7 @@ export default function PresentContinuous() {
   }, []);
 
   const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(11);
+    const questionsVar = questionsArray.splice(10);
     return questionsVar;
   };
 

@@ -28,3 +28,9 @@
 .wrong_answer {
   color: red;
 }
+
+@media only screen and (max-width: 420px) {
+  .explanation {
+    font-size: 10px;
+  }
+}

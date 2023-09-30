@@ -248,7 +248,7 @@ export default function RemindVersusRemember() {
   }, []);
 
   const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(11);
+    const questionsVar = questionsArray.splice(10);
     return questionsVar;
   };
 
@@ -353,7 +353,7 @@ export default function RemindVersusRemember() {
         <h4 style={{ color: "#1976d2" }}>
           CAUTION! This lesson is extremely hard. Read the explanations two
           times and don't worry if you are not successful the first two or three
-          times with the exercise. Practice Makes Perfect. 
+          times with the exercise. Practice Makes Perfect.
         </h4>
       </div>
       <Quiz
@@ -377,4 +377,3 @@ export default function RemindVersusRemember() {
     </>
   );
 }
-

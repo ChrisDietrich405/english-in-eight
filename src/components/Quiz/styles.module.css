@@ -69,4 +69,8 @@
   .quiz_title h4 {
     margin-left: 0;
   }
+
+  .quiz_button {
+    font-size: 10px;
+  }
 }

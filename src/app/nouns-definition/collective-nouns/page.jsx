@@ -239,7 +239,7 @@ export default function Collective() {
   }, []);
 
   const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(11);
+    const questionsVar = questionsArray.splice(10);
     return questionsVar;
   };
 
@@ -292,7 +292,7 @@ export default function Collective() {
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
       <iframe
-       className={styles.iframe_wrapper}
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/BPPsqCGrYWw?si=of1j_EmmyDulr696"

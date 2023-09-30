@@ -143,7 +143,7 @@ export default function NounModifiers() {
   }, []);
 
   const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(11);
+    const questionsVar = questionsArray.splice(10);
     return questionsVar;
   };
 
@@ -222,7 +222,7 @@ export default function NounModifiers() {
         shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
       ></Quiz>
       <iframe
-       className={styles.iframe_wrapper}
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/fXVyba_KrCI?si=ml0n-c8e_fF1CJ85"

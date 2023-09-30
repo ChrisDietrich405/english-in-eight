@@ -35,11 +35,7 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
-        return (
-          <span style={{  }}>
-            {explanation}
-          </span>
-        );
+        return <span className={styles.explanation}>{explanation}</span>;
       }
     }
   };
@@ -72,7 +68,7 @@ const SelectAnswer = ({
         className={styles.radio_button}
       />
       <label htmlFor={"input_field" + questionId + index}>
-        <span style={{marginRight: "3px"}} className={getTextColor()}>
+        <span style={{ marginRight: "3px" }} className={getTextColor()}>
           {possibleAnswer.title} {getEmoji()}
         </span>
         <span>{getExplanation()}</span>
