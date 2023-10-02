@@ -240,49 +240,7 @@ export default function PossessiveAdjectives() {
 
   return (
     <>
-      <Head>
-        <title>Superlative Adjectives | English in Eight Minutes</title>
-        <meta
-          content="Learn about superlative adjectives in English grammar. Understand how they compare three or more nouns and indicate the highest degree of a quality with examples."
-          name="description"
-        />
-        <meta
-          content="English, Grammar, Superlative Adjectives, Comparison, Examples"
-          name="keywords"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://example.com/superlative-adjectives"
-        />
-        <meta
-          property="og:title"
-          content="Superlative Adjectives | English in Eight Minutes"
-        />
-        <meta
-          property="og:description"
-          content="Learn about superlative adjectives in English grammar. Understand how they compare three or more nouns and indicate the highest degree of a quality with examples."
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/superlative-adjectives.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
+      
       <div className="superlative-adjectives">
         <div className={styles.page_title}>
           <h1>Superlative Adjectives</h1>
