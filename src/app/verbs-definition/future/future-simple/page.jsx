@@ -74,8 +74,7 @@ export default function FutureSimple() {
 
     {
       id: 3,
-      title:
-        "The coach __________________ to retire! It's very sad. (prior plan)",
+      title: "The coach __________________ retire! It's very sad. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. will" },
         { title: "b. is going to", correctAnswer: true },
@@ -85,13 +84,13 @@ export default function FutureSimple() {
     },
     {
       id: 4,
-      title: "They ___________ get a new computer. (prior plan)",
+      title: "I _______ do it. (refusal)",
       possibleAnswersAndExplanation: [
-        { title: "a. are going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "a. won't", correctAnswer: true },
+        { title: "b. am not going to" },
       ],
       userAnswer: "",
-      explanation: "This is a prior plan so it requires going to",
+      explanation: "This is a refusal so it requires won't",
     },
     {
       id: 5,
@@ -172,7 +171,7 @@ export default function FutureSimple() {
     {
       id: 12,
       title:
-        "The restaurant is really busy tonight. We ________________ have to wait for a table.",
+        "The restaurant is really busy tonight. We ________________ have to wait for a table. (prediction)",
       possibleAnswersAndExplanation: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will", correctAnswer: true },
@@ -183,7 +182,7 @@ export default function FutureSimple() {
     {
       id: 13,
       title:
-        "I heard Sarah ________________________ her own business next year. (prior plan)",
+        "Sarah ________________________ her own business next year. (prior plan)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
@@ -215,19 +214,18 @@ export default function FutureSimple() {
     },
     {
       id: 16,
-      title:
-        "The company ___________________ introduce a new product line next year. (prior plan)",
+      title: "The company ___________________ make any changes. (refusal)",
       possibleAnswersAndExplanation: [
-        { title: "a. is going to", correctAnswer: true },
-        { title: "b. will" },
+        { title: "a. isn't going to" },
+        { title: "b. won't", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "This is a prior plan so it requires 'is going to.'",
+      explanation: "This is a refusal so it requires won't.",
     },
     {
       id: 17,
       title:
-        "I have a feeling that it ____________________ snow tomorrow. (prior plan)",
+        "I have a feeling that it ____________________ snow tomorrow. (prediction)",
       possibleAnswersAndExplanation: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will", correctAnswer: true },
@@ -238,10 +236,10 @@ export default function FutureSimple() {
     {
       id: 18,
       title:
-        "The weather forecast says it ____________________ be sunny all day.",
+        "The weather forecast says it ____________________ be sunny all day. (prediction)",
       possibleAnswersAndExplanation: [
         { title: "a. will", correctAnswer: true },
-        { title: "b. is going to" },
+        { title: "b. is going to", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "This is a prediction so it can use either'",
@@ -270,8 +268,6 @@ export default function FutureSimple() {
     },
   ];
 
- 
-
   return (
     <>
       <main className="page-body">
@@ -280,12 +276,10 @@ export default function FutureSimple() {
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           {" "}
-          The simple future is a verb tense that's used to talk about things
+          The future simple is a verb tense that's used to talk about things
           that haven't happened yet. For example, next year she{" "}
-          <b>will change</b> careers. The simple future is used to talk about an
-          action or condition that will begin and end in the future. There are
-          two ways to express the future. You can use <b>will</b> or{" "}
-          <b>going to</b> depending on the situation.
+          <b>will change</b> careers. There are two ways to express the future.
+          You can use <b>will</b> or <b>going to</b> depending on the situation.
         </p>
         <p>The first way to express the simple future</p>
         <table className={styles.table}>
@@ -398,20 +392,19 @@ export default function FutureSimple() {
 
           <p>
             {" "}
-            We use <b>going</b> to for prior plans and in situations where
+            We use <b>going to </b> for prior plans and in situations where
             something is probably going to happen.
           </p>
           <ul className="page-examples">
+            <li>We're going to go to the movies this weekend. (prior plan)</li>
             <li>
-              We're going to go to the movies this weekend. (previous plan)
-            </li>
-            <li>
-              My team is winning 8-2. They're going to win. (likely to happen)
+              My team is winning 8-2. They're going to win. (probably going to
+              happen)
             </li>
           </ul>
           <p>
             {" "}
-            We use <b>will</b> with offers, refusals, promises, and predictions.
+            We use <b>will</b> with offers, refusals, promises.
           </p>
           <ul className="page-examples">
             <li>She won't listen to me. (refusal)</li>
