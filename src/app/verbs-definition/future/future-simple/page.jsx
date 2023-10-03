@@ -63,7 +63,7 @@ export default function FutureSimple() {
     {
       id: 2,
       title:
-        "Could you lend me $40? I promise  _______________ pay you back Thursday. (promise)",
+        "Could you lend me $40? I promise I _______________ pay you back Thursday. (promise)",
       possibleAnswersAndExplanation: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
@@ -404,7 +404,7 @@ export default function FutureSimple() {
           </ul>
           <p>
             {" "}
-            We use <b>will</b> with offers, refusals, promises.
+            We use <b>will</b> with refusals, offers and promises.
           </p>
           <ul className="page-examples">
             <li>She won't listen to me. (refusal)</li>
@@ -413,7 +413,7 @@ export default function FutureSimple() {
           </ul>
           <p>
             {" "}
-            We can use <b>will</b> or <b>going to</b>for predictions.
+            We can use <b>will</b> or <b>going to</b> for predictions.
           </p>
           <ul className="page-examples">
             <li>I predict she will win the election.</li>

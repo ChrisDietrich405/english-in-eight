@@ -23,6 +23,7 @@ function AnswerIcon({ isAnswered }) {
 }
 
 export default function Quiz(props) {
+  const [disable, setDisable] = useState(false);
   const [answers, setAnswers] = useState({});
   const [selectedAnswerTexts, setSelectedAnswerTexts] = useState({});
   const [scrollTarget, setScrollTarget] = useState(0); // Initialize scrollTarget to 0
@@ -42,6 +43,7 @@ export default function Quiz(props) {
   const submit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+    console.log(props);
   };
 
   const reset = (e) => {
@@ -50,97 +52,96 @@ export default function Quiz(props) {
   };
 
   const scrollToTop = () => {
+    setDisable(true);
     if (topOfQuizRef.current) {
-      topOfQuizRef.current.scrollIntoView({ behavior: "smooth" });
+      topOfQuizRef.current.scrollIntoView({ behavior: "auto" });
     }
   };
 
   const loadNextSetOfQuestions = () => {
-    const nextSetOfQuestions = props.secondSetQuestions();
-
-    props.setQuiz([...nextSetOfQuestions]);
-
-    scrollToTop(); // Scroll to the top of the quiz
-    setAnswers({});
-    setSubmitted(false);
+    props.setQuiz(props.questionsArray);
+    scrollToTop();
   };
 
   return (
-    <div className={styles.quiz_container}>
-      <h1 ref={topOfQuizRef}></h1>
-      <form onSubmit={submit} onReset={reset}>
-        <div className={styles.quiz_title}>
-          <h4>{props.title}</h4>
-          {props.subtitle ? <p>{props.subtitle} </p> : ""}
-          <h1>{props.explanation}</h1>
-        </div>
-        <ol className={styles.questions_and_answers}>
-          {props.questions.map((question, i) => (
-            <li key={i} className={styles.question}>
-              {`${question.id}. ${question.title}`}
+    <div className={styles.topOfQuizRef} ref={topOfQuizRef}>
+      <div className={styles.quiz_container}>
+        <form onSubmit={submit} onReset={reset}>
+          <div className={styles.quiz_title}>
+            <h4>{props.title}</h4>
+            {props.subtitle ? <p>{props.subtitle} </p> : ""}
+            <h1>{props.explanation}</h1>
+          </div>
+          <ol className={styles.questions_and_answers}>
+            {props.questions.map((question, i) => (
+              <li key={i} className={styles.question}>
+                {`${question.id}. ${question.title}`}
 
-              {submitted === true && (
-                <AnswerIcon
-                  className="answer-icon"
-                  isAnswered={i in answers}
-                  isAnsweredCorrectly={i in answers && answers[i] === true}
-                />
-              )}
-              <ul>
-                {question.possibleAnswersAndExplanation.map(
-                  (possibleAnswer, index) => {
-                    return (
-                      <SelectAnswer
-                        questionId={question.id}
-                        explanation={question.explanation}
-                        key={`answer${index}`}
-                        submitted={submitted}
-                        onClick={() => select(possibleAnswer, i)}
-                        possibleAnswer={possibleAnswer}
-                        answers={answers}
-                        i={i}
-                        selectedAnswerTexts={selectedAnswerTexts}
-                        isAnsweredCorrectly={
-                          i in answers && answers[i] === true
-                        }
-                        index={index}
-                      />
-                    );
-                  }
+                {submitted === true && (
+                  <AnswerIcon
+                    className="answer-icon"
+                    isAnswered={i in answers}
+                    isAnsweredCorrectly={i in answers && answers[i] === true}
+                  />
                 )}
-              </ul>
-            </li>
-          ))}
-        </ol>
-        <div className={styles.quiz_buttons}>
-          <Button
-            className={styles.quiz_button}
-            variant="contained"
-            type="submit"
-            style={{ marginRight: "20px" }}
-          >
-            Check your answers
-          </Button>
-          <Button
-            className={styles.quiz_button}
-            variant="contained"
-            type="reset"
-          >
-            Reset
-          </Button>
-          {props.shouldShowNewQuestionsBtn && (
+                <ul>
+                  {question.possibleAnswersAndExplanation.map(
+                    (possibleAnswer, index) => {
+                      return (
+                        <SelectAnswer
+                          questionId={question.id}
+                          explanation={question.explanation}
+                          key={`answer${index}`}
+                          submitted={submitted}
+                          onClick={() => select(possibleAnswer, i)}
+                          possibleAnswer={possibleAnswer}
+                          answers={answers}
+                          i={i}
+                          selectedAnswerTexts={selectedAnswerTexts}
+                          isAnsweredCorrectly={
+                            i in answers && answers[i] === true
+                          }
+                          index={index}
+                        />
+                      );
+                    }
+                  )}
+                </ul>
+              </li>
+            ))}
+          </ol>
+          <div className={styles.quiz_buttons}>
             <Button
               className={styles.quiz_button}
-              type="reset"
-              style={{ marginLeft: "20px" }}
               variant="contained"
-              onClick={loadNextSetOfQuestions}
+              type="submit"
+              style={{ marginRight: "20px" }}
             >
-              Try More Questions
+              Check your answers
             </Button>
-          )}
-        </div>
-      </form>
+
+            <Button
+              className={styles.quiz_button}
+              variant="contained"
+              type="reset"
+            >
+              Reset
+            </Button>
+            {props.shouldShowNewQuestionsBtn && (
+              <Button
+                // disabled={disable}
+                className={styles.quiz_button}
+                type="reset"
+                style={{ marginLeft: "20px" }}
+                variant="contained"
+                onClick={loadNextSetOfQuestions}
+              >
+                Try More Questions
+              </Button>
+            )}
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

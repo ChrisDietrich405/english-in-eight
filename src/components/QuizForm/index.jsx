@@ -13,17 +13,13 @@ export default function QuizForm({ questionsArray }) {
     setQuiz(questionsVar);
   }, []);
 
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <Quiz
+      questionsArray={questionsArray}
       setQuiz={setQuiz}
       title="Take a Quiz!"
       questions={quiz}
-      secondSetQuestions={secondSetQuestions}
+      // secondSetQuestions={secondSetQuestions}
       shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
     ></Quiz>
   );

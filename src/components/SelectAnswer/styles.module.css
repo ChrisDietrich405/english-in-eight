@@ -17,6 +17,10 @@
   margin: 0 !important;
 }
 
+.explanation {
+  font-weight: bold; 
+}
+
 .radio_button {
   margin: 2px 5px 0 0 !important;
 }
