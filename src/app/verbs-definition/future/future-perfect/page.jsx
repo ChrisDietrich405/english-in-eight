@@ -2,8 +2,6 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
-import styles from "../../../styles/content-page.module.css";
-
 export const metadata = {
   title: "Future Perfect Tense Quiz | English in Eight Minutes",
   description:
