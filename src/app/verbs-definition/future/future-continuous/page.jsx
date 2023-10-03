@@ -3,28 +3,28 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Home | English in Eight Minutes",
+  title: "Future Continuous Tense | English in Eight Minutes",
   description:
-    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    "Learn about the future continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
   keywords:
-    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+    "future continuous tense, English grammar, English lessons, phrasal verbs, idiomatic expressions, United States",
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
+    nocache: false,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
   openGraph: {
-    title: "Home | English in Eight Minutes",
+    title: "Future Continuous Tense | English in Eight Minutes",
     description:
-      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+      "Learn about the future continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
     images: [
       {
         rel: "icon",
@@ -46,6 +46,7 @@ export const metadata = {
     ],
   },
 };
+
 export default function FutureContinuous() {
   const questionsArray = [
     {

@@ -66,6 +66,10 @@
     padding: 0 !important;
   }
 
+  .question {
+    margin-bottom: 15px;
+  }
+
   .quiz_title h4 {
     margin-left: 0;
   }

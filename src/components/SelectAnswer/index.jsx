@@ -58,22 +58,24 @@ const SelectAnswer = ({
   };
 
   return (
-    <li className={styles.answer_option}>
-      <input
-        id={"input_field" + questionId + index}
-        disabled={submitted}
-        onClick={onClick}
-        name={"twoPossibleAnswers" + questionId}
-        type="radio"
-        className={styles.radio_button}
-      />
-      <label htmlFor={"input_field" + questionId + index}>
-        <span style={{ marginRight: "3px" }} className={getTextColor()}>
-          {possibleAnswer.title} {getEmoji()}
-        </span>
-        <span>{getExplanation()}</span>
-      </label>
-    </li>
+    <>
+      <li className={styles.answer_option}>
+        <input
+          id={"input_field" + questionId + index}
+          disabled={submitted}
+          onClick={onClick}
+          name={"twoPossibleAnswers" + questionId}
+          type="radio"
+          className={styles.radio_button}
+        />
+        <label htmlFor={"input_field" + questionId + index}>
+          <span style={{ marginRight: "3px" }} className={getTextColor()}>
+            {possibleAnswer.title} {getEmoji()}
+          </span>
+        </label>
+      </li>
+      <span>{getExplanation()}</span>
+    </>
   );
 };
 

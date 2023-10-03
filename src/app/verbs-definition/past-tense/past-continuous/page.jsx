@@ -1,14 +1,54 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Quiz from "@/src/components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
+export const metadata = {
+  title: "Past Continuous Tense | English in Eight Minutes",
+  description:
+    "Learn about the past continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+  keywords:
+    "past continuous tense, English grammar, English lessons, phrasal verbs, idiomatic expressions, United States",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Past Continuous Tense | English in Eight Minutes",
+    description:
+      "Learn about the past continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+    images: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/favicon/apple-touch-icon.png",
+      },
+    ],
+  },
+};
+
 
 export default function PastContinuous() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+
 
   const questionsArray = [
     {
@@ -219,52 +259,8 @@ export default function PastContinuous() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
-      <Head>
-        <title>Future Continuous | English in Eight Minutes</title>
-        <meta
-          name="description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dietrichlandcare.com" />
-        <meta property="og:title" content="Dietrich Land Care" />
-        <meta
-          property="og:description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-        <meta
-          property="og:image"
-          content="https://dietrichlandcare.com/images/logo.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
       <div className={styles.page_title}>
         <h1>Past Continuous</h1>
       </div>
@@ -360,13 +356,7 @@ export default function PastContinuous() {
         </ul>
       </div>
       <div className="page-body"></div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

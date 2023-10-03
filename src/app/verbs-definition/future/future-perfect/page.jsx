@@ -1,15 +1,55 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Quiz from "@/src/components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
-export default function FuturePerfect() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Future Perfect Tense Quiz | English in Eight Minutes",
+  description:
+    "Test your knowledge of the future perfect tense in English with this quiz. Practice forming sentences using the future perfect tense. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+  keywords:
+    "future perfect tense, English grammar, English quiz, phrasal verbs, idiomatic expressions, United States",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Future Perfect Tense Quiz | English in Eight Minutes",
+    description:
+      "Test your knowledge of the future perfect tense in English with this quiz. Practice forming sentences using the future perfect tense. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+    images: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/favicon/apple-touch-icon.png",
+      },
+    ],
+  },
+};
+
+export default function FuturePerfect() {
   const questionsArray = [
     {
       id: 1,
@@ -222,17 +262,6 @@ export default function FuturePerfect() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <main className="page-body">
@@ -314,13 +343,7 @@ export default function FuturePerfect() {
           <li>The storm will have finished by the time they arrive.</li>
           <li>Nia will have married Demarcus by then.</li>
         </ul>
-        <Quiz
-          setQuiz={setQuiz}
-          title="Take a Quiz!"
-          questions={quiz}
-          secondSetQuestions={secondSetQuestions}
-          shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-        ></Quiz>
+        <QuizForm questionsArray={questionsArray} />
         <iframe
           className={styles.iframe_wrapper}
           width="560"
@@ -335,5 +358,3 @@ export default function FuturePerfect() {
     </>
   );
 }
-
-////////////////////////////////////////////////////////////////////////////////

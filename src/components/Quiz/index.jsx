@@ -76,7 +76,7 @@ export default function Quiz(props) {
         </div>
         <ol className={styles.questions_and_answers}>
           {props.questions.map((question, i) => (
-            <li key={i}>
+            <li key={i} className={styles.question}>
               {`${question.id}. ${question.title}`}
 
               {submitted === true && (
