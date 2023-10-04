@@ -26,25 +26,25 @@ const SimplePresent = () => {
             className={styles.link}
             href="/verbs-definition/present-tense/simple-present"
           >
-            <Button variant="text">Present Simple</Button>
+            <Button variant="outlined">Present Simple</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/present-tense/present-continuous"
           >
-            <Button variant="text">Present Continuous</Button>
+            <Button variant="outlined">Present Continuous</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/present-tense/present-perfect"
           >
-            <Button variant="text">Present Perfect</Button>
+            <Button variant="outlined">Present Perfect</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/present-tense/present-perfect-continuous"
           >
-            <Button variant="text">Present Perfect Continuous</Button>
+            <Button variant="outlined">Present Perfect Continuous</Button>
           </Link>
         </div>
       </div>

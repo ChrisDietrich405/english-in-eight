@@ -28,25 +28,25 @@ const Future = () => {
             className={styles.link}
             href="/verbs-definition/past-tense/past-simple"
           >
-            <Button variant="text">Past Simple</Button>
+            <Button variant="outlined">Past Simple</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/past-tense/past-simple"
           >
-            <Button variant="text">Past Continuous</Button>
+            <Button variant="outlined">Past Continuous</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/past-tense/past-perfect"
           >
-            <Button variant="text">Past Perfect</Button>
+            <Button variant="outlined">Past Perfect</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/past-tense/past-perfect-continuous"
           >
-            <Button variant="text">Past Perfect Continuous</Button>
+            <Button variant="outlined">Past Perfect Continuous</Button>
           </Link>
         </div>
       </div>
