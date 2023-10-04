@@ -52,9 +52,11 @@ export default function Quiz(props) {
   };
 
   const scrollToTop = () => {
-    setDisable(true);
     if (topOfQuizRef.current) {
-      topOfQuizRef.current.scrollIntoView({ behavior: "auto" });
+      setDisable(true);
+      const yPosition = document.getElementById("scrollTo");
+      const position = yPosition.offsetTop;
+      window.scrollTo(0, position - 64);
     }
   };
 
@@ -64,7 +66,7 @@ export default function Quiz(props) {
   };
 
   return (
-    <div className={styles.topOfQuizRef} ref={topOfQuizRef}>
+    <div id="scrollTo" ref={topOfQuizRef}>
       <div className={styles.quiz_container}>
         <form onSubmit={submit} onReset={reset}>
           <div className={styles.quiz_title}>
