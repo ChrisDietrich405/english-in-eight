@@ -1,15 +1,10 @@
-"use client";
-import { useState } from "react";
-import Quiz from "@/src/components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
-//DONE
 
 export default function EveryVersusAll() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([
-    { 
+  const questionsArray = [
+    {
       id: 1,
       title: "I emailed ______________ my colleagues.",
       possibleAnswersAndExplanation: [
@@ -56,7 +51,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
-      id: 6, 
+      id: 6,
       title: "She has invited ____________ her friends.",
       possibleAnswersAndExplanation: [
         { title: "all", correctAnswer: true },
@@ -65,7 +60,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
-      id: 7, 
+      id: 7,
       title: "People should go to their doctor ______________ year.",
       possibleAnswersAndExplanation: [
         { title: "every", correctAnswer: true },
@@ -74,7 +69,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
-      id: 8, 
+      id: 8,
       title: " I talk to my wife ____________ day.",
       possibleAnswersAndExplanation: [
         { title: "every", correctAnswer: true },
@@ -83,7 +78,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
-      id: 9, 
+      id: 9,
       title: "She has worked for this company ___________ her life.",
       possibleAnswersAndExplanation: [
         { title: "every" },
@@ -92,7 +87,7 @@ export default function EveryVersusAll() {
       userAnswer: "",
     },
     {
-      id: 10, 
+      id: 10,
       title: " I have washed _______________ the clothes except yours.",
       possibleAnswersAndExplanation: [
         { title: "all", correctAnswer: true },
@@ -100,123 +95,117 @@ export default function EveryVersusAll() {
       ],
       userAnswer: "",
     },
-  ]);
-
-  const handleRandomQuestions = () => {
-    setQuiz([
-      {
-        id: 11, 
-        title: "The team __________ celebrating their victory.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Team is considered a collective noun.",
-      },
-      {
-        id: 12, 
-        title: "The committee __________ discussing the new proposal.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Committee is considered a collective noun.",
-      },
-      {
-        id: 13, 
-        title: "The people at the store __________ very angry.",
-        possibleAnswersAndExplanation: [
-          { title: "are", correctAnswer: true },
-          { title: "is" },
-        ],
-        userAnswer: "",
-        explanation: "People is not considered a collective noun.",
-      },
-      {
-        id: 14, 
-        title: "The jury __________ reached a unanimous decision.",
-        possibleAnswersAndExplanation: [
-          { title: "has", correctAnswer: true },
-          { title: "have" },
-        ],
-        userAnswer: "",
-        explanation: "Jury is considered a collective noun.",
-      },
-      {
-        id: 15, 
-        title: "The swarm of bees __________ buzzing around the flowers.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Swarm is considered a collective noun.",
-      },
-      {
-        id: 16, 
-        title: "The orchestra __________ performing at the concert.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Orchestra is considered a collective noun.",
-      },
-      {
-        id: 17, 
-        title: "The students ___________ not in the class.",
-        possibleAnswersAndExplanation: [
-          { title: "were", correctAnswer: true },
-          { title: "was" },
-        ],
-        userAnswer: "",
-        explanation: "Students is not considered a collective noun.",
-      },
-      {
-        id: 17, 
-        title: "His family __________ planning a reunion.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Family is considered a collective noun.",
-      },
-      {
-        id: 18, 
-        title: "Her staff __________ working hard this week.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Staff is considered a collective noun.",
-      },
-      {
-        id: 19, 
-        title: "The audience __________ clapping.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "Audience is considered a collective noun.",
-      },
-      {
-        id: 20, 
-        title: "The school of fish __________ swimming in the ocean.",
-        possibleAnswersAndExplanation: [
-          { title: "is", correctAnswer: true },
-          { title: "are" },
-        ],
-        userAnswer: "",
-        explanation: "School is considered a collective noun.",
-      },
-    ]);
-    setShouldShowNewQuestionsBtn(false);
-  };
+    {
+      id: 11,
+      title: "The team __________ celebrating their victory.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Team is considered a collective noun.",
+    },
+    {
+      id: 12,
+      title: "The committee __________ discussing the new proposal.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Committee is considered a collective noun.",
+    },
+    {
+      id: 13,
+      title: "The people at the store __________ very angry.",
+      possibleAnswersAndExplanation: [
+        { title: "are", correctAnswer: true },
+        { title: "is" },
+      ],
+      userAnswer: "",
+      explanation: "People is not considered a collective noun.",
+    },
+    {
+      id: 14,
+      title: "The jury __________ reached a unanimous decision.",
+      possibleAnswersAndExplanation: [
+        { title: "has", correctAnswer: true },
+        { title: "have" },
+      ],
+      userAnswer: "",
+      explanation: "Jury is considered a collective noun.",
+    },
+    {
+      id: 15,
+      title: "The swarm of bees __________ buzzing around the flowers.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Swarm is considered a collective noun.",
+    },
+    {
+      id: 16,
+      title: "The orchestra __________ performing at the concert.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Orchestra is considered a collective noun.",
+    },
+    {
+      id: 17,
+      title: "The students ___________ not in the class.",
+      possibleAnswersAndExplanation: [
+        { title: "were", correctAnswer: true },
+        { title: "was" },
+      ],
+      userAnswer: "",
+      explanation: "Students is not considered a collective noun.",
+    },
+    {
+      id: 17,
+      title: "His family __________ planning a reunion.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Family is considered a collective noun.",
+    },
+    {
+      id: 18,
+      title: "Her staff __________ working hard this week.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Staff is considered a collective noun.",
+    },
+    {
+      id: 19,
+      title: "The audience __________ clapping.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "Audience is considered a collective noun.",
+    },
+    {
+      id: 20,
+      title: "The school of fish __________ swimming in the ocean.",
+      possibleAnswersAndExplanation: [
+        { title: "is", correctAnswer: true },
+        { title: "are" },
+      ],
+      userAnswer: "",
+      explanation: "School is considered a collective noun.",
+    },
+  ];
 
   return (
     <>
@@ -270,12 +259,18 @@ export default function EveryVersusAll() {
           <li>All payments are due today.</li>
         </ul>
       </div>
-      <Quiz
-        title="Take a Quiz!"
-        questions={quiz}
-        callback={handleRandomQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
+
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JKBUvNihqoQ?si=mwysdj3EsPO9pT-4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }

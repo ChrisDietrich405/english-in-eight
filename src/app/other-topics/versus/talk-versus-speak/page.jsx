@@ -1,18 +1,8 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Quiz from "@/src/components/Quiz";
-
-// import Link from "next/link";
-// import { Button } from "@mui/material";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
 export default function TalkVersusSpeaking() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
-
   const questionsArray = [
     {
       id: 1,
@@ -222,17 +212,6 @@ export default function TalkVersusSpeaking() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <div className={styles.page_title}>
@@ -291,149 +270,17 @@ export default function TalkVersusSpeaking() {
       <ul className="page-examples">
         <li>He gave a great talk about diet.</li>
       </ul>
-
-      {/* <Link
-        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-        target="_blank"
-      >
-        <Button>Interested in getting a better understanding?</Button>
-      </Link> */}
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/6XluP9xKHEc?si=U5eIJAu3WozD0HVY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </>
   );
 }
-
-// "use client";
-// import { useState } from "react";
-// import Quiz from "@/src/components/Quiz";
-
-// import styles from "../../../styles/content-page.module.css";
-
-// export default function SpeakVersusTalk() {
-//   const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-//     useState(true);
-//   const [quiz, setQuiz] = useState([
-
-//   ]);
-
-//   const handleRandomQuestions = () => {
-//     setQuiz([
-//       [
-//         {
-//           id: 1,
-//           title:
-//             "At the conference, Dr. McGregor will ________ about the nutrition.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak" },
-//             { title: "talk", correctAnswer: true },
-//           ],
-//           userAnswer: "",
-//           explanation: "Speak is used in more formal situations.",
-//         },
-
-//         {
-//           id: 2,
-//           title:
-//             "I hope we can ________ things out and find a solution to this problem.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak" },
-//             { title: "talk", correctAnswer: true },
-//           ],
-//           userAnswer: "",
-//           explanation:
-//             "Talk is used in the phrasal verb talk it out meaning to resolve a problem by talking about it.",
-//         },
-//         {
-//           id: 3,
-//           title:
-//             "The teacher asked the students to ________ up so everyone could hear their presentations.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak" },
-//             { title: "talk", correctAnswer: true },
-//           ],
-//           userAnswer: "",
-//           explanation:
-//             "Speak is used in the phrasal verb speak up meaning to speak louder.",
-//         },
-
-//         {
-//           id: 3,
-//           title:
-//             "During the meeting, they decided to ________  about the upcoming project in detail.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak" },
-//             { title: "talk", correctAnswer: true },
-//           ],
-//           userAnswer: "",
-//           explanation: "Talk is used in more conversational situations.",
-//         },
-//         {
-//           id: 4,
-//           title:
-//             "My 6 year old son constantly _______ back to me and I don't know what to do.",
-//           possibleAnswersAndExplanation: [
-//             { title: "talks", correctAnswer: true },
-//             { title: "speaks" },
-//           ],
-//           userAnswer: "",
-//           explanation:
-//             "Talk is used in the phrasal verb talk back meaning to be disrespectful.",
-//         },
-//         {
-//           id: 5,
-//           title:
-//             "After a long day at work, she likes to ________ with her best friend on the phone.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak" },
-//             { title: "talk", correctAnswer: true },
-//           ],
-//           userAnswer: "",
-//           explanation: "Talk is used in more informal situations.",
-//         },
-//         {
-//           id: 6,
-//           title:
-//             "May I ________ to the manager about my concerns regarding the company policies?",
-//           possibleAnswersAndExplanation: [
-//             { title: "speak", correctAnswer: true },
-//             { title: "talk" },
-//           ],
-//           userAnswer: "",
-//           explanation: "Speak is used in more formal situations.",
-//         },
-//         {
-//           id: 7,
-//           title: "He ________ French, Spanish, German, and English fluently.",
-//           possibleAnswersAndExplanation: [
-//             { title: "speaks", correctAnswer: true },
-//             { title: "talks" },
-//           ],
-//           userAnswer: "",
-//           explanation: "Speak is used with languages.",
-//         },
-//       ],
-//     ]);
-//     setShouldShowNewQuestionsBtn(false);
-//   };
-
-//   return (
-//     <>
-//       <div className={styles.page_body}>
-
-//         <Quiz
-//           explanation={explanation}
-//           title="Take a Quiz!"
-//           questions={quiz}
-//           callback={handleRandomQuestions}
-//           shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-//         ></Quiz>
-//       </div>
-//     </>
-//   );
-// }

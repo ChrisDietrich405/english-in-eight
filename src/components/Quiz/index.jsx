@@ -61,6 +61,7 @@ export default function Quiz(props) {
   };
 
   const loadNextSetOfQuestions = () => {
+    console.log(props.questionArray);
     props.setQuiz(props.questionsArray);
     scrollToTop();
   };

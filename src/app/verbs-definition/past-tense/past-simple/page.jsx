@@ -1,15 +1,8 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Quiz from "@/src/components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
 export default function PastPerfectContinuous() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
-
   const questionsArray = [
     {
       id: 1,
@@ -53,6 +46,7 @@ export default function PastPerfectContinuous() {
       explanation: "Saw is the past simple form for see.",
     },
     {
+      id: 5,
       title: "He ____________ his hand with a knife .",
       possibleAnswersAndExplanation: [
         { title: "a. cuted" },
@@ -62,7 +56,7 @@ export default function PastPerfectContinuous() {
       explanation: "Cut is the past simple form for cut.",
     },
     {
-      id: 5,
+      id: 6,
       title: "We ________ too much this morning.",
       possibleAnswersAndExplanation: [
         { title: "a. ate", correctAnswer: true },
@@ -72,7 +66,7 @@ export default function PastPerfectContinuous() {
       explanation: "Ate is the past simple form for eat.",
     },
     {
-      id: 6,
+      id: 7,
       title: "I _________ her on the cheek.",
       possibleAnswersAndExplanation: [
         { title: "a. kissed", correctAnswer: true },
@@ -82,7 +76,7 @@ export default function PastPerfectContinuous() {
       explanation: "Kissed is the past simple form for kiss.",
     },
     {
-      id: 7,
+      id: 8,
       title: "It ____________ a lot of money.",
       possibleAnswersAndExplanation: [
         { title: "a. costed" },
@@ -92,7 +86,7 @@ export default function PastPerfectContinuous() {
       explanation: "Cost is the past simple form for cost.",
     },
     {
-      id: 8,
+      id: 9,
       title: "They ___________ to the store.",
       possibleAnswersAndExplanation: [
         { title: "a. wented" },
@@ -102,7 +96,7 @@ export default function PastPerfectContinuous() {
       explanation: "Went is the past simple form for go.",
     },
     {
-      id: 9,
+      id: 10,
       title: "The car ___________ the tree.",
       possibleAnswersAndExplanation: [
         { title: "a. hit", correctAnswer: true },
@@ -112,7 +106,7 @@ export default function PastPerfectContinuous() {
       explanation: "Hit is the past simple form for hit.",
     },
     {
-      id: 10,
+      id: 11,
       title: "She ____________ her friend last night.",
       possibleAnswersAndExplanation: [
         { title: "a. meet" },
@@ -122,7 +116,7 @@ export default function PastPerfectContinuous() {
       explanation: "Met is the past simple form for meet.",
     },
     {
-      id: 11,
+      id: 12,
       title: "He ____________ a great book last weekend.",
       possibleAnswersAndExplanation: [
         { title: "a. read", correctAnswer: true },
@@ -132,7 +126,7 @@ export default function PastPerfectContinuous() {
       explanation: "Read is the past simple form for read.",
     },
     {
-      id: 12,
+      id: 13,
       title: "They ____________ a delicious meal yesterday.",
       possibleAnswersAndExplanation: [
         { title: "a. cook" },
@@ -142,7 +136,7 @@ export default function PastPerfectContinuous() {
       explanation: "Cooked is the past simple form for cook.",
     },
     {
-      id: 13,
+      id: 14,
       title: "The children ____________ in the park this morning.",
       possibleAnswersAndExplanation: [
         { title: "a. play" },
@@ -152,7 +146,7 @@ export default function PastPerfectContinuous() {
       explanation: "Played is the past simple form for play.",
     },
     {
-      id: 14,
+      id: 15,
       title: "She ____________ a beautiful song at the concert.",
       possibleAnswersAndExplanation: [
         { title: "a. sing" },
@@ -162,7 +156,7 @@ export default function PastPerfectContinuous() {
       explanation: "Sang is the past simple form for sing.",
     },
     {
-      id: 15,
+      id: 16,
       title: "They ____________ to the beach last summer.",
       possibleAnswersAndExplanation: [
         { title: "a. go" },
@@ -172,7 +166,7 @@ export default function PastPerfectContinuous() {
       explanation: "Went is the past simple form for go.",
     },
     {
-      id: 16,
+      id: 17,
       title: "I ____________ my keys in the car yesterday.",
       possibleAnswersAndExplanation: [
         { title: "a. leave" },
@@ -182,7 +176,7 @@ export default function PastPerfectContinuous() {
       explanation: "Left is the past simple form for leave.",
     },
     {
-      id: 17,
+      id: 18,
       title: "They ____________ a great time at the party last night.",
       possibleAnswersAndExplanation: [
         { title: "a. have" },
@@ -192,7 +186,7 @@ export default function PastPerfectContinuous() {
       explanation: "Had is the past simple form for have.",
     },
     {
-      id: 18,
+      id: 19,
       title: "She ____________ a fantastic painting last week.",
       possibleAnswersAndExplanation: [
         { title: "a. paint" },
@@ -202,7 +196,7 @@ export default function PastPerfectContinuous() {
       explanation: "Painted is the past simple form for paint.",
     },
     {
-      id: 19,
+      id: 20,
       title: "They ____________ their grandparents yesterday.",
       possibleAnswersAndExplanation: [
         { title: "a. visit" },
@@ -212,7 +206,7 @@ export default function PastPerfectContinuous() {
       explanation: "Visited is the past simple form for visit.",
     },
     {
-      id: 20,
+      id: 21,
       title: "He ____________ a new bicycle for his birthday.",
       possibleAnswersAndExplanation: [
         { title: "a. get" },
@@ -223,53 +217,8 @@ export default function PastPerfectContinuous() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
-      <Head>
-        <title>Future Continuous | English in Eight Minutes</title>
-        <meta
-          name="description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dietrichlandcare.com" />
-        <meta property="og:title" content="Dietrich Land Care" />
-        <meta
-          property="og:description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-        <meta
-          property="og:image"
-          content="https://dietrichlandcare.com/images/logo.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
-
       <div className={styles.page_title}>
         <h1>Past Simple</h1>
       </div>
@@ -384,13 +333,7 @@ export default function PastPerfectContinuous() {
           <li>go changes to went</li>
         </ul>
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
 
       <iframe
         className={styles.iframe_wrapper}

@@ -1,14 +1,7 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Quiz from "@/src/components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 import styles from "../../../styles/content-page.module.css";
 
 export default function PresentPerfectContinuous() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
-
   const questionsArray = [
     {
       id: 1,
@@ -222,55 +215,11 @@ export default function PresentPerfectContinuous() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
-      <Head>
-        <title>Future Continuous | English in Eight Minutes</title>
-        <meta
-          name="description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dietrichlandcare.com" />
-        <meta property="og:title" content="Dietrich Land Care" />
-        <meta
-          property="og:description"
-          content="Learn about the future continuous verb tense in English grammar. Understand its usage, structure, and examples. Enhance your language skills with English in Eight Minutes."
-        />
-        <meta
-          property="og:image"
-          content="https://dietrichlandcare.com/images/logo.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
       <div className="page-body">
         <div className={styles.page_title}>
-          <h1>Simple Present</h1>
+          <h1>Present Simple</h1>
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           The simple present is used to describe actions, events, or states that
@@ -359,13 +308,7 @@ export default function PresentPerfectContinuous() {
           <p>Example: He buys a lot of clothes.</p>{" "}
         </div>
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
 
       <iframe
         className={styles.iframe_wrapper}
@@ -380,35 +323,3 @@ export default function PresentPerfectContinuous() {
     </>
   );
 }
-
-// {
-//   /* import Quiz from "@/src/components/Quiz";
-// import styles from "../../../styles/content-page.module.css"; */
-// }
-
-// import Quiz from "@/src/components/Quiz";
-
-// import styles from "../../../styles/content-page.module.css";
-// //DONE
-// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-// const endpoint = "/api/past-perfect-continuous"; // Replace with the correct endpoint
-
-// const fullUrl = baseUrl + endpoint;
-// //DONE
-
-// // const getData = async () => {
-// //   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-// //   return res.json();
-// // };
-
-// export default async function PresentPerfectContinuous() {
-//   // const verbs = await getData();
-
-//   return (
-//     <div className="page-body">
-
-//     </div>
-//   );
-// }
-
-// //DONE
