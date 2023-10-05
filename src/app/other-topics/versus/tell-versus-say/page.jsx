@@ -154,7 +154,7 @@ export default function TellVersusSay() {
         { title: "said", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "We usually use say without a personal object:",
+      explanation: "We usually use say without a personal object.",
     },
     {
       id: 12,

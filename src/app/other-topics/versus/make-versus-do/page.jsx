@@ -297,8 +297,8 @@ export default function MakeVersusDo() {
             She's fed up with doing everything herself. She needs some help.
           </li>
         </ul>
-        <h4 style={{ color: "#1976d2" }}>
-          This exercise is extremely hard. There are many many exceptions to the
+        <h4 style={{ fontWeight: "bold" }}>
+          This exercise is extremely hard. There are many, many exceptions to the
           rules. Don't feel bad if you make a lot of mistakes here. Take notes
           and practice the exercise again (and again).
         </h4>

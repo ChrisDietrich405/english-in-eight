@@ -114,6 +114,7 @@ export default function TalkVersusSpeaking() {
         { title: "talk" },
       ],
       userAnswer: "",
+      explanation: "Speak is used in more formal situations.",
     },
     {
       id: 8,
@@ -123,6 +124,7 @@ export default function TalkVersusSpeaking() {
         { title: "speak" },
       ],
       userAnswer: "",
+      explanation: "Talk is used in more informal situations.",
     },
     {
       id: 9,
@@ -132,6 +134,7 @@ export default function TalkVersusSpeaking() {
         { title: "talk" },
       ],
       userAnswer: "",
+      explanation: "Speak is used in more formal situations.",
     },
     {
       id: 10,
@@ -141,6 +144,7 @@ export default function TalkVersusSpeaking() {
         { title: "talks" },
       ],
       userAnswer: "",
+      explanation: "Speak is used when referring to languages.",
     },
     {
       id: 11,
@@ -165,14 +169,13 @@ export default function TalkVersusSpeaking() {
     },
     {
       id: 13,
-      title: "She's an excellent public ________.",
+      title: "I don't really want to _______ about it with my mom.",
       possibleAnswersAndExplanation: [
-        { title: "speaker", correctAnswer: true },
-        { title: "talker" },
+        { title: "talk", correctAnswer: true },
+        { title: "speak" },
       ],
       userAnswer: "",
-      explanation:
-        "In this context, 'speaker' is the correct term for someone who addresses an audience.",
+      explanation: "Talk is used in more informal situations.",
     },
     {
       id: 14,
@@ -220,7 +223,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 18,
       title:
-        "She's known for her ability to ________ multiple languages fluently.",
+        "She can ________ three languages fluently.",
       possibleAnswersAndExplanation: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },

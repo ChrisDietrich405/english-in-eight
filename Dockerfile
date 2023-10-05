@@ -1,4 +1,4 @@
-FROM node/alpine
+FROM node:current-alpine3.18
 
 # it's an image version coming from a specific distro
 # node is the image coming from the alpine distro
@@ -6,7 +6,7 @@ FROM node/alpine
 
 WORKDIR /app 
 
-#the app here is a directory that is inside of my container. the app directory is created when this file runs
+#the app here is a directory that is created inside of my container. the app directory is created when this file runs
 
 COPY package*.json ./
 
@@ -28,14 +28,3 @@ CMD npm run dev
 
 #running the application in docker
 
-# FROM node:16
-
-# WORKDIR /app
-
-# COPY package*.json ./
-
-# RUN npm install
-
-# COPY . .
-
-# CMD ["node", "app.js"]

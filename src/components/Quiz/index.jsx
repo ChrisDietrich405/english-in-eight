@@ -26,7 +26,10 @@ export default function Quiz(props) {
   const [disable, setDisable] = useState(false);
   const [answers, setAnswers] = useState({});
   const [selectedAnswerTexts, setSelectedAnswerTexts] = useState({});
-  const [scrollTarget, setScrollTarget] = useState(0); // Initialize scrollTarget to 0
+  const [scrollTarget, setScrollTarget] = useState(0);
+  const [cssProperties, setCssProperties] = useState({
+    backgroundColor: "#1976d2;",
+  });
 
   const topOfQuizRef = useRef(null);
 
@@ -53,17 +56,19 @@ export default function Quiz(props) {
 
   const scrollToTop = () => {
     if (topOfQuizRef.current) {
-      setDisable(true);
       const yPosition = document.getElementById("scrollTo");
       const position = yPosition.offsetTop;
       window.scrollTo(0, position - 64);
     }
+    setDisable(true);
   };
 
   const loadNextSetOfQuestions = () => {
-    console.log(props.questionArray);
     props.setQuiz(props.questionsArray);
     scrollToTop();
+    setCssProperties({
+      backgroundColor: "#F0F0F0",
+    });
   };
 
   return (
@@ -94,13 +99,12 @@ export default function Quiz(props) {
                       (possibleAnswer, index) => {
                         return (
                           <SelectAnswer
-                          show={
-                            index === 1 &&
-                              question
-                                  .possibleAnswersAndExplanation
-                                  .filter((question) => question?.correctAnswer)
-                                  .length === 2
-                          }
+                            show={
+                              index === 1 &&
+                              question.possibleAnswersAndExplanation.filter(
+                                (question) => question?.correctAnswer
+                              ).length === 2
+                            }
                             questionId={question.id}
                             explanation={question.explanation}
                             key={`answer${index}`}
@@ -137,15 +141,16 @@ export default function Quiz(props) {
               className={styles.quiz_button}
               variant="contained"
               type="reset"
+              style={{ marginRight: "20px" }}
             >
               Reset
             </Button>
             {props.shouldShowNewQuestionsBtn && (
               <Button
-                // disabled={disable}
+                style={cssProperties}
                 className={styles.quiz_button}
                 type="reset"
-                style={{ marginLeft: "20px" }}
+                // style={{ marginLeft: "20px" }}
                 variant="contained"
                 onClick={loadNextSetOfQuestions}
               >
