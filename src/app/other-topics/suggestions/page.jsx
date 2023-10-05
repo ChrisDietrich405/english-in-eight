@@ -39,16 +39,6 @@ const Suggestions = () => {
                   exercises so that you can immediately learn and practice. For
                   a deeper understanding of each topic please watch the
                   accompanying videos at the bottom of each page.
-                  {/* <Link href="/nouns-definition" className={styles.link}>
-                      <h3 className={styles.content_title_second_row}>Nouns</h3>
-                      <h4 className={styles.content_definition}>
-                        People, Places, Things
-                      </h4>
-                      <p>Woman, City, Car</p>
-                      <div className={styles.run_icon_container}>
-                        <FaTreeCity size="5em" />
-                      </div>
-                    </Link> */}
                 </CardContent>
               </Card>
             </Grid>
@@ -69,16 +59,15 @@ const Suggestions = () => {
                   flexDirection: "column",
                 }}
               >
-                <div className={styles.link_cards}>
-                  {/* <Link href="/verbs-definition/home" className={styles.link}>
-                    <h3 className={styles.content_title_second_row}>Verbs</h3>
-                    <h4 className={styles.content_definition}>Action Verbs</h4>
-                    <p>Swim, Dance, Run</p>
-                    <div className={styles.run_icon_container}>
-                      <FaRunning size="5em" />
-                    </div>
-                  </Link> */}
-                </div>
+                <CardContent>
+                  <Typography gutterBottom color="text.secondary" variant="h6">
+                    Fast Lessons
+                  </Typography>
+                  Don't focus too much on the explanations, read them once and
+                  then go on to the examples. I guarantee after reading the
+                  examples the explanations will make more sense (be easier to
+                  understand).
+                </CardContent>
               </Card>
             </Grid>
             <Grid
@@ -239,11 +228,7 @@ const Suggestions = () => {
 
         <ul className={styles.list_container}>
           <li></li>
-          <li>
-            Don't focus too much on the explanations, read them once and then go
-            on to the examples. I guarantee after reading the examples the
-            explanations will make more sense (be easier to understand).
-          </li>
+          <li></li>
           <li>
             Every time and I repeat every time you do a lesson, you need to
             teach someone what you learned. The best way to learn is to teach.
