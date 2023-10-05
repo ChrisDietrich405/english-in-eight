@@ -76,42 +76,49 @@ export default function Quiz(props) {
             <h1>{props.explanation}</h1>
           </div>
           <ol className={styles.questions_and_answers}>
-            {props.questions.map((question, i) => (
-              <li key={i} className={styles.question}>
-                {`${question.id}. ${question.title}`}
+            {props.questions.map((question, i) => {
+              console.log(question);
+              return (
+                <li key={i} className={styles.question}>
+                  {`${question.id}. ${question.title}`}
 
-                {submitted === true && (
-                  <AnswerIcon
-                    className="answer-icon"
-                    isAnswered={i in answers}
-                    isAnsweredCorrectly={i in answers && answers[i] === true}
-                  />
-                )}
-                <ul>
-                  {question.possibleAnswersAndExplanation.map(
-                    (possibleAnswer, index) => {
-                      return (
-                        <SelectAnswer
-                          questionId={question.id}
-                          explanation={question.explanation}
-                          key={`answer${index}`}
-                          submitted={submitted}
-                          onClick={() => select(possibleAnswer, i)}
-                          possibleAnswer={possibleAnswer}
-                          answers={answers}
-                          i={i}
-                          selectedAnswerTexts={selectedAnswerTexts}
-                          isAnsweredCorrectly={
-                            i in answers && answers[i] === true
-                          }
-                          index={index}
-                        />
-                      );
-                    }
+                  {submitted === true && (
+                    <AnswerIcon
+                      className="answer-icon"
+                      isAnswered={i in answers}
+                      isAnsweredCorrectly={i in answers && answers[i] === true}
+                    />
                   )}
-                </ul>
-              </li>
-            ))}
+                  <ul>
+                    {question.possibleAnswersAndExplanation.map(
+                      (possibleAnswer, index) => {
+                        return (
+                          <SelectAnswer
+                            show={
+                              index == 1 &&
+                              question.possibleAnswersAndExplanation
+                            }
+                            questionId={question.id}
+                            explanation={question.explanation}
+                            key={`answer${index}`}
+                            submitted={submitted}
+                            onClick={() => select(possibleAnswer, i)}
+                            possibleAnswer={possibleAnswer}
+                            answers={answers}
+                            i={i}
+                            selectedAnswerTexts={selectedAnswerTexts}
+                            isAnsweredCorrectly={
+                              i in answers && answers[i] === true
+                            }
+                            index={index}
+                          />
+                        );
+                      }
+                    )}
+                  </ul>
+                </li>
+              );
+            })}
           </ol>
           <div className={styles.quiz_buttons}>
             <Button

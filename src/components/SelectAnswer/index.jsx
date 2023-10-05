@@ -4,6 +4,7 @@ import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 import styles from "./styles.module.css";
 
 const SelectAnswer = ({
+  show,
   explanation,
   submitted,
   onClick,
@@ -34,7 +35,10 @@ const SelectAnswer = ({
       return "";
     }
     if (submitted === true) {
+      console.log(isAnsweredCorrectly.questions);
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
+        return <span className={styles.explanation}>{explanation}</span>;
+      } else if (show) {
         return <span className={styles.explanation}>{explanation}</span>;
       }
     }
@@ -46,7 +50,11 @@ const SelectAnswer = ({
     }
     if (submitted === true) {
       if (isAnsweredCorrectly && possibleAnswer.correctAnswer) {
-        return <AiFillCheckCircle color="green" />;
+        return (
+          <>
+            <AiFillCheckCircle color="green" />
+          </>
+        );
       } else if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return <AiFillCloseCircle color="red" style={{ marginLeft: "15px" }} />;
         {

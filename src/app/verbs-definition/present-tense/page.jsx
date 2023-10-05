@@ -3,7 +3,46 @@ import Button from "@mui/material/Button";
 
 import styles from "../../styles/content-page.module.css";
 
-const SimplePresent = () => {
+export const metadata = {
+  title: "Present Tense Verbs | English in Eight Minutes",
+  description:
+    "Learn about present tense verbs in English. This page provides explanations and examples of present tense verbs, including the present simple, present continuous, present perfect, and present perfect continuous tenses.",
+  keywords:
+    "present tense verbs, English, grammar, present simple, present continuous, present perfect, present perfect continuous",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Present Tense Verbs | English in Eight Minutes",
+    description:
+      "Learn about present tense verbs in English. This page provides explanations and examples of present tense verbs",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
+
+const Present = () => {
   return (
     <>
       <div className={styles.page_title}>
