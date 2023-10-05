@@ -43,11 +43,19 @@ export default function Quiz(props) {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const submit = (e) => {
-    e.preventDefault();
+  const submit = (event) => {
+    event.preventDefault();
     setSubmitted(true);
-    console.log(props);
+    console.log("Object", event);
   };
+
+  // const submit = (event) => {   I will look into it
+  //   event.preventDefault();
+  //   // const answers = event.target.map((answer) => answer.checked);
+  //   console.log(event);
+  //   console.log(event.target.forEach(answer => console.log(answer)));   
+  //   setSubmitted(true);
+  // };
 
   const reset = (e) => {
     setAnswers({});
@@ -82,7 +90,6 @@ export default function Quiz(props) {
           </div>
           <ol className={styles.questions_and_answers}>
             {props.questions.map((question, i) => {
-              console.log(question);
               return (
                 <li key={i} className={styles.question}>
                   {`${question.id}. ${question.title}`}
@@ -101,9 +108,13 @@ export default function Quiz(props) {
                           <SelectAnswer
                             show={
                               index === 1 &&
+                              //this is only to show it after the second answer
+                              //we are mapping through the two answers
+                              //if it's the first answer then it will return false and if it's the second it will return true. We need two true answers
                               question.possibleAnswersAndExplanation.filter(
                                 (question) => question?.correctAnswer
                               ).length === 2
+                              // if we have two correct answers
                             }
                             questionId={question.id}
                             explanation={question.explanation}

@@ -275,7 +275,7 @@ export default function ComparativeAdjectives() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Comparative Adjectives</h1>
       </div>
@@ -286,7 +286,7 @@ export default function ComparativeAdjectives() {
           adjective.
         </p>
       </div>
-      <div className={styles.page_body}>
+      <section className={styles.page_body}>
         <h4>Adjectives with only one syllable</h4>
         <p>
           Normally if an adjective has one syllable, we add 'er' to make the
@@ -324,7 +324,9 @@ export default function ComparativeAdjectives() {
           <li>real → more real (NOT realer)</li>
           <li>fun → more fun (NOT funner)</li>
         </ul>
-        <h5>Adjectives with two syllables</h5>
+      </section>
+      <section>
+        <h4>Adjectives with two syllables</h4>
         <p>Some adjectives with two syllables use 'more'.</p>
         <ul className="page-examples">
           <li>thoughtful → more thoughtful</li>
@@ -347,7 +349,9 @@ export default function ComparativeAdjectives() {
           <li>ugly → uglier</li>
           <li>silly → sillier</li>
         </ul>
-        <h5>Adjectives that have more than two syllables</h5>
+      </section>
+      <section>
+        <h4>Adjectives that have more than two syllables</h4>
         <p>
           Adjectives that have more than two syllables need to use 'most' to
           form their comparative.
@@ -358,6 +362,8 @@ export default function ComparativeAdjectives() {
           <li>exotic → more exotic</li>
           <li>intelligent → more intelligent</li>
         </ul>
+      </section>
+      <section>
         <p>Irregular adjectives</p>
         <p>
           There are also some irregular adjectives. We simply need to memorize
@@ -370,8 +376,9 @@ export default function ComparativeAdjectives() {
           <li>little → less</li>
           <li>much → more</li>
         </ul>
-      </div>
+      </section>
+
       <QuizForm questionsArray={questionsArray} />
-    </>
+    </main>
   );
 }

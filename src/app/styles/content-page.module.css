@@ -86,6 +86,11 @@
   color: white;
 }
 
+.iframe_wrapper {
+  width: 100%;
+  padding: 0 64px;
+}
+
 @media only screen and (max-width: 420px) {
   .navbar_logo {
     display: flex;
@@ -115,10 +120,11 @@
   .links_container {
     flex-direction: column;
   }
-  
+
   .iframe_wrapper {
     margin: 0 auto;
     width: 280px;
     height: 157px;
+    padding: 0;
   }
 }

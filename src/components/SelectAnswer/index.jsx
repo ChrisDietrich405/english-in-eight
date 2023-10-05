@@ -35,7 +35,6 @@ const SelectAnswer = ({
       return "";
     }
     if (submitted === true) {
-      console.log(isAnsweredCorrectly.questions);
       if (!isAnsweredCorrectly && !possibleAnswer.correctAnswer) {
         return <span className={styles.explanation}>{explanation}</span>;
       } else if (show) {

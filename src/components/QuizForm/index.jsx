@@ -19,7 +19,6 @@ export default function QuizForm({ questionsArray }) {
       setQuiz={setQuiz}
       title="Take a Quiz!"
       questions={quiz}
-      // secondSetQuestions={secondSetQuestions}
       shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
     ></Quiz>
   );

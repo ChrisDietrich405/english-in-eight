@@ -262,7 +262,7 @@ export default function Collective() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Collective Nouns</h1>
       </div>
@@ -312,6 +312,6 @@ export default function Collective() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

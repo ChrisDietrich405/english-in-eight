@@ -4,14 +4,16 @@ import Link from "next/link";
 import styles from "../../styles/layout.module.css";
 
 const Layout = ({ children }) => {
-
   return (
     <div>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
           <ul className={styles.list_container}>
             <li>
-              <Link className={`${styles.link}`} href="/idiomatic-expressions">
+              <Link
+                className={`${styles.link}`}
+                href="/other-topics/idiomatic-expressions"
+              >
                 Idiomatic Expressions
               </Link>
             </li>

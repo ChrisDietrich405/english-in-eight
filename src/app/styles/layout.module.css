@@ -8,7 +8,7 @@
 }
 
 .list_container {
-  padding: 0 !important;
+  padding: 20px 0 !important;
   list-style: none;
 }
 
@@ -55,5 +55,3 @@
     flex-direction: column;
   }
 }
-
-

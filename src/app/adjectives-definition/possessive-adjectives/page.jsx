@@ -250,7 +250,7 @@ export default function PossessiveAdjectives() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_body}>
         <div className="possessive-adjectives">
           <div className={styles.page_title}>
@@ -291,11 +291,9 @@ export default function PossessiveAdjectives() {
           </ul>
         </div>
 
-        <p>
-          Replace the personal pronouns with the correct possessive adjective:
-        </p>
+      
       </div>
       <QuizForm questionsArray={questionsArray} />
-    </>
+    </main>
   );
 }

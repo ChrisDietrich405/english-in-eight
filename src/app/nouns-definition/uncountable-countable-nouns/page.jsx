@@ -274,12 +274,13 @@ export default function UncountableAndCountable() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_body}>
         <div className={styles.page_title}>
           <h1>Countable & Uncountable Nouns </h1>
         </div>
-        <div>
+        <section>
+          
           <h4>Uncountable Nouns</h4>
           <p className={styles.grammar_explanation_paragraph}>
             Uncountable nouns are for nouns we don’t count. These nouns might be
@@ -289,7 +290,7 @@ export default function UncountableAndCountable() {
             gases, etc.). Uncountable nouns usually are used as singular nouns
             with singular verbs , e.g., The <b>rice is</b> delicious
           </p>
-        </div>
+        </section>
         <div>
           <p>Examples</p>
           <ul className="page-examples">
@@ -358,7 +359,7 @@ export default function UncountableAndCountable() {
           </li>
         </ul>
 
-        <div>
+        <section>
           <h4>Countable Nouns</h4>
           <p className={styles.grammar_explanation_paragraph}>
             Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They
@@ -367,7 +368,7 @@ export default function UncountableAndCountable() {
             ask "How many?" along with the plural countable noun, e.g., How many
             dogs?
           </p>
-        </div>
+        </section>
         <div>
           <p>Examples</p>
           <ul className="page-examples">
@@ -402,6 +403,6 @@ export default function UncountableAndCountable() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

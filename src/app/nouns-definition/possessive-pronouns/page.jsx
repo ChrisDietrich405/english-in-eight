@@ -237,7 +237,7 @@ export default function PossessivePronouns() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Possessive Pronouns</h1>
       </div>
@@ -283,6 +283,6 @@ export default function PossessivePronouns() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }
