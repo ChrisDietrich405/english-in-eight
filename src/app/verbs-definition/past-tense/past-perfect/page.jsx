@@ -24,25 +24,19 @@ export const metadata = {
     title: "Past Perfect Tense | English in Eight Minutes",
     description:
       "Learn about the past perfect tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
-    images: [
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        url: "/favicon.ico",
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        url: "/favicon/favicon-16x16.png",
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        url: "/favicon/apple-touch-icon.png",
-      },
-    ],
+      images: [
+        {
+          url: "images/logo.svg",
+          width: 800,
+          height: 600,
+        },
+        {
+          url: "images/logo.svg",
+          width: 1800,
+          height: 1600,
+          alt: "My custom alt",
+        },
+      ],
   },
 };
 

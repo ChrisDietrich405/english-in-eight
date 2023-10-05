@@ -1,20 +1,47 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Link from "next/link";
-
-import { Button } from "@mui/material";
-
-import Quiz from "../../../components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function PossessivePronouns() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+export const metadata = {
+  title: "Possessive Pronouns | English in Eight Minutes",
+  description:
+    "Learn about possessive pronouns in English with English in Eight Minutes. Understand how possessive pronouns work and test your knowledge with a quiz.",
+  keywords:
+    "English, Possessive Pronouns, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Possessive Pronouns | English in Eight Minutes",
+    description:
+      "Learn about possessive pronouns in English with English in Eight Minutes. Understand how possessive pronouns work and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
+export default function PossessivePronouns() {
   const questionsArray = [
     {
       id: 1,
@@ -209,62 +236,8 @@ export default function PossessivePronouns() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
-      <Head>
-        <title>Collective Nouns | English in Eight Minutes</title>
-        <meta
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
-          name="description"
-        />
-        <meta
-          content="English, Grammar, Collective Nouns, Singular Verbs, Examples"
-          name="keywords"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://example.com/collective-nouns"
-        />
-        <meta
-          property="og:title"
-          content="Collective Nouns | English in Eight Minutes"
-        />
-        <meta
-          property="og:description"
-          content="Learn about collective nouns in English grammar. Understand how they represent groups or collections of people or things and how they are used with singular verb forms."
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/collective-nouns.jpg"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
       <div className={styles.page_title}>
         <h1>Possessive Pronouns</h1>
       </div>
@@ -299,13 +272,7 @@ export default function PossessivePronouns() {
         </ul>
       </div>
 
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

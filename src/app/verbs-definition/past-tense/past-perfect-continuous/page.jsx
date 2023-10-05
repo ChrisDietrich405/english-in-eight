@@ -2,6 +2,46 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Past Perfect Continuous Tense | English in Eight Minutes",
+  description:
+    "Learn about the past perfect continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+  keywords:
+    "past perfect continuous tense, English grammar, English lessons, phrasal verbs, idiomatic expressions, United States, grammar lessons, English language",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Learn Past Perfect Continuous Tense | English in 8 Minutes",
+    description:
+      "Master the past perfect continuous tense in English with explanations, examples, and a quiz. English in Eight Minutes offers concise language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions in the United States.",
+      images: [
+        {
+          url: "images/logo.svg",
+          width: 800,
+          height: 600,
+        },
+        {
+          url: "images/logo.svg",
+          width: 1800,
+          height: 1600,
+          alt: "My custom alt",
+        },
+      ],
+  },
+};
+
+
 export default function PastPerfectContinuous() {
   const questionsArray = [
     {
@@ -245,11 +285,8 @@ export default function PastPerfectContinuous() {
     },
   ];
 
-
-
   return (
     <>
-    
       <div>
         <div className={styles.page_title}>
           <h1>Past Perfect Continuous</h1>
@@ -345,19 +382,3 @@ export default function PastPerfectContinuous() {
     </>
   );
 }
-
-// import Quiz from "@/src/components/Quiz";
-
-// import styles from "../../../styles/content-page.module.css";
-
-// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-// const endpoint = "/api/past-perfect-progressive"; // Replace with the correct endpoint
-
-// const fullUrl = baseUrl + endpoint;
-
-// const getData = async () => {
-//   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-//   return res.json();
-// };
-
-//DONE

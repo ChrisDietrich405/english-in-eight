@@ -2,6 +2,46 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Past Simple | English in Eight Minutes",
+  description:
+    "Learn about the past simple tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+  keywords:
+    "past simple, English grammar, English lessons, phrasal verbs, idiomatic expressions, United States, grammar lessons, English language",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Learn Past Simple | English in 8 Minutes",
+    description:
+      "Master the past simple tense in English with explanations, examples, and a quiz. English in Eight Minutes offers concise language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions in the United States.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
+
+
 export default function PastPerfectContinuous() {
   const questionsArray = [
     {

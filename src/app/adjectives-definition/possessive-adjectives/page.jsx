@@ -1,60 +1,47 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Quiz from "../../../components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-// export const metadata = {
-//   title: "Home | English in Eight Minutes",
-//   description:
-//     "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
-//   keywords:
-//     "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
-//   robots: {
-//     index: false,
-//     follow: true,
-//     nocache: true,
-//     googleBot: {
-//       index: true,
-//       follow: false,
-//       noimageindex: true,
-//       "max-video-preview": -1,
-//       "max-image-preview": "large",
-//       "max-snippet": -1,
-//     },
-//   },
-//   openGraph: {
-//     title: "Home | English in Eight Minutes",
-//     description:
-//       "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
-//     images: [
-//       {
-//         rel: "icon",
-//         type: "image/png",
-//         sizes: "32x32",
-//         url: "/favicon.ico",
-//       },
-//       {
-//         rel: "icon",
-//         type: "image/png",
-//         sizes: "16x16",
-//         url: "/favicon/favicon-16x16.png",
-//       },
-//       {
-//         rel: "apple-touch-icon",
-//         sizes: "180x180",
-//         url: "/favicon/apple-touch-icon.png",
-//       },
-//     ],
-//   },
-// };
+export const metadata = {
+  title: "Possessive Adjectives | English in Eight Minutes",
+  description:
+    "Learn about possessive adjectives in English with English in Eight Minutes. Understand the rules for using possessive adjectives to show ownership and take a quiz to test your knowledge.",
+  keywords:
+    "English, Possessive Adjectives, English grammar, English in Eight Minutes, possessive pronouns",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Possessive Adjectives | English in Eight Minutes",
+    description:
+      "Learn about possessive adjectives in English with English in Eight Minutes. Understand the rules for using possessive adjectives to show ownership and take a quiz to test your knowledge.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
 export default function PossessiveAdjectives() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
-
   const questionsArray = [
     {
       id: 1,
@@ -262,17 +249,6 @@ export default function PossessiveAdjectives() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <div className={styles.page_body}>
@@ -319,13 +295,7 @@ export default function PossessiveAdjectives() {
           Replace the personal pronouns with the correct possessive adjective:
         </p>
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
     </>
   );
 }

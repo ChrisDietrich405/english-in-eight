@@ -1,14 +1,47 @@
-"use client";
-import { useState, useEffect } from "react";
-import Quiz from "../../../components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function ComparativeAdjectives() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+export const metadata = {
+  title: "Comparative Adjectives | English in Eight Minutes",
+  description:
+    "Learn about comparative adjectives in English with English in Eight Minutes. Understand the rules for forming comparative adjectives and test your knowledge with a quiz.",
+  keywords:
+    "English, Comparative Adjectives, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Comparative Adjectives | English in Eight Minutes",
+    description:
+      "Learn about comparative adjectives in English with English in Eight Minutes. Understand the rules for forming comparative adjectives and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
+export default function ComparativeAdjectives() {
   const questionsArray = [
     {
       id: 1,
@@ -23,7 +56,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 2, 
+      id: 2,
       title: "Marcus is ______________ (old) than Nia.",
       possibleAnswersAndExplanation: [
         { title: "older", correctAnswer: true },
@@ -34,7 +67,7 @@ export default function ComparativeAdjectives() {
         "Old is one syllable so you can add er to form the comparative.",
     },
     {
-      id: 3, 
+      id: 3,
       title: "She is ______________(quiet) than her brother.",
       possibleAnswersAndExplanation: [
         { title: "quietter" },
@@ -45,7 +78,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 4, 
+      id: 4,
       title: "Buses are ________________ (large) than cars.",
       possibleAnswersAndExplanation: [
         { title: "largger" },
@@ -56,7 +89,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 5, 
+      id: 5,
       title: "The roads here are  _______________ (narrow) than in Baltimore.",
       possibleAnswersAndExplanation: [
         { title: "narrower", correctAnswer: true },
@@ -67,7 +100,7 @@ export default function ComparativeAdjectives() {
         "Narrow is a two syllable adjective that you can add er for the comparative form.",
     },
     {
-      id: 6, 
+      id: 6,
       title: "Dogs are _______________ (social) than cats",
       possibleAnswersAndExplanation: [
         { title: "more social", correctAnswer: true },
@@ -78,7 +111,7 @@ export default function ComparativeAdjectives() {
         "Social is a two syllable adjective that you can add er for the comparative form.",
     },
     {
-      id: 7, 
+      id: 7,
       title: "Malcolm is _______________ (busy) than his brother.",
       possibleAnswersAndExplanation: [
         { title: "busier", correctAnswer: true },
@@ -89,7 +122,7 @@ export default function ComparativeAdjectives() {
         "Busy is a two syllable adjective that you can add er for the comparative form and has a spelling change.",
     },
     {
-      id: 8, 
+      id: 8,
       title: "Demetrius is ________________ (ambitious) than his friends.",
       possibleAnswersAndExplanation: [
         { title: "ambitiouser" },
@@ -100,7 +133,7 @@ export default function ComparativeAdjectives() {
         "Ambitious is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
-      id: 9, 
+      id: 9,
       title:
         "My studio is  ________________  (colorful) than my art teacher's studio.",
       possibleAnswersAndExplanation: [
@@ -112,7 +145,7 @@ export default function ComparativeAdjectives() {
         "Colorful is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
-      id: 10, 
+      id: 10,
       title: "Her car is _______________ (comfortable) than my car.",
       possibleAnswersAndExplanation: [
         { title: "more comfortable", correctAnswer: true },
@@ -123,7 +156,7 @@ export default function ComparativeAdjectives() {
         "Comfortable is a three syllable adjective so you can't use more er the comparative form.",
     },
     {
-      id: 11, 
+      id: 11,
       title: "The movie was ______________ (exciting) than I expected.",
       possibleAnswersAndExplanation: [
         { title: "more exciting", correctAnswer: true },
@@ -134,7 +167,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 12, 
+      id: 12,
       title: "Sophia is ______________ (short) than her sister.",
       possibleAnswersAndExplanation: [
         { title: "shorter", correctAnswer: true },
@@ -146,7 +179,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 13, 
+      id: 13,
       title: "He is eating _________ (little) food.",
       possibleAnswersAndExplanation: [
         { title: "less", correctAnswer: true },
@@ -158,7 +191,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 14, 
+      id: 14,
       title:
         "This book is ______________ (interesting) than the one I read last week.",
       possibleAnswersAndExplanation: [
@@ -170,7 +203,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 15, 
+      id: 15,
       title: "Macs are ______________ (good) than Lenovo.",
       possibleAnswersAndExplanation: [
         { title: "better", correctAnswer: true },
@@ -182,7 +215,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 16, 
+      id: 16,
       title: "Julia is ______________ (tall) than her brother.",
       possibleAnswersAndExplanation: [
         { title: "taller", correctAnswer: true },
@@ -194,7 +227,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 17, 
+      id: 17,
       title: "The city is ______________ (crowded) during rush hour.",
       possibleAnswersAndExplanation: [
         { title: "more crowded", correctAnswer: true },
@@ -206,7 +239,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 18, 
+      id: 18,
       title: "The test was ______________ (difficult) than I expected.",
       possibleAnswersAndExplanation: [
         { title: "more difficult", correctAnswer: true },
@@ -217,7 +250,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 19, 
+      id: 19,
       title: "Jazz music is ______________ (relaxing) than rock.",
       possibleAnswersAndExplanation: [
         { title: "more relaxing", correctAnswer: true },
@@ -228,7 +261,7 @@ export default function ComparativeAdjectives() {
     },
 
     {
-      id: 20, 
+      id: 20,
       title:
         "The new restaurant is ______________ (cheap) than the one we used to go to.",
       possibleAnswersAndExplanation: [
@@ -240,17 +273,6 @@ export default function ComparativeAdjectives() {
         "Cheap is one syllable, so you can add er. More cheap isn't technically incorrect, but it sounds strange",
     },
   ];
-
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
 
   return (
     <>
@@ -349,13 +371,7 @@ export default function ComparativeAdjectives() {
           <li>much → more</li>
         </ul>
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
     </>
   );
 }

@@ -1,17 +1,47 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Quiz from "../../../components/Quiz";
-import Link from "next/link";
-import { Button } from "@mui/material";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function NounModifiers() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+export const metadata = {
+  title: "Noun Modifiers | English in Eight Minutes",
+  description:
+    "Learn about noun modifiers in English with English in Eight Minutes. Understand how noun modifiers work and test your knowledge with a quiz.",
+  keywords:
+    "English, Noun Modifiers, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Noun Modifiers | English in Eight Minutes",
+    description:
+      "Learn about noun modifiers in English with English in Eight Minutes. Understand how noun modifiers work and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
+export default function NounModifiers() {
   const questionsArray = [
     {
       id: 1,
@@ -136,17 +166,6 @@ export default function NounModifiers() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <div className={styles.page_title}>
@@ -207,20 +226,8 @@ export default function NounModifiers() {
           <span style={{ color: "red" }}>NOT a basketballs player</span>
         </li>
       </ul>
-      <Link
-        href="https://www.youtube.com/watch?v=bhgzqbv9Rxk&t=111s"
-        target="_blank"
-      >
-        <Button>Interested in getting a better understanding?</Button>
-      </Link>
 
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

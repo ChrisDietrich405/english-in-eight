@@ -94,10 +94,13 @@ export default function Quiz(props) {
                       (possibleAnswer, index) => {
                         return (
                           <SelectAnswer
-                            show={
-                              index == 1 &&
-                              question.possibleAnswersAndExplanation
-                            }
+                          show={
+                            index === 1 &&
+                              question
+                                  .possibleAnswersAndExplanation
+                                  .filter((question) => question?.correctAnswer)
+                                  .length === 2
+                          }
                             questionId={question.id}
                             explanation={question.explanation}
                             key={`answer${index}`}

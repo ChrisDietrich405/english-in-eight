@@ -91,4 +91,4 @@ const Present = () => {
   );
 };
 
-export default SimplePresent;
+export default Present;

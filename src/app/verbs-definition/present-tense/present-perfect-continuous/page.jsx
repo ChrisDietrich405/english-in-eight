@@ -1,18 +1,18 @@
 import QuizForm from "@/src/components/QuizForm";
 import styles from "../../../styles/content-page.module.css";
 export const metadata = {
-  title: "Present Continuous | English in Eight Minutes",
+  title: "Present Perfect Continuous | English in Eight Minutes",
   description:
-    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    "Learn about the present perfect continuous tense, which expresses actions or situations that started in the past and are still ongoing or have recently stopped. Improve your English language skills with quick lessons on English in Eight Minutes.",
   keywords:
-    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+    "English, present perfect continuous, language lessons, verb tenses, grammar, English in Eight Minutes",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
@@ -20,28 +20,22 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Home | English in Eight Minutes",
+    title: "Present Perfect Continuous | English in Eight Minutes",
     description:
-      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
-    images: [
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        url: "/favicon.ico",
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        url: "/favicon/favicon-16x16.png",
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        url: "/favicon/apple-touch-icon.png",
-      },
-    ],
+      "Learn about the present perfect continuous tense, which expresses actions or situations that started in the past and are still ongoing or have recently stopped. Improve your English language skills with quick lessons on English in Eight Minutes.",
+      images: [
+        {
+          url: "images/logo.svg",
+          width: 800,
+          height: 600,
+        },
+        {
+          url: "images/logo.svg",
+          width: 1800,
+          height: 1600,
+          alt: "My custom alt",
+        },
+      ],
   },
 };
 
@@ -371,33 +365,3 @@ export default function PresentPerfectContinuous() {
     </>
   );
 }
-
-// {
-//   /* import Quiz from "@/src/components/Quiz";
-// import styles from "../../../styles/content-page.module.css"; */
-// }
-
-// import Quiz from "@/src/components/Quiz";
-
-// import styles from "../../../styles/content-page.module.css";
-// //DONE
-// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Replace with your actual base URL
-// const endpoint = "/api/past-perfect-continuous"; // Replace with the correct endpoint
-
-// const fullUrl = baseUrl + endpoint;
-// //DONE
-
-// // const getData = async () => {
-// //   const res = await fetch("http://127.0.0.1:3000/api/future-continuous");
-// //   return res.json();
-// // };
-
-// export default async function PresentPerfectContinuous() {
-//   // const verbs = await getData();
-
-//   return (
-//     <div className="page-body">
-
-//     </div>
-//   );
-// }

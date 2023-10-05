@@ -2,6 +2,45 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Make versus Do | English in Eight Minutes",
+  description:
+    "Learn about the differences between 'make' and 'do' in English with English in Eight Minutes. Test your knowledge with a quiz and understand when to use these words correctly.",
+  keywords:
+    "English, Make versus Do, English grammar, Vocabulary, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Make versus Do | English in Eight Minutes",
+    description:
+      "Learn about the differences between 'make' and 'do' in English with English in Eight Minutes. Test your knowledge with a quiz and understand when to use these words correctly.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
+
 export default function MakeVersusDo() {
   const questionsArray = [
     {

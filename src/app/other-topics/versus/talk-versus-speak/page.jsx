@@ -2,6 +2,46 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Talk versus Speak | English in Eight Minutes",
+  description:
+    "Learn when to use 'talk' and 'speak' in English with English in Eight Minutes. Understand the differences between these words and test your knowledge with a quiz.",
+  keywords:
+    "English, Talk versus Speak, English grammar, Vocabulary, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Talk versus Speak | English in Eight Minutes",
+    description:
+      "Learn when to use 'talk' and 'speak' in English with English in Eight Minutes. Understand the differences between these words and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
+
+
 export default function TalkVersusSpeaking() {
   const questionsArray = [
     {

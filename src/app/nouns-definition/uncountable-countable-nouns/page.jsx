@@ -1,18 +1,47 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Button } from "@mui/material";
-
-import Quiz from "../../../components/Quiz";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function UncountableAndCountable() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+export const metadata = {
+  title: "Countable and Uncountable Nouns | English in Eight Minutes",
+  description:
+    "Learn about countable and uncountable nouns in English with English in Eight Minutes. Understand the differences between them and test your knowledge with a quiz.",
+  keywords:
+    "English, Countable Nouns, Uncountable Nouns, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Countable and Uncountable Nouns | English in Eight Minutes",
+    description:
+      "Learn about countable and uncountable nouns in English with English in Eight Minutes. Understand the differences between them and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
+export default function UncountableAndCountable() {
   const questionsArray = [
     {
       id: 1,
@@ -244,16 +273,6 @@ export default function UncountableAndCountable() {
     },
   ];
 
-  useEffect(() => {
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <div className={styles.page_body}>
@@ -372,13 +391,7 @@ export default function UncountableAndCountable() {
 
         <br />
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

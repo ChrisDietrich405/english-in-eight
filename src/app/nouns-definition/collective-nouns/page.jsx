@@ -1,18 +1,47 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Quiz from "../../../components/Quiz";
-
-import Link from "next/link";
-import { Button } from "@mui/material";
+import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
-export default function Collective() {
-  const [shouldShowNewQuestionsBtn, setShouldShowNewQuestionsBtn] =
-    useState(true);
-  const [quiz, setQuiz] = useState([]);
+export const metadata = {
+  title: "Collective Nouns | English in Eight Minutes",
+  description:
+    "Learn about collective nouns in English with English in Eight Minutes. Understand how collective nouns work and test your knowledge with a quiz.",
+  keywords:
+    "English, Collective Nouns, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Collective Nouns | English in Eight Minutes",
+    description:
+      "Learn about collective nouns in English with English in Eight Minutes. Understand how collective nouns work and test your knowledge with a quiz.",
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+  },
+};
 
+export default function Collective() {
   const questionsArray = [
     {
       id: 1,
@@ -232,17 +261,6 @@ export default function Collective() {
     },
   ];
 
-  useEffect(() => {
-    console.log(questionsArray);
-    const questionsVar = questionsArray.splice(0, 10);
-    setQuiz(questionsVar);
-  }, []);
-
-  const secondSetQuestions = () => {
-    const questionsVar = questionsArray.splice(10);
-    return questionsVar;
-  };
-
   return (
     <>
       <div className={styles.page_title}>
@@ -283,14 +301,7 @@ export default function Collective() {
           </li>
         </ul>
       </div>
-      <Quiz
-        setQuiz={setQuiz}
-        title="Take a Quiz!"
-        subtitle="Caution! Some of these aren't collective nouns"
-        questions={quiz}
-        secondSetQuestions={secondSetQuestions}
-        shouldShowNewQuestionsBtn={shouldShowNewQuestionsBtn}
-      ></Quiz>
+      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

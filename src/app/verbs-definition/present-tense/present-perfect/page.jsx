@@ -2,11 +2,11 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Present Continuous | English in Eight Minutes",
+  title: "Present Perfect | English in Eight Minutes",
   description:
-    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense for actions with a connection to the present or past experiences.",
   keywords:
-    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+    "English, present perfect, grammar, tense, past experiences, actions with a connection to the present",
   robots: {
     index: false,
     follow: true,
@@ -21,26 +21,20 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Home | English in Eight Minutes",
+    title: "Present Perfect | English in Eight Minutes",
     description:
-      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+      "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense for actions with a connection to the present or past experiences.",
     images: [
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        url: "/favicon.ico",
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
       },
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        url: "/favicon/favicon-16x16.png",
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        url: "/favicon/apple-touch-icon.png",
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
       },
     ],
   },

@@ -5,47 +5,42 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Present Continuous | English in Eight Minutes",
   description:
-    "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
+    "Learn about the present continuous tense in English. This page provides explanations and examples of using the present continuous tense for ongoing actions and future events.",
   keywords:
-    "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
+    "English, present continuous, grammar, tense, ongoing actions, future events",
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
+    nocache: false,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
   openGraph: {
-    title: "Home | English in Eight Minutes",
+    title: "Present Continuous | English in Eight Minutes",
     description:
-      "The website, titled English in Eight Minutes is designed to provide quick and concise English language lessons. The content focuses on English phrasal verbs, grammar, and idiomatic expressions specific to the United States. The homepage features an engaging banner and offers links to various topics, including Nouns, Verbs, Adjectives, Idiomatic Expressions, Phrasal Verbs, and Versus (similar but different verbs). ",
-    images: [
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        url: "/favicon.ico",
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        url: "/favicon/favicon-16x16.png",
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        url: "/favicon/apple-touch-icon.png",
-      },
-    ],
+      "Learn about the present continuous tense in English. This page provides explanations and examples of using the present continuous tense for ongoing actions and future events.",
+      images: [
+        {
+          url: "images/logo.svg",
+          width: 800,
+          height: 600,
+        },
+        {
+          url: "images/logo.svg",
+          width: 1800,
+          height: 1600,
+          alt: "My custom alt",
+        },
+      ],
   },
 };
+
 
 export default function PresentContinuous() {
 
@@ -273,9 +268,6 @@ export default function PresentContinuous() {
       explanation: "For ongoing actions you use the present continuous.",
     },
   ];
-
-  
- 
 
   return (
     <>
