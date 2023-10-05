@@ -132,7 +132,7 @@ export default function NounModifiers() {
         { title: "ladder step" },
       ],
       userAnswer: "",
-      explanation: "Step is a noun modifier",
+      explanation: "Step is a noun modifier here.",
     },
     {
       id: 10,
@@ -142,7 +142,7 @@ export default function NounModifiers() {
         { title: "swimmings lesson" },
       ],
       userAnswer: "",
-      explanation: "Swimming is a noun modifier",
+      explanation: "Swimming is a noun modifier here.",
     },
     {
       id: 11,
@@ -152,7 +152,7 @@ export default function NounModifiers() {
         { title: "cut paper" },
       ],
       userAnswer: "",
-      explanation: "Paper is a noun modifier",
+      explanation: "Paper is a noun modifier here.",
     },
     {
       id: 12,
@@ -162,7 +162,7 @@ export default function NounModifiers() {
         { title: "bench park" },
       ],
       userAnswer: "",
-      explanation: "Park is a noun modifier",
+      explanation: "Park is a noun modifier here.",
     },
   ];
 
