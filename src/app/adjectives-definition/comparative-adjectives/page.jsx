@@ -74,7 +74,7 @@ export default function ComparativeAdjectives() {
         { title: "quieter", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Quiet doesn't have any spelling changes",
+      explanation: "Quiet doesn't have any spelling changes.",
     },
 
     {
@@ -85,7 +85,7 @@ export default function ComparativeAdjectives() {
         { title: "larger", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Large doesn't have any spelling changes",
+      explanation: "Large doesn't have any spelling changes.",
     },
 
     {
@@ -175,7 +175,7 @@ export default function ComparativeAdjectives() {
       ],
       userAnswer: "",
       explanation:
-        "Short is one syllable, so you can add er. More short isn't technically incorrect, but it sounds strange",
+        "Short is one syllable, so you can add er. More short isn't technically incorrect, but it sounds strange.",
     },
 
     {
@@ -187,7 +187,7 @@ export default function ComparativeAdjectives() {
       ],
       userAnswer: "",
       explanation:
-        "Little is an irregular adjective. Less is the comparative form and you can't say more good",
+        "Little is an irregular adjective. Less is the comparative form and you can't say more good.",
     },
 
     {
@@ -211,7 +211,7 @@ export default function ComparativeAdjectives() {
       ],
       userAnswer: "",
       explanation:
-        "Good is an irregular adjective. Better is the comparative form and you can't say more good",
+        "Good is an irregular adjective. Better is the comparative form and you can't say more good.",
     },
 
     {
@@ -223,7 +223,7 @@ export default function ComparativeAdjectives() {
       ],
       userAnswer: "",
       explanation:
-        "Tall is one syllable, so you can add er. More tall isn't technically incorrect, but it sounds strange",
+        "Tall is one syllable, so you can add er. More tall isn't technically incorrect, but it sounds strange.",
     },
 
     {
@@ -270,7 +270,7 @@ export default function ComparativeAdjectives() {
       ],
       userAnswer: "",
       explanation:
-        "Cheap is one syllable, so you can add er. More cheap isn't technically incorrect, but it sounds strange",
+        "Cheap is one syllable, so you can add er. More cheap isn't technically incorrect, but it sounds strange.",
     },
   ];
 

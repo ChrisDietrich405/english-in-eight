@@ -51,7 +51,7 @@ export default function NounModifiers() {
         { title: "metal door", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Metal is a noun modifier",
+      explanation: "Metal is a noun modifier here.",
     },
     {
       id: 2,
@@ -61,7 +61,7 @@ export default function NounModifiers() {
         { title: "cloth table" },
       ],
       userAnswer: "",
-      explanation: "Table is a noun modifier",
+      explanation: "Table is a noun modifier here.",
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ export default function NounModifiers() {
         { title: "baseball bat", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Baseball is a noun modifier",
+      explanation: "Baseball is a noun modifier here.",
     },
     {
       id: 4,
@@ -81,7 +81,7 @@ export default function NounModifiers() {
         { title: "house key", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "House is a noun modifier",
+      explanation: "House is a noun modifier here.",
     },
     {
       id: 5,
@@ -91,7 +91,7 @@ export default function NounModifiers() {
         { title: "city park", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "City is a noun modifier",
+      explanation: "City is a noun modifier here.",
     },
     {
       id: 6,
@@ -101,7 +101,7 @@ export default function NounModifiers() {
         { title: "house tree" },
       ],
       userAnswer: "",
-      explanation: "Tree is a noun modifier",
+      explanation: "Tree is a noun modifier here.",
     },
     {
       id: 7,
@@ -111,7 +111,7 @@ export default function NounModifiers() {
         { title: "dog bone", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Dog is a noun modifier",
+      explanation: "Dog is a noun modifier here.",
     },
     {
       id: 8,
@@ -122,7 +122,7 @@ export default function NounModifiers() {
         { title: "station train" },
       ],
       userAnswer: "",
-      explanation: "Train is a noun modifier",
+      explanation: "Train is a noun modifier here.",
     },
     {
       id: 9,

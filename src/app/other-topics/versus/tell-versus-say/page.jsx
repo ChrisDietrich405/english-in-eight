@@ -41,7 +41,6 @@ export const metadata = {
   },
 };
 
-
 export default function TellVersusSay() {
   const questionsArray = [
     {

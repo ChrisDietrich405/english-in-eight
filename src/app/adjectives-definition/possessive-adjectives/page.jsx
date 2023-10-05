@@ -51,7 +51,7 @@ export default function PossessiveAdjectives() {
         { title: "their" },
       ],
       userAnswer: "",
-      explanation: "Her is the possessive adjective for she",
+      explanation: "Her is the possessive adjective for she.",
     },
     {
       id: 2,

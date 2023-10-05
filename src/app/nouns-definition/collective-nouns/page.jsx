@@ -51,7 +51,7 @@ export default function Collective() {
         { title: " is" },
       ],
       explanation:
-        "Students are considered individuals, not a collective group",
+        "Students are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
@@ -83,7 +83,7 @@ export default function Collective() {
         { title: "want", correctAnswer: true },
         { title: "wants" },
       ],
-      explanation: "Sisters are considered individuals, not a collective group",
+      explanation: "Sisters are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
@@ -104,7 +104,7 @@ export default function Collective() {
         { title: "Were", correctAnswer: true },
       ],
       explanation:
-        "Soldiers are considered individuals, not a collective group",
+        "Soldiers are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
@@ -125,7 +125,7 @@ export default function Collective() {
         { title: "was" },
         { title: "were", correctAnswer: true },
       ],
-      explanation: "Members are considered individuals, not a collective group",
+      explanation: "Members are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
