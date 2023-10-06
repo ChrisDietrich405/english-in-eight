@@ -255,7 +255,7 @@ export default function EveryVersusAll() {
         </div>
 
         <p className={styles.grammar_explanation_paragraph}>
-          We use both all and every to describe a total number of something.
+          We use both <b>every</b>  and <b>all</b> to describe a total number of something.
           Every describes each member of a complete group. All describes a
           complete group.
         </p>
@@ -269,15 +269,15 @@ export default function EveryVersusAll() {
         </p>
         <ul className="page-examples">
           <li>
-            The bingo event is at Camden Yards. It starts at 4 and all are
+            The bingo event is at the park. It starts at 4 and all are
             welcome.
           </li>
           <li>
-            The bingo event is at Camden Yards. It starts at 4 and everyone is
+            The bingo event is at park. It starts at 4 and everyone is
             welcome.
           </li>
         </ul>
-        <p>We can use every to focus on each individual member.</p>
+        <p>We can use <b>every</b> to focus on each individual member.</p>
         <p>Compare:</p>
         <ul className="page-examples">
           <li>
@@ -299,6 +299,7 @@ export default function EveryVersusAll() {
           <li>All payments are due today.</li>
         </ul>
       </div>
+      <h4>Hint! Remember that all is usually used with plural nouns (all students) and every is usually used with singular nouns (every car).</h4>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe

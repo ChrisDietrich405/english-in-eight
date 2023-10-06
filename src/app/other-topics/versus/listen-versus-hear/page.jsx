@@ -207,7 +207,7 @@ export default function ListenVersusHear() {
     },
     {
       id: 17,
-      title: "I always _____ to music while I work.",
+      title: "I always _____ music while I work.",
       possibleAnswersAndExplanation: [
         { title: "a. hear" },
         { title: "b. listen to", correctAnswer: true },
