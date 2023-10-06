@@ -41,13 +41,12 @@ export const metadata = {
   },
 };
 
-
 export default function TalkVersusSpeaking() {
   const questionsArray = [
     {
       id: 1,
       title: "It was a fascinating __________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
@@ -57,7 +56,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 2,
       title: "We tried to  ___________ it out, but after we fought more.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "spoke" },
         { title: "talk", correctAnswer: true },
       ],
@@ -68,7 +67,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 3,
       title: "Well Bia, I’ll  ___________ to you tomorrow.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
@@ -78,7 +77,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 4,
       title: "It's only __________. They'll never fire us.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
@@ -88,7 +87,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 5,
       title: "________ up! Nobody can hear you.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Speak", correctAnswer: true },
         { title: "Talk" },
       ],
@@ -99,7 +98,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 6,
       title: "They only ever  ________ about basketball.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
@@ -109,7 +108,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 7,
       title: "We ________ today with Denzel St. Clair and Robert Smith.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "spoke", correctAnswer: true },
         { title: "talk" },
       ],
@@ -119,7 +118,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 8,
       title: "After breakfast we always go for a walk and ________ .",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "talk", correctAnswer: true },
         { title: "speak" },
       ],
@@ -129,7 +128,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 9,
       title: "Hello, could I ________ with Mrs. Jones?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -139,7 +138,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 10,
       title: "She ____ four languages.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speaks", correctAnswer: true },
         { title: "talks" },
       ],
@@ -149,7 +148,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 11,
       title: "I need to ________ to the manager about this issue.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -160,7 +159,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 12,
       title: "Let's sit down and  ________ over a cup of coffee.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
@@ -170,7 +169,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 13,
       title: "I don't really want to _______ about it with my mom.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "talk", correctAnswer: true },
         { title: "speak" },
       ],
@@ -181,7 +180,7 @@ export default function TalkVersusSpeaking() {
       id: 14,
       title:
         "We should ________ to the professor after class for clarification.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -191,7 +190,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 15,
       title: "Can you ________ a foreign language fluently?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -202,7 +201,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 16,
       title: "He sometimes ________ too much when he's nervous.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speaks" },
         { title: "talks", correctAnswer: true },
       ],
@@ -213,7 +212,7 @@ export default function TalkVersusSpeaking() {
       id: 17,
       title:
         "During the meeting, the CEO will ________ about the company's future plans.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -222,9 +221,8 @@ export default function TalkVersusSpeaking() {
     },
     {
       id: 18,
-      title:
-        "She can ________ three languages fluently.",
-      possibleAnswersAndExplanation: [
+      title: "She can ________ three languages fluently.",
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -235,7 +233,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 19,
       title: "Please ________ up if you have any questions during the lecture.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "speak", correctAnswer: true },
         { title: "talk" },
       ],
@@ -246,7 +244,7 @@ export default function TalkVersusSpeaking() {
     {
       id: 20,
       title: "They can ________ for hours about politics.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "talk", correctAnswer: true },
         { title: "speak" },
       ],

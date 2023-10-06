@@ -47,8 +47,7 @@ export default function Expressions3() {
             making a final decision
             <br />
             <p>
-              Example: I have to go back to Lowe's because I cut the wrong
-              size.{" "}
+              Example: I have to go back to Lowe's because I cut the wrong size.{" "}
               <b>"Measure twice, cut once" </b>should be my new motto!
             </p>
           </li>
@@ -68,50 +67,50 @@ export default function Expressions3() {
         title="Take a Quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title:
               "Check your final numbers before you submit them to the boss. Remember the saying ______________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. spread the word" },
               { title: "b. measure twice, cut once", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title:
               "Would you please help me to ________________ about my new restaurant.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. spread the word", correctAnswer: true },
               { title: "b. binge watch" },
             ],
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title:
               "I told my wife that we should watch the movie Love and Basketball. She responded 'you ________________! I wanted to watch that tonight too'.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. read my mind", correctAnswer: true },
               { title: "b. if it's not broke don't fix it" },
             ],
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title:
               "I don't like watching series, because sometimes I get addicted to one and ________________ it.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. spread the word" },
               { title: "b. binge watch", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title:
               "My wife wanted to change her resume, but I thought it was perfect the way it was so I told her _______________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. read my mind" },
               {
                 title: "b. if it's not broke don't fix it",

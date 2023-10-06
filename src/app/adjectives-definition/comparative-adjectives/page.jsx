@@ -47,7 +47,7 @@ export default function ComparativeAdjectives() {
       id: 1,
       title:
         "My Latin class is ______________ (interesting) than my English class. ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more interesting", correctAnswer: true },
         { title: "interestinger" },
       ],
@@ -58,7 +58,7 @@ export default function ComparativeAdjectives() {
     {
       id: 2,
       title: "Marcus is ______________ (old) than Nia.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "older", correctAnswer: true },
         { title: "more old" },
       ],
@@ -69,7 +69,7 @@ export default function ComparativeAdjectives() {
     {
       id: 3,
       title: "She is ______________(quiet) than her brother.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "quietter" },
         { title: "quieter", correctAnswer: true },
       ],
@@ -80,7 +80,7 @@ export default function ComparativeAdjectives() {
     {
       id: 4,
       title: "Buses are ________________ (large) than cars.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "largger" },
         { title: "larger", correctAnswer: true },
       ],
@@ -91,7 +91,7 @@ export default function ComparativeAdjectives() {
     {
       id: 5,
       title: "The roads here are  _______________ (narrow) than in Baltimore.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "narrower", correctAnswer: true },
         { title: "narroest" },
       ],
@@ -102,7 +102,7 @@ export default function ComparativeAdjectives() {
     {
       id: 6,
       title: "Dogs are _______________ (social) than cats",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more social", correctAnswer: true },
         { title: "socialer" },
       ],
@@ -113,7 +113,7 @@ export default function ComparativeAdjectives() {
     {
       id: 7,
       title: "Malcolm is _______________ (busy) than his brother.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "busier", correctAnswer: true },
         { title: "busyer" },
       ],
@@ -124,7 +124,7 @@ export default function ComparativeAdjectives() {
     {
       id: 8,
       title: "Demetrius is ________________ (ambitious) than his friends.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "ambitiouser" },
         { title: "more ambitious", correctAnswer: true },
       ],
@@ -136,7 +136,7 @@ export default function ComparativeAdjectives() {
       id: 9,
       title:
         "My studio is  ________________  (colorful) than my art teacher's studio.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "colorfuler" },
         { title: "more colorful", correctAnswer: true },
       ],
@@ -147,7 +147,7 @@ export default function ComparativeAdjectives() {
     {
       id: 10,
       title: "Her car is _______________ (comfortable) than my car.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more comfortable", correctAnswer: true },
         { title: "comfortabler" },
       ],
@@ -158,7 +158,7 @@ export default function ComparativeAdjectives() {
     {
       id: 11,
       title: "The movie was ______________ (exciting) than I expected.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more exciting", correctAnswer: true },
         { title: "excitinger" },
       ],
@@ -169,7 +169,7 @@ export default function ComparativeAdjectives() {
     {
       id: 12,
       title: "Sophia is ______________ (short) than her sister.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "shorter", correctAnswer: true },
         { title: "more short" },
       ],
@@ -181,7 +181,7 @@ export default function ComparativeAdjectives() {
     {
       id: 13,
       title: "He is eating _________ (little) food.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "less", correctAnswer: true },
         { title: "littler" },
       ],
@@ -194,7 +194,7 @@ export default function ComparativeAdjectives() {
       id: 14,
       title:
         "This book is ______________ (interesting) than the one I read last week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more interesting", correctAnswer: true },
         { title: "interestinger" },
       ],
@@ -205,7 +205,7 @@ export default function ComparativeAdjectives() {
     {
       id: 15,
       title: "Macs are ______________ (good) than Lenovo.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "better", correctAnswer: true },
         { title: "more good" },
       ],
@@ -217,7 +217,7 @@ export default function ComparativeAdjectives() {
     {
       id: 16,
       title: "Julia is ______________ (tall) than her brother.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "taller", correctAnswer: true },
         { title: "more tall" },
       ],
@@ -229,7 +229,7 @@ export default function ComparativeAdjectives() {
     {
       id: 17,
       title: "The city is ______________ (crowded) during rush hour.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more crowded", correctAnswer: true },
         { title: "crowdeder" },
       ],
@@ -241,7 +241,7 @@ export default function ComparativeAdjectives() {
     {
       id: 18,
       title: "The test was ______________ (difficult) than I expected.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more difficult", correctAnswer: true },
         { title: "difficulter" },
       ],
@@ -252,7 +252,7 @@ export default function ComparativeAdjectives() {
     {
       id: 19,
       title: "Jazz music is ______________ (relaxing) than rock.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "more relaxing", correctAnswer: true },
         { title: "relaxinger" },
       ],
@@ -264,7 +264,7 @@ export default function ComparativeAdjectives() {
       id: 20,
       title:
         "The new restaurant is ______________ (cheap) than the one we used to go to.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "cheaper", correctAnswer: true },
         { title: "more cheap" },
       ],

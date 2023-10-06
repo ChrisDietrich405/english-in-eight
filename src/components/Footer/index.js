@@ -43,7 +43,6 @@ export default function Footer() {
         }
       );
       const validate = validator.passes();
-  
 
       if (validate) {
         var templateParams = {
@@ -63,7 +62,7 @@ export default function Footer() {
           .then(
             (result) => {
               console.log("success");
-         
+
               toast.success("your message was sent successfully");
               // notify();
               setEmail("");
@@ -83,7 +82,6 @@ export default function Footer() {
   };
   return (
     <>
-     
       <footer className={styles.footer}>
         <Container>
           <ToastContainer />
@@ -103,9 +101,9 @@ export default function Footer() {
                 <Link href="/">
                   <Image
                     className={styles.logo_image}
-                    width="230"
-                    height="230"
-                    src="/images/logo.svg"
+                    width={300}
+                    height={300}
+                    src="/images/english.svg"
                     alt="English in Eight Minutes Logo"
                   />
                 </Link>

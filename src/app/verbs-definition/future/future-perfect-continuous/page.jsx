@@ -49,7 +49,7 @@ export default function FuturePerfectContinuous() {
       id: 1,
       title:
         " By next month, she will ______________ in that city for five years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have lived" },
         { title: "b. have been living", correctAnswer: true },
       ],
@@ -59,7 +59,7 @@ export default function FuturePerfectContinuous() {
       id: 2,
       title:
         "By the time the project is completed, they will ___________ on it for six months.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have worked" },
         { title: "b. have been working", correctAnswer: true },
       ],
@@ -69,7 +69,7 @@ export default function FuturePerfectContinuous() {
       id: 3,
       title:
         "By this time next year, they will __________________ around the world for six months.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been traveling", correctAnswer: true },
         { title: "b. have traveled" },
       ],
@@ -79,7 +79,7 @@ export default function FuturePerfectContinuous() {
       id: 4,
       title:
         "By the party's start, we will ___________ the decorations for two days.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have worked on" },
         { title: "b. have been working on", correctAnswer: true },
       ],
@@ -89,7 +89,7 @@ export default function FuturePerfectContinuous() {
       id: 5,
       title:
         "By the time you get here, I will ____________ for you at the airport for two hours..",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been waiting", correctAnswer: true },
         { title: "b. have waited" },
       ],
@@ -100,7 +100,7 @@ export default function FuturePerfectContinuous() {
       id: 6,
       title:
         "By the end of the week, she will ______________ the piano for five years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have practiced" },
         { title: "b. have been practicing", correctAnswer: true },
       ],
@@ -110,7 +110,7 @@ export default function FuturePerfectContinuous() {
       id: 7,
       title:
         "By the concert date, the band will ____________ the new songs for weeks.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have rehearsed" },
         { title: "b. have been rehearsing", correctAnswer: true },
       ],
@@ -120,7 +120,7 @@ export default function FuturePerfectContinuous() {
       id: 8,
       title:
         "By the wedding day, they will ______________ it for a whole year.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been planning", correctAnswer: true },
         { title: "b. have planned" },
       ],
@@ -130,7 +130,7 @@ export default function FuturePerfectContinuous() {
       id: 9,
       title:
         "By the deadline, he will _______________ on the report for three days straight..",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been working", correctAnswer: true },
         { title: "b. have worked" },
       ],

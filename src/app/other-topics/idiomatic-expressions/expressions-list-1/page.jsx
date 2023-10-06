@@ -64,7 +64,7 @@ export default function Expressions() {
             id: 1,
             title:
               "She started yelling at me and honestly it scared me. It came _______________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. to one up someone" },
               { title: "b. out of nowhere ", correctAnswer: true },
             ],
@@ -73,7 +73,7 @@ export default function Expressions() {
           {
             id: 2,
             title: "Let's go! Hurry up! ____________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. To one up someone" },
               { title: "b. Time is money", correctAnswer: true },
             ],
@@ -83,7 +83,7 @@ export default function Expressions() {
             id: 3,
             title:
               "I bought a face shield and a mask because I don't want to take any chances. _____________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. Foolproof" },
               {
                 title: "b. It's better to be safe than sorry",
@@ -95,7 +95,7 @@ export default function Expressions() {
           {
             id: 4,
             title: "He tried to invent a _________ piece of software.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. out of nowhere" },
               { title: "b. foolproof", correctAnswer: true },
             ],
@@ -105,7 +105,7 @@ export default function Expressions() {
             id: 5,
             title:
               "I can tell he's insecure. He's always explaining how much better his life is compared to mine and trying ____________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a.  to one up me", correctAnswer: true },
               { title: "b. time is money" },
             ],

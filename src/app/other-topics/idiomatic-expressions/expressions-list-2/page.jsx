@@ -33,8 +33,8 @@ export default function Expressions2() {
             <b>To wing it</b> - to not plan for something
             <br />
             <p>
-              Example: Malcolm didn’t have time to prepare for his interview so he
-              needed <b>to wing it.</b>
+              Example: Malcolm didn’t have time to prepare for his interview so
+              he needed <b>to wing it.</b>
             </p>
           </li>
           <li>
@@ -62,50 +62,50 @@ export default function Expressions2() {
         title="Take a quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title:
               "The decision is _________________. The boss will decide now.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. backfired" },
               { title: "b. out of her hands", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title:
               "I completely forgot about my presentation today. I needed _____________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. to wing it", correctAnswer: true },
               { title: "b. second wind" },
             ],
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title:
               "Working extra _____________ on me. They thought I was crazy and fired me.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. winged" },
               { title: "b. backfired", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title:
               "It's better for the environment for children to wear _________________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. hand me downs", correctAnswer: true },
               { title: "b. second wind" },
             ],
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title:
               "Many marathon runners get a _____________ at about the 18km mark.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. backfire" },
               { title: "b. second wind", correctAnswer: true },
             ],

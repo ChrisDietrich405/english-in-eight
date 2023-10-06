@@ -46,7 +46,7 @@ export default function RemindVersusRemember() {
     {
       id: 1,
       title: "I don't ______________ where I left my hat.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -57,7 +57,7 @@ export default function RemindVersusRemember() {
     {
       id: 2,
       title: "She can't ___________________ anything about her childhood.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -69,7 +69,7 @@ export default function RemindVersusRemember() {
       id: 3,
       title:
         "She had to ______________________ him that they had agreed on the child custody. He acted like he had forgotten.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remember" },
         { title: "remind", correctAnswer: true },
       ],
@@ -80,7 +80,7 @@ export default function RemindVersusRemember() {
     {
       id: 4,
       title: "Please ____________________ not to smoke near the church.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -91,7 +91,7 @@ export default function RemindVersusRemember() {
     {
       id: 5,
       title: "My new boss ____________________ me of my best friend's sister.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "reminds", correctAnswer: true },
         { title: "remembers" },
       ],
@@ -103,7 +103,7 @@ export default function RemindVersusRemember() {
       id: 6,
       title:
         " ____________________ to turn off the computer when you leave the office.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Remember", correctAnswer: true },
         { title: "Remind" },
       ],
@@ -114,7 +114,7 @@ export default function RemindVersusRemember() {
     {
       id: 7,
       title: "I've read that post but I don't __________________ who wrote it.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remember", correctAnswer: true },
         { title: "remind" },
       ],
@@ -125,7 +125,7 @@ export default function RemindVersusRemember() {
     {
       id: 8,
       title: "Did you  ____________________ Malcolm to bring his umbrella?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind", correctAnswer: true },
         { title: "remember" },
       ],
@@ -137,7 +137,7 @@ export default function RemindVersusRemember() {
       id: 9,
       title:
         "That dress _______________ me of my cousin. She wore the same kind.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "reminds", correctAnswer: true },
         { title: "remembers" },
       ],
@@ -148,7 +148,7 @@ export default function RemindVersusRemember() {
     {
       id: 10,
       title: "_______________ me to buy some trash bags.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Remind", correctAnswer: true },
         { title: "Remember" },
       ],
@@ -159,7 +159,7 @@ export default function RemindVersusRemember() {
     {
       id: 11,
       title: "I can't ______________ where I parked my car.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -170,7 +170,7 @@ export default function RemindVersusRemember() {
     {
       id: 12,
       title: "He couldn't ___________________ his own phone number.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -182,7 +182,7 @@ export default function RemindVersusRemember() {
       id: 13,
       title:
         "She needed to ______________________ her friend about their upcoming vacation.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remember" },
         { title: "remind", correctAnswer: true },
       ],
@@ -193,7 +193,7 @@ export default function RemindVersusRemember() {
     {
       id: 14,
       title: "Could you ____________________ me to bring my ID to the airport?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind" },
         { title: "remember", correctAnswer: true },
       ],
@@ -204,7 +204,7 @@ export default function RemindVersusRemember() {
     {
       id: 15,
       title: "This photo ____________________ me of our family vacation.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "reminds", correctAnswer: true },
         { title: "remembers" },
       ],
@@ -216,7 +216,7 @@ export default function RemindVersusRemember() {
       id: 16,
       title:
         "Always ____________________ to lock the front door before leaving the house.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Remember", correctAnswer: true },
         { title: "Remind" },
       ],
@@ -228,7 +228,7 @@ export default function RemindVersusRemember() {
       id: 17,
       title:
         "I can't ____________________ the name of that movie we watched last week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remember", correctAnswer: true },
         { title: "remind" },
       ],
@@ -240,7 +240,7 @@ export default function RemindVersusRemember() {
       id: 18,
       title:
         "Did you  ____________________ Mia to bring the presentation slides?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "remind", correctAnswer: true },
         { title: "remember" },
       ],
@@ -252,7 +252,7 @@ export default function RemindVersusRemember() {
       id: 19,
       title:
         "That song _______________ me of my high school days. We used to dance to it.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "reminds", correctAnswer: true },
         { title: "remembers" },
       ],
@@ -263,7 +263,7 @@ export default function RemindVersusRemember() {
     {
       id: 20,
       title: "_______________ me to pick up some groceries on the way home.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Remind", correctAnswer: true },
         { title: "Remember" },
       ],

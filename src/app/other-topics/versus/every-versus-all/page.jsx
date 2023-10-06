@@ -46,7 +46,7 @@ export default function EveryVersusAll() {
     {
       id: 1,
       title: "I emailed ______________ my colleagues.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every" },
         { title: "all", correctAnswer: true },
       ],
@@ -56,7 +56,7 @@ export default function EveryVersusAll() {
     {
       id: 2,
       title: "_________ the cars on the street have been vandalized.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every" },
         { title: "all", correctAnswer: true },
       ],
@@ -66,7 +66,7 @@ export default function EveryVersusAll() {
     {
       id: 3,
       title: "I see them ______________ two days.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all" },
         { title: "every", correctAnswer: true },
       ],
@@ -77,7 +77,7 @@ export default function EveryVersusAll() {
     {
       id: 4,
       title: "_________________ children need love.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -87,7 +87,7 @@ export default function EveryVersusAll() {
     {
       id: 5,
       title: "I go to the gym __________ day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all" },
         { title: "every", correctAnswer: true },
       ],
@@ -97,7 +97,7 @@ export default function EveryVersusAll() {
     {
       id: 6,
       title: "She has invited ____________ her friends.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -107,7 +107,7 @@ export default function EveryVersusAll() {
     {
       id: 7,
       title: "People should go to their doctor ______________ year.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every", correctAnswer: true },
         { title: "all" },
       ],
@@ -117,7 +117,7 @@ export default function EveryVersusAll() {
     {
       id: 8,
       title: " I talk to my wife ____________ day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every", correctAnswer: true },
         { title: "all" },
       ],
@@ -127,7 +127,7 @@ export default function EveryVersusAll() {
     {
       id: 9,
       title: "She has worked for this company ___________ her life.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every" },
         { title: "all", correctAnswer: true },
       ],
@@ -137,7 +137,7 @@ export default function EveryVersusAll() {
     {
       id: 10,
       title: " I have washed _______________ the clothes except yours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -147,7 +147,7 @@ export default function EveryVersusAll() {
     {
       id: 11,
       title: "She baked cookies for _______________ her classmates.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every" },
         { title: "all", correctAnswer: true },
       ],
@@ -157,7 +157,7 @@ export default function EveryVersusAll() {
     {
       id: 12,
       title: "_______________ students must pass the final exam.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -167,7 +167,7 @@ export default function EveryVersusAll() {
     {
       id: 13,
       title: "I visit my grandparents ____________ Sunday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all" },
         { title: "every", correctAnswer: true },
       ],
@@ -176,8 +176,9 @@ export default function EveryVersusAll() {
     },
     {
       id: 14,
-      title: "She knows _____________ the capitals of all the African countries.",
-      possibleAnswersAndExplanation: [
+      title:
+        "She knows _____________ the capitals of all the African countries.",
+      possibleAnswers: [
         { title: "every" },
         { title: "all", correctAnswer: true },
       ],
@@ -187,7 +188,7 @@ export default function EveryVersusAll() {
     {
       id: 15,
       title: "_____________ the trees in the park have colorful leaves.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "All", correctAnswer: true },
         { title: "Every" },
       ],
@@ -197,7 +198,7 @@ export default function EveryVersusAll() {
     {
       id: 16,
       title: "I exercise _____________ morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "every", correctAnswer: true },
         { title: "all" },
       ],
@@ -207,7 +208,7 @@ export default function EveryVersusAll() {
     {
       id: 17,
       title: "They attend church ____________ Sunday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all" },
         { title: "every", correctAnswer: true },
       ],
@@ -217,7 +218,7 @@ export default function EveryVersusAll() {
     {
       id: 18,
       title: "I've read _______________ the books on that shelf.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -227,7 +228,7 @@ export default function EveryVersusAll() {
     {
       id: 19,
       title: "_____________ employees need to complete the training.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "All", correctAnswer: true },
         { title: "Every" },
       ],
@@ -238,7 +239,7 @@ export default function EveryVersusAll() {
       id: 20,
       title:
         "I have traveled to _______________ the continents except Antarctica.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "all", correctAnswer: true },
         { title: "every" },
       ],
@@ -255,9 +256,9 @@ export default function EveryVersusAll() {
         </div>
 
         <p className={styles.grammar_explanation_paragraph}>
-          We use both <b>every</b>  and <b>all</b> to describe a total number of something.
-          Every describes each member of a complete group. All describes a
-          complete group.
+          We use both <b>every</b> and <b>all</b> to describe a total number of
+          something. Every describes each member of a complete group. All
+          describes a complete group.
         </p>
         <ul className="page-examples">
           <li>The food was sent to all students.</li>
@@ -269,15 +270,15 @@ export default function EveryVersusAll() {
         </p>
         <ul className="page-examples">
           <li>
-            The bingo event is at the park. It starts at 4 and all are
-            welcome.
+            The bingo event is at the park. It starts at 4 and all are welcome.
           </li>
           <li>
-            The bingo event is at park. It starts at 4 and everyone is
-            welcome.
+            The bingo event is at park. It starts at 4 and everyone is welcome.
           </li>
         </ul>
-        <p>We can use <b>every</b> to focus on each individual member.</p>
+        <p>
+          We can use <b>every</b> to focus on each individual member.
+        </p>
         <p>Compare:</p>
         <ul className="page-examples">
           <li>
@@ -299,7 +300,10 @@ export default function EveryVersusAll() {
           <li>All payments are due today.</li>
         </ul>
       </div>
-      <h4>Hint! Remember that all is usually used with plural nouns (all students) and every is usually used with singular nouns (every car).</h4>
+      <h4>
+        Hint! Remember that all is usually used with plural nouns (all students)
+        and every is usually used with singular nouns (every car).
+      </h4>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe

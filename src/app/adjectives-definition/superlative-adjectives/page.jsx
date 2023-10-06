@@ -46,7 +46,7 @@ export default function Superlatives() {
     {
       id: 1,
       title: "Nia is the ___________________ (old) daughter.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "oldest", correctAnswer: true },
         { title: "most old" },
       ],
@@ -58,7 +58,7 @@ export default function Superlatives() {
       id: 2,
       title:
         "His car is the _______________ (comfortable) car I’ve ever driven.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "most comfortable", correctAnswer: true },
         { title: "comfortableist" },
       ],
@@ -69,7 +69,7 @@ export default function Superlatives() {
     {
       id: 3,
       title: "Bia is the _______________ (quiet) person I've ever met.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "quietest", correctAnswer: true },
         { title: "quitest" },
       ],
@@ -80,7 +80,7 @@ export default function Superlatives() {
     {
       id: 4,
       title: "This restaurant has the ________________ food",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "deliciouser" },
         { title: "most delicious", correctAnswer: true },
       ],
@@ -91,7 +91,7 @@ export default function Superlatives() {
     {
       id: 5,
       title: "My math class is my ______________ (hard) class. ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "hardest", correctAnswer: true },
         { title: "most hardest" },
       ],
@@ -103,7 +103,7 @@ export default function Superlatives() {
       id: 6,
       title:
         "The roads in this neighborhood are the _______________ (narrow) in the city.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "narroest" },
         { title: "narrowest", correctAnswer: true },
       ],
@@ -114,7 +114,7 @@ export default function Superlatives() {
     {
       id: 7,
       title: "Malcolm is the _______________ (busy) man in his office.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "busiest", correctAnswer: true },
         { title: "busyest" },
       ],
@@ -125,7 +125,7 @@ export default function Superlatives() {
     {
       id: 8,
       title: "Pigs are the ________________________(intelligent) farm animals.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "most intelligent", correctAnswer: true },
         { title: "intelligentest" },
       ],
@@ -137,7 +137,7 @@ export default function Superlatives() {
       id: 9,
       title:
         "Demetrius is the ________________ (ambitious) director at his production company.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "ambitiousest" },
         { title: "most ambitious", correctAnswer: true },
       ],
@@ -148,7 +148,7 @@ export default function Superlatives() {
     {
       id: 10,
       title: "My dog is the  ________________  (cute) in my neighborhood.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "most cutest" },
         { title: "cutest", correctAnswer: true },
       ],
@@ -159,7 +159,7 @@ export default function Superlatives() {
     {
       id: 11,
       title: "She shares (they) ________________ passion for cooking.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "my" },
         { title: "their", correctAnswer: true },
       ],
@@ -169,7 +169,7 @@ export default function Superlatives() {
     {
       id: 12,
       title: "(We) _______________ cat is very playful.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "His" },
         { title: "Our", correctAnswer: true },
       ],
@@ -179,7 +179,7 @@ export default function Superlatives() {
     {
       id: 13,
       title: "Lisa and Mark enjoy (she) _____________ company.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "our" },
         { title: "her", correctAnswer: true },
       ],
@@ -189,17 +189,14 @@ export default function Superlatives() {
     {
       id: 14,
       title: "The children found (he) _____________ lost toy.",
-      possibleAnswersAndExplanation: [
-        { title: "my" },
-        { title: "his", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "my" }, { title: "his", correctAnswer: true }],
       userAnswer: "",
       explanation: "His is the possessive adjective for he.",
     },
     {
       id: 15,
       title: "(You) _______________ friends are very kind.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Their", correctAnswer: true },
         { title: "My" },
       ],
@@ -209,7 +206,7 @@ export default function Superlatives() {
     {
       id: 16,
       title: "We often visit (I) _______________ grandparents.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "our", correctAnswer: true },
         { title: "her" },
       ],
@@ -219,10 +216,7 @@ export default function Superlatives() {
     {
       id: 17,
       title: "(She) _______________ sister is a talented musician.",
-      possibleAnswersAndExplanation: [
-        { title: "My" },
-        { title: "Her", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "My" }, { title: "Her", correctAnswer: true }],
       userAnswer: "",
       explanation: "Her is the possessive adjective for she.",
     },
@@ -230,7 +224,7 @@ export default function Superlatives() {
       id: 18,
       title:
         "The students admired (he) _____________ dedication to their education.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "their" },
         { title: "his", correctAnswer: true },
       ],
@@ -240,7 +234,7 @@ export default function Superlatives() {
     {
       id: 19,
       title: "(You) _______________ book is on the table.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Her" },
         { title: "Your", correctAnswer: true },
       ],
@@ -250,7 +244,7 @@ export default function Superlatives() {
     {
       id: 20,
       title: "David mentioned (we) _____________ favorite movie.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "his" },
         { title: "our", correctAnswer: true },
       ],

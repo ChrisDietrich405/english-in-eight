@@ -55,7 +55,7 @@ export default function PhrasalVerbs4() {
           {
             title:
               "She left the office(here), but is __________ in the afternoon.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. selling out" },
               { title: "b. coming back", correctAnswer: true },
             ],
@@ -64,7 +64,7 @@ export default function PhrasalVerbs4() {
           {
             title:
               "Many people from the U.S. ______________ immigrants. It's very sad.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. go back" },
               { title: "b. look down on", correctAnswer: true },
             ],
@@ -73,7 +73,7 @@ export default function PhrasalVerbs4() {
           {
             title:
               "I hope they don't _____________ of their burritos today. I really want one for lunch.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. come back" },
               { title: "b. sell out", correctAnswer: true },
             ],
@@ -82,7 +82,7 @@ export default function PhrasalVerbs4() {
           {
             title:
               "He's not ______________ to Algeria this year. He's staying in the U.S.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. asking around" },
               { title: "b. going back", correctAnswer: true },
             ],
@@ -91,7 +91,7 @@ export default function PhrasalVerbs4() {
           {
             title:
               "You need a good interior designer for your new house? I can __________ for you.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. sell out" },
               { title: "b. ask around", correctAnswer: true },
             ],

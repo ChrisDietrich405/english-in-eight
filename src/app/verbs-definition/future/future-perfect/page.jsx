@@ -46,7 +46,7 @@ export default function FuturePerfect() {
     {
       id: 1,
       title: "The tree _________________ by then.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have grown", correctAnswer: true },
         { title: "b. will have grew" },
       ],
@@ -56,7 +56,7 @@ export default function FuturePerfect() {
     {
       id: 2,
       title: "She ______________ (sleep) eight hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have slept", correctAnswer: true },
         { title: "b. will have sleep" },
       ],
@@ -67,7 +67,7 @@ export default function FuturePerfect() {
       id: 3,
       title:
         "Jerome ______________ (finish) his LinkedIn profile by this afternoon.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have finished", correctAnswer: true },
         { title: "b. will have finished" },
       ],
@@ -78,7 +78,7 @@ export default function FuturePerfect() {
     {
       id: 4,
       title: "At 5, she ______________ in this office for 24 hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have been", correctAnswer: true },
         { title: "b. will have be" },
       ],
@@ -88,7 +88,7 @@ export default function FuturePerfect() {
     {
       id: 5,
       title: "Dad ______________ our favorite dinner by the time you get home.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have cooked" },
         { title: "b. will have cook", correctAnswer: true },
       ],
@@ -98,7 +98,7 @@ export default function FuturePerfect() {
     {
       id: 6,
       title: "It _______________ raining by then.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have stopped", correctAnswer: true },
         { title: "b. will have stop" },
       ],
@@ -108,7 +108,7 @@ export default function FuturePerfect() {
     {
       id: 7,
       title: "When we get married, I ______________ Jerome for four years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have known", correctAnswer: true },
         { title: "b. will have knew" },
       ],
@@ -118,7 +118,7 @@ export default function FuturePerfect() {
     {
       id: 8,
       title: "They _______________ Syria by the minister retires.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have gone" },
         { title: "b. will have go", correctAnswer: true },
       ],
@@ -130,7 +130,7 @@ export default function FuturePerfect() {
       id: 9,
 
       title: "I _________________ for work by then .",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have left", correctAnswer: true },
         { title: "b. will have leave" },
       ],
@@ -140,7 +140,7 @@ export default function FuturePerfect() {
     {
       id: 10,
       title: "By Thursday they _____________ 56 hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have worked", correctAnswer: true },
         { title: "b. will have work" },
       ],
@@ -150,7 +150,7 @@ export default function FuturePerfect() {
     {
       id: 11,
       title: "The old bridge _______________ a new one by next year.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have been replaced", correctAnswer: true },
         { title: "b. will have replace" },
       ],
@@ -161,7 +161,7 @@ export default function FuturePerfect() {
     {
       id: 12,
       title: "The sun _______________ by the time we wake up in the morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have risen", correctAnswer: true },
         { title: "b. will have rise" },
       ],
@@ -171,7 +171,7 @@ export default function FuturePerfect() {
     {
       id: 12,
       title: "Timmy ______________ by eleven.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have come back", correctAnswer: true },
         { title: "b. will have came back" },
       ],
@@ -183,7 +183,7 @@ export default function FuturePerfect() {
       id: 13,
       title:
         "The astronauts _______________ in space for a month by the end of their mission.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have been", correctAnswer: true },
         { title: "b. will have been" },
       ],
@@ -194,7 +194,7 @@ export default function FuturePerfect() {
     {
       id: 14,
       title: "The construction _______________ by the end of the year.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have finished", correctAnswer: true },
         { title: "b. will have finish" },
       ],
@@ -204,7 +204,7 @@ export default function FuturePerfect() {
     {
       id: 15,
       title: "I think they _______________ their journey by now.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have completed", correctAnswer: true },
         { title: "b. will have complete" },
       ],
@@ -214,7 +214,7 @@ export default function FuturePerfect() {
     {
       id: 16,
       title: "The flowers _______________ by tomorrow morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have bloomed", correctAnswer: true },
         { title: "b. will have bloom" },
       ],
@@ -224,7 +224,7 @@ export default function FuturePerfect() {
     {
       id: 17,
       title: "I think the mail _______________ by the time we get home.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have arrived", correctAnswer: true },
         { title: "b. will have arrive" },
       ],
@@ -235,7 +235,7 @@ export default function FuturePerfect() {
     {
       id: 18,
       title: "She _______________ English for five years by next summer.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have studied", correctAnswer: true },
         { title: "b. will have study" },
       ],
@@ -245,7 +245,7 @@ export default function FuturePerfect() {
     {
       id: 19,
       title: "The movie ______________ by the time we get to the theater.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will have started", correctAnswer: true },
         { title: "b. will have start" },
       ],

@@ -47,7 +47,7 @@ export default function FutureSimple() {
       id: 1,
       title:
         "It's Nia's birthday next week, so we _____________ buy her a microwave. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -58,7 +58,7 @@ export default function FutureSimple() {
       id: 2,
       title:
         "Could you lend me $40? I promise I _______________ pay you back Thursday. (promise)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
       ],
@@ -69,7 +69,7 @@ export default function FutureSimple() {
     {
       id: 3,
       title: "The coach __________________ retire! It's very sad. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will" },
         { title: "b. is going to", correctAnswer: true },
       ],
@@ -79,7 +79,7 @@ export default function FutureSimple() {
     {
       id: 4,
       title: "I _______ do it. (refusal)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. won't", correctAnswer: true },
         { title: "b. am not going to" },
       ],
@@ -89,7 +89,7 @@ export default function FutureSimple() {
     {
       id: 5,
       title: "Antonio's sister ____________________ have a baby. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -100,7 +100,7 @@ export default function FutureSimple() {
       id: 6,
       title:
         "I don't have anything to wear. That's ok. I _______ give you one of my dresses.(offer)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will", correctAnswer: true },
         { title: "b. am going to" },
       ],
@@ -111,7 +111,7 @@ export default function FutureSimple() {
       id: 7,
       title:
         "Just a moment. I __________________ help you bring in the groceries. (offer)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
       ],
@@ -122,7 +122,7 @@ export default function FutureSimple() {
       id: 8,
       title:
         "We ____________________ take a trip to Accra in June.(prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -133,7 +133,7 @@ export default function FutureSimple() {
       id: 9,
       title:
         "Look at those gray clouds over there! It _________________  rain soon. (prediction) ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will", correctAnswer: true },
       ],
@@ -144,7 +144,7 @@ export default function FutureSimple() {
       id: 10,
       title:
         "They ______________ have the meeting outside tomorrow. It's all planned, so I hope it won't rain. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -155,7 +155,7 @@ export default function FutureSimple() {
       id: 11,
       title:
         "I can't find my phone anywhere! I ___________ call it to find it for you.(offer)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. am going to" },
         { title: "b. will", correctAnswer: true },
       ],
@@ -166,7 +166,7 @@ export default function FutureSimple() {
       id: 12,
       title:
         "The restaurant is really busy tonight. We ________________ have to wait for a table. (prediction)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will", correctAnswer: true },
       ],
@@ -177,7 +177,7 @@ export default function FutureSimple() {
       id: 13,
       title:
         "Sarah ________________________ her own business next year. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -188,7 +188,7 @@ export default function FutureSimple() {
       id: 14,
       title:
         "My parents ___________________ celebrate their 25th anniversary next month. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -199,7 +199,7 @@ export default function FutureSimple() {
       id: 15,
       title:
         "I ____________________ pick you up at the airport tomorrow. What time does your flight arrive? (offer)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will", correctAnswer: true },
         { title: "b. am going to" },
       ],
@@ -209,7 +209,7 @@ export default function FutureSimple() {
     {
       id: 16,
       title: "The company ___________________ make any changes. (refusal)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. isn't going to" },
         { title: "b. won't", correctAnswer: true },
       ],
@@ -220,7 +220,7 @@ export default function FutureSimple() {
       id: 17,
       title:
         "I have a feeling that it ____________________ snow tomorrow. (prediction)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will", correctAnswer: true },
       ],
@@ -231,7 +231,7 @@ export default function FutureSimple() {
       id: 18,
       title:
         "The weather forecast says it ____________________ be sunny all day. (prediction)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will", correctAnswer: true },
         { title: "b. is going to", correctAnswer: true },
       ],
@@ -242,7 +242,7 @@ export default function FutureSimple() {
       id: 19,
       title:
         "I ___________________ call the electrician to fix the light. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. am going to", correctAnswer: true },
         { title: "b. will" },
       ],
@@ -253,7 +253,7 @@ export default function FutureSimple() {
       id: 20,
       title:
         "They ________________________ have a surprise party for their friend on Saturday. (prior plan)",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
       ],

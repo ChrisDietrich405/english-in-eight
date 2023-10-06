@@ -46,7 +46,7 @@ export default function FutureContinuous() {
     {
       id: 1,
       title: "In an hour she _______________ (clean) the bathrooms.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be cleaning", correctAnswer: true },
         { title: "b. will be clean" },
       ],
@@ -56,7 +56,7 @@ export default function FutureContinuous() {
     {
       id: 2,
       title: "Next month they _______________ (complain) about this.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be complain" },
         { title: "b. will be complaining", correctAnswer: true },
       ],
@@ -67,7 +67,7 @@ export default function FutureContinuous() {
       id: 3,
       title:
         "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will still be rise" },
         { title: "b. will still be rising", correctAnswer: true },
       ],
@@ -77,7 +77,7 @@ export default function FutureContinuous() {
     {
       id: 4,
       title: "I ______________ (see) Marcus at the conference next week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be see" },
         { title: "b. will be seeing", correctAnswer: true },
       ],
@@ -87,7 +87,7 @@ export default function FutureContinuous() {
     {
       id: 5,
       title: "When he's in Morocco he _____________ with friends.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be stay" },
         { title: "b. will be staying", correctAnswer: true },
       ],
@@ -97,7 +97,7 @@ export default function FutureContinuous() {
     {
       id: 6,
       title: "Miguel _____________ (compete) in a marathon next month.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be competing", correctAnswer: true },
         { title: "b. will be compete" },
       ],
@@ -107,7 +107,7 @@ export default function FutureContinuous() {
     {
       id: 7,
       title: "I ___________  with Nia this evening so I can talk to her.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be eat" },
         { title: "b. will be eating", correctAnswer: true },
       ],
@@ -117,7 +117,7 @@ export default function FutureContinuous() {
     {
       id: 8,
       title: "Demarcus _______________ (run) in the race.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will also be running", correctAnswer: true },
         { title: "b. will also be run" },
       ],
@@ -126,7 +126,7 @@ export default function FutureContinuous() {
     {
       id: 9,
       title: "He _____________ (sleep) when you telephone him.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be sleep" },
         { title: "b. will be sleeping", correctAnswer: true },
       ],
@@ -136,7 +136,7 @@ export default function FutureContinuous() {
     {
       id: 10,
       title: "I _____________ (play) hockey in the afternoon tomorrow.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be play" },
         { title: "b. will be playing", correctAnswer: true },
       ],
@@ -147,7 +147,7 @@ export default function FutureContinuous() {
       id: 11,
       title:
         "At this time tomorrow, she _______________ (prepare) for her big presentation.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be prepare" },
         { title: "b. will be preparing", correctAnswer: true },
       ],
@@ -159,7 +159,7 @@ export default function FutureContinuous() {
       id: 12,
       title:
         "By the end of the week, they _______________ (travel) to five different cities.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be travel" },
         { title: "b. will be traveling", correctAnswer: true },
       ],
@@ -171,7 +171,7 @@ export default function FutureContinuous() {
       id: 13,
       title:
         "Tomorrow morning, I _______________ (meet) Sarah at the coffee shop.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be meet" },
         { title: "b. will be meeting", correctAnswer: true },
       ],
@@ -183,7 +183,7 @@ export default function FutureContinuous() {
       id: 14,
       title:
         "In a few hours, he _______________ (take) his final exam for the semester.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be take" },
         { title: "b. will be taking", correctAnswer: true },
       ],
@@ -195,7 +195,7 @@ export default function FutureContinuous() {
       id: 15,
       title:
         "While on vacation, we _______________ (explore) the beautiful beaches of Hawaii.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be explore" },
         { title: "b. will be exploring", correctAnswer: true },
       ],
@@ -207,7 +207,7 @@ export default function FutureContinuous() {
       id: 16,
       title:
         "During the summer break, Miguel _______________ (work) on a special project.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be work" },
         { title: "b. will be working", correctAnswer: true },
       ],
@@ -219,7 +219,7 @@ export default function FutureContinuous() {
       id: 17,
       title:
         "Later tonight, I _______________ (watch) a documentary about space exploration.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be watch" },
         { title: "b. will be watching", correctAnswer: true },
       ],
@@ -231,7 +231,7 @@ export default function FutureContinuous() {
       id: 18,
       title:
         "During the holidays, Demarcus _______________ (visit) his family in another city.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be visit" },
         { title: "b. will be visiting", correctAnswer: true },
       ],
@@ -242,7 +242,7 @@ export default function FutureContinuous() {
     {
       id: 19,
       title: "Tonight, he _______________ (read) a book before going to bed.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be read" },
         { title: "b. will be reading", correctAnswer: true },
       ],
@@ -254,7 +254,7 @@ export default function FutureContinuous() {
       id: 20,
       title:
         "In the afternoon, I _______________ (practice) my guitar for a few hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. will be practice" },
         { title: "b. will be practicing", correctAnswer: true },
       ],

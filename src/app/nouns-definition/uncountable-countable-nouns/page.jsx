@@ -46,7 +46,7 @@ export default function UncountableAndCountable() {
     {
       id: 1,
       title: "There _______ many beans in the soup.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " are", correctAnswer: true },
         { title: " is" },
       ],
@@ -57,7 +57,7 @@ export default function UncountableAndCountable() {
     {
       id: 2,
       title: "We don't drink ____ coffee.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " many" },
         { title: " much", correctAnswer: true },
       ],
@@ -67,7 +67,7 @@ export default function UncountableAndCountable() {
     {
       id: 3,
       title: "I ate _____ soup for lunch.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " a few" },
         { title: " a little", correctAnswer: true },
       ],
@@ -79,7 +79,7 @@ export default function UncountableAndCountable() {
     {
       id: 4,
       title: "How _________ rice do we need.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " much", correctAnswer: true },
         { title: " many" },
       ],
@@ -89,7 +89,7 @@ export default function UncountableAndCountable() {
     {
       id: 5,
       title: "I have ________ friends in Kenya.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " a few", correctAnswer: true },
         { title: " a little" },
       ],
@@ -100,7 +100,7 @@ export default function UncountableAndCountable() {
     {
       id: 6,
       title: "Eating _____ chocolate is unhealthy.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " a lot of", correctAnswer: true },
         { title: " many" },
       ],
@@ -112,7 +112,7 @@ export default function UncountableAndCountable() {
     {
       id: 7,
       title: "How ________ soy milk do you want?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " much", correctAnswer: true },
         { title: " many" },
       ],
@@ -124,7 +124,7 @@ export default function UncountableAndCountable() {
     {
       id: 8,
       title: "______ there tofu in the salad?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " Are" },
         { title: " Is", correctAnswer: true },
       ],
@@ -136,7 +136,7 @@ export default function UncountableAndCountable() {
     {
       id: 9,
       title: "How ___________ cups of tea do you drink in the morning?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " much" },
         { title: " many", correctAnswer: true },
       ],
@@ -148,7 +148,7 @@ export default function UncountableAndCountable() {
     {
       id: 10,
       title: "There ______ orange juice on the table.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " is", correctAnswer: true },
         { title: " are" },
       ],
@@ -158,7 +158,7 @@ export default function UncountableAndCountable() {
     {
       id: 11,
       title: "She bought _____ apples for the pie.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a few" },
         { title: "a little", correctAnswer: true },
       ],
@@ -169,10 +169,7 @@ export default function UncountableAndCountable() {
     {
       id: 12,
       title: "There _________ three cats behind the house",
-      possibleAnswersAndExplanation: [
-        { title: "are", correctAnswer: true },
-        { title: "is" },
-      ],
+      possibleAnswers: [{ title: "are", correctAnswer: true }, { title: "is" }],
       userAnswer: "",
       explanation:
         "You can count cats so they are considered a countable noun.",
@@ -181,7 +178,7 @@ export default function UncountableAndCountable() {
     {
       id: 13,
       title: "How ________ water do you need for the recipe?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "much", correctAnswer: true },
         { title: "many" },
       ],
@@ -192,10 +189,7 @@ export default function UncountableAndCountable() {
     {
       id: 14,
       title: "There _______ a lot of sugar in that cake.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation:
         "Sugar doesn't have a shape so it's considered an uncountable noun.",
@@ -204,10 +198,7 @@ export default function UncountableAndCountable() {
     {
       id: 15,
       title: "_____ there any apple juice left in the fridge?",
-      possibleAnswersAndExplanation: [
-        { title: "Are" },
-        { title: "Is", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "Are" }, { title: "Is", correctAnswer: true }],
       userAnswer: "",
       explanation: "Juice is a liquid so it's considered an uncountable noun.",
     },
@@ -215,7 +206,7 @@ export default function UncountableAndCountable() {
     {
       id: 16,
       title: "I need to buy _______ flour.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a lot of", correctAnswer: true },
         { title: "many" },
       ],
@@ -227,7 +218,7 @@ export default function UncountableAndCountable() {
     {
       id: 16,
       title: "How ________ tomatoes did you put in the soup?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "much" },
         { title: "many", correctAnswer: true },
       ],
@@ -239,10 +230,7 @@ export default function UncountableAndCountable() {
     {
       id: 17,
       title: "There _______ a lot traffic on the road this morning.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation:
         "Traffic doesn't have a shape so it's considered an uncountable noun.",
@@ -251,10 +239,7 @@ export default function UncountableAndCountable() {
     {
       id: 18,
       title: "_____ there any time left before the meeting?",
-      possibleAnswersAndExplanation: [
-        { title: "Are" },
-        { title: "Is", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "Are" }, { title: "Is", correctAnswer: true }],
       userAnswer: "",
       explanation:
         "Time is an abstract idea so it's considered an uncountable noun.",
@@ -263,7 +248,7 @@ export default function UncountableAndCountable() {
     {
       id: 19,
       title: "How ________ hours of sleep did you get last night?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "much" },
         { title: "many", correctAnswer: true },
       ],
@@ -280,7 +265,6 @@ export default function UncountableAndCountable() {
           <h1>Countable & Uncountable Nouns </h1>
         </div>
         <section>
-          
           <h4>Uncountable Nouns</h4>
           <p className={styles.grammar_explanation_paragraph}>
             Uncountable nouns are for nouns we don’t count. These nouns might be

@@ -47,7 +47,7 @@ export default function PossessivePronouns() {
       id: 1,
       title:
         " My headset needs to be fixed, but (you) _____________ is working.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
@@ -57,7 +57,7 @@ export default function PossessivePronouns() {
     {
       id: 2,
       title: "My computer is a Lenovo, but (he) _______________ is a PC.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " his", correctAnswer: true },
         { title: " he" },
       ],
@@ -68,7 +68,7 @@ export default function PossessivePronouns() {
       id: 3,
       title:
         "Nisha has already eaten her dinner , but I'm saving (I) _____________  until later.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " mine", correctAnswer: true },
         { title: " my" },
       ],
@@ -79,7 +79,7 @@ export default function PossessivePronouns() {
       id: 4,
       title:
         "We gave them our number, and they gave us (they) __________________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " theirs" },
         { title: " they", correctAnswer: true },
       ],
@@ -90,7 +90,7 @@ export default function PossessivePronouns() {
     {
       id: 5,
       title: "My motorcycle is new, but (he)  __________ is old.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " he" },
         { title: " his", correctAnswer: true },
       ],
@@ -100,7 +100,7 @@ export default function PossessivePronouns() {
     {
       id: 6,
       title: "She can't have any cake! It's all (I)______________ !",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " my" },
         { title: " mine", correctAnswer: true },
       ],
@@ -110,7 +110,7 @@ export default function PossessivePronouns() {
     {
       id: 7,
       title: "My pen is broken. Can I use (you) ____________ ?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
@@ -120,7 +120,7 @@ export default function PossessivePronouns() {
     {
       id: 8,
       title: "That money is (I) ____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " mine", correctAnswer: true },
         { title: " my" },
       ],
@@ -130,7 +130,7 @@ export default function PossessivePronouns() {
     {
       id: 9,
       title: "The desk is (we) ______________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " ours", correctAnswer: true },
         { title: " we" },
       ],
@@ -140,7 +140,7 @@ export default function PossessivePronouns() {
     {
       id: 10,
       title: "The dress is (she)_____________. ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " hers", correctAnswer: true },
         { title: " she" },
       ],
@@ -150,7 +150,7 @@ export default function PossessivePronouns() {
     {
       id: 11,
       title: "My car is blue, but (she) _____________ is red.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " she" },
         { title: " hers", correctAnswer: true },
       ],
@@ -161,7 +161,7 @@ export default function PossessivePronouns() {
     {
       id: 12,
       title: "I love my phone, but (you) _______________ is better.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " your" },
         { title: " yours", correctAnswer: true },
       ],
@@ -172,7 +172,7 @@ export default function PossessivePronouns() {
     {
       id: 13,
       title: "Their dog is so cute, but (ours) _____________ is a cuter.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " our" },
         { title: " ours", correctAnswer: true },
       ],
@@ -183,7 +183,7 @@ export default function PossessivePronouns() {
     {
       id: 14,
       title: "The book is on (he) _______________ shelf.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " his", correctAnswer: true },
         { title: " he" },
       ],
@@ -194,7 +194,7 @@ export default function PossessivePronouns() {
     {
       id: 15,
       title: "My cookies are good, but (they) _______________ are delicious.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " they" },
         { title: " theirs", correctAnswer: true },
       ],
@@ -205,7 +205,7 @@ export default function PossessivePronouns() {
     {
       id: 16,
       title: "My friend's cat is friendly. (I) _______________ is shy.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " my" },
         { title: " mine", correctAnswer: true },
       ],
@@ -216,7 +216,7 @@ export default function PossessivePronouns() {
     {
       id: 17,
       title: "My TV is big, but (you) ____________ is huge",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
@@ -227,7 +227,7 @@ export default function PossessivePronouns() {
     {
       id: 18,
       title: "Her laptop is new. (We) _______________ is old.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Our" },
         { title: "Ours", correctAnswer: true },
       ],

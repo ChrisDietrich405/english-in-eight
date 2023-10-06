@@ -57,47 +57,47 @@ export default function PhrasalVerbs1() {
         title="Take a quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title:
               "My daughter really ___________ with her new roommate. She's very excited.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. cheat on" },
               { title: "b. hit it off", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title: "After _________________ they went on a romantic date.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. cheating on" },
               { title: "b. talking it out", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title: "My shoes ________________ a lot of space in my closet.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. take up", correctAnswer: true },
               { title: "b. fed up with" },
             ],
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title:
               "He ____________ his math test and got caught by the teacher.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. hit it off" },
               { title: "b. cheated on", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title: "I'm ________________ my boss. She's such a jerk.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. fed up with", correctAnswer: true },
               { title: "b. talking it out" },
             ],

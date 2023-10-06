@@ -53,48 +53,48 @@ export default function PhrasalVerbs2() {
         title="Take a quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title:
               "I think he could _______________ peanut butter and jelly sandwiches. I always see him eating them.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. live off of", correctAnswer: true },
               { title: "b. talk into" },
             ],
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title: "After their fight, she ___________ to clear her head.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. put together" },
               { title: "b. drove around", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title:
               "I can't believe I let my wife ______________ adopting another cat.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. to go off" },
               { title: "b. talk me into", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title:
               "My car alarm is very sensitive. It ___________ if you walk past it.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. puts together" },
               { title: "b. goes off", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title: "She has to __________________ her new dining room table.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. put together", correctAnswer: true },
               { title: "b. drive around" },
             ],

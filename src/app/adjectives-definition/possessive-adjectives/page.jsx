@@ -46,7 +46,7 @@ export default function PossessiveAdjectives() {
     {
       id: 1,
       title: "Bia loves (she) _____________ clothes!",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "her", correctAnswer: true },
         { title: "their" },
       ],
@@ -56,7 +56,7 @@ export default function PossessiveAdjectives() {
     {
       id: 2,
       title: "Where is (they) ________________  professor?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "my" },
         { title: "their", correctAnswer: true },
       ],
@@ -66,7 +66,7 @@ export default function PossessiveAdjectives() {
     {
       id: 3,
       title: "He goes to school with (he) _____________ cousin.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "your" },
         { title: "his", correctAnswer: true },
       ],
@@ -77,7 +77,7 @@ export default function PossessiveAdjectives() {
     {
       id: 4,
       title: "(You) ______________ car is very old.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Your", correctAnswer: true },
         { title: "My" },
       ],
@@ -87,7 +87,7 @@ export default function PossessiveAdjectives() {
     {
       id: 5,
       title: "(He)  ________________favorite hobby is running.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Your" },
         { title: "His", correctAnswer: true },
       ],
@@ -97,7 +97,7 @@ export default function PossessiveAdjectives() {
     {
       id: 6,
       title: "Where is (I) _______________ phone?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "my", correctAnswer: true },
         { title: "your" },
       ],
@@ -107,10 +107,7 @@ export default function PossessiveAdjectives() {
     {
       id: 7,
       title: "(I) _____________ husband is not feeling well.",
-      possibleAnswersAndExplanation: [
-        { title: "My", correctAnswer: true },
-        { title: "Her" },
-      ],
+      possibleAnswers: [{ title: "My", correctAnswer: true }, { title: "Her" }],
       userAnswer: "",
       explanation: "My is the possessive adjective for I.",
     },
@@ -118,7 +115,7 @@ export default function PossessiveAdjectives() {
       id: 8,
       title:
         "They want to go to Egypt. They want to see (it) ________________ tourist attractions.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "its", correctAnswer: true },
         { title: "their" },
       ],
@@ -128,7 +125,7 @@ export default function PossessiveAdjectives() {
     {
       id: 9,
       title: "(They) ________________ mother works in a restaurant.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "His" },
         { title: "Their", correctAnswer: true },
       ],
@@ -139,7 +136,7 @@ export default function PossessiveAdjectives() {
     {
       id: 10,
       title: "(He) _____________ name is Tyrese.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Their" },
         { title: "His", correctAnswer: true },
       ],
@@ -149,7 +146,7 @@ export default function PossessiveAdjectives() {
     {
       id: 10,
       title: "She shares (they) ________________ passion for cooking.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "my" },
         { title: "their", correctAnswer: true },
       ],
@@ -159,7 +156,7 @@ export default function PossessiveAdjectives() {
     {
       id: 11,
       title: "(We) _______________ cat is very playful.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "His" },
         { title: "Our", correctAnswer: true },
       ],
@@ -169,7 +166,7 @@ export default function PossessiveAdjectives() {
     {
       id: 12,
       title: "Lisa and Mark enjoy (she) _____________ company.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "our" },
         { title: "her", correctAnswer: true },
       ],
@@ -179,17 +176,14 @@ export default function PossessiveAdjectives() {
     {
       id: 13,
       title: "The children found (he) _____________ lost toy.",
-      possibleAnswersAndExplanation: [
-        { title: "my" },
-        { title: "his", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "my" }, { title: "his", correctAnswer: true }],
       userAnswer: "",
       explanation: "His is the possessive adjective for he.",
     },
     {
       id: 14,
       title: "(You) _______________ friends are very kind.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Their", correctAnswer: true },
         { title: "My" },
       ],
@@ -199,7 +193,7 @@ export default function PossessiveAdjectives() {
     {
       id: 15,
       title: "We often visit (I) _______________ grandparents.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "our", correctAnswer: true },
         { title: "her" },
       ],
@@ -209,10 +203,7 @@ export default function PossessiveAdjectives() {
     {
       id: 16,
       title: "(She) _______________ sister is a talented musician.",
-      possibleAnswersAndExplanation: [
-        { title: "My" },
-        { title: "Her", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "My" }, { title: "Her", correctAnswer: true }],
       userAnswer: "",
       explanation: "Her is the possessive adjective for she.",
     },
@@ -220,7 +211,7 @@ export default function PossessiveAdjectives() {
       id: 17,
       title:
         "The students admired (he) _____________ dedication to their education.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "their" },
         { title: "his", correctAnswer: true },
       ],
@@ -230,7 +221,7 @@ export default function PossessiveAdjectives() {
     {
       id: 18,
       title: "(You) _______________ book is on the table.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Her" },
         { title: "Your", correctAnswer: true },
       ],
@@ -240,7 +231,7 @@ export default function PossessiveAdjectives() {
     {
       id: 19,
       title: "David mentioned (we) _____________ favorite movie.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "his" },
         { title: "our", correctAnswer: true },
       ],
@@ -290,8 +281,6 @@ export default function PossessiveAdjectives() {
             </li>
           </ul>
         </div>
-
-      
       </div>
       <QuizForm questionsArray={questionsArray} />
     </main>

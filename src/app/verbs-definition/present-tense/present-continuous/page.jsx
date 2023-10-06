@@ -25,31 +25,28 @@ export const metadata = {
     title: "Present Continuous | English in Eight Minutes",
     description:
       "Learn about the present continuous tense in English. This page provides explanations and examples of using the present continuous tense for ongoing actions and future events.",
-      images: [
-        {
-          url: "images/logo.svg",
-          width: 800,
-          height: 600,
-        },
-        {
-          url: "images/logo.svg",
-          width: 1800,
-          height: 1600,
-          alt: "My custom alt",
-        },
-      ],
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
   },
 };
 
-
 export default function PresentContinuous() {
-
-
   const questionsArray = [
     {
       id: 1,
       title: "You ___________ (play) tennis tonight right?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are not playing", correctAnswer: true },
         { title: "b. play" },
       ],
@@ -59,7 +56,7 @@ export default function PresentContinuous() {
     {
       id: 2,
       title: "I ___________ (study) now. Please call me later.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. study" },
         { title: "b. am studying", correctAnswer: true },
       ],
@@ -69,7 +66,7 @@ export default function PresentContinuous() {
     {
       id: 3,
       title: "She ___________ (sleep).",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. isn't sleeping", correctAnswer: true },
         { title: "b.  doesn't sleeps" },
       ],
@@ -80,7 +77,7 @@ export default function PresentContinuous() {
     {
       id: 4,
       title: "We ___________ (watch) the game.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. watch" },
         { title: "b. are watching", correctAnswer: true },
       ],
@@ -90,7 +87,7 @@ export default function PresentContinuous() {
     {
       id: 5,
       title: "He ____________ (work) in Baltimore.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. doesn't work" },
         { title: "b. is not working", correctAnswer: true },
       ],
@@ -100,7 +97,7 @@ export default function PresentContinuous() {
     {
       id: 6,
       title: "He ___________ (wait) for the taxi.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. is waiting", correctAnswer: true },
         { title: "b. waits" },
       ],
@@ -110,7 +107,7 @@ export default function PresentContinuous() {
     {
       id: 7,
       title: "They __________ (fight).",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are fighting", correctAnswer: true },
         { title: "b. fight" },
       ],
@@ -120,7 +117,7 @@ export default function PresentContinuous() {
     {
       id: 8,
       title: "We _______________ (go) to the mall tonight.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are not going", correctAnswer: true },
         { title: "b. don't go" },
       ],
@@ -130,7 +127,7 @@ export default function PresentContinuous() {
     {
       id: 9,
       title: "You ___________ (read) The Shining.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. read" },
         { title: "b. are reading", correctAnswer: true },
       ],
@@ -140,7 +137,7 @@ export default function PresentContinuous() {
     {
       id: 10,
       title: "She _________ (eat) a Kit Kat bar.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. eats" },
         { title: "b. is eating", correctAnswer: true },
       ],
@@ -150,7 +147,7 @@ export default function PresentContinuous() {
     {
       id: 11,
       title: "They ___________ (travel) to Paris next week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are not traveling", correctAnswer: true },
         { title: "b. don't travel" },
       ],
@@ -161,7 +158,7 @@ export default function PresentContinuous() {
     {
       id: 12,
       title: "I ___________ (read) a book right now.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. read" },
         { title: "b. am reading", correctAnswer: true },
       ],
@@ -172,7 +169,7 @@ export default function PresentContinuous() {
     {
       id: 13,
       title: "He ___________ (cook) dinner for us.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cooks" },
         { title: "b. is cooking", correctAnswer: true },
       ],
@@ -183,7 +180,7 @@ export default function PresentContinuous() {
     {
       id: 14,
       title: "We ___________ (wait) for the bus.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. wait" },
         { title: "b. are waiting", correctAnswer: true },
       ],
@@ -194,7 +191,7 @@ export default function PresentContinuous() {
     {
       id: 15,
       title: "She ___________ (play) the piano beautifully.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. plays" },
         { title: "b. is playing", correctAnswer: true },
       ],
@@ -205,7 +202,7 @@ export default function PresentContinuous() {
     {
       id: 16,
       title: "They ___________ (visit) their grandparents tomorrow.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are not visiting", correctAnswer: true },
         { title: "b. don't visit" },
       ],
@@ -216,7 +213,7 @@ export default function PresentContinuous() {
     {
       id: 17,
       title: "I ___________ (talk) to the manager about the issue.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. talk" },
         { title: "b. am talking", correctAnswer: true },
       ],
@@ -227,7 +224,7 @@ export default function PresentContinuous() {
     {
       id: 18,
       title: "They ___________ (study) for their exams all day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. study" },
         { title: "b. are studying", correctAnswer: true },
       ],
@@ -238,7 +235,7 @@ export default function PresentContinuous() {
     {
       id: 19,
       title: "He ___________ (clean) the house right now.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cleans" },
         { title: "b. is cleaning", correctAnswer: true },
       ],
@@ -249,7 +246,7 @@ export default function PresentContinuous() {
     {
       id: 20,
       title: "We ___________ (play) basketball on Saturday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. are not playing", correctAnswer: true },
         { title: "b. play" },
       ],
@@ -260,7 +257,7 @@ export default function PresentContinuous() {
     {
       id: 21,
       title: "She ___________ (read) a novel in the library.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. readings" },
         { title: "b. is reading", correctAnswer: true },
       ],
@@ -271,7 +268,6 @@ export default function PresentContinuous() {
 
   return (
     <>
-   
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Present Continuous</h1>

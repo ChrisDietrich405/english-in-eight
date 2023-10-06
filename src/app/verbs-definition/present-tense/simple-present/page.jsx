@@ -45,7 +45,7 @@ export default function SimplePresent() {
     {
       id: 1,
       title: "He ________ (love) tea.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. loves", correctAnswer: true },
         { title: "b. love" },
       ],
@@ -55,7 +55,7 @@ export default function SimplePresent() {
     {
       id: 2,
       title: "I _________ (like) dancing.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. don't like", correctAnswer: true },
         { title: "b. doesn't like" },
       ],
@@ -65,7 +65,7 @@ export default function SimplePresent() {
     {
       id: 3,
       title: "She ____________ (play) badminton.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. plays", correctAnswer: true },
         { title: "b. play" },
       ],
@@ -75,7 +75,7 @@ export default function SimplePresent() {
     {
       id: 4,
       title: "The class (it) __________ (begin) at 11am.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. begin" },
         { title: "b. begins", correctAnswer: true },
       ],
@@ -85,7 +85,7 @@ export default function SimplePresent() {
     {
       id: 5,
       title: "He ________ (cry) when he watches sad movies.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cry" },
         { title: "b. cries", correctAnswer: true },
       ],
@@ -95,7 +95,7 @@ export default function SimplePresent() {
     {
       id: 6,
       title: "They ________ (wash) the dishes.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. washes" },
         { title: "b. wash", correctAnswer: true },
       ],
@@ -106,7 +106,7 @@ export default function SimplePresent() {
     {
       id: 7,
       title: "I ________ (study) Arabic.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. study", correctAnswer: true },
         { title: "b. studies" },
       ],
@@ -116,7 +116,7 @@ export default function SimplePresent() {
     {
       id: 8,
       title: "They _________ (live) in Tunisia.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. live", correctAnswer: true },
         { title: "b. lives" },
       ],
@@ -126,7 +126,7 @@ export default function SimplePresent() {
     {
       id: 9,
       title: "She _______ (work) at a mall.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. works", correctAnswer: true },
         { title: "b. work" },
       ],
@@ -136,7 +136,7 @@ export default function SimplePresent() {
     {
       id: 10,
       title: "Nia _______ (play) the piano very well.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. don't play" },
         { title: "b. doesn't play", correctAnswer: true },
       ],
@@ -146,7 +146,7 @@ export default function SimplePresent() {
     {
       id: 11,
       title: "He ________________ (enjoy) hiking.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. enjoys", correctAnswer: true },
         { title: "b. enjoy" },
       ],
@@ -157,7 +157,7 @@ export default function SimplePresent() {
     {
       id: 12,
       title: "They ________________ (play) chess every weekend.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. play", correctAnswer: true },
         { title: "b. plays" },
       ],
@@ -168,7 +168,7 @@ export default function SimplePresent() {
     {
       id: 13,
       title: "She ________________ (read) a book every night before bed.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. reads", correctAnswer: true },
         { title: "b. read" },
       ],
@@ -179,7 +179,7 @@ export default function SimplePresent() {
     {
       id: 14,
       title: "The cat ________________ (sleep) in the sun every afternoon.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. sleeps", correctAnswer: true },
         { title: "b. sleep" },
       ],
@@ -190,7 +190,7 @@ export default function SimplePresent() {
     {
       id: 15,
       title: "I ________________ (write) a lot of emails every day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. write", correctAnswer: true },
         { title: "b. writes" },
       ],
@@ -201,7 +201,7 @@ export default function SimplePresent() {
     {
       id: 16,
       title: "We ________________ (watch) a movie every Friday night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. watch", correctAnswer: true },
         { title: "b. watches" },
       ],
@@ -212,7 +212,7 @@ export default function SimplePresent() {
     {
       id: 17,
       title: "He ________________ (paint) in his studio.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. paints", correctAnswer: true },
         { title: "b. paint" },
       ],
@@ -223,7 +223,7 @@ export default function SimplePresent() {
     {
       id: 18,
       title: "They ________________ (dance) professionally.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. dance", correctAnswer: true },
         { title: "b. dances" },
       ],
@@ -234,7 +234,7 @@ export default function SimplePresent() {
     {
       id: 19,
       title: "He ________________ (cook) delicious meals for her family.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cooks", correctAnswer: true },
         { title: "b. cook" },
       ],
@@ -245,7 +245,7 @@ export default function SimplePresent() {
     {
       id: 20,
       title: "I ________________ (play) the guitar in a band.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. play", correctAnswer: true },
         { title: "b. plays" },
       ],

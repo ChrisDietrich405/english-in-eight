@@ -23,19 +23,19 @@ export const metadata = {
     title: "Present Perfect Continuous | English in Eight Minutes",
     description:
       "Learn about the present perfect continuous tense, which expresses actions or situations that started in the past and are still ongoing or have recently stopped. Improve your English language skills with quick lessons on English in Eight Minutes.",
-      images: [
-        {
-          url: "images/logo.svg",
-          width: 800,
-          height: 600,
-        },
-        {
-          url: "images/logo.svg",
-          width: 1800,
-          height: 1600,
-          alt: "My custom alt",
-        },
-      ],
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
   },
 };
 
@@ -44,7 +44,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 1,
       title: "She ____________________________ (study) all morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has been studying", correctAnswer: true },
         { title: "b. has studied" },
       ],
@@ -54,7 +54,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 2,
       title: "I _____________________ (wait) for you since three.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has waited" },
         { title: "b. have been waiting", correctAnswer: true },
       ],
@@ -64,7 +64,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 3,
       title: "Nia ____________________(live) in Nairobi since 2002.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have lived" },
         { title: "b. has been living", correctAnswer: true },
       ],
@@ -74,7 +74,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 4,
       title: "They _____________________ all week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have fought" },
         { title: "b. have been fighting", correctAnswer: true },
       ],
@@ -84,7 +84,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 5,
       title: "He ______________________ (play) basketball for five hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have played" },
         { title: "b. has been playing", correctAnswer: true },
       ],
@@ -94,7 +94,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 6,
       title: "He ___________________ (work) for this library since 2002.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have worked" },
         { title: "b. has been working", correctAnswer: true },
       ],
@@ -104,7 +104,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 7,
       title: "How long ___________________ (learn / you) Spanish?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has you learned" },
         { title: "b. have you been learning", correctAnswer: true },
       ],
@@ -115,7 +115,7 @@ export default function PresentPerfectContinuous() {
       id: 8,
       title:
         "We ______________________ (look) for your house for more than an .",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been looking", correctAnswer: true },
         { title: "b. has looked" },
       ],
@@ -126,7 +126,7 @@ export default function PresentPerfectContinuous() {
       id: 9,
       title:
         "She ________________________ (live) without electricity for five days.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has been living", correctAnswer: true },
         { title: "b. has lived" },
       ],
@@ -136,7 +136,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 10,
       title: "How long _______________________ (work / he) in the garage?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have he worked" },
         { title: "b. has he been working", correctAnswer: true },
       ],
@@ -146,7 +146,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 11,
       title: "She ____________________ (read) that book for hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has read" },
         { title: "b. has been reading", correctAnswer: true },
       ],
@@ -157,7 +157,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 12,
       title: "They ____________________ (travel) around the world.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have traveled" },
         { title: "b. have been traveling", correctAnswer: true },
       ],
@@ -168,7 +168,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 13,
       title: "How long ___________________ (study / they) French?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have they studied" },
         { title: "b. have they been studying", correctAnswer: true },
       ],
@@ -180,7 +180,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 14,
       title: "I ____________________ (wait) at the bus stop for 30 minutes.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has waited" },
         { title: "b. have been waiting", correctAnswer: true },
       ],
@@ -191,7 +191,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 15,
       title: "He ____________________ (work) on this project since last month.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have worked" },
         { title: "b. has been working", correctAnswer: true },
       ],
@@ -202,7 +202,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 16,
       title: "They ____________________ (practice) the piano all day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have practiced" },
         { title: "b. have been practicing", correctAnswer: true },
       ],
@@ -214,7 +214,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 17,
       title: "How long ___________________ (live / they) in this neighborhood?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have they lived" },
         { title: "b. have they been living", correctAnswer: true },
       ],
@@ -226,7 +226,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 18,
       title: "We ____________________ (cook) dinner for two hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have cooked" },
         { title: "b. have been cooking", correctAnswer: true },
       ],
@@ -237,7 +237,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 19,
       title: "She ____________________ (practice) yoga every morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have practiced" },
         { title: "b. has been practicing", correctAnswer: true },
       ],
@@ -249,7 +249,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 20,
       title: "How long ____________________ (play / he) the guitar?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have he played" },
         { title: "b. has he been playing", correctAnswer: true },
       ],

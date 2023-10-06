@@ -46,9 +46,9 @@ function DrawerAppBar(props) {
       <Link href="/">
         <Image
           className={styles.navbar_logo}
-          src="/images/logo.svg"
-          width={50}
-          height={50}
+          src="/images/english.svg"
+          width={150}
+          height={150}
           alt="Picture of the author"
         />
       </Link>
@@ -85,9 +85,9 @@ function DrawerAppBar(props) {
           <Link href="/">
             <Image
               className={styles.navbar_logo}
-              src="/images/logo.svg"
-              width={50}
-              height={50}
+              src="/images/english.svg"
+              width={104}
+              height={104}
               alt="Picture of the logo"
               sx={{ display: { xs: "none", sm: "block" } }}
             />

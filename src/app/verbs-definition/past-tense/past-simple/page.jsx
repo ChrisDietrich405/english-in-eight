@@ -41,13 +41,12 @@ export const metadata = {
   },
 };
 
-
 export default function PastPerfectContinuous() {
   const questionsArray = [
     {
       id: 1,
       title: "I _____________ to the store.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. go" },
         { title: "b. went", correctAnswer: true },
       ],
@@ -58,7 +57,7 @@ export default function PastPerfectContinuous() {
     {
       id: 2,
       title: "They _____________ house very well.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. builded" },
         { title: "b. built", correctAnswer: true },
       ],
@@ -68,7 +67,7 @@ export default function PastPerfectContinuous() {
     {
       id: 3,
       title: "I _________ to her.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. didn't talked" },
         { title: "b. didn't talk", correctAnswer: true },
       ],
@@ -78,7 +77,7 @@ export default function PastPerfectContinuous() {
     {
       id: 4,
       title: "She ___________ that movie yesterday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. saw", correctAnswer: true },
         { title: "b. sawed" },
       ],
@@ -88,7 +87,7 @@ export default function PastPerfectContinuous() {
     {
       id: 5,
       title: "He ____________ his hand with a knife .",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cuted" },
         { title: "b. cut", correctAnswer: true },
       ],
@@ -98,7 +97,7 @@ export default function PastPerfectContinuous() {
     {
       id: 6,
       title: "We ________ too much this morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. ate", correctAnswer: true },
         { title: "b. eated" },
       ],
@@ -108,7 +107,7 @@ export default function PastPerfectContinuous() {
     {
       id: 7,
       title: "I _________ her on the cheek.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. kissed", correctAnswer: true },
         { title: "b. kiss" },
       ],
@@ -118,7 +117,7 @@ export default function PastPerfectContinuous() {
     {
       id: 8,
       title: "It ____________ a lot of money.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. costed" },
         { title: "b. cost", correctAnswer: true },
       ],
@@ -128,7 +127,7 @@ export default function PastPerfectContinuous() {
     {
       id: 9,
       title: "They ___________ to the store.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. wented" },
         { title: "b. went", correctAnswer: true },
       ],
@@ -138,7 +137,7 @@ export default function PastPerfectContinuous() {
     {
       id: 10,
       title: "The car ___________ the tree.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hit", correctAnswer: true },
         { title: "b. hited" },
       ],
@@ -148,7 +147,7 @@ export default function PastPerfectContinuous() {
     {
       id: 11,
       title: "She ____________ her friend last night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. meet" },
         { title: "b. met", correctAnswer: true },
       ],
@@ -158,7 +157,7 @@ export default function PastPerfectContinuous() {
     {
       id: 12,
       title: "He ____________ a great book last weekend.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. read", correctAnswer: true },
         { title: "b. red" },
       ],
@@ -168,7 +167,7 @@ export default function PastPerfectContinuous() {
     {
       id: 13,
       title: "They ____________ a delicious meal yesterday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. cook" },
         { title: "b. cooked", correctAnswer: true },
       ],
@@ -178,7 +177,7 @@ export default function PastPerfectContinuous() {
     {
       id: 14,
       title: "The children ____________ in the park this morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. play" },
         { title: "b. played", correctAnswer: true },
       ],
@@ -188,7 +187,7 @@ export default function PastPerfectContinuous() {
     {
       id: 15,
       title: "She ____________ a beautiful song at the concert.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. sing" },
         { title: "b. sang", correctAnswer: true },
       ],
@@ -198,7 +197,7 @@ export default function PastPerfectContinuous() {
     {
       id: 16,
       title: "They ____________ to the beach last summer.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. go" },
         { title: "b. went", correctAnswer: true },
       ],
@@ -208,7 +207,7 @@ export default function PastPerfectContinuous() {
     {
       id: 17,
       title: "I ____________ my keys in the car yesterday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. leave" },
         { title: "b. left", correctAnswer: true },
       ],
@@ -218,7 +217,7 @@ export default function PastPerfectContinuous() {
     {
       id: 18,
       title: "They ____________ a great time at the party last night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have" },
         { title: "b. had", correctAnswer: true },
       ],
@@ -228,7 +227,7 @@ export default function PastPerfectContinuous() {
     {
       id: 19,
       title: "She ____________ a fantastic painting last week.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. paint" },
         { title: "b. painted", correctAnswer: true },
       ],
@@ -238,7 +237,7 @@ export default function PastPerfectContinuous() {
     {
       id: 20,
       title: "They ____________ their grandparents yesterday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. visit" },
         { title: "b. visited", correctAnswer: true },
       ],
@@ -248,7 +247,7 @@ export default function PastPerfectContinuous() {
     {
       id: 21,
       title: "He ____________ a new bicycle for his birthday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. get" },
         { title: "b. got", correctAnswer: true },
       ],

@@ -43,19 +43,29 @@ export default function Quiz(props) {
 
   const [submitted, setSubmitted] = useState(false);
 
+  // const submit = (event) => {
+  //   event.preventDefault();
+  //   setSubmitted(true);
+  //   console.log("Object", event);
+  // };
+
   const submit = (event) => {
     event.preventDefault();
-    setSubmitted(true);
-    console.log("Object", event);
-  };
+    const newEvent = Array.from(event.target);
+    const checkedAnswers = newEvent.filter((item) => item.checked);
+    const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
+      const elementId = entireQuestionObject.id.match(/\d*$/g);
+      console.log(elementId);
+      console.dir(entireQuestionObject.id);
+      return entireQuestionObject;
+    });
 
-  // const submit = (event) => {   I will look into it
-  //   event.preventDefault();
-  //   // const answers = event.target.map((answer) => answer.checked);
-  //   console.log(event);
-  //   console.log(event.target.forEach(answer => console.log(answer)));   
-  //   setSubmitted(true);
-  // };
+    //newEvent represents an array of all of the inputs
+    // const answers = event.target.map((answer) => answer.checked);
+    // console.dir(newEvent);
+    // console.log(event.target.forEach(answer => console.log(answer)));
+    setSubmitted(true);
+  };
 
   const reset = (e) => {
     setAnswers({});
@@ -102,37 +112,35 @@ export default function Quiz(props) {
                     />
                   )}
                   <ul>
-                    {question.possibleAnswersAndExplanation.map(
-                      (possibleAnswer, index) => {
-                        return (
-                          <SelectAnswer
-                            show={
-                              index === 1 &&
-                              //this is only to show it after the second answer
-                              //we are mapping through the two answers
-                              //if it's the first answer then it will return false and if it's the second it will return true. We need two true answers
-                              question.possibleAnswersAndExplanation.filter(
-                                (question) => question?.correctAnswer
-                              ).length === 2
-                              // if we have two correct answers
-                            }
-                            questionId={question.id}
-                            explanation={question.explanation}
-                            key={`answer${index}`}
-                            submitted={submitted}
-                            onClick={() => select(possibleAnswer, i)}
-                            possibleAnswer={possibleAnswer}
-                            answers={answers}
-                            i={i}
-                            selectedAnswerTexts={selectedAnswerTexts}
-                            isAnsweredCorrectly={
-                              i in answers && answers[i] === true
-                            }
-                            index={index}
-                          />
-                        );
-                      }
-                    )}
+                    {question.possibleAnswers.map((possibleAnswer, index) => {
+                      return (
+                        <SelectAnswer
+                          show={
+                            index === 1 &&
+                            //this is only to show it after the second answer
+                            //we are mapping through the two answers
+                            //if it's the first answer then it will return false and if it's the second it will return true. We need two true answers
+                            question.possibleAnswers.filter(
+                              (question) => question?.correctAnswer
+                            ).length === 2
+                            // if we have two correct answers
+                          }
+                          questionId={question.id}
+                          explanation={question.explanation}
+                          key={`answer${index}`}
+                          submitted={submitted}
+                          onClick={() => select(possibleAnswer, i)}
+                          possibleAnswer={possibleAnswer}
+                          answers={answers}
+                          i={i}
+                          selectedAnswerTexts={selectedAnswerTexts}
+                          isAnsweredCorrectly={
+                            i in answers && answers[i] === true
+                          }
+                          index={index}
+                        />
+                      );
+                    })}
                   </ul>
                 </li>
               );

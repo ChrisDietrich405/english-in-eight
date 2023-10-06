@@ -46,7 +46,7 @@ export default function NounModifiers() {
     {
       id: 1,
       title: "It's a door made of metal. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "door's metal" },
         { title: "metal door", correctAnswer: true },
       ],
@@ -56,7 +56,7 @@ export default function NounModifiers() {
     {
       id: 2,
       title: "It's a cloth that you put on a table. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "table cloth", correctAnswer: true },
         { title: "cloth table" },
       ],
@@ -66,7 +66,7 @@ export default function NounModifiers() {
     {
       id: 3,
       title: "It's a bat used for baseballs. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "batball" },
         { title: "baseball bat", correctAnswer: true },
       ],
@@ -76,7 +76,7 @@ export default function NounModifiers() {
     {
       id: 4,
       title: "It's a key for my house. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "key house" },
         { title: "house key", correctAnswer: true },
       ],
@@ -86,7 +86,7 @@ export default function NounModifiers() {
     {
       id: 5,
       title: "The park is in the city. It's a ______________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "park city" },
         { title: "city park", correctAnswer: true },
       ],
@@ -96,7 +96,7 @@ export default function NounModifiers() {
     {
       id: 6,
       title: "They have a house in the trees. They have a ______________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "tree house", correctAnswer: true },
         { title: "house tree" },
       ],
@@ -106,7 +106,7 @@ export default function NounModifiers() {
     {
       id: 7,
       title: "We bought a bone for our dog. We gave her a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "bone dog" },
         { title: "dog bone", correctAnswer: true },
       ],
@@ -117,7 +117,7 @@ export default function NounModifiers() {
       id: 8,
       title:
         "Meet me where there is a station for a train. It's a ________________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "train station", correctAnswer: true },
         { title: "station train" },
       ],
@@ -127,7 +127,7 @@ export default function NounModifiers() {
     {
       id: 9,
       title: "This is a ladder with steps.   It’s a ___________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "step ladder", correctAnswer: true },
         { title: "ladder step" },
       ],
@@ -137,7 +137,7 @@ export default function NounModifiers() {
     {
       id: 10,
       title: "I paid for lessons for swimming. They are _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "swimming lessons", correctAnswer: true },
         { title: "swimmings lesson" },
       ],
@@ -147,7 +147,7 @@ export default function NounModifiers() {
     {
       id: 11,
       title: "He uses it to cut paper. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "paper cutter", correctAnswer: true },
         { title: "cut paper" },
       ],
@@ -157,7 +157,7 @@ export default function NounModifiers() {
     {
       id: 12,
       title: "You sit on it in the park. It's a _____________.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "park bench", correctAnswer: true },
         { title: "bench park" },
       ],

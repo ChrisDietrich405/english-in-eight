@@ -24,32 +24,29 @@ export const metadata = {
     title: "Past Continuous Tense | English in Eight Minutes",
     description:
       "Learn about the past continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
-      images: [
-        {
-          url: "images/logo.svg",
-          width: 800,
-          height: 600,
-        },
-        {
-          url: "images/logo.svg",
-          width: 1800,
-          height: 1600,
-          alt: "My custom alt",
-        },
-      ],
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
   },
 };
 
-
 export default function PastContinuous() {
-
-
   const questionsArray = [
     {
       id: 1,
       title:
         "I ___________ (think) about a solution when Nia came up with a great idea.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was thinking" },
         { title: "b. were thinking", correctAnswer: true },
       ],
@@ -59,7 +56,7 @@ export default function PastContinuous() {
     {
       id: 2,
       title: "You ___________ (talk) loudly when the fight started.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were talking", correctAnswer: true },
         { title: "b. was talking" },
       ],
@@ -69,7 +66,7 @@ export default function PastContinuous() {
     {
       id: 3,
       title: "It __________ (rain) a lot when I noticed my car door was broken",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were raining" },
         { title: "b. was raining", correctAnswer: true },
       ],
@@ -80,7 +77,7 @@ export default function PastContinuous() {
       id: 4,
       title:
         "They _____________ (work) on the computer when the teacher came into the room.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was working" },
         { title: "b. were working", correctAnswer: true },
       ],
@@ -90,7 +87,7 @@ export default function PastContinuous() {
     {
       id: 5,
       title: "He __________ (leave) when his boss called him.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were leaving" },
         { title: "b. was leaving", correctAnswer: true },
       ],
@@ -101,7 +98,7 @@ export default function PastContinuous() {
       id: 6,
       title:
         "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were cutting" },
         { title: "b. was cutting", correctAnswer: true },
       ],
@@ -111,7 +108,7 @@ export default function PastContinuous() {
     {
       id: 7,
       title: "We _________ (talk) to our colleagues when they came in.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was talking" },
         { title: "b. were talking", correctAnswer: true },
       ],
@@ -121,7 +118,7 @@ export default function PastContinuous() {
     {
       id: 8,
       title: "He ___________ (make) dinner when the phone rang.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was making", correctAnswer: true },
         { title: "b. were making" },
       ],
@@ -131,7 +128,7 @@ export default function PastContinuous() {
     {
       id: 9,
       title: "They ___________ (wash) clothes when they heard a noise.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were washing", correctAnswer: true },
         { title: "b. was washing" },
       ],
@@ -141,7 +138,7 @@ export default function PastContinuous() {
     {
       id: 10,
       title: "It ____________ (frustrate).",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were frustrating" },
         { title: "b. was frustrating", correctAnswer: true },
       ],
@@ -152,7 +149,7 @@ export default function PastContinuous() {
       id: 11,
       title:
         "I ___________ (think) about a solution when Nia came up with a great idea.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was thinking" },
         { title: "b. were thinking", correctAnswer: true },
       ],
@@ -162,7 +159,7 @@ export default function PastContinuous() {
     {
       id: 12,
       title: "You ___________ (talk) loudly when the fight started.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were talking", correctAnswer: true },
         { title: "b. was talking" },
       ],
@@ -172,7 +169,7 @@ export default function PastContinuous() {
     {
       id: 13,
       title: "It __________ (rain) a lot when I noticed my car door was broken",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were raining" },
         { title: "b. was raining", correctAnswer: true },
       ],
@@ -183,7 +180,7 @@ export default function PastContinuous() {
       id: 14,
       title:
         "They _____________ (work) on the computer when the teacher came into the room.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was working" },
         { title: "b. were working", correctAnswer: true },
       ],
@@ -193,7 +190,7 @@ export default function PastContinuous() {
     {
       id: 15,
       title: "He __________ (leave) when his boss called him.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were leaving" },
         { title: "b. was leaving", correctAnswer: true },
       ],
@@ -204,7 +201,7 @@ export default function PastContinuous() {
       id: 16,
       title:
         "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were cutting" },
         { title: "b. was cutting", correctAnswer: true },
       ],
@@ -214,7 +211,7 @@ export default function PastContinuous() {
     {
       id: 17,
       title: "We _________ (talk) to our colleagues when they came in.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was talking" },
         { title: "b. were talking", correctAnswer: true },
       ],
@@ -224,7 +221,7 @@ export default function PastContinuous() {
     {
       id: 18,
       title: "He ___________ (make) dinner when the phone rang.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. was making", correctAnswer: true },
         { title: "b. were making" },
       ],
@@ -234,7 +231,7 @@ export default function PastContinuous() {
     {
       id: 19,
       title: "They ___________ (wash) clothes when they heard a noise.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were washing", correctAnswer: true },
         { title: "b. was washing" },
       ],
@@ -244,7 +241,7 @@ export default function PastContinuous() {
     {
       id: 20,
       title: "It ____________ (frustrate).",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. were frustrating" },
         { title: "b. was frustrating", correctAnswer: true },
       ],

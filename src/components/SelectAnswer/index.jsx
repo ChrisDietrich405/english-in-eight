@@ -68,12 +68,13 @@ const SelectAnswer = ({
     <>
       <li className={styles.answer_option}>
         <input
-          id={"input_field" + questionId + index}
+          id={"input_field" + questionId}
           disabled={submitted}
           onClick={onClick}
           name={"twoPossibleAnswers" + questionId}
           type="radio"
           className={styles.radio_button}
+          value={possibleAnswer.title}
         />
         <label htmlFor={"input_field" + questionId + index}>
           <span style={{ marginRight: "3px" }} className={getTextColor()}>

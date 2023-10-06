@@ -63,7 +63,7 @@ export default function Expressions() {
           {
             id: 1,
             title: "Why didn't you laugh at my story? ____________________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. I guess it was ahead of schedule" },
               { title: "b. I guess you had to be there", correctAnswer: true },
             ],
@@ -72,7 +72,7 @@ export default function Expressions() {
           {
             id: 2,
             title: "__________ is a very ineffective way to get sales.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. B movie" },
               { title: "b. Cold calling", correctAnswer: true },
             ],
@@ -82,7 +82,7 @@ export default function Expressions() {
             id: 3,
             title:
               "I actually like ___________. They are so bad they make me laugh.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. Cold calling" },
               { title: "b. B movies", correctAnswer: true },
             ],
@@ -91,7 +91,7 @@ export default function Expressions() {
           {
             id: 4,
             title: "The project will be finished in 3 weeks ________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. you had to be there" },
               { title: "b. tops", correctAnswer: true },
             ],
@@ -100,7 +100,7 @@ export default function Expressions() {
           {
             id: 5,
             title: "Hopefully we can finish the project ________________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. tops" },
               { title: "b. ahead of schedule", correctAnswer: true },
             ],

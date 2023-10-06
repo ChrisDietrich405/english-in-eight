@@ -47,7 +47,7 @@ export default function MakeVersusDo() {
       id: 1,
       title:
         "Juan worked hard and __________ his best at his job, but he still wasn't promoted.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "made" },
         { title: "did", correctAnswer: true },
       ],
@@ -58,7 +58,7 @@ export default function MakeVersusDo() {
       id: 2,
       title:
         "If you don't speak English, you'll find it hard to ________ business in the UK.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -70,7 +70,7 @@ export default function MakeVersusDo() {
       id: 3,
       title:
         "So many chores to _______! I need to clean the bathroom and the kitchen, vacuum and make all the beds.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -82,7 +82,7 @@ export default function MakeVersusDo() {
     {
       id: 4,
       title: "It has always been hard for me to ________________ decisions.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -92,7 +92,7 @@ export default function MakeVersusDo() {
     {
       id: 5,
       title: " My grandmother loves ________ crosswords.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "to make" },
         { title: "to do", correctAnswer: true },
       ],
@@ -103,7 +103,7 @@ export default function MakeVersusDo() {
       id: 6,
       title:
         "I really need to _______ some shopping this afternoon. We have no food in the house at all.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "do", correctAnswer: true },
         { title: "make" },
       ],
@@ -114,7 +114,7 @@ export default function MakeVersusDo() {
       id: 7,
       title:
         "Demarcus  __________ a joke at the start of the meeting, but nobody laughed.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "made", correctAnswer: true },
         { title: "did" },
       ],
@@ -125,7 +125,7 @@ export default function MakeVersusDo() {
       id: 8,
       title:
         " The teenagers were _________so much noise that the neighbour called the police.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "making", correctAnswer: true },
         { title: "doing" },
       ],
@@ -135,7 +135,7 @@ export default function MakeVersusDo() {
     {
       id: 9,
       title: "If you'll _________ the dishes, I'll sweep the floor.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -146,7 +146,7 @@ export default function MakeVersusDo() {
       id: 10,
       title:
         "Could you __________ me a favor and bring dessert to my dinner party tomorrow?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "do", correctAnswer: true },
         { title: "make" },
       ],
@@ -157,7 +157,7 @@ export default function MakeVersusDo() {
       id: 11,
       title:
         "When you're trying to solve a difficult puzzle, do you usually find it challenging to _________ progress?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -166,21 +166,19 @@ export default function MakeVersusDo() {
     },
     {
       id: 12,
-      title:
-        "Sarah is talented and can ________ delicious desserts.",
-      possibleAnswersAndExplanation: [
+      title: "Sarah is talented and can ________ delicious desserts.",
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
       userAnswer: "",
-      explanation:
-        "In English, we make food because it's a creative process.",
+      explanation: "In English, we make food because it's a creative process.",
     },
     {
       id: 13,
       title:
         "It's important to ________ a decision about your future career path.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -191,7 +189,7 @@ export default function MakeVersusDo() {
       id: 14,
       title:
         "When you're feeling sad, what do you usually need to ________ to feel better? Rest or exercise?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -202,7 +200,7 @@ export default function MakeVersusDo() {
     {
       id: 15,
       title: "The chef is known for her ability to ________ delicious food.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -213,7 +211,7 @@ export default function MakeVersusDo() {
       id: 16,
       title:
         "Mark decided to ________ the right thing and return the lost wallet to its owner.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -222,9 +220,8 @@ export default function MakeVersusDo() {
     },
     {
       id: 17,
-      title:
-        "When you're planning a trip, what do you need to ________ first?",
-      possibleAnswersAndExplanation: [
+      title: "When you're planning a trip, what do you need to ________ first?",
+      possibleAnswers: [
         { title: "make" },
         { title: "do", correctAnswer: true },
       ],
@@ -235,7 +232,7 @@ export default function MakeVersusDo() {
       id: 18,
       title:
         "The construction workers will ________ repairs on the damaged bridge to ensure it's safe for use.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -246,7 +243,7 @@ export default function MakeVersusDo() {
       id: 19,
       title:
         "If you want to be successful in your career, you need to ________ an effort to continually improve your skills.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
@@ -257,7 +254,7 @@ export default function MakeVersusDo() {
       id: 20,
       title:
         "Every morning, I like to ________ a list of tasks for the day to stay organized and productive.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],

@@ -46,7 +46,7 @@ export default function Collective() {
     {
       id: 1,
       title: "The students __________ fighting in the cafeteria.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: " are", correctAnswer: true },
         { title: " is" },
       ],
@@ -57,7 +57,7 @@ export default function Collective() {
     {
       id: 2,
       title: "The group __________ decided together to file the petition.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "has", correctAnswer: true },
         { title: "have" },
       ],
@@ -69,7 +69,7 @@ export default function Collective() {
       id: 3,
       title:
         "The United States army _____________ a budget much larger than any other countries.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
@@ -79,17 +79,18 @@ export default function Collective() {
     {
       id: 4,
       title: "My sisters ____________ to go to the beach this weekend.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "want", correctAnswer: true },
         { title: "wants" },
       ],
-      explanation: "Sisters are considered individuals, not a collective group.",
+      explanation:
+        "Sisters are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
       id: 5,
       title: "___________ the parents' committee made a decision?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Has", correctAnswer: true },
         { title: "Have" },
       ],
@@ -99,7 +100,7 @@ export default function Collective() {
     {
       id: 7,
       title: "___________ any of the soldiers hurt?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "Was" },
         { title: "Were", correctAnswer: true },
       ],
@@ -110,7 +111,7 @@ export default function Collective() {
     {
       id: 8,
       title: "That team __________ every game.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "wins", correctAnswer: true },
         { title: "win" },
       ],
@@ -121,17 +122,18 @@ export default function Collective() {
       id: 9,
       title:
         "The members of the jury ______________ very frustrated by the prosecuting lawyer.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "was" },
         { title: "were", correctAnswer: true },
       ],
-      explanation: "Members are considered individuals, not a collective group.",
+      explanation:
+        "Members are considered individuals, not a collective group.",
       userAnswer: "",
     },
     {
       id: 10,
       title: "The school choir ______________ won many competitions.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
@@ -142,47 +144,35 @@ export default function Collective() {
       id: 11,
       title:
         "His family ______________ very big. He has 10 uncles and 11 aunts.",
-      possibleAnswersAndExplanation: [
-        { title: "are" },
-        { title: "is", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "are" }, { title: "is", correctAnswer: true }],
       explanation: "Family is considered a collective noun.",
       userAnswer: "",
     },
     {
       id: 12,
       title: "The team __________ celebrating their victory.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Team is considered a collective noun.",
     },
     {
       id: 13,
       title: "The committee __________ discussing the new proposal.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Committee is considered a collective noun.",
     },
     {
       id: 14,
       title: "The people at the store __________ very angry.",
-      possibleAnswersAndExplanation: [
-        { title: "are", correctAnswer: true },
-        { title: "is" },
-      ],
+      possibleAnswers: [{ title: "are", correctAnswer: true }, { title: "is" }],
       userAnswer: "",
       explanation: "People is not considered a collective noun.",
     },
     {
       id: 15,
       title: "The jury __________ reached a unanimous decision.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "has", correctAnswer: true },
         { title: "have" },
       ],
@@ -192,27 +182,21 @@ export default function Collective() {
     {
       id: 16,
       title: "The swarm of bees __________ buzzing around the flowers.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Swarm is considered a collective noun.",
     },
     {
       id: 17,
       title: "The orchestra __________ performing at the concert.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Orchestra is considered a collective noun.",
     },
     {
       id: 18,
       title: "The students ___________ not in the class.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "were", correctAnswer: true },
         { title: "was" },
       ],
@@ -222,40 +206,28 @@ export default function Collective() {
     {
       id: 19,
       title: "His family __________ planning a reunion.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Family is considered a collective noun.",
     },
     {
       id: 20,
       title: "Her staff __________ working hard this week.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Staff is considered a collective noun.",
     },
     {
       id: 21,
       title: "The audience __________ clapping.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Audience is considered a collective noun.",
     },
     {
       id: 22,
       title: "The school of fish __________ swimming in the ocean.",
-      possibleAnswersAndExplanation: [
-        { title: "is", correctAnswer: true },
-        { title: "are" },
-      ],
+      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "School is considered a collective noun.",
     },

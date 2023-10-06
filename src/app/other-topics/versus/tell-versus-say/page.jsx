@@ -46,7 +46,7 @@ export default function TellVersusSay() {
     {
       id: 1,
       title: "Martin  _____________ that he would love to do it.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -56,7 +56,7 @@ export default function TellVersusSay() {
     {
       id: 2,
       title: "She ______________ him a lie. ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -66,7 +66,7 @@ export default function TellVersusSay() {
     {
       id: 3,
       title: "They  _____________ her that they were going to leave Friday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -76,7 +76,7 @@ export default function TellVersusSay() {
     {
       id: 4,
       title: "Demarcus  ___________ us that he didn't want to go out.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -87,7 +87,7 @@ export default function TellVersusSay() {
     {
       id: 5,
       title: "Maria _________ that she's not feeling well. ",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -97,7 +97,7 @@ export default function TellVersusSay() {
     {
       id: 6,
       title: "She  __________ her mother that she wanted to quit.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -108,7 +108,7 @@ export default function TellVersusSay() {
     {
       id: 7,
       title: "Maria  _____________ that she would join us after work.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -119,7 +119,7 @@ export default function TellVersusSay() {
       id: 8,
       title:
         "Maria  _____________ that she's going to talk with her friend about it.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -129,7 +129,7 @@ export default function TellVersusSay() {
     {
       id: 9,
       title: "Dan ____________ the best stories.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "tells", correctAnswer: true },
         { title: "say" },
       ],
@@ -139,7 +139,7 @@ export default function TellVersusSay() {
     {
       id: 10,
       title: "Najha _____________ that she was going to stop helping us.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -149,7 +149,7 @@ export default function TellVersusSay() {
     {
       id: 11,
       title: "They _________ that they didn't want to have the meeting Friday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "told" },
         { title: "said", correctAnswer: true },
       ],
@@ -159,7 +159,7 @@ export default function TellVersusSay() {
     {
       id: 12,
       title: "Paul _____________ that he'll be late for the party.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
       ],
@@ -169,7 +169,7 @@ export default function TellVersusSay() {
     {
       id: 13,
       title: "She _______________ me to meet her at the park.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "told" },
         { title: "said", correctAnswer: true },
       ],
@@ -180,7 +180,7 @@ export default function TellVersusSay() {
       id: 14,
       title:
         "The teacher ________________ the students to complete their homework.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -190,7 +190,7 @@ export default function TellVersusSay() {
     {
       id: 15,
       title: "Javier _____________ a funny joke at the dinner table.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -200,7 +200,7 @@ export default function TellVersusSay() {
     {
       id: 16,
       title: "They _______________ us not to go swimming in the deep water.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -211,7 +211,7 @@ export default function TellVersusSay() {
       id: 17,
       title:
         "I can't _______________ the difference between Portuguese and Spanish.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "tell", correctAnswer: true },
         { title: "say" },
       ],
@@ -221,7 +221,7 @@ export default function TellVersusSay() {
     {
       id: 18,
       title: "He _____________ his friends about the exciting trip.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "told" },
         { title: "said", correctAnswer: true },
       ],
@@ -231,7 +231,7 @@ export default function TellVersusSay() {
     {
       id: 19,
       title: "The manager _____________ the team about the upcoming project.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],
@@ -241,7 +241,7 @@ export default function TellVersusSay() {
     {
       id: 20,
       title: "Excuse me, could you ________ the time",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "tell", correctAnswer: true },
         { title: "say" },
       ],
@@ -252,7 +252,7 @@ export default function TellVersusSay() {
       id: 21,
       title:
         "They _______________ their parents about their decision to get married.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "said" },
         { title: "told", correctAnswer: true },
       ],

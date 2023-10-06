@@ -45,7 +45,7 @@ export default function PresentPerfect() {
     {
       id: 1,
       title: "She ___________ (eat) tofu.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has eaten", correctAnswer: true },
         { title: "b. have eaten" },
       ],
@@ -55,7 +55,7 @@ export default function PresentPerfect() {
     {
       id: 2,
       title: "They ______________ (miss) their flight.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have missed", correctAnswer: true },
         { title: "b. has missed" },
       ],
@@ -65,7 +65,7 @@ export default function PresentPerfect() {
     {
       id: 3,
       title: "He ___________ (go) to Tanzania.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have gone" },
         { title: "b. has gone", correctAnswer: true },
       ],
@@ -75,7 +75,7 @@ export default function PresentPerfect() {
     {
       id: 4,
       title: "We ___________ (read) that magazine.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has read" },
         { title: "b. have read", correctAnswer: true },
       ],
@@ -85,7 +85,7 @@ export default function PresentPerfect() {
     {
       id: 5,
       title: "We ____________ (live) here for thirteen years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has lived", correctAnswer: true },
         { title: "b. have lived" },
       ],
@@ -95,7 +95,7 @@ export default function PresentPerfect() {
     {
       id: 6,
       title: "You ______________ Marcus for five years.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have known", correctAnswer: true },
         { title: "b. has known" },
       ],
@@ -105,7 +105,7 @@ export default function PresentPerfect() {
     {
       id: 7,
       title: "We ______________ (be) here for three weeks.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been", correctAnswer: true },
         { title: "b. has been" },
       ],
@@ -115,7 +115,7 @@ export default function PresentPerfect() {
     {
       id: 8,
       title: "I ___________ (study) Arabic.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has studied" },
         { title: "b. have studied", correctAnswer: true },
       ],
@@ -125,7 +125,7 @@ export default function PresentPerfect() {
     {
       id: 9,
       title: "I ______________ (lose) my phone.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have lost", correctAnswer: true },
         { title: "b. has lost" },
       ],
@@ -135,7 +135,7 @@ export default function PresentPerfect() {
     {
       id: 10,
       title: "He ______________ (drink) too much soda.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have drunk" },
         { title: "b. has drunk", correctAnswer: true },
       ],
@@ -145,7 +145,7 @@ export default function PresentPerfect() {
     {
       id: 11,
       title: "They ___________ (work) on the project a lot.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has worked" },
         { title: "b. have worked", correctAnswer: true },
       ],
@@ -155,7 +155,7 @@ export default function PresentPerfect() {
     {
       id: 12,
       title: "She ___________ (choose) a beautiful song.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have chosen" },
         { title: "b. has chosen", correctAnswer: true },
       ],
@@ -165,7 +165,7 @@ export default function PresentPerfect() {
     {
       id: 13,
       title: "We ___________ (visit) Thailand.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has visited" },
         { title: "b. have visited", correctAnswer: true },
       ],
@@ -175,7 +175,7 @@ export default function PresentPerfect() {
     {
       id: 14,
       title: "He ___________ (build) a sandcastle on the beach.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have built" },
         { title: "b. has built", correctAnswer: true },
       ],
@@ -185,7 +185,7 @@ export default function PresentPerfect() {
     {
       id: 15,
       title: "I ___________ (read) that book before.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has read" },
         { title: "b. have read", correctAnswer: true },
       ],
@@ -195,7 +195,7 @@ export default function PresentPerfect() {
     {
       id: 16,
       title: "You ______________ speak to the administrator.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have spoken", correctAnswer: true },
         { title: "b. has spoken" },
       ],
@@ -205,7 +205,7 @@ export default function PresentPerfect() {
     {
       id: 17,
       title: "We ______________ (be) here for three weeks.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have been", correctAnswer: true },
         { title: "b. has been" },
       ],
@@ -215,7 +215,7 @@ export default function PresentPerfect() {
     {
       id: 18,
       title: "I ___________ (study) Arabic.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. has studied" },
         { title: "b. have studied", correctAnswer: true },
       ],
@@ -225,7 +225,7 @@ export default function PresentPerfect() {
     {
       id: 19,
       title: "I ______________ (see) that movie.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have seen", correctAnswer: true },
         { title: "b. has seen" },
       ],
@@ -235,7 +235,7 @@ export default function PresentPerfect() {
     {
       id: 20,
       title: "He ______________ (buy) all the soda in the store.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. have bought" },
         { title: "b. has bought", correctAnswer: true },
       ],

@@ -55,47 +55,47 @@ export default function PhrasalVerbs3() {
         title="Take a quiz!"
         questions={[
           {
-            id: 1, 
+            id: 1,
             title: "I need to _______________ our bed before we move.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. take apart", correctAnswer: true },
               { title: "b. build up" },
             ],
             userAnswer: "",
           },
           {
-            id: 2, 
+            id: 2,
             title: "He ________________ her during their first date.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. put up with" },
               { title: "b. fell for", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 3, 
+            id: 3,
             title:
               "It's a great job offer, but because it means moving I need to __________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. build up" },
               { title: "b. think it over", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 4, 
+            id: 4,
             title:
               "I'm going to tell her how I feel today. It's better than letting things _______________.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. take apart" },
               { title: "b. build up", correctAnswer: true },
             ],
             userAnswer: "",
           },
           {
-            id: 5, 
+            id: 5,
             title: "She couldn't _____________ her job anymore so she quit.",
-            possibleAnswersAndExplanation: [
+            possibleAnswers: [
               { title: "a. think over" },
               { title: "b. put up with", correctAnswer: true },
             ],

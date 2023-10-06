@@ -46,7 +46,7 @@ export default function ListenVersusHear() {
     {
       id: 1,
       title: "I can ________ the baby crying.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen" },
       ],
@@ -56,7 +56,7 @@ export default function ListenVersusHear() {
     {
       id: 2,
       title: "Hey! _____ It's that spooky sound again.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. Listen", correctAnswer: true },
         { title: "b. Hear" },
       ],
@@ -66,7 +66,7 @@ export default function ListenVersusHear() {
     {
       id: 3,
       title: "I can't _____ you. My dad's vacuuming.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen" },
       ],
@@ -76,7 +76,7 @@ export default function ListenVersusHear() {
     {
       id: 4,
       title: "We _____ the car crash and ran outside to help.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listened to" },
         { title: "b. heard", correctAnswer: true },
       ],
@@ -86,7 +86,7 @@ export default function ListenVersusHear() {
     {
       id: 5,
       title: "Be quiet, please. I'm _____ the news.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hearing" },
         { title: "b. listening to", correctAnswer: true },
       ],
@@ -96,7 +96,7 @@ export default function ListenVersusHear() {
     {
       id: 6,
       title: "Hey Malcolm! Can you _________ that sound?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
       ],
@@ -107,7 +107,7 @@ export default function ListenVersusHear() {
     {
       id: 7,
       title: "I called out to grandma but she couldn't _____ me.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
       ],
@@ -117,7 +117,7 @@ export default function ListenVersusHear() {
     {
       id: 8,
       title: "Are you allowed to _____ music at work?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to", correctAnswer: true },
         { title: "b. hear" },
       ],
@@ -127,7 +127,7 @@ export default function ListenVersusHear() {
     {
       id: 9,
       title: "I haven't seen any lightning but I just _____ some thunder.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. heard", correctAnswer: true },
         { title: "b. listened to" },
       ],
@@ -137,7 +137,7 @@ export default function ListenVersusHear() {
     {
       id: 10,
       title: "Do you like to __________ Bacchata?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen to", correctAnswer: true },
       ],
@@ -147,7 +147,7 @@ export default function ListenVersusHear() {
     {
       id: 11,
       title: "I always ________ the birds singing in the morning.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
       ],
@@ -157,7 +157,7 @@ export default function ListenVersusHear() {
     {
       id: 12,
       title: "She couldn't _____ the teacher because of the noisy classroom.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
       ],
@@ -167,7 +167,7 @@ export default function ListenVersusHear() {
     {
       id: 13,
       title: "I can _____ the ocean waves from my bedroom window.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
       ],
@@ -177,7 +177,7 @@ export default function ListenVersusHear() {
     {
       id: 14,
       title: "Please, _____ to what I'm saying carefully.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen", correctAnswer: true },
       ],
@@ -188,7 +188,7 @@ export default function ListenVersusHear() {
       id: 15,
       title:
         "They were so engrossed in their conversation that they didn't even _____ the thunderstorm outside.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
       ],
@@ -198,7 +198,7 @@ export default function ListenVersusHear() {
     {
       id: 16,
       title: "Can you _____ the difference between those two sounds?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
       ],
@@ -208,7 +208,7 @@ export default function ListenVersusHear() {
     {
       id: 17,
       title: "I always _____ music while I work.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen to", correctAnswer: true },
       ],
@@ -218,7 +218,7 @@ export default function ListenVersusHear() {
     {
       id: 18,
       title: "I _____ a strange noise coming from the basement last night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. heard", correctAnswer: true },
         { title: "b. listened to" },
       ],
@@ -228,7 +228,7 @@ export default function ListenVersusHear() {
     {
       id: 19,
       title: "My mom loves to _____ classical music in the evening.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen to", correctAnswer: true },
       ],
@@ -238,7 +238,7 @@ export default function ListenVersusHear() {
     {
       id: 20,
       title: "Could you please _____ what the teacher just said?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
       ],

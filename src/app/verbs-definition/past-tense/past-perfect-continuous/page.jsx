@@ -25,22 +25,21 @@ export const metadata = {
     title: "Learn Past Perfect Continuous Tense | English in 8 Minutes",
     description:
       "Master the past perfect continuous tense in English with explanations, examples, and a quiz. English in Eight Minutes offers concise language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions in the United States.",
-      images: [
-        {
-          url: "images/logo.svg",
-          width: 800,
-          height: 600,
-        },
-        {
-          url: "images/logo.svg",
-          width: 1800,
-          height: 1600,
-          alt: "My custom alt",
-        },
-      ],
+    images: [
+      {
+        url: "images/logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "images/logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
   },
 };
-
 
 export default function PastPerfectContinuous() {
   const questionsArray = [
@@ -48,7 +47,7 @@ export default function PastPerfectContinuous() {
       id: 1,
       title:
         "She ________________ (work) at the company for three years when she got the promotion.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had worked" },
         { title: "b. had been working", correctAnswer: true },
       ],
@@ -60,7 +59,7 @@ export default function PastPerfectContinuous() {
       id: 2,
       title:
         "Alisha _______________ (go) to that store since 2013 when it moved.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had been going", correctAnswer: true },
         { title: "b. had gone" },
       ],
@@ -72,7 +71,7 @@ export default function PastPerfectContinuous() {
       id: 3,
       title:
         "The mechanic knew exactly what the problem was because he ____________  (examine) the car for a long time.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had examined" },
         { title: "b. had been examining", correctAnswer: true },
       ],
@@ -84,7 +83,7 @@ export default function PastPerfectContinuous() {
       id: 4,
       title:
         "He ______________ (drink) apple juice directly out of the carton when his dad walked into the kitchen.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had been drinking", correctAnswer: true },
         { title: "b. has drunk" },
       ],
@@ -97,7 +96,7 @@ export default function PastPerfectContinuous() {
       id: 5,
       title:
         "I _________________ (study) for hours when I fell asleep on the couch.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had studied" },
         { title: "b. had been studying", correctAnswer: true },
       ],
@@ -110,7 +109,7 @@ export default function PastPerfectContinuous() {
       id: 6,
       title:
         "She was angry because she ________________ (wait) for me for hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had waited" },
         { title: "b. had been waiting", correctAnswer: true },
       ],
@@ -121,7 +120,7 @@ export default function PastPerfectContinuous() {
     {
       id: 7,
       title: "Demetrius ____________ (teach) at the university since May.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had been teaching", correctAnswer: true },
         { title: "b. had taught" },
       ],
@@ -132,7 +131,7 @@ export default function PastPerfectContinuous() {
     {
       id: 8,
       title: "I ______________ (feel) a little sad.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had been feeling", correctAnswer: true },
         { title: "b. have felt" },
       ],
@@ -144,7 +143,7 @@ export default function PastPerfectContinuous() {
       id: 9,
       title:
         "He ______________ (eat) too much and that's why they think he got sick.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had been eating", correctAnswer: true },
         { title: "b. have eat" },
       ],
@@ -156,7 +155,7 @@ export default function PastPerfectContinuous() {
       id: 10,
       title:
         "They ________________ (argue) for days when Bia came up with a solution.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had argued" },
         { title: "b. had been arguing", correctAnswer: true },
       ],
@@ -168,7 +167,7 @@ export default function PastPerfectContinuous() {
       id: 11,
       title:
         "She felt tired because she ________________ (run) for hours in the marathon.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had run" },
         { title: "b. had been running", correctAnswer: true },
       ],
@@ -180,7 +179,7 @@ export default function PastPerfectContinuous() {
       id: 12,
       title:
         "The garden looked beautiful because they _______________ (work) on it all summer.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had worked" },
         { title: "b. had been working", correctAnswer: true },
       ],
@@ -192,7 +191,7 @@ export default function PastPerfectContinuous() {
       id: 13,
       title:
         "He was exhausted because he ____________ (dance) at the party all night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had danced" },
         { title: "b. had been dancing", correctAnswer: true },
       ],
@@ -204,7 +203,7 @@ export default function PastPerfectContinuous() {
       id: 14,
       title:
         "She had a sunburn because she ______________ (sunbathe) on the beach for hours.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had sunbathed" },
         { title: "b. had been sunbathing", correctAnswer: true },
       ],
@@ -216,7 +215,7 @@ export default function PastPerfectContinuous() {
       id: 15,
       title:
         "The kitchen smelled delicious because she ______________ (bake) cookies all afternoon.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had baked" },
         { title: "b. had been baking", correctAnswer: true },
       ],
@@ -228,7 +227,7 @@ export default function PastPerfectContinuous() {
       id: 16,
       title:
         "He had a sore throat because he _______________ (sing) for hours in the choir.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had sung" },
         { title: "b. had been singing", correctAnswer: true },
       ],
@@ -239,7 +238,7 @@ export default function PastPerfectContinuous() {
     {
       id: 17,
       title: "The field was muddy because it _______________ (rain) all night.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had rained" },
         { title: "b. had been raining", correctAnswer: true },
       ],
@@ -251,7 +250,7 @@ export default function PastPerfectContinuous() {
       id: 18,
       title:
         "She had a headache because she _______________ (read) for hours without a break.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had read" },
         { title: "b. had been reading", correctAnswer: true },
       ],
@@ -263,7 +262,7 @@ export default function PastPerfectContinuous() {
       id: 19,
       title:
         "The children were exhausted because they ______________ (play) in the park all day.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had played" },
         { title: "b. had been playing", correctAnswer: true },
       ],
@@ -275,7 +274,7 @@ export default function PastPerfectContinuous() {
       id: 20,
       title:
         "The room was disorganized because they ________________ (paint) it all weekend.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. had painted" },
         { title: "b. had been painting", correctAnswer: true },
       ],
