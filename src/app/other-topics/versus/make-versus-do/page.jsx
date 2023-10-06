@@ -52,7 +52,7 @@ export default function MakeVersusDo() {
         { title: "did", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English we do our best",
+      explanation: "In English we do our best.",
     },
     {
       id: 2,
@@ -63,7 +63,8 @@ export default function MakeVersusDo() {
         { title: "do", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English we do business",
+      explanation:
+        "In English we do business, considering it a general activity.",
     },
     {
       id: 3,
@@ -74,7 +75,8 @@ export default function MakeVersusDo() {
         { title: "do", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English we do chores",
+      explanation:
+        "In English we do chores, considering it a general activity.",
     },
 
     {
@@ -85,7 +87,7 @@ export default function MakeVersusDo() {
         { title: "do" },
       ],
       userAnswer: "",
-      explanation: "In English we make decisions",
+      explanation: "In English we make decisions.",
     },
     {
       id: 5,
@@ -95,7 +97,7 @@ export default function MakeVersusDo() {
         { title: "to do", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English we do crosswords because it's an activity",
+      explanation: "In English we do crosswords because it's an activity.",
     },
     {
       id: 6,
@@ -106,18 +108,18 @@ export default function MakeVersusDo() {
         { title: "make" },
       ],
       userAnswer: "",
-      explanation: "In English we do shopping because it's an activity",
+      explanation: "In English we do shopping because it's an activity.",
     },
     {
       id: 7,
       title:
-        " Demarcus  __________ a joke at the start of the meeting, but nobody laughed.",
+        "Demarcus  __________ a joke at the start of the meeting, but nobody laughed.",
       possibleAnswersAndExplanation: [
         { title: "made", correctAnswer: true },
         { title: "did" },
       ],
       userAnswer: "",
-      explanation: "In English we make jokes",
+      explanation: "In English we make jokes.",
     },
     {
       id: 8,
@@ -128,7 +130,7 @@ export default function MakeVersusDo() {
         { title: "doing" },
       ],
       userAnswer: "",
-      explanation: "In English we make noise, creating noise in a sense",
+      explanation: "In English we create, or make noise.",
     },
     {
       id: 9,
@@ -138,7 +140,7 @@ export default function MakeVersusDo() {
         { title: "do", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English we do dishes, washing dishes is an activity",
+      explanation: "In English we do dishes, washing dishes is an activity.",
     },
     {
       id: 10,
@@ -149,15 +151,15 @@ export default function MakeVersusDo() {
         { title: "make" },
       ],
       userAnswer: "",
-      explanation: "In English we do favors",
+      explanation: "In English we do favors.",
     },
     {
       id: 11,
       title:
         "When you're trying to solve a difficult puzzle, do you usually find it challenging to _________ progress?",
       possibleAnswersAndExplanation: [
-        { title: "make" },
-        { title: "do", correctAnswer: true },
+        { title: "make", correctAnswer: true },
+        { title: "do" },
       ],
       userAnswer: "",
       explanation: "In English, we make progress.",
@@ -165,14 +167,14 @@ export default function MakeVersusDo() {
     {
       id: 12,
       title:
-        "Sarah is talented and can ________ beautiful art with just a pencil and paper.",
+        "Sarah is talented and can ________ delicious desserts.",
       possibleAnswersAndExplanation: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
       userAnswer: "",
       explanation:
-        "In English, we make artwork because it's a creative process.",
+        "In English, we make food because it's a creative process.",
     },
     {
       id: 13,
@@ -188,7 +190,7 @@ export default function MakeVersusDo() {
     {
       id: 14,
       title:
-        "When you're feeling ill, what do you usually need to ________ to recover? Rest or exercise?",
+        "When you're feeling sad, what do you usually need to ________ to feel better? Rest or exercise?",
       possibleAnswersAndExplanation: [
         { title: "make" },
         { title: "do", correctAnswer: true },
@@ -199,13 +201,13 @@ export default function MakeVersusDo() {
     },
     {
       id: 15,
-      title: "The chef is known for her ability to ________ delicious dishes.",
+      title: "The chef is known for her ability to ________ delicious food.",
       possibleAnswersAndExplanation: [
         { title: "make", correctAnswer: true },
         { title: "do" },
       ],
       userAnswer: "",
-      explanation: "In English, we make dishes because it's a creation.",
+      explanation: "In English, we make food because it's a creation.",
     },
     {
       id: 16,
@@ -216,12 +218,12 @@ export default function MakeVersusDo() {
         { title: "do", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "In English, we do the right thing.",
+      explanation: "In English, we do things.",
     },
     {
       id: 17,
       title:
-        "When you're planning a trip, what do you need to ________ first: an itinerary or reservations?",
+        "When you're planning a trip, what do you need to ________ first?",
       possibleAnswersAndExplanation: [
         { title: "make" },
         { title: "do", correctAnswer: true },
@@ -260,7 +262,7 @@ export default function MakeVersusDo() {
         { title: "do" },
       ],
       userAnswer: "",
-      explanation: "In English, we make a list.",
+      explanation: "In English, we create or make a list.",
     },
   ];
 
@@ -276,17 +278,17 @@ export default function MakeVersusDo() {
           some help.
         </p>
         <p className={styles.grammar_explanation_paragraph}>
-          We use 'make' when we create or construct something.
+          We usually use 'make' when we create or construct something.
         </p>
         <ul className="page-examples">
           <li>She made a cake.</li>
           <li>I've made us some coffee.</li>
-          <li>Did you really make that scarf?</li>
+          <li>Did you really make that hat?</li>
         </ul>
         <p className={styles.grammar_explanation_paragraph}>
           We use 'do' for general activities and for actions you have to do,
-          like jobs or work. In this case, 'do' is often used with 'something',
-          'nothing', 'anything' or 'everything':
+          like jobs or work. In this case, 'do' is sometimes used with
+          'something', 'nothing', 'anything' or 'everything':
         </p>
         <ul className="page-examples">
           <li>What did you do on the weekend?</li>
@@ -294,13 +296,14 @@ export default function MakeVersusDo() {
           <li>The first thing I plan to do is build my resume.</li>
           <li>I didn't do anything yesterday.</li>
           <li>
-            She's fed up with doing everything herself. She needs some help.
+            She's fed up (frustrated) with doing everything herself. She needs
+            some help.
           </li>
         </ul>
         <h4 style={{ fontWeight: "bold" }}>
-          This exercise is extremely hard. There are many, many exceptions to the
-          rules. Don't feel bad if you make a lot of mistakes here. Take notes
-          and practice the exercise again (and again).
+          This exercise is extremely hard. There are many, many exceptions to
+          the rules. Don't feel bad if you make a lot of mistakes here. Take
+          notes and practice the exercise again (and again).
         </h4>
       </div>
       <QuizForm questionsArray={questionsArray} />

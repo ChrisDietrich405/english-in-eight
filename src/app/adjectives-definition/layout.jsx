@@ -5,7 +5,6 @@ import Head from "next/head";
 import styles from "../styles/layout.module.css";
 
 const Layout = ({ children }) => {
-
   return (
     <div>
       <section className={styles.main_container}>

@@ -1,6 +1,4 @@
-.page_title {
-  /* margin-bottom: 25px; */
-}
+
 
 .page_title h1 {
   color: var(--secondary);
@@ -8,14 +6,6 @@
 
 .page_body {
   margin: 10px 0;
-}
-
-.grammar_explanation_paragraph {
-  /* background-color: .d0e1fb;
-  color: .1b1b52;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid gray; */
 }
 
 .definition_pictures_container {

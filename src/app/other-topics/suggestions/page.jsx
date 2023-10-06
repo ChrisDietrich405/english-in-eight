@@ -9,7 +9,12 @@ const Suggestions = () => {
       <Container style={{ marginTop: "100px" }}>
         <Typography
           variant="h4"
-          sx={{ marginBottom: 4, textAlign: "center", fontWeight: "bold" }}
+          sx={{
+            width: "700px",
+            margin: "0 auto",
+            textAlign: "center",
+            fontWeight: "bold",
+          }}
         >
           How can you be successful learning English and successful learning
           from English in Eight Minutes?
