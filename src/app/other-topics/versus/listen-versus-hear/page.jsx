@@ -253,8 +253,16 @@ export default function ListenVersusHear() {
         <div className={styles.page_title}>
           <h1>Listen versus Hear</h1>
         </div>
+        <p className={styles.grammar_explanation_paragraph}>
+          <b>Hear</b> is the act of naturally perceiving sounds with your ears,
+          while <b>listen</b> involves actively paying attention and processing
+          the sounds or words you hear. Listening goes beyond only hearing; it
+          involves an active engagement.
+        </p>
 
-        <p>Listen is something you focus on doing:</p>
+        <p>
+          <b>Listen</b> is something you focus on doing:
+        </p>
         <ul className="page-examples">
           <li>
             I listened very carefully to what she said and wrote it all down.
@@ -263,27 +271,24 @@ export default function ListenVersusHear() {
         </ul>
 
         <p className={styles.grammar_explanation_paragraph}>
-          We <b>always</b> use <b>to</b> after listen before an object:
-          <ul>
-            <li>
-              Every morning I <b> listen to</b> my Mozart CD while I’m having
-              breakfast. It prepares me mentally for the day
-            </li>
-          </ul>
+          We <b>always</b> use <b>to</b> after listen before an object:{" "}
         </p>
-        <p className={styles.grammar_explanation_paragraph}>
-          <b>Hear</b> is the act of naturally perceiving sounds with your ears,
-          while <b>listen</b> involves actively paying attention and processing
-          the sounds or words you hear. Listening goes beyond only hearing; it
-          involves an active engagement.
+        <ul>
+          <li>
+            Every morning I <b> listen to</b> my Mozart CD while I’m having
+            breakfast. It prepares me mentally for the day
+          </li>
+        </ul>
+
+        <p>
+          <b>Hear</b> is something you don't focus on doing:
         </p>
-        <p>Hear is something you don't focus on doing:</p>
         <ul className="page-examples">
           <li> Suddenly I heard a noise. Someone was in the garden.</li>
           <li>Did you hear the thunder last night?</li>
           <li>The connection is very bad. I can’t hear you.</li>
         </ul>
-        <h4 style={{ color: "#1976d2" }}>
+        <h4 style={{ fontWeight: "bold" }}>
           This lesson is not easy, so don't worry if you make a lot of mistakes
           with the quiz. Remember practice makes perfect. Do the quiz as many
           time as you need.{" "}
