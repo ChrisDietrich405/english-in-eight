@@ -43,29 +43,29 @@ export default function Quiz(props) {
 
   const [submitted, setSubmitted] = useState(false);
 
-  // const submit = (event) => {
-  //   event.preventDefault();
-  //   setSubmitted(true);
-  //   console.log("Object", event);
-  // };
-
   const submit = (event) => {
     event.preventDefault();
-    const newEvent = Array.from(event.target);
-    const checkedAnswers = newEvent.filter((item) => item.checked);
-    const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
-      const elementId = entireQuestionObject.id.match(/\d*$/g);
-      console.log(elementId);
-      console.dir(entireQuestionObject.id);
-      return entireQuestionObject;
-    });
-
-    //newEvent represents an array of all of the inputs
-    // const answers = event.target.map((answer) => answer.checked);
-    // console.dir(newEvent);
-    // console.log(event.target.forEach(answer => console.log(answer)));
     setSubmitted(true);
+    console.log("Object", event);
   };
+
+  // const submit = (event) => {
+  //   event.preventDefault();
+  //   const newEvent = Array.from(event.target);
+  //   const checkedAnswers = newEvent.filter((item) => item.checked);
+  //   const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
+  //     const elementId = entireQuestionObject.id.match(/\d*$/g);
+  //     console.log(elementId);
+  //     console.dir(entireQuestionObject.id);
+  //     return entireQuestionObject;
+  //   });
+
+  //   //newEvent represents an array of all of the inputs
+  //   // const answers = event.target.map((answer) => answer.checked);
+  //   // console.dir(newEvent);
+  //   // console.log(event.target.forEach(answer => console.log(answer)));
+  //   setSubmitted(true);
+  // };
 
   const reset = (e) => {
     setAnswers({});

@@ -62,6 +62,14 @@ const Layout = ({ children }) => {
                 Listen vs Hear
               </Link>
             </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/versus/for-versus-to"
+              >
+                For vs To
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
