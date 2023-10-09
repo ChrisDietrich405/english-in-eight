@@ -1,5 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
+import { toast } from "react-toastify";
+
 import Button from "@mui/material/Button";
 import SelectAnswer from "../SelectAnswer";
 
@@ -26,14 +28,12 @@ export default function Quiz(props) {
   const [disable, setDisable] = useState(false);
   const [answers, setAnswers] = useState({});
   const [selectedAnswerTexts, setSelectedAnswerTexts] = useState({});
-  const [scrollTarget, setScrollTarget] = useState(0);
   const [cssProperties, setCssProperties] = useState({
     backgroundColor: "#1976d2;",
   });
 
   const [numberOfQuestionsCorrect, setNumberOfQuestionsCorrect] =
     useState(null);
-  // const [totalNumberOfQuestions, setTotalNumberOfQuestions] = useState(null)
 
   const topOfQuizRef = useRef(null);
 
@@ -47,15 +47,10 @@ export default function Quiz(props) {
 
   const [submitted, setSubmitted] = useState(false);
 
-  // const submit = (event) => {
-  //   event.preventDefault();
-  //   setSubmitted(true);
-  //   console.log("Object", event);
-  // };
-
   const submit = (event) => {
     event.preventDefault();
     const newEvent = Array.from(event.target);
+    console.log(newEvent);
 
     const checkedAnswers = newEvent.filter((item) => item.checked);
     const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
@@ -65,7 +60,6 @@ export default function Quiz(props) {
       );
 
       let rightAnswer = "";
-      // console.log(props.questionsArray);
 
       question.possibleAnswers.forEach((answer) => {
         if (answer.correctAnswer) {
@@ -78,7 +72,13 @@ export default function Quiz(props) {
 
     setNumberOfQuestionsCorrect(allQuestions.length);
 
-    //basic idea is we are matching from our array of questions from each quiz from each page to the question that the user clicked on the answer for
+    toast(
+      `You got ${allQuestions.length} out of ${props.questions.length} correct.`,
+      {
+        autoClose: 5000,
+        type: "success",
+      }
+    );
 
     setSubmitted(true);
   };
@@ -194,13 +194,13 @@ export default function Quiz(props) {
             )}
           </div>
         </form>
-        {numberOfQuestionsCorrect !== null ? (
+        {/* {numberOfQuestionsCorrect !== null ? (
           <div>
             {`You got ${numberOfQuestionsCorrect} out of ${props.questions.length} correct.`}{" "}
           </div>
         ) : (
           ""
-        )}
+        )} */}
       </div>
     </div>
   );
