@@ -31,6 +31,10 @@ export default function Quiz(props) {
     backgroundColor: "#1976d2;",
   });
 
+  const [numberOfQuestionsCorrect, setNumberOfQuestionsCorrect] =
+    useState(null);
+  // const [totalNumberOfQuestions, setTotalNumberOfQuestions] = useState(null)
+
   const topOfQuizRef = useRef(null);
 
   const select = (answer, i) => {
@@ -43,29 +47,41 @@ export default function Quiz(props) {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const submit = (event) => {
-    event.preventDefault();
-    setSubmitted(true);
-    console.log("Object", event);
-  };
-
   // const submit = (event) => {
   //   event.preventDefault();
-  //   const newEvent = Array.from(event.target);
-  //   const checkedAnswers = newEvent.filter((item) => item.checked);
-  //   const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
-  //     const elementId = entireQuestionObject.id.match(/\d*$/g);
-  //     console.log(elementId);
-  //     console.dir(entireQuestionObject.id);
-  //     return entireQuestionObject;
-  //   });
-
-  //   //newEvent represents an array of all of the inputs
-  //   // const answers = event.target.map((answer) => answer.checked);
-  //   // console.dir(newEvent);
-  //   // console.log(event.target.forEach(answer => console.log(answer)));
   //   setSubmitted(true);
+  //   console.log("Object", event);
   // };
+
+  const submit = (event) => {
+    event.preventDefault();
+    const newEvent = Array.from(event.target);
+
+    const checkedAnswers = newEvent.filter((item) => item.checked);
+    const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
+      const elementId = entireQuestionObject.id.match(/\d*$/g);
+      const question = props.questions.find(
+        (item) => item.id.toString() === elementId[0]
+      );
+
+      let rightAnswer = "";
+      // console.log(props.questionsArray);
+
+      question.possibleAnswers.forEach((answer) => {
+        if (answer.correctAnswer) {
+          rightAnswer = answer.title;
+        }
+      });
+
+      return rightAnswer === entireQuestionObject.value;
+    });
+
+    setNumberOfQuestionsCorrect(allQuestions.length);
+
+    //basic idea is we are matching from our array of questions from each quiz from each page to the question that the user clicked on the answer for
+
+    setSubmitted(true);
+  };
 
   const reset = (e) => {
     setAnswers({});
@@ -178,6 +194,13 @@ export default function Quiz(props) {
             )}
           </div>
         </form>
+        {numberOfQuestionsCorrect !== null ? (
+          <div>
+            {`You got ${numberOfQuestionsCorrect} out of ${props.questions.length} correct.`}{" "}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
