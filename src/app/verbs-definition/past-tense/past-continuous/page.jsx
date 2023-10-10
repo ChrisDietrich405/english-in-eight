@@ -45,17 +45,17 @@ export default function PastContinuous() {
     {
       id: 1,
       title:
-        "I ___________ (think) about a solution when Nia came up with a great idea.",
+        "I ___________ about a solution when Nia came up with a great idea.",
       possibleAnswers: [
-        { title: "a. was thinking" },
-        { title: "b. were thinking", correctAnswer: true },
+        { title: "a. was thinking", correctAnswer: true },
+        { title: "b. were thinking" },
       ],
       userAnswer: "",
       explanation: "Was is the correct form for I",
     },
     {
       id: 2,
-      title: "You ___________ (talk) loudly when the fight started.",
+      title: "You ___________  loudly when the fight started.",
       possibleAnswers: [
         { title: "a. were talking", correctAnswer: true },
         { title: "b. was talking" },
@@ -65,7 +65,7 @@ export default function PastContinuous() {
     },
     {
       id: 3,
-      title: "It __________ (rain) a lot when I noticed my car door was broken",
+      title: "It __________ a lot when I noticed my car door was broken",
       possibleAnswers: [
         { title: "a. were raining" },
         { title: "b. was raining", correctAnswer: true },
@@ -75,8 +75,7 @@ export default function PastContinuous() {
     },
     {
       id: 4,
-      title:
-        "They _____________ (work) on the computer when the teacher came into the room.",
+      title: "They _____________  on the computer all day.",
       possibleAnswers: [
         { title: "a. was working" },
         { title: "b. were working", correctAnswer: true },
@@ -86,7 +85,7 @@ export default function PastContinuous() {
     },
     {
       id: 5,
-      title: "He __________ (leave) when his boss called him.",
+      title: "He __________ when his boss called him.",
       possibleAnswers: [
         { title: "a. were leaving" },
         { title: "b. was leaving", correctAnswer: true },
@@ -97,7 +96,7 @@ export default function PastContinuous() {
     {
       id: 6,
       title:
-        "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
+        "I __________ some vegetables when he told me he had already ordered our lunch.",
       possibleAnswers: [
         { title: "a. were cutting" },
         { title: "b. was cutting", correctAnswer: true },
@@ -107,7 +106,7 @@ export default function PastContinuous() {
     },
     {
       id: 7,
-      title: "We _________ (talk) to our colleagues when they came in.",
+      title: "We _________ to our colleagues during the meeting.",
       possibleAnswers: [
         { title: "a. was talking" },
         { title: "b. were talking", correctAnswer: true },
@@ -117,7 +116,7 @@ export default function PastContinuous() {
     },
     {
       id: 8,
-      title: "He ___________ (make) dinner when the phone rang.",
+      title: "He ___________  dinner when the phone rang.",
       possibleAnswers: [
         { title: "a. was making", correctAnswer: true },
         { title: "b. were making" },
@@ -127,7 +126,7 @@ export default function PastContinuous() {
     },
     {
       id: 9,
-      title: "They ___________ (wash) clothes when they heard a noise.",
+      title: "They ___________ clothes when they heard a noise.",
       possibleAnswers: [
         { title: "a. were washing", correctAnswer: true },
         { title: "b. was washing" },
@@ -137,7 +136,7 @@ export default function PastContinuous() {
     },
     {
       id: 10,
-      title: "It ____________ (frustrate).",
+      title: "It ____________ .",
       possibleAnswers: [
         { title: "a. were frustrating" },
         { title: "b. was frustrating", correctAnswer: true },
@@ -147,49 +146,48 @@ export default function PastContinuous() {
     },
     {
       id: 11,
-      title:
-        "I ___________ (think) about a solution when Nia came up with a great idea.",
+      title: "I ___________ the solution when you made that great suggestion.",
       possibleAnswers: [
-        { title: "a. was thinking" },
-        { title: "b. were thinking", correctAnswer: true },
+        { title: "a. was considering", correctAnswer: true },
+        { title: "b. were considering" },
       ],
       userAnswer: "",
       explanation: "Was is the correct form for I",
     },
     {
       id: 12,
-      title: "You ___________ (talk) loudly when the fight started.",
+      title: "You ___________ for the documents this morning.",
       possibleAnswers: [
-        { title: "a. were talking", correctAnswer: true },
-        { title: "b. was talking" },
+        { title: "a. were looking", correctAnswer: true },
+        { title: "b. was looking" },
       ],
       userAnswer: "",
       explanation: "Were is the correct form for you",
     },
     {
       id: 13,
-      title: "It __________ (rain) a lot when I noticed my car door was broken",
+      title: "She ___________ to the concert when she heard the news.",
       possibleAnswers: [
-        { title: "a. were raining" },
-        { title: "b. was raining", correctAnswer: true },
+        { title: "a. was going", correctAnswer: true },
+        { title: "b. were going" },
       ],
       userAnswer: "",
-      explanation: "Was is the correct form for it",
+      explanation: "Was is the correct form for she",
     },
     {
       id: 14,
-      title:
-        "They _____________ (work) on the computer when the teacher came into the room.",
+      title: "They ___________ the problem before the meeting started.",
       possibleAnswers: [
-        { title: "a. was working" },
-        { title: "b. were working", correctAnswer: true },
+        { title: "a. were discussing", correctAnswer: true },
+        { title: "b. was discussing" },
       ],
       userAnswer: "",
       explanation: "Were is the correct form for they",
     },
     {
       id: 15,
-      title: "He __________ (leave) when his boss called him.",
+      title:
+        "He ___________ his keys on the kitchen counter when his wife came in the room.",
       possibleAnswers: [
         { title: "a. were leaving" },
         { title: "b. was leaving", correctAnswer: true },
@@ -199,54 +197,53 @@ export default function PastContinuous() {
     },
     {
       id: 16,
-      title:
-        "I __________ (cut) some vegetables when he told me he had already ordered our lunch.",
+      title: "We ___________ to the beach.",
       possibleAnswers: [
-        { title: "a. were cutting" },
-        { title: "b. was cutting", correctAnswer: true },
-      ],
-      userAnswer: "",
-      explanation: "Was is the correct form for I",
-    },
-    {
-      id: 17,
-      title: "We _________ (talk) to our colleagues when they came in.",
-      possibleAnswers: [
-        { title: "a. was talking" },
-        { title: "b. were talking", correctAnswer: true },
+        { title: "a. were going", correctAnswer: true },
+        { title: "b. was going" },
       ],
       userAnswer: "",
       explanation: "Were is the correct form for we",
     },
     {
-      id: 18,
-      title: "He ___________ (make) dinner when the phone rang.",
+      id: 17,
+      title: "You ___________ very tired yesterday.",
       possibleAnswers: [
-        { title: "a. was making", correctAnswer: true },
-        { title: "b. were making" },
+        { title: "a. was looking" },
+        { title: "b. were looking", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Was is the correct form for he",
+      explanation: "Were is the correct form for you",
+    },
+    {
+      id: 18,
+      title: "She ___________ her best to help him.",
+      possibleAnswers: [
+        { title: "a. was trying", correctAnswer: true },
+        { title: "b. were trying" },
+      ],
+      userAnswer: "",
+      explanation: "Was is the correct form for she",
     },
     {
       id: 19,
-      title: "They ___________ (wash) clothes when they heard a noise.",
+      title: "I ___________ to the gym every morning.",
       possibleAnswers: [
-        { title: "a. were washing", correctAnswer: true },
-        { title: "b. was washing" },
+        { title: "a. was going", correctAnswer: true },
+        { title: "b. were going" },
       ],
       userAnswer: "",
-      explanation: "Were is the correct form for they",
+      explanation: "Were is the correct form for I",
     },
     {
       id: 20,
-      title: "It ____________ (frustrate).",
+      title: "They ___________ their homework last night.",
       possibleAnswers: [
-        { title: "a. were frustrating" },
-        { title: "b. was frustrating", correctAnswer: true },
+        { title: "a. were doing", correctAnswer: true },
+        { title: "b. was doing" },
       ],
       userAnswer: "",
-      explanation: "Was is the correct form for it",
+      explanation: "Were is the correct form for they",
     },
   ];
 

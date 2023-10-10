@@ -32,7 +32,7 @@ const Future = () => {
           </Link>
           <Link
             className={styles.link}
-            href="/verbs-definition/past-tense/past-simple"
+            href="/verbs-definition/past-tense/past-continuous"
           >
             <Button variant="outlined">Past Continuous</Button>
           </Link>

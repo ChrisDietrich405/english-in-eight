@@ -241,7 +241,7 @@ export default function FutureContinuous() {
 
     {
       id: 19,
-      title: "Tonight, he _______________ (read) a book before going to bed.",
+      title: "Tonight, he _______________  a book before going to bed.",
       possibleAnswers: [
         { title: "a. will be read" },
         { title: "b. will be reading", correctAnswer: true },
@@ -253,7 +253,7 @@ export default function FutureContinuous() {
     {
       id: 20,
       title:
-        "In the afternoon, I _______________ (practice) my guitar for a few hours.",
+        "In the afternoon, I _______________ my guitar for a few hours.",
       possibleAnswers: [
         { title: "a. will be practice" },
         { title: "b. will be practicing", correctAnswer: true },

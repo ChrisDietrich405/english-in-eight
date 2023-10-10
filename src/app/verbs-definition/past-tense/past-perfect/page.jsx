@@ -44,7 +44,7 @@ export default function PastPerfect() {
   const questionsArray = [
     {
       id: 1,
-      title: "The train ____________ (leave) by the time I got to the station.",
+      title: "The train ____________ by the time I got to the station.",
       possibleAnswers: [
         { title: "a. had leave" },
         { title: "b. had left", correctAnswer: true },
@@ -65,7 +65,7 @@ export default function PastPerfect() {
     {
       id: 3,
       title:
-        "She _____________________ (send) the message before her brother apologized.",
+        "She _____________________ the message before her brother apologized.",
       possibleAnswers: [
         { title: "a. had send" },
         { title: "b. had sent", correctAnswer: true },
@@ -76,7 +76,7 @@ export default function PastPerfect() {
 
     {
       id: 4,
-      title: "He _____________ (play) football until last week.",
+      title: "He _____________ football until last week.",
       possibleAnswers: [
         { title: "a. had never play" },
         { title: "b. had never played", correctAnswer: true },
@@ -87,7 +87,7 @@ export default function PastPerfect() {
     {
       id: 5,
       title:
-        "After the storm _______________ (pass) we went outside to assess the damage.",
+        "After the storm _______________ we went outside to assess the damage.",
       possibleAnswers: [
         { title: "a. had pass" },
         { title: "b. had passed", correctAnswer: true },
@@ -98,7 +98,7 @@ export default function PastPerfect() {
 
     {
       id: 6,
-      title: "They ___________ (get) engaged before last year.",
+      title: "They ___________ engaged before last year.",
       possibleAnswers: [
         { title: "a. had get" },
         { title: "b. had gotten", correctAnswer: true },
@@ -108,7 +108,7 @@ export default function PastPerfect() {
     },
     {
       id: 7,
-      title: "We ___________ (meet) them before the party.",
+      title: "We ___________ them before the party.",
       possibleAnswers: [
         { title: "a. had met", correctAnswer: true },
         { title: "b. has meet" },
@@ -118,7 +118,7 @@ export default function PastPerfect() {
     },
     {
       id: 8,
-      title: "I __________ (fall) asleep before 8pm last night.",
+      title: "I __________ asleep before 8pm last night.",
       possibleAnswers: [
         { title: "a. had fall" },
         { title: "b. had fallen", correctAnswer: true },
@@ -128,7 +128,7 @@ export default function PastPerfect() {
     },
     {
       id: 9,
-      title: "We wished we ____________ (purchase) the winning ticket.",
+      title: "We wished we ____________ the winning ticket.",
       possibleAnswers: [
         { title: "a. had purchased", correctAnswer: true },
         { title: "b. had purchase" },
@@ -138,7 +138,7 @@ export default function PastPerfect() {
     },
     {
       id: 10,
-      title: "By the time we arrived, they _________ (eat) all the spaghetti.",
+      title: "By the time we arrived, they _________ all the spaghetti.",
       possibleAnswers: [
         { title: "a. had eat" },
         { title: "b. had eaten", correctAnswer: true },
@@ -148,7 +148,7 @@ export default function PastPerfect() {
     },
     {
       id: 11,
-      title: "She regretted that she ________ (miss) the meeting.",
+      title: "She regretted that she ________ the meeting.",
       possibleAnswers: [
         { title: "a. had miss" },
         { title: "b. had missed", correctAnswer: true },
@@ -158,7 +158,7 @@ export default function PastPerfect() {
     },
     {
       id: 12,
-      title: "Before he realized, the thief _________ (escape) from the scene.",
+      title: "Before he realized, the thief _________ from the scene.",
       possibleAnswers: [
         { title: "a. had escape" },
         { title: "b. had escaped", correctAnswer: true },
@@ -169,7 +169,7 @@ export default function PastPerfect() {
     {
       id: 13,
       title:
-        "They were surprised that she ________ (read) the entire book in one day.",
+        "They were surprised that she ________ the entire book in one day.",
       possibleAnswers: [
         { title: "a. had read", correctAnswer: true },
         { title: "b. had reading" },
@@ -180,7 +180,7 @@ export default function PastPerfect() {
     {
       id: 14,
       title:
-        "The company announced that they ________ (achieve) record profits last year.",
+        "The company announced that they ________ record profits last year.",
       possibleAnswers: [
         { title: "a. had achieve" },
         { title: "b. had achieved", correctAnswer: true },
@@ -190,7 +190,7 @@ export default function PastPerfect() {
     },
     {
       id: 15,
-      title: "Before the movie started, I ________ (buy) some popcorn.",
+      title: "Before the movie started, I ________ some popcorn.",
       possibleAnswers: [
         { title: "a. had buy" },
         { title: "b. had bought", correctAnswer: true },
@@ -201,7 +201,7 @@ export default function PastPerfect() {
     {
       id: 16,
       title:
-        "He couldn't believe that he ________ (lose) his wallet at the airport.",
+        "He couldn't believe that he ________ his wallet at the airport.",
       possibleAnswers: [
         { title: "a. had lose" },
         { title: "b. had lost", correctAnswer: true },
@@ -212,7 +212,7 @@ export default function PastPerfect() {
     {
       id: 17,
       title:
-        "Before the guests arrived, she ________ (prepare) a delicious meal.",
+        "Before the guests arrived, she ________  a delicious meal.",
       possibleAnswers: [
         { title: "a. had prepare" },
         { title: "b. had prepared", correctAnswer: true },
@@ -223,7 +223,7 @@ export default function PastPerfect() {
     {
       id: 18,
       title:
-        "They realized that they ________ (forget) to lock the front door.",
+        "They realized that they ________ to lock the front door.",
       possibleAnswers: [
         { title: "a. had forget" },
         { title: "b. had forgotten", correctAnswer: true },
@@ -233,7 +233,7 @@ export default function PastPerfect() {
     },
     {
       id: 19,
-      title: "She found out that her flight ________ (delay) by several hours.",
+      title: "She found out that her flight ________ by several hours.",
       possibleAnswers: [
         { title: "a. had delay" },
         { title: "b. had been delayed", correctAnswer: true },
@@ -243,7 +243,7 @@ export default function PastPerfect() {
     },
     {
       id: 20,
-      title: "Before the concert, the musicians ________ (practice) for weeks.",
+      title: "Before the concert, the musicians ________ for weeks.",
       possibleAnswers: [
         { title: "a. had practice" },
         { title: "b. had practiced", correctAnswer: true },
@@ -304,15 +304,6 @@ export default function PastPerfect() {
             </tr>
           </thead>
           <tbody>
-            {/* {data.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
           </tbody>
         </table>
 
@@ -321,11 +312,11 @@ export default function PastPerfect() {
             We <b>had already eaten</b> before you ordered lunch.
           </li>
           <li>
-            We had told her to get ready, but she <b>had already prepared</b>{" "}
+            We had told her to get ready, but she <b>had already prepared.</b>{" "}
             her bags
           </li>
           <li>
-            They <b>had started</b> the project before their boss told them to{" "}
+            They <b>had started</b> the project before their boss told them to.{" "}
           </li>
           <li>
             I <b>had finished</b> eating dinner by the time my wife came home.
