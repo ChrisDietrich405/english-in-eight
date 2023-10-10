@@ -50,30 +50,43 @@ export default function Quiz(props) {
   const submit = (event) => {
     event.preventDefault();
     const newEvent = Array.from(event.target);
-    console.log(newEvent);
-
+    //getting all the html elements and creating an array for the inputs (ignoring the div elements)
+    // console.log(newEvent);
     const checkedAnswers = newEvent.filter((item) => item.checked);
-    const allQuestions = checkedAnswers.filter((entireQuestionObject) => {
-      const elementId = entireQuestionObject.id.match(/\d*$/g);
-      const question = props.questions.find(
-        (item) => item.id.toString() === elementId[0]
-      );
+    //checked is radio button property. Here we are getting only the answered questions
+    // console.log(checkedAnswers);
+    const allAnsweredQuestions = checkedAnswers.filter(
+      (entireQuestionObject) => {
+        // console.log(entireQuestionObject.id); returns input_field8
 
-      let rightAnswer = "";
+        const elementId = entireQuestionObject.id.match(/\d*$/g);
+        // console.log(elementId); returns ['8', '']
+        const question = props.questions.find(
+          (item) => item.id.toString() === elementId[0]
+        );
+        console.log(question);
+        // this finds checked answer that the user clicks and matches it to the original array
 
-      question.possibleAnswers.forEach((answer) => {
-        if (answer.correctAnswer) {
-          rightAnswer = answer.title;
-        }
-      });
+        let rightAnswer = "";
 
-      return rightAnswer === entireQuestionObject.value;
-    });
+        question.possibleAnswers.forEach((answer) => {
+          if (answer.correctAnswer) {
+            rightAnswer = answer.title;
+          }
+        });
 
-    setNumberOfQuestionsCorrect(allQuestions.length);
+        console.log(rightAnswer);
+
+        //this question has all the matched question ids and then
+
+        return rightAnswer === entireQuestionObject.value;
+      }
+    );
+
+    setNumberOfQuestionsCorrect(allAnsweredQuestions.length);
 
     toast(
-      `You got ${allQuestions.length} out of ${props.questions.length} correct.`,
+      `You got ${allAnsweredQuestions.length} out of ${props.questions.length} correct.`,
       {
         autoClose: 5000,
         type: "success",

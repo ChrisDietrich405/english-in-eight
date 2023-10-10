@@ -114,7 +114,7 @@ export default function PresentPerfectContinuous() {
     {
       id: 8,
       title:
-        "We ______________________ (look) for your house for more than an .",
+        "We ______________________ (look) for your house for more than an hour.",
       possibleAnswers: [
         { title: "a. have been looking", correctAnswer: true },
         { title: "b. has looked" },
@@ -267,12 +267,10 @@ export default function PresentPerfectContinuous() {
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           The present perfect continuous expresses an action or situation that
-          started in the past and is still continuing or has just recently
-          stopped at the present moment. It is used to emphasize the length of
-          time.
-          {/* The
-        present perfect continuous is formed using the construction has/have
-        been + the present participle (root + -ing). */}
+          started in the past and is still continuing. It can also describe an
+          event that has very recently stopped. It is used to emphasize the
+          length of time. The present perfect continuous is formed using the
+          construction has/have been + the present participle (root + -ing).
         </p>
 
         <table className={styles.table}>
