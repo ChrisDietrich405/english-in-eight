@@ -3,8 +3,7 @@ import React from "react";
 
 const Acknowledgements = () => {
   return (
-    //nouns, verbs, adjectives finished
-    <Container style={{ marginTop: "100px" }}>
+    <div style={{ padding: "100px", backgroundColor: "#f3f0f0" }}>
       <h1 style={{ marginBottom: "50px", textAlign: "center" }}>
         Acknowledgements
       </h1>
@@ -58,7 +57,7 @@ const Acknowledgements = () => {
         https://www.youtube.com/watch?app=desktop&v=0_qGkFhqeps Remember versus
         remind
       </p>
-    </Container>
+    </div>
   );
 };
 

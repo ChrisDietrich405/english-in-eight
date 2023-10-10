@@ -261,7 +261,7 @@ export default function PastPerfect() {
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           The past perfect is used to explain that one action in the past
-          happened before another action in the past.
+          happened before another action in the past. We form it by using had + past participle. 
         </p>
 
         <table className={styles.table}>
@@ -312,8 +312,8 @@ export default function PastPerfect() {
             We <b>had already eaten</b> before you ordered lunch.
           </li>
           <li>
-            We had told her to get ready, but she <b>had already prepared.</b>{" "}
-            her bags
+            We had told her to get ready, but she <b>had already prepared</b>{" "}
+            her bags.
           </li>
           <li>
             They <b>had started</b> the project before their boss told them to.{" "}

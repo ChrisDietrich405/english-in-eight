@@ -56,7 +56,7 @@ export default function PastPerfectContinuous() {
 
     {
       id: 2,
-      title: "They _____________ house very well.",
+      title: "They _____________ the house very well.",
       possibleAnswers: [
         { title: "a. builded" },
         { title: "b. built", correctAnswer: true },
@@ -96,13 +96,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 6,
-      title: "We ________ too much this morning.",
+      title: "We didn't ________ a lot this morning.",
       possibleAnswers: [
-        { title: "a. ate", correctAnswer: true },
+        { title: "a. eat", correctAnswer: true },
         { title: "b. eated" },
       ],
       userAnswer: "",
-      explanation: "Ate is the past simple form for eat.",
+      explanation:
+        "Ate is the past simple form for eat, but because this sentence is negative eat doesn't change.",
     },
     {
       id: 7,
@@ -126,13 +127,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 9,
-      title: "They ___________ to the store.",
+      title: "They didn't ___________ to the store.",
       possibleAnswers: [
         { title: "a. wented" },
-        { title: "b. went", correctAnswer: true },
+        { title: "b. go", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Went is the past simple form for go.",
+      explanation:
+        "Went is the past simple form for go, but because this sentence is negative go doesn't change.",
     },
     {
       id: 10,
@@ -166,13 +168,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 13,
-      title: "They ____________ a delicious meal yesterday.",
+      title: "They didn't ____________ yesterday.",
       possibleAnswers: [
-        { title: "a. cook" },
-        { title: "b. cooked", correctAnswer: true },
+        { title: "a. cook", correctAnswer: true },
+        { title: "b. cooked" },
       ],
       userAnswer: "",
-      explanation: "Cooked is the past simple form for cook.",
+      explanation:
+        "Cooked is the past simple form for cook, but because this is a negative sentence cook doesn't change.",
     },
     {
       id: 14,
@@ -206,13 +209,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 17,
-      title: "I ____________ my keys in the car yesterday.",
+      title: "I didn't ____________ my keys at the house.",
       possibleAnswers: [
-        { title: "a. leave" },
-        { title: "b. left", correctAnswer: true },
+        { title: "a. leave", correctAnswer: true },
+        { title: "b. left" },
       ],
       userAnswer: "",
-      explanation: "Left is the past simple form for leave.",
+      explanation:
+        "Left is the past simple form for leave, but because this sentence is negative leave doesn't change.",
     },
     {
       id: 18,
@@ -236,13 +240,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 20,
-      title: "They ____________ their grandparents yesterday.",
+      title: "They ____________ their grandparents.",
       possibleAnswers: [
-        { title: "a. visit" },
-        { title: "b. visited", correctAnswer: true },
+        { title: "a. visit", correctAnswer: true },
+        { title: "b. visited" },
       ],
       userAnswer: "",
-      explanation: "Visited is the past simple form for visit.",
+      explanation:
+        "Visited is the past simple form for visit, but because this is a negative sentence visit doesn't change.",
     },
     {
       id: 21,
@@ -263,11 +268,12 @@ export default function PastPerfectContinuous() {
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         {" "}
-        The simple past, also known as the past simple, is a verb tense used to
-        describe actions, events, or states that occurred and were completed in
-        the past. It is one of the basic verb tenses in English and is generally
-        used to express actions that happened at a specific time in the past, or
-        to narrate a sequence of events in the past.
+        The past simple, is a verb tense used to describe actions, events, or
+        states that occurred and were completed in the past. First let's look at
+        the regular verbs which simply add <b>ed</b> to the end in the
+        affirmative. Notice that for the negative the second verb doesn't
+        change. For example it's <b>"I didn't walk"</b>, not{" "}
+        <b>"I didn't walked"</b>
       </p>
 
       <table className={styles.table}>
@@ -285,9 +291,9 @@ export default function PastPerfectContinuous() {
             <td>I didn't walk</td>
           </tr>
           <tr>
-            <td>You ate</td>
-            <td>You did not eat</td>
-            <td>You didn't eat</td>
+            <td>You talked</td>
+            <td>You did not talk</td>
+            <td>You didn't talk</td>
           </tr>
           <tr>
             <td>She, he, it worked</td>
@@ -295,33 +301,62 @@ export default function PastPerfectContinuous() {
             <td>She, he, it didn't work</td>
           </tr>
           <tr>
-            <td>We talked</td>
-            <td>We did not talk</td>
-            <td>We didn't talk</td>
+            <td>We cooked</td>
+            <td>We did not cook</td>
+            <td>We didn't cook</td>
           </tr>
           <tr>
             <td>They danced</td>
             <td>They did not dance</td>
             <td>They didn't dance</td>
           </tr>
-          {/* {data.map((item) => {
-            return (
-              <tr>
-                <td>{item.positive}</td>
-                <td>{item.negative}</td>
-                <td>{item.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
+        </tbody>
+      </table>
+
+      <p>
+        For irregular verbs, things are more challenging. Verbs can change a
+        lot. For these verbs you will need to do a lot of memorization. Notice
+        again that in the negative the verb doesn't change.
+      </p>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I ate</td>
+            <td>I did not eat</td>
+            <td>I didn't eat</td>
+          </tr>
+          <tr>
+            <td>You fought</td>
+            <td>You did not fight</td>
+            <td>You didn't fight</td>
+          </tr>
+          <tr>
+            <td>She, he, it taught</td>
+            <td>She, he, it did not teach</td>
+            <td>She, he, it didn't teach</td>
+          </tr>
+          <tr>
+            <td>We sang</td>
+            <td>We did not sing</td>
+            <td>We didn't sing</td>
+          </tr>
+          <tr>
+            <td>They built</td>
+            <td>They did not build</td>
+            <td>They didn't build</td>
+          </tr>
         </tbody>
       </table>
 
       <div className="page-body">
-        <p>
-          For irregular verbs, things are more challenging. For example the
-          simple past tense of some irregular verbs look exactly like the root
-          form:
-        </p>
+        <p>Some irregular verbs look exactly like the root form.</p>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -335,11 +370,6 @@ export default function PastPerfectContinuous() {
               <td>I put</td>
               <td>I did not put</td>
               <td>I didn't put</td>
-            </tr>
-            <tr>
-              <td>They hit</td>
-              <td>They did not hit</td>
-              <td>They didn't hit</td>
             </tr>
             <tr>
               <td>You set</td>
@@ -356,17 +386,18 @@ export default function PastPerfectContinuous() {
               <td>We did not cut</td>
               <td>We didn't cut</td>
             </tr>
+            <tr>
+              <td>They hit</td>
+              <td>They did not hit</td>
+              <td>They didn't hit</td>
+            </tr>
           </tbody>
         </table>
 
-        <p>
-          {" "}
-          For other irregular verbs, the simple past forms are much different
-          than their infinitive forms:
-        </p>
+        <p>Here's another short list of irregular verbs</p>
         <ul className="page-examples">
           <li>buy changes to bought</li>
-          <li>eat changes to ate</li>
+          <li>catch changes to caught</li>
           <li>build changes to built</li>
           <li>see changes to saw</li>
           <li>go changes to went</li>

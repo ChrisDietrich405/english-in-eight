@@ -294,15 +294,6 @@ export default function PastContinuous() {
               <td>They were not talking</td>
               <td>They weren't talking</td>
             </tr>
-            {/* {data.map((verb) => {
-              return (
-                <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
-                </tr>
-              );
-            })} */}
           </tbody>
         </table>
       </div>
@@ -338,8 +329,7 @@ export default function PastContinuous() {
             She <b>was working</b> in Morocco in November.
           </li>
           <li>
-            At the end of the meeting, everyone at the meeting{" "}
-            <b>was still arguing</b>.
+            At the end of the meeting, everyone <b>was still arguing</b>.
           </li>
         </ul>
       </div>
