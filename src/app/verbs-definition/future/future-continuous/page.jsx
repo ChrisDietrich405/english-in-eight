@@ -45,7 +45,7 @@ export default function FutureContinuous() {
   const questionsArray = [
     {
       id: 1,
-      title: "In an hour she _______________ (clean) the bathrooms.",
+      title: "In an hour she _______________ the bathrooms.",
       possibleAnswers: [
         { title: "a. will be cleaning", correctAnswer: true },
         { title: "b. will be clean" },
@@ -55,7 +55,7 @@ export default function FutureContinuous() {
     },
     {
       id: 2,
-      title: "Next month they _______________ (complain) about this.",
+      title: "Next month they _______________ about this.",
       possibleAnswers: [
         { title: "a. will be complain" },
         { title: "b. will be complaining", correctAnswer: true },
@@ -66,7 +66,7 @@ export default function FutureContinuous() {
     {
       id: 3,
       title:
-        "Unfortunately, sea levels will ____________ (rise) in the next 30 years.",
+        "Unfortunately, sea levels will ____________ in the next 30 years.",
       possibleAnswers: [
         { title: "a. will still be rise" },
         { title: "b. will still be rising", correctAnswer: true },
@@ -76,7 +76,7 @@ export default function FutureContinuous() {
     },
     {
       id: 4,
-      title: "I ______________ (see) Marcus at the conference next week.",
+      title: "I ______________  Marcus at the conference next week.",
       possibleAnswers: [
         { title: "a. will be see" },
         { title: "b. will be seeing", correctAnswer: true },
@@ -96,7 +96,7 @@ export default function FutureContinuous() {
     },
     {
       id: 6,
-      title: "Miguel _____________ (compete) in a marathon next month.",
+      title: "Miguel _____________ in a marathon next month.",
       possibleAnswers: [
         { title: "a. will be competing", correctAnswer: true },
         { title: "b. will be compete" },
@@ -116,7 +116,7 @@ export default function FutureContinuous() {
     },
     {
       id: 8,
-      title: "Demarcus _______________ (run) in the race.",
+      title: "Demarcus _______________ in the race.",
       possibleAnswers: [
         { title: "a. will also be running", correctAnswer: true },
         { title: "b. will also be run" },
@@ -125,7 +125,7 @@ export default function FutureContinuous() {
     },
     {
       id: 9,
-      title: "He _____________ (sleep) when you telephone him.",
+      title: "He _____________ when you telephone him.",
       possibleAnswers: [
         { title: "a. will be sleep" },
         { title: "b. will be sleeping", correctAnswer: true },
@@ -135,7 +135,7 @@ export default function FutureContinuous() {
     },
     {
       id: 10,
-      title: "I _____________ (play) hockey in the afternoon tomorrow.",
+      title: "I _____________ hockey in the afternoon tomorrow.",
       possibleAnswers: [
         { title: "a. will be play" },
         { title: "b. will be playing", correctAnswer: true },
@@ -146,7 +146,7 @@ export default function FutureContinuous() {
     {
       id: 11,
       title:
-        "At this time tomorrow, she _______________ (prepare) for her big presentation.",
+        "At this time tomorrow, she _______________  for her big presentation.",
       possibleAnswers: [
         { title: "a. will be prepare" },
         { title: "b. will be preparing", correctAnswer: true },
@@ -158,7 +158,7 @@ export default function FutureContinuous() {
     {
       id: 12,
       title:
-        "By the end of the week, they _______________ (travel) to five different cities.",
+        "By the end of the week, they _______________  to five different cities.",
       possibleAnswers: [
         { title: "a. will be travel" },
         { title: "b. will be traveling", correctAnswer: true },
@@ -170,7 +170,7 @@ export default function FutureContinuous() {
     {
       id: 13,
       title:
-        "Tomorrow morning, I _______________ (meet) Sarah at the coffee shop.",
+        "Tomorrow morning, I _______________ Sarah at the coffee shop.",
       possibleAnswers: [
         { title: "a. will be meet" },
         { title: "b. will be meeting", correctAnswer: true },
@@ -182,7 +182,7 @@ export default function FutureContinuous() {
     {
       id: 14,
       title:
-        "In a few hours, he _______________ (take) his final exam for the semester.",
+        "In a few hours, he _______________ his final exam for the semester.",
       possibleAnswers: [
         { title: "a. will be take" },
         { title: "b. will be taking", correctAnswer: true },
@@ -194,7 +194,7 @@ export default function FutureContinuous() {
     {
       id: 15,
       title:
-        "While on vacation, we _______________ (explore) the beautiful beaches of Hawaii.",
+        "While on vacation, we _______________  the beautiful beaches of Hawaii.",
       possibleAnswers: [
         { title: "a. will be explore" },
         { title: "b. will be exploring", correctAnswer: true },
@@ -206,7 +206,7 @@ export default function FutureContinuous() {
     {
       id: 16,
       title:
-        "During the summer break, Miguel _______________ (work) on a special project.",
+        "During the summer break, Miguel _______________ on a special project.",
       possibleAnswers: [
         { title: "a. will be work" },
         { title: "b. will be working", correctAnswer: true },
@@ -218,7 +218,7 @@ export default function FutureContinuous() {
     {
       id: 17,
       title:
-        "Later tonight, I _______________ (watch) a documentary about space exploration.",
+        "Later tonight, I _______________  a documentary about space exploration.",
       possibleAnswers: [
         { title: "a. will be watch" },
         { title: "b. will be watching", correctAnswer: true },
@@ -230,7 +230,7 @@ export default function FutureContinuous() {
     {
       id: 18,
       title:
-        "During the holidays, Demarcus _______________ (visit) his family in another city.",
+        "During the holidays, Demarcus _______________ his family in another city.",
       possibleAnswers: [
         { title: "a. will be visit" },
         { title: "b. will be visiting", correctAnswer: true },

@@ -71,9 +71,9 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex"}}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" style={{height: "72px"}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -88,8 +88,8 @@ function DrawerAppBar(props) {
             <Image
               className={styles.navbar_logo}
               src="/images/english.svg"
-              width={104}
-              height={104}
+              width={120}
+              height={120}
               alt="Picture of the logo"
               sx={{ display: { xs: "none", sm: "block" } }}
             />
