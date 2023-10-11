@@ -57,6 +57,10 @@ const Acknowledgements = () => {
         https://www.youtube.com/watch?app=desktop&v=0_qGkFhqeps Remember versus
         remind
       </p>
+      <p>
+        Photo by Christina Morillo:
+        https://www.pexels.com/photo/two-woman-in-black-sits-on-chair-near-table-1181605/
+      </p>
     </div>
   );
 };

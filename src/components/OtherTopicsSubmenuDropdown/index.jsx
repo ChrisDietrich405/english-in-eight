@@ -77,6 +77,10 @@ export default function CustomizedMenus() {
       link: "/other-topics/suggestions",
     },
     {
+      title: "Blogs",
+      link: "/other-topics/blogs",
+    },
+    {
       title: "Acknowledgements",
       link: "/other-topics/acknowledgements",
     },
