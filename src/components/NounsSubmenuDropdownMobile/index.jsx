@@ -98,7 +98,7 @@ export default function CustomizedMenus() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : ""}
         variant="contained"
-        disableElevation
+        disableelevation="true"
         onClick={handleClick}
       >
         Nouns
@@ -114,8 +114,12 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         {/* <Dropdown submenuList={submenuList} /> */}
-        {submenuList.map(({ link, title }) => {
-          return <Link href={link}>{title}</Link>;
+        {submenuList.map(({ link, title }, index) => {
+          return (
+            <Link key={`subment-item-${index}`} href={link}>
+              {title}
+            </Link>
+          );
         })}
       </StyledMenu>
     </>

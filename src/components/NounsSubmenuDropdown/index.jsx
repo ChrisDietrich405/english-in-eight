@@ -98,7 +98,7 @@ export default function CustomizedMenus() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : ""}
         variant="contained"
-        disableElevation
+        disableelevation="true"
         onClick={handleClick}
       >
         Nouns

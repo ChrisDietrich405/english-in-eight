@@ -313,18 +313,7 @@ export default function FutureContinuous() {
             <td>They will not be running</td>
             <td>They won't be running</td>
           </tr>
-          {/* <tbody>
-          {verbs.map((verb) => {
-            return (
-              <tr>
-              <td>{verb.positive}</td>
-              <td>{verb.positiveShortForm}</td>
-              <td>{verb.negative}</td>
-              <td>{verb.negativeShortForm}</td>
-              </tr>
-              );
-            })}
-          </tbody> */}
+      
         </tbody>
       </table>
 

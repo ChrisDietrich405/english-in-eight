@@ -95,7 +95,7 @@ export default function CustomizedMenus() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         variant="contained"
-        disableElevation
+        disableelevation="true"
         onClick={handleClick}
       >
         Verbs
@@ -111,7 +111,6 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <Dropdown dropdownProps={dropdownProps} />
-
       </StyledMenu>
     </>
   );

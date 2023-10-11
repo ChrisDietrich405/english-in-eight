@@ -56,8 +56,8 @@ function DrawerAppBar(props) {
       </Link>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        {navItems.map((item, index) => (
+          <ListItem key={`list-item-${index}`} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
@@ -71,9 +71,9 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex"}}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" style={{height: "72px"}}>
+      <AppBar component="nav" style={{ height: "72px" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -98,8 +98,8 @@ function DrawerAppBar(props) {
           <Box
             sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
           >
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+            {navItems.map((item, index) => (
+              <Button key={`button${index}`} sx={{ color: "#fff" }}>
                 {item}
               </Button>
             ))}

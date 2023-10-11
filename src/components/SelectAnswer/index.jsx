@@ -68,7 +68,7 @@ const SelectAnswer = ({
     <>
       <li className={styles.answer_option}>
         <input
-          id={"input_field" + questionId}
+          id={`input_field-${index}-${questionId}`}
           disabled={submitted}
           onClick={onClick}
           name={"twoPossibleAnswers" + questionId}
@@ -76,7 +76,7 @@ const SelectAnswer = ({
           className={styles.radio_button}
           value={possibleAnswer.title}
         />
-        <label htmlFor={"input_field" + questionId + index}>
+        <label htmlFor={`input_field-${index}-${questionId}`}>
           <span style={{ marginRight: "3px" }} className={getTextColor()}>
             {possibleAnswer.title} {getEmoji()}
           </span>
