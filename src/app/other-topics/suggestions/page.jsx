@@ -5,19 +5,11 @@ import styles from "./styles.module.css";
 
 const Suggestions = () => {
   return (
-    <div style={{ paddingTop: "100px", backgroundColor: "#f3f0f0" }}>
-      <Typography
-        variant="h4"
-        sx={{
-          width: "700px",
-          margin: "0 auto",
-          textAlign: "center",
-          fontWeight: "bold",
-        }}
-      >
+    <div style={{ padding: "100px", backgroundColor: "#f3f0f0" }}>
+      <h1 className={styles.page_title}>
         How can you be successful learning English and successful learning from
         English in Eight Minutes?
-      </Typography>
+      </h1>
 
       <Container>
         <Grid container spacing={4} my={4}>

@@ -321,16 +321,6 @@ export default function PresentContinuous() {
                 <td>They are not running</td>
                 <td>They aren't running</td>
               </tr>
-              {/* {data.map((verb) => {
-              return (
-                <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.positiveShortForm}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
-                </tr>
-              );
-            })} */}
             </tbody>
           </table>
 

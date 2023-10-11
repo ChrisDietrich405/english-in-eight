@@ -44,7 +44,7 @@ export default function PresentPerfect() {
   const questionsArray = [
     {
       id: 1,
-      title: "She ___________ (eat) tofu.",
+      title: "She ___________  tofu.",
       possibleAnswers: [
         { title: "a. has eaten", correctAnswer: true },
         { title: "b. have eaten" },
@@ -54,7 +54,7 @@ export default function PresentPerfect() {
     },
     {
       id: 2,
-      title: "They ______________ (miss) their flight.",
+      title: "They ______________ their flight.",
       possibleAnswers: [
         { title: "a. have missed", correctAnswer: true },
         { title: "b. has missed" },
@@ -64,7 +64,7 @@ export default function PresentPerfect() {
     },
     {
       id: 3,
-      title: "He ___________ (go) to Tanzania.",
+      title: "He ___________ to Tanzania.",
       possibleAnswers: [
         { title: "a. have gone" },
         { title: "b. has gone", correctAnswer: true },
@@ -74,7 +74,7 @@ export default function PresentPerfect() {
     },
     {
       id: 4,
-      title: "We ___________ (read) that magazine.",
+      title: "We ___________ that magazine.",
       possibleAnswers: [
         { title: "a. has read" },
         { title: "b. have read", correctAnswer: true },
@@ -84,10 +84,10 @@ export default function PresentPerfect() {
     },
     {
       id: 5,
-      title: "We ____________ (live) here for thirteen years.",
+      title: "We ____________ here for thirteen years.",
       possibleAnswers: [
-        { title: "a. has lived", correctAnswer: true },
-        { title: "b. have lived" },
+        { title: "a. has lived" },
+        { title: "b. have lived", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Have is the correct form for we.",
@@ -104,7 +104,7 @@ export default function PresentPerfect() {
     },
     {
       id: 7,
-      title: "We ______________ (be) here for three weeks.",
+      title: "We ______________ here for three weeks.",
       possibleAnswers: [
         { title: "a. have been", correctAnswer: true },
         { title: "b. has been" },
@@ -114,7 +114,7 @@ export default function PresentPerfect() {
     },
     {
       id: 8,
-      title: "I ___________ (study) Arabic.",
+      title: "I ___________ Arabic.",
       possibleAnswers: [
         { title: "a. has studied" },
         { title: "b. have studied", correctAnswer: true },
@@ -124,7 +124,7 @@ export default function PresentPerfect() {
     },
     {
       id: 9,
-      title: "I ______________ (lose) my phone.",
+      title: "I ______________ my phone.",
       possibleAnswers: [
         { title: "a. have lost", correctAnswer: true },
         { title: "b. has lost" },
@@ -134,7 +134,7 @@ export default function PresentPerfect() {
     },
     {
       id: 10,
-      title: "He ______________ (drink) too much soda.",
+      title: "He ______________ too much soda.",
       possibleAnswers: [
         { title: "a. have drunk" },
         { title: "b. has drunk", correctAnswer: true },
@@ -144,7 +144,7 @@ export default function PresentPerfect() {
     },
     {
       id: 11,
-      title: "They ___________ (work) on the project a lot.",
+      title: "They ___________ on the project a lot.",
       possibleAnswers: [
         { title: "a. has worked" },
         { title: "b. have worked", correctAnswer: true },
@@ -154,7 +154,7 @@ export default function PresentPerfect() {
     },
     {
       id: 12,
-      title: "She ___________ (choose) a beautiful song.",
+      title: "She ___________ a beautiful song.",
       possibleAnswers: [
         { title: "a. have chosen" },
         { title: "b. has chosen", correctAnswer: true },
@@ -164,7 +164,7 @@ export default function PresentPerfect() {
     },
     {
       id: 13,
-      title: "We ___________ (visit) Thailand.",
+      title: "We ___________ Thailand.",
       possibleAnswers: [
         { title: "a. has visited" },
         { title: "b. have visited", correctAnswer: true },
@@ -174,7 +174,7 @@ export default function PresentPerfect() {
     },
     {
       id: 14,
-      title: "He ___________ (build) a sandcastle on the beach.",
+      title: "He ___________ a sandcastle on the beach.",
       possibleAnswers: [
         { title: "a. have built" },
         { title: "b. has built", correctAnswer: true },
@@ -184,7 +184,7 @@ export default function PresentPerfect() {
     },
     {
       id: 15,
-      title: "I ___________ (read) that book before.",
+      title: "I ___________ that book before.",
       possibleAnswers: [
         { title: "a. has read" },
         { title: "b. have read", correctAnswer: true },
@@ -204,7 +204,7 @@ export default function PresentPerfect() {
     },
     {
       id: 17,
-      title: "We ______________ (be) here for three weeks.",
+      title: "We ______________ here for three weeks.",
       possibleAnswers: [
         { title: "a. have been", correctAnswer: true },
         { title: "b. has been" },
@@ -214,7 +214,7 @@ export default function PresentPerfect() {
     },
     {
       id: 18,
-      title: "I ___________ (study) Arabic.",
+      title: "I ___________ (study) microbiology.",
       possibleAnswers: [
         { title: "a. has studied" },
         { title: "b. have studied", correctAnswer: true },
@@ -224,7 +224,7 @@ export default function PresentPerfect() {
     },
     {
       id: 19,
-      title: "I ______________ (see) that movie.",
+      title: "We ______________ (see) that series.",
       possibleAnswers: [
         { title: "a. have seen", correctAnswer: true },
         { title: "b. has seen" },
@@ -298,16 +298,6 @@ export default function PresentPerfect() {
               <td>They have not eaten</td>
               <td>They haven't eaten</td>
             </tr>
-            {/* {data.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
           </tbody>
         </table>
 
@@ -323,7 +313,7 @@ export default function PresentPerfect() {
         <h4>When the time period mentioned hasn't ended</h4>
         <ul className="page-examples">
           <li>It has snowed a lot this winter.</li>
-          <li>I have worked very hard tody.</li>
+          <li>I have worked very hard today.</li>
           <li>They haven't seen him today.</li>
         </ul>
         <h4>Actions began in the past and continuing into the present</h4>

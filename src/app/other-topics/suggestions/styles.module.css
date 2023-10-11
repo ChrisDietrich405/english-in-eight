@@ -1,5 +1,11 @@
-.list_container li {
+.page_title {
+  color: var(--secondary);
+  text-align: center;
+  width: 70%; 
+  margin: 0 auto; 
+}
 
+.list_container li {
   position: relative;
   margin-left: 20px;
   margin-bottom: 18px;
