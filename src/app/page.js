@@ -5,11 +5,14 @@ import Link from "next/link";
 import { FaTreeCity } from "react-icons/fa6";
 import { FaRunning, FaAngry } from "react-icons/fa";
 
-import "./styles/globals.css";
-
 import { Grid, Card, Container } from "@mui/material";
 
+import "./styles/globals.css";
 import styles from "./page.module.css";
+
+import time from "../../public/images/time-is-money.svg";
+import speak from "../../public/images/speak.svg";
+import getup from "../../public/images/get-up.svg";
 
 export const metadata = {
   title: "Home | English in Eight Minutes",
@@ -217,7 +220,8 @@ export default function Home() {
                           alt=""
                           width={325}
                           height={100}
-                          src="images/time-is-money.svg"
+                          src={time}
+                          // src="images/time-is-money.svg"
                         />
                       </div>
                     </Link>
@@ -258,7 +262,7 @@ export default function Home() {
                           alt="get up icon"
                           width={200}
                           height={100}
-                          src="images/get-up.svg"
+                          src={getup}
                         />
                       </div>
                     </Link>
@@ -296,7 +300,7 @@ export default function Home() {
                           alt="speech bubble icon"
                           width={325}
                           height={100}
-                          src="images/speak.svg"
+                          src={speak}
                         />
                       </div>
                     </Link>

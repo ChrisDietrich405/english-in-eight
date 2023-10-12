@@ -25,6 +25,8 @@ import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
+import logo from "../../../public/images/english.svg";
+
 import styles from "../../app/styles/content-page.module.css";
 
 const drawerWidth = 240;
@@ -48,7 +50,7 @@ function DrawerAppBar(props) {
       <Link href="/">
         <Image
           className={styles.navbar_logo}
-          src="/images/english.svg"
+          src={logo}
           width={150}
           height={150}
           alt="Picture of the author"

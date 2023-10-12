@@ -61,6 +61,7 @@ const Acknowledgements = () => {
         Photo by Christina Morillo:
         https://www.pexels.com/photo/two-woman-in-black-sits-on-chair-near-table-1181605/
       </p>
+      <p>https://commons.wikimedia.org/wiki/File:Kiss_of_love.jpg</p>
     </div>
   );
 };
