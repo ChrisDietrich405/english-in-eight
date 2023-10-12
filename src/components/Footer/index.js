@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import { Grid, Button, TextField, Container } from "@mui/material";
 import * as Validator from "validatorjs";
 
@@ -226,15 +225,6 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Container>
-        {/* <Image
-          style={{ overflow: "hidden" }}
-          // className={styles.navbar_logo}
-          src="/images/wave.svg"
-          width={1200}
-          height={120}
-          alt="Picture of the logo"
-          sx={{ display: { xs: "none", sm: "block" } }}
-        /> */}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1976d2"

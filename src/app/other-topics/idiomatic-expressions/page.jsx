@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Card } from "@mui/material";
+
+// const time = "../../../../public/images/time-is-money.jpg";
+
 import styles from "../../styles/content-page.module.css";
 
 export default function ExpressionsDefinition() {
@@ -18,7 +21,7 @@ export default function ExpressionsDefinition() {
             <Image
               width={300}
               height={200}
-              src="/time-is-money.jpg"
+              src="/mind-your-business.jpg"
               className="other-topics-image"
               aria-hidden="true"
             />
@@ -42,7 +45,7 @@ export default function ExpressionsDefinition() {
               {" "}
               In the expression <strong>mind your own business</strong> we
               aren't referring to any business at all. We are telling another
-              person to not invade our privacy
+              person to not invade our privacy.
             </p>
           </div>
         </Card>
