@@ -1,4 +1,3 @@
-//https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 import Image from "next/image";
 import Link from "next/link";
 import { Grid, Card, Container } from "@mui/material";

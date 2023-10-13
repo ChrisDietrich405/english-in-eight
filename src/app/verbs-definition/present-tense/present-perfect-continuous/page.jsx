@@ -260,7 +260,7 @@ export default function PresentPerfectContinuous() {
   ];
 
   return (
-    <>
+    <main>
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Present Perfect Continuous</h1>
@@ -313,16 +313,6 @@ export default function PresentPerfectContinuous() {
               <td>They have not been sitting</td>
               <td>They haven't been sitting</td>
             </tr>
-            {/* {verbs.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
           </tbody>
         </table>
 
@@ -360,6 +350,6 @@ export default function PresentPerfectContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }
