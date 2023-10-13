@@ -33,7 +33,7 @@ export default function ForVersusTo() {
       ],
       userAnswer: "",
       explanation:
-        "to is used to indicate the direction of communication or the target of the speech",
+        "To is used to indicate the direction of communication or the target of the speech",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ export default function ForVersusTo() {
       ],
       userAnswer: "",
       explanation:
-        "to is used to indicate the direction of communication or the target of the speech",
+        "To is used to indicate the direction of communication or the target of the speech",
     },
     {
       id: 5,
@@ -86,7 +86,7 @@ export default function ForVersusTo() {
       ],
       userAnswer: "",
       explanation:
-        "to is used to indicate the direction of communication or the target of the speech",
+        "To is used to indicate the direction of communication or the target of the speech",
     },
     {
       id: 9,
@@ -157,7 +157,7 @@ export default function ForVersusTo() {
       ],
       userAnswer: "",
       explanation:
-        "This is an example of a motive/purpose/reason followed by a verb",
+        "This is an example of a motive/purpose/reason followed by a verb.",
     },
     {
       id: 16,
@@ -220,9 +220,7 @@ export default function ForVersusTo() {
         <div className={styles.page_title}>
           <h1>For versus To</h1>
         </div>
-
         <h4>Use TO in the following situations:</h4>
-
         <p>Giving</p>
         <ul className="page-examples">
           <li>
@@ -241,7 +239,6 @@ export default function ForVersusTo() {
             I'm going <b>to</b> the store.”
           </li>
         </ul>
-
         <p>Distance</p>
         <ul className="page-examples">
           <li>
@@ -251,7 +248,6 @@ export default function ForVersusTo() {
             It's 3 hours <b>to</b> the Washington.”
           </li>
         </ul>
-
         <h4>Use FOR in the following situations:</h4>
         <p>Benefits</p>
         <ul className="page-examples">
@@ -265,7 +261,7 @@ export default function ForVersusTo() {
         <p>Purpose (with -ing verb)</p>
         <ul className="page-examples">
           <li>
-            A helmet is used<b>for</b> protecting your head.
+            A helmet is used <b>for</b> protecting your head.
           </li>
           <li>
             This tool is used <b>for</b> cutting metal.”
@@ -291,26 +287,32 @@ export default function ForVersusTo() {
             I can cook <b>for</b> you if you're tired.”
           </li>
         </ul>
-
+        <h5>
+          When referring to motive/purpose/reason it get's a little complicated.{" "}
+        </h5>
         <p>
-          When referring to motive/purpose/reason it get's a little complicated.
-          If you follow the preposition with a noun you use for.
+          {" "}
+          If you follow the preposition with a noun you use <b>for</b>.
         </p>
         <ul className="page-examples">
           <li>
-            <p>
-              I'm going out <b>for</b> food
-            </p>
+            I'm going out <b>for</b> food
           </li>
           <li>
             I work hard <b>for</b> you if you're tired.
           </li>
         </ul>
-
         <p>
-          Example: . However if the follow the preposition with a verb you need
-          to use to. Example: She went to find her friend
+          If you follow the preposition with a verb you use <b>to</b>.
         </p>
+        <ul className="page-examples">
+          <li>
+            I'm going out <b>to</b> eat.
+          </li>
+          <li>
+            I volunteer a lot <b>to</b> help others.
+          </li>
+        </ul>
       </div>
       <QuizForm questionsArray={questionsArray} />
     </main>
