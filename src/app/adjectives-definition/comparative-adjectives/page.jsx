@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Learn about comparative adjectives in English with English in Eight Minutes. Understand the rules for forming comparative adjectives and test your knowledge with a quiz.",
   keywords:
-    "English, Comparative Adjectives, English grammar, English in Eight Minutes",
+    "English, Comparative Adjectives, Test, English grammar, English in Eight Minutes",
   robots: {
     index: true,
     follow: true,

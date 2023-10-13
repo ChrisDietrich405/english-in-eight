@@ -8,7 +8,7 @@ export const metadata = {
   keywords:
     "English, present perfect, grammar, tense, past experiences, actions with a connection to the present",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {

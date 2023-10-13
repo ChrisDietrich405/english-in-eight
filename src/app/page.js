@@ -16,7 +16,7 @@ export const metadata = {
   keywords:
     "English, language lessons, phrasal verbs, grammar, idiomatic expressions, United States",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {

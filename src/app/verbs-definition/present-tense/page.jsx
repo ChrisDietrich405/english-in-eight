@@ -10,7 +10,7 @@ export const metadata = {
   keywords:
     "present tense verbs, English, grammar, present simple, present continuous, present perfect, present perfect continuous",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
