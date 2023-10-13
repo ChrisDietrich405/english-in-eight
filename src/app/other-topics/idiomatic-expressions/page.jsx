@@ -21,7 +21,8 @@ export default function ExpressionsDefinition() {
             <Image
               width={300}
               height={200}
-              src="/mind-your-business.jpg"
+              src="/time-is-money.jpg"
+              alt="Time is money idiomatice expression pic"
               className="other-topics-image"
               aria-hidden="true"
             />
@@ -38,6 +39,7 @@ export default function ExpressionsDefinition() {
               width={300}
               height={200}
               src="/mind-your-business.jpg"
+              alt="Mind your business idiomatice expression pic"
               className="other-topics-image"
               aria-hidden="true"
             />

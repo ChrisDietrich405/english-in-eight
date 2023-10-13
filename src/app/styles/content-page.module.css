@@ -109,6 +109,14 @@
     flex-direction: column;
   }
 
+  .link {
+    margin-bottom: 10px;
+  }
+
+  .link_button {
+    min-width: 100%;
+  }
+
   .iframe_wrapper {
     margin: 0 auto;
     width: 280px;

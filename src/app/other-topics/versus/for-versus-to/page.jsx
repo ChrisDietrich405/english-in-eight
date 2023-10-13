@@ -7,7 +7,7 @@ export default function ForVersusTo() {
     {
       id: 1,
       title: "I bought this ________ you.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
       ],
@@ -17,7 +17,7 @@ export default function ForVersusTo() {
     {
       id: 2,
       title: "She loves _____ sing.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -27,7 +27,7 @@ export default function ForVersusTo() {
     {
       id: 3,
       title: "They want to speak _______ you.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -38,7 +38,7 @@ export default function ForVersusTo() {
     {
       id: 4,
       title: "I admitted my mistake _____ my boss.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. for" },
         { title: "b. to", correctAnswer: true },
       ],
@@ -49,7 +49,7 @@ export default function ForVersusTo() {
     {
       id: 5,
       title: "My brother would be happy to do that _______ you.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
       ],
@@ -59,7 +59,7 @@ export default function ForVersusTo() {
     {
       id: 6,
       title: "I really like cooking ______ my girlfriend",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
       ],
@@ -70,7 +70,7 @@ export default function ForVersusTo() {
     {
       id: 7,
       title: "We are going ______ Vietnam.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -80,7 +80,7 @@ export default function ForVersusTo() {
     {
       id: 8,
       title: "He needs to report that _____ his boss?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -91,7 +91,7 @@ export default function ForVersusTo() {
     {
       id: 9,
       title: "Do you want me to make a reservation _____ us?",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
       ],
@@ -101,7 +101,7 @@ export default function ForVersusTo() {
     {
       id: 10,
       title: "I went there ______ a conference",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
       ],
@@ -111,7 +111,7 @@ export default function ForVersusTo() {
     {
       id: 11,
       title: "I work ___ a big company.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
       ],
@@ -121,7 +121,7 @@ export default function ForVersusTo() {
     {
       id: 12,
       title: "Don't donate ____ that charity. It's corrupt",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
       ],
@@ -131,7 +131,7 @@ export default function ForVersusTo() {
     {
       id: 13,
       title: "I am going ______ Kenya this summer.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -141,7 +141,7 @@ export default function ForVersusTo() {
     {
       id: 14,
       title: "I made the appointment _____ Friday.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen", correctAnswer: true },
       ],
@@ -151,7 +151,7 @@ export default function ForVersusTo() {
     {
       id: 15,
       title: "I wanted _____ do it",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -162,7 +162,7 @@ export default function ForVersusTo() {
     {
       id: 16,
       title: "She did it _______ love",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
       ],
@@ -173,7 +173,7 @@ export default function ForVersusTo() {
     {
       id: 17,
       title: "Can you deliver this letter _____ me.",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
       ],
@@ -183,7 +183,7 @@ export default function ForVersusTo() {
     {
       id: 18,
       title: "They tried ______ resolve the problem .",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -194,7 +194,7 @@ export default function ForVersusTo() {
     {
       id: 19,
       title: "We gave a lot of clothes ______ them",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. for" },
         { title: "b. to", correctAnswer: true },
       ],
@@ -204,7 +204,7 @@ export default function ForVersusTo() {
     {
       id: 20,
       title: "He wanted _____ talk to you",
-      possibleAnswersAndExplanation: [
+      possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
       ],
@@ -216,43 +216,100 @@ export default function ForVersusTo() {
 
   return (
     <main>
-      <div className={styles.page_body}>
+      <div>
         <div className={styles.page_title}>
           <h1>For versus To</h1>
         </div>
 
-        <p className={styles.grammar_explanation_paragraph}>
-          <h3>Use TO in the following situations:</h3>
-        </p>
+        <h4>Use TO in the following situations:</h4>
+
         <p>Giving</p>
-        <p>She gave it to me.</p>
+        <ul className="page-examples">
+          <li>
+            She gave it <b> to </b>me.
+          </li>
+          <li>
+            I donated <b>to</b> to Farm Santuary.
+          </li>
+        </ul>
         <p>Destination</p>
-        <p>I'm travelling to Lima.”</p>
+        <ul className="page-examples">
+          <li>
+            I'm travelling <b>to</b> Lima.”
+          </li>
+          <li>
+            I'm going <b>to</b> the store.”
+          </li>
+        </ul>
+
         <p>Distance</p>
-        <p>It’s 20 minutes from my job to my house.</p>
+        <ul className="page-examples">
+          <li>
+            It’s 20 minutes from my job <b>to</b> my house.
+          </li>
+          <li>
+            It's 3 hours <b>to</b> the Washington.”
+          </li>
+        </ul>
 
-        <p className={styles.grammar_explanation_paragraph}>
-          Use FOR in the following situations:
-        </p>
-
-        <p>Calendar</p>
-        <p>I made an appointment for May 3.”</p>
+        <h4>Use FOR in the following situations:</h4>
         <p>Benefits</p>
-        <p>Exercising is great for your health.</p>
+        <ul className="page-examples">
+          <li>
+            Exercising is great <b>for</b> your health.
+          </li>
+          <li>
+            I eat a lot of vegetables <b>for</b> the fiber.”
+          </li>
+        </ul>
         <p>Purpose (with -ing verb)</p>
-        <p>A helmet is used for protecting your head.</p>
-        <p>Agreement</p>
-        <p>Are you for or against the development of nuclear weapons?</p>
+        <ul className="page-examples">
+          <li>
+            A helmet is used<b>for</b> protecting your head.
+          </li>
+          <li>
+            This tool is used <b>for</b> cutting metal.”
+          </li>
+        </ul>
         <p>Assisting someone</p>
-        <p>Could you carry these books for me?</p>
+        <ul className="page-examples">
+          <li>
+            Could you carry these books <b>for</b> me?
+          </li>
+          <li>
+            I can cook <b>for</b> you if you're tired.”
+          </li>
+        </ul>
         <p>Length of time</p>
-        <p>We’ve lived here for 2 years.</p>
+        <ul className="page-examples">
+          <li>
+            <p>
+              We’ve lived here <b>for</b> 2 years.
+            </p>
+          </li>
+          <li>
+            I can cook <b>for</b> you if you're tired.”
+          </li>
+        </ul>
 
         <p>
           When referring to motive/purpose/reason it get's a little complicated.
-          If you follow the preposition with a noun you use for. Example: I'm
-          going out for food. However if the follow the preposition with a verb
-          you need to use to. Example: She went to find her friend
+          If you follow the preposition with a noun you use for.
+        </p>
+        <ul className="page-examples">
+          <li>
+            <p>
+              I'm going out <b>for</b> food
+            </p>
+          </li>
+          <li>
+            I work hard <b>for</b> you if you're tired.
+          </li>
+        </ul>
+
+        <p>
+          Example: . However if the follow the preposition with a verb you need
+          to use to. Example: She went to find her friend
         </p>
       </div>
       <QuizForm questionsArray={questionsArray} />

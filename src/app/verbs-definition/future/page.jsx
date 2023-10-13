@@ -23,25 +23,27 @@ const Future = () => {
             className={styles.link}
             href="/verbs-definition/future/future-simple"
           >
-            <Button variant="outlined">Future Simple</Button>
+            <Button className={styles.link_button} variant="outlined">
+              Future Simple
+            </Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/future/future-continuous"
           >
-            <Button variant="outlined">Future Continuous</Button>
+            <Button className={styles.link_button} variant="outlined">Future Continuous</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/future/future-perfect"
           >
-            <Button variant="outlined">Future Perfect</Button>
+            <Button className={styles.link_button} variant="outlined">Future Perfect</Button>
           </Link>
           <Link
             className={styles.link}
             href="/verbs-definition/future/future-perfect-continuous"
           >
-            <Button variant="outlined">Future Perfect Continuous</Button>
+            <Button className={styles.link_button} variant="outlined">Future Perfect Continuous</Button>
           </Link>
         </div>
       </div>
