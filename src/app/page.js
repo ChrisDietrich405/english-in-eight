@@ -60,7 +60,12 @@ export default function Home() {
       <main className={styles.home} sx={{ padding: "0px !important" }}>
         <div className={styles.banner}>
           <div className="image-container">
-            <Image src="/flag.png" alt="Image Alt Text" layout="fill" />
+            <Image
+              src="/flag.png"
+              alt="Image Alt Text"
+              layout="fill"
+              loading="eager"
+            />
             <div className="overlay-text">
               <h2>Welcome to English in Eight Minutes!</h2>
             </div>
