@@ -27,15 +27,16 @@ export const metadata = {
       "Learn about the future continuous tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -169,8 +170,7 @@ export default function FutureContinuous() {
 
     {
       id: 13,
-      title:
-        "Tomorrow morning, I _______________ Sarah at the coffee shop.",
+      title: "Tomorrow morning, I _______________ Sarah at the coffee shop.",
       possibleAnswers: [
         { title: "a. will be meet" },
         { title: "b. will be meeting", correctAnswer: true },
@@ -252,8 +252,7 @@ export default function FutureContinuous() {
 
     {
       id: 20,
-      title:
-        "In the afternoon, I _______________ my guitar for a few hours.",
+      title: "In the afternoon, I _______________ my guitar for a few hours.",
       possibleAnswers: [
         { title: "a. will be practice" },
         { title: "b. will be practicing", correctAnswer: true },
@@ -264,7 +263,7 @@ export default function FutureContinuous() {
   ];
 
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Future Continuous</h1>
       </div>
@@ -313,7 +312,6 @@ export default function FutureContinuous() {
             <td>They will not be running</td>
             <td>They won't be running</td>
           </tr>
-      
         </tbody>
       </table>
 
@@ -342,6 +340,6 @@ export default function FutureContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

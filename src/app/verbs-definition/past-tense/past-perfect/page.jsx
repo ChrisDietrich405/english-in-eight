@@ -26,15 +26,16 @@ export const metadata = {
       "Learn about the past perfect tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -200,8 +201,7 @@ export default function PastPerfect() {
     },
     {
       id: 16,
-      title:
-        "He couldn't believe that he ________ his wallet at the airport.",
+      title: "He couldn't believe that he ________ his wallet at the airport.",
       possibleAnswers: [
         { title: "a. had lose" },
         { title: "b. had lost", correctAnswer: true },
@@ -211,8 +211,7 @@ export default function PastPerfect() {
     },
     {
       id: 17,
-      title:
-        "Before the guests arrived, she ________  a delicious meal.",
+      title: "Before the guests arrived, she ________  a delicious meal.",
       possibleAnswers: [
         { title: "a. had prepare" },
         { title: "b. had prepared", correctAnswer: true },
@@ -222,8 +221,7 @@ export default function PastPerfect() {
     },
     {
       id: 18,
-      title:
-        "They realized that they ________ to lock the front door.",
+      title: "They realized that they ________ to lock the front door.",
       possibleAnswers: [
         { title: "a. had forget" },
         { title: "b. had forgotten", correctAnswer: true },
@@ -254,14 +252,15 @@ export default function PastPerfect() {
   ];
 
   return (
-    <>
+    <main>
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Past Perfect</h1>
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           The past perfect is used to explain that one action in the past
-          happened before another action in the past. We form it by using had + past participle. 
+          happened before another action in the past. We form it by using had +
+          past participle.
         </p>
 
         <table className={styles.table}>
@@ -303,8 +302,7 @@ export default function PastPerfect() {
               <td>They hadn't thought</td>
             </tr>
           </thead>
-          <tbody>
-          </tbody>
+          <tbody></tbody>
         </table>
 
         <ul className="page-examples">
@@ -334,6 +332,6 @@ export default function PastPerfect() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

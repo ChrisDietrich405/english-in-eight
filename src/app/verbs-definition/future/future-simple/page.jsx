@@ -27,15 +27,16 @@ export const metadata = {
       "Learn about the future simple tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -263,19 +264,73 @@ export default function FutureSimple() {
   ];
 
   return (
-    <>
-      <main className="page-body">
-        <div className={styles.page_title}>
-          <h1>Future Simple</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
-          {" "}
-          The future simple is a verb tense that's used to talk about things
-          that haven't happened yet. For example, next year she{" "}
-          <b>will change</b> careers. There are two ways to express the future.
-          You can use <b>will</b> or <b>going to</b> depending on the situation.
-        </p>
-        <p>The first way to express the simple future</p>
+    <main className="page-body">
+      <div className={styles.page_title}>
+        <h1>Future Simple</h1>
+      </div>
+      <p className={styles.grammar_explanation_paragraph}>
+        {" "}
+        The future simple is a verb tense that's used to talk about things that
+        haven't happened yet. For example, next year she <b>will change</b>{" "}
+        careers. There are two ways to express the future. You can use{" "}
+        <b>will</b> or <b>going to</b> depending on the situation.
+      </p>
+      <p>The first way to express the simple future</p>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I am going to eat</td>
+            <td>I'm going to eat</td>
+            <td>I am not going to eat</td>
+            <td>I'm not going to eat</td>
+          </tr>
+          <tr>
+            <td>You are going to play</td>
+            <td>You're going to play</td>
+            <td>You are not going to play</td>
+            <td>You're not going to play</td>
+          </tr>
+          <tr>
+            <td>She, he, it is going to work</td>
+            <td>She, he, it's going to work</td>
+            <td>She, he, it is not going to work</td>
+            <td>She, he, it's not going to work</td>
+          </tr>
+          <tr>
+            <td>We are going to swim</td>
+            <td>We're going to swim</td>
+            <td>We are not going to swim</td>
+            <td>We're not going to swim</td>
+          </tr>
+          <tr>
+            <td>They are going to finish</td>
+            <td>They're going to finish</td>
+            <td>They are not going to finish</td>
+            <td>They're not going to finish</td>
+          </tr>
+          {/* {dataGo.map((verb) => {
+            return (
+              <tr>
+                <td>{verb.positive}</td>
+                <td>{verb.positiveShortForm}</td>
+                <td>{verb.negative}</td>
+                <td>{verb.negativeShortForm}</td>
+              </tr>
+            );
+          })} */}
+        </tbody>
+      </table>
+
+      <div className="page-body">
+        <p>The second way to express the simple future</p>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -287,91 +342,36 @@ export default function FutureSimple() {
           </thead>
           <tbody>
             <tr>
-              <td>I am going to eat</td>
-              <td>I'm going to eat</td>
-              <td>I am not going to eat</td>
-              <td>I'm not going to eat</td>
+              <td>I will eat</td>
+              <td>I'll eat</td>
+              <td>I will not eat</td>
+              <td>I won't eat</td>
             </tr>
             <tr>
-              <td>You are going to play</td>
-              <td>You're going to play</td>
-              <td>You are not going to play</td>
-              <td>You're not going to play</td>
+              <td>You will relax</td>
+              <td>You'll relax</td>
+              <td>You will not relax</td>
+              <td>You won't relax</td>
             </tr>
             <tr>
-              <td>She, he, it is going to work</td>
-              <td>She, he, it's going to work</td>
-              <td>She, he, it is not going to work</td>
-              <td>She, he, it's not going to work</td>
+              <td>She, he, it will work</td>
+              <td>She, he, it'll work</td>
+              <td>She, he, it will not work</td>
+              <td>She, he, it won't work</td>
             </tr>
             <tr>
-              <td>We are going to swim</td>
-              <td>We're going to swim</td>
-              <td>We are not going to swim</td>
-              <td>We're not going to swim</td>
+              <td>We will talk</td>
+              <td>We'll talk</td>
+              <td>We will not talk</td>
+              <td>We won't talk</td>
             </tr>
             <tr>
-              <td>They are going to finish</td>
-              <td>They're going to finish</td>
-              <td>They are not going to finish</td>
-              <td>They're not going to finish</td>
+              <td>They will fight</td>
+              <td>They'll fight</td>
+              <td>They will not fight</td>
+              <td>They won't fight</td>
             </tr>
-            {/* {dataGo.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
-          </tbody>
-        </table>
-
-        <div className="page-body">
-          <p>The second way to express the simple future</p>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Positive</th>
-                <th>Positive short form</th>
-                <th>Negative</th>
-                <th>Negative short form</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>I will eat</td>
-                <td>I'll eat</td>
-                <td>I will not eat</td>
-                <td>I won't eat</td>
-              </tr>
-              <tr>
-                <td>You will relax</td>
-                <td>You'll relax</td>
-                <td>You will not relax</td>
-                <td>You won't relax</td>
-              </tr>
-              <tr>
-                <td>She, he, it will work</td>
-                <td>She, he, it'll work</td>
-                <td>She, he, it will not work</td>
-                <td>She, he, it won't work</td>
-              </tr>
-              <tr>
-                <td>We will talk</td>
-                <td>We'll talk</td>
-                <td>We will not talk</td>
-                <td>We won't talk</td>
-              </tr>
-              <tr>
-                <td>They will fight</td>
-                <td>They'll fight</td>
-                <td>They will not fight</td>
-                <td>They won't fight</td>
-              </tr>
-              {/* {dataWill.map((verb) => {
+            {/* {dataWill.map((verb) => {
               return (
                 <tr>
                   <td>{verb.positive}</td>
@@ -381,51 +381,50 @@ export default function FutureSimple() {
                 </tr>
               );
             })} */}
-            </tbody>
-          </table>
+          </tbody>
+        </table>
 
-          <p>
-            {" "}
-            We use <b>going to </b> for prior plans and in situations where
-            something is probably going to happen.
-          </p>
-          <ul className="page-examples">
-            <li>We're going to go to the movies this weekend. (prior plan)</li>
-            <li>
-              My team is winning 8-2. They're going to win. (probably going to
-              happen)
-            </li>
-          </ul>
-          <p>
-            {" "}
-            We use <b>will</b> with refusals, offers and promises.
-          </p>
-          <ul className="page-examples">
-            <li>She won't listen to me. (refusal)</li>
-            <li>You look tired. I will help you with your homework. (offer)</li>
-            <li>I love you very much. I will never leave you. (promise)</li>
-          </ul>
-          <p>
-            {" "}
-            We can use <b>will</b> or <b>going to</b> for predictions.
-          </p>
-          <ul className="page-examples">
-            <li>I predict she will win the election.</li>
-            <li>I predict she's going to win the election.</li>
-          </ul>
-        </div>
-        <QuizForm questionsArray={questionsArray} />
-        <iframe
-          className={styles.iframe_wrapper}
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/tri7u632AaA?si=Br_dxsWwJec0QBq9"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </main>
-    </>
+        <p>
+          {" "}
+          We use <b>going to </b> for prior plans and in situations where
+          something is probably going to happen.
+        </p>
+        <ul className="page-examples">
+          <li>We're going to go to the movies this weekend. (prior plan)</li>
+          <li>
+            My team is winning 8-2. They're going to win. (probably going to
+            happen)
+          </li>
+        </ul>
+        <p>
+          {" "}
+          We use <b>will</b> with refusals, offers and promises.
+        </p>
+        <ul className="page-examples">
+          <li>She won't listen to me. (refusal)</li>
+          <li>You look tired. I will help you with your homework. (offer)</li>
+          <li>I love you very much. I will never leave you. (promise)</li>
+        </ul>
+        <p>
+          {" "}
+          We can use <b>will</b> or <b>going to</b> for predictions.
+        </p>
+        <ul className="page-examples">
+          <li>I predict she will win the election.</li>
+          <li>I predict she's going to win the election.</li>
+        </ul>
+      </div>
+      <QuizForm questionsArray={questionsArray} />
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tri7u632AaA?si=Br_dxsWwJec0QBq9"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </main>
   );
 }

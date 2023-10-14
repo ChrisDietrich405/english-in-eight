@@ -27,15 +27,16 @@ export const metadata = {
       "Test your knowledge of the future perfect continuous tense in English with this quiz. Practice forming sentences using the future perfect continuous tense. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -287,7 +288,7 @@ export default function FuturePerfectContinuous() {
   ];
 
   return (
-    <>
+    
       <main className="page-body">
         <div>
           <div className={styles.page_title}>
@@ -356,6 +357,6 @@ export default function FuturePerfectContinuous() {
           allowfullscreen
         ></iframe>
       </main>
-    </>
+
   );
 }

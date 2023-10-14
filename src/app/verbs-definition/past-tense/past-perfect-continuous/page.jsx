@@ -27,15 +27,16 @@ export const metadata = {
       "Master the past perfect continuous tense in English with explanations, examples, and a quiz. English in Eight Minutes offers concise language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions in the United States.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -280,7 +281,7 @@ export default function PastPerfectContinuous() {
   ];
 
   return (
-    <>
+    <main>
       <div>
         <div className={styles.page_title}>
           <h1>Past Perfect Continuous</h1>
@@ -364,6 +365,6 @@ export default function PastPerfectContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

@@ -27,15 +27,16 @@ export const metadata = {
       "Learn about the differences between 'make' and 'do' in English with English in Eight Minutes. Test your knowledge with a quiz and understand when to use these words correctly.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },

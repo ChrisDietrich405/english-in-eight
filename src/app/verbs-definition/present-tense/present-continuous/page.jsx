@@ -27,15 +27,16 @@ export const metadata = {
       "Learn about the present continuous tense in English. This page provides explanations and examples of using the present continuous tense for ongoing actions and future events.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -48,7 +49,7 @@ export default function PresentContinuous() {
       title: "You ___________ (play) tennis tonight right?",
       possibleAnswers: [
         { title: "a. are not playing", correctAnswer: true },
-        { title: "b. play" },
+        { title: "b. is play" },
       ],
       userAnswer: "",
       explanation: "For future events you can use the present continuous.",
@@ -57,7 +58,7 @@ export default function PresentContinuous() {
       id: 2,
       title: "I ___________ (study) now. Please call me later.",
       possibleAnswers: [
-        { title: "a. study" },
+        { title: "a. are study" },
         { title: "b. am studying", correctAnswer: true },
       ],
       userAnswer: "",
@@ -78,7 +79,7 @@ export default function PresentContinuous() {
       id: 4,
       title: "We ___________ (watch) the game.",
       possibleAnswers: [
-        { title: "a. watch" },
+        { title: "a. are watch" },
         { title: "b. are watching", correctAnswer: true },
       ],
       userAnswer: "",
@@ -99,7 +100,7 @@ export default function PresentContinuous() {
       title: "He ___________ (wait) for the taxi.",
       possibleAnswers: [
         { title: "a. is waiting", correctAnswer: true },
-        { title: "b. waits" },
+        { title: "b. is waits" },
       ],
       userAnswer: "",
       explanation: "For current actions you use the present continuous",
@@ -109,7 +110,7 @@ export default function PresentContinuous() {
       title: "They __________ (fight).",
       possibleAnswers: [
         { title: "a. are fighting", correctAnswer: true },
-        { title: "b. fight" },
+        { title: "b. are fight" },
       ],
       userAnswer: "",
       explanation: "For current actions you use the present continuous",
@@ -128,7 +129,7 @@ export default function PresentContinuous() {
       id: 9,
       title: "You ___________ (read) The Shining.",
       possibleAnswers: [
-        { title: "a. read" },
+        { title: "a. are read" },
         { title: "b. are reading", correctAnswer: true },
       ],
       userAnswer: "",
@@ -138,7 +139,7 @@ export default function PresentContinuous() {
       id: 10,
       title: "She _________ (eat) a Kit Kat bar.",
       possibleAnswers: [
-        { title: "a. eats" },
+        { title: "a. is eats" },
         { title: "b. is eating", correctAnswer: true },
       ],
       userAnswer: "",
@@ -159,7 +160,7 @@ export default function PresentContinuous() {
       id: 12,
       title: "I ___________ (read) a book right now.",
       possibleAnswers: [
-        { title: "a. read" },
+        { title: "a. am read" },
         { title: "b. am reading", correctAnswer: true },
       ],
       userAnswer: "",
@@ -170,7 +171,7 @@ export default function PresentContinuous() {
       id: 13,
       title: "He ___________ (cook) dinner for us.",
       possibleAnswers: [
-        { title: "a. cooks" },
+        { title: "a. is cooks" },
         { title: "b. is cooking", correctAnswer: true },
       ],
       userAnswer: "",
@@ -181,7 +182,7 @@ export default function PresentContinuous() {
       id: 14,
       title: "We ___________ (wait) for the bus.",
       possibleAnswers: [
-        { title: "a. wait" },
+        { title: "a. are wait" },
         { title: "b. are waiting", correctAnswer: true },
       ],
       userAnswer: "",
@@ -192,7 +193,7 @@ export default function PresentContinuous() {
       id: 15,
       title: "She ___________ (play) the piano beautifully.",
       possibleAnswers: [
-        { title: "a. plays" },
+        { title: "a. is plays" },
         { title: "b. is playing", correctAnswer: true },
       ],
       userAnswer: "",
@@ -214,7 +215,7 @@ export default function PresentContinuous() {
       id: 17,
       title: "I ___________ (talk) to the manager about the issue.",
       possibleAnswers: [
-        { title: "a. talk" },
+        { title: "a. am talk" },
         { title: "b. am talking", correctAnswer: true },
       ],
       userAnswer: "",
@@ -225,7 +226,7 @@ export default function PresentContinuous() {
       id: 18,
       title: "They ___________ (study) for their exams all day.",
       possibleAnswers: [
-        { title: "a. study" },
+        { title: "a. are study" },
         { title: "b. are studying", correctAnswer: true },
       ],
       userAnswer: "",
@@ -236,7 +237,7 @@ export default function PresentContinuous() {
       id: 19,
       title: "He ___________ (clean) the house right now.",
       possibleAnswers: [
-        { title: "a. cleans" },
+        { title: "a. is cleans" },
         { title: "b. is cleaning", correctAnswer: true },
       ],
       userAnswer: "",
@@ -267,14 +268,14 @@ export default function PresentContinuous() {
   ];
 
   return (
-    <>
+    <main>
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Present Continuous</h1>
         </div>
         <div className="page-body">
           <p className={styles.grammar_explanation_paragraph}>
-            The present progressive or present continuous tense is a verb form
+            The present continuous is a verb form
             used to describe an ongoing action, event that is happening at the
             current moment or even a future event. It is formed by using the
             auxiliary verb "to be" in the present tense, followed by the main
@@ -330,13 +331,13 @@ export default function PresentContinuous() {
             <li>
               We are having some problems with the software. Call me later.
             </li>
-            <li>She is eating lunch so she can't talk now</li>
+            <li>She is eating lunch so she can't talk now.</li>
           </ul>
           <h4>Future actions</h4>
           <ul className="page-examples">
-            <li>I'm having dinner with my son this afternoon</li>
+            <li>I'm having dinner with my son this afternoon.</li>
             <li>You're coming to the party tonight right?</li>
-            <li>They are flying to Kenya this weekend</li>
+            <li>They are flying to Kenya this weekend.</li>
           </ul>
         </div>
       </div>
@@ -351,11 +352,8 @@ export default function PresentContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }
 
-{
-  /* import Quiz from "@/src/components/Quiz";
-import styles from "../../../styles/content-page.module.css"; */
-}
+

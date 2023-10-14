@@ -25,15 +25,16 @@ export const metadata = {
       "Learn about the present perfect continuous tense, which expresses actions or situations that started in the past and are still ongoing or have recently stopped. Improve your English language skills with quick lessons on English in Eight Minutes.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -79,7 +80,7 @@ export default function PresentPerfectContinuous() {
         { title: "b. have been fighting", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Has been living is the present perfect continuous form.",
+      explanation: "Have been fighting is the present perfect continuous form.",
     },
     {
       id: 5,

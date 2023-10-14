@@ -1,5 +1,9 @@
+.blog_container {
+  width: 80%; 
+  margin: 0 auto; 
+}
+
 .link_container {
-  text-decoration: none;
   color: black;
 }
 
@@ -10,5 +14,10 @@
 .image_container {
   display: flex;
   justify-content: center;
-  margin: 30px; 
+  margin: 30px;
+}
+
+.blog_link {
+  float: right;
+  text-decoration: none;
 }

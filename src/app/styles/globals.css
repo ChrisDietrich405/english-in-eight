@@ -22,8 +22,9 @@
 }
 
 .overlay-text {
+
   position: absolute;
-  top: 50%; /* Adjust the top position as needed */
+  top: 60%; /* Adjust the top position as needed */
   left: 50%; /* Adjust the left position as needed */
   transform: translate(-50%, -50%);
   text-align: center;

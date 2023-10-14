@@ -91,7 +91,7 @@ export default function Footer() {
               sm={6}
               md={4}
               display="flex"
-              justifyContent="center"
+              justifyContent="right"
               flexDirection="column"
               alignItems="center"
             >

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "../../../styles/blogs.module.css";
 
-const Hello = () => {
+const Blog1 = () => {
   return (
-    <main>
+    <main className={styles.blog_container}>
       <div className={styles.page_title}>
         <h1>How to prepare for your international job interview</h1>
       </div>
@@ -19,20 +20,34 @@ const Hello = () => {
         <b> Pre interview</b>
       </h5>
       <p>
+        First of all, start now! Everyone feels the same, unprepared. But if you
+        are waiting to feel 100% confident with your English you'll be waiting
+        another 10 years.
+      </p>
+      <p>
         Before starting the process of looking you should ensure that all your
         information has been translated well into English, specifically your
         resume, LinkedIn account and your portfolio. Google translator is not
         perfect. I would suggest working with a native English speaker on this.
-        Remember that during these interviews, they know that your English won't
-        be perfect, so it's not something you should worry so much about.
+      </p>
+      <p>
+        Remember that during these interviews, they know that your spoken
+        English won't be perfect. The best thing you can do is to go to the
+        interview knowing ahead of time that YOU WILL MAKE MISTAKES. The more
+        you worry about it the more mistakes you will make.
       </p>
       <p>
         It's much more important to focus on your listening skills which leads
-        me to the next suggestion. Watch interview videos on YouTube. Don
-        Georgevich has an excellent channel for that. His channel is for general
-        interview preparation. You should also look for more specific videos,
-        for example if you are a product manager look for product manager
-        interview preparation videos.{" "}
+        me to the next suggestion. Watch interview videos on YouTube.
+        <Link
+          style={{ textDecoration: "none" }}
+          href="https://www.youtube.com/@DonGeorgevich"
+        >
+          &nbsp;Don Georgevich has an excellent channel for that.&nbsp;
+        </Link>
+        His channel is for general interview preparation. You should also look
+        for more specific videos, for example if you are a product manager look
+        for product manager interview preparation videos.{" "}
       </p>
       <h5>
         <b> During the interview</b>
@@ -40,16 +55,16 @@ const Hello = () => {
       <p>
         Remember that it's very normal to be nervous especially in another
         language! Accept it. Speak just a little slower than you normally do.
-        When we are nervous we start to speak faster and you want to counteract
-        that. Remember also, to smile and for the first question to thank the
-        interviewer for their time.
+        When we are nervous we start to speak faster and you definitely don't
+        want to do that. Remember also, to smile and for the first question to
+        include in your answer a thank you for the interviewer for their time.
       </p>
       <p>
         If a couple of the questions are challenging repeat the question back to
-        the interviewer to give you more time to think. For example they ask you
-        what your biggest weakness is. You respond: "mmmm, what is my biggest
-        weakness?", then proceed to answer. You gave yourself a little extra
-        time to process the question.
+        the interviewer to give you more time to think. For example if they ask
+        you what your biggest weakness is, your response could be: "mmmm, what
+        is my biggest weakness?", then proceed to answer. You gave yourself a
+        little extra time to process the question.
       </p>
       <div className={styles.image_container}>
         <Image height={350} width={550} src="/interview.jpg" alt="interview" />
@@ -66,15 +81,24 @@ const Hello = () => {
         aren't perfect and sometimes forget things. Maybe they do really want
         you.{" "}
       </p>
-      <h5>Summary</h5>
-      <p>
-        First of all, I suggest you start interviewing as soon as possible. You
-        will only get better with practice. During the interview make sure to
-        take your time and breathe. After the interview it's time to reflect on
-        what you did well and badly and how you can improve the next time.
-      </p>
+      <h5>
+        <b>Summary</b>
+      </h5>
+      <ul>
+        <li>
+          First of all, I suggest you start interviewing as soon as possible.
+          You will only get better with practice.
+        </li>
+
+        <li>During the interview make sure to take your time and breathe.</li>
+        <li>
+          {" "}
+          After the interview it's time to reflect on what you did well and
+          badly and how you can improve the next time.{" "}
+        </li>
+      </ul>
     </main>
   );
 };
 
-export default Hello;
+export default Blog1;

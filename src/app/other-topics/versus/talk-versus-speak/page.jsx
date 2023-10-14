@@ -27,15 +27,16 @@ export const metadata = {
       "Learn when to use 'talk' and 'speak' in English with English in Eight Minutes. Understand the differences between these words and test your knowledge with a quiz.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },

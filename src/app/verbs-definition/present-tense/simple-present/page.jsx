@@ -26,15 +26,16 @@ export const metadata = {
       "Learn the present simple tense in English with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of this important grammar concept.",
     images: [
       {
-        url: "images/logo.svg",
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "images/logo.svg",
+        url: "/images/english.svg",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "English in Eight Logo",
       },
     ],
   },
@@ -50,7 +51,7 @@ export default function SimplePresent() {
         { title: "b. love" },
       ],
       userAnswer: "",
-      explanation: "Loves is the correct positive form for she, he, it.",
+      explanation: "loves is the correct positive form for she, he, it.",
     },
     {
       id: 2,
@@ -60,7 +61,7 @@ export default function SimplePresent() {
         { title: "b. doesn't like" },
       ],
       userAnswer: "",
-      explanation: "Like is the correct form for I.",
+      explanation: "don't like is the correct negative form for I.",
     },
     {
       id: 3,
@@ -70,7 +71,7 @@ export default function SimplePresent() {
         { title: "b. play" },
       ],
       userAnswer: "",
-      explanation: "Plays is the correct positive form for she, he, it.",
+      explanation: "plays is the correct positive form for she, he, it.",
     },
     {
       id: 4,
@@ -80,7 +81,7 @@ export default function SimplePresent() {
         { title: "b. begins", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Begins is the correct positive form for she, he, it.",
+      explanation: "begins is the correct positive form for she, he, it.",
     },
     {
       id: 5,
@@ -90,17 +91,17 @@ export default function SimplePresent() {
         { title: "b. cries", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Cries the correct positive form for she, he, it.",
+      explanation: "cries is the correct positive form for she, he, it.",
     },
     {
       id: 6,
       title: "They ________ (wash) the dishes.",
       possibleAnswers: [
-        { title: "a. washes" },
-        { title: "b. wash", correctAnswer: true },
+        { title: "a. don't washes" },
+        { title: "b. don't wash", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Wash is the correct positive form for they.",
+      explanation: "don't wash is the correct negative form for they.",
     },
 
     {
@@ -111,7 +112,7 @@ export default function SimplePresent() {
         { title: "b. studies" },
       ],
       userAnswer: "",
-      explanation: "Study is the correct positive form for I.",
+      explanation: "study is the correct positive form for I.",
     },
     {
       id: 8,
@@ -121,7 +122,7 @@ export default function SimplePresent() {
         { title: "b. lives" },
       ],
       userAnswer: "",
-      explanation: "Live is the correct positive form for They.",
+      explanation: "live is the correct positive form for They.",
     },
     {
       id: 9,
@@ -131,7 +132,7 @@ export default function SimplePresent() {
         { title: "b. work" },
       ],
       userAnswer: "",
-      explanation: "Works is the correct positive form for she, he, it.",
+      explanation: "works is the correct positive form for she, he, it.",
     },
     {
       id: 10,
@@ -141,17 +142,18 @@ export default function SimplePresent() {
         { title: "b. doesn't play", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "Plays is the correct positive form for she, he, it.",
+      explanation:
+        "doesn't play is the negative positive form for she, he, it.",
     },
     {
       id: 11,
       title: "He ________________ (enjoy) hiking.",
       possibleAnswers: [
-        { title: "a. enjoys", correctAnswer: true },
-        { title: "b. enjoy" },
+        { title: "a. doesn't enjoy", correctAnswer: true },
+        { title: "b. don't enjoy" },
       ],
       userAnswer: "",
-      explanation: "Enjoys is the correct positive form for he.",
+      explanation: "doesn't enjoy is the correct negative form for he.",
     },
 
     {
@@ -162,7 +164,7 @@ export default function SimplePresent() {
         { title: "b. plays" },
       ],
       userAnswer: "",
-      explanation: "Play is the correct positive form for they.",
+      explanation: "play is the correct positive form for they.",
     },
 
     {
@@ -173,18 +175,19 @@ export default function SimplePresent() {
         { title: "b. read" },
       ],
       userAnswer: "",
-      explanation: "Reads is the correct positive form for she.",
+      explanation: "reads is the correct positive form for she.",
     },
 
     {
       id: 14,
-      title: "The cat ________________ (sleep) in the sun every afternoon.",
+      title: "He ________________ (sleep) late.",
       possibleAnswers: [
-        { title: "a. sleeps", correctAnswer: true },
-        { title: "b. sleep" },
+        { title: "a. doesn't sleep", correctAnswer: true },
+        { title: "b. don't sleep" },
       ],
       userAnswer: "",
-      explanation: "Sleeps is the correct positive form for she, he, it.",
+      explanation:
+        "doesn't sleep is the correct negative form for she, he, it.",
     },
 
     {
@@ -195,7 +198,7 @@ export default function SimplePresent() {
         { title: "b. writes" },
       ],
       userAnswer: "",
-      explanation: "Write is the correct positive form for I.",
+      explanation: "write is the correct positive form for I.",
     },
 
     {
@@ -206,7 +209,7 @@ export default function SimplePresent() {
         { title: "b. watches" },
       ],
       userAnswer: "",
-      explanation: "Watch is the correct positive form for we.",
+      explanation: "watch is the correct positive form for we.",
     },
 
     {
@@ -217,7 +220,7 @@ export default function SimplePresent() {
         { title: "b. paint" },
       ],
       userAnswer: "",
-      explanation: "Paints is the correct positive form for he.",
+      explanation: "paints is the correct positive form for he.",
     },
 
     {
@@ -228,18 +231,18 @@ export default function SimplePresent() {
         { title: "b. dances" },
       ],
       userAnswer: "",
-      explanation: "Dance is the correct positive form for they.",
+      explanation: "dance is the correct positive form for they.",
     },
 
     {
       id: 19,
-      title: "He ________________ (cook) delicious meals for her family.",
+      title: "He ________________ (cook) very well.",
       possibleAnswers: [
-        { title: "a. cooks", correctAnswer: true },
-        { title: "b. cook" },
+        { title: "a. doesn't cook", correctAnswer: true },
+        { title: "b. don't cook" },
       ],
       userAnswer: "",
-      explanation: "Cooks is the correct positive form for she, he, it.",
+      explanation: "doesn't cook is the correct negative form for she, he, it.",
     },
 
     {
@@ -250,12 +253,12 @@ export default function SimplePresent() {
         { title: "b. plays" },
       ],
       userAnswer: "",
-      explanation: "Play is the correct positive form for I.",
+      explanation: "play is the correct positive form for I.",
     },
   ];
 
   return (
-    <>
+    <main>
       <div className="page-body">
         <div className={styles.page_title}>
           <h1>Present Simple</h1>
@@ -350,6 +353,6 @@ export default function SimplePresent() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </main>
   );
 }

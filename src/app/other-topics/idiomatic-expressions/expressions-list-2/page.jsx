@@ -1,10 +1,49 @@
 import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
+export const metadata = {
+  title: "Idiomatic Expressions | English in Eight Minutes",
+  description:
+    "Explore a list of common idiomatic expressions in English with English in Eight Minutes. Learn their meanings and usage through examples and a quiz.",
+  keywords: "English, Idiomatic Expressions, English idioms, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Idiomatic Expressions | English in Eight Minutes",
+    description:
+      "Explore a list of common idiomatic expressions in English with English in Eight Minutes. Learn their meanings and usage through examples and a quiz.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
+
 
 export default function Expressions2() {
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Idiomatic Expressions List Two</h1>
       </div>
@@ -113,6 +152,6 @@ export default function Expressions2() {
           },
         ]}
       ></Quiz>
-    </>
+    </main>
   );
 }

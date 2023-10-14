@@ -2,9 +2,48 @@ import Quiz from "@/src/components/Quiz";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Phrasal Verbs List One | English in Eight Minutes",
+  description:
+    "Learn phrasal verbs with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
+  keywords: "English, Phrasal Verbs, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Phrasal Verbs List One | English in Eight Minutes",
+    description:
+      "Learn phrasal verbs with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
+
 export default function PhrasalVerbs2() {
   return (
-    <>
+    <main>
       <div className={styles.page_title}>
         <h1>Phrasal Verbs List Two</h1>
       </div>
@@ -102,6 +141,6 @@ export default function PhrasalVerbs2() {
           },
         ]}
       ></Quiz>
-    </>
+    </main>
   );
 }
