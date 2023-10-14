@@ -70,10 +70,10 @@ export default function FuturePerfect() {
         "Jerome ______________ (finish) his LinkedIn profile by this afternoon.",
       possibleAnswers: [
         { title: "a. will have finished", correctAnswer: true },
-        { title: "b. will have finished" },
+        { title: "b. will have finish" },
       ],
       userAnswer: "",
-      explanation: "Come is the past participle of come .",
+      explanation: "Finished is the past participle of finish .",
     },
 
     {
@@ -118,7 +118,7 @@ export default function FuturePerfect() {
     },
     {
       id: 8,
-      title: "They _______________ Syria by the minister retires.",
+      title: "They _______________ to Syria by the time the minister retires.",
       possibleAnswers: [
         { title: "a. will have gone" },
         { title: "b. will have go", correctAnswer: true },
@@ -148,9 +148,11 @@ export default function FuturePerfect() {
       userAnswer: "",
       explanation: "Worked is the past participle of work.",
     },
+
     {
       id: 11,
-      title: "The old bridge _______________ a new one by next year.",
+      title:
+        "The old tree _______________ by a new one in the park next month.",
       possibleAnswers: [
         { title: "a. will have been replaced", correctAnswer: true },
         { title: "b. will have replace" },
@@ -158,53 +160,20 @@ export default function FuturePerfect() {
       userAnswer: "",
       explanation: "Replaced is the past participle of replace.",
     },
-
     {
       id: 12,
-      title: "The sun _______________ by the time we wake up in the morning.",
+      title:
+        "The river _______________ by the time we reach the bridge tomorrow.",
       possibleAnswers: [
-        { title: "a. will have risen", correctAnswer: true },
-        { title: "b. will have rise" },
+        { title: "a. will have flooded", correctAnswer: true },
+        { title: "b. will have flood" },
       ],
       userAnswer: "",
-      explanation: "Risen is the past participle of rise.",
+      explanation: "Flooded is the past participle of flood.",
     },
-    {
-      id: 12,
-      title: "Timmy ______________ by eleven.",
-      possibleAnswers: [
-        { title: "a. will have come back", correctAnswer: true },
-        { title: "b. will have came back" },
-      ],
-      userAnswer: "",
-      explanation: "Come is the past participle of come .",
-    },
-
     {
       id: 13,
-      title:
-        "The astronauts _______________ in space for a month by the end of their mission.",
-      possibleAnswers: [
-        { title: "a. will have been", correctAnswer: true },
-        { title: "b. will have been" },
-      ],
-      userAnswer: "",
-      explanation: "Been is the past participle of be.",
-    },
-
-    {
-      id: 14,
-      title: "The construction _______________ by the end of the year.",
-      possibleAnswers: [
-        { title: "a. will have finished", correctAnswer: true },
-        { title: "b. will have finish" },
-      ],
-      userAnswer: "",
-      explanation: "Finished is the past participle of finish.",
-    },
-    {
-      id: 15,
-      title: "I think they _______________ their journey by now.",
+      title: "Mary _______________ her project by the end of the week.",
       possibleAnswers: [
         { title: "a. will have completed", correctAnswer: true },
         { title: "b. will have complete" },
@@ -213,29 +182,49 @@ export default function FuturePerfect() {
       explanation: "Completed is the past participle of complete.",
     },
     {
-      id: 16,
-      title: "The flowers _______________ by tomorrow morning.",
+      id: 14,
+      title: "The cake _______________ by the time the party starts.",
       possibleAnswers: [
-        { title: "a. will have bloomed", correctAnswer: true },
-        { title: "b. will have bloom" },
+        { title: "a. will have been eaten", correctAnswer: true },
+        { title: "b. will have eat" },
       ],
       userAnswer: "",
-      explanation: "Bloomed is the past participle of bloom.",
+      explanation: "Eaten is the past participle of eat.",
+    },
+    {
+      id: 15,
+      title:
+        "The athletes _______________ their training for the upcoming competition.",
+      possibleAnswers: [
+        { title: "a. will have intensified", correctAnswer: true },
+        { title: "b. will have intensify" },
+      ],
+      userAnswer: "",
+      explanation: "Intensified is the past participle of intensify.",
+    },
+    {
+      id: 16,
+      title: "The snow _______________ by the time we go skiing next weekend.",
+      possibleAnswers: [
+        { title: "a. will have melted", correctAnswer: true },
+        { title: "b. will have melt" },
+      ],
+      userAnswer: "",
+      explanation: "Melted is the past participle of melt.",
     },
     {
       id: 17,
-      title: "I think the mail _______________ by the time we get home.",
+      title: "The museum _______________ a new exhibit by the end of the year.",
       possibleAnswers: [
-        { title: "a. will have arrived", correctAnswer: true },
-        { title: "b. will have arrive" },
+        { title: "a. will have unveiled", correctAnswer: true },
+        { title: "b. will have unveil" },
       ],
       userAnswer: "",
-      explanation: "Arrived is the past participle of arrive.",
+      explanation: "Unveiled is the past participle of unveil.",
     },
-
     {
       id: 18,
-      title: "She _______________ English for five years by next summer.",
+      title: "By next summer, I _______________ Spanish for two years.",
       possibleAnswers: [
         { title: "a. will have studied", correctAnswer: true },
         { title: "b. will have study" },
@@ -245,67 +234,66 @@ export default function FuturePerfect() {
     },
     {
       id: 19,
-      title: "The movie ______________ by the time we get to the theater.",
+      title: "The house _______________ by the time we move in next month.",
       possibleAnswers: [
-        { title: "a. will have started", correctAnswer: true },
-        { title: "b. will have start" },
+        { title: "a. will have been painted", correctAnswer: true },
+        { title: "b. will have paint" },
       ],
       userAnswer: "",
-      explanation: "Started is the past participle of start.",
+      explanation: "Painted is the past participle of paint.",
     },
   ];
 
   return (
-    <>
-      <main className="page-body">
-        <div className={styles.page_title}>
-          <h1>Future Perfect</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
-          The future perfect tense is used to demonstrate a future event that
-          has a definitive end date.{" "}
-        </p>
-        <table className={styles.table}>
-          <thead>
-            <tr>
-              <th>Positive</th>
-              <th>Positive short form</th>
-              <th>Negative</th>
-              <th>Negative short form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>I will have eaten</td>
-              <td>I'll have eaten</td>
-              <td>I will not have eaten</td>
-              <td>I won't have eaten</td>
-            </tr>
-            <tr>
-              <td>You will have finished</td>
-              <td>You'll have finished</td>
-              <td>You will not have finished</td>
-              <td>You won't have finished</td>
-            </tr>
-            <tr>
-              <td>She, he, it will have worked</td>
-              <td>She, he, it'll have worked</td>
-              <td>She, he, it will not have worked</td>
-              <td>She, he, it won't have worked</td>
-            </tr>
-            <tr>
-              <td>We will have started</td>
-              <td>We'll have started</td>
-              <td>We will not have started</td>
-              <td>We won't have started</td>
-            </tr>
-            <tr>
-              <td>They will have left</td>
-              <td>They'll have left</td>
-              <td>They will not have left</td>
-              <td>They won't have left</td>
-            </tr>
-            {/* <tbody>
+    <main className="page-body">
+      <div className={styles.page_title}>
+        <h1>Future Perfect</h1>
+      </div>
+      <p className={styles.grammar_explanation_paragraph}>
+        The future perfect tense is used to demonstrate a future event that has
+        a definitive end date.{" "}
+      </p>
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Positive</th>
+            <th>Positive short form</th>
+            <th>Negative</th>
+            <th>Negative short form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I will have eaten</td>
+            <td>I'll have eaten</td>
+            <td>I will not have eaten</td>
+            <td>I won't have eaten</td>
+          </tr>
+          <tr>
+            <td>You will have finished</td>
+            <td>You'll have finished</td>
+            <td>You will not have finished</td>
+            <td>You won't have finished</td>
+          </tr>
+          <tr>
+            <td>She, he, it will have worked</td>
+            <td>She, he, it'll have worked</td>
+            <td>She, he, it will not have worked</td>
+            <td>She, he, it won't have worked</td>
+          </tr>
+          <tr>
+            <td>We will have started</td>
+            <td>We'll have started</td>
+            <td>We will not have started</td>
+            <td>We won't have started</td>
+          </tr>
+          <tr>
+            <td>They will have left</td>
+            <td>They'll have left</td>
+            <td>They will not have left</td>
+            <td>They won't have left</td>
+          </tr>
+          {/* <tbody>
           {data.map((verb) => {
             return (
               <tr>
@@ -317,37 +305,36 @@ export default function FuturePerfect() {
               );
             })}
           </tbody> */}
-          </tbody>
-        </table>
-        <p>
-          The future perfect is used with a future time word, (and often with
-          'by') to talk about an action that will finish before a specific time
-          in the future, but we're not sure exactly when.
-        </p>
-        <ul className="page-examples">
-          <li>By the time I'm seventy, I will have retired.</li>
-          <li>By 10, he will have finished the housework.</li>
-        </ul>
-        <p>
-          The future perfect is used to indicate 'how long' an action will have
-          lasted compared to another action.{" "}
-        </p>
-        <ul className="page-examples">
-          <li>The storm will have finished by the time they arrive.</li>
-          <li>Nia will have married Demarcus by then.</li>
-        </ul>
-        <QuizForm questionsArray={questionsArray} />
-        <iframe
-          className={styles.iframe_wrapper}
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/RRCGlFNWbpk?si=A6obcA5EHcO71XHU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </main>
-    </>
+        </tbody>
+      </table>
+      <p>
+        The future perfect is used with a future time word, (and often with
+        'by') to talk about an action that will finish before a specific time in
+        the future, but we're not sure exactly when.
+      </p>
+      <ul className="page-examples">
+        <li>By the time I'm seventy, I will have retired.</li>
+        <li>By 10, he will have finished the housework.</li>
+      </ul>
+      <p>
+        The future perfect is used to indicate 'how long' an action will have
+        lasted compared to another action.{" "}
+      </p>
+      <ul className="page-examples">
+        <li>The storm will have finished by the time they arrive.</li>
+        <li>Nia will have married Demarcus by then.</li>
+      </ul>
+      <QuizForm questionsArray={questionsArray} />
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RRCGlFNWbpk?si=A6obcA5EHcO71XHU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </main>
   );
 }

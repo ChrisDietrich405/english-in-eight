@@ -95,7 +95,7 @@ export default function Quiz(props) {
     if (topOfQuizRef.current) {
       const yPosition = document.getElementById("scrollTo");
       const position = yPosition.offsetTop;
-      window.scrollTo(0, position - 64);
+      window.scrollTo(0, position - 184);
     }
     setDisable(true);
   };
@@ -186,7 +186,6 @@ export default function Quiz(props) {
                 style={cssProperties}
                 className={styles.quiz_button}
                 type="reset"
-                // style={{ marginLeft: "20px" }}
                 variant="contained"
                 onClick={loadNextSetOfQuestions}
               >
@@ -195,13 +194,6 @@ export default function Quiz(props) {
             )}
           </div>
         </form>
-        {/* {numberOfQuestionsCorrect !== null ? (
-          <div>
-            {`You got ${numberOfQuestionsCorrect} out of ${props.questions.length} correct.`}{" "}
-          </div>
-        ) : (
-          ""
-        )} */}
       </div>
     </div>
   );

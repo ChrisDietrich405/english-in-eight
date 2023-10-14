@@ -357,7 +357,7 @@ export default function Superlatives() {
             </ul>
           </section>
           <section>
-            <p>Irregular adjectives</p>
+            <h4>Irregular adjectives</h4>
             <p>
               There are also some irregular adjectives. We simply need to
               memorize them.

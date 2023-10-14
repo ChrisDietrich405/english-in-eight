@@ -42,7 +42,7 @@ export const metadata = {
   },
 };
 
-// Rest of the FuturePerfectContinuous component code...
+
 
 export default function FuturePerfectContinuous() {
   const questionsArray = [
@@ -235,7 +235,7 @@ export default function FuturePerfectContinuous() {
       ],
       userAnswer: "",
       explanation:
-        "Have been living is the correct present perfect continuous.",
+        "Have been rehearsing is the correct present perfect continuous.",
     },
     {
       id: 17,
