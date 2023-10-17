@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "@mui/material";
 
 import styles from "../../../styles/blogs.module.css";
 
@@ -10,13 +11,16 @@ const Blog1 = () => {
       <div className={styles.page_title}>
         <h1>How to prepare for your international job interview</h1>
       </div>
+      <div className={styles.image_container}>
+        <Image height={350} width={550} src="/interview2.jpg" alt="interview" />
+      </div>
       <p>
         People outside of the U.S. and Europe are very curious about getting
         international jobs, more specifically jobs with U.S. or European
         countries where salaries are much higher. Let's talk about strategies
         that will help you in this process.
       </p>
-      <h5>
+      <h5 className={styles.section_title}>
         <b> Pre interview</b>
       </h5>
       <p>
@@ -49,7 +53,7 @@ const Blog1 = () => {
         for more specific videos, for example if you are a product manager look
         for product manager interview preparation videos.{" "}
       </p>
-      <h5>
+      <h5 className={styles.section_title}>
         <b> During the interview</b>
       </h5>
       <p>
@@ -69,7 +73,7 @@ const Blog1 = () => {
       <div className={styles.image_container}>
         <Image height={350} width={550} src="/interview.jpg" alt="interview" />
       </div>
-      <h5>
+      <h5 className={styles.section_title}>
         <b> After the interview</b>
       </h5>
       <p>
@@ -81,22 +85,24 @@ const Blog1 = () => {
         aren't perfect and sometimes forget things. Maybe they do really want
         you.{" "}
       </p>
-      <h5>
-        <b>Summary</b>
-      </h5>
-      <ul>
-        <li>
-          First of all, I suggest you start interviewing as soon as possible.
-          You will only get better with practice.
-        </li>
+      <Card sx={{ padding: "20px" }}>
+        <h4>
+          <b>Summary</b>
+        </h4>
+        <ul>
+          <li>
+            First of all, I suggest you start interviewing as soon as possible.
+            You will only get better with practice.
+          </li>
 
-        <li>During the interview make sure to take your time and breathe.</li>
-        <li>
-          {" "}
-          After the interview it's time to reflect on what you did well and
-          badly and how you can improve the next time.{" "}
-        </li>
-      </ul>
+          <li>During the interview make sure to take your time and breathe.</li>
+          <li>
+            {" "}
+            After the interview it's time to reflect on what you did well and
+            badly and how you can improve the next time.{" "}
+          </li>
+        </ul>
+      </Card>
     </main>
   );
 };

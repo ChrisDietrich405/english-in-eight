@@ -17,7 +17,10 @@ const page = () => {
         </p>
       </div>
       <Button variant="outlined" className={styles.blog_link}>
-        <Link href="/other-topics/blogs/blog-1" className={styles.blog_link}>
+        <Link
+          href="/other-topics/blogs/how-to-prepare-for-your-international-job-interview"
+          className={styles.blog_link}
+        >
           Continue reading
         </Link>
       </Button>

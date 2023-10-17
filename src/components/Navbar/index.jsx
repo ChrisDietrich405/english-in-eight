@@ -45,6 +45,10 @@ function DrawerAppBar(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const closeDropdown = () => {
+    setMobileOpen(false);
+  };
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Link href="/">
@@ -82,6 +86,7 @@ function DrawerAppBar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
+            onMouseLeave={closeDropdown}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />

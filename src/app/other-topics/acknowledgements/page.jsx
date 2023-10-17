@@ -62,6 +62,16 @@ const Acknowledgements = () => {
         https://www.pexels.com/photo/two-woman-in-black-sits-on-chair-near-table-1181605/
       </p>
       <p>https://commons.wikimedia.org/wiki/File:Kiss_of_love.jpg</p>
+      <p>
+        Photo by{" "}
+        <a href="https://unsplash.com/@wocintechchat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Christina @ wocintechchat.com
+        </a>{" "}
+        on{" "}
+        <a href="https://unsplash.com/photos/LQ1t-8Ms5PY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Unsplash
+        </a>
+      </p>
     </div>
   );
 };

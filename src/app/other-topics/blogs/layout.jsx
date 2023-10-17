@@ -15,7 +15,10 @@ const Layout = ({ children }) => {
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/other-topics/blogs/blog-1">
+              <Link
+                className={styles.link}
+                href="/other-topics/blogs/how-to-prepare-for-your-international-job-interview"
+              >
                 How to prepare for your international job interview
               </Link>
             </li>

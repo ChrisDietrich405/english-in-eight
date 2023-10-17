@@ -1,6 +1,6 @@
 .blog_container {
-  width: 80%; 
-  margin: 0 auto; 
+  width: 80%;
+  margin: 0 auto;
 }
 
 .link_container {
@@ -20,4 +20,8 @@
 .blog_link {
   float: right;
   text-decoration: none;
+}
+
+.section_title {
+  margin-top: 30px;
 }
