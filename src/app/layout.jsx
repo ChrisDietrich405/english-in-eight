@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Script from "next/script";
 
 import Footer from "../components/Footer";
+import BreadCrumbs from "../components/BreadCrumbs";
 import "bootstrap/dist/css/bootstrap.css";
 import "./styles/globals.css";
 import { Roboto } from "next/font/google";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={roboto.className}>
           <Navbar />
+          <BreadCrumbs />
           {children}
           <Footer />
         </body>
