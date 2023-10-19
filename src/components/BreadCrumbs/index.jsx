@@ -12,7 +12,6 @@ import styles from "./styles.module.css";
 export default function NextBreadcrumbs() {
   // Gives us ability to load the current route details
   const router = usePathname();
-  console.log(router);
 
   function generateBreadcrumbs() {
     // Remove any query parameters, as those aren't included in breadcrumbs

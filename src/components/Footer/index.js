@@ -102,7 +102,7 @@ export default function Footer() {
                     className={styles.logo_image}
                     width={300}
                     height={300}
-                    src="/images/english.svg"
+                    src="/images/english-logo.svg"
                     alt="English in Eight Minutes Logo"
                   />
                 </Link>

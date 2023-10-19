@@ -6,8 +6,7 @@ export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
   description:
     "Learn phrasal verbs with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
-  keywords:
-    "English, Phrasal Verbs, English grammar, English in Eight Minutes",
+  keywords: "English, Phrasal Verbs, English grammar, English in Eight Minutes",
   robots: {
     index: true,
     follow: true,
@@ -41,7 +40,6 @@ export const metadata = {
     ],
   },
 };
-
 
 export default function PhrasalVerbs1() {
   return (
@@ -118,7 +116,8 @@ export default function PhrasalVerbs1() {
           },
           {
             id: 3,
-            title: "My shoes ________________ a lot of space in my closet.",
+            title:
+              "My english-logos ________________ a lot of space in my closet.",
             possibleAnswers: [
               { title: "a. take up", correctAnswer: true },
               { title: "b. fed up with" },

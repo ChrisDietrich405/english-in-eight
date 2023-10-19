@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import Navbar2 from "../components/Navbar2";
 import Script from "next/script";
 
@@ -9,7 +11,11 @@ import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, showBreadCrumbs = true }) {
+  useEffect(() => {
+    setShowBreadCrumbs()
+  }, []);
+
   return (
     <>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-186EYFYXC9" />
@@ -25,7 +31,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={roboto.className}>
           <Navbar2 />
-          <BreadCrumbs />
+          {showBreadCrumbs ? <BreadCrumbs /> : ""}
           {children}
 
           <Footer />

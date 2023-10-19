@@ -25,7 +25,7 @@ import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
-import logo from "../../../public/images/english.svg";
+import logo from "../../../public/images/english-logo.svg";
 
 import styles from "../../app/styles/content-page.module.css";
 
@@ -81,7 +81,6 @@ function DrawerAppBar(props) {
       <CssBaseline />
       <AppBar component="nav" style={{ height: "72px" }}>
         <Toolbar>
-          
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -95,7 +94,7 @@ function DrawerAppBar(props) {
           <Link href="/">
             <Image
               className={styles.navbar_logo}
-              src="/images/english.svg"
+              src="/images/english-logo.svg"
               width={120}
               height={120}
               alt="Picture of the logo"
