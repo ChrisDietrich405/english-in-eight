@@ -58,33 +58,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus() {
-  const dropdownProps = [
-    {
-      title: "Idiomatic Expressions",
-      link: "/other-topics/idiomatic-expressions",
-    },
-    {
-      title: "Phrasal Verbs",
-      link: "/other-topics/phrasal-verbs",
-    },
-    {
-      title: "Versus",
-      link: "/other-topics/versus",
-    },
-    {
-      title: "How to use the website",
-      link: "/other-topics/suggestions",
-    },
-    {
-      title: "Blogs",
-      link: "/other-topics/blogs",
-    },
-    {
-      title: "Acknowledgements",
-      link: "/other-topics/acknowledgements",
-    },
-  ];
+export default function CustomizedMenus({dropdown, title}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -105,7 +79,7 @@ export default function CustomizedMenus() {
         disableelevation="true"
         onClick={handleClick}
       >
-        Other Topics
+        {title}
         <KeyboardArrowDownIcon />
       </div>
       <StyledMenu
@@ -117,26 +91,7 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <Dropdown dropdownProps={dropdownProps} />
-        {/* <MenuItem onClick={handleClose} disableRipple>
-          <Link
-            className={styles.link}
-            href="/other-topics/idiomatic-expressions"
-          >
-            Idiomatic Expressions
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/other-topics/phrasal-verbs">
-            Phrasal Verbs
-          </Link>
-        </MenuItem>
-
-        <MenuItem onClick={handleClose} disableRipple>
-          <Link className={styles.link} href="/other-topics/versus">
-            Versus
-          </Link>
-        </MenuItem> */}
+        <Dropdown dropdownProps={dropdown} />
       </StyledMenu>
     </>
   );

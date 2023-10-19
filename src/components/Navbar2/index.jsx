@@ -20,22 +20,117 @@ import Toolbar from "@mui/material/Toolbar";
 
 import Button from "@mui/material/Button";
 
-import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
-import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
-import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
-import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
+import SubmenuDropdown from "../SubmenuDropdown";
+
 
 import logo from "../../../public/images/english-logo.svg";
 
 import styles from "../../app/styles/content-page.module.css";
 
-const drawerWidth = 240;
-const navItems = [
-  <NounsSubmenuDropdown />,
-  <VerbsSubmenuDropdown />,
-  <AdjectivesSubmenuDropdown />,
-  <OtherTopicsSubmenuDropdown />,
+const dropdown = [
+  {
+    label: "Nouns",
+    menus: [
+      {
+        title: "Noun Definition",
+        link: "/nouns-definition",
+      },
+      {
+        title: " Uncountable & Countable Nouns",
+        link: "/nouns-definition/uncountable-countable-nouns",
+      },
+      {
+        title: " Collective Nouns",
+        link: "/nouns-definition/collective-nouns",
+      },
+      {
+        title: "Noun Modifiers",
+        link: "/nouns-definition/noun-modifiers",
+      },
+      {
+        title: " Possessive Pronouns",
+        link: "/nouns-definition/possessive-pronouns",
+      },
+    ],
+  },
+  {
+    label: "Adjectives",
+    menus: [
+      {
+        title: "Adjective Definition",
+        link: "/adjectives-definition",
+      },
+      {
+        title: "Possessive Adjectives",
+        link: "/adjectives-definition/possessive-adjectives",
+      },
+      {
+        title: "Comparative Adjectives",
+        link: "/adjectives-definition/comparative-adjectives",
+      },
+      {
+        title: "Superlative Adjectives",
+        link: "/adjectives-definition/superlative-adjectives",
+      },
+    ],
+  },
+  {
+    label: "Verbs",
+    menus: [
+      {
+        title: "Verb Definition",
+        link: "/verbs-definition/home",
+      },
+      {
+        title: "Present Tense Verbs",
+        link: "/verbs-definition/present-tense",
+      },
+      {
+        title: "Past Tense Verbs",
+        link: "/verbs-definition/past-tense",
+      },
+      {
+        title: "Future Tense Verbs",
+        link: "/verbs-definition/future",
+      },
+    ],
+  },
+  {
+    label: "Other Topics",
+    menus: [
+      {
+        title: "Idiomatic Expressions",
+        link: "/other-topics/idiomatic-expressions",
+      },
+      {
+        title: "Phrasal Verbs",
+        link: "/other-topics/phrasal-verbs",
+      },
+      {
+        title: "Versus",
+        link: "/other-topics/versus",
+      },
+      {
+        title: "How to use the website",
+        link: "/other-topics/suggestions",
+      },
+      {
+        title: "Blogs",
+        link: "/other-topics/blogs",
+      },
+      {
+        title: "Acknowledgements",
+        link: "/other-topics/acknowledgements",
+      },
+    ],
+  },
 ];
+
+const drawerWidth = 240;
+
+const navItems = dropdown.map((item) => (
+  <SubmenuDropdown title={item.label} dropdown={item.menus} />
+));
 
 function DrawerAppBar(props) {
   const { window } = props;

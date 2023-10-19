@@ -52,11 +52,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <RootLayout
-        showBreadCrumbs={false}
-        className={styles.home}
-        sx={{ padding: "0px !important" }}
-      >
+      
         <main>
           <div className={styles.banner}>
             <div className="image-container">
@@ -320,7 +316,7 @@ export default function Home() {
             </Container>
           </section>
         </main>
-      </RootLayout>
+     
     </>
   );
 }
