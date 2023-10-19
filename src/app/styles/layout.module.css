@@ -4,7 +4,7 @@
   background-color: #f3f0f0;
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 0 2rem; 
 }
 
 .list_container {
@@ -18,14 +18,14 @@
 }
 
 .sidebar {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: white;
   border-radius: 9px;
   flex-basis: 20%;
 }
 
 .main_content {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   background-color: #fff;

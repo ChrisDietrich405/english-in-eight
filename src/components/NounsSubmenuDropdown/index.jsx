@@ -87,6 +87,7 @@ export default function CustomizedMenus() {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -99,18 +100,18 @@ export default function CustomizedMenus() {
         aria-expanded={open ? "true" : ""}
         variant="contained"
         disableelevation="true"
-        onClick={handleClick}
+        onMouseOver={handleClick}
+        // onClick={handleClick}
       >
         Nouns
         <KeyboardArrowDownIcon />
       </div>
+
       <StyledMenu
         id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
+        MenuListProps={{ onMouseLeave: handleClose }}
         anchorEl={anchorEl}
-        open={open}
+        open={Boolean(anchorEl)}
         onClose={handleClose}
       >
         <Dropdown dropdownProps={dropdownProps} />

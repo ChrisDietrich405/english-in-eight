@@ -1,0 +1,9 @@
+.breadcrumb_container {
+  padding-top: 90px;
+  padding-left: 50px;
+  background-color: var(--background);
+}
+
+.title {
+  text-transform: capitalize;
+}
