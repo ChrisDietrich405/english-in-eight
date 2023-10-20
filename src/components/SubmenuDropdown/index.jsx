@@ -58,26 +58,32 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus({dropdown, title}) {
+export default function CustomizedMenus({ dropdown, title }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleHover = (event) => {
+    if (anchorEl !== event.currentTarget) {
+      setAnchorEl(event.currentTarget);
+    }
+    console.log(event);
   };
 
   return (
     <>
       <div
-        id="demo-customized-button"
+        disableFocusRipple={true}
+        id={title}
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         variant="contained"
         disableelevation="true"
-        onClick={handleClick}
+        onClick={handleHover}
+        // onMouseOver={handleHover}
       >
         {title}
         <KeyboardArrowDownIcon />
@@ -86,9 +92,10 @@ export default function CustomizedMenus({dropdown, title}) {
         id="demo-customized-menu"
         MenuListProps={{
           "aria-labelledby": "demo-customized-button",
+          // onMouseLeave: handleClose,
         }}
         anchorEl={anchorEl}
-        open={open}
+        open={!!anchorEl}
         onClose={handleClose}
       >
         <Dropdown dropdownProps={dropdown} />

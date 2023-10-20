@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Navbar2 from "../components/Navbar2";
+import Navbar from "../components/Navbar";
 import Script from "next/script";
 
 import Footer from "../components/Footer";
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
       </Script>
       <html lang="en">
         <body className={roboto.className}>
-          <Navbar2 />
+          <Navbar />
           {showBreadcrumbs && <BreadCrumbs />}
           {children}
 
