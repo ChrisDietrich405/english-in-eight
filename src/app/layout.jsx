@@ -13,22 +13,23 @@ import { Roboto } from "next/font/google";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({ children }) {
-  const [showBreadcrumbs, setShowBreadcrumbs] = useState(true);
+  const [showBreadcrumbs, setShowBreadcrumbs] = useState(false);
   const pathname = usePathname();
 
-  const handleShowBreadcrumbs = () => {
-    if (pathname === "/") {
-      setShowBreadcrumbs(false);
-    }
-  };
+  const handleShowBreadcrumbs = () => {};
 
-  useEffect(() => {
-    handleShowBreadcrumbs();
-  }, [pathname]);
+  // useEffect(() => {
+  //   handleShowBreadcrumbs();
+  // }, [pathname]);
 
-  useEffect(() => {
-    handleShowBreadcrumbs()
-  }, [])
+  // useEffect(() => {
+  //   console.log(pathname);
+  //   if (pathname === "/") {
+  //     setShowBreadcrumbs(false);
+  //   } else {
+  //     setShowBreadcrumbs(true);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={roboto.className}>
           <Navbar />
-          {showBreadcrumbs && <BreadCrumbs />}
+          {pathname !== "/" && <BreadCrumbs />}
           {children}
 
           <Footer />

@@ -271,7 +271,7 @@ export default function FutureContinuous() {
         The future continuous refers to an ongoing action in the future.
         Realistically it isn't a tense we use often.
       </p>
-
+      <hr className="page-divider" />
       <table className={styles.table}>
         <thead>
           <tr>
@@ -314,6 +314,7 @@ export default function FutureContinuous() {
           </tr>
         </tbody>
       </table>
+      <hr className="page-divider" />
 
       <div className="page-body">
         <p>Examples</p>

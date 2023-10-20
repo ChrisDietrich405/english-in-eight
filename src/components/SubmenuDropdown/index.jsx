@@ -70,7 +70,6 @@ export default function CustomizedMenus({ dropdown, title }) {
     if (anchorEl !== event.currentTarget) {
       setAnchorEl(event.currentTarget);
     }
-    console.log(event);
   };
 
   return (

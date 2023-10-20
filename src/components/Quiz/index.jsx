@@ -133,7 +133,7 @@ export default function Quiz(props) {
 
                   <ul>
                     {question.possibleAnswers.map((possibleAnswer, index) => {
-                      console.log(question);
+               
                       return (
                         <SelectAnswer
                           show={
