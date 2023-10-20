@@ -60,6 +60,7 @@ const StyledMenu = styled((props) => (
 
 export default function CustomizedMenus({ dropdown, title }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
 
   const handleClose = () => {
     setAnchorEl(null);
