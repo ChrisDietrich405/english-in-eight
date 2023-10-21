@@ -1,5 +1,5 @@
 .blog_container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -9,6 +9,10 @@
 
 .page_title h1 {
   color: var(--secondary);
+}
+
+.paragraph {
+  width: 65vw;
 }
 
 .image_container {
@@ -24,4 +28,8 @@
 
 .section_title {
   margin-top: 30px;
+}
+
+.list_container li {
+  margin-bottom: 10px;
 }

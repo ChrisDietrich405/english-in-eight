@@ -11,9 +11,9 @@ const Blog2 = () => {
       <div className={styles.page_title}>
         <h1>Why phrasal verbs are extremely important in English</h1>
       </div>
-      <div className={styles.image_container}>
+      {/* <div className={styles.image_container}>
         <Image height={350} width={550} src="/interview2.jpg" alt="interview" />
-      </div>
+      </div> */}
       <p>
         Phrasal verbs are an essential aspect of the English language, but they
         can be very difficult for non-native speakers to understand. A phrasal
@@ -27,7 +27,7 @@ const Blog2 = () => {
       <h5 className={styles.section_title}>
         <b>Why phrasal verbs are important</b>
       </h5>
-      <ol>
+      <ul className={styles.list_container}>
         <li>
           Natural conversation: Phrasal verbs are a common feature of everyday
           English. Using them helps your speech sound more natural and
@@ -46,71 +46,69 @@ const Blog2 = () => {
           nuances. By understanding and using them, you gain insight into the
           culture and customs of English-speaking countries.
         </li>
-      </ol>
+      </ul>
       <h5 className={styles.section_title}>
         <b> How to Learn and Use Phrasal Verbs</b>
       </h5>
+      <ul className={styles.list_container}>
+        <li>
+          Start Small: Begin with common, everyday phrasal verbs. For instance,
+          "turn on," "take off," "give up." Learn their meanings, and try to use
+          them in context.
+        </li>
+        <li>
+          Keep a Phrasal Verb Diary: Challenge yourself to practice 5 phrasal
+          verbs a week. You don't want to do too many because it's easy to
+          forget or confuse them. Immediately after having learned them, teach
+          them. The best way to learn is to teach.
+        </li>
+        <li>
+          Use Mnemonics: Create associations or images in your mind to remember
+          phrasal verbs. For example, for the phrasal verb call off, (which
+          means to cancel) imagine someone canceling a meeting by making a phone
+          call.
+        </li>
+        <li>
+          Practice and Consistency: You need to practice your 5 phrasal verbs
+          every day for the entire week. Write down examples using them, say
+          them and teach them to 3 or 4 people.
+        </li>
 
-      <li>
-        Start Small: Begin with common, everyday phrasal verbs. For instance,
-        "turn on," "take off," "give up." Learn their meanings, and try to use
-        them in context.
-      </li>
-      <li>
-        Keep a Phrasal Verb Diary: Challenge yourself to practice 5 phrasal
-        verbs a week. You don't want to do too many because it's easy to forget
-        or confuse them. Immediately after having learned them, teach them. The
-        best way to learn is to teach.
-      </li>
+        <li>
+          <Link href="/other-topics/phrasal-verbs">
+            Go to the phrasal verbs section of English in Eight Minutes.
+          </Link>
+          There you will find a video and phrasal verbs with accompanying
+          exercises.
+        </li>
+      </ul>
 
-      <li>
-        Use Mnemonics: Create associations or images in your mind to remember
-        phrasal verbs. For example, for the phrasal verb call off, (which means
-        to cancel) imagine someone canceling a meeting by making a phone call.
-      </li>
-      <li>
-        Practice and Consistency: You need to practice your 5 phrasal verbs
-        every day for the entire week. Write down examples using them, say them
-        and teach them to 3 or 4 people.
-      </li>
-
-      <li>
-        <Link href="">
+      <h5 className={styles.section_title}>
+        <b>
           {" "}
-          Go to the phrasal verbs section of English in Eight Minutes.
-        </Link>
-        There you will find a video and phrasal verbs with accompanying
-        exercises.
-      </li>
-
-      <li>
-        Below is your starter list. Start with these 5 verbs. Work hard and good
-        luck.
-      </li>
-
-      <li>
-        Take off: To remove something (e.g., "She took off her coat.") or for a
-        plane to become airborne.
-      </li>
-      <li>
-        Turn on: To activate or start something (e.g., "Turn on the lights.").
-      </li>
-      <li>
-        Give up: To quit or stop doing something (e.g., "Don't give up on your
-        dreams.").
-      </li>
-      <li>
-        Look up: To search for information or to improve (e.g., "I'll look up
-        that word in the dictionary.").
-      </li>
-      <li>
-        Get along: To have a good relationship with someone (e.g., "I get along
-        with my colleagues.").
-      </li>
-
-      <h2>Summary</h2>
-
-      <Card sx={{ padding: "20px" }}>
+          Below is your starter list. Start with these 5 verbs. Work hard and
+          good luck.
+        </b>
+      </h5>
+      <ul className={styles.list_container}>
+        <li>Take off: To remove something (e.g., "She took off her coat.")</li>
+        <li>
+          Turn on: To activate or start something (e.g., "Turn on the lights.").
+        </li>
+        <li>
+          Give up: To quit or stop doing something (e.g., "Don't give up on your
+          dreams.").
+        </li>
+        <li>
+          Look up: To search for information (e.g., "I'll look up that word in
+          the dictionary.").
+        </li>
+        <li>
+          Get along: To have a good relationship with someone (e.g., "I get
+          along well with my colleagues.").
+        </li>
+      </ul>
+      <Card sx={{ padding: "20px", marginTop: "20px" }}>
         <h4>
           <b>Summary</b>
         </h4>
