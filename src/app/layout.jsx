@@ -16,21 +16,6 @@ export default function RootLayout({ children }) {
   const [showBreadcrumbs, setShowBreadcrumbs] = useState(false);
   const pathname = usePathname();
 
-  const handleShowBreadcrumbs = () => {};
-
-  // useEffect(() => {
-  //   handleShowBreadcrumbs();
-  // }, [pathname]);
-
-  // useEffect(() => {
-  //   console.log(pathname);
-  //   if (pathname === "/") {
-  //     setShowBreadcrumbs(false);
-  //   } else {
-  //     setShowBreadcrumbs(true);
-  //   }
-  // }, []);
-
   return (
     <>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-186EYFYXC9" />

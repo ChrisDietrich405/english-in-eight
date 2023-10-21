@@ -79,7 +79,7 @@ export default function FutureSimple() {
     },
     {
       id: 4,
-      title: "I _______ do it. (refusal)",
+      title: "He _______ do anything his mother tells him to do. (refusal)",
       possibleAnswers: [
         { title: "a. won't", correctAnswer: true },
         { title: "b. am not going to" },
@@ -122,7 +122,7 @@ export default function FutureSimple() {
     {
       id: 8,
       title:
-        "We ____________________ take a trip to Accra in June.(prior plan)",
+        "We ____________________ take a trip to Accra in June. (prior plan)",
       possibleAnswers: [
         { title: "a. are going to", correctAnswer: true },
         { title: "b. will" },
@@ -271,8 +271,8 @@ export default function FutureSimple() {
       <p className={styles.grammar_explanation_paragraph}>
         {" "}
         The future simple is a verb tense that's used to talk about things that
-        haven't happened yet. For example, next year she <b>will change</b>{" "}
-        careers. There are two ways to express the future. You can use{" "}
+        haven't happened yet. For example, next year she <b>is going to</b>{" "}
+        change careers. There are two ways to express the future. You can use{" "}
         <b>will</b> or <b>going to</b> depending on the situation.
       </p>
       <p>The first way to express the simple future</p>
@@ -316,16 +316,6 @@ export default function FutureSimple() {
             <td>They are not going to finish</td>
             <td>They're not going to finish</td>
           </tr>
-          {/* {dataGo.map((verb) => {
-            return (
-              <tr>
-                <td>{verb.positive}</td>
-                <td>{verb.positiveShortForm}</td>
-                <td>{verb.negative}</td>
-                <td>{verb.negativeShortForm}</td>
-              </tr>
-            );
-          })} */}
         </tbody>
       </table>
 
@@ -371,16 +361,7 @@ export default function FutureSimple() {
               <td>They will not fight</td>
               <td>They won't fight</td>
             </tr>
-            {/* {dataWill.map((verb) => {
-              return (
-                <tr>
-                  <td>{verb.positive}</td>
-                  <td>{verb.positiveShortForm}</td>
-                  <td>{verb.negative}</td>
-                  <td>{verb.negativeShortForm}</td>
-                </tr>
-              );
-            })} */}
+
           </tbody>
         </table>
 

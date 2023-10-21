@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { Card } from "@mui/material";
 
 import styles from "../../../styles/blogs.module.css";
@@ -36,7 +37,9 @@ const Blog1 = () => {
       </p>
       <p>
         Remember that during these interviews, they know that your spoken
-        English won't be perfect. The best thing you can do is to go to the
+        English won't be perfect. The interviewer isn't going to disqualify you
+        because you used an incorrect preposition or verb tense. They aren't
+        hiring English teachers. The best thing you can do is to go to the
         interview knowing ahead of time that YOU WILL MAKE MISTAKES. The more
         you worry about it the more mistakes you will make.
       </p>
@@ -61,13 +64,13 @@ const Blog1 = () => {
         language! Accept it. Speak just a little slower than you normally do.
         When we are nervous we start to speak faster and you definitely don't
         want to do that. Remember also, to smile and for the first question to
-        include in your answer a thank you for the interviewer for their time.
+        include in your response a thank you for the interviewer for their time.
       </p>
       <p>
         If a couple of the questions are challenging repeat the question back to
         the interviewer to give you more time to think. For example if they ask
         you what your biggest weakness is, your response could be: "mmmm, what
-        is my biggest weakness?", then proceed to answer. You gave yourself a
+        is my biggest weakness?", then proceed to respond. You gave yourself a
         little extra time to process the question.
       </p>
       <div className={styles.image_container}>
@@ -79,11 +82,13 @@ const Blog1 = () => {
       <p>
         Immediately write down what you did well and more importantly what you
         did badly in a notebook. Use that notebook for all future interviews to
-        study from. Also, send an email thanking the company and interviewer for
-        their time. If you really do want the job, but haven't heard from the
-        company after a week, email or even call them. Human Resources people
-        aren't perfect and sometimes forget things. Maybe they do really want
-        you.{" "}
+        study from.
+      </p>
+      <p>
+        Also, send an email thanking the company and interviewer for their time.
+        If you really do want the job, but haven't heard from the company after
+        a week, email or even call them. Human Resources people aren't perfect
+        and sometimes forget things. Maybe they do really want you.{" "}
       </p>
       <Card sx={{ padding: "20px" }}>
         <h4>
