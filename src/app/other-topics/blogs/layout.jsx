@@ -22,6 +22,14 @@ const Layout = ({ children }) => {
                 How to prepare for your international job interview
               </Link>
             </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/other-topics/blogs/why phrasal verbs are extremely important in English"
+              >
+                Why phrasal verbs are extremely important in English
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
