@@ -1,5 +1,30 @@
 const dropdown = [
   {
+    label: "Blogs",
+    menus: [
+      {
+        title: "Job Interviews",
+        link: "/other-topics/blogs/how-to-prepare-for-your-international-job-interview",
+      },
+      {
+        title: "Phrasal Verbs",
+        link: "/other-topics/blogs/why-phrasal-verbs-are-extremely-important-in-english",
+      },
+      // {
+      //   title: " Collective Nouns",
+      //   link: "/nouns-definition/collective-nouns",
+      // },
+      // {
+      //   title: "Noun Modifiers",
+      //   link: "/nouns-definition/noun-modifiers",
+      // },
+      // {
+      //   title: " Possessive Pronouns",
+      //   link: "/nouns-definition/possessive-pronouns",
+      // },
+    ],
+  },
+  {
     label: "Nouns",
     menus: [
       {
@@ -46,26 +71,19 @@ const dropdown = [
     ],
   },
   {
-    label: "Verbs",
+    label: "Prepositions",
     menus: [
       {
-        title: "Verb Definition",
-        link: "/verbs-definition/home",
+        title: "Preposition Definition",
+        link: "/prepositions-definition",
       },
       {
-        title: "Present Tense Verbs",
-        link: "/verbs-definition/present-tense",
-      },
-      {
-        title: "Past Tense Verbs",
-        link: "/verbs-definition/past-tense",
-      },
-      {
-        title: "Future Tense Verbs",
-        link: "/verbs-definition/future",
+        title: "Prepositions of Time",
+        link: "/prepositions-definition/prepositions-of-time",
       },
     ],
   },
+
   {
     label: "Other Topics",
     menus: [

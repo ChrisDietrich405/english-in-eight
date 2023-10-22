@@ -18,8 +18,10 @@ const Blog2 = () => {
         Phrasal verbs are an essential aspect of the English language, but they
         can be very difficult for non-native speakers to understand. A phrasal
         verb includes a verb followed by a preposition (or sometimes an adverb),
-        creating a meaning that often changes the sense of the verb a lot. For
-        example speak up means to speak louder. "The audience wasn't able to
+        creating a meaning that often changes the sense of the verb a lot.
+      </p>
+      <p>
+        For example speak up means to speak louder. "The audience wasn't able to
         hear me so I needed to speak up." Understanding and using phrasal verbs
         correctly can greatly enhance your fluency and communication skills in
         English.

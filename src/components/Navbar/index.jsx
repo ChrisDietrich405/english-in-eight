@@ -3,8 +3,6 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PropTypes from "prop-types";
-
-import "react-toastify/dist/ReactToastify.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -24,6 +22,7 @@ import dropdown from "../../constants/dropdown";
 
 import logo from "../../../public/images/english-logo.svg";
 
+import "react-toastify/dist/ReactToastify.css";
 import styles from "../../app/styles/content-page.module.css";
 
 const drawerWidth = 240;
