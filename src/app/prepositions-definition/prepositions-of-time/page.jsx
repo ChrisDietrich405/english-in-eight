@@ -29,12 +29,12 @@ export default function PrepositionsOfTime() {
       id: 4,
       title: "I exercise _______ the morning",
       possibleAnswers: [
-        { title: "key house" },
-        { title: "house key", correctAnswer: true },
+        { title: "at" },
+        { title: "in", correctAnswer: true },
       ],
       userAnswer: "",
       explanation:
-        "When speaking about the morning and the afternoon we use the preposition in",
+        "When speaking about the morning and the afternoon we use the preposition in.",
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 6,
-      title: "Congo declared independence ______ the 20th century",
+      title: "Congo declared independence ______ the 20th century.",
       possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "on" }],
       userAnswer: "",
       explanation: "When speaking about years we use the preposition in.",

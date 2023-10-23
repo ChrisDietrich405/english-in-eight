@@ -10,18 +10,6 @@ const dropdown = [
         title: "Phrasal Verbs",
         link: "/other-topics/blogs/why-phrasal-verbs-are-extremely-important-in-english",
       },
-      // {
-      //   title: " Collective Nouns",
-      //   link: "/nouns-definition/collective-nouns",
-      // },
-      // {
-      //   title: "Noun Modifiers",
-      //   link: "/nouns-definition/noun-modifiers",
-      // },
-      // {
-      //   title: " Possessive Pronouns",
-      //   link: "/nouns-definition/possessive-pronouns",
-      // },
     ],
   },
   {
@@ -80,6 +68,10 @@ const dropdown = [
       {
         title: "Prepositions of Time",
         link: "/prepositions-definition/prepositions-of-time",
+      },
+      {
+        title: "Prepositions of Place",
+        link: "/prepositions-definition/prepositions-of-place",
       },
     ],
   },

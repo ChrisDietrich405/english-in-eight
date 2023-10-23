@@ -23,22 +23,14 @@ const Layout = ({ children }) => {
                 Prepositions of time
               </Link>
             </li>
-            {/* <li>
-              <Link
-                className={styles.link}
-                href="/adjectives-definition/comparative-adjectives"
-              >
-                Comparative Adjectives
-              </Link>
-            </li>
             <li>
               <Link
                 className={styles.link}
-                href="/adjectives-definition/superlative-adjectives"
+                href="/prepositions-definition/prepositions-of-place"
               >
-                Superlative Adjectives
+                Prepositions of place
               </Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
