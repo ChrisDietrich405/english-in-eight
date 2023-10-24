@@ -9,15 +9,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 
-import SubmenuDropdown2 from "../SubmenuDropdown2";
+import SubmenuDropdown from "../SubmenuDropdown";
 import dropdown from "../../constants/dropdown";
 
 import logo from "../../../public/images/english-logo.svg";
@@ -28,7 +24,7 @@ import styles from "../../app/styles/content-page.module.css";
 const drawerWidth = 240;
 
 const navItems = dropdown.map((item) => (
-  <SubmenuDropdown2 title={item.label} dropdown={item.menus} />
+  <SubmenuDropdown title={item.label} dropdown={item.menus} />
 ));
 
 function DrawerAppBar(props) {
@@ -55,7 +51,6 @@ function DrawerAppBar(props) {
         />
       </Link>
       <Divider />
- 
     </Box>
   );
 
@@ -87,13 +82,13 @@ function DrawerAppBar(props) {
               sx={{ display: { xs: "none", sm: "block" } }}
             />
           </Link>
- 
+
           <Box
             sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
           >
             {navItems.map((item, index) => (
               <Button key={`button${index}`} sx={{ color: "#fff" }}>
-                {item} 
+                {item}
               </Button>
             ))}
           </Box>
@@ -118,7 +113,6 @@ function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      
       </Box>
     </Box>
   );

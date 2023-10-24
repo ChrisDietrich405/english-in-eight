@@ -75,6 +75,27 @@ const dropdown = [
       },
     ],
   },
+  {
+    label: "Verbs",
+    menus: [
+      {
+        title: "Verb Definition",
+        link: "/verbs-definition/home",
+      },
+      {
+        title: "Present Tense Verbs",
+        link: "/verbs-definition/present-tense",
+      },
+      {
+        title: "Past Tense Verbs",
+        link: "/verbs-definition/past-tense",
+      },
+      {
+        title: "Future Tense Verbs",
+        link: "/verbs-definition/future",
+      },
+    ],
+  },
 
   {
     label: "Other Topics",
