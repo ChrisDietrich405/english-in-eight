@@ -28,12 +28,12 @@ export const metadata = {
     images: [
       {
         alt: "English in Eight Logo",
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 1800,
         height: 1600,
         alt: "English in Eight Logo",
@@ -361,7 +361,6 @@ export default function FutureSimple() {
               <td>They will not fight</td>
               <td>They won't fight</td>
             </tr>
-
           </tbody>
         </table>
 

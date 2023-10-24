@@ -28,12 +28,12 @@ export const metadata = {
     images: [
       {
         alt: "English in Eight Logo",
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 1800,
         height: 1600,
         alt: "English in Eight Logo",
@@ -41,8 +41,6 @@ export const metadata = {
     ],
   },
 };
-
-
 
 export default function FuturePerfectContinuous() {
   const questionsArray = [
@@ -288,75 +286,72 @@ export default function FuturePerfectContinuous() {
   ];
 
   return (
-    
-      <main className="page-body">
-        <div>
-          <div className={styles.page_title}>
-            <h1>Future Perfect Continuous</h1>
-          </div>
-          <p className={styles.grammar_explanation_paragraph}>
-            The future perfect continuous tense is a verb form used to talk
-            about actions or events that will have been happening continuously
-            until a specific point in the future. Realistically it's not used
-            very much.
-          </p>
-
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Positive</th>
-                <th>Positive short form</th>
-                <th>Negative</th>
-                <th>Negative short form</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>I will have been finishing</td>
-                <td>I'll have been finishing</td>
-                <td>I will not have been finishing</td>
-                <td>I'll not have been finishing</td>
-              </tr>
-              <tr>
-                <td>You will have been swimming</td>
-                <td>You'll have been swimming</td>
-                <td>You will not have been swimming</td>
-                <td>You'll not have been swimming</td>
-              </tr>
-              <tr>
-                <td>She, he, it will have been working</td>
-                <td>She, he, it'll have been working</td>
-                <td>She, he, it will not have been working</td>
-                <td>She, he, it'll not have been working</td>
-              </tr>
-              <tr>
-                <td>We will have been running</td>
-                <td>We'll have been running</td>
-                <td>We will not have been running</td>
-                <td>We'll not have been running</td>
-              </tr>
-              <tr>
-                <td>They will have been ending</td>
-                <td>They'll have been ending</td>
-                <td>They wTheyll not have been ending</td>
-                <td>They'll not have been ending</td>
-              </tr>
-            </tbody>
-          </table>
+    <main className="page-body">
+      <div>
+        <div className={styles.page_title}>
+          <h1>Future Perfect Continuous</h1>
         </div>
-        <QuizForm questionsArray={questionsArray} />
+        <p className={styles.grammar_explanation_paragraph}>
+          The future perfect continuous tense is a verb form used to talk about
+          actions or events that will have been happening continuously until a
+          specific point in the future. Realistically it's not used very much.
+        </p>
 
-        <iframe
-          className={styles.iframe_wrapper}
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/3GY1pPj-Yuw?si=M8-SuxzAzPVJnY7b"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </main>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Positive</th>
+              <th>Positive short form</th>
+              <th>Negative</th>
+              <th>Negative short form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I will have been finishing</td>
+              <td>I'll have been finishing</td>
+              <td>I will not have been finishing</td>
+              <td>I'll not have been finishing</td>
+            </tr>
+            <tr>
+              <td>You will have been swimming</td>
+              <td>You'll have been swimming</td>
+              <td>You will not have been swimming</td>
+              <td>You'll not have been swimming</td>
+            </tr>
+            <tr>
+              <td>She, he, it will have been working</td>
+              <td>She, he, it'll have been working</td>
+              <td>She, he, it will not have been working</td>
+              <td>She, he, it'll not have been working</td>
+            </tr>
+            <tr>
+              <td>We will have been running</td>
+              <td>We'll have been running</td>
+              <td>We will not have been running</td>
+              <td>We'll not have been running</td>
+            </tr>
+            <tr>
+              <td>They will have been ending</td>
+              <td>They'll have been ending</td>
+              <td>They wTheyll not have been ending</td>
+              <td>They'll not have been ending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <QuizForm questionsArray={questionsArray} />
 
+      <iframe
+        className={styles.iframe_wrapper}
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/3GY1pPj-Yuw?si=M8-SuxzAzPVJnY7b"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </main>
   );
 }

@@ -28,12 +28,12 @@ export const metadata = {
     images: [
       {
         alt: "English in Eight Logo",
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "/images/english.svg",
+        url: "/images/english-logo.svg",
         width: 1800,
         height: 1600,
         alt: "English in Eight Logo",
@@ -275,11 +275,11 @@ export default function PresentContinuous() {
         </div>
         <div className="page-body">
           <p className={styles.grammar_explanation_paragraph}>
-            The present continuous is a verb form
-            used to describe an ongoing action, event that is happening at the
-            current moment or even a future event. It is formed by using the
-            auxiliary verb "to be" in the present tense, followed by the main
-            verb with "-ing" added to the end.
+            The present continuous is a verb form used to describe an ongoing
+            action, event that is happening at the current moment or even a
+            future event. It is formed by using the auxiliary verb "to be" in
+            the present tense, followed by the main verb with "-ing" added to
+            the end.
           </p>
 
           <table className={styles.table}>
@@ -355,5 +355,3 @@ export default function PresentContinuous() {
     </main>
   );
 }
-
-
