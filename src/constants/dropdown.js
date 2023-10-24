@@ -1,18 +1,5 @@
 const dropdown = [
   {
-    label: "Blogs",
-    menus: [
-      {
-        title: "Job Interviews",
-        link: "/other-topics/blogs/how-to-prepare-for-your-international-job-interview",
-      },
-      {
-        title: "Phrasal Verbs",
-        link: "/other-topics/blogs/why-phrasal-verbs-are-extremely-important-in-english",
-      },
-    ],
-  },
-  {
     label: "Nouns",
     menus: [
       {

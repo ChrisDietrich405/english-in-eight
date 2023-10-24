@@ -30,7 +30,7 @@ const MenuPopupState = ({ dropdown, title }) => {
         disableelevation="true"
         {...bindHover(popupState)}
       >
-        {title}
+        {title} 
         <KeyboardArrowDownIcon
           className={{
             "menu-chevron": true,
