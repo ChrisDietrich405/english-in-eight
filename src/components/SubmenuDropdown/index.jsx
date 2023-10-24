@@ -23,14 +23,14 @@ const MenuPopupState = ({ dropdown, title }) => {
       <div
         disableFocusRipple={true}
         id={title}
-        aria-controls={open ? "demo-customized-menu" : undefined}
+        aria-controls={popupState.isOpen ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
+        aria-expanded={popupState.isOpen ? "true" : undefined}
         variant="contained"
         disableelevation="true"
         {...bindHover(popupState)}
       >
-        {title} 
+        {title}
         <KeyboardArrowDownIcon
           className={{
             "menu-chevron": true,
@@ -39,6 +39,7 @@ const MenuPopupState = ({ dropdown, title }) => {
         />
       </div>
       <HoverMenu
+        open
         {...bindMenu(popupState)}
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
         transformOrigin={{ vertical: "top", horizontal: "left" }}
@@ -50,3 +51,4 @@ const MenuPopupState = ({ dropdown, title }) => {
 };
 
 export default MenuPopupState;
+
