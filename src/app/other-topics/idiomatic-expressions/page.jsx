@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Card } from "@mui/material";
 
-// const time = "../../../../public/images/time-is-money.jpg";
-
 import styles from "../../styles/content-page.module.css";
 
 export default function ExpressionsDefinition() {
@@ -21,7 +19,7 @@ export default function ExpressionsDefinition() {
             <Image
               width={300}
               height={200}
-              src="/time-is-money.jpg"
+              src="/images/time-is-money.jpg"
               alt="Time is money idiomatice expression pic"
               className="other-topics-image"
               aria-hidden="true"
@@ -38,7 +36,7 @@ export default function ExpressionsDefinition() {
             <Image
               width={300}
               height={200}
-              src="/mind-your-business.jpg"
+              src="/images/mind-your-business.jpg"
               alt="Mind your business idiomatice expression pic"
               className="other-topics-image"
               aria-hidden="true"

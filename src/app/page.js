@@ -56,7 +56,7 @@ export default function Home() {
         <div className={styles.banner}>
           <div className="image-container">
             <Image
-              src="/flag.png"
+              src="/images/flag.png"
               alt="Image Alt Text"
               layout="fill"
               loading="eager"

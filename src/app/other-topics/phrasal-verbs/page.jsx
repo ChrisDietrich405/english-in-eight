@@ -2,8 +2,6 @@ import Image from "next/image";
 import { Card } from "@mui/material";
 import styles from "../../styles/content-page.module.css";
 
-
-
 export default function PhrasalVerbs() {
   return (
     <>
@@ -22,8 +20,8 @@ export default function PhrasalVerbs() {
         <div className={styles.content_wrapper}>
           <Image
             height={220}
-            width={275}
-            src="/break-down.jpg"
+            width={300}
+            src="/images/break-down.jpg"
             alt="Speak versus talk"
           />
           <p>
@@ -39,7 +37,7 @@ export default function PhrasalVerbs() {
           <Image
             height={200}
             width={400}
-            src="/fall.jpg"
+            src="/images/fall.jpg"
             alt="Speak versus talk"
           />
           <p>

@@ -13,7 +13,12 @@ const Blog1 = () => {
         <h1>How to prepare for your international job interview</h1>
       </div>
       <div className={styles.image_container}>
-        <Image height={350} width={550} src="/interview2.jpg" alt="interview" />
+        <Image
+          height={350}
+          width={550}
+          src="/images/interview2.jpg"
+          alt="interview"
+        />
       </div>
       <p>
         People outside of the U.S. and Europe are very curious about getting
@@ -74,7 +79,12 @@ const Blog1 = () => {
         little extra time to process the question.
       </p>
       <div className={styles.image_container}>
-        <Image height={350} width={550} src="/interview.jpg" alt="interview" />
+        <Image
+          height={350}
+          width={550}
+          src="/images/interview.jpg"
+          alt="interview"
+        />
       </div>
       <h5 className={styles.section_title}>
         <b> After the interview</b>

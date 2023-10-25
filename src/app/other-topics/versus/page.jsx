@@ -25,13 +25,13 @@ export default function VersusDefinition() {
           <Image
             height={300}
             width={300}
-            src="/remember-versus-remind.jpg"
+            src="/images/remember-versus-remind.jpg"
             alt="Remember versus remind"
           />
           <Image
             height={300}
             width={300}
-            src="/speak-versus-talk.png"
+            src="/images/speak-versus-talk.png"
             alt="Speak versus talk"
           />
         </div>

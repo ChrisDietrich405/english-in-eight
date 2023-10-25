@@ -19,19 +19,24 @@ export default function NounDefinition() {
         <div className="row">
           <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
             <div className={styles.picture_wrapper}>
-              <Image height={250} width={250} src="/child.jpg" alt="" />
+              <Image height={250} width={250} src="/images/child.jpg" alt="" />
             </div>
             <h3 className={styles.picture_subtitle}>Person - child</h3>
           </div>
           <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
             <div className={styles.picture_wrapper}>
-              <Image height={250} width={250} src="/tajmahal.jpg" alt="" />
+              <Image
+                height={250}
+                width={250}
+                src="/images/tajmahal.jpg"
+                alt=""
+              />
             </div>
             <h3 className={styles.picture_subtitle}>Place - Taj Mahal</h3>
           </div>
           <div className={`col-md-4 mb-4 ${styles.definition_picture}`}>
             <div className={styles.picture_wrapper}>
-              <Image height={250} width={250} src="/iphone.jpg" alt="" />
+              <Image height={250} width={250} src="/images/iphone.jpg" alt="" />
             </div>
             <h3 className={styles.picture_subtitle}>Thing - Iphone</h3>
           </div>
