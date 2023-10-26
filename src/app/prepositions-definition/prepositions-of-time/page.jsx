@@ -5,7 +5,7 @@ export default function PrepositionsOfTime() {
   const questionsArray = [
     {
       id: 1,
-      title: "He's coming home_____________ 5 this evening.",
+      title: "He's coming home _____________  7pm.",
       possibleAnswers: [{ title: "on" }, { title: "at", correctAnswer: true }],
       userAnswer: "",
       explanation: "When speaking about time we use the preposition at.",
@@ -28,10 +28,7 @@ export default function PrepositionsOfTime() {
     {
       id: 4,
       title: "I exercise _______ the morning",
-      possibleAnswers: [
-        { title: "at" },
-        { title: "in", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "at" }, { title: "in", correctAnswer: true }],
       userAnswer: "",
       explanation:
         "When speaking about the morning and the afternoon we use the preposition in.",
@@ -52,14 +49,14 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 7,
-      title: "It's safer if you go with someone _______ night",
+      title: "It's safer if you go with someone _______ night.",
       possibleAnswers: [{ title: "in" }, { title: "at", correctAnswer: true }],
       userAnswer: "",
       explanation: "When speaking about night we use the preposition at.",
     },
     {
       id: 8,
-      title: "She is leaving Canada ________ September 26th",
+      title: "She is leaving Canada ________ September 26th.",
       possibleAnswers: [{ title: "on", correctAnswer: true }, { title: "in" }],
       userAnswer: "",
       explanation:
@@ -67,14 +64,14 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 9,
-      title: "I need to go exactly ______ 4.",
+      title: "I need to go exactly ______ 4pm.",
       possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "in" }],
       userAnswer: "",
       explanation: "When speaking about time we use the preposition at.",
     },
     {
       id: 10,
-      title: "His brother's birthday is _______ July",
+      title: "His brother's birthday is _______ July.",
       possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "at" }],
       userAnswer: "",
       explanation: "When speaking about months we use the preposition in.",
@@ -95,7 +92,7 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 13,
-      title: "The meeting is going to stop ______ 10",
+      title: "The meeting is going to stop ______ 10am.",
       possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "in" }],
       userAnswer: "",
       explanation: "When speaking about time we use the preposition at.",
@@ -109,7 +106,7 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 15,
-      title: "She needs to go to the clinic _______ the afternoon",
+      title: "She needs to go to the clinic _______ the afternoon.",
       possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "at" }],
       userAnswer: "",
       explanation:
@@ -117,13 +114,10 @@ export default function PrepositionsOfTime() {
     },
     {
       id: 16,
-      title: "I'm going to take my vacation ________ the spring",
-      possibleAnswers: [
-        { title: "paper cutter", correctAnswer: true },
-        { title: "cut paper" },
-      ],
+      title: "Marcus is leaving ______ February",
+      possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "on" }],
       userAnswer: "",
-      explanation: "When speaking about seasons we use the preposition in.",
+      explanation: "When speaking about months we use the preposition in.",
     },
     {
       id: 17,
@@ -150,7 +144,7 @@ export default function PrepositionsOfTime() {
     {
       id: 20,
       title: "_____ 2012 I was living in Colombia.",
-      possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "at" }],
+      possibleAnswers: [{ title: "In", correctAnswer: true }, { title: "At" }],
       userAnswer: "",
       explanation: "When speaking about years we use the preposition in.",
     },
@@ -175,7 +169,7 @@ export default function PrepositionsOfTime() {
           <li>Christmas is on December 25th.</li>
         </ul>
         <p className="{styles.grammar_explanation_paragraph}">
-          For times, night and holidays, use the preposition <b>at</b>
+          For times, night and holidays, use the preposition <b>at</b>.
         </p>
         <ul>
           <li>Families often argue at Christmas time.</li>
@@ -184,24 +178,25 @@ export default function PrepositionsOfTime() {
         </ul>
 
         <p className="{styles.grammar_explanation_paragraph}">
-          For years, months, seasons, centuries and times of day, use the
+          For years, months, seasons, centuries and times of day, we use the
           preposition <b>in</b>.
         </p>
         <ul>
           <li>I started in 1987.</li>
           <li>He was born in 1995.</li>
-          <li>It’s always cold in January</li>
+          <li>It’s always cold in January.</li>
           <li>Halloween is in the fall.</li>
           <li>I don't eat anything in the morning.</li>
         </ul>
       </div>
 
       <QuizForm questionsArray={questionsArray} />
+
       <iframe
         className="{styles.iframe_wrapper}"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/moynYBNHarg?si=IKrGnd6dJWz8qMpS"
+        src="https://www.youtube.com/embed/fRrVkXG0-v4?si=gBel6hfVXrayjlJ1"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
