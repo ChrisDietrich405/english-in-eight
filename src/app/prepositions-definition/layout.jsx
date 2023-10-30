@@ -23,12 +23,13 @@ const Layout = ({ children }) => {
                 Prepositions of time
               </Link>
             </li>
+
             <li>
               <Link
                 className={styles.link}
-                href="/prepositions-definition/prepositions-of-place"
+                href="/prepositions-definition/prepositions-of-movement"
               >
-                Prepositions of place
+                Prepositions of movement
               </Link>
             </li>
           </ul>
