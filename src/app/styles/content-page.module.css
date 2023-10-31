@@ -23,10 +23,15 @@
 }
 
 .picture_wrapper {
+  height: 180px !important;
   position: relative;
   overflow: hidden;
-
   border-radius: 5px;
+}
+
+.picture_wrapper img {
+  object-fit: contain !important; 
+  object-position: 50% 0;  
 }
 
 .picture_subtitle {
