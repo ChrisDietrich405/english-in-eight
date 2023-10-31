@@ -36,13 +36,13 @@ export const metadata = {
       {
         alt: "English in Eight Logo",
         url: "/images/english-logo.svg",
-        width: 400,
-        height: 300,
+        width: 1200,
+        height: 630,
       },
       {
         url: "/images/english-logo.svg",
-        width: 900,
-        height: 800,
+        width: 1800,
+        height: 1600,
         alt: "English in Eight Logo",
       },
     ],
