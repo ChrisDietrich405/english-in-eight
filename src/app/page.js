@@ -35,16 +35,16 @@ export const metadata = {
     images: [
       {
         alt: "English in Eight Logo",
-        url: "/images/english-logo.svg",
+        url: "/images/english-logo-facebook.jpg",
         width: 1200,
-        height: 460,
+        height: 630,
       },
-      {
-        url: "/images/english-logo.svg",
-        width: 1200,
-        height: 460,
-        alt: "English in Eight Logo",
-      },
+      // {
+      //   url: "/images/english-logo-facebook.svg",
+      //   width: 1200,
+      //   height: 630,
+      //   alt: "English in Eight Logo",
+      // },
     ],
   },
 };
