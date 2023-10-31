@@ -37,7 +37,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 5,
       title: "The clothes are ________ the floor.",
-      possibleAnswers: [{ title: "on" }, { title: "in", correctAnswer: true }],
+      possibleAnswers: [{ title: "in" }, { title: "on", correctAnswer: true }],
       userAnswer: "",
       explanation:
         "On is used when referring to something that is on a surface.",
@@ -83,14 +83,14 @@ export default function PrepositionsOfPlace() {
     {
       id: 11,
       title: "The painting is ______ the wall.",
-      possibleAnswers: [{ title: "on" }, { title: "in", correctAnswer: true }],
+      possibleAnswers: [{ title: "to" }, { title: "on", correctAnswer: true }],
       userAnswer: "",
       explanation: "In is used when referring to something that is inside.",
     },
     {
       id: 12,
       title: "They are ______ the park.",
-      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "in" }],
+      possibleAnswers: [{ title: "to", correctAnswer: true }, { title: "in" }],
       userAnswer: "",
       explanation:
         "At is used when referring to something at a specific point.",
@@ -221,7 +221,7 @@ export default function PrepositionsOfPlace() {
         className="{styles.iframe_wrapper}"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/moynYBNHarg?si=IKrGnd6dJWz8qMpS"
+        src="https://www.youtube.com/embed/kq65VGkVwC8?si=RqBQKKDNXQZ_AD5R"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

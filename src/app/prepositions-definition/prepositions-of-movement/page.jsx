@@ -6,7 +6,10 @@ export default function PrepositionsOfMovement() {
     {
       id: 1,
       title: "She walked _______ the store.",
-      possibleAnswers: [{ title: "on" }, { title: "to", correctAnswer: true }],
+      possibleAnswers: [
+        { title: "across" },
+        { title: "to", correctAnswer: true },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination.",
@@ -26,7 +29,7 @@ export default function PrepositionsOfMovement() {
       id: 3,
       title: "They ran _________ the street.",
       possibleAnswers: [
-        { title: "on" },
+        { title: "through" },
         { title: "across", correctAnswer: true },
       ],
       userAnswer: "",
@@ -36,7 +39,7 @@ export default function PrepositionsOfMovement() {
       id: 4,
       title: "They walked ______ a trap.",
       possibleAnswers: [
-        { title: "on" },
+        { title: "across" },
         { title: "into", correctAnswer: true },
       ],
       userAnswer: "",
@@ -45,7 +48,10 @@ export default function PrepositionsOfMovement() {
     {
       id: 5,
       title: "We drove ______ the mall.",
-      possibleAnswers: [{ title: "on" }, { title: "to", correctAnswer: true }],
+      possibleAnswers: [
+        { title: "through" },
+        { title: "to", correctAnswer: true },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination.",
@@ -53,7 +59,10 @@ export default function PrepositionsOfMovement() {
     {
       id: 6,
       title: "He is going ______ the store.",
-      possibleAnswers: [{ title: "on" }, { title: "to", correctAnswer: true }],
+      possibleAnswers: [
+        { title: "across" },
+        { title: "to", correctAnswer: true },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination.",
@@ -62,8 +71,8 @@ export default function PrepositionsOfMovement() {
       id: 7,
       title: "The cat walked ______ the table.",
       possibleAnswers: [
-        { title: "accross", correctAnswer: true },
-        { title: "in" },
+        { title: "across", correctAnswer: true },
+        { title: "into" },
       ],
       userAnswer: "",
       explanation: "Across demonstrates movement from one side to another.",
@@ -72,7 +81,7 @@ export default function PrepositionsOfMovement() {
       id: 8,
       title: "If I walk ______ that door I'm not coming back.",
       possibleAnswers: [
-        { title: "in" },
+        { title: "into" },
         { title: "through", correctAnswer: true },
       ],
       userAnswer: "",
@@ -84,7 +93,7 @@ export default function PrepositionsOfMovement() {
       title: "We are travelling ______ China.",
       possibleAnswers: [
         { title: "across", correctAnswer: true },
-        { title: "on" },
+        { title: "through" },
       ],
       userAnswer: "",
       explanation: "Across demonstrates movement from one side to another.",
@@ -104,7 +113,7 @@ export default function PrepositionsOfMovement() {
       title: "Don't go ______ that bridge. It's dangerous",
       possibleAnswers: [
         { title: "into" },
-        { title: "accross", correctAnswer: true },
+        { title: "across", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Across demonstrates movement from one side to another.",
@@ -144,7 +153,10 @@ export default function PrepositionsOfMovement() {
     {
       id: 15,
       title: "The baby crawled _______ his mother.",
-      possibleAnswers: [{ title: "to", correctAnswer: true }, { title: "on" }],
+      possibleAnswers: [
+        { title: "to", correctAnswer: true },
+        { title: "through" },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination.",
@@ -152,7 +164,10 @@ export default function PrepositionsOfMovement() {
     {
       id: 16,
       title: "The dog ran ______ the car.",
-      possibleAnswers: [{ title: "on" }, { title: "to", correctAnswer: true }],
+      possibleAnswers: [
+        { title: "across" },
+        { title: "to", correctAnswer: true },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination. ",
@@ -162,7 +177,7 @@ export default function PrepositionsOfMovement() {
       title: "She ran _______ the cave.",
       possibleAnswers: [
         { title: "into", correctAnswer: true },
-        { title: "on" },
+        { title: "through" },
       ],
       userAnswer: "",
       explanation: "Into demonstrates entering or looking inside something.",
@@ -180,16 +195,19 @@ export default function PrepositionsOfMovement() {
     {
       id: 19,
       title: "We swam ______ the deep part of the pool.",
-      possibleAnswers: [{ title: "to", correctAnswer: true }, { title: "in" }],
+      possibleAnswers: [
+        { title: "to", correctAnswer: true },
+        { title: "through" },
+      ],
       userAnswer: "",
       explanation:
         "To demonstrates that there is movement towards a specific destination..",
     },
     {
       id: 20,
-      title: "The dog ran __________ the garden.",
+      title: "The dog ran __________ the house.",
       possibleAnswers: [
-        { title: "on" },
+        { title: "across" },
         { title: "into", correctAnswer: true },
       ],
       userAnswer: "",

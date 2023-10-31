@@ -20,7 +20,15 @@ const Layout = ({ children }) => {
                 className={styles.link}
                 href="/prepositions-definition/prepositions-of-time"
               >
-                Prepositions of time
+                Prepositions of Time
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styles.link}
+                href="/prepositions-definition/prepositions-of-place"
+              >
+                Prepositions of Place
               </Link>
             </li>
 
@@ -29,7 +37,7 @@ const Layout = ({ children }) => {
                 className={styles.link}
                 href="/prepositions-definition/prepositions-of-movement"
               >
-                Prepositions of movement
+                Prepositions of Movement
               </Link>
             </li>
           </ul>

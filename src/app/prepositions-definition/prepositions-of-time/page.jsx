@@ -5,14 +5,14 @@ export default function PrepositionsOfTime() {
   const questionsArray = [
     {
       id: 1,
-      title: "He's coming home _____________  7pm.",
+      title: "He's coming home _______ 7pm.",
       possibleAnswers: [{ title: "on" }, { title: "at", correctAnswer: true }],
       userAnswer: "",
       explanation: "When speaking about time we use the preposition at.",
     },
     {
       id: 2,
-      title: "My trip starts _______ December 12th",
+      title: "My trip starts _______ December 12th.",
       possibleAnswers: [{ title: "on", correctAnswer: true }, { title: "in" }],
       userAnswer: "",
       explanation:
@@ -191,6 +191,7 @@ export default function PrepositionsOfTime() {
       </div>
 
       <QuizForm questionsArray={questionsArray} />
+
 
       <iframe
         className="{styles.iframe_wrapper}"
