@@ -156,12 +156,12 @@ export default function PrepositionsOfTime() {
       </div>
       <div className="page-body">
         <p className="{styles.grammar_explanation_paragraph}">
-          Basic examples of time prepositions include: at, on, in.
+          Basic examples of prepositions of time include: at, on, in.
         </p>
       </div>
       <div className="page-examples">
         <p className="{styles.grammar_explanation_paragraph}">
-          For days, dates and specific holiday days, use the preposition{" "}
+          For days and dates we use the preposition{" "}
           <b>on</b> .
         </p>
         <ul>
@@ -178,15 +178,15 @@ export default function PrepositionsOfTime() {
         </ul>
 
         <p className="{styles.grammar_explanation_paragraph}">
-          For years, months, seasons, centuries and times of day, we use the
+          For times of day, months, seasons, years and centuries we use the
           preposition <b>in</b>.
         </p>
         <ul>
-          <li>I started in 1987.</li>
-          <li>He was born in 1995.</li>
+          <li>I don't eat anything in the morning.</li>
           <li>It’s always cold in January.</li>
           <li>Halloween is in the fall.</li>
-          <li>I don't eat anything in the morning.</li>
+          <li>I started in 1987.</li>
+          <li>It happened in the 18th century.</li>
         </ul>
       </div>
 

@@ -90,7 +90,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 12,
       title: "They are ______ the park.",
-      possibleAnswers: [{ title: "to", correctAnswer: true }, { title: "in" }],
+      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "on" }],
       userAnswer: "",
       explanation:
         "At is used when referring to something at a specific point.",
@@ -167,7 +167,7 @@ export default function PrepositionsOfPlace() {
       </div>
       <div className="page-body">
         <p className="{styles.grammar_explanation_paragraph}">
-          Examples of place prepositions include: at, on, in.
+          Examples of prepositions of place include: at, on, in.
         </p>
       </div>
       <div className="page-examples">
@@ -193,7 +193,7 @@ export default function PrepositionsOfPlace() {
             The veggie burgers are <b>in</b> the fridge.
           </li>
           <li>
-            She's <b>in</b> the hospital.
+            She's <b>in</b> the house.
           </li>
           <li>
             Marcus is <b>in</b> Kenya, visiting his friend <b>in</b> the
