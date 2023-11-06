@@ -39,12 +39,6 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-      // {
-      //   url: "/images/english-logo-facebook.svg",
-      //   width: 1200,
-      //   height: 630,
-      //   alt: "English in Eight Logo",
-      // },
     ],
   },
 };
@@ -64,6 +58,11 @@ export default function Home() {
             <div className="overlay-text">
               <h2>Welcome to English in Eight Minutes!</h2>
             </div>
+            <Link href="/tutors">    
+            <div className="overlay-text-tutors">
+              <h5>Find a tutor!</h5>
+            </div>
+            </Link>
           </div>
         </div>
         <div className={styles.intro_content}>

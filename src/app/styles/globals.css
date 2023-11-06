@@ -45,6 +45,29 @@ hr {
   text-shadow: rgba(0, 0, 0, 1) 0px 0px 25px;
 }
 
+.overlay-text-tutors {
+  position: absolute;
+  top: 80%; /* Adjust the top position as needed */
+  left: 1%; /* Adjust the left position as needed */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+  /* Adjust the background color and opacity as needed */
+  color: #fff; /* Adjust the text color as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  text-shadow: rgba(0, 0, 0, 1) 0px 0px 25px;
+  background: var(--primary) ; 
+  border-radius: 4px;
+  transition: .4s; 
+}
+
+.overlay-text-tutors:hover {
+  background: var(--hover) ; 
+}
+
+.overlay-text-tutors h5 {
+  margin: 0 !important; 
+}
+
 .overlay-text h2 {
   font-size: 35px;
 }
