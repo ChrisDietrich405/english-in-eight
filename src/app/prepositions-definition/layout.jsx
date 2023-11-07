@@ -39,6 +39,12 @@ const Layout = ({ children }) => {
               >
                 Prepositions of Movement
               </Link>
+              <Link
+                className={styles.link}
+                href="/prepositions-definition/dependent-prepositions"
+              >
+                Dependent Prepositions
+              </Link>
             </li>
           </ul>
         </nav>

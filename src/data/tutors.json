@@ -1,26 +1,16 @@
 [
   {
-    "name": "Lena Young",
+    "name": "Chris Dietrich",
     "country": "USA",
-    "description": "Hi! I'm Lena and I've been teaching English for more than 10years. Feel free to message to chat or get references.",
+    "description": "Hi! I'm Chris and I've been teaching English for more than 20 years. Feel free to message me for more information.",
+    "time": "2000",
     "whatsapp": "12408144208"
   },
   {
     "name": "Chris Young",
     "country": "Brazil",
-    "description": "Hi! I'm Lena and I've been teaching English for more than 10years. Feel free to message to chat or get references.",
-    "whatsapp": "12408144208"
-  },
-  {
-    "name": "Jhonson Young",
-    "country": "USA",
-    "description": "Hi! I'm Lena and I've been teaching English for more than 10years. Feel free to message to chat or get references.",
-    "whatsapp": "12408144208"
-  },
-  {
-    "name": "Jhonson Young",
-    "country": "USA",
-    "description": "Hi! I'm Lena and I've been teaching English for more than 10years. Feel free to message to chat or get references.",
+    "description": "Hi! I'm Lena and I've been teaching English for more than 10 years. Feel free to message to chat or get references.",
+    "time": "2000",
     "whatsapp": "12408144208"
   }
 ]

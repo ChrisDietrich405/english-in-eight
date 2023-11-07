@@ -47,7 +47,7 @@ const Tutors = () => {
                         />
                         <span>Baltimore, Maryland</span>
                       </div>
-                      <p>Tutor since 2013</p>
+                      <p>Tutor since {tutor.time}</p>
                     </div>
                     <div className={styles.tutor_photo}>
                       <Image

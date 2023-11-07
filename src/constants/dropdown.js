@@ -64,6 +64,10 @@ const dropdown = [
         title: "Prepositions of Movement",
         link: "/prepositions-definition/prepositions-of-movement",
       },
+      {
+        title: "Dependent Prepositions",
+        link: "/prepositions-definition/dependent-prepositions",
+      },
     ],
   },
   {
@@ -117,7 +121,6 @@ const dropdown = [
       },
     ],
   },
- 
 ];
 
 export default dropdown;
