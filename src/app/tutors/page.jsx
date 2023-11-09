@@ -84,7 +84,7 @@ const Tutors = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Schedule your first class
+                    Schedule your free class today
                   </a>
                 </div>
               </Card>

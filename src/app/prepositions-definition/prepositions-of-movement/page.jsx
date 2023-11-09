@@ -110,7 +110,7 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 11,
-      title: "Don't go ______ that bridge. It's dangerous",
+      title: "Don't go ______ that bridge. It's dangerous.",
       possibleAnswers: [
         { title: "into" },
         { title: "across", correctAnswer: true },
@@ -142,7 +142,7 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 14,
-      title: "She sat down ________ the desk from me",
+      title: "She sat down ________ the desk from me.",
       possibleAnswers: [
         { title: "across", correctAnswer: true },
         { title: "in" },
@@ -184,24 +184,24 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 18,
-      title: "He walked _________ the room confidently.",
+      title: "The security guards pushed their way ________ the crowd..",
       possibleAnswers: [
-        { title: "across", correctAnswer: true },
-        { title: "to" },
+        { title: "through", correctAnswer: true },
+        { title: "across" },
       ],
       userAnswer: "",
-      explanation: "Across demonstrates movement from one side to another.",
+      explanation:
+        "Through demonstrates movement directly inside something and out the other end.",
     },
     {
       id: 19,
-      title: "We swam ______ the deep part of the pool.",
+      title: "We took a boat across the river.",
       possibleAnswers: [
         { title: "to", correctAnswer: true },
         { title: "through" },
       ],
       userAnswer: "",
-      explanation:
-        "To demonstrates that there is movement towards a specific destination..",
+      explanation: "Across demonstrates movement from one side to another.",
     },
     {
       id: 20,
