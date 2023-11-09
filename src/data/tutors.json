@@ -2,15 +2,19 @@
   {
     "name": "Chris Dietrich",
     "country": "USA",
-    "description": "Hi! I'm Chris and I've been teaching English for more than 20 years. Feel free to message me for more information.",
+    "country_flag": "/images/usflag.png",
+    "description": "Chris has been teaching English for more than 20 years in the classroom and also virtually. He holds a BA in Linguistics and also an ESOL teaching certificate from the University of Maryland Baltimore County. His focus is on job interview preparation and resume/LinkedIn account reviews.",
     "time": "2000",
-    "whatsapp": "12408144208"
+    "whatsapp": "12408144208",
+    "image": "/images/tenjo-pic.jpg"
   },
   {
-    "name": "Chris Young",
-    "country": "Brazil",
-    "description": "Hi! I'm Lena and I've been teaching English for more than 10 years. Feel free to message to chat or get references.",
+    "name": "Lena Lang",
+    "country": "Canada",
+    "country_flag": "/images/canadianflag.png",
+    "description": "Lena Lang is a Canadian business English teacher and communication coach. She helps busy professionals show up confidently in meetings, deliver impactful presentations, and write well-crafted emails so they can build great relationships with their English speaking team members and clients. ",
     "time": "2000",
-    "whatsapp": "12408144208"
+    "whatsapp": "12408144208",
+    "image": "/images/lena.PNG"
   }
 ]

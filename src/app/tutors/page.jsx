@@ -12,17 +12,35 @@ import styles from "./styles.module.css";
 const Tutors = () => {
   return (
     <Container>
-      <Grid container spacing={4} my={6}>
+      <h1 style={{ textAlign: "center", marginTop: "20px" }}>
+        All tutors provide a FREE 10 minute introductory class.
+      </h1>
+      <Grid
+        container
+        spacing={4}
+        my={6}
+        sx={{
+          display: "flex",
+          padding: "20px",
+          minHeight: "200px",
+          display: "flex",
+          alignItems: "space-around",
+          justifyContent: "space-between",
+        }}
+      >
         {data.map((tutor) => {
           return (
             <Grid
               item
               xs={12}
               sm={6}
-              md={4}
               sx={{
                 display: "flex",
                 padding: "20px",
+                minHeight: "200px",
+                display: "flex",
+                alignItems: "space-around",
+                justifyContent: "space-between",
               }}
             >
               <Card
@@ -43,9 +61,9 @@ const Tutors = () => {
                           alt=""
                           width={20}
                           height={20}
-                          src="/images/usflag.png"
+                          src={tutor.country_flag}
                         />
-                        <span>Baltimore, Maryland</span>
+                        <span>{tutor.country}</span>
                       </div>
                       <p>Tutor since {tutor.time}</p>
                     </div>
@@ -54,7 +72,7 @@ const Tutors = () => {
                         alt=""
                         width={100}
                         height={100}
-                        src="/images/tenjo-pic.jpg"
+                        src={tutor.image}
                       />
                     </div>
                   </div>
@@ -66,7 +84,7 @@ const Tutors = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Schedule your first class.
+                    Schedule your first class
                   </a>
                 </div>
               </Card>
