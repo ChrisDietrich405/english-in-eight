@@ -247,13 +247,13 @@ export default function SimplePresent() {
 
     {
       id: 20,
-      title: "I ________________ (play) the guitar in a band.",
+      title: "She __________ a lot of TV",
       possibleAnswers: [
-        { title: "a. play", correctAnswer: true },
-        { title: "b. plays" },
+        { title: "a. watch", correctAnswer: true },
+        { title: "b. watches" },
       ],
       userAnswer: "",
-      explanation: "play is the correct positive form for I.",
+      explanation: "watches is the correct positive form for she.",
     },
   ];
 

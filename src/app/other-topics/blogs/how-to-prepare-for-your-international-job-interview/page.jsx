@@ -48,9 +48,7 @@ const Blog1 = () => {
         interview knowing ahead of time that YOU WILL MAKE MISTAKES. The more
         you worry about it the more mistakes you will make.
       </p>
-      <p>
-        Do not and I repeat do not ever apologize for your English. You are there to demonstrate confidence and the fact that you are interviewing in English is something you should be extremely proud of. You make mistakes and so does everyone else. There's no reason to apologize. 
-      </p>
+
       <p>
         It's much more important to focus on your listening skills which leads
         me to the next suggestion. Watch interview videos on YouTube.
@@ -73,6 +71,13 @@ const Blog1 = () => {
         When we are nervous we start to speak faster and you definitely don't
         want to do that. Remember also, to smile and for the first question to
         include in your response a thank you for the interviewer for their time.
+      </p>
+      <p>
+        <b>Do not</b> and I repeat do not ever apologize for your English. You
+        are there to demonstrate confidence and the fact that you are
+        interviewing in English is something you should be extremely proud of.
+        You make mistakes and so does everyone else. There's no reason to
+        apologize.
       </p>
       <p>
         If a couple of the questions are challenging repeat the question back to
