@@ -35,7 +35,7 @@ const Blog3 = () => {
         team player. So when they ask you what your greatest professional
         accomplishment is, it's time to use <b>I</b> not <b>We</b>. There will
         be other times during the interview where you can demonstrate that you
-        work well on a team and easy to work with.
+        work well on a team and are easy to work with.
       </p>
       <h5 className={styles.section_title}>
         <b>Details</b>
@@ -103,7 +103,7 @@ const Blog3 = () => {
       </p>{" "}
       <p>
         Also, time your answers. Interview answers should be 30 seconds to four
-        minutes, depending on the questions. Your response may be short (30
+        minutes, depending on the question. Your response may be short (30
         seconds to two minutes) if the question is simple. For example, if the
         hiring manager asks you to describe your strengths, you might speak for
         90 seconds to explain your biggest strength. You definitely need to be

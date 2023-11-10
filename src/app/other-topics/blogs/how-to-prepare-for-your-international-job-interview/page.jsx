@@ -49,6 +49,9 @@ const Blog1 = () => {
         you worry about it the more mistakes you will make.
       </p>
       <p>
+        Do not and I repeat do not ever apologize for your English. You are there to demonstrate confidence and the fact that you are interviewing in English is something you should be extremely proud of. You make mistakes and so does everyone else. There's no reason to apologize. 
+      </p>
+      <p>
         It's much more important to focus on your listening skills which leads
         me to the next suggestion. Watch interview videos on YouTube.
         <Link
