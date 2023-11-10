@@ -58,7 +58,7 @@ const Blog3 = () => {
         you really did your homework and that you are really interested in the
         job. A very good idea is to refer to how your personal values align with
         the company's values, mentioning those values from the website or job
-        description
+        description.
       </p>
       <div className={styles.image_container}>
         <Image
@@ -123,7 +123,7 @@ const Blog3 = () => {
           </li>
 
           <li>
-            If you really want the job study the job description very carefully
+            If you really want the job study the job description and the website very carefully.
           </li>
           <li>
             {" "}
