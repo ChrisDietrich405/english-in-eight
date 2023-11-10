@@ -13,8 +13,26 @@
     "country": "Canada",
     "country_flag": "/images/canadianflag.png",
     "description": "Lena Lang is a Canadian business English teacher and communication coach. She helps busy professionals show up confidently in meetings, deliver impactful presentations, and write well-crafted emails so they can build great relationships with their English speaking team members and clients. ",
-    "time": "2000",
-    "whatsapp": "12408144208",
+    "time": "2016",
+    "whatsapp": "84777583304",
     "image": "/images/lena.PNG"
+  },
+  {
+    "name": "Evelyn Gastanes",
+    "country": "Phillipines",
+    "country_flag": "/images/phillipines.png",
+    "description": "Evelyn Gastanes started teaching as a speech therapist for special needs children. Today along with being a speech therapist she is an online teacher. She has been teaching English online for more than 6 years now for students living in Hongkong, Japan, Korea, the UK, Vietnam and China.",
+    "time": "2016",
+    "whatsapp": "639052002586",
+    "image": "/images/evelyn.jpg"
+  },
+  {
+    "name": "Romeo Notario",
+    "country": "Phillipines",
+    "country_flag": "/images/phillipines.png",
+    "description": "Romeo Notario holds a graduate degree in fine arts and education and also has his teaching certification to teach English as a Foreign Language (TEFL). He has been teaching online for 13 years. Before that he taught some years at the university level. He specializes in business English and grammar classes.",
+    "time": "2010",
+    "whatsapp": "639154528947",
+    "image": "/images/notario.jpg"
   }
 ]

@@ -142,10 +142,10 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 14,
-      title: "She sat down ________ the desk from me.",
+      title: "He drove _________ the dessert",
       possibleAnswers: [
         { title: "across", correctAnswer: true },
-        { title: "in" },
+        { title: "at" },
       ],
       userAnswer: "",
       explanation: "Across demonstrates movement from one side to another.",

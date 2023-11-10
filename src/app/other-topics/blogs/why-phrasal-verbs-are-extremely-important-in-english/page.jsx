@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card } from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 import styles from "../../../styles/blogs.module.css";
 
@@ -11,20 +12,39 @@ const Blog2 = () => {
       <div className={styles.page_title}>
         <h1>Why phrasal verbs are extremely important in English</h1>
       </div>
-      {/* <div className={styles.image_container}>
-        <Image height={350} width={550} src="/interview2.jpg" alt="interview" />
-      </div> */}
+      <div className={styles.image_container}>
+        <Image
+          height={350}
+          width={550}
+          src="/images/fall.jpg"
+          alt="interview"
+        />
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h3
+          style={{
+            textAlign: "center",
+            marginBottom: "30px",
+            fontWeight: "bold",
+          }}
+        >
+          Fall in love
+        </h3>
+        <FavoriteIcon />
+      </div>
       <p>
-        Phrasal verbs are an essential aspect of the English language, but they
-        can be very difficult for non-native speakers to understand. A phrasal
-        verb includes a verb followed by a preposition (or sometimes an adverb),
-        creating a meaning that often changes the sense of the verb a lot.
-      </p>
+        <b>Fall in</b> , <b>look forward to</b>, <b>break down </b>are all
+        examples of phrasal verbs. Phrasal verbs are an essential aspect of the
+        English language, but they can be very difficult for non-native speakers
+        to understand. A phrasal verb includes a verb followed by a preposition
+        (or sometimes an adverb).
+      </p>{" "}
       <p>
-        For example speak up means to speak louder. "The audience wasn't able to
-        hear me so I needed to speak up." Understanding and using phrasal verbs
-        correctly can greatly enhance your fluency and communication skills in
-        English.
+        Many times phrasal verbs create a meaning that often changes the sense
+        of the verb a lot. For example <b>look forward to</b> means to be
+        excited about a future event. I'm really looking forward to the weekend.
+        I'm so ready to relax. This meaning really has nothing to do with the
+        verb to look.
       </p>
       <h5 className={styles.section_title}>
         <b>Why phrasal verbs are important</b>
@@ -73,18 +93,19 @@ const Blog2 = () => {
         <li>
           Practice and Consistency: You need to practice your 5 phrasal verbs
           every day for the entire week. Write down examples using them, say
-          them and teach them to 3 or 4 people.
+          them and teach them to 3 or 4 people. Also, make the learning
+          personal. For example think about the year you fell in love with your
+          husband or wife.
         </li>
 
         <li>
           <Link href="/other-topics/phrasal-verbs">
             Go to the phrasal verbs section of English in Eight Minutes.
           </Link>
-          There you will find a video and phrasal verbs with accompanying
+          &nbsp;There you will find a video and phrasal verbs with accompanying
           exercises.
         </li>
       </ul>
-
       <h5 className={styles.section_title}>
         <b>
           {" "}
@@ -93,21 +114,24 @@ const Blog2 = () => {
         </b>
       </h5>
       <ul className={styles.list_container}>
-        <li>Take off: To remove something (e.g., "She took off her coat.")</li>
         <li>
-          Turn on: To activate or start something (e.g., "Turn on the lights.").
+          <b>Take off:</b> To remove something (e.g., "She took off her coat.")
         </li>
         <li>
-          Give up: To quit or stop doing something (e.g., "Don't give up on your
-          dreams.").
+          <b>Turn on:</b> To activate or start something (e.g., "Turn on the
+          lights.").
         </li>
         <li>
-          Look up: To search for information (e.g., "I'll look up that word in
-          the dictionary.").
+          <b>Give up: </b>To quit or stop doing something (e.g., "Don't give up
+          on your dreams.").
         </li>
         <li>
-          Get along: To have a good relationship with someone (e.g., "I get
-          along well with my colleagues.").
+          <b>Look up:</b> To search for information (e.g., "I'll look up that
+          word in the dictionary.").
+        </li>
+        <li>
+          <b>Get along:</b> To have a good relationship with someone (e.g., "I
+          get along well with my colleagues.").
         </li>
       </ul>
       <Card sx={{ padding: "20px", marginTop: "20px" }}>
@@ -122,7 +146,9 @@ const Blog2 = () => {
 
           <li>Teach the phrasal verbs you learn to several people.</li>
           <li>
-            Use English in Eight Minutes to practice and be more successful.
+            <Link href="/other-topics/phrasal-verbs">
+              Use English in Eight Minutes to practice and be more successful.
+            </Link>
           </li>
         </ul>
       </Card>

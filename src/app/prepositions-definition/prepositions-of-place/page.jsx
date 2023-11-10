@@ -146,7 +146,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 19,
       title: "They are ______ the museum.",
-      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "in" }],
+      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "to" }],
       userAnswer: "",
       explanation:
         "At is used when referring to something at a specific point.",
