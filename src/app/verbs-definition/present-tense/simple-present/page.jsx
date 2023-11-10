@@ -65,13 +65,13 @@ export default function SimplePresent() {
     },
     {
       id: 3,
-      title: "She ____________ (play) badminton.",
+      title: "She ____________ (fly) to Canada twice a year.",
       possibleAnswers: [
-        { title: "a. plays", correctAnswer: true },
-        { title: "b. play" },
+        { title: "a. flies", correctAnswer: true },
+        { title: "b. fly" },
       ],
       userAnswer: "",
-      explanation: "plays is the correct positive form for she, he, it.",
+      explanation: "flies is the correct positive form for she, he, it.",
     },
     {
       id: 4,
