@@ -334,9 +334,9 @@ export default function PresentPerfectContinuous() {
         </ul>
         <h4>Actions which have very recently stopped</h4>
         <ul className="page-examples">
-          <li>He's been running, so he's really hot.</li>
           <li>It's been raining so now it's a little cooler.</li>
-          <li>I'm so tired, I've been working on this project for hours.</li>
+          <li>I'm so tired, I've been working on the computer for hours.</li>
+          <li>He's been exercising, so he's really hot.</li>
         </ul>
       </div>
       <QuizForm questionsArray={questionsArray} />
