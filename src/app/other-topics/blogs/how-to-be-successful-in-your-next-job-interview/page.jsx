@@ -14,6 +14,7 @@ const Blog3 = () => {
       </div>
       <div className={styles.image_container}>
         <Image
+          className={styles.image}
           height={350}
           width={550}
           src="/images/interview3.jpg"
@@ -62,6 +63,7 @@ const Blog3 = () => {
       </p>
       <div className={styles.image_container}>
         <Image
+          className={styles.image}
           height={350}
           width={550}
           src="/images/interview4.jpg"
@@ -109,7 +111,6 @@ const Blog3 = () => {
         90 seconds to explain your biggest strength. You definitely need to be
         careful about talking too much because when we're nervous it's very
         normal to do that.&nbsp;
-       
       </p>
       <Card sx={{ padding: "20px" }}>
         <h4>
@@ -123,7 +124,8 @@ const Blog3 = () => {
           </li>
 
           <li>
-            If you really want the job study the job description and the website very carefully.
+            If you really want the job study the job description and the website
+            very carefully.
           </li>
           <li>
             {" "}

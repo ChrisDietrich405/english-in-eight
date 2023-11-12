@@ -296,9 +296,9 @@ export default function Superlatives() {
               adjective, we often double the consonant.
             </p>
             <ul className="page-examples">
-              <li>sad → sadder</li>
-              <li>hot → hotter</li>
-              <li>big → bigger</li>
+              <li>sad → saddest</li>
+              <li>hot → hottest</li>
+              <li>big → biggest</li>
             </ul>
 
             <p>
@@ -314,16 +314,16 @@ export default function Superlatives() {
               these verbs.
             </p>
             <ul className="page-examples">
-              <li>real → more real (NOT realer)</li>
-              <li>fun → more fun (NOT funner)</li>
+              <li>real → most real (NOT realer)</li>
+              <li>fun → most fun (NOT funner)</li>
             </ul>
           </section>
           <section>
             <h4>Adjectives with two syllables</h4>
             <p>Some adjectives with two syllables use 'more'.</p>
             <ul className="page-examples">
-              <li>thoughtful → more thoughtful</li>
-              <li>peaceful → more peaceful</li>
+              <li>thoughtful → most thoughtful</li>
+              <li>peaceful → most peaceful</li>
             </ul>
             <p>However, some two syllable adjectives can use 'est'.</p>
             <ul className="page-examples">

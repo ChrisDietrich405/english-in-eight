@@ -33,3 +33,10 @@
 .list_container li {
   margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 500px) {
+  .image {
+    width: 100% !important;
+    height: 40% !important;
+  }
+}
