@@ -103,7 +103,7 @@ export default function PossessiveAdjectives() {
         { title: "your" },
       ],
       userAnswer: "",
-      explanation: "Me is the possessive adjective for I.",
+      explanation: "My is the possessive adjective for I.",
     },
     {
       id: 7,
@@ -176,7 +176,7 @@ export default function PossessiveAdjectives() {
     },
     {
       id: 14,
-      title: "The children found (he) _____________ lost toy.",
+      title: "He found (he) _____________ lost toy.",
       possibleAnswers: [{ title: "my" }, { title: "his", correctAnswer: true }],
       userAnswer: "",
       explanation: "His is the possessive adjective for he.",
@@ -185,11 +185,11 @@ export default function PossessiveAdjectives() {
       id: 15,
       title: "(You) _______________ friends are very kind.",
       possibleAnswers: [
-        { title: "Their", correctAnswer: true },
+        { title: "Your", correctAnswer: true },
         { title: "My" },
       ],
       userAnswer: "",
-      explanation: "Their is the possessive adjective for you.",
+      explanation: "Your is the possessive adjective for you.",
     },
     {
       id: 16,
@@ -211,7 +211,7 @@ export default function PossessiveAdjectives() {
     {
       id: 18,
       title:
-        "The students admired (he) _____________ dedication to their education.",
+        "The students admired (he) _____________ dedication.",
       possibleAnswers: [
         { title: "their" },
         { title: "his", correctAnswer: true },
