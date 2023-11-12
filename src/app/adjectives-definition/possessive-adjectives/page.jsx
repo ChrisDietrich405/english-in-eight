@@ -87,7 +87,7 @@ export default function PossessiveAdjectives() {
     },
     {
       id: 5,
-      title: "(He)  ________________favorite hobby is running.",
+      title: "(He)  ________________ favorite hobby is running.",
       possibleAnswers: [
         { title: "Your" },
         { title: "His", correctAnswer: true },
@@ -103,7 +103,7 @@ export default function PossessiveAdjectives() {
         { title: "your" },
       ],
       userAnswer: "",
-      explanation: "Me is the possessive adjective for I.",
+      explanation: "My is the possessive adjective for I.",
     },
     {
       id: 7,
@@ -185,11 +185,11 @@ export default function PossessiveAdjectives() {
       id: 15,
       title: "(You) _______________ friends are very kind.",
       possibleAnswers: [
-        { title: "Their", correctAnswer: true },
+        { title: "Your", correctAnswer: true },
         { title: "My" },
       ],
       userAnswer: "",
-      explanation: "Their is the possessive adjective for you.",
+      explanation: "Your is the possessive adjective for you.",
     },
     {
       id: 16,
