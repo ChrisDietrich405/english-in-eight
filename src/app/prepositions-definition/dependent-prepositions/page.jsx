@@ -79,7 +79,7 @@ export default function DependentPrepositions() {
       id: 10,
       title: "Don't forget _______ my birthday.",
       possibleAnswers: [
-        { title: "into", correctAnswer: true },
+        { title: "about", correctAnswer: true },
         { title: "through" },
       ],
       userAnswer: "",
@@ -96,7 +96,7 @@ export default function DependentPrepositions() {
       id: 12,
       title: "He doesn't believe _____ mysticism.",
       possibleAnswers: [
-        { title: "to", correctAnswer: true },
+        { title: "in", correctAnswer: true },
         { title: "into" },
       ],
       userAnswer: "",
@@ -106,7 +106,7 @@ export default function DependentPrepositions() {
       id: 13,
       title: "You can ask ______ something to eat.",
       possibleAnswers: [
-        { title: "for" },
+        { title: "in" },
         { title: "for", correctAnswer: true },
       ],
       userAnswer: "",

@@ -4,7 +4,7 @@ import Link from "next/link";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-const NounsSubmenuDropdownMobile = () => {
+const OtherTopicsSubmenuDropdownMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -13,35 +13,40 @@ const NounsSubmenuDropdownMobile = () => {
 
   const dropdownProps = [
     {
-      title: "Noun Definition",
-      link: "/nouns-definition",
+      title: "Idiomatic Expressions",
+      link: "/other-topics/idiomatic-expressions",
     },
     {
-      title: " Uncountable & Countable Nouns",
-      link: "/nouns-definition/uncountable-countable-nouns",
+      title: "Phrasal Verbs",
+      link: "/other-topics/phrasal-verbs",
     },
     {
-      title: " Collective Nouns",
-      link: "/nouns-definition/collective-nouns",
+      title: "Versus",
+      link: "/other-topics/versus",
     },
     {
-      title: "Noun Modifiers",
-      link: "/nouns-definition/noun-modifiers",
+      title: "How to use the website",
+      link: "/other-topics/suggestions",
     },
     {
-      title: " Possessive Pronouns",
-      link: "/nouns-definition/possessive-pronouns",
+      title: "Blogs",
+      link: "/other-topics/blogs",
+    },
+    {
+      title: "Acknowledgements",
+      link: "/other-topics/acknowledgements",
     },
   ];
 
   return (
     <ul className="dropdown-list-link-container">
       <li className="dropdown-list-link" onClick={handleToggleMenu}>
-        Nouns{isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        Other Topics{" "}
+        {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </li>
 
       {isOpen && (
-        <span className="skip-click" >
+        <span className="skip-click">
           {dropdownProps.map((item, index) => {
             return (
               <li className="dropdown-list-link">
@@ -55,4 +60,4 @@ const NounsSubmenuDropdownMobile = () => {
   );
 };
 
-export default NounsSubmenuDropdownMobile;
+export default OtherTopicsSubmenuDropdownMobile;

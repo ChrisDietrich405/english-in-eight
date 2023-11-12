@@ -4,7 +4,7 @@ import Link from "next/link";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-const NounsSubmenuDropdownMobile = () => {
+const OtherTopicsSubmenuDropdownMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -13,35 +13,37 @@ const NounsSubmenuDropdownMobile = () => {
 
   const dropdownProps = [
     {
-      title: "Noun Definition",
-      link: "/nouns-definition",
+      title: "Prepositions Definition",
+      link: "/prepositions-definition/home",
     },
     {
-      title: " Uncountable & Countable Nouns",
-      link: "/nouns-definition/uncountable-countable-nouns",
+      title: "Prepositions of Time",
+      link: "/prepositions-definition/prepositions-of-time",
     },
     {
-      title: " Collective Nouns",
-      link: "/nouns-definition/collective-nouns",
+      title: "Prepositions of Movement",
+      link: "/prepositions-definition/prepositions-of-movement",
     },
     {
-      title: "Noun Modifiers",
-      link: "/nouns-definition/noun-modifiers",
+      title: "Prepositions of Place",
+      link: "/prepositions-definition/prepositions-of-place",
     },
     {
-      title: " Possessive Pronouns",
-      link: "/nouns-definition/possessive-pronouns",
+      title: "Dependent Prepositions",
+      link: "/prepositions-definition/dependent-prepositions",
     },
+    
   ];
 
   return (
     <ul className="dropdown-list-link-container">
       <li className="dropdown-list-link" onClick={handleToggleMenu}>
-        Nouns{isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        Other Topics{" "}
+        {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </li>
 
       {isOpen && (
-        <span className="skip-click" >
+        <span className="skip-click">
           {dropdownProps.map((item, index) => {
             return (
               <li className="dropdown-list-link">
@@ -55,4 +57,4 @@ const NounsSubmenuDropdownMobile = () => {
   );
 };
 
-export default NounsSubmenuDropdownMobile;
+export default OtherTopicsSubmenuDropdownMobile;

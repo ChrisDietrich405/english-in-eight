@@ -4,7 +4,7 @@ import Link from "next/link";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-const NounsSubmenuDropdownMobile = () => {
+const AdjectivesSubmenuDropdownMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -13,35 +13,31 @@ const NounsSubmenuDropdownMobile = () => {
 
   const dropdownProps = [
     {
-      title: "Noun Definition",
-      link: "/nouns-definition",
+      title: "Adjective Definition",
+      link: "/adjectives-definition",
     },
     {
-      title: " Uncountable & Countable Nouns",
-      link: "/nouns-definition/uncountable-countable-nouns",
+      title: "Possessive Adjectives",
+      link: "/adjectives-definition/possessive-adjectives",
     },
     {
-      title: " Collective Nouns",
-      link: "/nouns-definition/collective-nouns",
+      title: "Comparative Adjectives",
+      link: "/adjectives-definition/comparative-adjectives",
     },
     {
-      title: "Noun Modifiers",
-      link: "/nouns-definition/noun-modifiers",
-    },
-    {
-      title: " Possessive Pronouns",
-      link: "/nouns-definition/possessive-pronouns",
+      title: "Superlative Adjectives",
+      link: "/adjectives-definition/superlative-adjectives",
     },
   ];
 
   return (
     <ul className="dropdown-list-link-container">
       <li className="dropdown-list-link" onClick={handleToggleMenu}>
-        Nouns{isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        Adjectives{isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </li>
 
       {isOpen && (
-        <span className="skip-click" >
+        <span className="skip-click">
           {dropdownProps.map((item, index) => {
             return (
               <li className="dropdown-list-link">
@@ -55,4 +51,4 @@ const NounsSubmenuDropdownMobile = () => {
   );
 };
 
-export default NounsSubmenuDropdownMobile;
+export default AdjectivesSubmenuDropdownMobile;

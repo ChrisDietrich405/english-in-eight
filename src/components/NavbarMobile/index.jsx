@@ -1,10 +1,5 @@
-"use client";
 import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import PropTypes from "prop-types";
-
-import "react-toastify/dist/ReactToastify.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -17,55 +12,48 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-
+import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
-import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
-import PrepositionsSubmenuDropdown from "../PrepositionsSubmenuDropdown";
-import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
-import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
-
-import logo from "../../../public/images/english.svg";
-
-import styles from "../../app/styles/content-page.module.css";
+import NounsSubmenuDropdownMobile from "../NounsSubmenuDropdownMobile";
+import VerbsSubmenuDropdownMobile from "../VerbsSubmenuDropdownMobile";
+import AdjectivesSubmenuDropdownMobile from "../AdjectivesSubmenuDropdownMobile";
+import OtherTopicsSubmenuDropdownMobile from "../OtherTopicsSubmenuDropdownMobile";
 
 const drawerWidth = 240;
 const navItems = [
-  <NounsSubmenuDropdown />,
-  <VerbsSubmenuDropdown />,
-  <PrepositionsSubmenuDropdown />,
-  <AdjectivesSubmenuDropdown />,
-  <OtherTopicsSubmenuDropdown />,
+  <NounsSubmenuDropdownMobile />,
+  <VerbsSubmenuDropdownMobile />,
+  <AdjectivesSubmenuDropdownMobile />,
+  <OtherTopicsSubmenuDropdownMobile />,
 ];
 
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+  const myRef = React.useRef(null);
 
-  const closeDropdown = () => {
-    setMobileOpen(false);
+  const handleDrawerToggle = (e) => {
+    const skipClick = document.querySelectorAll(".skip-click");
+
+    if (
+      !myRef?.current?.contains(e.target) ||
+      (skipClick && [...skipClick]?.some((item) => item.contains(e.target)))
+    ) {
+      setMobileOpen((prevState) => !prevState);
+    }
   };
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Link href="/">
-        <Image
-          className={styles.navbar_logo}
-          src={logo}
-          width={150}
-          height={150}
-          alt="Picture of the author"
-        />
-      </Link>
+      <Typography variant="h6" sx={{ my: 2 }}>
+        MUI
+      </Typography>
       <Divider />
-      <List>
-        {navItems.map((item, index) => (
-          <ListItem key={`list-item-${index}`} disablePadding>
+      <List ref={myRef}>
+        {navItems.map((item) => (
+          <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
@@ -81,48 +69,41 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" style={{ height: "72px" }}>
+      <AppBar component="nav">
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            onMouseLeave={closeDropdown}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
-          <Link href="/">
-            <Image
-              className={styles.navbar_logo}
-              src="/images/english.svg"
-              width={120}
-              height={120}
-              alt="Picture of the logo"
-              sx={{ display: { xs: "none", sm: "block" } }}
-            />
-          </Link>
-
-          <Box
-            sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            {navItems.map((item, index) => (
-              <Button key={`button${index}`} sx={{ color: "#fff" }}>
+            MUI
+          </Typography>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: "#fff" }}>
                 {item}
               </Button>
             ))}
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      <nav>
         <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true,
+            keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -134,12 +115,16 @@ function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      </Box>
+      </nav>
     </Box>
   );
 }
 
 DrawerAppBar.propTypes = {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
   window: PropTypes.func,
 };
 

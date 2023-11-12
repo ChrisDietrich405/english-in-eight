@@ -11,6 +11,8 @@ import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+import Dropdown from "../Dropdown";
+
 import styles from "../Navbar/styles.module.css";
 
 const StyledMenu = styled((props) => (
@@ -56,7 +58,26 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus({ dropdownProps }) {
+export default function CustomizedMenus() {
+  const dropdownProps = [
+    {
+      title: "Verb Definition",
+      link: "/verbs-definition/home",
+    },
+    {
+      title: "Present Tense Verbs",
+      link: "/verbs-definition/present-tense",
+    },
+    {
+      title: "Past Tense Verbs",
+      link: "/verbs-definition/past-tense",
+    },
+    {
+      title: "Future Tense Verbs",
+      link: "/verbs-definition/future",
+    },
+  ];
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -67,16 +88,30 @@ export default function CustomizedMenus({ dropdownProps }) {
   };
 
   return (
-    <div>
-      {dropdownProps.map((dropdownItem, index) => {
-        return (
-          <MenuItem key={index} onClick={handleClose} disableRipple>
-            <Link className={styles.link} href={dropdownItem.link}>
-              {dropdownItem.title}
-            </Link>
-          </MenuItem>
-        );
-      })}
-    </div>
+    <>
+      <div
+        id="demo-customized-button"
+        aria-controls={open ? "demo-customized-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        variant="contained"
+        disableelevation="true"
+        onClick={handleClick}
+      >
+        Verbs
+        <KeyboardArrowDownIcon />
+      </div>
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          "aria-labelledby": "demo-customized-button",
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+      >
+        <Dropdown dropdownProps={dropdownProps} />
+      </StyledMenu>
+    </>
   );
 }
