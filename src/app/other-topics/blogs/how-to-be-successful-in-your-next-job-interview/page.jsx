@@ -45,9 +45,10 @@ const Blog3 = () => {
         They are going to interview 5 people. How are you different from the
         rest? Make sure to use as many details as possible. "When I was working
         for Beyond Meat in 2019 I suggested a new feature. We implemented it and
-        as a direct result our profits rose by 5%". In this scenario you
+        as a direct result our profits increased by 5%". In this scenario you
         mentioned the name of the company, the year and the exact percentage of
-        the increase in profit. The more details the better.
+        the increase in profit. The more details the better. This helps you to
+        be more memorable.
       </p>
       <h5 className={styles.section_title}>
         <b>Study the job description</b>
