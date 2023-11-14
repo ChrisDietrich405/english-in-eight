@@ -59,7 +59,7 @@ function DrawerAppBar(props) {
           src={logo}
           width={150}
           height={150}
-          alt="Picture of the author"
+          alt="Picture of the logo"
         />
       </Link>
       <Divider />

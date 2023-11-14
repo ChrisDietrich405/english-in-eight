@@ -66,7 +66,7 @@ export default function PastContinuous() {
     },
     {
       id: 3,
-      title: "It __________ a lot when I noticed my car door was broken",
+      title: "It __________ a lot when I noticed my car door was broken.",
       possibleAnswers: [
         { title: "a. were raining" },
         { title: "b. was raining", correctAnswer: true },
@@ -255,10 +255,9 @@ export default function PastContinuous() {
       </div>
       <p className={styles.grammar_explanation_paragraph}>
         The past continuous tense is a way to talk about actions or events that
-        were happening in the past and were ongoing or in progress at a specific
-        moment. It is formed by using the past tense of the verb "to be"
-        (was/were) and adding the present participle (-ing form) of the main
-        verb.
+        were happening in the past. It is formed by using the past tense of the
+        verb "to be" (was/were) and adding the present participle (-ing form) of
+        the main verb.
       </p>
       <div>
         <table className={styles.table}>
@@ -318,19 +317,6 @@ export default function PastContinuous() {
           <li>
             I <b>was working</b> in the garden when the delivery guy came to the
             door.
-          </li>
-        </ul>
-        <p className={styles.grammar_explanation_paragraph}>
-          When you talk about an exact time in the past, use the past continuous
-          tense if the action started before that specific time and then
-          continued afterward.
-        </p>
-        <ul className="page-examples">
-          <li>
-            She <b>was working</b> in Morocco in November.
-          </li>
-          <li>
-            At the end of the meeting, everyone <b>was still arguing</b>.
           </li>
         </ul>
       </div>
