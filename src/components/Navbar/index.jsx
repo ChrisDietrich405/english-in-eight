@@ -21,17 +21,19 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
+import PrepositionsSubmenuDropdown from "../PrepositionsSubmenuDropdown";
 import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
-import logo from "../../../public/images/english.svg";
+import logo from "../../../public/images/english-logo.svg";
 
 import styles from "../../app/styles/content-page.module.css";
 
 const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdown />,
+  <PrepositionsSubmenuDropdown />,
   <VerbsSubmenuDropdown />,
   <AdjectivesSubmenuDropdown />,
   <OtherTopicsSubmenuDropdown />,
@@ -94,7 +96,7 @@ function DrawerAppBar(props) {
           <Link href="/">
             <Image
               className={styles.navbar_logo}
-              src="/images/english.svg"
+              src={logo}
               width={120}
               height={120}
               alt="Picture of the logo"
