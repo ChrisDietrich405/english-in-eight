@@ -22,7 +22,6 @@ import Button from "@mui/material/Button";
 
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
 import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
-import PrepositionsSubmenuDropdown from "../PrepositionsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
@@ -34,7 +33,6 @@ const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdown />,
   <VerbsSubmenuDropdown />,
-  <PrepositionsSubmenuDropdown />,
   <AdjectivesSubmenuDropdown />,
   <OtherTopicsSubmenuDropdown />,
 ];
@@ -59,7 +57,7 @@ function DrawerAppBar(props) {
           src={logo}
           width={150}
           height={150}
-          alt="Picture of the logo"
+          alt="Picture of the author"
         />
       </Link>
       <Divider />
