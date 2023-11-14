@@ -6,6 +6,46 @@ import { Card } from "@mui/material";
 
 import styles from "../../../styles/blogs.module.css";
 
+export const metadata = {
+  title: "How to be Successful in Your Next Job Interview",
+  description:
+    "Discover strategies to enhance your job interview skills and increase your chances of landing your dream job. Learn about confidence, attention to details, studying job descriptions, physical presence, asking questions, and the importance of practice.",
+  keywords:
+    "Job Interview, Interview Skills, Confidence, Attention to Details, Job Description, Physical Presence, Asking Questions, Practice",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "How to be Successful in Your Next Job Interview",
+    description:
+      "Discover strategies to enhance your job interview skills and increase your chances of landing your dream job. Learn about confidence, attention to details, studying job descriptions, physical presence, asking questions, and the importance of practice.",
+    images: [
+      {
+        alt: "Job Interview Image 1",
+        url: "/images/interview3.jpg",
+        width: 550,
+        height: 350,
+      },
+      {
+        alt: "Job Interview Image 2",
+        url: "/images/interview4.jpg",
+        width: 550,
+        height: 350,
+      },
+    ],
+  },
+};
+
 const Blog3 = () => {
   return (
     <main className={styles.blog_container}>

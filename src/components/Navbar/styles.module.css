@@ -1,9 +1,7 @@
-.link {
-  text-decoration: none;
-}
-
-.link:active {
-  color: purple; 
+.accordion_link a {
+  color: purple;
+  background-color: green;
+  text-decoration: none !important;
 }
 
 .home_btn {

@@ -6,6 +6,40 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 import styles from "../../../styles/blogs.module.css";
 
+export const metadata = {
+  title: "Why Phrasal Verbs are Extremely Important in English",
+  description:
+    "Discover the significance of phrasal verbs in the English language. Learn about their importance in natural conversation, vocabulary enrichment, and cultural awareness. Explore tips on how to learn and use phrasal verbs effectively.",
+  keywords:
+    "Phrasal Verbs, English Language, Vocabulary, Cultural Awareness, Language Learning",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Why Phrasal Verbs are Extremely Important in English",
+    description:
+      "Discover the significance of phrasal verbs in the English language. Learn about their importance in natural conversation, vocabulary enrichment, and cultural awareness. Explore tips on how to learn and use phrasal verbs effectively.",
+    images: [
+      {
+        alt: "Phrasal Verbs Image",
+        url: "/images/fall.jpg",
+        width: 550,
+        height: 350,
+      },
+    ],
+  },
+};
+
 const Blog2 = () => {
   return (
     <main className={styles.blog_container}>

@@ -4,6 +4,41 @@ import { Container, Button, Grid } from "@mui/material";
 
 import styles from "../../styles/blogs.module.css";
 
+export const metadata = {
+  title: "How to Prepare for Your International Job Interview",
+  description:
+    "Explore strategies to succeed in international job interviews, particularly for positions in U.S. or European countries. Learn about pre-interview preparation, language considerations, interview tips, and post-interview actions.",
+  keywords:
+    "International Job Interview, Pre-Interview Preparation, English Language Skills, Interview Tips, Post-Interview Follow-up",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "How to Prepare for Your International Job Interview",
+    description:
+      "Explore strategies to succeed in international job interviews, particularly for positions in U.S. or European countries. Learn about pre-interview preparation, language considerations, interview tips, and post-interview actions.",
+    images: [
+      {
+        alt: "International Job Interview Image",
+        url: "/images/interview2.jpg",
+        width: 550,
+        height: 350,
+      },
+    ],
+  },
+};
+
+
 const page = () => {
   return (
     <Container>
