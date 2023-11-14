@@ -21,6 +21,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 
 import NounsSubmenuDropdown from "../NounsSubmenuDropdown";
+import PrepositionsSubmenuDropdown from "../PrepositionsSubmenuDropdown";
 import VerbsSubmenuDropdown from "../VerbsSubmenuDropdown";
 import AdjectivesSubmenuDropdown from "../AdjectivesSubmenuDropdown";
 import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
@@ -32,6 +33,7 @@ import styles from "../../app/styles/content-page.module.css";
 const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdown />,
+  <PrepositionsSubmenuDropdown />,
   <VerbsSubmenuDropdown />,
   <AdjectivesSubmenuDropdown />,
   <OtherTopicsSubmenuDropdown />,

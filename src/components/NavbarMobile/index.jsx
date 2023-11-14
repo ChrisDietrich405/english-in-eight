@@ -149,6 +149,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import NounsSubmenuDropdownMobile from "../NounsSubmenuDropdownMobile";
+import PrepositionsSubmenuDropdownMobile from "../PrepositionsSubmenuDropdownMobile";
 import VerbsSubmenuDropdownMobile from "../VerbsSubmenuDropdownMobile";
 import AdjectivesSubmenuDropdownMobile from "../AdjectivesSubmenuDropdownMobile";
 import OtherTopicsSubmenuDropdownMobile from "../OtherTopicsSubmenuDropdownMobile";
@@ -156,6 +157,7 @@ import OtherTopicsSubmenuDropdownMobile from "../OtherTopicsSubmenuDropdownMobil
 const drawerWidth = 240;
 const navItems = [
   <NounsSubmenuDropdownMobile />,
+  <PrepositionsSubmenuDropdownMobile />,
   <VerbsSubmenuDropdownMobile />,
   <AdjectivesSubmenuDropdownMobile />,
   <OtherTopicsSubmenuDropdownMobile />,
