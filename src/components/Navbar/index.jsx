@@ -33,9 +33,11 @@ import OtherTopicsSubmenuDropdown from "../OtherTopicsSubmenuDropdown";
 
 import { links } from "@/links";
 
-import logo from "../../../public/images/english.svg";
+import logo from "../../../public/images/english-logo.svg";
 
-import styles from "../../app/styles/content-page.module.css";
+import styles from "./styles.module.css";
+
+// import styles from "../../app/styles/content-page.module.css";
 
 const drawerWidth = 240;
 const navItems = [
@@ -84,7 +86,11 @@ function DrawerAppBar(props) {
               </AccordionSummary>
 
               <AccordionDetails>
-                <Typography sx={{ textDecoration: "none" }}>
+                <Typography
+                  // variant="h1"
+                  component="p"
+                  sx={{ textDecoration: "none" }}
+                >
                   {link.subcategories.map((item, index) => {
                     return (
                       <Link
@@ -127,7 +133,7 @@ function DrawerAppBar(props) {
           <Link href="/">
             <Image
               className={styles.navbar_logo}
-              src="/images/english.svg"
+              src={logo}
               width={120}
               height={120}
               alt="Picture of the logo"

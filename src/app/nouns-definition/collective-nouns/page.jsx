@@ -99,7 +99,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 7,
+      id: 6,
       title: "___________ any of the soldiers hurt?",
       possibleAnswers: [
         { title: "Was" },
@@ -110,7 +110,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 8,
+      id: 7,
       title: "That team __________ every game.",
       possibleAnswers: [
         { title: "wins", correctAnswer: true },
@@ -120,7 +120,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 9,
+      id: 8,
       title:
         "The members of the jury ______________ very frustrated by the prosecuting lawyer.",
       possibleAnswers: [
@@ -132,7 +132,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 10,
+      id: 9,
       title: "The school choir ______________ won many competitions.",
       possibleAnswers: [
         { title: "have" },
@@ -142,7 +142,7 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 11,
+      id: 10,
       title:
         "His family ______________ very big. He has 10 uncles and 11 aunts.",
       possibleAnswers: [{ title: "are" }, { title: "is", correctAnswer: true }],
