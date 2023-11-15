@@ -64,6 +64,7 @@ function DrawerAppBar(props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Link href="/">
         <Image
+          priority
           className={styles.navbar_logo}
           src={logo}
           width={150}
@@ -82,7 +83,9 @@ function DrawerAppBar(props) {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography className={styles.heading}>{link.heading}</Typography>
+                <Typography className={styles.heading}>
+                  {link.heading}
+                </Typography>
               </AccordionSummary>
 
               <AccordionDetails>
@@ -132,6 +135,7 @@ function DrawerAppBar(props) {
           </IconButton>
           <Link href="/">
             <Image
+              priority
               className={styles.navbar_logo}
               src={logo}
               width={120}

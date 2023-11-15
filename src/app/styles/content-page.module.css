@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-/* .verb_image {
-  height: auto !important; 
-} */
-
 .definition_picture {
   display: flex;
   flex-direction: column;

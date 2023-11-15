@@ -51,8 +51,9 @@ export default function Home() {
             <Image
               src="/images/flag.png"
               alt="Image Alt Text"
-              layout="fill"
+              fill
               loading="eager"
+         
             />
             <div className="overlay-text">
               <h2>Welcome to English in Eight Minutes!</h2>
