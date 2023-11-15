@@ -5,7 +5,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
   description:
-    "Learn phrasal verbs with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
+    "Learn the phrasal verbs put together, drive around, live off of , talk into, go off with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
   keywords: "English, Phrasal Verbs, English grammar, English in Eight Minutes",
   robots: {
     index: true,
@@ -66,7 +66,7 @@ export default function PhrasalVerbs2() {
           </li>
 
           <li>
-            <b>To go off (alarm)</b> - when an alarm starts
+            <b>go off (alarm)</b> - when an alarm starts
             <p>When my alarm goes off in the morning I’m miserable.</p>
           </li>
 
