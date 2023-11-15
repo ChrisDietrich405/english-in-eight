@@ -62,7 +62,7 @@ export default function CustomizedMenus() {
   const dropdownProps = [
     {
       title: "Prepositions Definition",
-      link: "/prepositions-definition/home",
+      link: "/prepositions-definition",
     },
     {
       title: "Prepositions of Time",

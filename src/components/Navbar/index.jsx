@@ -53,7 +53,17 @@ function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
+    console.log("handleDrawerToggle");
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleAccordionToggle = () => {
+    console.log("handleAccordionToggle");
+    setMobileOpen(true);
+  };
+
+  const handleCloseDrawer = () => {
+    setMobileOpen(false);
   };
 
   const closeDropdown = () => {
@@ -61,7 +71,7 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box sx={{ textAlign: "center" }}>
       <Link href="/">
         <Image
           priority
@@ -81,7 +91,7 @@ function DrawerAppBar(props) {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
-                id="panel1a-header"
+                onClick={handleAccordionToggle}
               >
                 <Typography className={styles.heading}>
                   {link.heading}
@@ -97,6 +107,7 @@ function DrawerAppBar(props) {
                   {link.subcategories.map((item, index) => {
                     return (
                       <Link
+                        onClick={handleCloseDrawer}
                         sx={{ textDecoration: "none" }}
                         href={item.link}
                         key={index}
@@ -149,7 +160,10 @@ function DrawerAppBar(props) {
             sx={{ display: { xs: "none", sm: "block", marginLeft: "auto" } }}
           >
             {navItems.map((item, index) => (
-              <Button key={`button${index}`} sx={{ color: "#fff" }}>
+              <Button
+                key={`button${index}`}
+                sx={{ textDecoration: "none", color: "#fff" }}
+              >
                 {item}
               </Button>
             ))}
@@ -166,7 +180,7 @@ function DrawerAppBar(props) {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "none", textDecoration: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

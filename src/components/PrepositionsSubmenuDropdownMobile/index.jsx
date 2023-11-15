@@ -14,7 +14,7 @@ const OtherTopicsSubmenuDropdownMobile = () => {
   const dropdownProps = [
     {
       title: "Prepositions Definition",
-      link: "/prepositions-definition/home",
+      link: "/prepositions-definition",
     },
     {
       title: "Prepositions of Time",
@@ -32,7 +32,6 @@ const OtherTopicsSubmenuDropdownMobile = () => {
       title: "Dependent Prepositions",
       link: "/prepositions-definition/dependent-prepositions",
     },
-    
   ];
 
   return (

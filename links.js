@@ -50,7 +50,7 @@ export const links = [
     subcategories: [
       {
         title: "Prepositions Definition",
-        link: "/prepositions-definition/home",
+        link: "/prepositions-definition",
       },
       {
         title: "Prepositions of Time",
