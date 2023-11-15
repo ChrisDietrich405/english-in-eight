@@ -10,6 +10,7 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import SubmenuDropdown from "../SubmenuDropdown";
 
 import Dropdown from "../Dropdown";
 
@@ -83,39 +84,5 @@ export default function CustomizedMenus() {
     },
   ];
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <>
-      <div
-        aria-controls={open && "demo-customized-menu"}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : ""}
-        variant="contained"
-        disableelevation="true"
-        onClick={handleClick}
-      >
-        Prepositions
-        <KeyboardArrowDownIcon />
-      </div>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <Dropdown dropdownProps={dropdownProps} />
-      </StyledMenu>
-    </>
-  );
+  return <SubmenuDropdown dropdown={dropdownProps} title="Prepositions" />;
 }

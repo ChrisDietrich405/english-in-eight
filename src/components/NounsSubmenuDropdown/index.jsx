@@ -1,6 +1,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { styled, alpha } from "@mui/material/styles";
+import HoverMenu from "material-ui-popup-state/HoverMenu";
+import {
+  usePopupState,
+  bindHover,
+  bindMenu,
+} from "material-ui-popup-state/hooks";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -14,6 +20,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Dropdown from "../Dropdown";
 
 import styles from "../Navbar/styles.module.css";
+import MenuPopupState from "../SubmenuDropdown";
+import SubmenuDropdown from "../SubmenuDropdown";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -82,39 +90,6 @@ export default function CustomizedMenus() {
     },
   ];
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
-  return (
-    <>
-      <div
-        aria-controls={open && "demo-customized-menu"}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : ""}
-        variant="contained"
-        disableelevation="true"
-        onClick={handleClick}
-      >
-        Nouns
-        <KeyboardArrowDownIcon />
-      </div>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <Dropdown dropdownProps={dropdownProps} />
-      </StyledMenu>
-    </>
-  );
+  return <SubmenuDropdown dropdown={dropdownProps} title="Nouns" />;
 }

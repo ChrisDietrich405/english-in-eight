@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import SubmenuDropdown from "../SubmenuDropdown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import EditIcon from "@mui/icons-material/Edit";
@@ -85,41 +86,6 @@ export default function CustomizedMenus() {
       link: "/other-topics/acknowledgements",
     },
   ];
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
-  return (
-    <>
-      <div
-        id="demo-customized-button"
-        aria-controls={open ? "demo-customized-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        variant="contained"
-        disableelevation="true"
-        onClick={handleClick}
-      >
-        Other Topics
-        <KeyboardArrowDownIcon />
-      </div>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <Dropdown dropdownProps={dropdownProps} />
-      
-      </StyledMenu>
-    </>
-  );
+  return <SubmenuDropdown dropdown={dropdownProps} title="Other Topics" />;
 }

@@ -11,7 +11,7 @@ import {
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 
-const MenuPopupState = ({ dropdown, title }) => {
+const SubmenuDropdown = ({ dropdown, title }) => {
   const popupState = usePopupState({
     variant: "popover",
     popupId: "demoMenu",
@@ -49,5 +49,5 @@ const MenuPopupState = ({ dropdown, title }) => {
   );
 };
 
-export default MenuPopupState;
+export default SubmenuDropdown;
 

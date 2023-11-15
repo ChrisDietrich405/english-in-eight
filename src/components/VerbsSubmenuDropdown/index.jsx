@@ -14,6 +14,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Dropdown from "../Dropdown";
 
 import styles from "../Navbar/styles.module.css";
+import SubmenuDropdown from "../SubmenuDropdown";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -78,40 +79,5 @@ export default function CustomizedMenus() {
     },
   ];
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <>
-      <div
-        id="demo-customized-button"
-        aria-controls={open ? "demo-customized-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        variant="contained"
-        disableelevation="true"
-        onClick={handleClick}
-      >
-        Verbs
-        <KeyboardArrowDownIcon />
-      </div>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          "aria-labelledby": "demo-customized-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <Dropdown dropdownProps={dropdownProps} />
-      </StyledMenu>
-    </>
-  );
+  return <SubmenuDropdown dropdown={dropdownProps} title="Verbs" />;
 }
