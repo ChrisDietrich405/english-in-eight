@@ -82,12 +82,12 @@ function DrawerAppBar(props) {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>{link.heading}</Typography>
+                <Typography className={styles.heading}>{link.heading}</Typography>
               </AccordionSummary>
 
               <AccordionDetails>
                 <Typography
-                  // variant="h1"
+                  className={styles.accordion_list}
                   component="p"
                   sx={{ textDecoration: "none" }}
                 >

@@ -1,7 +1,12 @@
+.heading {
+  height: 10px !important;
+}
+
 .accordion_link {
   text-decoration: none !important;
-  display: block; 
-  margin: 14px 0; 
+  display: block;
+  text-align: left !important;
+  margin-bottom: 5px; 
 }
 
 .home_btn {
