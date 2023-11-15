@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: "Phrasal Verbs List One | English in Eight Minutes",
     description:
-      "Learn phrasal verbs with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
+    "Learn the phrasal verbs put together, drive around, live off of , talk into, go off with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
     images: [
       {
         alt: "English in Eight Logo",

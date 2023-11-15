@@ -1,6 +1,40 @@
 import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Mastering Prepositions of Movement: A Comprehensive Guide",
+  description:
+    "Learn how to use prepositions of movement correctly with this comprehensive guide. Test your knowledge with a quiz and enhance your English grammar skills. Explore examples of 'to', 'through', 'across', and 'into' prepositions.",
+  keywords:
+    "Prepositions of Movement, English Grammar, Quiz, Learn English, Grammar Skills, To, Through, Across, Into",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Mastering Prepositions of Movement: A Comprehensive Guide",
+    description:
+      "Learn how to use prepositions of movement correctly with this comprehensive guide. Test your knowledge with a quiz and enhance your English grammar skills. Explore examples of 'to', 'through', 'across', and 'into' prepositions.",
+    images: [
+      {
+        alt: "Prepositions of Movement Guide",
+        url: "/images/prepositions-of-movement.jpg",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+};
+
 export default function PrepositionsOfMovement() {
   const questionsArray = [
     {

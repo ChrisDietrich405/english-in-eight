@@ -1,5 +1,4 @@
-//DONE
-import Image from "next/image";
+
 import styles from "../styles/content-page.module.css";
 
 export default function NounDefinition() {

@@ -1,6 +1,42 @@
 import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Mastering Dependent Prepositions: A Comprehensive Guide",
+  description:
+    "Learn how to use dependent prepositions correctly with this comprehensive guide. Test your knowledge with a quiz at the end. Improve your English grammar skills today!",
+  keywords:
+    "Dependent Prepositions, English Grammar, Quiz, Learn English, Grammar Skills",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Mastering Dependent Prepositions: A Comprehensive Guide",
+    description:
+      "Learn how to use dependent prepositions correctly with this comprehensive guide. Test your knowledge with a quiz at the end. Improve your English grammar skills today!",
+    images: [
+      {
+        alt: "Dependent Prepositions Guide",
+        url: "/images/dependent-prepositions.jpg",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+};
+
+
+
 export default function DependentPrepositions() {
   const questionsArray = [
     {
@@ -105,10 +141,7 @@ export default function DependentPrepositions() {
     {
       id: 13,
       title: "You can ask ______ something to eat.",
-      possibleAnswers: [
-        { title: "in" },
-        { title: "for", correctAnswer: true },
-      ],
+      possibleAnswers: [{ title: "in" }, { title: "for", correctAnswer: true }],
       userAnswer: "",
       explanation: "The correct preposition used with ask is for.",
     },

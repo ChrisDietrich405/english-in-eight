@@ -1,6 +1,40 @@
 import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Understanding Prepositions of Place: A Detailed Guide",
+  description:
+    "Explore the nuances of prepositions of place with this detailed guide. Enhance your understanding of 'at', 'on', and 'in' prepositions. Test your knowledge with a quiz and solidify your grasp of English grammar.",
+  keywords:
+    "Prepositions of Place, English Grammar, Quiz, Learn English, Grammar Skills, At, On, In",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Understanding Prepositions of Place: A Detailed Guide",
+    description:
+      "Explore the nuances of prepositions of place with this detailed guide. Enhance your understanding of 'at', 'on', and 'in' prepositions. Test your knowledge with a quiz and solidify your grasp of English grammar.",
+    images: [
+      {
+        alt: "Prepositions of Place Guide",
+        url: "/images/prepositions-of-place.jpg", // Replace with the actual image URL
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+};
+
 export default function PrepositionsOfPlace() {
   const questionsArray = [
     {
