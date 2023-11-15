@@ -1,9 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { Grid, Card, Container } from "@mui/material";
-
-import { FaRunning, FaAngry } from "react-icons/fa";
 
 import data from "../../data/tutors.json";
 
@@ -16,6 +13,7 @@ const Tutors = () => {
         All tutors provide a FREE 10 minute introductory class.
       </h1>
       <Grid
+        className={styles.grid_container}
         container
         spacing={4}
         my={6}
