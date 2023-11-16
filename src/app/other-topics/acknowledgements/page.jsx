@@ -3,7 +3,7 @@ import React from "react";
 
 const Acknowledgements = () => {
   return (
-    <div style={{ padding: "100px", backgroundColor: "#f3f0f0" }}>
+    <Container style={{ padding: "100px", backgroundColor: "#f3f0f0" }}>
       <h1 style={{ marginBottom: "50px", textAlign: "center" }}>
         Acknowledgements
       </h1>
@@ -72,7 +72,7 @@ const Acknowledgements = () => {
           Unsplash
         </a>
       </p>
-    </div>
+    </Container>
   );
 };
 

@@ -106,10 +106,7 @@ export const links = [
         title: "Versus",
         link: "/other-topics/versus",
       },
-      {
-        title: "How to use the website",
-        link: "/other-topics/suggestions",
-      },
+    
       {
         title: "Blogs",
         link: "/other-topics/blogs",
