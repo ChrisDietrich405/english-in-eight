@@ -2,9 +2,7 @@ import * as React from "react";
 
 import { styled, alpha } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import Dropdown from "../Dropdown";
 import SubmenuDropdown from "../SubmenuDropdown";
 
 const StyledMenu = styled((props) => (

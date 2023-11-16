@@ -55,8 +55,7 @@ export default function BasicAccordion() {
         </AccordionSummary>
         {dropdownProps.map((dropdownItem) => {
           return (
-            <AccordionDetails>
-             
+            <AccordionDetails>           
               <Typography>{dropdownItem.title}</Typography>
             </AccordionDetails>
           );

@@ -63,7 +63,7 @@ export default function Footer() {
               console.log("success");
 
               toast.success("your message was sent successfully");
-              // notify();
+
               setEmail("");
               setMessage("");
             },
@@ -141,11 +141,10 @@ export default function Footer() {
                       className={styles.form_control}
                       style={{ border: "none" }}
                       size="small"
-                      // id="nameControlInput"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       InputLabelProps={{
-                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                        style: { padding: ".5px 0 0 5px" },
                       }}
                     />
                     {"name" in error && (
@@ -167,11 +166,10 @@ export default function Footer() {
                       className={styles.form_control}
                       style={{ border: "none" }}
                       size="small"
-                      // id="nameControlInput"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       InputLabelProps={{
-                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                        style: { padding: ".5px 0 0 5px" },
                       }}
                     />
                     {"email" in error && (
@@ -195,11 +193,10 @@ export default function Footer() {
                       className={styles.form_control}
                       style={{ border: "none", marginBottom: "58px" }}
                       size="small"
-                      // id="nameControlInput"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       InputLabelProps={{
-                        style: { padding: ".5px 0 0 5px" }, // Adjust the value as needed
+                        style: { padding: ".5px 0 0 5px" },
                       }}
                     />
                     {"message" in error && (
@@ -211,7 +208,6 @@ export default function Footer() {
                       </p>
                     )}
                   </div>
-                  {/* <ToastContainer /> */}
                   <Button
                     type="submit"
                     variant="contained"
