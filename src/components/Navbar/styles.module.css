@@ -2,6 +2,11 @@
   height: 10px !important;
 }
 
+.selected {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
 .link {
   text-decoration: none;
 }

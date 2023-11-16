@@ -59,9 +59,7 @@ const StyledMenu = styled((props) => (
 export default function CustomizedMenus({ dropdownProps }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -69,9 +67,14 @@ export default function CustomizedMenus({ dropdownProps }) {
   return (
     <div>
       {dropdownProps.map((dropdownItem, index) => {
+        const selected = window.location.href.includes(dropdownItem.link);
         return (
           <MenuItem key={index} onClick={handleClose} disableRipple>
-            <Link className={styles.link} href={dropdownItem.link}>
+            <Link
+             
+              className={selected ? styles.selected : styles.link}
+              href={dropdownItem.link}
+            >
               {dropdownItem.title}
             </Link>
           </MenuItem>
