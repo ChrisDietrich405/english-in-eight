@@ -177,7 +177,7 @@ export default function FutureSimple() {
     {
       id: 13,
       title:
-        "Sarah ________________________ her own business next year. (prior plan)",
+        "Sarah ________________________ own her own business next year. (prior plan)",
       possibleAnswers: [
         { title: "a. is going to", correctAnswer: true },
         { title: "b. will" },

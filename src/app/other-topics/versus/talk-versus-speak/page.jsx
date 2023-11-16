@@ -58,7 +58,7 @@ export default function TalkVersusSpeaking() {
       id: 2,
       title: "We tried to  ___________ it out, but after we fought more.",
       possibleAnswers: [
-        { title: "spoke" },
+        { title: "speak" },
         { title: "talk", correctAnswer: true },
       ],
       userAnswer: "",
@@ -111,7 +111,7 @@ export default function TalkVersusSpeaking() {
       title: "We ________ today with Denzel St. Clair and Robert Smith.",
       possibleAnswers: [
         { title: "spoke", correctAnswer: true },
-        { title: "talk" },
+        { title: "talked" },
       ],
       userAnswer: "",
       explanation: "Speak is used in more formal situations.",
@@ -263,7 +263,7 @@ export default function TalkVersusSpeaking() {
         The verbs talk and speak both have the meaning ‘say words’, but they are
         used differently depending on context. For example speak is more formal
         than talk. Talk, on the other hand focuses on a speaker and at least one
-        listener, and can mean 'have a conversation'
+        listener, and can mean 'have a conversation'.
       </p>
       <p>
         We use talk for more informal situations and speak for more formal
@@ -281,7 +281,7 @@ export default function TalkVersusSpeaking() {
         <li>Could I talk to you for a moment?</li>
         <li>The director needs to speak to you.</li>
         <li>She spoke with the general for an hour. </li>
-        <li>I talked with her about it</li>
+        <li>I talked with her about it.</li>
       </ul>
       <p>When we refer to languages, we use speak:</p>
       <ul className="page-examples">
@@ -290,7 +290,7 @@ export default function TalkVersusSpeaking() {
       </ul>
 
       <p className={styles.grammar_explanation_paragraph}>
-        Some phrasal verbs require either talk and speak. Talk and speak in
+        Some phrasal verbs require either talk or speak. Talk and speak in
         these contexts are not interchangeable.
       </p>
       <ul className="page-examples">
