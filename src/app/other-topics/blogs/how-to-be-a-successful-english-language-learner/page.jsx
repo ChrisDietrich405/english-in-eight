@@ -7,11 +7,11 @@ import { Card } from "@mui/material";
 import styles from "../../../styles/blogs.module.css";
 
 export const metadata = {
-  title: "How to be Successful in Your Next Job Interview",
+  title: "How to be a successful English language learner",
   description:
-    "Discover strategies to enhance your job interview skills and increase your chances of landing your dream job. Learn about confidence, attention to details, studying job descriptions, physical presence, asking questions, and the importance of practice.",
+    "Explore effective strategies to learn English efficiently and enjoyably. From keeping it fun and engaging to overcoming shyness, teaching what you learn, focusing on examples, finding time, establishing a personal connection, and the power of repetition.",
   keywords:
-    "Job Interview, Interview Skills, Confidence, Attention to Details, Job Description, Physical Presence, Asking Questions, Practice",
+    "English Language Learning, Language Acquisition, Learning Strategies, Fun Learning, Overcoming Shyness, Teaching Techniques, Examples in Learning, Time Management, Personal Connection, Repetition in Learning",
   robots: {
     index: true,
     follow: true,
@@ -26,26 +26,27 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "How to be Successful in Your Next Job Interview",
+    title: "How to be a successful English language learner",
     description:
-      "Discover strategies to enhance your job interview skills and increase your chances of landing your dream job. Learn about confidence, attention to details, studying job descriptions, physical presence, asking questions, and the importance of practice.",
+      "Explore effective strategies to learn English efficiently and enjoyably. From keeping it fun and engaging to overcoming shyness, teaching what you learn, focusing on examples, finding time, establishing a personal connection, and the power of repetition.",
     images: [
       {
-        alt: "Job Interview Image 1",
-        url: "/images/interview3.jpg",
+        alt: "Successful English Learning Image 1",
+        url: "/images/successful-english.jpg",
         width: 550,
         height: 350,
       },
       {
-        alt: "Job Interview Image 2",
-        url: "/images/interview4.jpg",
+        alt: "Successful English Learning Image 2",
+        url: "/images/successful-english2.jpg",
         width: 550,
         height: 350,
       },
     ],
   },
 };
-// REMEMBER THE METADATA
+
+
 const Blog4 = () => {
   return (
     <main className={styles.blog_container}>
