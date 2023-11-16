@@ -6,7 +6,7 @@ export default function ForVersusTo() {
   const questionsArray = [
     {
       id: 1,
-      title: "I bought this ________ you.",
+      title: "I bought this ________ you. (assisting)",
       possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
@@ -16,7 +16,7 @@ export default function ForVersusTo() {
     },
     {
       id: 2,
-      title: "She loves _____ sing.",
+      title: "She loves _____ sing.(preposition followed by verb)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -26,7 +26,7 @@ export default function ForVersusTo() {
     },
     {
       id: 3,
-      title: "They want to speak _______ you.",
+      title: "They want to speak _______ you. (direction of communication)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -37,7 +37,8 @@ export default function ForVersusTo() {
     },
     {
       id: 4,
-      title: "I admitted my mistake _____ my boss.",
+      title:
+        "I admitted my mistake _____ my boss. (direction of communication)",
       possibleAnswers: [
         { title: "a. for" },
         { title: "b. to", correctAnswer: true },
@@ -48,7 +49,8 @@ export default function ForVersusTo() {
     },
     {
       id: 5,
-      title: "My brother would be happy to do that _______ you.",
+      title:
+        "My brother would be happy to do that _______ you. (helping someone)",
       possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
@@ -58,7 +60,7 @@ export default function ForVersusTo() {
     },
     {
       id: 6,
-      title: "I really like cooking ______ my girlfriend",
+      title: "I really like cooking ______ my girlfriend (helping someone)",
       possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
@@ -69,7 +71,7 @@ export default function ForVersusTo() {
 
     {
       id: 7,
-      title: "We are going ______ Vietnam.",
+      title: "We are going ______ Vietnam. (destination)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -79,7 +81,8 @@ export default function ForVersusTo() {
     },
     {
       id: 8,
-      title: "He needs to report that _____ his boss?",
+      title:
+        "He needs to report that _____ his boss. (direction of communication)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -90,7 +93,7 @@ export default function ForVersusTo() {
     },
     {
       id: 9,
-      title: "Do you want me to make a reservation _____ us?",
+      title: "Do you want me to make a reservation _____ us? (helping someone)",
       possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
@@ -100,7 +103,7 @@ export default function ForVersusTo() {
     },
     {
       id: 10,
-      title: "I went there ______ a conference",
+      title: "I went there ______ a conference. (preposition followed by noun)",
       possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
@@ -110,7 +113,7 @@ export default function ForVersusTo() {
     },
     {
       id: 11,
-      title: "I work ___ a big company.",
+      title: "I work ___ a big company. (preposition followed by a noun)",
       possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
@@ -120,7 +123,7 @@ export default function ForVersusTo() {
     },
     {
       id: 12,
-      title: "Don't donate ____ that charity. It's corrupt",
+      title: "Don't donate ____ that charity. It's corrupt.(giving)",
       possibleAnswers: [
         { title: "a. listen to" },
         { title: "b. hear", correctAnswer: true },
@@ -130,7 +133,7 @@ export default function ForVersusTo() {
     },
     {
       id: 13,
-      title: "I am going ______ Kenya this summer.",
+      title: "I am going ______ Kenya this summer. (destination)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -140,17 +143,18 @@ export default function ForVersusTo() {
     },
     {
       id: 14,
-      title: "I made the appointment _____ Friday.",
+      title:
+        "I made the appointment _____ Friday.(preposition followed by noun)",
       possibleAnswers: [
-        { title: "a. hear" },
-        { title: "b. listen", correctAnswer: true },
+        { title: "a. to" },
+        { title: "b. for", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "This is an example of scheduling something.",
+      explanation: "Preposition followed by noun",
     },
     {
       id: 15,
-      title: "I wanted _____ do it",
+      title: "I wanted _____ do it. (reason followed by a verb)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -161,18 +165,17 @@ export default function ForVersusTo() {
     },
     {
       id: 16,
-      title: "She did it _______ love",
+      title: "She did it _______ love. (preposition followed by noun)",
       possibleAnswers: [
-        { title: "a. listen to" },
-        { title: "b. hear", correctAnswer: true },
+        { title: "a. to" },
+        { title: "b. for", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation:
-        "This is an example of a motive/purpose/reason followed by a noun",
+      explanation: "Preposition followed by noun",
     },
     {
       id: 17,
-      title: "Can you deliver this letter _____ me.",
+      title: "Can you deliver this letter _____ me. (helping someone)",
       possibleAnswers: [
         { title: "a. to" },
         { title: "b. for", correctAnswer: true },
@@ -182,7 +185,8 @@ export default function ForVersusTo() {
     },
     {
       id: 18,
-      title: "They tried ______ resolve the problem .",
+      title:
+        "They tried ______ resolve the problem. (purpose followed by verb)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -193,7 +197,7 @@ export default function ForVersusTo() {
     },
     {
       id: 19,
-      title: "We gave a lot of clothes ______ them",
+      title: "We gave a lot of clothes ______ them. (giving)",
       possibleAnswers: [
         { title: "a. for" },
         { title: "b. to", correctAnswer: true },
@@ -203,7 +207,7 @@ export default function ForVersusTo() {
     },
     {
       id: 20,
-      title: "He wanted _____ talk to you",
+      title: "He wanted _____ talk to you. (purpose followed by verb)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -216,7 +220,7 @@ export default function ForVersusTo() {
 
   return (
     <main>
-      <div>
+      <div className={styles.wrapper}>
         <div className={styles.page_title}>
           <h1>For versus To</h1>
         </div>
@@ -227,9 +231,19 @@ export default function ForVersusTo() {
             She gave it <b> to </b>me.
           </li>
           <li>
-            I donated <b>to</b> to Farm Santuary.
+            I donated <b>to</b> Farm Santuary.
           </li>
         </ul>
+        <p>Direction of communication</p>
+        <ul className="page-examples">
+          <li>
+            She talked <b> to </b>me.
+          </li>
+          <li>
+            I said it <b>to</b> him.
+          </li>
+        </ul>
+
         <p>Destination</p>
         <ul className="page-examples">
           <li>
