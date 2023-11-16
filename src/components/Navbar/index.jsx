@@ -74,7 +74,7 @@ function DrawerAppBar(props) {
           src={logo}
           width={150}
           height={150}
-          alt="Picture of the author"
+          alt="Picture of the logo"
         />
       </Link>
       <Divider />
@@ -84,7 +84,7 @@ function DrawerAppBar(props) {
           return (
             <Accordion key={index}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon  />}
                 aria-controls="panel1a-content"
                 onClick={handleAccordionToggle}
               >

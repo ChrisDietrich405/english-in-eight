@@ -53,7 +53,6 @@ export default function Home() {
               alt="Image Alt Text"
               fill
               loading="eager"
-         
             />
             <div className="overlay-text">
               <h2>Welcome to English in Eight Minutes!</h2>
@@ -82,7 +81,12 @@ export default function Home() {
         </div>
         <section className={styles.content_container}>
           <Container>
-            <Grid container spacing={4} my={4}>
+            <Grid
+              container
+              spacing={4}
+              my={4}
+              className={styles.grid_container}
+            >
               <Grid
                 item
                 xs={12}

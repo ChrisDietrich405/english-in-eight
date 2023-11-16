@@ -1,6 +1,6 @@
 .home {
   background-color: #f3f0f0;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .banner {
@@ -25,6 +25,18 @@
 .content_container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.content_title_second_row {
+  text-decoration: none;
+}
+
+.content_definition {
+  text-decoration: none;
 }
 
 .intro_content {
@@ -81,9 +93,25 @@
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
+  .grid_container {
+    margin-top: 0;
+  }
+
   .banner_inner h1 {
     text-align: center;
     margin-top: 40px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .content_title_second_row {
+    text-decoration: none;
+  }
+
+  .content_definition {
+    text-decoration: none;
   }
 }

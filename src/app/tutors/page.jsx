@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Grid, Card, Container } from "@mui/material";
+import { Grid, Card, Container, Typography } from "@mui/material";
 
 import data from "../../data/tutors.json";
 
@@ -9,9 +9,32 @@ import styles from "./styles.module.css";
 const Tutors = () => {
   return (
     <Container>
-      <h1 style={{ textAlign: "center", marginTop: "20px" }}>
+      <Typography
+        variant="h4"
+        component="h4"
+        sx={{ marginTop: "20px", textAlign: "center" }}
+      >
         All tutors provide a FREE 10 minute introductory class.
-      </h1>
+      </Typography>
+      <Card
+        sx={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          padding: "40px 10px",
+        }}
+      >
+        <Typography
+          variant="p"
+          component="p"
+          sx={{ marginTop: "20px"}}
+        >
+          Disclaimer: Although all grammatical content on English in Eight
+          Minutes reflects the English used in the United States the promoted
+          tutors are from different backgrounds.
+        </Typography>
+      </Card>
       <Grid
         className={styles.grid_container}
         container
