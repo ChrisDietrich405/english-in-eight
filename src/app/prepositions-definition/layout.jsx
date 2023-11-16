@@ -1,56 +1,60 @@
+"use client";
 import React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Head from "next/head";
 
 import styles from "../styles/layout.module.css";
 
+const dropdownProps = [
+  {
+    title: "Prepositions Definition",
+    link: "/prepositions-definition",
+  },
+  {
+    title: "Prepositions of Time",
+    link: "/prepositions-definition/prepositions-of-time",
+  },
+
+  {
+    title: "Prepositions of Place",
+    link: "/prepositions-definition/prepositions-of-place",
+  },
+  {
+    title: "Prepositions of Movement",
+    link: "/prepositions-definition/prepositions-of-movement",
+  },
+  {
+    title: "Dependent Prepositions",
+    link: "/prepositions-definition/dependent-prepositions",
+  },
+];
 const Layout = ({ children }) => {
+  const pathname = usePathname();
+
   return (
-    <div>
+    <>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
           <ul className={styles.list_container}>
-            <li>
-              <Link className={styles.link} href="/prepositions-definition">
-                Preposition definition
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/prepositions-definition/prepositions-of-time"
-              >
-                Prepositions of Time
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/prepositions-definition/prepositions-of-place"
-              >
-                Prepositions of Place
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                className={styles.link}
-                href="/prepositions-definition/prepositions-of-movement"
-              >
-                Prepositions of Movement
-              </Link>
-              <Link
-                className={styles.link}
-                href="/prepositions-definition/dependent-prepositions"
-              >
-                Dependent Prepositions
-              </Link>
-            </li>
+            {dropdownProps.map((item) => {
+              return (
+                <li>
+                  <Link
+                    href={item.link}
+                    className={
+                      pathname === item.link ? styles.selected : styles.link
+                    }
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
       </section>
-    </div>
+    </>
   );
 };
 
