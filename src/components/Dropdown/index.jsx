@@ -1,15 +1,10 @@
 import * as React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { styled, alpha } from "@mui/material/styles";
-import Button from "@mui/material/Button";
+
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import EditIcon from "@mui/icons-material/Edit";
-import Divider from "@mui/material/Divider";
-import ArchiveIcon from "@mui/icons-material/Archive";
-import FileCopyIcon from "@mui/icons-material/FileCopy";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import styles from "../Navbar/styles.module.css";
 
@@ -59,6 +54,7 @@ const StyledMenu = styled((props) => (
 export default function CustomizedMenus({ dropdownProps }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const pathname = usePathname();
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -67,12 +63,17 @@ export default function CustomizedMenus({ dropdownProps }) {
   return (
     <div>
       {dropdownProps.map((dropdownItem, index) => {
-        const selected = window.location.href.includes(dropdownItem.link);
         return (
-          <MenuItem key={index} onClick={handleClose} disableRipple>
+          <MenuItem
+            className={styles.links_container}
+            key={index}
+            onClick={handleClose}
+            disableRipple
+          >
             <Link
-             
-              className={selected ? styles.selected : styles.link}
+              className={
+                pathname === dropdownItem.link ? styles.selected : styles.link
+              }
               href={dropdownItem.link}
             >
               {dropdownItem.title}

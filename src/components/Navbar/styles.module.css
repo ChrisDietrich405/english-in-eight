@@ -9,6 +9,15 @@
 
 .link {
   text-decoration: none;
+  color: #000;
+}
+
+.links_container:hover .link {
+  color: #fff;
+}
+
+.links_container:hover {
+  background: var(--secondary);
 }
 
 .accordion_link {

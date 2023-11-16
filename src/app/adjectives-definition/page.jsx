@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "../styles/content-page.module.css";
 
-export default function NounDefinition() {
+export default function AdjectiveDefinition() {
   return (
     <>
       <div className={styles.page_title}>
@@ -22,7 +22,7 @@ export default function NounDefinition() {
               <Image
                 height={250}
                 width={250}
-                src="/happy.jpg"
+                src="/images/happy.jpg"
                 alt="happy child"
               />
             </div>
@@ -33,7 +33,7 @@ export default function NounDefinition() {
               <Image
                 height={250}
                 width={250}
-                src="/small.jpg"
+                src="/images/small.jpg"
                 alt="small dog"
               />
             </div>
@@ -44,7 +44,7 @@ export default function NounDefinition() {
               <Image
                 height={250}
                 width={250}
-                src="/strong.jpg"
+                src="/images/strong.jpg"
                 alt="strong person"
               />
             </div>

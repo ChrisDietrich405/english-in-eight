@@ -1,10 +1,21 @@
+.selected {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  transition: 0.5s;
+  border-bottom: 1px solid rgb(222, 217, 217);
+  color: var(--secondary);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
 .main_container {
   width: 100%;
   min-height: 100%;
   background-color: #f3f0f0;
   display: flex;
   justify-content: space-around;
-  padding: 0 2rem; 
+  padding: 0 2rem;
 }
 
 .list_container {
@@ -19,7 +30,7 @@
 
 .sidebar {
   margin-top: 30px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   background-color: white;
   border-radius: 9px;
   flex-basis: 20%;

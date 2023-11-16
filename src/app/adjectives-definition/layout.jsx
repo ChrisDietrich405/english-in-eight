@@ -1,49 +1,55 @@
+"use client";
 import React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Head from "next/head";
 
 import styles from "../styles/layout.module.css";
 
+const dropdownProps = [
+  {
+    title: "Adjective Definition",
+    link: "/adjectives-definition",
+  },
+  {
+    title: "Possessive Adjectives",
+    link: "/adjectives-definition/possessive-adjectives",
+  },
+  {
+    title: "Comparative Adjectives",
+    link: "/adjectives-definition/comparative-adjectives",
+  },
+  {
+    title: "Superlative Adjectives",
+    link: "/adjectives-definition/superlative-adjectives",
+  },
+];
 const Layout = ({ children }) => {
+  const pathname = usePathname();
+
   return (
-    <div>
+    <>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
           <ul className={styles.list_container}>
-            <li>
-              <Link className={styles.link} href="/adjectives-definition">
-                Adjective definition
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/adjectives-definition/possessive-adjectives"
-              >
-                Possessive Adjectives
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/adjectives-definition/comparative-adjectives"
-              >
-                Comparative Adjectives
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/adjectives-definition/superlative-adjectives"
-              >
-                Superlative Adjectives
-              </Link>
-            </li>
+            {dropdownProps.map((item) => {
+              return (
+                <li>
+                  <Link
+                    href={item.link}
+                    className={
+                      pathname === item.link ? styles.selected : styles.link
+                    }
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
       </section>
-    </div>
+    </>
   );
 };
 

@@ -1,57 +1,59 @@
+"use client";
 import React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import styles from "../styles/layout.module.css";
 
+const dropdownProps = [
+  {
+    title: "Noun Definition",
+    link: "/nouns-definition",
+  },
+  {
+    title: " Uncountable & Countable Nouns",
+    link: "/nouns-definition/uncountable-countable-nouns",
+  },
+  {
+    title: " Collective Nouns",
+    link: "/nouns-definition/collective-nouns",
+  },
+  {
+    title: "Noun Modifiers",
+    link: "/nouns-definition/noun-modifiers",
+  },
+  {
+    title: " Possessive Pronouns",
+    link: "/nouns-definition/possessive-pronouns",
+  },
+];
 const Layout = ({ children }) => {
+  const pathname = usePathname();
 
   return (
-    <div>
+    <>
       <section className={styles.main_container}>
         <nav className={styles.sidebar}>
           <ul className={styles.list_container}>
-            <li>
-              <Link className={styles.link} href="/nouns-definition">
-                Noun definition
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/nouns-definition/uncountable-countable-nouns"
-              >
-                Uncountable & Countable
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/nouns-definition/possessive-pronouns"
-              >
-                Possessive Pronouns
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/nouns-definition/noun-modifiers"
-              >
-                Noun Modifiers
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.link}
-                href="/nouns-definition/collective-nouns"
-              >
-                Collective Nouns
-              </Link>
-            </li>
+            {dropdownProps.map((item) => {
+              return (
+                <li>
+                  <Link
+                    href={item.link}
+                    className={
+                      pathname === item.link ? styles.selected : styles.link
+                    }
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
         <div className={styles.main_content}>{children}</div>
       </section>
-    </div>
+    </>
   );
 };
 
