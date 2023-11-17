@@ -22,6 +22,11 @@
   text-shadow: rgba(0, 0, 0, 1) 0px 0px 25px;
 }
 
+.image_container {
+  position: relative;
+  height: 300px;
+}
+
 .content_container {
   max-width: 1200px;
   margin: 0 auto;

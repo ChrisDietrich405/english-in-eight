@@ -7,6 +7,10 @@ import styles from "../../styles/layout.module.css";
 
 const dropdownProps = [
   {
+    title: "Past Simple",
+    link: "/verbs-definition/past-tense/past-simple",
+  },
+  {
     title: "Past Continuous",
     link: "/verbs-definition/past-tense/past-continuous",
   },
@@ -14,14 +18,9 @@ const dropdownProps = [
     title: "Past Perfect",
     link: "/verbs-definition/past-tense/past-perfect",
   },
-
   {
     title: "Past Perfect Continuous",
     link: "/verbs-definition/past-tense/past-perfect-continuous",
-  },
-  {
-    title: "Past Simple",
-    link: "/verbs-definition/past-tense/past-simple",
   },
 ];
 const Layout = ({ children }) => {
