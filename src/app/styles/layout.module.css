@@ -60,7 +60,7 @@
 .link:hover {
   color: #fff;
   width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
 }
 
 @media only screen and (max-width: 480px) {
