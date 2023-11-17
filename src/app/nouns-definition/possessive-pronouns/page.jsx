@@ -163,7 +163,7 @@ export default function PossessivePronouns() {
       id: 12,
       title: "I love my phone, but (you) _______________ is better.",
       possibleAnswers: [
-        { title: " your" },
+        { title: " you" },
         { title: " yours", correctAnswer: true },
       ],
       userAnswer: "",
@@ -172,7 +172,7 @@ export default function PossessivePronouns() {
 
     {
       id: 13,
-      title: "Their dog is so cute, but (ours) _____________ is a cuter.",
+      title: "Their dog is so cute, but (we) _____________ is a cuter.",
       possibleAnswers: [
         { title: " our" },
         { title: " ours", correctAnswer: true },
@@ -227,7 +227,7 @@ export default function PossessivePronouns() {
 
     {
       id: 18,
-      title: "Her laptop is new. (We) _______________ is old.",
+      title: "Her laptop is new. (we) _______________ is old.",
       possibleAnswers: [
         { title: "Our" },
         { title: "Ours", correctAnswer: true },
