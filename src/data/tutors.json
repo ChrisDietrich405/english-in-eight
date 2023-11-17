@@ -34,5 +34,23 @@
     "time": "2010",
     "whatsapp": "639154528947",
     "image": "/images/notario.jpg"
-  }
+  },
+  // {
+  //   "name": "Megan Campbell-Ruddock",
+  //   "country": "South Africa",
+  //   "country_flag": "/images/southafrica.png",
+  //   "description": "Megan Campbell-Ruddock has been teaching English as a first language from grade 8 - 12 for 24 years and is currently the Head of the English department. ",
+  //   "time": "2010",
+  //   "whatsapp": "0824333005",
+  //   "image": "/images/megan.jpg"
+  // },
+  // {
+  //   "name": "Salma Khatun",
+  //   "country": "England",
+  //   "country_flag": "/images/england.png",
+  //   "description": "Salma Khatun is currently volunteering at several schools and at home. She has recently completed the TEFL degree and has some online teaching experience.",
+  //   "time": "2010",
+  //   "whatsapp": "447444773071",
+  //   "image": "/images/salma.jpeg"
+  // }
 ]
