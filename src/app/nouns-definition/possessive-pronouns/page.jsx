@@ -81,11 +81,11 @@ export default function PossessivePronouns() {
       title:
         "We gave them our number, and they gave us (they) __________________.",
       possibleAnswers: [
-        { title: " theirs" },
-        { title: " they", correctAnswer: true },
+        { title: " they" },
+        { title: " theirs", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "They is the possessive pronoun for they.",
+      explanation: "Theirs is the possessive pronoun for they.",
     },
 
     {
