@@ -9,7 +9,8 @@ import styles from "./styles.module.css";
 const Tutors = () => {
   return (
     <Container>
-      <Typography
+      <Image alt="" width={20} height={20} src="/images/tutor-header.jpg" />
+      {/* <Typography
         variant="h4"
         component="h4"
         sx={{ marginTop: "20px", textAlign: "center" }}
@@ -34,7 +35,7 @@ const Tutors = () => {
           Minutes reflects the English used in the United States the promoted
           tutors are from different backgrounds.
         </Typography>
-      </Card>
+      </Card> */}
       <Grid
         className={styles.grid_container}
         container
