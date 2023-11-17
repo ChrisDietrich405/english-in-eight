@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { Grid, Card, Container, Typography } from "@mui/material";
+import { Grid, Card, Container, Typography, Box } from "@mui/material";
+import InfoIcon from "@mui/icons-material/Info";
 
 import data from "../../data/tutors.json";
 
@@ -9,33 +10,47 @@ import styles from "./styles.module.css";
 const Tutors = () => {
   return (
     <Container>
-      <Image alt="" width={20} height={20} src="/images/tutor-header.jpg" />
-      {/* <Typography
+      <Typography
+        variant="h3"
+        component="h1"
+        sx={{ margin: "20px", textAlign: "center" }}
+      >
+        Promoted Tutors
+      </Typography>
+      <Typography
         variant="h4"
         component="h4"
         sx={{ marginTop: "20px", textAlign: "center" }}
       >
         All tutors provide a FREE 10 minute introductory class.
       </Typography>
+
       <Card
         sx={{
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          padding: "40px 10px",
+          marginTop: "15px",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "40px 40px",
+          background: "#ffdfe1",
         }}
       >
-        <Typography
-          variant="p"
-          component="p"
-          sx={{ marginTop: "20px"}}
-        >
-          Disclaimer: Although all grammatical content on English in Eight
-          Minutes reflects the English used in the United States the promoted
-          tutors are from different backgrounds.
+        <Image
+          style={{ marginBottom: "30px", marginRight: "3px", flex: "start"}}
+          alt="alert"
+          width={20}
+          height={20}
+          src="/images/alert.png"
+        />
+        <Typography variant="h5" component="h5" style={{ marginTop: "5px" }}>
+          Although all grammatical content on English in Eight Minutes reflects
+          the English used in the United States the promoted tutors are from
+          different backgrounds.
         </Typography>
-      </Card> */}
+      </Card>
+
       <Grid
         className={styles.grid_container}
         container
