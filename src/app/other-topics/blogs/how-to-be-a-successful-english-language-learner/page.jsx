@@ -118,8 +118,8 @@ const Blog4 = () => {
       </h5>
       <p>
         Many times grammar explanations are confusing and frustrating. Don't
-        focus too much on them. Focus on examples. I guarantee after reading
-        examples explanations will make more sense (be easier to understand).
+        focus too much on them. Focus on examples. I guarantee after reading some
+        examples, explanations will make more sense (be easier to understand).
       </p>
       <div className={styles.image_container}>
         <Image
@@ -135,7 +135,7 @@ const Blog4 = () => {
       <p>
         You're busy right? Of course! Find moments when you can review. In the
         bathroom while brushing your teeth you can explain to yourself a few
-        phrasal verbs you learned from the website. At the grocery store waiting
+        phrasal verbs you learned from the website. At the supermarket waiting
         in line (waiting to buy the food), get the English notes that you put in
         your jacket.
       </p>
@@ -144,7 +144,7 @@ const Blog4 = () => {
       </h5>
       <p>
         When you are learning English connect the material to YOUR family, job,
-        hobbies. For example while studying the verb "to be" in the present
+        hobbies  (the things you like to do). For example while studying the verb "to be" in the present
         tense, you would say "my wife <b>is</b> smart" and my children{" "}
         <b>are</b> energetic. When you think about your wife and children in
         this context the learning is more real and you will remember more.
@@ -153,7 +153,7 @@ const Blog4 = () => {
         <b>Repeat and repeat again</b>
       </h5>
       <p>
-        Repeat and repeat. Athetes build muscle memory in order to be more
+        Repeat and repeat. Athletes build muscle memory in order to be more
         successful. It means they make the same motion throwing a ball again and
         again, maybe 50-100 times a day! Your brain is a muscle. Learning
         another language isn't easy. It's hard work, but if you repeat the
@@ -173,7 +173,7 @@ const Blog4 = () => {
 
           <li>
             Make your learning personal. Connect what you are learning to your
-            family, job, hobbies (the things you like to do).
+            family, job, hobbies.
           </li>
           <li>
             Repeat and repeat and repeat. Learning a language is not easy. You
