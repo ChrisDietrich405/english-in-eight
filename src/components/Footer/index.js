@@ -222,7 +222,7 @@ export default function Footer() {
           </Grid>
         </Container>
         <Image
-          className={styles.logo_image}
+          className={styles.footer_wave}
           width={1400}
           height={91}
           src="/images/v3.png"

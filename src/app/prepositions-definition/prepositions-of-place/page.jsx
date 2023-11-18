@@ -251,9 +251,10 @@ export default function PrepositionsOfPlace() {
       </div>
 
       <QuizForm questionsArray={questionsArray} />
+    
       <iframe
-        className="{styles.iframe_wrapper}"
-        width="560"
+        className={styles.iframe_wrapper}
+        width="160"
         height="315"
         src="https://www.youtube.com/embed/kq65VGkVwC8?si=RqBQKKDNXQZ_AD5R"
         title="YouTube video player"

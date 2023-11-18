@@ -304,7 +304,7 @@ export default function PrepositionsOfMovement() {
 
       <QuizForm questionsArray={questionsArray} />
       <iframe
-        className="{styles.iframe_wrapper}"
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/qpNRmbi-L9E?si=lqGnh3B6O1eMfg3b"

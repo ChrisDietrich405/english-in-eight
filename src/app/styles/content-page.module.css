@@ -130,7 +130,7 @@
 
   .iframe_wrapper {
     margin: 0 auto;
-    width: 280px;
+    width: 280px !important;
     height: 157px;
     padding: 0;
   }

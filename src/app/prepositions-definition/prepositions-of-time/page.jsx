@@ -229,7 +229,7 @@ export default function PrepositionsOfTime() {
 
 
       <iframe
-        className="{styles.iframe_wrapper}"
+        className={styles.iframe_wrapper}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/fRrVkXG0-v4?si=gBel6hfVXrayjlJ1"

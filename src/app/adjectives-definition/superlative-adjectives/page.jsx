@@ -262,12 +262,10 @@ export default function Superlatives() {
         </div>
         <div className={styles.page_body}>
           <p className={styles.grammar_explanation_paragraph}>
-            Superlative adjectives are used to compare three or more nouns,
-            indicating the highest or most extreme degree of a particular
-            quality. They are used when you want to highlight the greatest level
-            of a certain characteristic within a group of items or individuals.
-            Superlative adjectives typically end in "-est" for one-syllable
-            adjectives or use "most" before the adjective for longer adjectives.
+            Superlative adjectives are used to describe an object which is at
+            the upper or lower limit of a quality (the tallest, the smallest,
+            the fastest, the highest). They are used in sentences where a
+            subject is compared to a group of objects.
           </p>
         </div>
         <div className={styles.page_body}>

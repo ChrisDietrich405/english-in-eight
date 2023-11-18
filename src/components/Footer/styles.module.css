@@ -190,4 +190,8 @@
       margin-left: 26px;
     }
   }
+
+  .footer.wave {
+    width: 400px; 
+  }
 }
