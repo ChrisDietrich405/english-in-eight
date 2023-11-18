@@ -4,7 +4,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Present Perfect | English in Eight Minutes",
   description:
-    "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense for actions with a connection to the present or past experiences.",
+    "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense",
   keywords:
     "English, present perfect, grammar, tense, past experiences, actions with a connection to the present",
   robots: {

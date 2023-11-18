@@ -3,7 +3,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Present Perfect Continuous | English in Eight Minutes",
   description:
-    "Learn about the present perfect continuous tense, which expresses actions or situations that started in the past and are still ongoing or have recently stopped. Improve your English language skills with quick lessons on English in Eight Minutes.",
+    "Learn about the present perfect continuous tense, a tense used to describe actions starting in the past and continuing now",
   keywords:
     "English, present perfect continuous, language lessons, verb tenses, grammar, English in Eight Minutes",
   robots: {

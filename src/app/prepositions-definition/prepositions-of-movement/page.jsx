@@ -2,7 +2,7 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Mastering Prepositions of Movement: A Comprehensive Guide",
+  title: "Prepositions of Movement: A Comprehensive Guide",
   description:
     "Learn how to use prepositions of movement correctly with this comprehensive guide. Test your knowledge with a quiz and enhance your English grammar skills. Explore examples of 'to', 'through', 'across', and 'into' prepositions.",
   keywords:

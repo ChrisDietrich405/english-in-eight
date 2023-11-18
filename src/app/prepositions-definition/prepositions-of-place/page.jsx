@@ -2,7 +2,7 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Understanding Prepositions of Place: A Detailed Guide",
+  title: "Prepositions of Place: A Detailed Guide",
   description:
     "Explore the nuances of prepositions of place with this detailed guide. Enhance your understanding of 'at', 'on', and 'in' prepositions. Test your knowledge with a quiz and solidify your grasp of English grammar.",
   keywords:

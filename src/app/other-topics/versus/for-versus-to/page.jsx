@@ -2,6 +2,46 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../../styles/content-page.module.css";
 
+export const metadata = {
+  title: "For versus To | English in Eight Minutes",
+  description:
+    "Explore the distinctions between 'for' and 'to' in English with English in Eight Minutes. Enhance your understanding through examples and test your knowledge with a quiz.",
+  keywords:
+    "English, For versus To, English grammar, Prepositions, Quiz, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "For versus To | English in Eight Minutes",
+    description:
+      "Explore the distinctions between 'for' and 'to' in English with English in Eight Minutes. Enhance your understanding through examples and test your knowledge with a quiz.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english-logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english-logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
+
 export default function ForVersusTo() {
   const questionsArray = [
     {

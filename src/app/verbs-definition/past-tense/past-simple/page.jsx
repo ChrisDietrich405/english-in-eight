@@ -5,7 +5,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Past Simple | English in Eight Minutes",
   description:
-    "Learn about the past simple tense in English. This page provides explanations, examples, and a quiz to help you understand and use this tense correctly. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+    "Learn about the past simple tense in English. This page provides explanations, examples, and a quiz",
   keywords:
     "past simple, English grammar, English lessons, phrasal verbs, idiomatic expressions, United States, grammar lessons, English language",
   robots: {

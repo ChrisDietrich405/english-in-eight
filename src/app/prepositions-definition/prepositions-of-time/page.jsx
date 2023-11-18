@@ -2,7 +2,7 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Mastering Prepositions of Time: A Comprehensive Guide",
+  title: "Prepositions of Time: A Comprehensive Guide",
   description:
     "Enhance your understanding of prepositions of time with this comprehensive guide. Test your knowledge with a quiz covering 'at', 'on', and 'in' prepositions. Explore examples for days, dates, times, months, seasons, years, and more.",
   keywords:
@@ -21,7 +21,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Mastering Prepositions of Time: A Comprehensive Guide",
+    title: "Prepositions of Time: A Comprehensive Guide",
     description:
       "Enhance your understanding of prepositions of time with this comprehensive guide. Test your knowledge with a quiz covering 'at', 'on', and 'in' prepositions. Explore examples for days, dates, times, months, seasons, years, and more.",
     images: [

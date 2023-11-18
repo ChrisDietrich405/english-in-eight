@@ -2,7 +2,7 @@ import QuizForm from "@/src/components/QuizForm";
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
-  title: "Mastering Dependent Prepositions: A Comprehensive Guide",
+  title: "Dependent Prepositions: A Comprehensive Guide",
   description:
     "Learn how to use dependent prepositions correctly with this comprehensive guide. Test your knowledge with a quiz at the end. Improve your English grammar skills today!",
   keywords:

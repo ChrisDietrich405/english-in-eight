@@ -4,7 +4,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Present Simple Tense | English in Eight Minutes",
   description:
-    "Learn the present simple tense in English with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of this important grammar concept.",
+    "Learn the present simple tense in English with English in Eight Minutes. Explore examples and practice exercises",
   keywords:
     "English, Present Simple Tense, English grammar, English in Eight Minutes",
   robots: {

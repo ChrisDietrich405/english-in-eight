@@ -5,7 +5,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Future Continuous Tense | English in Eight Minutes",
   description:
-    "Discover the Future Continuous Tense in English - English in Eight Minutes. This page offers clear explanations, illustrative examples, and an interactive quiz to enhance your grasp of this verb tense. Our concise English language lessons focus on phrasal verbs, grammar, and idiomatic expressions, tailored to American English.",
+    "Discover the Future Continuous Tense in English - English in Eight Minutes. This page offers clear explanations, illustrative examples, and an interactive quiz",
   keywords:
     "Future Continuous Tense, English Grammar, English Lessons, Phrasal Verbs, Idiomatic Expressions, American English",
   robots: {

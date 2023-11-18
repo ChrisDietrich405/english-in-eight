@@ -1,11 +1,50 @@
 import React from "react";
 import Image from "next/image";
-import { Grid, Card, Container, Typography, Box } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
+import { Grid, Card, Container, Typography } from "@mui/material";
 
 import data from "../../data/tutors.json";
 
 import styles from "./styles.module.css";
+
+export const metadata = {
+  title: "Promoted Tutors | English in Eight Minutes",
+  description:
+    "Discover promoted tutors from diverse backgrounds offering a FREE 10-minute introductory class. Learn more about each tutor and schedule your free class today.",
+  keywords:
+    "English, Tutors, English in Eight Minutes, Promoted Tutors, Language Learning",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Promoted Tutors | English in Eight Minutes",
+    description:
+      "Discover promoted tutors from diverse backgrounds offering a FREE 10-minute introductory class. Learn more about each tutor and schedule your free class today.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english-logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english-logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
 
 const Tutors = () => {
   return (
@@ -38,7 +77,7 @@ const Tutors = () => {
         }}
       >
         <Image
-          style={{ marginBottom: "30px", marginRight: "3px", flex: "start"}}
+          style={{ marginBottom: "30px", marginRight: "3px", flex: "start" }}
           alt="alert"
           width={20}
           height={20}

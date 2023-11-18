@@ -5,7 +5,7 @@ import styles from "../../../styles/content-page.module.css";
 export const metadata = {
   title: "Future Perfect Continuous Tense Quiz | English in Eight Minutes",
   description:
-    "Test your knowledge of the future perfect continuous tense in English with this quiz. Practice forming sentences using the future perfect continuous tense. English in Eight Minutes offers quick and concise English language lessons with a focus on phrasal verbs, grammar, and idiomatic expressions specific to the United States.",
+    "Test your knowledge of the future perfect continuous tense in English with this quiz. Practice forming sentences using the future perfect continuous tense.",
   keywords:
     "future perfect continuous tense, English grammar, English quiz, phrasal verbs, idiomatic expressions, United States",
   robots: {
