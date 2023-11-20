@@ -54,7 +54,7 @@ const Blog1 = () => {
       </div>
       <div className={styles.image_container}>
         <Image
-          className={styles.image}
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/interview2.jpg"
@@ -129,7 +129,7 @@ const Blog1 = () => {
       </p>
       <div className={styles.image_container}>
         <Image
-          className={styles.image}
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/interview.jpg"

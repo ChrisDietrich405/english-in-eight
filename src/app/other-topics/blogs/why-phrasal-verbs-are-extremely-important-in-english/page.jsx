@@ -48,6 +48,7 @@ const Blog2 = () => {
       </div>
       <div className={styles.image_container}>
         <Image
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/fall.jpg"

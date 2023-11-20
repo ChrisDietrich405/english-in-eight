@@ -45,8 +45,9 @@ const Blog4 = () => {
       <div className={styles.page_title}>
         <h1>How to be successful using English while traveling</h1>
       </div>
-      <div className={styles.image_container}>
+      <div className={styles.blog_image_container}>
         <Image
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/travel.jpg"

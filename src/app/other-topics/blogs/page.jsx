@@ -58,6 +58,7 @@ const page = () => {
           </p>
           <div className={styles.image_container}>
             <Image
+              className={styles.blog_image}
               style={{ display: "flex", justifyContent: "center" }}
               height={350}
               width={550}

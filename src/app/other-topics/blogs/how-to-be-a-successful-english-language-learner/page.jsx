@@ -46,7 +46,6 @@ export const metadata = {
   },
 };
 
-
 const Blog4 = () => {
   return (
     <main className={styles.blog_container}>
@@ -55,6 +54,7 @@ const Blog4 = () => {
       </div>
       <div className={styles.image_container}>
         <Image
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/successful-english.jpg"
@@ -118,11 +118,13 @@ const Blog4 = () => {
       </h5>
       <p>
         Many times grammar explanations are confusing and frustrating. Don't
-        focus too much on them. Focus on examples. I guarantee after reading some
-        examples, explanations will make more sense (be easier to understand).
+        focus too much on them. Focus on examples. I guarantee after reading
+        some examples, explanations will make more sense (be easier to
+        understand).
       </p>
       <div className={styles.image_container}>
         <Image
+          className={styles.blog_image}
           height={350}
           width={550}
           src="/images/successful-english2.jpg"
@@ -144,10 +146,11 @@ const Blog4 = () => {
       </h5>
       <p>
         When you are learning English connect the material to YOUR family, job,
-        hobbies  (the things you like to do). For example while studying the verb "to be" in the present
-        tense, you would say "my wife <b>is</b> smart" and my children{" "}
-        <b>are</b> energetic. When you think about your wife and children in
-        this context the learning is more real and you will remember more.
+        hobbies (the things you like to do). For example while studying the verb
+        "to be" in the present tense, you would say "my wife <b>is</b> smart"
+        and my children <b>are</b> energetic. When you think about your wife and
+        children in this context the learning is more real and you will remember
+        more.
       </p>
       <h5 className={styles.section_title}>
         <b>Repeat and repeat again</b>

@@ -39,4 +39,10 @@
     width: 100% !important;
     height: 40% !important;
   }
+
+  .blog_image {
+    width: 300px;
+    height: 200px;
+    margin: 20px 0px; 
+  }
 }
