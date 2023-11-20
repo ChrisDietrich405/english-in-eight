@@ -160,8 +160,8 @@ export default function UncountableAndCountable() {
       id: 11,
       title: "She bought _____ apples for the pie.",
       possibleAnswers: [
-        { title: "a few" },
-        { title: "a little", correctAnswer: true },
+        { title: "a few", correctAnswer: true },
+        { title: "a little" },
       ],
       userAnswer: "",
       explanation:
@@ -169,7 +169,7 @@ export default function UncountableAndCountable() {
     },
     {
       id: 12,
-      title: "There _________ three cats behind the house",
+      title: "There _________ three cats behind the house.",
       possibleAnswers: [{ title: "are", correctAnswer: true }, { title: "is" }],
       userAnswer: "",
       explanation:
@@ -217,7 +217,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 16,
+      id: 17,
       title: "How ________ tomatoes did you put in the soup?",
       possibleAnswers: [
         { title: "much" },
@@ -229,7 +229,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 17,
+      id: 18,
       title: "There _______ a lot traffic on the road this morning.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
@@ -238,7 +238,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 18,
+      id: 19,
       title: "_____ there any time left before the meeting?",
       possibleAnswers: [{ title: "Are" }, { title: "Is", correctAnswer: true }],
       userAnswer: "",
@@ -247,7 +247,7 @@ export default function UncountableAndCountable() {
     },
 
     {
-      id: 19,
+      id: 20,
       title: "How ________ hours of sleep did you get last night?",
       possibleAnswers: [
         { title: "much" },
@@ -269,11 +269,10 @@ export default function UncountableAndCountable() {
           <h4>Uncountable Nouns</h4>
           <p className={styles.grammar_explanation_paragraph}>
             Uncountable nouns are for nouns we don’t count. These nouns might be
-            used to describe abstract ideas , e.g., anger. They can be used for
-            physical objects that are too small , e.g., rice. Uncountable nouns
-            can be used for things that don't have shape (powders, liquids,
-            gases, etc.). Uncountable nouns usually are used as singular nouns
-            with singular verbs , e.g., The <b>rice is</b> delicious
+            used to describe abstract ideas , e.g., anger. They can also be used
+            for physical objects that are too small , e.g., rice. Uncountable
+            nouns can be used for things that don't have shape (powders,
+            liquids, gases, etc...).
           </p>
         </section>
         <div>
@@ -291,8 +290,8 @@ export default function UncountableAndCountable() {
           </ul>
         </div>
         <p className={styles.grammar_explanation_paragraph}>
-          We can’t use a/an with uncountable nouns. To explain a quantity of an
-          uncountable noun, use an expression or word like <b>some</b>,{" "}
+          We can’t use <b>a/an</b> with uncountable nouns. To explain a quantity
+          of an uncountable noun, use an expression or word like <b>some</b>,{" "}
           <b>a lot of</b>, <b>much</b>, or else use an exact measurement like{" "}
           <b>a cup of</b>, <b>a bag of</b>,<b> a slice of</b> e.g., a cup of
           coffee. In order to ask about the quantity of an uncountable noun, you
@@ -322,9 +321,9 @@ export default function UncountableAndCountable() {
           There are some uncountable nouns that are countable in other languages
           but uncountable in English. Obviously they must follow the rules for
           uncountable nouns. Some common ones are: <b>advice</b>,{" "}
-          <b>behavior</b>, <b>bread</b>, <b>furniture</b>, <b>information</b>,{" "}
-          <b>news</b>, <b>progress</b>, <b>stuff</b>, <b>traffic</b>,{" "}
-          <b>travel</b>, <b>trouble</b>, <b>weather</b>, <b>work</b>.
+          <b>behavior</b>, <b>bread</b>, <b>furniture</b>, <b>information</b>,
+          <b>time</b>,<b>news</b>, <b>stuff</b>, <b>traffic</b>, ,{" "}
+          <b>trouble</b>, <b>weather</b>, <b>work</b>.
         </p>
 
         <p>Examples</p>
@@ -337,10 +336,10 @@ export default function UncountableAndCountable() {
             How much<b> bread </b> should I bring?
           </li>
           <li>
-            I didn't make much <b>progress</b> today.
+            There wasn't a lot of <b>traffic</b> today.
           </li>
           <li>
-            She gave me some very good <b>advice</b>
+            She gave me some very good <b>advice</b>.
           </li>
         </ul>
 
