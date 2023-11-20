@@ -69,6 +69,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .footer_wave {
+    display: none;
+  }
+
   .logo-container {
     margin-top: 10px;
   }
@@ -93,6 +97,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .footer_wave {
+    display: none; 
+  }
+
   .main-container {
     align-items: center;
   }
@@ -189,9 +197,5 @@
     #text-area-container {
       margin-left: 26px;
     }
-  }
-
-  .footer.wave {
-    width: 400px; 
   }
 }
