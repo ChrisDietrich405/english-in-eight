@@ -41,6 +41,15 @@ const Layout = ({ children }) => {
             <li>
               <Link
                 className={styles.link}
+                href="/other-topics/blogs/how-to-be-successful-using-english-while-traveling"
+              >
+                How to be successful using English language while traveling
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className={styles.link}
                 href="/other-topics/blogs/why-phrasal-verbs-are-extremely-important-in-english"
               >
                 Why phrasal verbs are extremely important in English

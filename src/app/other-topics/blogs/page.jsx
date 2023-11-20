@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 import { Container, Button, Grid } from "@mui/material";
 
 import styles from "../../styles/blogs.module.css";
@@ -38,31 +38,35 @@ export const metadata = {
   },
 };
 
-
 const page = () => {
   return (
     <Container>
+      <div className={styles.page_title}>
+        <h1>How blogs can help you</h1>
+      </div>
       <Grid container className={styles.link_container}>
         <Grid item xs={8}>
-          <h5>How to prepare for your international job interview</h5>
           <p className={styles.paragraph}>
-            People outside of the U.S. and Europe are very curious about getting
-            international jobs, more specifically jobs with U.S. or European
-            countries where salaries are much higher. Let's talk about
-            strategies that will help you in this process.
+            Blogs are an incredible way to learn. Reading blogs give you the
+            ability to improve your English while at the same time learning a
+            second skill for example interviewing. My recommendation is to read
+            each blog at least three times. The first time you can investigate
+            any unfamiliar vocabulary, phrasal verbs, expressions. Next, read it
+            again slowly. When you read it a third time again read it slowly,
+            but read it out loud. After a third time you will be more confident
+            in the content and will have at the same time improved your English.
           </p>
-          <Button variant="outlined" className={styles.blog_link}>
-            <Link
-              href="/other-topics/blogs/how-to-prepare-for-your-international-job-interview"
-              className={styles.blog_link}
-            >
-              Continue reading
-            </Link>
-          </Button>
+          <div className={styles.image_container}>
+            <Image
+              style={{ display: "flex", justifyContent: "center" }}
+              height={350}
+              width={550}
+              src="/images/blog.jpg"
+              alt="interview"
+            />
+          </div>
         </Grid>
-        <Grid item xs={4}>
-   
-        </Grid>
+        <Grid item xs={4}></Grid>
       </Grid>
       {/* <div className={styles.link_container}></div> */}
     </Container>
