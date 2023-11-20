@@ -62,8 +62,7 @@ export default function Collective() {
         { title: "has", correctAnswer: true },
         { title: "have" },
       ],
-      explanation:
-        "Students are considered individuals, not a collective group. ",
+      explanation: "Group is considered a collective noun. ",
       userAnswer: "",
     },
     {
@@ -74,7 +73,7 @@ export default function Collective() {
         { title: "have" },
         { title: "has", correctAnswer: true },
       ],
-      explanation: "Group is considered a collective noun.",
+      explanation: "Army is considered a collective noun.",
       userAnswer: "",
     },
     {
@@ -150,28 +149,28 @@ export default function Collective() {
       userAnswer: "",
     },
     {
-      id: 12,
+      id: 11,
       title: "The team __________ celebrating their victory.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Team is considered a collective noun.",
     },
     {
-      id: 13,
+      id: 12,
       title: "The committee __________ discussing the new proposal.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Committee is considered a collective noun.",
     },
     {
-      id: 14,
+      id: 13,
       title: "The people at the store __________ very angry.",
       possibleAnswers: [{ title: "are", correctAnswer: true }, { title: "is" }],
       userAnswer: "",
       explanation: "People is not considered a collective noun.",
     },
     {
-      id: 15,
+      id: 14,
       title: "The jury __________ reached a unanimous decision.",
       possibleAnswers: [
         { title: "has", correctAnswer: true },
@@ -181,21 +180,21 @@ export default function Collective() {
       explanation: "Jury is considered a collective noun.",
     },
     {
-      id: 16,
+      id: 15,
       title: "The swarm of bees __________ buzzing around the flowers.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Swarm is considered a collective noun.",
     },
     {
-      id: 17,
+      id: 16,
       title: "The orchestra __________ performing at the concert.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Orchestra is considered a collective noun.",
     },
     {
-      id: 18,
+      id: 17,
       title: "The students ___________ not in the class.",
       possibleAnswers: [
         { title: "were", correctAnswer: true },
@@ -205,32 +204,25 @@ export default function Collective() {
       explanation: "Students is not considered a collective noun.",
     },
     {
-      id: 19,
+      id: 18,
       title: "His family __________ planning a reunion.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Family is considered a collective noun.",
     },
     {
-      id: 20,
+      id: 19,
       title: "Her staff __________ working hard this week.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation: "Staff is considered a collective noun.",
     },
     {
-      id: 21,
+      id: 20,
       title: "The audience __________ clapping.",
-      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
+      possibleAnswers: [{ title: "are" }, { title: "is", correctAnswer: true }],
       userAnswer: "",
       explanation: "Audience is considered a collective noun.",
-    },
-    {
-      id: 22,
-      title: "The school of fish __________ swimming in the ocean.",
-      possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
-      userAnswer: "",
-      explanation: "School is considered a collective noun.",
     },
   ];
 
@@ -241,14 +233,14 @@ export default function Collective() {
       </div>
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
-          Collective nouns are nouns which represent a group or collection of
-          people or things. They include words such as <b>audience</b>,{" "}
-          <b>family</b>, <b>government</b>, <b>group</b>, and <b>team</b>. Most
-          collective nouns are treated as a singular entity, using the singular
-          verb form. Because collective nouns include multiple "members" inside
-          of them you may think you would use the "they" form of the verb, but
-          you don't. For example, you don't say the group are happy, you say the
-          group is happy.
+          Collective nouns are nouns which represent a group of people or
+          things. They include words such as <b>audience</b>, <b>family</b>,{" "}
+          <b>government</b>, <b>group</b>, and <b>team</b>. Most collective
+          nouns are treated as a singular entity, using the singular verb form.
+          Because collective nouns include multiple "members" inside of them you
+          may think you would use the "they" form of the verb, but you don't.
+          For example, you don't say the group <b>are</b> happy, you say the
+          group <b>is</b> happy.
         </p>
       </div>
       <div className="page-examples">
@@ -273,6 +265,10 @@ export default function Collective() {
             The city <b>council</b> is rejecting the proposal.
           </li>
         </ul>
+        <h4 style={{ color: "#1976d2" }}>
+          CAUTION! This lesson is extremely hard. Some questions include collective nouns, some don't. Don't worry if you are not successful the first two or three
+          times with the exercise. Practice Makes Perfect.
+        </h4>
       </div>
       <QuizForm questionsArray={questionsArray} />
       <iframe
