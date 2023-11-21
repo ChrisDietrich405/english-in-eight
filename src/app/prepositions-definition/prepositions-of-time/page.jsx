@@ -23,18 +23,17 @@ export const metadata = {
   openGraph: {
     title: "Prepositions of Time: A Comprehensive Guide",
     description:
-      "Enhance your understanding of prepositions of time with this comprehensive guide. Test your knowledge with a quiz covering 'at', 'on', and 'in' prepositions. Explore examples for days, dates, times, months, seasons, years, and more.",
+      "Enhance your understanding of prepositions of time at, in, on.",
     images: [
       {
         alt: "Prepositions of Time Guide",
-        url: "/images/prepositions-of-time.jpg", // Replace with the actual image URL
+        url: "/images/prepositions-of-time.jpg",
         width: 800,
         height: 600,
       },
     ],
   },
 };
-
 
 export default function PrepositionsOfTime() {
   const questionsArray = [
@@ -121,7 +120,7 @@ export default function PrepositionsOfTime() {
     {
       id: 12,
       title: "I love going skiing _____ January.",
-      possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "on" }],
+      possibleAnswers: [{ title: "on" }, { title: "in", correctAnswer: true }],
       userAnswer: "",
       explanation: "When speaking about months we use the preposition in.",
     },
@@ -145,7 +144,7 @@ export default function PrepositionsOfTime() {
       possibleAnswers: [{ title: "in", correctAnswer: true }, { title: "at" }],
       userAnswer: "",
       explanation:
-        "When speaking about morning or after we use the preposition in.",
+        "When speaking about morning or afternoon we use the preposition in.",
     },
     {
       id: 16,
@@ -157,7 +156,7 @@ export default function PrepositionsOfTime() {
     {
       id: 17,
       title: "We have a lot of fun ______ Christmas time.",
-      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "in" }],
+      possibleAnswers: [{ title: "in" }, { title: "at", correctAnswer: true }],
       userAnswer: "",
       explanation: "When speaking about time we use the preposition at.",
     },
@@ -196,8 +195,7 @@ export default function PrepositionsOfTime() {
       </div>
       <div className="page-examples">
         <p className="{styles.grammar_explanation_paragraph}">
-          For days and dates we use the preposition{" "}
-          <b>on</b> .
+          For days and dates we use the preposition <b>on</b>.
         </p>
         <ul>
           <li>We go to the sanctuary on Sundays.</li>
@@ -226,7 +224,6 @@ export default function PrepositionsOfTime() {
       </div>
 
       <QuizForm questionsArray={questionsArray} />
-
 
       <iframe
         className={styles.iframe_wrapper}
