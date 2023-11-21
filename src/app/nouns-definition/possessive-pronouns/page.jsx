@@ -150,7 +150,7 @@ export default function PossessivePronouns() {
     },
     {
       id: 11,
-      title: "My car is blue, but (she) _____________ is red.",
+      title: "My car is old, but (she) _____________ is older.",
       possibleAnswers: [
         { title: " she" },
         { title: " hers", correctAnswer: true },
@@ -172,7 +172,7 @@ export default function PossessivePronouns() {
 
     {
       id: 13,
-      title: "Their dog is so cute, but (we) _____________ is a cuter.",
+      title: "Their dog is so cute, but (we) _____________ is cuter.",
       possibleAnswers: [
         { title: " our" },
         { title: " ours", correctAnswer: true },
@@ -227,7 +227,7 @@ export default function PossessivePronouns() {
 
     {
       id: 18,
-      title: "Her laptop is new. (we) _______________ is old.",
+      title: "Her laptop is new. (We) _______________ is old.",
       possibleAnswers: [
         { title: "Our" },
         { title: "Ours", correctAnswer: true },
@@ -246,7 +246,7 @@ export default function PossessivePronouns() {
         <p className={styles.grammar_explanation_paragraph}>
           Possessive pronouns are pronouns that are used to indicate ownership
           (possession) and replace a noun. The English possessive pronouns are
-          mine, ours, yours, his, hers, theirs,
+          mine, ours, yours, his, hers, theirs.
         </p>
       </div>
       <div className="page-examples">

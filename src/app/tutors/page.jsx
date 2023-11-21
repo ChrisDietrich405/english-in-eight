@@ -61,7 +61,7 @@ const Tutors = () => {
         component="h4"
         sx={{ marginTop: "20px", textAlign: "center" }}
       >
-        All tutors provide a FREE 10 minute introductory class.
+        All tutors provide a FREE 15 minute introductory class.
       </Typography>
 
       <Card

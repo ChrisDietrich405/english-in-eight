@@ -143,7 +143,7 @@ export default function NounModifiers() {
         { title: "swimmings lesson" },
       ],
       userAnswer: "",
-      explanation: "Swimming is a noun modifier here.",
+      explanation: "Swimming is a noun modifier here and noun modifiers are always singular.",
     },
     {
       id: 11,
