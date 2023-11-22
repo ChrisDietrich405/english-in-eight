@@ -1,5 +1,10 @@
+.page_examples {
+  list-style: disc !important;
+  padding: 0 !important; 
+}
+
 .wrapper p {
-  margin: 0 !important; 
+  margin: 0 !important;
 }
 
 .page_title h1 {
@@ -30,8 +35,8 @@
 }
 
 .picture_wrapper img {
-  object-fit: contain !important; 
-  object-position: 50% 0;  
+  object-fit: contain !important;
+  object-position: 50% 0;
 }
 
 .picture_subtitle {
