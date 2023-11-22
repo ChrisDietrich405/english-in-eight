@@ -4,7 +4,7 @@ import styles from "../../styles/content-page.module.css";
 export const metadata = {
   title: "Prepositions of Place: A Detailed Guide",
   description:
-    "Explore the nuances of prepositions of place with this detailed guide. Enhance your understanding of 'at', 'on', and 'in' prepositions. Test your knowledge with a quiz and solidify your grasp of English grammar.",
+    "Explore the nuances of the prepositions of place at, on, in with this detailed guide.",
   keywords:
     "Prepositions of Place, English Grammar, Quiz, Learn English, Grammar Skills, At, On, In",
   robots: {
@@ -55,7 +55,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 3,
       title: "She's ______ the airport.",
-      possibleAnswers: [{ title: "on" }, { title: "in", correctAnswer: true }],
+      possibleAnswers: [{ title: "on" }, { title: "at", correctAnswer: true }],
       userAnswer: "",
       explanation:
         "At is used when referring to something at a specific point.",
@@ -119,7 +119,8 @@ export default function PrepositionsOfPlace() {
       title: "The painting is ______ the wall.",
       possibleAnswers: [{ title: "to" }, { title: "on", correctAnswer: true }],
       userAnswer: "",
-      explanation: "In is used when referring to something that is inside.",
+      explanation:
+        "On is used when referring to something that is on a surface.",
     },
     {
       id: 12,
@@ -251,7 +252,7 @@ export default function PrepositionsOfPlace() {
       </div>
 
       <QuizForm questionsArray={questionsArray} />
-    
+
       <iframe
         className={styles.iframe_wrapper}
         width="160"
