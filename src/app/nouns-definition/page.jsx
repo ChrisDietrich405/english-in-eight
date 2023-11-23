@@ -1,6 +1,46 @@
 import Image from "next/image";
 import styles from "../styles/content-page.module.css";
 
+export const metadata = {
+  title: "Noun Definition | English in Eight Minutes",
+  description:
+    "Learn about noun definition in English with English in Eight Minutes. Understand what a noun is and explore examples of people, places, and things as nouns.",
+  keywords:
+    "English, Noun Definition, English grammar, English in Eight Minutes",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Noun Definition | English in Eight Minutes",
+    description:
+      "Learn about noun definition in English with English in Eight Minutes. Understand what a noun is and explore examples of people, places, and things as nouns.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english-logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english-logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
+
 export default function NounDefinition() {
   return (
     <>

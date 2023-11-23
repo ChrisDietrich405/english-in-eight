@@ -49,14 +49,14 @@ export default function ListenVersusHear() {
       title: "I can ________ the baby crying.",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
-        { title: "b. listen" },
+        { title: "b. listen to" },
       ],
       userAnswer: "",
       explanation: "Hear is more of an involuntary action.",
     },
     {
       id: 2,
-      title: "Hey! _____ It's that spooky sound again.",
+      title: "Hey! _____ It's that scary sound again.",
       possibleAnswers: [
         { title: "a. Listen", correctAnswer: true },
         { title: "b. Hear" },
@@ -69,7 +69,7 @@ export default function ListenVersusHear() {
       title: "I can't _____ you. My dad's vacuuming.",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
-        { title: "b. listen" },
+        { title: "b. listen to" },
       ],
       userAnswer: "",
       explanation: "Hear is more of an involuntary action.",
@@ -137,7 +137,7 @@ export default function ListenVersusHear() {
     },
     {
       id: 10,
-      title: "Do you like to __________ Bacchata?",
+      title: "Do you like to __________ jazz music?",
       possibleAnswers: [
         { title: "a. hear" },
         { title: "b. listen to", correctAnswer: true },
@@ -147,7 +147,7 @@ export default function ListenVersusHear() {
     },
     {
       id: 11,
-      title: "I always ________ the birds singing in the morning.",
+      title: "I always try to have time to ________ the birds singing in the morning.",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
@@ -188,7 +188,7 @@ export default function ListenVersusHear() {
     {
       id: 15,
       title:
-        "They were so engrossed in their conversation that they didn't even _____ the thunderstorm outside.",
+        "They were so focused on their conversation that they didn't even _____ the thunderstorm outside.",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
@@ -238,7 +238,7 @@ export default function ListenVersusHear() {
     },
     {
       id: 20,
-      title: "Could you please _____ what the teacher just said?",
+      title: "Did you _____ what the teacher just said?",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
@@ -257,8 +257,7 @@ export default function ListenVersusHear() {
         <p className={styles.grammar_explanation_paragraph}>
           <b>Hear</b> is the act of naturally perceiving sounds with your ears,
           while <b>listen</b> involves actively paying attention and processing
-          the sounds or words you hear. Listening goes beyond only hearing; it
-          involves an active engagement.
+          the sounds or words you hear.
         </p>
 
         <p>
@@ -277,7 +276,7 @@ export default function ListenVersusHear() {
         <ul>
           <li>
             Every morning I <b> listen to</b> my Mozart CD while I’m having
-            breakfast. It prepares me mentally for the day
+            breakfast. It prepares me mentally for the day.
           </li>
         </ul>
 
