@@ -1,6 +1,46 @@
-//DONE
+// DONE
 import Image from "next/image";
 import styles from "../styles/content-page.module.css";
+
+export const metadata = {
+  title: "Adjective Definition | English in Eight Minutes",
+  description:
+    "Explore the definition of adjectives in English with English in Eight Minutes. Learn how adjectives modify nouns or pronouns",
+  keywords:
+    "English, Adjective Definition, English grammar, English in Eight Minutes, descriptive words, grammar rules",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Adjective Definition | English in Eight Minutes",
+    description:
+      "Explore the definition of adjectives in English with English in Eight Minutes. Learn how adjectives modify nouns or pronouns, providing details about qualities, characteristics, or attributes. View examples and illustrations of adjectives in action.",
+    images: [
+      {
+        alt: "English in Eight Logo",
+        url: "/images/english-logo.svg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "/images/english-logo.svg",
+        width: 1800,
+        height: 1600,
+        alt: "English in Eight Logo",
+      },
+    ],
+  },
+};
 
 export default function AdjectiveDefinition() {
   return (
