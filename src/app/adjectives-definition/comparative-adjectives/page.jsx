@@ -449,12 +449,6 @@ export default function ComparativeAdjectives() {
           >
             <ListItemText>simple → simpler</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
-            <ListItemText>quiet → quieter</ListItemText>
-          </ListItem>
         </List>
 
         <Typography>
@@ -494,7 +488,7 @@ export default function ComparativeAdjectives() {
           Adjectives that have more than two syllables
         </Typography>
         <Typography>
-          Adjectives that have more than two syllables need to use 'most' to
+          Adjectives that have more than two syllables need to use 'more' to
           form their comparative.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
@@ -509,7 +503,7 @@ export default function ComparativeAdjectives() {
             className={styles.page_examples}
             sx={{ display: "list-item" }}
           >
-            <ListItemText>interesting → more more interesting</ListItemText>
+            <ListItemText>interesting → more interesting</ListItemText>
           </ListItem>
           <ListItem
             className={styles.page_examples}
