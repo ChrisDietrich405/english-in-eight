@@ -221,14 +221,14 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Container>
-        {/* <Image
+        <Image
           className={styles.footer_wave}
           width={1400}
           height={91}
           src="/images/v3.png"
           alt="English in Eight Minutes Logo"
-        /> */}
-       
+        />
+
       </footer>
     </>
   );
