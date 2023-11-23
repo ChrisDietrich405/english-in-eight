@@ -221,20 +221,13 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Container>
-        <Image
+        {/* <Image
           className={styles.footer_wave}
           width={1400}
           height={91}
           src="/images/v3.png"
           alt="English in Eight Minutes Logo"
-        />
-        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#1976d2"
-            fillOpacity="1"
-            d="M0,224L48,192C96,160,192,96,288,106.7C384,117,480,203,576,245.3C672,288,768,288,864,272C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg> */}
+        /> */}
       </footer>
     </>
   );
