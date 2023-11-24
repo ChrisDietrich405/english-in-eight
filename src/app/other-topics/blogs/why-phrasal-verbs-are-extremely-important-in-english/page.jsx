@@ -99,9 +99,10 @@ const Blog2 = () => {
           precisely, adding nuance and depth to your language.
         </li>
         <li>
-          Cultural Awareness: Phrasal verbs often carry cultural and idiomatic
-          nuances. By understanding and using them, you gain insight into the
-          culture and customs of English-speaking countries.
+          Listening Comprehension Skills: While watching, for example Netflix if
+          someone uses an unfamiliar phrasal verb you will immediately be
+          confused. If you progress with learning more and more phrasal verbs
+          your listening comprehension skills will definitely improve.
         </li>
       </ul>
       <h5 className={styles.section_title}>
@@ -134,7 +135,11 @@ const Blog2 = () => {
         </li>
 
         <li>
-          <Link href="/other-topics/phrasal-verbs">
+          <Link
+            href="/other-topics/phrasal-verbs"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Go to the phrasal verbs section of English in Eight Minutes.
           </Link>
           &nbsp;There you will find a video and phrasal verbs with accompanying
@@ -181,7 +186,11 @@ const Blog2 = () => {
 
           <li>Teach the phrasal verbs you learn to several people.</li>
           <li>
-            <Link href="/other-topics/phrasal-verbs">
+            <Link
+              href="/other-topics/phrasal-verbs"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Use English in Eight Minutes to practice and be more successful.
             </Link>
           </li>

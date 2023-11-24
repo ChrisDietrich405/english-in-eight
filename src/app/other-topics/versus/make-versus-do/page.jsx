@@ -125,7 +125,7 @@ export default function MakeVersusDo() {
     {
       id: 8,
       title:
-        " The teenagers were _________so much noise that the neighbour called the police.",
+        " The teenagers were _________ so much noise that the neighbour called the police.",
       possibleAnswers: [
         { title: "making", correctAnswer: true },
         { title: "doing" },
@@ -157,7 +157,7 @@ export default function MakeVersusDo() {
     {
       id: 11,
       title:
-        "When you're trying to solve a difficult puzzle, do you usually find it challenging to _________ progress?",
+        "When you're trying to solve a difficult problem, do you usually find it hard to _________ progress?",
       possibleAnswers: [
         { title: "make", correctAnswer: true },
         { title: "do" },
@@ -286,7 +286,7 @@ export default function MakeVersusDo() {
         <p className={styles.grammar_explanation_paragraph}>
           We use 'do' for general activities and for actions you have to do,
           like jobs or work. In this case, 'do' is sometimes used with
-          'something', 'nothing', 'anything' or 'everything':
+          'something', 'nothing', 'anything' or 'everything'.
         </p>
         <ul className="page-examples">
           <li>What did you do on the weekend?</li>
