@@ -229,9 +229,9 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 19,
-      title: "We took a boat across the river.",
+      title: "We took a boat _________ the river.",
       possibleAnswers: [
-        { title: "to", correctAnswer: true },
+        { title: "across", correctAnswer: true },
         { title: "through" },
       ],
       userAnswer: "",
