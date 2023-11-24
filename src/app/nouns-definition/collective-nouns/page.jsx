@@ -227,12 +227,18 @@ export default function Collective() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Collective Nouns</h1>
-      </div>
-      <div className={styles.page_body}>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Collective Nouns
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
           Collective nouns are nouns which represent a group of people or
           things. They include words such as <b>audience</b>, <b>family</b>,{" "}
           <b>government</b>, <b>group</b>, and <b>team</b>. Most collective
@@ -241,35 +247,73 @@ export default function Collective() {
           may think you would use the "they" form of the verb, but you don't.
           For example, you don't say the group <b>are</b> happy, you say the
           group <b>is</b> happy.
-        </p>
-      </div>
-      <div className="page-examples">
-        <p>Examples</p>
-        <ul>
-          <li>
-            The U.S. <b>government</b> is made up of 3 branches.
-          </li>
-          <li>
-            This hockey <b>team</b> includes three players from Canada.
-          </li>
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography
+          component="h5"
+          variant="h5"
+          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Examples
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              The U.S. <b>government</b> is made up of 3 branches.
+            </ListItemText>
+          </ListItem>
 
-          <li>
-            Our <b>class</b> takes a field trip to the natural history museum
-            every year.
-          </li>
-          <li>
-            My <b>family</b> is important to me.
-          </li>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              This hockey <b>team</b> includes three players from Canada.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              Our <b>class</b> takes a field trip to the natural history museum
+              every year.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              My <b>family</b> is important to me.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              The city <b>council</b> is rejecting the proposal.
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography component="h5" variant="h5">
+          CAUTION! This lesson is extremely hard. Some questions include
+          collective nouns, some don't. Don't worry if you are not successful
+          the first two or three times with the exercise. Practice Makes
+          Perfect.
+        </Typography>
+      </Box>
 
-          <li>
-            The city <b>council</b> is rejecting the proposal.
-          </li>
-        </ul>
-        <h4 style={{ color: "#1976d2" }}>
-          CAUTION! This lesson is extremely hard. Some questions include collective nouns, some don't. Don't worry if you are not successful the first two or three
-          times with the exercise. Practice Makes Perfect.
-        </h4>
-      </div>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -281,6 +325,6 @@ export default function Collective() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

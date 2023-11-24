@@ -302,7 +302,7 @@ export default function ComparativeAdjectives() {
           adjective.
         </Typography>
       </Stack>
-      <Box component="section">
+      <Box >
         <Typography variant="h5">Adjectives with only one syllable</Typography>
         <Typography>
           Normally if an adjective has one syllable, we add 'er' to make the
