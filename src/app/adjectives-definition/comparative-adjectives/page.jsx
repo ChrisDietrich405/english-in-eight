@@ -302,7 +302,7 @@ export default function ComparativeAdjectives() {
           adjective.
         </Typography>
       </Stack>
-      <Box >
+      <Box>
         <Typography variant="h5">Adjectives with only one syllable</Typography>
         <Typography>
           Normally if an adjective has one syllable, we add 'er' to make the
@@ -408,7 +408,7 @@ export default function ComparativeAdjectives() {
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h6">Adjectives with two syllables</Typography>
+        <Typography variant="h5">Adjectives with two syllables</Typography>
         <Typography>Some adjectives with two syllables use 'more'.</Typography>
         <List sx={{ marginLeft: "20px" }}>
           <ListItem
@@ -484,7 +484,7 @@ export default function ComparativeAdjectives() {
         </List>
       </Box>
       <Box component="section">
-        <Typography component="h6">
+        <Typography variant="h5">
           Adjectives that have more than two syllables
         </Typography>
         <Typography>
@@ -520,7 +520,7 @@ export default function ComparativeAdjectives() {
         </List>
       </Box>
       <Box component="section">
-        <Typography component="h6">Irregular adjectives</Typography>
+        <Typography variant="h5">Irregular adjectives</Typography>
         <Typography>
           There are also some irregular adjectives. We simply need to memorize
           them.

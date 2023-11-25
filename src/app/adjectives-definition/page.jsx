@@ -1,20 +1,38 @@
 //DONE
 import Image from "next/image";
+
+import {
+  Container,
+  Stack,
+  Typography,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../styles/content-page.module.css";
 
 export default function AdjectiveDefinition() {
   return (
-    <>
-      <div className={styles.page_title}>
-        <h1>Adjective Definition</h1>
-      </div>
-      <div className={styles.page_body}>
-        <h5 className={styles.grammar_explanation_paragraph}>
-          Adjectives are used to describe or modify nouns or pronouns, providing
+    <Container>
+       <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Adjective Definition
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
+        Adjectives are used to describe or modify nouns or pronouns, providing
           more information about their qualities, characteristics, or
           attributes. In these examples, the adjectives are in bold.
-        </h5>
-      </div>
+        </Typography>
+      </Stack>
+  
       <div className="container">
         <div className="row">
           <div className={`col-md-4 ${styles.definition_picture}`}>
@@ -52,6 +70,6 @@ export default function AdjectiveDefinition() {
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 }
