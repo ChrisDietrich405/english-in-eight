@@ -249,8 +249,8 @@ export default function SimplePresent() {
       id: 20,
       title: "She __________ a lot of TV",
       possibleAnswers: [
-        { title: "a. watch", correctAnswer: true },
-        { title: "b. watches" },
+        { title: "a. watch" },
+        { title: "b. watches", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "watches is the correct positive form for she.",
@@ -306,10 +306,10 @@ export default function SimplePresent() {
         </table>{" "}
         <div className="page-body">
           <h4>Present simple tense with irregular verbs</h4>
-          <p>Some verbs have spelling changes with 'he', 'she' or 'it':</p>{" "}
+          <p>Some verbs have spelling changes with 'he', 'she' or 'it'.</p>{" "}
           <p>
             Verbs that end in 's', 'sh', 'ch' or 'x' usually add <b>'e'</b>{" "}
-            before <b>'s'</b>:{" "}
+            before <b>'s'</b>.{" "}
           </p>{" "}
           <ul className="page-examples">
             <li>watch becomes watches</li>
@@ -318,7 +318,7 @@ export default function SimplePresent() {
           </ul>
           <p>Example: She boxes on Friday nights.</p>{" "}
           <p>
-            Verbs that end in <b>'y'</b> often change to <b>'ie'</b> before 's':{" "}
+            Verbs that end in <b>'y'</b> often change to <b>'ie'</b> before 's'.{" "}
           </p>{" "}
           <ul className="page-examples">
             <li>cry becomes cries</li>
