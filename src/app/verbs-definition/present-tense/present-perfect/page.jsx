@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: "Present Perfect | English in Eight Minutes",
     description:
-      "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense for actions with a connection to the present or past experiences.",
+      "Learn about the present perfect tense in English. This page provides explanations and examples of using the present perfect tense.",
     images: [
       {
         alt: "English in Eight Logo",
@@ -65,10 +65,10 @@ export default function PresentPerfect() {
     },
     {
       id: 3,
-      title: "He ___________ to Tanzania.",
+      title: "He ___________ thought about it a lot.",
       possibleAnswers: [
-        { title: "a. have gone" },
-        { title: "b. has gone", correctAnswer: true },
+        { title: "a. have thought" },
+        { title: "b. has thought", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Has is the correct form for she, he, it.",
@@ -195,7 +195,7 @@ export default function PresentPerfect() {
     },
     {
       id: 16,
-      title: "You ______________ speak to the administrator.",
+      title: "You ______________ to the administrator.",
       possibleAnswers: [
         { title: "a. have spoken", correctAnswer: true },
         { title: "b. has spoken" },
@@ -231,7 +231,7 @@ export default function PresentPerfect() {
         { title: "b. has seen" },
       ],
       userAnswer: "",
-      explanation: "Have is the correct form for I.",
+      explanation: "Have is the correct form for we.",
     },
     {
       id: 20,
