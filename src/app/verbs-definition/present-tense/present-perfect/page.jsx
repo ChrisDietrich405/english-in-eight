@@ -215,10 +215,10 @@ export default function PresentPerfect() {
     },
     {
       id: 18,
-      title: "I ___________ (study) microbiology.",
+      title: "I ___________ (decide) to move.",
       possibleAnswers: [
-        { title: "a. has studied" },
-        { title: "b. have studied", correctAnswer: true },
+        { title: "a. has decided" },
+        { title: "b. have decided", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Have is the correct form for I.",
@@ -304,7 +304,7 @@ export default function PresentPerfect() {
 
         <h4>
           When the exact time of the action is unknown or isn't important,
-          including actions which are finished (not continuing into the present)
+          including actions which are finished (not continuing into the present).
         </h4>
         <ul className="page-examples">
           <li>Have you seen 'Black Panther'?</li>
@@ -347,7 +347,4 @@ export default function PresentPerfect() {
   );
 }
 
-{
-  /* import Quiz from "@/src/components/Quiz";
-import styles from "../../../styles/content-page.module.css"; */
-}
+
