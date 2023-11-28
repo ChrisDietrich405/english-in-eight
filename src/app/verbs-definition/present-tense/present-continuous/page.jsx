@@ -46,7 +46,7 @@ export default function PresentContinuous() {
   const questionsArray = [
     {
       id: 1,
-      title: "You ___________ (play) tennis tonight right?",
+      title: "You ___________ tennis tonight right?",
       possibleAnswers: [
         { title: "a. are not playing", correctAnswer: true },
         { title: "b. is play" },
@@ -56,7 +56,7 @@ export default function PresentContinuous() {
     },
     {
       id: 2,
-      title: "I ___________ (study) now. Please call me later.",
+      title: "I ___________ now. Please call me later.",
       possibleAnswers: [
         { title: "a. are study" },
         { title: "b. am studying", correctAnswer: true },
@@ -66,7 +66,7 @@ export default function PresentContinuous() {
     },
     {
       id: 3,
-      title: "She ___________ (sleep).",
+      title: "She ___________.",
       possibleAnswers: [
         { title: "a. isn't sleeping", correctAnswer: true },
         { title: "b.  doesn't sleeps" },
@@ -77,7 +77,7 @@ export default function PresentContinuous() {
 
     {
       id: 4,
-      title: "We ___________ (watch) the game.",
+      title: "We ___________ the game.",
       possibleAnswers: [
         { title: "a. are watch" },
         { title: "b. are watching", correctAnswer: true },
@@ -87,9 +87,9 @@ export default function PresentContinuous() {
     },
     {
       id: 5,
-      title: "He ____________ (work) in Baltimore.",
+      title: "He ____________ in Baltimore.",
       possibleAnswers: [
-        { title: "a. doesn't work" },
+        { title: "a. doesn't works" },
         { title: "b. is not working", correctAnswer: true },
       ],
       userAnswer: "",
@@ -97,7 +97,7 @@ export default function PresentContinuous() {
     },
     {
       id: 6,
-      title: "He ___________ (wait) for the taxi.",
+      title: "He ___________ for the taxi.",
       possibleAnswers: [
         { title: "a. is waiting", correctAnswer: true },
         { title: "b. is waits" },
@@ -107,7 +107,7 @@ export default function PresentContinuous() {
     },
     {
       id: 7,
-      title: "They __________ (fight).",
+      title: "They __________.",
       possibleAnswers: [
         { title: "a. are fighting", correctAnswer: true },
         { title: "b. are fight" },
@@ -117,7 +117,7 @@ export default function PresentContinuous() {
     },
     {
       id: 8,
-      title: "We _______________ (go) to the mall tonight.",
+      title: "We _______________ to the mall tonight.",
       possibleAnswers: [
         { title: "a. are not going", correctAnswer: true },
         { title: "b. don't go" },
@@ -127,7 +127,7 @@ export default function PresentContinuous() {
     },
     {
       id: 9,
-      title: "You ___________ (read) The Shining.",
+      title: "You ___________ The Shining.",
       possibleAnswers: [
         { title: "a. are read" },
         { title: "b. are reading", correctAnswer: true },
@@ -137,7 +137,7 @@ export default function PresentContinuous() {
     },
     {
       id: 10,
-      title: "She _________ (eat) a Kit Kat bar.",
+      title: "She _________ a Kit Kat bar.",
       possibleAnswers: [
         { title: "a. is eats" },
         { title: "b. is eating", correctAnswer: true },
@@ -147,7 +147,7 @@ export default function PresentContinuous() {
     },
     {
       id: 11,
-      title: "They ___________ (travel) to Paris next week.",
+      title: "They ___________ to Paris next week.",
       possibleAnswers: [
         { title: "a. are not traveling", correctAnswer: true },
         { title: "b. don't travel" },
@@ -158,7 +158,7 @@ export default function PresentContinuous() {
 
     {
       id: 12,
-      title: "I ___________ (read) a book right now.",
+      title: "I ___________ a book right now.",
       possibleAnswers: [
         { title: "a. am read" },
         { title: "b. am reading", correctAnswer: true },
@@ -169,7 +169,7 @@ export default function PresentContinuous() {
 
     {
       id: 13,
-      title: "He ___________ (cook) dinner for us.",
+      title: "He ___________ dinner for us.",
       possibleAnswers: [
         { title: "a. is cooks" },
         { title: "b. is cooking", correctAnswer: true },
@@ -180,7 +180,7 @@ export default function PresentContinuous() {
 
     {
       id: 14,
-      title: "We ___________ (wait) for the bus.",
+      title: "We ___________ for the bus.",
       possibleAnswers: [
         { title: "a. are wait" },
         { title: "b. are waiting", correctAnswer: true },
@@ -191,7 +191,7 @@ export default function PresentContinuous() {
 
     {
       id: 15,
-      title: "She ___________ (play) the piano beautifully.",
+      title: "She ___________ the piano beautifully.",
       possibleAnswers: [
         { title: "a. is plays" },
         { title: "b. is playing", correctAnswer: true },
@@ -202,7 +202,7 @@ export default function PresentContinuous() {
 
     {
       id: 16,
-      title: "They ___________ (visit) their grandparents tomorrow.",
+      title: "They ___________ their grandparents tomorrow.",
       possibleAnswers: [
         { title: "a. are not visiting", correctAnswer: true },
         { title: "b. don't visit" },
@@ -213,7 +213,7 @@ export default function PresentContinuous() {
 
     {
       id: 17,
-      title: "I ___________ (talk) to the manager about the issue.",
+      title: "I ___________ to the manager about the issue.",
       possibleAnswers: [
         { title: "a. am talk" },
         { title: "b. am talking", correctAnswer: true },
@@ -224,7 +224,7 @@ export default function PresentContinuous() {
 
     {
       id: 18,
-      title: "They ___________ (study) for their exams all day.",
+      title: "They ___________ (study) for their exams.",
       possibleAnswers: [
         { title: "a. are study" },
         { title: "b. are studying", correctAnswer: true },
@@ -235,7 +235,7 @@ export default function PresentContinuous() {
 
     {
       id: 19,
-      title: "He ___________ (clean) the house right now.",
+      title: "He ___________ the house right now.",
       possibleAnswers: [
         { title: "a. is cleans" },
         { title: "b. is cleaning", correctAnswer: true },
@@ -246,7 +246,7 @@ export default function PresentContinuous() {
 
     {
       id: 20,
-      title: "We ___________ (play) basketball on Saturday.",
+      title: "We ___________ basketball on Saturday.",
       possibleAnswers: [
         { title: "a. are not playing", correctAnswer: true },
         { title: "b. play" },
@@ -255,16 +255,6 @@ export default function PresentContinuous() {
       explanation: "For future actions you can use the present continuous.",
     },
 
-    {
-      id: 21,
-      title: "She ___________ (read) a novel in the library.",
-      possibleAnswers: [
-        { title: "a. readings" },
-        { title: "b. is reading", correctAnswer: true },
-      ],
-      userAnswer: "",
-      explanation: "For ongoing actions you use the present continuous.",
-    },
   ];
 
   return (
