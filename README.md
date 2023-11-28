@@ -2,9 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+<<<<<<< HEAD
 First, run the development server:
 
 ![image](./images/alert.png)
+=======
+![image](github-images/alert.png)
+>>>>>>> a62beb9aded8cd5b406f2838aa40eabe1ec00914
 
 Open [http://127.0.0.1:3000](http://127.0.0.1:3000) with your browser to see the result.
 
