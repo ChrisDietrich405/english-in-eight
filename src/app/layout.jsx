@@ -1,19 +1,17 @@
 "use client";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 import Script from "next/script";
 
 import Footer from "../components/Footer";
 import BreadCrumbs from "../components/BreadCrumbs";
-import "bootstrap/dist/css/bootstrap.css";
 import "./styles/globals.css";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({ children }) {
-  const [showBreadcrumbs, setShowBreadcrumbs] = useState(false);
+
   const pathname = usePathname();
 
   return (

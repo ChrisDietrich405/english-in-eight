@@ -113,7 +113,7 @@ export default function Quiz(props) {
       <div className={styles.quiz_container}>
         <form onSubmit={submit} onReset={reset}>
           <div className={styles.quiz_title}>
-            <h4>{props.title}</h4>
+            <h2>{props.title}</h2>
             {props.subtitle ? <p>{props.subtitle} </p> : ""}
             <h1>{props.explanation}</h1>
           </div>
