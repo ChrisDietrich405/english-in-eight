@@ -1,13 +1,13 @@
-# dietrich-landcare-next
+# english-in-eight-next
 
-My oldest son needed a website for his business so here it is. For
-this project I used object oriented programming. I used SASS for
-the styling and the Emailjs library for the contact functionality.
+I built this website for my English students. I used NextJS, Material UI and EmailJS. I also added Docker.
+
+
 
 
 ## How To Run This Project
 
-1. Clone project (in terminal add `git clone https://github.com/ChrisDietrich405/dietrich-landcare-react-final`)
+1. Clone project (in terminal add `git clone https://github.com/ChrisDietrich405/english-in-eight-next`)
 2. Install dependencies (in terminal run `npm install`)
 3. Run project (in terminal run `npm start`)
 
