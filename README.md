@@ -27,13 +27,13 @@ Home Page
 
 Blogs Page
 
-![image](github-images/blogs.png)
+![image](github-images/github-blogs.png)
 
 Past Continuous Page
 
-![image](github-images/past-continuous.png)
+![image](github-images/github-past-continuous.png)
 
 Past Continuous Page
 
-![image](github-images/prepositions.png)
+![image](github-images/github-prepositions.png)
 =======
