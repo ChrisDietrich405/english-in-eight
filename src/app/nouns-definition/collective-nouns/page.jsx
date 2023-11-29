@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Stack,
+  Typography,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {

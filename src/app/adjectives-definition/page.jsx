@@ -1,15 +1,7 @@
 //DONE
 import Image from "next/image";
 
-import {
-  Container,
-  Stack,
-  Typography,
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
+import { Container, Stack, Typography, Box } from "@mui/material";
 
 import styles from "../styles/content-page.module.css";
 
