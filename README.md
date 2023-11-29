@@ -1,30 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# dietrich-landcare-next
 
-## Getting Started
+My oldest son needed a website for his business so here it is. For
+this project I used object oriented programming. I used SASS for
+the styling and the Emailjs library for the contact functionality.
 
-![image](github-images/break-down.jpg)
 
-Open [http://127.0.0.1:3000](http://127.0.0.1:3000) with your browser to see the result.
+## How To Run This Project
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone project (in terminal add `git clone https://github.com/ChrisDietrich405/dietrich-landcare-react-final`)
+2. Install dependencies (in terminal run `npm install`)
+3. Run project (in terminal run `npm start`)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To learn more about Next.js, take a look at the following resources:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Home Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](github-images/github-home.png)
 
-...
+Blogs Page
 
-## Run with Docker
+![image](github-images/blogs.png)
+
+Past Continuous Page
+
+![image](github-images/past-continuous.png)
+
+Past Continuous Page
+
+![image](github-images/prepositions.png)
+=======
