@@ -195,8 +195,8 @@ export default function RemindVersusRemember() {
       id: 14,
       title: "Could you ____________________ me to bring my ID to the airport?",
       possibleAnswers: [
-        { title: "remind" },
-        { title: "remember", correctAnswer: true },
+        { title: "remind", correctAnswer: true },
+        { title: "remember" },
       ],
       userAnswer: "",
       explanation:
@@ -284,7 +284,7 @@ export default function RemindVersusRemember() {
         <p>
           If a person reminds you of someone, they have you think of that person
           or they resemble that person. If a thing reminds you of something,
-          they have you think of that thing or they resemble that thing:
+          they have you think of that thing or they resemble that thing.
         </p>
         <ul className="page-examples">
           <li>
@@ -298,7 +298,7 @@ export default function RemindVersusRemember() {
         </ul>
         <p>
           If we remind someone to do something or about something, we help them
-          remember it or help them not to forget it:
+          remember it or help them not to forget it.
         </p>
 
         <ul className="page-examples">
@@ -314,7 +314,7 @@ export default function RemindVersusRemember() {
         <h3>Remember</h3>
         <p>
           The term "remember" refers to the mental process of recalling or
-          retaining information, experiences, or events from the past:
+          retaining information, experiences, or events from the past.
         </p>
         <ul className="page-examples">
           <li>I’ll always remember my trip to Jamaica.</li>
@@ -323,7 +323,7 @@ export default function RemindVersusRemember() {
 
         <p>
           Remember + the -ing form of a verb describes having a memory of
-          something that happened in the past or of something we experienced:
+          something that happened in the past or of something we experienced.
         </p>
         <ul className="page-examples">
           <li>They said they didn't remember going to the parking lot.</li>
@@ -331,7 +331,7 @@ export default function RemindVersusRemember() {
         </ul>
         <p>
           Remember + infinitive describes a command. It tells someone not to
-          forget something:
+          forget something.
         </p>
         <ul className="page-examples">
           <li>
