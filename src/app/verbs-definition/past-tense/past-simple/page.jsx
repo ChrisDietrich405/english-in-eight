@@ -67,10 +67,10 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 3,
-      title: "I _________ to her.",
+      title: "I didn't _________ to her.",
       possibleAnswers: [
-        { title: "a. didn't talked" },
-        { title: "b. didn't talk", correctAnswer: true },
+        { title: "a. talked" },
+        { title: "b. talk", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Talked is the past simple form for talk.",
@@ -248,7 +248,7 @@ export default function PastPerfectContinuous() {
       ],
       userAnswer: "",
       explanation:
-        "Visited is the past simple form for visit, but because this is a negative sentence visit doesn't change.",
+        "Visited is the past simple form for visit.",
     },
     {
       id: 21,
