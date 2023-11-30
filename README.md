@@ -1,4 +1,4 @@
-# english-in-eight-next
+# English in Eight Minutes
 
 I built this website for my English students. I used NextJS, Material UI and EmailJS. I also added Docker.
 
