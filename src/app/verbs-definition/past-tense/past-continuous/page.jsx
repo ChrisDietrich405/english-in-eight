@@ -301,7 +301,8 @@ export default function PastContinuous() {
       <div className="page-body">
         <p className={styles.grammar_explanation_paragraph}>
           We use the past continuous to describe something that was happening in
-          the past when another other event interrupted it.
+          the past when another other event interrupted it or a repetitive
+          action that no is no longer happening.
         </p>
 
         <ul className="page-examples">
@@ -317,6 +318,9 @@ export default function PastContinuous() {
           <li>
             I <b>was working</b> in the garden when the delivery guy came to the
             door.
+          </li>
+          <li>
+            They were <b>studying</b> in October.
           </li>
         </ul>
       </div>
