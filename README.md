@@ -1,6 +1,6 @@
 # English in Eight Minutes
 
-I built this website for my English students. I used NextJS, Material UI and EmailJS. I also added Docker.
+I built this website for my English students. I saw that a lot of English grammar websites had an outdated ui or was too dense. I used NextJS, Material UI and EmailJS. I also added Docker.
 
 [NextJS](https://nextjs.org/)
 
