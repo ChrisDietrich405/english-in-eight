@@ -20,9 +20,15 @@ I built this website for my English students. I saw that a lot of English gramma
 
 
 
-## How To Run This Project
+## How To Run This Project 📁
 
-1. Clone project (in terminal add `git clone https://github.com/ChrisDietrich405/english-in-eight-next`)
+
+
+1. Clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/ChrisDietrich405/english-in-eight-next
+```
 2. Install dependencies (in terminal run `npm install`)
 3. Run project (in terminal run `npm start`)
 
