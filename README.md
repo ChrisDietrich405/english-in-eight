@@ -1,8 +1,20 @@
 # English in Eight Minutes
 
+<div align="center">
+  <img src="https://img.shields.io/badge/Node.js-18.17.1-green" alt="Node.js">
+  <img src="https://img.shields.io/badge/TypeScript-5.2.2-blue" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vue-3.3.4-brightgreen" alt="Vue">
+  <img src="https://img.shields.io/badge/SASS-1.67.0-pink" alt="SASS">
+  <img src="https://img.shields.io/badge/Yarn-1.22.19-ff69b4" alt="Yarn">
+</div>
+
 I built this website for my English students. I saw that a lot of English grammar websites had an outdated ui or was too dense. I used NextJS, Material UI and EmailJS. I also added Docker.
 
-[NextJS](https://nextjs.org/)
+[NextJS](https://nextjs.org/)  
+[Material UI](https://mui.com/material-ui/)
+[EmailJS](https://www.emailjs.com/docs/)
+[Docker](https://www.docker.com/)
+
 
 
 ## How To Run This Project
