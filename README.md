@@ -1,19 +1,19 @@
 # English in Eight Minutes
 
+
 <div align="center">
   <img src="https://img.shields.io/badge/NextJS-13.4.12-green" alt="NextJS.js">
   <img src="https://img.shields.io/badge/Material UI-5.0.10-blue" alt="MaterialUI">
   <img src="https://img.shields.io/badge/Docker-24.0.5-brightgreen" alt="Docker">
   <img src="https://img.shields.io/badge/EmailJS-3.11.0-pink" alt="EmailJS">
- 
 </div>
 
 I built this website for my English students. I saw that a lot of English grammar websites either had outdated uis or were too dense. My solution was to create an extremely easy user experience that is light and attractive. I used NextJS, Material UI and EmailJS. I also added Docker.
 
-[NextJS](https://nextjs.org/)  
-[Material UI](https://mui.com/material-ui/)
-[EmailJS](https://www.emailjs.com/docs/)
-[Docker](https://www.docker.com/)
+-[NextJS](https://nextjs.org/)  
+-[Material UI](https://mui.com/material-ui/)
+-[EmailJS](https://www.emailjs.com/docs/)
+-[Docker](https://www.docker.com/)
 
 
 
