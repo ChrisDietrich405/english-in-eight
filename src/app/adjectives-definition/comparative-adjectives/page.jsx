@@ -276,110 +276,282 @@ export default function ComparativeAdjectives() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Comparative Adjectives</h1>
-      </div>
-      <div className={styles.page_body}>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Comparative Adjectives
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
           To make the comparative form ('stronger' or 'more delicious'), the
           first thing we need to know is the number of syllables in the
           adjective.
-        </p>
-      </div>
-      <section className={styles.page_body}>
-        <h4>Adjectives with only one syllable</h4>
-        <p>
+        </Typography>
+      </Stack>
+      <Box>
+        <Typography variant="h5">Adjectives with only one syllable</Typography>
+        <Typography>
           Normally if an adjective has one syllable, we add 'er' to make the
           comparative form.
-        </p>
-        <ul className="page-examples">
-          <li>smart → smarter</li>
-          <li>fast → faster</li>
-          <li>tall → taller</li>
-          <li>old → older</li>
-        </ul>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> smart → smarter</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> fast → faster</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> tall → taller</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> old → older</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
           There are some spelling changes. If the adjective ends in 'e', we
           don't add another 'e', just 'r'.
-        </p>
-        <ul className="page-examples">
-          <li>brave → braver</li>
-          <li>safe → safer</li>
-        </ul>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> brave → braver</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> safe → safer</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
           If there is one vowel followed by one consonant at the end of the
           adjective, we often double the consonant.
-        </p>
-        <ul className="page-examples">
-          <li>sad → sadder</li>
-          <li>hot → hotter</li>
-          <li>big → bigger</li>
-        </ul>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> sad → sadder</ListItemText>
+          </ListItem>
 
-        <p>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>hot → hotter</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> big → bigger</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
           There are some adjectives that we need to use 'more' with, even though
           they only have one syllable. Adding -er is incorrect for these verbs.
-        </p>
-        <ul className="page-examples">
-          <li>real → more real (NOT realer)</li>
-          <li>fun → more fun (NOT funner)</li>
-        </ul>
-      </section>
-      <section>
-        <h4>Adjectives with two syllables</h4>
-        <p>Some adjectives with two syllables use 'more'.</p>
-        <ul className="page-examples">
-          <li>thoughtful → more thoughtful</li>
-          <li>peaceful → more peaceful</li>
-        </ul>
-        <p>However, some two syllable adjectives can use 'er'.</p>
-        <ul className="page-examples">
-          <li>quiet → quieter</li>
-          <li>cruel → crueler</li>
-          <li>simple → simpler</li>
-          <li>quiet → quieter</li>
-        </ul>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>real → more real (NOT realer)</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>fun → more fun (NOT funner)</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> big → bigger</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">Adjectives with two syllables</Typography>
+        <Typography>Some adjectives with two syllables use 'more'.</Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>thoughtful → more thoughtful</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>peaceful → more peaceful</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
+          However, some two syllable adjectives can use 'er'.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>quiet → quieter</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>cruel → crueler</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>simple → simpler</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
           For adjectives with two syllables that end in 'y' we normally add 'er'
           (y generally changes to i).
-        </p>
-        <ul className="page-examples">
-          <li>funny → funnier</li>
-          <li>happy → happier</li>
-          <li>ugly → uglier</li>
-          <li>silly → sillier</li>
-        </ul>
-      </section>
-      <section>
-        <h4>Adjectives that have more than two syllables</h4>
-        <p>
-          Adjectives that have more than two syllables need to use 'most' to
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>funny → funnier</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>happy → happier</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>ugly → uglier</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>silly → sillier</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">
+          Adjectives that have more than two syllables
+        </Typography>
+        <Typography>
+          Adjectives that have more than two syllables need to use 'more' to
           form their comparative.
-        </p>
-        <ul className="page-examples">
-          <li>delicious → more delicious</li>
-          <li>interesting → more more interesting</li>
-          <li>exotic → more exotic</li>
-          <li>intelligent → more intelligent</li>
-        </ul>
-      </section>
-      <section>
-        <h4>Irregular adjectives</h4>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>delicious → more delicious</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>interesting → more interesting</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>exotic → more exotic</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>intelligent → more intelligent</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">Irregular adjectives</Typography>
+        <Typography>
           There are also some irregular adjectives. We simply need to memorize
           them.
-        </p>
-        <ul className="page-examples">
-          <li>good → better</li>
-          <li>bad → worse</li>
-          <li>far → further</li>
-          <li>little → less</li>
-          <li>much → more</li>
-        </ul>
-      </section>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>good → better</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>bad → worse</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>far → further</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>little → less</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>much → more</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
 
       <QuizForm questionsArray={questionsArray} />
-    </main>
+    </Container>
   );
 }
