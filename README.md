@@ -17,12 +17,7 @@ I built this website for my English students. I saw that a lot of English gramma
     - [EmailJS](https://www.emailjs.com/docs/)
     - [Docker](https://www.docker.com/)
 
-- **Backend:**
-    - Node.js
-    - TypeScript
-    - Express.js
-    - Database (e.g., MongoDB, PostgreSQL, etc.)
-    - Unit Testing (jest, mocha, etc.)
+
 
 ## How To Run This Project
 
