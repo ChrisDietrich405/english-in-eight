@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/Docker-24.0.5-brightgreen" alt="Docker">
   <img src="https://img.shields.io/badge/EmailJS-3.11.0-pink" alt="EmailJS">
 </div>
+<br/>
 
 I built this website for my English students. I saw that a lot of English grammar websites either had outdated uis or were too dense. My solution was to create an extremely easy user experience that is light and attractive. I used NextJS, Material UI and EmailJS. I also added Docker.
 
