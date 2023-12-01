@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/NextJS-13.4.12-green" alt="NextJS.js">
-  <img src="https://img.shields.io/badge/TypeScript-5.2.2-blue" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Material UI-5.0.10-blue" alt="MaterialUI">
   <img src="https://img.shields.io/badge/Vue-3.3.4-brightgreen" alt="Vue">
   <img src="https://img.shields.io/badge/SASS-1.67.0-pink" alt="SASS">
   <img src="https://img.shields.io/badge/Yarn-1.22.19-ff69b4" alt="Yarn">
