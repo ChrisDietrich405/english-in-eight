@@ -1,7 +1,7 @@
 # English in Eight Minutes
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Node.js-18.17.1-green" alt="Node.js">
+  <img src="https://img.shields.io/badge/NextJS-13.4.12-green" alt="NextJS.js">
   <img src="https://img.shields.io/badge/TypeScript-5.2.2-blue" alt="TypeScript">
   <img src="https://img.shields.io/badge/Vue-3.3.4-brightgreen" alt="Vue">
   <img src="https://img.shields.io/badge/SASS-1.67.0-pink" alt="SASS">
