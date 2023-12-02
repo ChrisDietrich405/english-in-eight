@@ -255,6 +255,7 @@ export default function Superlatives() {
   ];
 
   return (
+    
     <main>
       <div className="superlative-adjectives">
         <div className={styles.page_title}>
