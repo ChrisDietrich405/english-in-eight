@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Superlative Adjectives | English in Eight Minutes",
   description:
@@ -255,123 +265,277 @@ export default function Superlatives() {
   ];
 
   return (
-    
-    <main>
-      <div className="superlative-adjectives">
-        <div className={styles.page_title}>
-          <h1>Superlative Adjectives</h1>
-        </div>
-        <div className={styles.page_body}>
-          <p className={styles.grammar_explanation_paragraph}>
-            Superlative adjectives are used to describe an object which is at
-            the upper or lower limit of a quality (the tallest, the smallest,
-            the fastest, the highest). They are used in sentences where a
-            subject is compared to a group of objects.
-          </p>
-        </div>
-        <div className={styles.page_body}>
-          <section>
-            <h4>Adjectives with one syllable</h4>
-            <p>
-              If an adjective has one syllable, we usually add 'est' to make the
-              superlative form.
-            </p>
-            <ul className="page-examples">
-              <li>smart → smartest</li>
-              <li>fast → fastest</li>
-              <li>tall → tallest</li>
-              <li>old → oldest</li>
-            </ul>
-            <p>
-              There are some spelling changes. If the adjective ends in 'e', we
-              don't add another 'e', just 'r'.
-            </p>
-            <ul className="page-examples">
-              <li>brave → bravest</li>
-              <li>safe → safest</li>
-            </ul>
-            <p>
-              If there is one vowel followed by one consonant at the end of the
-              adjective, we often double the consonant.
-            </p>
-            <ul className="page-examples">
-              <li>sad → saddest</li>
-              <li>hot → hottest</li>
-              <li>big → biggest</li>
-            </ul>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Superlative Adjectives
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
+          Superlative adjectives are used to describe an object which is at the
+          upper or lower limit of a quality (the tallest, the smallest, the
+          fastest, the highest). They are used in sentences where a subject is
+          compared to a group of objects.
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography variant="h5">Adjectives with only one syllable</Typography>
+        <Typography>
+          If an adjective has one syllable, we usually add 'est' to make the
+          superlative form.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> smart → smartest</ListItemText>
+          </ListItem>
 
-            <p>
-              If the adjective ends in 'e', we don't add another 'e', just 'r'.
-            </p>
-            <ul className="page-examples">
-              <li>brave → bravest</li>
-              <li>safe → safest</li>
-            </ul>
-            <p>
-              There are some adjectives that we need to use 'more' with, even
-              though they only have one syllable. Adding -er is incorrect for
-              these verbs.
-            </p>
-            <ul className="page-examples">
-              <li>real → most real (NOT realer)</li>
-              <li>fun → most fun (NOT funner)</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Adjectives with two syllables</h4>
-            <p>Some adjectives with two syllables use 'more'.</p>
-            <ul className="page-examples">
-              <li>thoughtful → most thoughtful</li>
-              <li>peaceful → most peaceful</li>
-            </ul>
-            <p>However, some two syllable adjectives can use 'est'.</p>
-            <ul className="page-examples">
-              <li>quiet → quietest</li>
-              <li>cruel → cruelest</li>
-              <li>simple → simplest</li>
-              <li>quiet → quietest</li>
-            </ul>
-            <p>
-              For adjectives with two syllables that end in 'y' we normally add
-              'er' (y generally changes to i).
-            </p>
-            <ul className="page-examples">
-              <li>funny → funniest</li>
-              <li>happy → happiest</li>
-              <li>ugly → ugliest</li>
-              <li>silly → silliest</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Adjectives with more than two syllables</h4>
-            <p>
-              Adjectives that have more than two syllables need to use 'most' to
-              form their superlative.
-            </p>
-            <ul className="page-examples">
-              <li>delicious → most delicious</li>
-              <li>interesting → most interesting</li>
-              <li>exotic → most exotic</li>
-              <li>intelligent → most intelligent</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Irregular adjectives</h4>
-            <p>
-              There are also some irregular adjectives. We simply need to
-              memorize them.
-            </p>
-            <ul className="page-examples">
-              <li>good → best</li>
-              <li>bad → worst</li>
-              <li>far → furthest</li>
-              <li>little → least</li>
-              <li>much → most</li>
-            </ul>
-          </section>
-        </div>
-      </div>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> fast → fastest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> tall → tallest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> old → oldest</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          There are some spelling changes. If the adjective ends in 'e', we
+          don't add another 'e', just 'est'.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> brave → bravest</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> safe → safest</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
+          If there is one vowel followed by one consonant at the end of the
+          adjective, we often double the consonant.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> sad → saddest</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>hot → hottest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> big → biggest</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
+          There are some adjectives that we need to use 'most' with, even though
+          they only have one syllable. Adding -er is incorrect for these verbs.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>real → most real (NOT realer)</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>fun → most fun (NOT funner)</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">Adjectives with two syllables</Typography>
+        <Typography>Some adjectives with two syllables use 'most'.</Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>thoughtful → most thoughtful</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>peaceful → most peaceful</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
+          However, some two syllable adjectives can use 'est'.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>quiet → quietest</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>cruel → cruelest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>simple → simplest</ListItemText>
+          </ListItem>
+        </List>
+
+        <Typography>
+          For adjectives with two syllables that end in 'y' we normally add 'er'
+          (y generally changes to i).
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>funny → funniest</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>happy → happiest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>ugly → ugliest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>silly → silliest</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">
+          Adjectives that have more than two syllables
+        </Typography>
+        <Typography>
+          Adjectives that have more than two syllables need to use 'most' to
+          form their superlative.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>delicious → most delicious</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>interesting → most interesting</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>exotic → most exotic</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>intelligent → most intelligent</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Box component="section">
+        <Typography variant="h5">Irregular adjectives</Typography>
+        <Typography>
+          There are also some irregular adjectives. We simply need to memorize
+          them.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>good → best</ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>bad → worst</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>far → furthest</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>little → least</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>much → most</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+
       <QuizForm questionsArray={questionsArray} />
-    </main>
+    </Container>
   );
 }
