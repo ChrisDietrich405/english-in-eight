@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Noun Modifiers | English in Eight Minutes",
   description:
@@ -143,7 +153,8 @@ export default function NounModifiers() {
         { title: "swimmings lesson" },
       ],
       userAnswer: "",
-      explanation: "Swimming is a noun modifier here and noun modifiers are always singular.",
+      explanation:
+        "Swimming is a noun modifier here and noun modifiers are always singular.",
     },
     {
       id: 11,
@@ -168,65 +179,153 @@ export default function NounModifiers() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Noun Modifiers</h1>
-      </div>
-      <div className={styles.page_body}>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Noun Modifiers
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
           Noun modifiers are words or phrases that provide additional
           information about a noun, helping to describe, specify, or quantify
           it. We sometimes have two nouns together to demonstrate that one thing
           is a part of something else. In the following examples, the first noun
           is called a noun modifier.
-        </p>
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography
+          component="h5"
+          variant="h5"
+          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Examples
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              <b>Baltimore</b> residents
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              The <b>dog</b> bowl
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              The <b>chair</b> leg
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              The <b>shopping</b> list
+            </ListItemText>
+          </ListItem>{" "}
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              My <b>gold</b> watch
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        Noun modifiers can be used to show what something is made of.
+      </Typography>
+      <List sx={{ marginLeft: "20px" }}>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText> a metal chair</ListItemText>
+        </ListItem>
 
-        <ul className="page-examples">
-          <li>
-            <b>Baltimore</b> residents
-          </li>
-          <li>
-            The <b>dog</b> bowl
-          </li>
-          <li>
-            The <b>chair</b> leg
-          </li>
-          <li>
-            My <b>gold</b> watch
-          </li>
-          <li>
-            The <b>shopping</b> list
-          </li>
-        </ul>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a gold watch</ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a wood table</ListItemText>
+        </ListItem>
+      </List>
+      <Typography>
+        Noun modifiers can be used to demonstrate a measurement.
+      </Typography>
+      <List sx={{ marginLeft: "20px" }}>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText> an hour drive</ListItemText>
+        </ListItem>
 
-        <p>Noun modifiers can be used to show what something is made of:</p>
-        <ul className="page-examples">
-          <li>a metal chair</li>
-          <li>a gold watch</li>
-          <li>a wood table</li>
-        </ul>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a thousand mile trip</ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a twenty pound bag</ListItemText>
+        </ListItem>
+      </List>
+      <Typography>
+        Noun modifiers can be used with nouns ending in –er.
+      </Typography>
+      <List sx={{ marginLeft: "20px" }}>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText> a dress maker</ListItemText>
+        </ListItem>
 
-        <p>Noun modifiers can be used for values or measurements:</p>
-        <ul className="page-examples">
-          <li>an hour drive</li>
-          <li>a thousand mile trip</li>
-          <li>a twenty pound bag</li>
-        </ul>
-
-        <p>Noun modifiers can be used with nouns ending in –er:</p>
-        <ul className="page-examples">
-          <li>a dress maker</li>
-          <li>a club manager</li>
-          <li>a factory worker</li>
-        </ul>
-      </div>
-      <p>Noun modifiers are always singular</p>
-      <ul className="page-examples">
-        <li>
-          a basketball player{" "}
-          <span style={{ color: "red" }}>NOT a basketballs player</span>
-        </li>
-      </ul>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a club manager</ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>a factory worker</ListItemText>
+        </ListItem>
+      </List>
 
       <QuizForm questionsArray={questionsArray} />
       <iframe
@@ -239,6 +338,6 @@ export default function NounModifiers() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
