@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Countable and Uncountable Nouns | English in Eight Minutes",
   description:
@@ -260,122 +270,251 @@ export default function UncountableAndCountable() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_body}>
-        <div className={styles.page_title}>
-          <h1>Countable & Uncountable Nouns </h1>
-        </div>
-        <section>
-          <h4>Uncountable Nouns</h4>
-          <p className={styles.grammar_explanation_paragraph}>
-            Uncountable nouns are for nouns we don’t count. These nouns might be
-            used to describe abstract ideas , e.g., anger. They can also be used
-            for physical objects that are too small , e.g., rice. Uncountable
-            nouns can be used for things that don't have shape (powders,
-            liquids, gases, etc...).
-          </p>
-        </section>
-        <div>
-          <p>Examples</p>
-          <ul className="page-examples">
-            <li>tea</li>
-            <li>information</li>
-            <li>rice</li>
-            <li>water</li>
-            <li>happiness</li>
-            <li>knowledge</li>
-            <li>advice</li>
-            <li>air</li>
-            <li>sugar</li>
-          </ul>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Countable & Uncountable Nouns
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography
+          component="h5"
+          variant="h5"
+          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Uncountable Nouns
+        </Typography>
+        <Typography className={styles.grammar_explanation_paragraph}>
+          Uncountable nouns are for nouns we don’t count. These nouns might be
+          used to describe abstract ideas , e.g., anger. They can also be used
+          for physical objects that are too small , e.g., rice. Uncountable
+          nouns can be used for things that don't have shape (powders, liquids,
+          gases, etc...).
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography component="h5" variant="h5">
+          Examples
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> tea</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> information</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> rice</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> water</ListItemText>
+          </ListItem>{" "}
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> happiness</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> knowledge</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> advice</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> air</ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText> sugar</ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
+      <Stack>
+        <Typography sx={{ marginBottom: "15px" }}>
           We can’t use <b>a/an</b> with uncountable nouns. To explain a quantity
           of an uncountable noun, use an expression or word like <b>some</b>,{" "}
           <b>a lot of</b>, <b>much</b>, or else use an exact measurement like{" "}
           <b>a cup of</b>, <b>a bag of</b>,<b> a slice of</b> e.g., a cup of
           coffee. In order to ask about the quantity of an uncountable noun, you
           say <b>"How much?"</b> e.g., How much water do you have?
-        </p>
-
-        <p>Example</p>
-        <ul className="page-examples">
-          <li>
-            There isn't a lot of <b>sugar</b> in these cookies.
-          </li>
-          <li>
-            I need some <b>information</b> about that.
-          </li>
-          <li>
-            He didn't have much <b>money</b>.
-          </li>
-          <li>
-            How much <b>tea </b>do you want?
-          </li>
-        </ul>
-        <p>
-          <b>Careful!!!</b>
-        </p>
-
-        <p className={styles.grammar_explanation_paragraph}>
-          There are some uncountable nouns that are countable in other languages
-          but uncountable in English. Obviously they must follow the rules for
-          uncountable nouns. Some common ones are: <b>advice</b>,{" "}
-          <b>behavior</b>, <b>bread</b>, <b>furniture</b>, <b>information</b>,
-          <b>time</b>,<b>news</b>, <b>stuff</b>, <b>traffic</b>, ,{" "}
-          <b>trouble</b>, <b>weather</b>, <b>work</b>.
-        </p>
-
-        <p>Examples</p>
-
-        <ul className="page-examples">
-          <li>
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography component="h5" variant="h5">
+          Examples
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              There isn't a lot of <b>sugar</b> in these cookies.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              I need some <b>information</b> about that.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              He didn't have much <b>money</b>.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              How much <b>tea </b>do you want?
+            </ListItemText>
+          </ListItem>{" "}
+        </List>
+      </Stack>
+      <Typography component="h5" variant="h5">
+        Careful!!
+      </Typography>
+      <Typography sx={{ marginBottom: "15px" }}>
+        There are some uncountable nouns that are countable in other languages
+        but uncountable in English. Obviously they must follow the rules for
+        uncountable nouns. Some common ones are: <b>advice</b>, <b>behavior</b>,{" "}
+        <b>bread</b>, <b>furniture</b>, <b>information</b>,<b>time</b>,
+        <b>news</b>, <b>stuff</b>, <b>traffic</b>, , <b>trouble</b>,{" "}
+        <b>weather</b>, <b>work</b>.
+      </Typography>
+      <Typography component="h5" variant="h5">
+        Examples
+      </Typography>
+      <List sx={{ marginLeft: "20px" }}>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            {" "}
             The <b>furniture</b> in this store is very expensive.
-          </li>
-          <li>
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
             How much<b> bread </b> should I bring?
-          </li>
-          <li>
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
             There wasn't a lot of <b>traffic</b> today.
-          </li>
-          <li>
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            {" "}
             She gave me some very good <b>advice</b>.
-          </li>
-        </ul>
+          </ListItemText>
+        </ListItem>{" "}
+      </List>
+      <Typography component="h5" variant="h5">
+        Countable Nouns
+      </Typography>
+      <Typography sx={{ marginBottom: "15px" }}>
+        Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They have a
+        singular and a plural form. The singular form can use "a" or "an". If
+        you need to ask about the quantity of a countable noun, you ask "How
+        many?" along with the plural countable noun, e.g., How many dogs?
+      </Typography>
+      <Typography component="h5" variant="h5">
+        Examples
+      </Typography>
+      <List sx={{ marginLeft: "20px" }}>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            I own <b>a</b> house.
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            There were <b>a few</b> fights.
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            They need <b>two</b> t-shirts please.
+          </ListItemText>
+        </ListItem>
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            {" "}
+            <b>How many</b> people are at the party?
+          </ListItemText>
+        </ListItem>{" "}
+        <ListItem
+          className={styles.page_examples}
+          sx={{ display: "list-item" }}
+        >
+          <ListItemText>
+            {" "}
+            She has <b>six</b> cats. She has <b>six</b> cats.
+          </ListItemText>
+        </ListItem>{" "}
+      </List>
 
-        <section>
-          <h4>Countable Nouns</h4>
-          <p className={styles.grammar_explanation_paragraph}>
-            Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They
-            have a singular and a plural form. The singular form can use "a" or
-            "an". If you need to ask about the quantity of a countable noun, you
-            ask "How many?" along with the plural countable noun, e.g., How many
-            dogs?
-          </p>
-        </section>
-        <div>
-          <p>Examples</p>
-          <ul className="page-examples">
-            <li>
-              I own <b>a</b> house.
-            </li>
-            <li>
-              There were <b>a few</b> fights.
-            </li>
-            <li>
-              They need <b>two</b> t-shirts please.
-            </li>
-            <li>
-              <b>How many</b> people are at the party?
-            </li>
-            <li>
-              She has <b>six</b> cats.
-            </li>
-          </ul>
-        </div>
-
-        <br />
-      </div>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -387,6 +526,6 @@ export default function UncountableAndCountable() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
