@@ -287,8 +287,9 @@ export default function ComparativeAdjectives() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack>
         <Typography
+          mb={2}
           component="h1"
           variant="h1"
           sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
@@ -296,43 +297,33 @@ export default function ComparativeAdjectives() {
           Comparative Adjectives
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
-        <Typography className={styles.grammar_explanation_paragraph}>
+      <Stack mb={2}>
+        <Typography>
           To make the comparative form ('stronger' or 'more delicious'), the
           first thing we need to know is the number of syllables in the
           adjective.
         </Typography>
       </Stack>
       <Box>
-        <Typography variant="h5">Adjectives with only one syllable</Typography>
+        <Typography mb={1} variant="h5">
+          Adjectives with only one syllable
+        </Typography>
         <Typography>
           Normally if an adjective has one syllable, we add 'er' to make the
           comparative form.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> smart → smarter</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> fast → faster</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> tall → taller</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> old → older</ListItemText>
           </ListItem>
         </List>
@@ -341,17 +332,11 @@ export default function ComparativeAdjectives() {
           don't add another 'e', just 'r'.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> brave → braver</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> safe → safer</ListItemText>
           </ListItem>
         </List>
@@ -361,23 +346,14 @@ export default function ComparativeAdjectives() {
           adjective, we often double the consonant.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> sad → sadder</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>hot → hotter</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> big → bigger</ListItemText>
           </ListItem>
         </List>
@@ -387,105 +363,68 @@ export default function ComparativeAdjectives() {
           they only have one syllable. Adding -er is incorrect for these verbs.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>real → more real (NOT realer)</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>fun → more fun (NOT funner)</ListItemText>
-          </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
-            <ListItemText> big → bigger</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">Adjectives with two syllables</Typography>
+        <Typography mb={1} variant="h5">
+          Adjectives with two syllables
+        </Typography>
         <Typography>Some adjectives with two syllables use 'more'.</Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>thoughtful → more thoughtful</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>peaceful → more peaceful</ListItemText>
           </ListItem>
         </List>
 
-        <Typography>
+        <Typography mb={1}>
           However, some two syllable adjectives can use 'er'.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>quiet → quieter</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>cruel → crueler</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>simple → simpler</ListItemText>
           </ListItem>
         </List>
 
-        <Typography>
+        <Typography mb={1}>
           For adjectives with two syllables that end in 'y' we normally add 'er'
           (y generally changes to i).
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>funny → funnier</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>happy → happier</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>ugly → uglier</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>silly → sillier</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">
+        <Typography mb={1} variant="h5">
           Adjectives that have more than two syllables
         </Typography>
         <Typography>
@@ -493,69 +432,44 @@ export default function ComparativeAdjectives() {
           form their comparative.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>delicious → more delicious</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>interesting → more interesting</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>exotic → more exotic</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>intelligent → more intelligent</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">Irregular adjectives</Typography>
+        <Typography mb={1} variant="h5">
+          Irregular adjectives
+        </Typography>
         <Typography>
           There are also some irregular adjectives. We simply need to memorize
           them.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>good → better</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>bad → worse</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>far → further</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>little → less</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>much → more</ListItemText>
           </ListItem>
         </List>
