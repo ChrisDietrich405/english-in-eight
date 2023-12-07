@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Possessive Pronouns | English in Eight Minutes",
   description:
@@ -238,40 +248,88 @@ export default function PossessivePronouns() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Possessive Pronouns</h1>
-      </div>
-      <div className="page-body">
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Possessive Pronouns
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
           Possessive pronouns are pronouns that are used to indicate ownership
           (possession) and replace a noun. The English possessive pronouns are
           mine, ours, yours, his, hers, theirs.
-        </p>
-      </div>
-      <div className="page-examples">
-        <p>Examples</p>
-        <ul>
-          <li>
-            I have a house - It's <b>mine.</b>
-          </li>
-          <li>
-            You have a boat - That boat is <b>yours.</b>
-          </li>
-          <li>
-            He has a car - It is <b>his.</b>
-          </li>
-          <li>
-            She has a tattoo - It is <b>hers.</b>
-          </li>
-          <li>
-            We have an apartment - It is <b>ours.</b>
-          </li>
-          <li>
-            They have a son - He is <b>theirs.</b>
-          </li>
-        </ul>
-      </div>
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography
+          component="h5"
+          variant="h5"
+          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Examples
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              I have a house - It's <b>mine.</b>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              You have a boat - That boat is <b>yours.</b>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              He has a car - It is <b>his.</b>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              She has a tattoo - It is <b>hers.</b>
+            </ListItemText>
+          </ListItem>{" "}
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              We have an apartment - It is <b>ours.</b>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              They have a son - He is <b>theirs.</b>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
 
       <QuizForm questionsArray={questionsArray} />
       <iframe
@@ -284,6 +342,6 @@ export default function PossessivePronouns() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
