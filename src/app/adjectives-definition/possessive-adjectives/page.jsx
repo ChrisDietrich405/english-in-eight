@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Possessive Adjectives | English in Eight Minutes",
   description:
@@ -210,8 +220,7 @@ export default function PossessiveAdjectives() {
     },
     {
       id: 18,
-      title:
-        "The students admired (he) _____________ dedication.",
+      title: "The students admired (he) _____________ dedication.",
       possibleAnswers: [
         { title: "their" },
         { title: "his", correctAnswer: true },
@@ -242,48 +251,94 @@ export default function PossessiveAdjectives() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_body}>
-        <div className="possessive-adjectives">
-          <div className={styles.page_title}>
-            <h1>Possessive Adjectives</h1>
-          </div>
-          <div className={styles.page_body}>
-            <p className={styles.grammar_explanation_paragraph}>
-              Possessive adjectives are words used to show ownership or
-              possession. They are placed before a noun to indicate that the
-              noun belongs to someone or something. Examples of possessive
-              adjectives include "my," "your," "his," "her," "its," "our," and
-              "their."
-            </p>
-          </div>
-
-          <ul className="page-examples">
-            <li>
+    <Container>
+      <Stack className={styles.page_title}>
+        <Typography
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Possessive Adjectives
+        </Typography>
+      </Stack>
+      <Stack className={styles.page_body}>
+        <Typography className={styles.grammar_explanation_paragraph}>
+          Possessive adjectives are words used to show ownership or possession.
+          They are placed before a noun to indicate that the noun belongs to
+          someone or something. Examples of possessive adjectives include "my,"
+          "your," "his," "her," "its," "our," and "their."
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
               I have a car. This is <b>my</b> car.
-            </li>
-            <li>
-              You have a dog. That is <b>your</b> dog
-            </li>
-            <li>
-              He has a car. It is <b>his</b> car
-            </li>
-            <li>
+            </ListItemText>
+          </ListItem>
+
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              You have a dog. That is <b>your</b> dog.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
+              He has a car. It is <b>his</b> car.
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
               She has a laptop. It is <b>her</b> laptop.
-            </li>
-            <li>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
               The car has new tires. <b>Its</b> tires are new.
-            </li>
-            <li>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
               We have a motorcycle. It is <b>our</b> motorcycle.
-            </li>
-            <li>
+            </ListItemText>
+          </ListItem>
+          <ListItem
+            className={styles.page_examples}
+            sx={{ display: "list-item" }}
+          >
+            <ListItemText>
+              {" "}
               They have a boat. That is <b>their</b> boat.
-            </li>
-          </ul>
-        </div>
-      </div>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+
       <QuizForm questionsArray={questionsArray} />
-    </main>
+    </Container>
   );
 }

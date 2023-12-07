@@ -2,6 +2,16 @@ import QuizForm from "@/src/components/QuizForm";
 
 import styles from "../../styles/content-page.module.css";
 
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Comparative Adjectives | English in Eight Minutes",
   description:
