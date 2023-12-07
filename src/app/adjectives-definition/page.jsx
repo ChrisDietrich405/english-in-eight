@@ -26,20 +26,17 @@ export default function AdjectiveDefinition() {
       </Stack>
       <Stack direction="row" spacing={6}>
         <Box>
-          <Box>
-            <Image
-              style={{
-                objectFit: "contain",
-                borderRadius: "20%",
-                top: "50%",
-                left: "50%",
-              }}
-              height={250}
-              width={250}
-              src="/images/happy.jpg"
-              alt="happy child"
-            />
-          </Box>
+          <Image
+            style={{
+              borderRadius: "4px",
+              top: "50%",
+              left: "50%",
+            }}
+            height={200}
+            width={200}
+            src="/images/happy.jpg"
+            alt="happy child"
+          />
 
           <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
             Happy
@@ -48,24 +45,34 @@ export default function AdjectiveDefinition() {
 
         <Box>
           <Image
-            height={250}
-            width={250}
+            style={{
+              borderRadius: "4px",
+              top: "50%",
+              left: "50%",
+            }}
+            height={200}
+            width={200}
             src="/images/small.jpg"
             alt="small dog"
           />
-          <Typography variant="h5" mt={2}>
+          <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
             Small
           </Typography>
         </Box>
 
         <Box>
           <Image
-            height={250}
-            width={250}
+            style={{
+              borderRadius: "4px",
+              top: "50%",
+              left: "50%",
+            }}
+            height={200}
+            width={200}
             src="/images/strong.jpg"
             alt="strong person"
           />
-          <Typography variant="h5" mt={2}>
+          <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
             Strong
           </Typography>
         </Box>
