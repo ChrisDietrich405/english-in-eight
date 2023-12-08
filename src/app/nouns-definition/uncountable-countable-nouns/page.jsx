@@ -271,7 +271,7 @@ export default function UncountableAndCountable() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack mb={2}>
         <Typography
           component="h1"
           variant="h1"
@@ -280,7 +280,7 @@ export default function UncountableAndCountable() {
           Countable & Uncountable Nouns
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
+      <Stack mb={2}>
         <Typography
           component="h5"
           variant="h5"
@@ -288,7 +288,7 @@ export default function UncountableAndCountable() {
         >
           Uncountable Nouns
         </Typography>
-        <Typography className={styles.grammar_explanation_paragraph}>
+        <Typography>
           Uncountable nouns are for nouns we don’t count. These nouns might be
           used to describe abstract ideas , e.g., anger. They can also be used
           for physical objects that are too small , e.g., rice. Uncountable
@@ -297,62 +297,35 @@ export default function UncountableAndCountable() {
         </Typography>
       </Stack>
       <Stack>
-        <Typography component="h5" variant="h5">
+        <Typography component="h6" variant="h6">
           Examples
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> tea</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> information</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> rice</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> water</ListItemText>
           </ListItem>{" "}
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> happiness</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> knowledge</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> advice</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> air</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> sugar</ListItemText>
           </ListItem>
         </List>
@@ -368,39 +341,27 @@ export default function UncountableAndCountable() {
         </Typography>
       </Stack>
       <Stack>
-        <Typography component="h5" variant="h5">
+        <Typography component="h6" variant="h6">
           Examples
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               There isn't a lot of <b>sugar</b> in these cookies.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               I need some <b>information</b> about that.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               He didn't have much <b>money</b>.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               How much <b>tea </b>do you want?
@@ -419,39 +380,27 @@ export default function UncountableAndCountable() {
         <b>news</b>, <b>stuff</b>, <b>traffic</b>, , <b>trouble</b>,{" "}
         <b>weather</b>, <b>work</b>.
       </Typography>
-      <Typography component="h5" variant="h5">
+      <Typography component="h6" variant="h6">
         Examples
       </Typography>
       <List sx={{ marginLeft: "20px" }}>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             {" "}
             The <b>furniture</b> in this store is very expensive.
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             How much<b> bread </b> should I bring?
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             There wasn't a lot of <b>traffic</b> today.
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             {" "}
             She gave me some very good <b>advice</b>.
@@ -467,47 +416,32 @@ export default function UncountableAndCountable() {
         you need to ask about the quantity of a countable noun, you ask "How
         many?" along with the plural countable noun, e.g., How many dogs?
       </Typography>
-      <Typography component="h5" variant="h5">
+      <Typography component="h6" variant="h6">
         Examples
       </Typography>
       <List sx={{ marginLeft: "20px" }}>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             I own <b>a</b> house.
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             There were <b>a few</b> fights.
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             They need <b>two</b> t-shirts please.
           </ListItemText>
         </ListItem>
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             {" "}
             <b>How many</b> people are at the party?
           </ListItemText>
         </ListItem>{" "}
-        <ListItem
-          className={styles.page_examples}
-          sx={{ display: "list-item" }}
-        >
+        <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             {" "}
             She has <b>six</b> cats. She has <b>six</b> cats.

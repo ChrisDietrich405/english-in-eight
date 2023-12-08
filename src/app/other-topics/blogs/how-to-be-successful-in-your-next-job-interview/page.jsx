@@ -6,6 +6,17 @@ import { Card } from "@mui/material";
 
 import styles from "../../../styles/blogs.module.css";
 
+import {
+  Container,
+  Card,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "How to be Successful in Your Next Job Interview",
   description:
@@ -48,11 +59,18 @@ export const metadata = {
 
 const Blog3 = () => {
   return (
-    <main className={styles.blog_container}>
-      <div className={styles.page_title}>
-        <h1>How to be successful in your next job interview</h1>
-      </div>
-      <div className={styles.image_container}>
+    <Container className={styles.blog_container}>
+      <Stack className={styles.page_title}>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          How to be successful in your next job interview
+        </Typography>
+      </Stack>
+      <Stack>
         <Image
           className={styles.blog_image}
           height={350}
@@ -60,16 +78,16 @@ const Blog3 = () => {
           src="/images/interview3.jpg"
           alt="interview"
         />
-      </div>
-      <p>
+      </Stack>
+      <Typography>
         Many people unfortunately don't consider job interviewing a skill, but
         it most certainly is. And there are many strategies you can implement to
         ensure that you have the best chance of getting that next dream job.
-      </p>
-      <h5 className={styles.section_title}>
+      </Typography>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Confidence</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         Many people are concerned about seeming arrogant in job interviews. Keep
         in mind that the person interviewing you wants you to impress them. You
         can be both proud of your successes and also demonstrate that you are a
@@ -77,11 +95,11 @@ const Blog3 = () => {
         accomplishment is, it's time to use <b>I</b> not <b>We</b>. There will
         be other times during the interview where you can demonstrate that you
         work well on a team and are easy to work with.
-      </p>
-      <h5 className={styles.section_title}>
+      </Typography>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Details</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         They are going to interview 5 people. How are you different from the
         rest? Make sure to use as many details as possible. "When I was working
         for Beyond Meat in 2019 I suggested a new feature. We implemented it and
@@ -89,11 +107,11 @@ const Blog3 = () => {
         mentioned the name of the company, the year and the exact percentage of
         the increase in profit. The more details the better. This helps you to
         be more memorable.
-      </p>
-      <h5 className={styles.section_title}>
+      </Typography>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Study the job description</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         Study the job description and the company's website carefully. Look for
         keywords and the company's mission statement. When you're in the
         interview repeat those keywords as much as possible. It will show that
@@ -101,8 +119,8 @@ const Blog3 = () => {
         job. A very good idea is to refer to how your personal values align with
         the company's values, mentioning those values from the website or job
         description.
-      </p>
-      <div className={styles.image_container}>
+      </Typography>
+      <Stack>
         <Image
           className={styles.blog_image}
           height={350}
@@ -110,20 +128,20 @@ const Blog3 = () => {
           src="/images/interview4.jpg"
           alt="interview"
         />
-      </div>
-      <h5 className={styles.section_title}>
+      </Stack>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Your physical presence</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         Make sure you smile throughout the interview. Also, keep eye contact and
         have good posture. If you are physically in the office for the interview
         make sure to shake their hand at the beginning of the interview and at
         the end.
-      </p>
-      <h5 className={styles.section_title}>
+      </Typography>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Your questions</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         Have at least 3 or 4 questions prepared to ask the interviewer at the
         end of the interview. Try to make them as customized as possible for the
         company. But if you are having a hard time you can always rely on a
@@ -135,16 +153,16 @@ const Blog3 = () => {
         >
           General Questions
         </a>
-      </p>
-      <h5 className={styles.section_title}>
+      </Typography>
+      <Typography component="h5" mt={2} mb={0.5}>
         <b>Practice Practice Practice</b>
-      </h5>
-      <p>
+      </Typography>
+      <Typography>
         In English we have an expression. Practice makes perfect. It's certainly
         true. Have a friend or family member interview you and then do it again
         and again. Maybe they can give you feedback.
-      </p>{" "}
-      <p>
+      </Typography>{" "}
+      <Typography>
         Also, time your answers. Interview answers should be 30 seconds to four
         minutes, depending on the question. Your response may be short (30
         seconds to two minutes) if the question is simple. For example, if the
@@ -152,30 +170,37 @@ const Blog3 = () => {
         90 seconds to explain your biggest strength. You definitely need to be
         careful about talking too much because when we're nervous it's very
         normal to do that.&nbsp;
-      </p>
+      </Typography>
       <Card sx={{ padding: "20px" }}>
-        <h4>
+        <Typography component="h4">
           <b>Summary</b>
-        </h4>
-        <ul>
-          <li>
-            First of all, I suggest you start considering job interviewing a
-            skill and start to study and practice like you would any other
-            skill.
-          </li>
-
-          <li>
-            If you really want the job study the job description and the website
-            very carefully.
-          </li>
-          <li>
-            {" "}
-            Make sure to be positive during the interview, smiling, engaged and
-            with good posture.
-          </li>
-        </ul>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              First of all, I suggest you start considering job interviewing a
+              skill and start to study and practice like you would any other
+              skill.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              If you really want the job study the job description and the
+              website very carefully.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Make sure to be positive during the interview, smiling, engaged
+              and with good posture.
+            </ListItemText>
+          </ListItem>
+        </List>
       </Card>
-    </main>
+    </Container>
   );
 };
 

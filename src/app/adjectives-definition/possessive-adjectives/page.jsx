@@ -252,8 +252,9 @@ export default function PossessiveAdjectives() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack>
         <Typography
+          mb={2}
           component="h1"
           variant="h1"
           sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
@@ -261,8 +262,8 @@ export default function PossessiveAdjectives() {
           Possessive Adjectives
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
-        <Typography className={styles.grammar_explanation_paragraph}>
+      <Stack>
+        <Typography>
           Possessive adjectives are words used to show ownership or possession.
           They are placed before a noun to indicate that the noun belongs to
           someone or something. Examples of possessive adjectives include "my,"
@@ -271,65 +272,44 @@ export default function PossessiveAdjectives() {
       </Stack>
       <Box component="section">
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               I have a car. This is <b>my</b> car.
             </ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               You have a dog. That is <b>your</b> dog.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               He has a car. It is <b>his</b> car.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               She has a laptop. It is <b>her</b> laptop.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               The car has new tires. <b>Its</b> tires are new.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               We have a motorcycle. It is <b>our</b> motorcycle.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               They have a boat. That is <b>their</b> boat.

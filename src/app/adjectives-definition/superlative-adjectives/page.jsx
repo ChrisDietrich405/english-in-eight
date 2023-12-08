@@ -266,7 +266,7 @@ export default function Superlatives() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack mb={2}>
         <Typography
           component="h1"
           variant="h1"
@@ -275,8 +275,8 @@ export default function Superlatives() {
           Superlative Adjectives
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
-        <Typography className={styles.grammar_explanation_paragraph}>
+      <Stack mb={2}>
+        <Typography>
           Superlative adjectives are used to describe an object which is at the
           upper or lower limit of a quality (the tallest, the smallest, the
           fastest, the highest). They are used in sentences where a subject is
@@ -284,35 +284,25 @@ export default function Superlatives() {
         </Typography>
       </Stack>
       <Box component="section">
-        <Typography variant="h5">Adjectives with only one syllable</Typography>
+        <Typography mb={2} variant="h5">
+          Adjectives with only one syllable
+        </Typography>
         <Typography>
           If an adjective has one syllable, we usually add 'est' to make the
           superlative form.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> smart → smartest</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> fast → fastest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> tall → tallest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> old → oldest</ListItemText>
           </ListItem>
         </List>
@@ -321,17 +311,11 @@ export default function Superlatives() {
           don't add another 'e', just 'est'.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> brave → bravest</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> safe → safest</ListItemText>
           </ListItem>
         </List>
@@ -341,23 +325,14 @@ export default function Superlatives() {
           adjective, we often double the consonant.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> sad → saddest</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>hot → hottest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText> big → biggest</ListItemText>
           </ListItem>
         </List>
@@ -367,36 +342,26 @@ export default function Superlatives() {
           they only have one syllable. Adding -er is incorrect for these verbs.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>real → most real (NOT realer)</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>fun → most fun (NOT funner)</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">Adjectives with two syllables</Typography>
+        <Typography mb={2} variant="h5">
+          Adjectives with two syllables
+        </Typography>
         <Typography>Some adjectives with two syllables use 'most'.</Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>thoughtful → most thoughtful</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>peaceful → most peaceful</ListItemText>
           </ListItem>
         </List>
@@ -405,23 +370,14 @@ export default function Superlatives() {
           However, some two syllable adjectives can use 'est'.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>quiet → quietest</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>cruel → cruelest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>simple → simplest</ListItemText>
           </ListItem>
         </List>
@@ -431,35 +387,23 @@ export default function Superlatives() {
           (y generally changes to i).
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>funny → funniest</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>happy → happiest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>ugly → ugliest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>silly → silliest</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">
+        <Typography mb={2} variant="h5">
           Adjectives that have more than two syllables
         </Typography>
         <Typography>
@@ -467,69 +411,44 @@ export default function Superlatives() {
           form their superlative.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>delicious → most delicious</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>interesting → most interesting</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>exotic → most exotic</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>intelligent → most intelligent</ListItemText>
           </ListItem>
         </List>
       </Box>
       <Box component="section">
-        <Typography variant="h5">Irregular adjectives</Typography>
+        <Typography mb={2} variant="h5">
+          Irregular adjectives
+        </Typography>
         <Typography>
           There are also some irregular adjectives. We simply need to memorize
           them.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>good → best</ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>bad → worst</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>far → furthest</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>little → least</ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>much → most</ListItemText>
           </ListItem>
         </List>

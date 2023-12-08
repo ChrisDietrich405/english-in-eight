@@ -249,7 +249,7 @@ export default function PossessivePronouns() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack mb={2}>
         <Typography
           component="h1"
           variant="h1"
@@ -258,8 +258,8 @@ export default function PossessivePronouns() {
           Possessive Pronouns
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
-        <Typography className={styles.grammar_explanation_paragraph}>
+      <Stack mb={2}>
+        <Typography>
           Possessive pronouns are pronouns that are used to indicate ownership
           (possession) and replace a noun. The English possessive pronouns are
           mine, ours, yours, his, hers, theirs.

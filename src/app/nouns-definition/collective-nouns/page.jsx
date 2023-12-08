@@ -238,7 +238,7 @@ export default function Collective() {
 
   return (
     <Container>
-      <Stack className={styles.page_title}>
+      <Stack mb={2}>
         <Typography
           component="h1"
           variant="h1"
@@ -247,8 +247,8 @@ export default function Collective() {
           Collective Nouns
         </Typography>
       </Stack>
-      <Stack className={styles.page_body}>
-        <Typography className={styles.grammar_explanation_paragraph}>
+      <Stack mb={2}>
+        <Typography>
           Collective nouns are nouns which represent a group of people or
           things. They include words such as <b>audience</b>, <b>family</b>,{" "}
           <b>government</b>, <b>group</b>, and <b>team</b>. Most collective
@@ -268,48 +268,33 @@ export default function Collective() {
           Examples
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               The U.S. <b>government</b> is made up of 3 branches.
             </ListItemText>
           </ListItem>
 
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               This hockey <b>team</b> includes three players from Canada.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               Our <b>class</b> takes a field trip to the natural history museum
               every year.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               My <b>family</b> is important to me.
             </ListItemText>
           </ListItem>
-          <ListItem
-            className={styles.page_examples}
-            sx={{ display: "list-item" }}
-          >
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
               The city <b>council</b> is rejecting the proposal.
