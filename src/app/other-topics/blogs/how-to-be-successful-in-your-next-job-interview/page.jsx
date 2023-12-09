@@ -55,8 +55,8 @@ export const metadata = {
 
 const Blog3 = () => {
   return (
-    <Container className={styles.blog_container}>
-      <Stack className={styles.page_title}>
+    <Container>
+      <Stack>
         <Typography
           mb={2}
           component="h1"
@@ -66,8 +66,9 @@ const Blog3 = () => {
           How to be successful in your next job interview
         </Typography>
       </Stack>
-      <Stack>
+      <Stack mb={2} sx={{ margin: "0 auto" }}>
         <Image
+          style={{ margin: "0 auto" }}
           className={styles.blog_image}
           height={350}
           width={550}
@@ -118,6 +119,7 @@ const Blog3 = () => {
       </Typography>
       <Stack>
         <Image
+          style={{ margin: "0 auto" }}
           className={styles.blog_image}
           height={350}
           width={550}
