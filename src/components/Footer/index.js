@@ -18,6 +18,7 @@ export default function Footer() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState({});
 
+  
   const validatorObject = {
     name,
     email,
