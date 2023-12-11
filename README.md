@@ -9,7 +9,7 @@
 </div>
 <br/>
 
-I built this website for my English students. I saw that a lot of English grammar websites either had outdated uis or were too dense. My solution was to create an extremely easy user experience that is light and attractive. I used NextJS, Material UI and EmailJS. I also added Docker.
+I built this website for my English students. I saw that a lot of English grammar websites either had outdated UIs or were too dense. My solution was to create an extremely easy user experience that is light and attractive. I used NextJS, Material UI and EmailJS. I also added Docker.
 
 
 - **Documentation:**
