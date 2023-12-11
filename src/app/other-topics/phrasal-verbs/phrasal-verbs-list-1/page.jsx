@@ -1,6 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
@@ -43,55 +51,69 @@ export const metadata = {
 
 export default function PhrasalVerbs1() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Phrasal Verbs List One</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Take up</b> - occupy time, space, or attention
-            <p>
-              Example: Sorry for asking so many questions. I didn't want to{" "}
-              <b>take up</b> so much of your time.
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Phrasal Verbs List One
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Fed up with</b> - annoyed or upset at a situation or treatment
-            <p>
-              Example: He was <b>fed up with</b> doing all the work.
-            </p>
-          </li>
-
-          <li>
-            <b>Talk it out</b> - to resolve a fight, disagreement,
-            misunderstanding through talking
-            <p>
-              Example: The day after the fight my wife and I{" "}
-              <b>talked it out</b> and now we are fine.
-            </p>
-          </li>
-
-          <li>
-            <b>Hit it off</b> - to immediately have a good relationship when
-            meeting someone new
-            <p>
-              Example: I met my new boss today and we <b>hit it off</b> from the
-              start. I’m so happy.
-            </p>
-          </li>
-
-          <li>
-            <b>Cheat on</b> - to be unfaithful to your romantic partner, or when
-            being dishonest when taking tests
-            <p>
-              Example: Skylar <b>cheated on</b> Walter (she had sex with her
-              boss).
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Take up</b> - occupy time, space, or attention
+              <Typography>
+                Example: Sorry for asking so many questions. I didn't want to{" "}
+                <b>take up</b> so much of your time.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Fed up with</b> - annoyed or upset at a situation or treatment
+              <Typography>
+                Example: He was <b>fed up with</b> doing all the work.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Talk it out</b> - to resolve a fight, disagreement,
+              misunderstanding through talking
+              <Typography>
+                Example: The day after the fight my wife and I{" "}
+                <b>talked it out</b> and now we are fine.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Hit it off</b> - to immediately have a good relationship when
+              meeting someone new
+              <Typography>
+                Example: I met my new boss today and we <b>hit it off</b> from
+                the start. I’m so happy.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Cheat on</b> - to be unfaithful to your romantic partner, or
+              when being dishonest when taking tests
+              <Typography>
+                Example: Skylar <b>cheated on</b> Walter (she had sex with her
+                boss).
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a quiz!"
         questions={[
@@ -145,6 +167,6 @@ export default function PhrasalVerbs1() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }

@@ -1,6 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Idiomatic Expressions | English in Eight Minutes",
@@ -45,58 +53,76 @@ export const metadata = {
 export default function Expressions4() {
   return (
     <main>
-      <div className={styles.page_title}>
-        <h2>Idiomatic Expressions List Four</h2>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Cold calling</b> - make an unsolicited call to (someone), by
-            phone or in person, in an attempt to sell goods or services
-            <br />
-            <p>
-              Example: I hate <b>cold calling</b>. I never get any sales from
-              it.{" "}
-            </p>
-          </li>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+          >
+            Idiomatic Expressions List Four
+          </Typography>
+        </Stack>
 
-          <li>
-            <b>B movie</b> - a low-budget commercial movie
-            <br />
-            <p>
-              Example: My friends and I like to watch <b>B movies</b>. We like
-              making fun of them.
-            </p>
-          </li>
+        <Stack>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                <b>Cold calling</b> - make an unsolicited call to (someone), by
+                phone or in person, in an attempt to sell goods or services
+                <br />
+                <Typography>
+                  Example: I hate <b>cold calling</b>. I never get any sales
+                  from it.{" "}
+                </Typography>
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                <b>B movie</b> - a low-budget commercial movie
+                <br />
+                <Typography>
+                  Example: My friends and I like to watch <b>B movies</b>. We
+                  like making fun of them.
+                </Typography>
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                <b>You had to be there</b> - when retelling a funny story that
+                isn’t as funny when being told
+                <br />
+                <Typography>
+                  Example: After I told my mom what happened, she didn’t laugh
+                  at all and so I said <b>“you had to be there".</b>
+                </Typography>
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                <b>(Period of time) tops</b> - the longest time something will
+                take to finish
+                <br />
+                <Typography>
+                  Example: I’ll finish this website in <b>one week tops.</b>
+                </Typography>
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                <b>Ahead of schedule</b> - earlier than planned or expected
+                <br />
+                <Typography>
+                  Example: They finished the project 2 weeks{" "}
+                  <b>ahead of schedule.</b>
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          </List>
+        </Stack>
+      </Container>
 
-          <li>
-            <b>You had to be there</b> - when retelling a funny story that isn’t
-            as funny when being told
-            <br />
-            <p>
-              Example: After I told my mom what happened, she didn’t laugh at
-              all and so I said <b>“you had to be there".</b>
-            </p>
-          </li>
-
-          <li>
-            <b>(period of time) tops</b> - the longest time something will take
-            to finish
-            <br />
-            <p>
-              Example: I’ll finish this website in <b>one week tops.</b>
-            </p>
-          </li>
-          <li>
-            <b>Ahead of schedule</b> - earlier than planned or expected
-            <br />
-            <p>
-              Example: They finished the project 2 weeks{" "}
-              <b>ahead of schedule.</b>
-            </p>
-          </li>
-        </ul>
-      </div>
       <Quiz
         title="Take a quiz!"
         questions={[
