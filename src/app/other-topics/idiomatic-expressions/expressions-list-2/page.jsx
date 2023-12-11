@@ -1,6 +1,15 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 export const metadata = {
   title: "Idiomatic Expressions | English in Eight Minutes",
   description:
@@ -43,60 +52,76 @@ export const metadata = {
 
 export default function Expressions2() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Idiomatic Expressions List Two</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Hand me downs</b> - clothes that are received that were worn by
-            older relatives
-            <br />
-            <p>
-              Example: I wore a lot of my older brother’s <b>hand me downs.</b>
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Idiomatic Expressions List Two
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Second wind</b> - a new strength or energy to continue something
-            that is difficult
-            <br />
-            <p>
-              Example: I was tired around 11pm, but got a <b>second wind</b> and
-              finished the project.
-            </p>
-          </li>
-
-          <li>
-            <b>To wing it</b> - to not plan for something
-            <br />
-            <p>
-              Example: Malcolm didn’t have time to prepare for his interview so
-              he needed <b>to wing it.</b>
-            </p>
-          </li>
-          <li>
-            <b>Out of one's hands</b> - not being able to be controlled or
-            managed
-            <br />
-            <p>
-              Example: The decision is <b>out of my hands.</b> I have no control
-              in this situation.
-            </p>
-          </li>
-
-          <li>
-            <b>To backfire</b> - (of a plan or action) to have an opposite and
-            undesirable effect to what was intended
-            <br />
-            <p>
-              Example: Her plans to make him jealous <b>backfired</b> on her
-              when he started dating her best friend.
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Hand me downs</b> - clothes that are received that were worn by
+              older relatives
+              <br />
+              <Typography>
+                Example: I wore a lot of my older brother’s{" "}
+                <b>hand me downs.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Second wind</b> - a new strength or energy to continue
+              something that is difficult
+              <br />
+              <Typography>
+                Example: I was tired around 11pm, but got a <b>second wind</b>{" "}
+                and finished the project.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>To wing it</b> - to not plan for something
+              <br />
+              <Typography>
+                Example: Malcolm didn’t have time to prepare for his interview
+                so he needed <b>to wing it.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>To backfire</b> - (of a plan or action) to have an opposite and
+              undesirable effect to what was intended
+              <br />
+              <Typography>
+                Example: Her plans to make him jealous <b>backfired</b> on her
+                when he started dating her best friend.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Out of one's hands</b> - not being able to be controlled or
+              managed
+              <br />
+              <Typography>
+                Example: The decision is <b>out of my hands.</b> I have no
+                control in this situation.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a quiz!"
         questions={[
@@ -152,6 +177,6 @@ export default function Expressions2() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }

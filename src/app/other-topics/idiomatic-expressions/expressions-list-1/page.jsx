@@ -1,6 +1,14 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Idiomatic Expressions | English in Eight Minutes",
@@ -44,59 +52,74 @@ export const metadata = {
 
 export default function Expressions1() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Idiomatic Expressions List One</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Time is money</b> - time is a valuable resource, therefore it is
-            better to do things as quickly as possible
-            <br />
-            <p>
-              Example: Come on hurry up! <b>Time is money.</b>
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Idiomatic Expressions List One
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Foolproof</b> - incapable of going wrong or being misused
-            <br />
-            <p>
-              Example: I have a <b>foolproof</b> security system. As dumb as I
-              am even I'm able to use it.
-            </p>
-          </li>
-
-          <li>
-            <b>Out of nowhere</b> - appearing or happening suddenly and
-            unexpectedly
-            <br />
-            <p>
-              Example: The car came <b>out of nowhere</b> and hit our van.
-            </p>
-          </li>
-
-          <li>
-            <b>To one up someone</b> - to make a point of outdoing,
-            outperforming, outclassing, etc., someone
-            <br />
-            <p>
-              Example: I hate telling stories around Marcus because he always
-              tries <b>to one up</b> you with some amazing story of his own.
-            </p>
-          </li>
-          <li>
-            <b>It's better to be safe than sorry</b> - it’s better to be careful
-            now so that problems do not occur later on
-            <br />
-            <p>
-              Example: It's probably not necessary to check the numbers again,
-              but <b>it's better to be safe than sorry.</b>
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Time is money</b> - time is a valuable resource, therefore it
+              is better to do things as quickly as possible
+              <br />
+              <Typography>
+                Example: Come on hurry up! <b>Time is money.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Foolproof</b> - incapable of going wrong or being misused
+              <br />
+              <Typography>
+                Example: I have a <b>foolproof</b> security system. As dumb as I
+                am even I'm able to use it.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Out of nowhere</b> - appearing or happening suddenly and
+              unexpectedly
+              <br />
+              <Typography>
+                Example: The car came <b>out of nowhere</b> and hit our van.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>To one up someone</b> - to make a point of outdoing,
+              outperforming, outclassing, etc., someone
+              <br />
+              <Typography>
+                Example: I hate telling stories around Marcus because he always
+                tries <b>to one up</b> you with some amazing story of his own.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>It's better to be safe than sorry</b> - it’s better to be
+              careful now so that problems do not occur later on
+              <br />
+              <Typography>
+                Example: It's probably not necessary to check the numbers again,
+                but <b>it's better to be safe than sorry.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a Quiz!"
         questions={[
@@ -153,6 +176,6 @@ export default function Expressions1() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }

@@ -47,6 +47,16 @@
   flex-basis: 75%;
 }
 
+.phrasal_verbs_link {
+  color: var(--neutral-dark);
+  display: block;
+  width: 100%;
+  padding: 6px;
+  text-decoration: none;
+  transition: 0.5s;
+  border-bottom: 1px solid rgb(222, 217, 217);
+}
+
 .link {
   color: var(--neutral-dark);
   display: block;
@@ -55,6 +65,13 @@
   text-decoration: none;
   transition: 0.5s;
   border-bottom: 1px solid rgb(222, 217, 217);
+}
+
+
+.phrasal_verbs_link:hover {
+  color: #fff;
+  width: 100%;
+  background-color: var(--secondary) !important;
 }
 
 .link:hover {
