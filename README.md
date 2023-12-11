@@ -23,14 +23,14 @@ I built this website for my English students. I saw that a lot of English gramma
 ## How To Run This Project 📁
 
 
-
-1. Clone this repository to your local machine using the following command:
+1. Install NodeJS version 16 or later
+2. Clone this repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/ChrisDietrich405/english-in-eight-next
 ```
-2. Install dependencies (in terminal run `npm install`)
-3. Run project (in terminal run `npm start`)
+3. Install dependencies (in terminal run `npm install`)
+4. Run project (in terminal run `npm start`)
 
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
