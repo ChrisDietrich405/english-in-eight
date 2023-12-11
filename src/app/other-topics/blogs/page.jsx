@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Container, Button, Grid } from "@mui/material";
+import { Container, Typography, Stack, Grid } from "@mui/material";
 
 import styles from "../../styles/blogs.module.css";
 
@@ -41,35 +41,34 @@ export const metadata = {
 const page = () => {
   return (
     <Container>
-      <div className={styles.page_title}>
-        <h1>How blogs can help you</h1>
-      </div>
-      <Grid container className={styles.link_container}>
-        <Grid item xs={8}>
-          <p className={styles.paragraph}>
-            Blogs are an incredible way to learn. Reading blogs give you the
-            ability to improve your English while at the same time learning a
-            second skill for example interviewing. My recommendation is to read
-            each blog at least three times. The first time you can investigate
-            any unfamiliar vocabulary, phrasal verbs, expressions. Next, read it
-            again slowly. When you read it a third time again read it slowly,
-            but read it out loud. After a third time you will be more confident
-            in the content and will have at the same time improved your English.
-          </p>
-          <div className={styles.image_container}>
-            <Image
-              className={styles.blog_image}
-              style={{ display: "flex", justifyContent: "center" }}
-              height={350}
-              width={550}
-              src="/images/blog.jpg"
-              alt="interview"
-            />
-          </div>
-        </Grid>
-        <Grid item xs={4}></Grid>
-      </Grid>
-      {/* <div className={styles.link_container}></div> */}
+      <Typography
+        mb={2}
+        component="h1"
+        variant="h1"
+        sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+      >
+        How blogs can help you
+      </Typography>
+
+      <Typography mb={3}>
+        Blogs are an incredible way to learn. Reading blogs give you the ability
+        to improve your English while at the same time learning a second skill,
+        for example interviewing. My recommendation is to read each blog at
+        least three times. The first time you can investigate any unfamiliar
+        vocabulary, phrasal verbs, expressions. Next, read it again slowly. When
+        you read it a third time again read it slowly, but read it out loud.
+        After a third time you will be more confident in the content and will
+        have at the same time improved your English.
+      </Typography>
+      <Stack>
+        <Image
+          style={{ margin: "0 auto" }}
+          height={350}
+          width={550}
+          src="/images/blog.jpg"
+          alt="interview"
+        />
+      </Stack>
     </Container>
   );
 };
