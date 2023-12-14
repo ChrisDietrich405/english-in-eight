@@ -18,11 +18,11 @@ const Layout = ({ children }) => {
     <div style={{ backgroundColor: "#f3f0f0" }}>
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={3} >
+          <Grid item xs={3}>
             <Stack
               mt={3.75}
               sx={{
-                height: "100vh", 
+                height: "100vh",
                 borderRadius: "9px",
                 backgroundColor: "#fff",
               }}
@@ -84,8 +84,15 @@ const Layout = ({ children }) => {
               </List>
             </Stack>
           </Grid>
-          <Grid item xs={9}>
-            <div className={styles.main_content}>{children}</div>
+          <Grid item xs={9} >
+            <Stack
+              mt={3.75}
+              mb={3}
+              p={4}
+              sx={{ backgroundColor: "#fff", borderRadius: "9px" }}
+            >
+              {children}
+            </Stack>
           </Grid>
         </Grid>
       </Container>

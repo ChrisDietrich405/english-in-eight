@@ -5,7 +5,7 @@ import styles from "../../styles/content-page.module.css";
 
 export default function ExpressionsDefinition() {
   return (
-    <div className="expressions-container">
+    <div style={{marginBottom: "20px"}}>
       <div className={styles.page_title}>
         <h1>Idiomatic Expressions Definition</h1>
       </div>
@@ -14,7 +14,7 @@ export default function ExpressionsDefinition() {
           Idiomatic expressions are a type of informal language that have a
           meaning different from the meaning of the words in the expression.
         </p>
-        <Card style={{ padding: "16px", marginBottom: "20px" }}>
+        <Card style={{ padding: "16px", marginBottom: "40px" }}>
           <div className={styles.content_wrapper}>
             <Image
               width={300}
