@@ -1,6 +1,13 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
@@ -43,55 +50,71 @@ export const metadata = {
 
 export default function PhrasalVerbs4() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Phrasal Verbs List Four</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Ask around</b> - to ask a lot of different people in order to get
-            information or help
-            <p>
-              Example: I’m going to <b>ask around</b> to find the best mechanic.
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Phrasal Verbs List Four
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Sell out</b> - to no longer have a product available in a store
-            because every one of that product was purchased.
-            <p>
-              Example: All the new IPhones were <b>sold out</b> at the Apple
-              store.
-            </p>
-          </li>
-
-          <li>
-            <b>Look down on</b> - to feel that others are inferior
-            <p>
-              Example: Many rich people <b>look down on</b> poor people.
-            </p>
-          </li>
-
-          <li>
-            <b>Come back</b> - to return to the place you are right now
-            <p>
-              Example: I’m leaving soon, but I’m <b>coming right</b> back.
-            </p>
-          </li>
-
-          <li>
-            <b>Go back</b> - to return to a place where you aren’t right now
-            <p>
-              Example: I’m <b>going back</b> to Colombia in December.{" "}
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Ask around</b> - to ask a lot of different people in order to
+              get information or help
+              <Typography>
+                Example: I’m going to <b>ask around</b> to find the best
+                mechanic.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Sell out</b> - to no longer have a product available in a store
+              because every one of that product was purchased.
+              <Typography>
+                Example: All the new IPhones were <b>sold out</b> at the Apple
+                store.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Look down on</b> - to feel that others are inferior
+              <Typography>
+                Example: Many rich people <b>look down on</b> poor people.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Come back</b> - to return to the place you are right now
+              <Typography>
+                Example: I’m leaving soon, but I’m <b>coming right</b> back.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Go back</b> - to return to a place where you aren’t right now
+              <Typography>
+                Example: I’m <b>going back</b> to Colombia in December.{" "}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a quiz!"
         questions={[
           {
+            id: 1,
             title:
               "She left the office(here), but is __________ in the afternoon.",
             possibleAnswers: [
@@ -101,6 +124,7 @@ export default function PhrasalVerbs4() {
             userAnswer: "",
           },
           {
+            id: 2,
             title:
               "Many people from the U.S. ______________ immigrants. It's very sad.",
             possibleAnswers: [
@@ -110,6 +134,7 @@ export default function PhrasalVerbs4() {
             userAnswer: "",
           },
           {
+            id: 3,
             title:
               "I hope they don't _____________ of their burritos today. I really want one for lunch.",
             possibleAnswers: [
@@ -119,6 +144,7 @@ export default function PhrasalVerbs4() {
             userAnswer: "",
           },
           {
+            id: 4,
             title:
               "He's not ______________ to Algeria this year. He's staying in the U.S.",
             possibleAnswers: [
@@ -128,6 +154,7 @@ export default function PhrasalVerbs4() {
             userAnswer: "",
           },
           {
+            id: 5,
             title:
               "You need a good interior designer for your new house? I can __________ for you.",
             possibleAnswers: [
@@ -138,6 +165,6 @@ export default function PhrasalVerbs4() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }

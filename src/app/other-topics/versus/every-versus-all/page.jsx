@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -251,60 +261,96 @@ export default function EveryVersusAll() {
 
   return (
     <>
-      <div className={styles.page_body}>
-        <div className={styles.page_title}>
-          <h1>Every versus All</h1>
-        </div>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Every versus All
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography>
+            We use both <b>every</b> and <b>all</b> to describe a total number
+            of something. Every describes each member of a complete group. All
+            describes a complete group.
+          </Typography>
+        </Stack>
+        <Box component="section">
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> The food was sent to all students.</ListItemText>
+            </ListItem>
 
-        <p className={styles.grammar_explanation_paragraph}>
-          We use both <b>every</b> and <b>all</b> to describe a total number of
-          something. Every describes each member of a complete group. All
-          describes a complete group.
-        </p>
-        <ul className="page-examples">
-          <li>The food was sent to all students.</li>
-          <li>The food was sent to every student.</li>
-        </ul>
-        <p>
-          In some situations we use <b>all </b>on its own. We can also use
-          everyone/everybody/everything.
-        </p>
-        <ul className="page-examples">
-          <li>
-            The bingo event is at the park. It starts at 4 and all are welcome.
-          </li>
-          <li>
-            The bingo event is at park. It starts at 4 and everyone is welcome.
-          </li>
-        </ul>
-        <p>
-          We can use <b>every</b> to focus on each individual member.
-        </p>
-        <p>Compare:</p>
-        <ul className="page-examples">
-          <li>
-            All attendees need to silence their phones. (describes the entire
-            group)
-          </li>
-          <li>
-            Every attendee needs to silence their phones. (describes the
-            individuals )
-          </li>
-        </ul>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> The food was sent to every student.</ListItemText>
+            </ListItem>
+          </List>
+          <List>
+            <Typography>
+              {" "}
+              In some situations we use <b>all </b>on its own. We can also use
+              everyone/everybody/everything.
+            </Typography>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                The bingo event is at the park. It starts at 4 and all are
+                welcome.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                The bingo event is at park. It starts at 4 and everyone is
+                welcome.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            {" "}
+            We can use <b>every</b> to focus on each individual member.
+          </Typography>
+          <Typography>Compare:</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                All attendees need to silence their phones. (describes the
+                entire group)
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                Every attendee needs to silence their phones. (describes the
+                individuals )
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            We use <b>every </b> with singular entitites and <b>all</b> with
+            uncountable and plural nouns
+          </Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> Every payment is due today.</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>All payments are due today.</ListItemText>
+            </ListItem>
+          </List>
+        </Box>
+        <Typography component="h4">
+          {" "}
+          Hint! Remember that all is usually used with plural nouns (all
+          students) and every is usually used with singular nouns (every car).
+        </Typography>
 
-        <p>
-          We use <b>every </b> with singular entitites and <b>all</b> with
-          uncountable and plural nouns
-        </p>
-        <ul className="page-examples">
-          <li>Every payment is due today.</li>
-          <li>All payments are due today.</li>
-        </ul>
-      </div>
-      <h4>
-        Hint! Remember that all is usually used with plural nouns (all students)
-        and every is usually used with singular nouns (every car).
-      </h4>
+        <QuizForm questionsArray={questionsArray} />
+      </Container>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe

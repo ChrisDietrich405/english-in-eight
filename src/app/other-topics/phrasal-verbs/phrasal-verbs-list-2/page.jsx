@@ -1,6 +1,13 @@
 import Quiz from "@/src/components/Quiz";
 
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
@@ -23,7 +30,7 @@ export const metadata = {
   openGraph: {
     title: "Phrasal Verbs List One | English in Eight Minutes",
     description:
-    "Learn the phrasal verbs put together, drive around, live off of , talk into, go off with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
+      "Learn the phrasal verbs put together, drive around, live off of , talk into, go off with English in Eight Minutes. Explore examples and practice exercises to improve your understanding of these important English language constructs.",
     images: [
       {
         alt: "English in Eight Logo",
@@ -43,51 +50,68 @@ export const metadata = {
 
 export default function PhrasalVerbs2() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Phrasal Verbs List Two</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Put together</b> - to assemble, construct something using several
-            pieces
-            <p>
-              Example: I bought a desk from the store and now I need to{" "}
-              <b>put it together.</b>
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Phrasal Verbs List Two
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Drive around</b> - to drive with no real purpose
-            <p>
-              I love to drive so much that sometimes I just <b>drive around.</b>
-            </p>
-          </li>
-
-          <li>
-            <b>go off (alarm)</b> - when an alarm starts
-            <p>When my alarm goes off in the morning I’m miserable.</p>
-          </li>
-
-          <li>
-            <b>Live off of</b> - to be able to survive with a minimum amount of
-            something
-            <p>
-              She <b>lives off of </b>$2,000 a month. I don’t know how she does
-              it.
-            </p>
-          </li>
-
-          <li>
-            <b>Talk into</b> -to persuade someone to do something .
-            <p>
-              Gabriela <b>talked Caio into </b>going to Bahia for their
-              vacation.
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Put together</b> - to assemble, construct something using
+              several pieces
+              <Typography>
+                Example: I bought a desk from the store and now I need to{" "}
+                <b>put it together.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Drive around</b> - to drive with no real purpose
+              <Typography>
+                I love to drive so much that sometimes I just{" "}
+                <b>drive around.</b>
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Go off (alarm)</b> - when an alarm starts
+              <Typography>
+                When my alarm goes off in the morning I’m miserable.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Live off of</b> - to be able to survive with a minimum amount
+              of something
+              <Typography>
+                She <b>lives off of </b>$2,000 a month. I don’t know how she
+                does it.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Talk into</b> -to persuade someone to do something .
+              <Typography>
+                Gabriela <b>talked Caio into </b>going to Bahia for their
+                vacation.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a quiz!"
         questions={[
@@ -141,6 +165,6 @@ export default function PhrasalVerbs2() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }

@@ -2,7 +2,6 @@ import Quiz from "@/src/components/Quiz";
 
 import {
   Container,
-  Box,
   Stack,
   ListItem,
   ListItemText,
@@ -138,8 +137,7 @@ export default function PhrasalVerbs1() {
           },
           {
             id: 3,
-            title:
-              "My english-logos ________________ a lot of space in my closet.",
+            title: "My shoes ________________ a lot of space in my closet.",
             possibleAnswers: [
               { title: "a. take up", correctAnswer: true },
               { title: "b. fed up with" },

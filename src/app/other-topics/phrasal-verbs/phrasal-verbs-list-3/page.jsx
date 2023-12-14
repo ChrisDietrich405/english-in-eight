@@ -1,5 +1,12 @@
 import Quiz from "@/src/components/Quiz";
-import styles from "../../../styles/content-page.module.css";
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
 
 export const metadata = {
   title: "Phrasal Verbs List One | English in Eight Minutes",
@@ -42,54 +49,68 @@ export const metadata = {
 
 export default function PhrasalVerbs3() {
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Phrasal Verbs List Three</h1>
-      </div>
-      <div className={styles.page_body}>
-        <ul>
-          <li>
-            <b>Think over</b> - to think deeply about a decision before you make
-            it
-            <p>
-              Example: Can I <b>think it over</b> and tell you my answer
-              tomorrow?{" "}
-            </p>
-          </li>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
+        >
+          Phrasal Verbs List Three
+        </Typography>
+      </Stack>
 
-          <li>
-            <b>Put up with</b> - tolerate
-            <p>
-              Example: He couldn’t <b>put up with</b> his boss anymore so he
-              quit.{" "}
-            </p>
-          </li>
-
-          <li>
-            <b>Fall for</b> - To either become infatuated with or fall in love
-            with someone
-            <p>
-              Example: I <b>fell for</b> her pretty quickly.
-            </p>
-          </li>
-
-          <li>
-            <b>Take apart</b> - to disassemble
-            <p>
-              Example: We needed to <b>take apart</b> the desk in order to take
-              it out of the room.{" "}
-            </p>
-          </li>
-
-          <li>
-            <b>Build up</b> - to increase in intensity.
-            <p>
-              Example: They had a big fight after the tension between them{" "}
-              <b>built up</b>.{" "}
-            </p>
-          </li>
-        </ul>
-      </div>
+      <Stack>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Think over</b> - to think deeply about a decision before you
+              make it
+              <Typography>
+                Example: Can I <b>think it over</b> and tell you my answer
+                tomorrow?{" "}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Put up with</b> - tolerate
+              <Typography>
+                Example: He couldn’t <b>put up with</b> his boss anymore so he
+                quit.{" "}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Fall for</b> - To either become infatuated with or fall in love
+              with someone
+              <Typography>
+                Example: I <b>fell for</b> her pretty quickly.
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Take apart</b> - to disassemble
+              <Typography>
+                Example: We needed to <b>take apart</b> the desk in order to
+                take it out of the room.{" "}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              <b>Build up</b> - to increase in intensity.
+              <Typography>
+                Example: They had a big fight after the tension between them{" "}
+                <b>built up</b>.{" "}
+              </Typography>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <Quiz
         title="Take a quiz!"
         questions={[
@@ -142,6 +163,6 @@ export default function PhrasalVerbs3() {
           },
         ]}
       ></Quiz>
-    </main>
+    </Container>
   );
 }
