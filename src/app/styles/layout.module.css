@@ -67,7 +67,6 @@
   border-bottom: 1px solid rgb(222, 217, 217);
 }
 
-
 .phrasal_verbs_link:hover {
   color: #fff;
   width: 100%;
@@ -80,9 +79,13 @@
   background-color: var(--secondary) !important;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 420px) {
   .main_container {
     display: flex;
     flex-direction: column;
+  }
+
+  .sidebar_wrapper {
+    height: 40vh;
   }
 }

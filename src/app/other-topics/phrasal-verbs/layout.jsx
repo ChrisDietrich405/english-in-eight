@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     <div style={{ backgroundColor: "#f3f0f0" }}>
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3} className={styles.sidebar_wrapper}>
             <Stack
               mt={3.75}
               sx={{
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
             </Stack>
           </Grid>
 
-          <Grid item xs={9}>
+          <Grid item xs={12} md={9} mb={4}>
             <Stack
               mt={3.75}
               p={4}
