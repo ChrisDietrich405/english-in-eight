@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -260,114 +270,192 @@ export default function ForVersusTo() {
 
   return (
     <main>
-      <div className={styles.wrapper}>
-        <div className={styles.page_title}>
-          <h1>For versus To</h1>
-        </div>
-        <h4>Use TO in the following situations:</h4>
-        <p>Giving</p>
-        <ul className="page-examples">
-          <li>
-            She gave it <b> to </b>me.
-          </li>
-          <li>
-            I donated <b>to</b> Farm Santuary.
-          </li>
-        </ul>
-        <p>Direction of communication</p>
-        <ul className="page-examples">
-          <li>
-            She talked <b> to </b>me.
-          </li>
-          <li>
-            I said it <b>to</b> him.
-          </li>
-        </ul>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            For versus To
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6" mb={2}>
+            Use To in the following situations:
+          </Typography>
+        </Stack>
+        <Box component="section">
+          <Typography> Giving</Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                She gave it <b> to </b>me.
+              </ListItemText>
+            </ListItem>
 
-        <p>Destination</p>
-        <ul className="page-examples">
-          <li>
-            I'm travelling <b>to</b> Lima.”
-          </li>
-          <li>
-            I'm going <b>to</b> the store.”
-          </li>
-        </ul>
-        <p>Distance</p>
-        <ul className="page-examples">
-          <li>
-            It’s 20 minutes from my job <b>to</b> my house.
-          </li>
-          <li>
-            It's 3 hours <b>to</b> the Washington.”
-          </li>
-        </ul>
-        <h4>Use FOR in the following situations:</h4>
-        <p>Benefits</p>
-        <ul className="page-examples">
-          <li>
-            Exercising is great <b>for</b> your health.
-          </li>
-          <li>
-            I eat a lot of vegetables <b>for</b> the fiber.”
-          </li>
-        </ul>
-        <p>Purpose (with -ing verb)</p>
-        <ul className="page-examples">
-          <li>
-            A helmet is used <b>for</b> protecting your head.
-          </li>
-          <li>
-            This tool is used <b>for</b> cutting metal.”
-          </li>
-        </ul>
-        <p>Assisting someone</p>
-        <ul className="page-examples">
-          <li>
-            Could you carry these books <b>for</b> me?
-          </li>
-          <li>
-            I can cook <b>for</b> you if you're tired.”
-          </li>
-        </ul>
-        <p>Length of time</p>
-        <ul className="page-examples">
-          <li>
-            <p>
-              We’ve lived here <b>for</b> 2 years.
-            </p>
-          </li>
-          <li>
-            I can cook <b>for</b> you if you're tired.”
-          </li>
-        </ul>
-        <h5>
-          When referring to motive/purpose/reason it get's a little complicated.{" "}
-        </h5>
-        <p>
-          {" "}
-          If you follow the preposition with a noun you use <b>for</b>.
-        </p>
-        <ul className="page-examples">
-          <li>
-            I'm going out <b>for</b> food
-          </li>
-          <li>
-            I work hard <b>for</b> you if you're tired.
-          </li>
-        </ul>
-        <p>
-          If you follow the preposition with a verb you use <b>to</b>.
-        </p>
-        <ul className="page-examples">
-          <li>
-            I'm going out <b>to</b> eat.
-          </li>
-          <li>
-            I volunteer a lot <b>to</b> help others.
-          </li>
-        </ul>
-      </div>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                I donated <b>to</b> Farm Santuary.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <List>
+            <Typography> Direction of communication</Typography>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                She talked <b> to </b>me.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I said it <b>to</b> him.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography> Destination</Typography>
+
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I'm travelling <b>to</b> Lima.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I'm going <b>to</b> the store.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>Distance</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                It’s 20 minutes from my job <b>to</b> my house.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                It's 3 hours <b>to</b> the Washington.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography variant="h6" mb={2}>
+            Use For in the following situations:
+          </Typography>
+          <Typography>Benefits</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                Exercising is great <b>for</b> your health.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I eat a lot of vegetables <b>for</b> the fiber.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>Purpose (with -ing verb)</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                A helmet is used <b>for</b> protecting your head.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                This tool is used <b>for</b> cutting metal.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>Assisting someone</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                Could you carry these books <b>for</b> me?
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I can cook <b>for</b> you if you're tired.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>Length of time</Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                We’ve lived here <b>for</b> 2 years.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I can cook <b>for</b> you if you're tired.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography variant="h6" mb={1}>
+            {" "}
+            When referring to motive/purpose/reason it get's a little
+            complicated.
+          </Typography>
+          <Typography>
+            {" "}
+            If you follow the preposition with a noun you use <b>for</b>.
+          </Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I'm going out <b>for</b> food.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I work hard <b>for</b> you if you're tired.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            {" "}
+            If you follow the preposition with a verb you use <b>to</b>.
+          </Typography>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                I'm going out <b>to</b> eat.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I volunteer a lot <b>to</b> help others.
+              </ListItemText>
+            </ListItem>
+          </List>
+        </Box>
+
+        <QuizForm questionsArray={questionsArray} />
+
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JKBUvNihqoQ?si=mwysdj3EsPO9pT-4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Container>
       <QuizForm questionsArray={questionsArray} />
     </main>
   );

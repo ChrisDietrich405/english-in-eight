@@ -345,24 +345,24 @@ export default function EveryVersusAll() {
         </Box>
         <Typography component="h4">
           {" "}
-          Hint! Remember that all is usually used with plural nouns (all
-          students) and every is usually used with singular nouns (every car).
+          Hint! Remember that <b>all</b> is usually used with plural nouns (all
+          students) and <b>every</b> is usually used with singular nouns (every
+          car).
         </Typography>
 
         <QuizForm questionsArray={questionsArray} />
-      </Container>
-      <QuizForm questionsArray={questionsArray} />
 
-      <iframe
-        className={styles.iframe_wrapper}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/JKBUvNihqoQ?si=mwysdj3EsPO9pT-4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JKBUvNihqoQ?si=mwysdj3EsPO9pT-4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Container>
     </>
   );
 }

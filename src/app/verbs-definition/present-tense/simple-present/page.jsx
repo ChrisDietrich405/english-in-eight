@@ -247,7 +247,7 @@ export default function SimplePresent() {
 
     {
       id: 20,
-      title: "She __________ a lot of TV",
+      title: "She __________ a lot of TV.",
       possibleAnswers: [
         { title: "a. watch" },
         { title: "b. watches", correctAnswer: true },
@@ -264,10 +264,8 @@ export default function SimplePresent() {
           <h1>Present Simple</h1>
         </div>
         <p className={styles.grammar_explanation_paragraph}>
-          The simple present is used to describe actions, events, or states that
-          are habitual, repeated, or generally true. It is used when the action
-          is happening in the present time or when something is a permanent
-          fact. The positive form for regular verbs is really easy. It's just
+          The present simple is used to describe actions, events, or states that
+          are habitual, repeated, or generally true. The positive form for regular verbs is really easy. It's just
           the verb with an extra 's' if the subject is 'he', 'she', or 'it'.
         </p>
         <table className={styles.table}>

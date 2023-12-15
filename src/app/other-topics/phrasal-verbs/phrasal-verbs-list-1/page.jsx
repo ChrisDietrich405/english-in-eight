@@ -75,7 +75,7 @@ export default function PhrasalVerbs1() {
           </ListItem>
           <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
-              <b>Fed up with</b> - annoyed or upset at a situation or treatment
+              <b>Fed up with</b> - frustrated or angry at a situation or treatment
               <Typography>
                 Example: He was <b>fed up with</b> doing all the work.
               </Typography>

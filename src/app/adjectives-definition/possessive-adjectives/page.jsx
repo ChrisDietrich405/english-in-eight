@@ -205,11 +205,11 @@ export default function PossessiveAdjectives() {
       id: 16,
       title: "We often visit (I) _______________ grandparents.",
       possibleAnswers: [
-        { title: "our", correctAnswer: true },
+        { title: "my", correctAnswer: true },
         { title: "her" },
       ],
       userAnswer: "",
-      explanation: "Our is the possessive adjective for we.",
+      explanation: "My is the possessive adjective for I.",
     },
     {
       id: 17,

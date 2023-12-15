@@ -11,9 +11,9 @@ export default function PhrasalVerbs() {
       <div className={styles.page_body}>
         <p className={styles.grammar_explanation_paragraph}>
           Phrasal Verbs are expressions consisting of a verb and another
-          element, typically either an adverb, as in <b>break down</b>, or a
-          preposition, for example <b>see to</b>, or a combination of both, such
-          as <b>look down on.</b>
+          element, typically either an adverb, as in <b>look up</b> (search), or
+          a preposition, for example <b>see to</b> (make sure of), or a
+          combination of both, such as <b>look down on</b> (feel superior to).
         </p>
       </div>
       <Card style={{ padding: "16px", marginBottom: "60px" }}>
