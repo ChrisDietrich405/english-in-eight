@@ -56,7 +56,7 @@ export default function ForVersusTo() {
   const questionsArray = [
     {
       id: 1,
-      title: "I bought this ________ you. (assisting)",
+      title: "I bought this ________ you. (helping someone)",
       possibleAnswers: [
         { title: "a. for", correctAnswer: true },
         { title: "b. to" },
@@ -66,7 +66,7 @@ export default function ForVersusTo() {
     },
     {
       id: 2,
-      title: "She loves _____ sing.(preposition followed by verb)",
+      title: "She loves _____ sing. (preposition followed by verb)",
       possibleAnswers: [
         { title: "a. to", correctAnswer: true },
         { title: "b. for" },
@@ -173,10 +173,10 @@ export default function ForVersusTo() {
     },
     {
       id: 12,
-      title: "Don't donate ____ that charity. It's corrupt.(giving)",
+      title: "Don't donate ____ that charity. It's corrupt. (giving)",
       possibleAnswers: [
-        { title: "a. listen to" },
-        { title: "b. hear", correctAnswer: true },
+        { title: "a. for" },
+        { title: "b. to", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "This is an example of giving.",
@@ -287,18 +287,15 @@ export default function ForVersusTo() {
           </Typography>
         </Stack>
         <Box component="section">
-          <Typography> Giving</Typography>
-          <List sx={{ marginLeft: "20px" }}>
+          <List>
+            <Typography> Giving</Typography>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                {" "}
                 She gave it <b> to </b>me.
               </ListItemText>
             </ListItem>
-
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                {" "}
                 I donated <b>to</b> Farm Santuary.
               </ListItemText>
             </ListItem>
@@ -420,7 +417,7 @@ export default function ForVersusTo() {
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                I work hard <b>for</b> you if you're tired.
+                She's working hard <b>for</b> that possible promotion.
               </ListItemText>
             </ListItem>
           </List>
@@ -454,7 +451,6 @@ export default function ForVersusTo() {
           allowfullscreen
         ></iframe>
       </Container>
-   
     </>
   );
 }
