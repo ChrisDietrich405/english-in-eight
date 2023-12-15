@@ -269,7 +269,7 @@ export default function ForVersusTo() {
   ];
 
   return (
-    <main>
+    <>
       <Container>
         <Stack>
           <Typography
@@ -444,19 +444,17 @@ export default function ForVersusTo() {
         </Box>
 
         <QuizForm questionsArray={questionsArray} />
-
         <iframe
-          className={styles.iframe_wrapper}
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/JKBUvNihqoQ?si=mwysdj3EsPO9pT-4"
+          src="https://www.youtube.com/embed/uGkcTdrKjto?si=pV9cqQ09PSeNIdc-"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
       </Container>
-      <QuizForm questionsArray={questionsArray} />
-    </main>
+   
+    </>
   );
 }

@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -147,7 +157,8 @@ export default function ListenVersusHear() {
     },
     {
       id: 11,
-      title: "I always try to have time to ________ the birds singing in the morning.",
+      title:
+        "I always try to have time to ________ the birds singing in the morning.",
       possibleAnswers: [
         { title: "a. hear", correctAnswer: true },
         { title: "b. listen to" },
@@ -250,52 +261,77 @@ export default function ListenVersusHear() {
 
   return (
     <>
-      <div className={styles.page_body}>
-        <div className={styles.page_title}>
-          <h1>Listen versus Hear</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
-          <b>Hear</b> is the act of naturally perceiving sounds with your ears,
-          while <b>listen</b> involves actively paying attention and processing
-          the sounds or words you hear.
-        </p>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Listen versus Hear
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6" mb={2}>
+            <b>Hear</b> is the act of naturally perceiving sounds with your
+            ears, while <b>listen</b> involves actively paying attention and
+            processing the sounds or words you hear.
+          </Typography>
+        </Stack>
+        <Box component="section">
+          <Typography>
+            {" "}
+            <b>Listen</b> is something you focus on doing:
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> Do you listen to music in bed?</ListItemText>
+            </ListItem>
+          </List>
+          <List>
+            <Typography>
+              {" "}
+              We <b>always</b> use <b>to</b> after listen before an object:{" "}
+            </Typography>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                Every morning I <b> listen to</b> my Mozart CD while I’m having
+                breakfast. It prepares me mentally for the day.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            {" "}
+            <b>Hear</b> is something you don't focus on doing:
+          </Typography>
 
-        <p>
-          <b>Listen</b> is something you focus on doing:
-        </p>
-        <ul className="page-examples">
-          <li>
-            I listened very carefully to what she said and wrote it all down.
-          </li>
-          <li>Do you listen to music in bed?</li>
-        </ul>
+          <List>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                Suddenly I heard a noise. Someone was in the garden.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>Did you hear the thunder last night?</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                The connection is very bad. I can’t hear you.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography variant="h5">
+            {" "}
+            This lesson is not easy, so don't worry if you make a lot of
+            mistakes with the quiz. Remember practice makes perfect. Do the quiz
+            as many time as you need.{" "}
+          </Typography>
+        </Box>
 
-        <p className={styles.grammar_explanation_paragraph}>
-          We <b>always</b> use <b>to</b> after listen before an object:{" "}
-        </p>
-        <ul>
-          <li>
-            Every morning I <b> listen to</b> my Mozart CD while I’m having
-            breakfast. It prepares me mentally for the day.
-          </li>
-        </ul>
+        <QuizForm questionsArray={questionsArray} />
+      </Container>
 
-        <p>
-          <b>Hear</b> is something you don't focus on doing:
-        </p>
-        <ul className="page-examples">
-          <li> Suddenly I heard a noise. Someone was in the garden.</li>
-          <li>Did you hear the thunder last night?</li>
-          <li>The connection is very bad. I can’t hear you.</li>
-        </ul>
-        <h4 style={{ fontWeight: "bold" }}>
-          This lesson is not easy, so don't worry if you make a lot of mistakes
-          with the quiz. Remember practice makes perfect. Do the quiz as many
-          time as you need.{" "}
-        </h4>
-      </div>
-
-      <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
         width="560"

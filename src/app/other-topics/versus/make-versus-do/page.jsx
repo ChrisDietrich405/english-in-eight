@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -266,55 +276,91 @@ export default function MakeVersusDo() {
 
   return (
     <>
-      <div className={styles.page_body}>
-        <div className={styles.page_title}>
-          <h1>Make versus Do</h1>
-        </div>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Make versus Do
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6" mb={2}>
+            It can be hard to decide when to use 'make' or 'do' in English.
+            Here's some help.
+          </Typography>
+        </Stack>
+        <Box component="section">
+          <Typography>
+            {" "}
+            We usually use 'make' when we create or construct something.
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> She made a cake.</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText> I've made us some coffee.</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>Did you really make that hat?</ListItemText>
+            </ListItem>
+          </List>
+          <List>
+            <Typography>
+              {" "}
+              We use 'do' for general activities and for actions you have to do,
+              like jobs or work. In this case, 'do' is sometimes used with
+              'something', 'nothing', 'anything' or 'everything'.
+            </Typography>
 
-        <p className={styles.grammar_explanation_paragraph}>
-          It can be hard to decide when to use 'make' or 'do' in English. Here's
-          some help.
-        </p>
-        <p className={styles.grammar_explanation_paragraph}>
-          We usually use 'make' when we create or construct something.
-        </p>
-        <ul className="page-examples">
-          <li>She made a cake.</li>
-          <li>I've made us some coffee.</li>
-          <li>Did you really make that hat?</li>
-        </ul>
-        <p className={styles.grammar_explanation_paragraph}>
-          We use 'do' for general activities and for actions you have to do,
-          like jobs or work. In this case, 'do' is sometimes used with
-          'something', 'nothing', 'anything' or 'everything'.
-        </p>
-        <ul className="page-examples">
-          <li>What did you do on the weekend?</li>
-          <li>I hate doing dishes (washing dishes).</li>
-          <li>The first thing I plan to do is build my resume.</li>
-          <li>I didn't do anything yesterday.</li>
-          <li>
-            She's fed up (frustrated) with doing everything herself. She needs
-            some help.
-          </li>
-        </ul>
-        <h4 style={{ fontWeight: "bold" }}>
-          This exercise is extremely hard. There are many, many exceptions to
-          the rules. Don't feel bad if you make a lot of mistakes here. Take
-          notes and practice the exercise again (and again).
-        </h4>
-      </div>
-      <QuizForm questionsArray={questionsArray} />
-      <iframe
-        className={styles.iframe_wrapper}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/lvKA9rH_WlU?si=Vt24LxozN8rq3Db5"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>What did you do on the weekend?</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>I hate doing dishes (washing dishes).</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>I didn't do anything yesterday.</ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                The first thing I plan to do is build my resume.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                She's fed up (frustrated) with doing everything herself. She
+                needs some help.
+              </ListItemText>
+            </ListItem>
+          </List>
+
+          <Typography variant="h5">
+            {" "}
+            This lesson is not easy, so don't worry if you make a lot of
+            mistakes with the quiz. Remember practice makes perfect. Do the quiz
+            as many time as you need.{" "}
+          </Typography>
+        </Box>
+
+        <QuizForm questionsArray={questionsArray} />
+
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/lvKA9rH_WlU?si=Vt24LxozN8rq3Db5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Container>
     </>
   );
 }
