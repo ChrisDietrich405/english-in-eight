@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -255,63 +265,110 @@ export default function TalkVersusSpeaking() {
   ];
 
   return (
-    <>
-      <div className={styles.page_title}>
-        <h1>Talk versus Speak</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        The verbs talk and speak both have the meaning ‘say words’, but they are
-        used differently depending on context. For example speak is more formal
-        than talk. Talk, on the other hand focuses on a speaker and at least one
-        listener, and can mean 'have a conversation'.
-      </p>
-      <p>
-        We use talk for more informal situations and speak for more formal
-        situations:
-      </p>
-      <ul className="page-examples">
-        <li>Dante will talk to the group about the benefits of meditation. </li>
-        <li>The president will speak shortly to her advisors.</li>
-      </ul>
-      <p>
-        We normally use <b>to</b> after talk and speak. We can also use{" "}
-        <b>with</b>:
-      </p>
-      <ul className="page-examples">
-        <li>Could I talk to you for a moment?</li>
-        <li>The director needs to speak to you.</li>
-        <li>She spoke with the general for an hour. </li>
-        <li>I talked with her about it.</li>
-      </ul>
-      <p>When we refer to languages, we use speak:</p>
-      <ul className="page-examples">
-        <li>I don't speak Swahili, but I want to learn.</li>
-        <li>How many languages does Ahmad speak?</li>
-      </ul>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Talk versus Speak
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography variant="h6" mb={2}>
+          The verbs talk and speak both have the meaning ‘say words’, but they
+          are used differently depending on context. For example speak is more
+          formal than talk. Talk, on the other hand focuses on a speaker and at
+          least one listener, and can mean 'have a conversation'.
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography>
+          {" "}
+          We use talk for more informal situations and speak for more formal
+          situations:
+        </Typography>
 
-      <p className={styles.grammar_explanation_paragraph}>
-        Some phrasal verbs require either talk or speak. Talk and speak in
-        these contexts are not interchangeable.
-      </p>
-      <ul className="page-examples">
-        <li>
-          His students talk back to him, because he accepts it. (talk back means
-          to be disrespectful)
-        </li>
-
-        <li>
-          My hearing is terrible. I always need to ask people to speak up.
-          (speak up means to speak louder)
-        </li>
-        <li>
-          I know we are fighting a lot now, but I want to talk it out (talk it
-          out means to resolve problems by talking calmly)
-        </li>
-      </ul>
-      <p>Talk can be a noun or a verb. Speak is always only a verb. </p>
-      <ul className="page-examples">
-        <li>He gave a great talk about diet.</li>
-      </ul>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Dante will talk to the group about the benefits of meditation.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              The president will speak shortly to her advisors.
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          We normally use <b>to</b> after talk and speak. We can also use{" "}
+          <b>with</b>:
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>Could I talk to you for a moment?</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>The director needs to speak to you.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              She spoke with the general for an hour.{" "}
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>I talked with her about it.</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>When we refer to languages, we use speak:</Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I don't speak Swahili, but I want to learn.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>How many languages does Ahmad speak?</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          Some phrasal verbs require either talk or speak. Talk and speak in
+          these contexts are not interchangeable.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              His students talk back to him, because he accepts it. (talk back
+              means to be disrespectful)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              My hearing is terrible. I always need to ask people to speak up.
+              (speak up means to speak louder)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              I know we are fighting a lot now, but I want to talk it out (talk
+              it out means to resolve problems by talking calmly)
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          Talk can be a noun or a verb. Speak is always only a verb.{" "}
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>He gave a great talk about diet.</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -323,6 +380,6 @@ export default function TalkVersusSpeaking() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </Container>
   );
 }

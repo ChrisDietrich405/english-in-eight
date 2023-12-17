@@ -275,7 +275,7 @@ export default function MakeVersusDo() {
   ];
 
   return (
-    <>
+  
       <Container>
         <Stack>
           <Typography
@@ -361,6 +361,6 @@ export default function MakeVersusDo() {
           allowfullscreen
         ></iframe>
       </Container>
-    </>
+ 
   );
 }

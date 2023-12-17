@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -276,86 +286,123 @@ export default function RemindVersusRemember() {
 
   return (
     <>
-      <div className={styles.page_body}>
-        <div className={styles.page_title}>
-          <h1>Remind versus Remember</h1>
-        </div>
-        <h3>Remind</h3>
-        <p>
-          If a person reminds you of someone, they have you think of that person
-          or they resemble that person. If a thing reminds you of something,
-          they have you think of that thing or they resemble that thing.
-        </p>
-        <ul className="page-examples">
-          <li>
-            My boss reminds me of my father. They have the same way of telling
-            jokes.
-          </li>
-          <li>
-            That song always reminds me of when I fell in love with a Nigerian
-            girl.
-          </li>
-        </ul>
-        <p>
-          If we remind someone to do something or about something, we help them
-          remember it or help them not to forget it.
-        </p>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Remind versus Remember
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h4" mb={2}>
+            Remind
+          </Typography>
+        </Stack>
+        <Box component="section">
+          <Typography>
+            {" "}
+            If a person reminds you of someone, they have you think of that
+            person or they resemble that person. If a thing reminds you of
+            something, they have you think of that thing or they resemble that
+            thing.
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                My boss reminds me of my father. They have the same way of
+                telling jokes.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                That song always reminds me of when I fell in love with a
+                Nigerian girl.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                {" "}
+                She’s probably forgotten she was supposed to be at the meeting.
+                Someone should text her.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography variant="h4" mb={2}>
+            Remember
+          </Typography>
+          <Typography>
+            The term "remember" refers to the mental process of recalling or
+            retaining information, experiences, or events from the past.
+          </Typography>
 
-        <ul className="page-examples">
-          <li>
-            Remind me to take out the trash tonight. If you don't I’ll probably
-            forget.
-          </li>
-          <li>
-            She’s probably forgotten she was supposed to be at the meeting.
-            Someone should text her.
-          </li>
-        </ul>
-        <h3>Remember</h3>
-        <p>
-          The term "remember" refers to the mental process of recalling or
-          retaining information, experiences, or events from the past.
-        </p>
-        <ul className="page-examples">
-          <li>I’ll always remember my trip to Jamaica.</li>
-          <li>Suddenly I remembered I needed to pay that bill.</li>
-        </ul>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I’ll always remember my trip to Jamaica.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                Suddenly I remembered I needed to pay that bill.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            Remember + the -ing form of a verb describes having a memory of
+            something that happened in the past or of something we experienced.
+          </Typography>
 
-        <p>
-          Remember + the -ing form of a verb describes having a memory of
-          something that happened in the past or of something we experienced.
-        </p>
-        <ul className="page-examples">
-          <li>They said they didn't remember going to the parking lot.</li>
-          <li>I remember talking to him. I think it was Friday.</li>
-        </ul>
-        <p>
-          Remember + infinitive describes a command. It tells someone not to
-          forget something.
-        </p>
-        <ul className="page-examples">
-          <li>
-            Remember to go to bed very early tonight. Tomorrow is going to be a
-            long day.
-          </li>
-        </ul>
-        <h4 style={{ color: "#1976d2" }}>
-          CAUTION! This lesson is extremely hard. Read the explanations two
-          times and don't worry if you are not successful the first two or three
-          times with the exercise. Practice Makes Perfect.
-        </h4>
-      </div>
-      <QuizForm questionsArray={questionsArray} />
-      <iframe
-        className={styles.iframe_wrapper}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/JlaQTu8UQ-I?si=aT2jAqdTCsfZ7yms"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                They said they didn't remember going to the parking lot.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                I remember talking to him. I think it was Friday.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            Remember + infinitive describes a command. It tells someone not to
+            forget something.
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                Remember to go to bed very early tonight. Tomorrow is going to
+                be a long day.
+              </ListItemText>
+            </ListItem>
+          </List>
+
+          <Typography variant="h5">
+            {" "}
+            This lesson is not easy, so don't worry if you make a lot of
+            mistakes with the quiz. Remember practice makes perfect. Do the quiz
+            as many time as you need.{" "}
+          </Typography>
+        </Box>
+
+        <QuizForm questionsArray={questionsArray} />
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JlaQTu8UQ-I?si=aT2jAqdTCsfZ7yms"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Container>
     </>
   );
 }
