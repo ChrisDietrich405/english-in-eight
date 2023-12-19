@@ -1,41 +1,49 @@
 import Image from "next/image";
-import { Card } from "@mui/material";
+import { Card, Container, Grid, Stack, Typography } from "@mui/material";
 
 import styles from "../../styles/content-page.module.css";
 
 export default function VersusDefinition() {
   return (
-    <div className="expressions" style={{marginBottom: "130px"}}>
-      <div className={styles.page_title}>
-        <h1>Versus Definition</h1>
-      </div>
-      <div className={styles.page_body}>
-        <p className={styles.grammar_explanation_paragraph}>
-          In this section let's compare different verbs in order to clear up any
-          confusion. For example many students don't really understand the
-          difference between the verbs talk and say or the verbs remember and
-          remind.
-        </p>
-      </div>
-      <Card style={{ padding: "16px", marginBottom: "20px" }}>
-        <div
-          className={styles.content_wrapper}
-          style={{ display: "flex", justifyContent: "space-around" }}
+    <>
+      <Container style={{ marginBottom: "20px" }}>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e" }}
         >
-          <Image
-            height={300}
-            width={300}
-            src="/images/remember-versus-remind.jpg"
-            alt="Remember versus remind"
-          />
-          <Image
-            height={300}
-            width={300}
-            src="/images/speak-versus-talk.png"
-            alt="Speak versus talk"
-          />
-        </div>
-      </Card>
-    </div>
+          Versus Definition
+        </Typography>
+        <Stack>
+          <Typography mb={2}>
+            In this section let's compare different verbs in order to clear up
+            any confusion. For example many students don't really understand the
+            difference between the verbs talk and say or the verbs remember and
+            remind.
+          </Typography>
+        </Stack>
+        <Card style={{ padding: "16px", marginBottom: "40px" }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} lg={6}>
+              <Image
+                height={300}
+                width={300}
+                src="/images/remember-versus-remind.jpg"
+                alt="Remember versus remind"
+              />
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <Image
+                height={300}
+                width={300}
+                src="/images/speak-versus-talk.png"
+                alt="Speak versus talk"
+              />
+            </Grid>
+          </Grid>
+        </Card>
+      </Container>
+    </>
   );
 }
