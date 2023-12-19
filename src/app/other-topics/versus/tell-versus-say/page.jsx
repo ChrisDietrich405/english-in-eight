@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Box,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Typography,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -263,45 +273,117 @@ export default function TellVersusSay() {
   ];
 
   return (
-    <>
-      <div>
-        <div className={styles.page_body}>
-          <div className={styles.page_title}>
-            <h1>Tell versus Say</h1>
-          </div>
-          <p className={styles.grammar_explanation_paragraph}>
-            The verbs tell and say have similar meanings, but are not exactly
-            the same. Both of them mean "to communicate verbally with someone",
-            but depending on context we use one or the other.
-          </p>
-        </div>
-        <p>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Tell versus Say
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography variant="h6" mb={2}>
+          The verbs tell and say have similar meanings, but are not exactly the
+          same. Both of them mean "to communicate verbally with someone", but
+          depending on context we use one or the other.
+        </Typography>
+      </Stack>
+      <Box component="section">
+        <Typography>
+          {" "}
           Tell is normally followed by a <b>personal object</b>. We usually use
           say without a personal object:
-        </p>
-        <ul className="page-examples">
-          <li>
-            We told <b>everybody</b> that we wanted to eat.
-          </li>
-          <li>We said that we wanted to eat.</li>
-          <li>
-            He told <b>me</b> that he loved Dionte.
-          </li>
-          <li>He said that he loved Dionte.</li>
-        </ul>
+        </Typography>
 
-        <p>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              We told <b>everybody</b> that we wanted to eat.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>We said that we wanted to eat.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              He told <b>me</b> that he loved Dionte.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>He said that he loved Dionte.</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
           Tell has to be used in certain situations. In these situations tell
           can't be replaced with say.
-        </p>
-        <ul className="page-examples">
-          <li>tell the difference between.....</li>
-          <li>tell (somebody) lies</li>
-          <li>tell (somebody) the truth</li>
-          <li>tell the time </li>
-          <li>tell (somebody) a story</li>
-        </ul>
-      </div>
+        </Typography>
+
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>tell the difference between.....</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>tell (somebody) lies</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>tell (somebody) the truth</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>tell the time</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>tell (somebody) a story</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>When we refer to languages, we use speak:</Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I don't speak Swahili, but I want to learn.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>How many languages does Ahmad speak?</ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          Some phrasal verbs require either talk or speak. Talk and speak in
+          these contexts are not interchangeable.
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              His students talk back to him, because he accepts it. (talk back
+              means to be disrespectful)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              My hearing is terrible. I always need to ask people to speak up.
+              (speak up means to speak louder)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              I know we are fighting a lot now, but I want to talk it out (talk
+              it out means to resolve problems by talking calmly)
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
+          Talk can be a noun or a verb. Speak is always only a verb.{" "}
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>He gave a great talk about diet.</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -313,6 +395,6 @@ export default function TellVersusSay() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </>
+    </Container>
   );
 }

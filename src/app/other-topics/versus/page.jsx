@@ -5,7 +5,7 @@ import styles from "../../styles/content-page.module.css";
 
 export default function VersusDefinition() {
   return (
-    <div className="expressions">
+    <div className="expressions" style={{marginBottom: "130px"}}>
       <div className={styles.page_title}>
         <h1>Versus Definition</h1>
       </div>
