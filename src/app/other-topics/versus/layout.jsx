@@ -14,7 +14,7 @@ import styles from "../../styles/layout.module.css";
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ backgroundColor: "#f3f0f0", marginBottom: "20px" }} >
+    <div style={{ backgroundColor: "#f3f0f0", marginBottom: "20px" }}>
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12} md={3} className={styles.sidebar_wrapper}>
@@ -77,16 +77,6 @@ const Layout = ({ children }) => {
                   <ListItemText>
                     <Link
                       className={styles.link}
-                      href="/other-topics/versus/tell-versus-say"
-                    >
-                      Tell vs Say
-                    </Link>
-                  </ListItemText>
-                </ListItem>
-                <ListItem sx={{ display: "list-item" }}>
-                  <ListItemText>
-                    <Link
-                      className={styles.link}
                       href="/other-topics/versus/make-versus-do"
                     >
                       Make vs Do
@@ -120,7 +110,6 @@ const Layout = ({ children }) => {
           <Grid item xs={12} md={9} mb={4}>
             <Stack
               mt={3.75}
-             
               p={4}
               sx={{ backgroundColor: "#fff", borderRadius: "9px" }}
             >
