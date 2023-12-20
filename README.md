@@ -35,6 +35,27 @@ git clone https://github.com/ChrisDietrich405/english-in-eight-next
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## How To Run This Project Using Docker
+
+
+1. Download Docker https://www.docker.com/get-started/
+
+2. Build docker image.
+This command will use the project's DockerFile to create a docker image of the project.
+
+```bash
+docker build -t english-in-eight-next .
+```
+
+3. Run docker container
+
+```bash
+docker run -d -p 3000:3000 english-in-eight-next
+```
+
+4. Check to see if it worked.
+Open http://localhost:3000 to see if earthsave-baltimore is running in the container
+
 
 
 
