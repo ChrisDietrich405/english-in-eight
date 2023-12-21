@@ -1,4 +1,5 @@
 import QuizForm from "@/src/components/QuizForm";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {

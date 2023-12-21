@@ -1,4 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
+
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
@@ -250,58 +261,82 @@ export default function PrepositionsOfMovement() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Prepositions of Movement</h1>
-      </div>
-      <div className="page-body">
-        <p className="{styles.grammar_explanation_paragraph}">
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Prepositions of Movement
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           Prepositions of movement describe how something or someone moves from
           one space to another. The most commonly used preposition of movement
           is <b>to</b>, which demonstrates that there is movement towards a
           specific destination.
-        </p>
-      </div>
-      <div className="page-examples">
-        <ul>
-          <li>
-            You went <b>to</b> bed early.
-          </li>
-          <li>
-            She has gone on vacation <b>to</b> Nairobi.
-          </li>
-          <li>
-            I went <b>to</b> the library every Friday last summer.
-          </li>
-        </ul>
-
-        <p className="{styles.grammar_explanation_paragraph}">
-          Other prepositions of movement include: through, across, and into.
-        </p>
-        <p className="{styles.grammar_explanation_paragraph}">
-          <b>Across</b> demonstrates movement from one side to another.
-        </p>
-        <ul>
-          <li>Demetrius travelled across America on his motorcycle.</li>
-          <li>Rebecca and Nia are swimming across the lake.</li>
-        </ul>
-        <p className="{styles.grammar_explanation_paragraph}">
-          <b>Through</b> demonstrates movement directly inside something and out
-          the other end.
-        </p>
-        <ul>
-          <li>Come in through the front door.</li>
-          <li>The bullet train passed through the tunnel.</li>
-        </ul>
-        <p className="{styles.grammar_explanation_paragraph}">
-          <b>Into</b> demonstrates entering or looking inside something.
-        </p>
-        <ul>
-          <li>She went into the house.</li>
-          <li>They looked into the darkness.</li>
-        </ul>
-      </div>
-
+        </Typography>
+      </Stack>
+      <Typography>
+        Here's a list of some common dependent prepositions.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              You went <b>to</b> bed early.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              I went <b>to</b> the library every Friday last summer.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        <b>Across</b> demonstrates movement from one side to another.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Demetrius travelled across America on his motorcycle. Rebecca and
+              Nia are swimming across the lake.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        <b>Through</b> demonstrates movement directly inside something and out
+        the other end.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Come in through the front door. The bullet train passed through
+              the tunnel.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        <b>Into</b> demonstrates entering or looking inside something.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              She went into the house. They looked into the darkness.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -313,6 +348,6 @@ export default function PrepositionsOfMovement() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

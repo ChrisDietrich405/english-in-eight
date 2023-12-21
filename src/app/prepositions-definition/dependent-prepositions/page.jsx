@@ -1,4 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
+
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
@@ -34,8 +45,6 @@ export const metadata = {
     ],
   },
 };
-
-
 
 export default function DependentPrepositions() {
   const questionsArray = [
@@ -206,37 +215,86 @@ export default function DependentPrepositions() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Dependent Prepositions</h1>
-      </div>
-      <div className="page-body">
-        <p className="{styles.grammar_explanation_paragraph}">
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Dependent Prepositions
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography>
           Dependent prepositions are prepositions that depend on or must follow
           a specific verb. For example <b>depend on</b>. You can only use the
           preposition <b>on</b> after depend. No other preposition can be used.
-        </p>
-      </div>
-      <div className="page-examples">
-        <p className="{styles.grammar_explanation_paragraph}">
-          Here's a list of some common dependent prepositions.
-        </p>
-        <ul>
-          <li>Depend on - She depends on her mother for everything.</li>
-          <li>Wait for - I need to wait for the bus.</li>
-          <li>Listen to - I love to listen to podcasts.</li>
-          <li>Believe in - Do you believe in ghosts?</li>
-          <li>Forget about- You forgot about his birthday.</li>
-          <li>Know about - I don't know about that.</li>
-          <li>Worry about - My mother worries about everything.</li>
-          <li>Agree with - I don't agree with you.</li>
-          <li>Vote for - He is going to vote for the wrong candidate.</li>
-          <li>Live in - We don't live in Baltimore anymore. </li>
-          <li>Ask for - I need to ask you for a favor. </li>
-        </ul>
-      </div>
-
+        </Typography>
+      </Stack>
+      <Typography>
+        Here's a list of some common dependent prepositions.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Depend on - She depends on her mother for everything.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText> Wait for - I need to wait for the bus.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Listen to - I love to listen to podcasts.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>Believe in - Do you believe in ghosts?</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Forget about- You forgot about his birthday.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText> Know about - I don't know about that.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText> Agree with - I don't agree with you.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Vote for - He is going to vote for the wrong candidate.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Live in - We don't live in Baltimore anymore.
+            </ListItemText>
+          </ListItem>{" "}
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Worry about - My mother worries about everything.
+            </ListItemText>
+          </ListItem>{" "}
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              Ask for - I need to ask you for a favor.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
-    </main>
+    </Container>
   );
 }
