@@ -1,4 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
+
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
@@ -196,61 +207,104 @@ export default function PrepositionsOfPlace() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Prepositions of Place</h1>
-      </div>
-      <div className="page-body">
-        <p className="{styles.grammar_explanation_paragraph}">
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Prepositions of Place
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           Examples of prepositions of place include: at, on, in.
-        </p>
-      </div>
-      <div className="page-examples">
-        <p className="{styles.grammar_explanation_paragraph}">
-          We use <b>on</b> to refer to something on a surface.
-        </p>
-        <ul>
-          <li>
-            I dropped something <b>on</b> the document.
-          </li>
-          <li>
-            I hung the picture <b>on</b> the wall.
-          </li>
-          <li>
-            The drinks are <b>on</b> the menu.
-          </li>
-        </ul>
-        <p className="{styles.grammar_explanation_paragraph}">
-          We use <b>in</b> to refer to something that is inside.
-        </p>
-        <ul>
-          <li>
-            The veggie burgers are <b>in</b> the fridge.
-          </li>
-          <li>
-            She's <b>in</b> the house.
-          </li>
-          <li>
-            Marcus is <b>in</b> Kenya, visiting his friend <b>in</b> the
-            hospital.
-          </li>
-        </ul>
-        <p className="{styles.grammar_explanation_paragraph}">
-          We use <b>at</b> to refer to something at a specific point.
-        </p>
-        <ul>
-          <li>
-            He waited <b>at</b> the bus stop for 2 hours.
-          </li>
-          <li>
-            They’ll meet <b>at</b> the airport.
-          </li>
-          <li>
-            They are <b>at</b> the movies.
-          </li>
-        </ul>
-      </div>
-
+        </Typography>
+      </Stack>
+      <Typography>
+        We use <b>on</b> to refer to something on a surface.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I dropped something <b>on</b> the document.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              I hung the picture <b>on</b> the wall.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              {" "}
+              The drinks are <b>on</b> the menu.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        We use <b>in</b> to refer to something that is inside.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              The veggie burgers are <b>in</b> the fridge.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              She's <b>in</b> the house.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Marcus is <b>in</b> Kenya, visiting his friend <b>in</b> the
+              hospital.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        We use <b>at</b> to refer to something at a specific point.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              He waited <b>at</b> the bus stop for 2 hours.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              They’ll meet <b>at</b> the airport.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              They are <b>at</b> the movies.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        <b>Into</b> demonstrates entering or looking inside something.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>She went into the house.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>They looked into the darkness.</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe
@@ -263,6 +317,6 @@ export default function PrepositionsOfPlace() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

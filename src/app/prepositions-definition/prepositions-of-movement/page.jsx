@@ -281,7 +281,7 @@ export default function PrepositionsOfMovement() {
         </Typography>
       </Stack>
       <Typography>
-        Here's a list of some common dependent prepositions.
+        <b>To</b> is used to indicate motion towards a location.
       </Typography>
       <Box component="section">
         <List sx={{ marginLeft: "20px" }}>
@@ -305,8 +305,12 @@ export default function PrepositionsOfMovement() {
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
-              Demetrius travelled across America on his motorcycle. Rebecca and
-              Nia are swimming across the lake.
+              Demetrius travelled across America on his motorcycle.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Rebecca and Nia are swimming across the lake.
             </ListItemText>
           </ListItem>
         </List>
@@ -318,9 +322,11 @@ export default function PrepositionsOfMovement() {
       <Box component="section">
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>Come in through the front door.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
-              Come in through the front door. The bullet train passed through
-              the tunnel.
+              The bullet train passed through the tunnel.
             </ListItemText>
           </ListItem>
         </List>
@@ -331,9 +337,10 @@ export default function PrepositionsOfMovement() {
       <Box component="section">
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>
-              She went into the house. They looked into the darkness.
-            </ListItemText>
+            <ListItemText>She went into the house.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>They looked into the darkness.</ListItemText>
           </ListItem>
         </List>
       </Box>
