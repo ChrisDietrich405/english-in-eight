@@ -325,7 +325,7 @@ export default function PresentContinuous() {
           </ul>
           <h4>Future actions</h4>
           <ul className="page-examples">
-            <li>I'm having dinner with my son this afternoon.</li>
+            <li>I'm having dinner with my son tonight.</li>
             <li>You're coming to the party tonight right?</li>
             <li>They are flying to Kenya this weekend.</li>
           </ul>
