@@ -1,4 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
+
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../styles/content-page.module.css";
 
 export const metadata = {
@@ -184,47 +195,85 @@ export default function PrepositionsOfTime() {
     },
   ];
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Prepositions of Time</h1>
-      </div>
-      <div className="page-body">
-        <p className="{styles.grammar_explanation_paragraph}">
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Prepositions of Time
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           Basic examples of prepositions of time include: at, on, in.
-        </p>
-      </div>
-      <div className="page-examples">
-        <p className="{styles.grammar_explanation_paragraph}">
-          For days and dates we use the preposition <b>on</b>.
-        </p>
-        <ul>
-          <li>We go to the sanctuary on Sundays.</li>
-          <li>Christmas is on December 25th.</li>
-        </ul>
-        <p className="{styles.grammar_explanation_paragraph}">
-          For times, night and holidays, use the preposition <b>at</b>.
-        </p>
-        <ul>
-          <li>Families often argue at Christmas time.</li>
-          <li>I work faster at night.</li>
-          <li>She is going to stop working at 7pm.</li>
-        </ul>
-
-        <p className="{styles.grammar_explanation_paragraph}">
-          For times of day, months, seasons, years and centuries we use the
-          preposition <b>in</b>.
-        </p>
-        <ul>
-          <li>I don't eat anything in the morning.</li>
-          <li>It’s always cold in January.</li>
-          <li>Halloween is in the fall.</li>
-          <li>I started in 1987.</li>
-          <li>It happened in the 18th century.</li>
-        </ul>
-      </div>
-
+        </Typography>
+      </Stack>
+      <Typography>
+        For days and dates we use the preposition <b>on</b>.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              We go to the sanctuary <b>on </b>Sundays.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Christmas is <b>on </b> December 25th.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        For times, night and holidays, use the preposition <b>at</b>.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Families often argue <b>at </b> Christmas time.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I work faster <b>at </b> night.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              She is going to stop working <b>at </b> 7pm.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
+      <Typography>
+        For times of day, months, seasons, years and centuries we use the
+        preposition <b>in</b>.
+      </Typography>
+      <Box component="section">
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>I don't eat anything <b>in</b> the morning.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>It’s always cold <b>in</b> January.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>Halloween is <b>in</b> the fall.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>I started <b>in</b> 1987.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>It happened <b>in</b> the 18th century.</ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
-
       <iframe
         className={styles.iframe_wrapper}
         width="560"
@@ -235,6 +284,6 @@ export default function PrepositionsOfTime() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
