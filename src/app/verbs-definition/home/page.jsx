@@ -49,12 +49,47 @@ export default function VerbsDef() {
       </div>
       <div className={styles.page_body}>
         <h5 className={styles.grammar_explanation_paragraph}>
-          A verb is a word used to describe an action (e.g., hear), state (e.g., love), or occurrence (e.g., happen).
+          A verb is a word used to describe an action (e.g., hear), state (e.g.,
+          love), or occurrence (e.g., happen).
         </h5>
       </div>
       <div className="container">
-        <div className="row">
-          {/* Your image and text components remain unchanged */}
+        <div className="container">
+          <div className="row">
+            <div className={`col-md-4 ${styles.definition_picture}`}>
+              <div className={styles.picture_wrapper}>
+                <Image
+                  src="/hear.jpg"
+                  alt="picture of action verb hear"
+                  width={250}
+                  height={250}
+                />
+              </div>
+              <p className={styles.picture_subtitle}>Hear</p>
+            </div>
+            <div className={`col-md-4 ${styles.definition_picture}`}>
+              <div className={styles.picture_wrapper}>
+                <Image
+                  src="/state-verbs-definition.jpg"
+                  alt="picture of state verb love"
+                  width={250}
+                  height={250}
+                />
+              </div>
+              <p className={styles.picture_subtitle}>Love</p>
+            </div>
+            <div className={`col-md-4 ${styles.definition_picture}`}>
+              <div className={styles.picture_wrapper}>
+                <Image
+                  src="/happen.jpg"
+                  alt="picture of action verb happen"
+                  width={250}
+                  height={250}
+                />
+              </div>
+              <p className={styles.picture_subtitle}>Happen</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

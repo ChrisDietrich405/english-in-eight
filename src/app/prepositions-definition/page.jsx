@@ -1,3 +1,13 @@
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../styles/content-page.module.css";
 
 export const metadata = {
@@ -21,8 +31,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Prepositions: A Comprehensive Guide",
-    description:
-      "Enhance your understanding of prepositions.",
+    description: "Enhance your understanding of prepositions.",
     images: [
       {
         alt: "Prepositions Guide",
@@ -36,19 +45,24 @@ export const metadata = {
 
 export default function PrepositionsDefinition() {
   return (
-    <>
-      <div className={styles.page_title}>
-        <h1>Preposition Definition</h1>
-      </div>
-      <div className={styles.page_body}>
-        <h5 className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Typography
+        mb={2}
+        component="h1"
+        variant="h1"
+        sx={{ fontSize: "2rem", color: "#cc1e1e;" }}
+      >
+        Prepositions Definition
+      </Typography>
+      <Stack>
+        <Typography>
           Prepositions are a class of words in grammar that typically show the
           relationship between a noun or pronoun and other elements in a
           sentence. Prepositions are used to indicate location, direction, time,
           and other relationships in space and time. Examples of prepositions
           include "in, at, on, behind, and over"
-        </h5>
-      </div>
-    </>
+        </Typography>
+      </Stack>
+    </Container>
   );
 }
