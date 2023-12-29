@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -286,17 +296,23 @@ export default function FuturePerfectContinuous() {
   ];
 
   return (
-    <main className="page-body">
-      <div>
-        <div className={styles.page_title}>
-          <h1>Future Perfect Continuous</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Future Perfect Continuous
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           The future perfect continuous tense is a verb form used to talk about
           actions or events that will have been happening continuously until a
           specific point in the future. Realistically it's not used very much.
-        </p>
-
+        </Typography>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -339,7 +355,7 @@ export default function FuturePerfectContinuous() {
             </tr>
           </tbody>
         </table>
-      </div>
+      </Stack>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe
@@ -352,6 +368,6 @@ export default function FuturePerfectContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

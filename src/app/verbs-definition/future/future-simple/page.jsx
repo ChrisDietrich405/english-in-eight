@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -264,63 +274,73 @@ export default function FutureSimple() {
   ];
 
   return (
-    <main className="page-body">
-      <div className={styles.page_title}>
-        <h1>Future Simple</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        {" "}
-        The future simple is a verb tense that's used to talk about things that
-        haven't happened yet. For example, next year she <b>is going to</b>{" "}
-        change careers. There are two ways to express the future. You can use{" "}
-        <b>will</b> or <b>going to</b> depending on the situation.
-      </p>
-      <p>The first way to express the simple future</p>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Positive</th>
-            <th>Positive short form</th>
-            <th>Negative</th>
-            <th>Negative short form</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>I am going to eat</td>
-            <td>I'm going to eat</td>
-            <td>I am not going to eat</td>
-            <td>I'm not going to eat</td>
-          </tr>
-          <tr>
-            <td>You are going to play</td>
-            <td>You're going to play</td>
-            <td>You are not going to play</td>
-            <td>You're not going to play</td>
-          </tr>
-          <tr>
-            <td>She, he, it is going to work</td>
-            <td>She, he, it's going to work</td>
-            <td>She, he, it is not going to work</td>
-            <td>She, he, it's not going to work</td>
-          </tr>
-          <tr>
-            <td>We are going to swim</td>
-            <td>We're going to swim</td>
-            <td>We are not going to swim</td>
-            <td>We're not going to swim</td>
-          </tr>
-          <tr>
-            <td>They are going to finish</td>
-            <td>They're going to finish</td>
-            <td>They are not going to finish</td>
-            <td>They're not going to finish</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div className="page-body">
-        <p>The second way to express the simple future</p>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Future Simple
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
+          The future simple is a verb tense that's used to talk about things
+          that haven't happened yet. For example, next year she{" "}
+          <b>is going to</b> change careers. There are two ways to express the
+          future. You can use <b>will</b> or <b>going to</b> depending on the
+          situation.
+        </Typography>
+        <Typography mb={2}>
+          The first way to express the simple future
+        </Typography>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Positive</th>
+              <th>Positive short form</th>
+              <th>Negative</th>
+              <th>Negative short form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I am going to eat</td>
+              <td>I'm going to eat</td>
+              <td>I am not going to eat</td>
+              <td>I'm not going to eat</td>
+            </tr>
+            <tr>
+              <td>You are going to play</td>
+              <td>You're going to play</td>
+              <td>You are not going to play</td>
+              <td>You're not going to play</td>
+            </tr>
+            <tr>
+              <td>She, he, it is going to work</td>
+              <td>She, he, it's going to work</td>
+              <td>She, he, it is not going to work</td>
+              <td>She, he, it's not going to work</td>
+            </tr>
+            <tr>
+              <td>We are going to swim</td>
+              <td>We're going to swim</td>
+              <td>We are not going to swim</td>
+              <td>We're not going to swim</td>
+            </tr>
+            <tr>
+              <td>They are going to finish</td>
+              <td>They're going to finish</td>
+              <td>They are not going to finish</td>
+              <td>They're not going to finish</td>
+            </tr>
+          </tbody>
+        </table>
+        <Typography mb={2}>
+          The second way to express the simple future
+        </Typography>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -363,37 +383,58 @@ export default function FutureSimple() {
             </tr>
           </tbody>
         </table>
-
-        <p>
+        <Typography>
           {" "}
           We use <b>going to </b> for prior plans and in situations where
           something is probably going to happen.
-        </p>
-        <ul className="page-examples">
-          <li>We're going to go to the movies this weekend. (prior plan)</li>
-          <li>
-            My team is winning 8-2. They're going to win. (probably going to
-            happen)
-          </li>
-        </ul>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              We're going to go to the movies this weekend. (prior plan)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              My team is winning 8-2. They're going to win. (probably going to
+              happen)
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
           {" "}
           We use <b>will</b> with refusals, offers and promises.
-        </p>
-        <ul className="page-examples">
-          <li>She won't listen to me. (refusal)</li>
-          <li>You look tired. I will help you with your homework. (offer)</li>
-          <li>I love you very much. I will never leave you. (promise)</li>
-        </ul>
-        <p>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>She won't listen to me. (refusal)</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              You look tired. I will help you with your homework. (offer)
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I love you very much. I will never leave you. (promise)
+            </ListItemText>
+          </ListItem>
+        </List>
+        <Typography>
           {" "}
           We can use <b>will</b> or <b>going to</b> for predictions.
-        </p>
-        <ul className="page-examples">
-          <li>I predict she will win the election.</li>
-          <li>I predict she's going to win the election.</li>
-        </ul>
-      </div>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>I predict she will win the election.</ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I predict she's going to win the election.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -405,6 +446,6 @@ export default function FutureSimple() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

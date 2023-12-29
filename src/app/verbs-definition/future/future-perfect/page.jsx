@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -245,96 +255,111 @@ export default function FuturePerfect() {
   ];
 
   return (
-    <main className="page-body">
-      <div className={styles.page_title}>
-        <h1>Future Perfect</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        The future perfect tense is used to demonstrate a future event that has
-        a definitive end date.{" "}
-      </p>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Positive</th>
-            <th>Positive short form</th>
-            <th>Negative</th>
-            <th>Negative short form</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>I will have eaten</td>
-            <td>I'll have eaten</td>
-            <td>I will not have eaten</td>
-            <td>I won't have eaten</td>
-          </tr>
-          <tr>
-            <td>You will have finished</td>
-            <td>You'll have finished</td>
-            <td>You will not have finished</td>
-            <td>You won't have finished</td>
-          </tr>
-          <tr>
-            <td>She, he, it will have worked</td>
-            <td>She, he, it'll have worked</td>
-            <td>She, he, it will not have worked</td>
-            <td>She, he, it won't have worked</td>
-          </tr>
-          <tr>
-            <td>We will have started</td>
-            <td>We'll have started</td>
-            <td>We will not have started</td>
-            <td>We won't have started</td>
-          </tr>
-          <tr>
-            <td>They will have left</td>
-            <td>They'll have left</td>
-            <td>They will not have left</td>
-            <td>They won't have left</td>
-          </tr>
-          {/* <tbody>
-          {data.map((verb) => {
-            return (
+    <>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Future Perfect
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography mb={2}>
+            The future perfect tense is used to demonstrate a future event that
+            has a definitive end date.{" "}
+          </Typography>
+          <table className={styles.table}>
+            <thead>
               <tr>
-              <td>{verb.positive}</td>
-              <td>{verb.positiveShortForm}</td>
-              <td>{verb.negative}</td>
-              <td>{verb.negativeShortForm}</td>
+                <th>Positive</th>
+                <th>Positive short form</th>
+                <th>Negative</th>
+                <th>Negative short form</th>
               </tr>
-              );
-            })}
-          </tbody> */}
-        </tbody>
-      </table>
-      <p>
-        The future perfect is used with a future time word, (and often with
-        'by') to talk about an action that will finish before a specific time in
-        the future, but we're not sure exactly when.
-      </p>
-      <ul className="page-examples">
-        <li>By the time I'm seventy, I will have retired.</li>
-        <li>By 10, he will have finished the housework.</li>
-      </ul>
-      <p>
-        The future perfect is used to indicate 'how long' an action will have
-        lasted compared to another action.{" "}
-      </p>
-      <ul className="page-examples">
-        <li>The storm will have finished by the time they arrive.</li>
-        <li>Nia will have married Demarcus by then.</li>
-      </ul>
-      <QuizForm questionsArray={questionsArray} />
-      <iframe
-        className={styles.iframe_wrapper}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/RRCGlFNWbpk?si=A6obcA5EHcO71XHU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </main>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I will have eaten</td>
+                <td>I'll have eaten</td>
+                <td>I will not have eaten</td>
+                <td>I won't have eaten</td>
+              </tr>
+              <tr>
+                <td>You will have finished</td>
+                <td>You'll have finished</td>
+                <td>You will not have finished</td>
+                <td>You won't have finished</td>
+              </tr>
+              <tr>
+                <td>She, he, it will have worked</td>
+                <td>She, he, it'll have worked</td>
+                <td>She, he, it will not have worked</td>
+                <td>She, he, it won't have worked</td>
+              </tr>
+              <tr>
+                <td>We will have started</td>
+                <td>We'll have started</td>
+                <td>We will not have started</td>
+                <td>We won't have started</td>
+              </tr>
+              <tr>
+                <td>They will have left</td>
+                <td>They'll have left</td>
+                <td>They will not have left</td>
+                <td>They won't have left</td>
+              </tr>
+            </tbody>
+          </table>
+          <Typography>
+            The future perfect is used with a future time word, (and often with
+            'by') to talk about an action that will finish before a specific
+            time in the future, but we're not sure exactly when.
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                By the time I'm seventy, I will have retired.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                By 10, he will have finished the housework.
+              </ListItemText>
+            </ListItem>
+          </List>
+          <Typography>
+            The future perfect is used to indicate 'how long' an action will
+            have lasted compared to another action.{" "}
+          </Typography>
+          <List sx={{ marginLeft: "20px" }}>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                The storm will have finished by the time they arrive.
+              </ListItemText>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+              <ListItemText>
+                Nia will have married Demarcus by then.
+              </ListItemText>
+            </ListItem>
+          </List>
+        </Stack>
+        <QuizForm questionsArray={questionsArray} />
+        <iframe
+          className={styles.iframe_wrapper}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RRCGlFNWbpk?si=A6obcA5EHcO71XHU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </Container>
+    </>
   );
 }

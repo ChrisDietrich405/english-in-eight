@@ -1,5 +1,15 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Box,
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -263,72 +273,87 @@ export default function FutureContinuous() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Future Continuous</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        The future continuous refers to an ongoing action in the future.
-        Realistically it isn't a tense we use often.
-      </p>
-      <hr className="page-divider" />
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Positive</th>
-            <th>Positive short form</th>
-            <th>Negative</th>
-            <th>Negative short form</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>I will be swimming</td>
-            <td>I'll be swimming</td>
-            <td>I will not be swimming</td>
-            <td>I won't be swimming</td>
-          </tr>
-          <tr>
-            <td>You will be dancing</td>
-            <td>You'll be dancing</td>
-            <td>You will not be dancing</td>
-            <td>You won't be dancing</td>
-          </tr>
-          <tr>
-            <td>She, he, it will be working</td>
-            <td>She, he, it'll be working</td>
-            <td>She, he, it will not be working</td>
-            <td>She, he, it won't be working</td>
-          </tr>
-          <tr>
-            <td>We will be talking</td>
-            <td>We'll be talking</td>
-            <td>We will not be talking</td>
-            <td>We won't be talking</td>
-          </tr>
-          <tr>
-            <td>They will be running</td>
-            <td>They'll be running</td>
-            <td>They will not be running</td>
-            <td>They won't be running</td>
-          </tr>
-        </tbody>
-      </table>
-      <hr className="page-divider" />
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Future Continuous
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
+          The future continuous refers to an ongoing action in the future.
+          Realistically it isn't a tense we use often.
+        </Typography>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Positive</th>
+              <th>Positive short form</th>
+              <th>Negative</th>
+              <th>Negative short form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I will be swimming</td>
+              <td>I'll be swimming</td>
+              <td>I will not be swimming</td>
+              <td>I won't be swimming</td>
+            </tr>
+            <tr>
+              <td>You will be dancing</td>
+              <td>You'll be dancing</td>
+              <td>You will not be dancing</td>
+              <td>You won't be dancing</td>
+            </tr>
+            <tr>
+              <td>She, he, it will be working</td>
+              <td>She, he, it'll be working</td>
+              <td>She, he, it will not be working</td>
+              <td>She, he, it won't be working</td>
+            </tr>
+            <tr>
+              <td>We will be talking</td>
+              <td>We'll be talking</td>
+              <td>We will not be talking</td>
+              <td>We won't be talking</td>
+            </tr>
+            <tr>
+              <td>They will be running</td>
+              <td>They'll be running</td>
+              <td>They will not be running</td>
+              <td>They won't be running</td>
+            </tr>
+          </tbody>
+        </table>
+      </Stack>
 
-      <div className="page-body">
-        <p>Examples</p>
-        <ul className="page-examples">
-          <li>By Christmas I will be skating like a pro.</li>
-          <li>
-            It's very exciting! This time next Monday you will be working at
-            your new job.
-          </li>
-          <li>This time next week she will be relaxing at the beach.</li>
-        </ul>
-      </div>
-      <div className="page-body"></div>
-
+      <Box component="section">
+        <Typography variant="h6">Examples</Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              By Christmas I will be skating like a pro.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              It's very exciting! This time next Monday you will be working at
+              your new job.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              This time next week she will be relaxing at the beach.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Box>
       <QuizForm questionsArray={questionsArray} />
 
       <iframe
@@ -341,6 +366,6 @@ export default function FutureContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
