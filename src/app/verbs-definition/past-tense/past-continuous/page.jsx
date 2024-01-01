@@ -1,6 +1,16 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
+
 export const metadata = {
   title: "Past Continuous Tense | English in Eight Minutes",
   description:
@@ -249,17 +259,25 @@ export default function PastContinuous() {
   ];
 
   return (
-    <main>
-      <div className={styles.page_title}>
-        <h1>Past Continuous</h1>
-      </div>
-      <p className={styles.grammar_explanation_paragraph}>
-        The past continuous tense is a way to talk about actions or events that
-        were happening in the past. It is formed by using the past tense of the
-        verb "to be" (was/were) and adding the present participle (-ing form) of
-        the main verb.
-      </p>
-      <div>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Past Continuous
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
+          The past continuous tense is a way to talk about actions or events
+          that were happening in the past. It is formed by using the past tense
+          of the verb "to be" (was/were) and adding the present participle (-ing
+          form) of the main verb.
+        </Typography>
+
         <table className={styles.table}>
           <thead>
             <tr>
@@ -296,35 +314,42 @@ export default function PastContinuous() {
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div className="page-body">
-        <p className={styles.grammar_explanation_paragraph}>
+        <Typography>
           We use the past continuous to describe something that was happening in
           the past when another other event interrupted it or a repetitive
           action that no is no longer happening.
-        </p>
-
-        <ul className="page-examples">
-          <li>
-            I <b>was dancing</b> when the fight started.
-          </li>
-          <li>
-            She <b>was watching </b> a movie when her friend told her the news.
-          </li>
-          <li>
-            He <b>was talking</b> to his sister when his daughter came home.
-          </li>
-          <li>
-            I <b>was working</b> in the garden when the delivery guy came to the
-            door.
-          </li>
-          <li>
-            They were <b>studying</b> in October.
-          </li>
-        </ul>
-      </div>
-      <div className="page-body"></div>
+        </Typography>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I <b>was dancing</b> when the fight started.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              She <b>was watching </b> a movie when her friend told her the
+              news.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I <b>was working</b> in the garden when the delivery guy came to
+              the door.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              He <b>was talking</b> to his sister when his daughter came home.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              They were <b>studying</b> in October.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -336,6 +361,6 @@ export default function PastContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

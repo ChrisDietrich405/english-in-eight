@@ -1,7 +1,6 @@
 import QuizForm from "@/src/components/QuizForm";
 
 import {
-  Box,
   Container,
   Stack,
   Typography,

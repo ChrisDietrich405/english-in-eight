@@ -1,6 +1,16 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
+
 export const metadata = {
   title: "Past Perfect Tense | English in Eight Minutes",
   description:
@@ -252,16 +262,23 @@ export default function PastPerfect() {
   ];
 
   return (
-    <main>
-      <div className="page-body">
-        <div className={styles.page_title}>
-          <h1>Past Perfect</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Past Perfect
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           The past perfect is used to explain that one action in the past
           happened before another action in the past. We form it by using had +
           past participle.
-        </p>
+        </Typography>
 
         <table className={styles.table}>
           <thead>
@@ -304,23 +321,31 @@ export default function PastPerfect() {
           </thead>
           <tbody></tbody>
         </table>
-
-        <ul className="page-examples">
-          <li>
-            We <b>had already eaten</b> before you ordered lunch.
-          </li>
-          <li>
-            We had told her to get ready, but she <b>had already prepared</b>{" "}
-            her bags.
-          </li>
-          <li>
-            They <b>had started</b> the project before their boss told them to.{" "}
-          </li>
-          <li>
-            I <b>had finished</b> eating dinner by the time my wife came home.
-          </li>
-        </ul>
-      </div>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              We <b>had already eaten</b> before you ordered lunch.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              We had told her to get ready, but she <b>had already prepared</b>{" "}
+              her bags.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              They <b>had started</b> the project before their boss told them
+              to.{" "}
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I <b>had finished</b> eating dinner by the time my wife came home.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -332,6 +357,6 @@ export default function PastPerfect() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }
