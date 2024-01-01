@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Container, Typography, Box, Stack } from "@mui/material";
+import { Container, Typography, Box, Stack, Grid } from "@mui/material";
 
 export const metadata = {
   title: "Adjective Definition | English in Eight Minutes",
@@ -62,7 +62,7 @@ export default function AdjectiveDefinition() {
           attributes. In these examples, the adjectives are in bold.
         </Typography>
       </Stack>
-      <Stack direction="row" spacing={2}>
+      <Grid direction="row" spacing={2}>
         <Box>
           <Image
             style={{
@@ -114,7 +114,7 @@ export default function AdjectiveDefinition() {
             Strong
           </Typography>
         </Box>
-      </Stack>
+      </Grid>
     </Container>
   );
 }
