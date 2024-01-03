@@ -21,7 +21,6 @@ const Layout = ({ children }) => {
             <Stack
               mt={3.75}
               sx={{
-                height: "100vh",
                 borderRadius: "9px",
                 backgroundColor: "#fff",
               }}

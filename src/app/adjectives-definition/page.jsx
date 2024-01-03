@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Container, Typography, Box, Stack, Grid } from "@mui/material";
+import { Container, Typography, Box, Stack, Grid, Item } from "@mui/material";
 
 export const metadata = {
   title: "Adjective Definition | English in Eight Minutes",
@@ -62,59 +62,59 @@ export default function AdjectiveDefinition() {
           attributes. In these examples, the adjectives are in bold.
         </Typography>
       </Stack>
-      <Grid direction="row" spacing={2}>
-        <Box>
-          <Image
-            style={{
-              borderRadius: "4px",
-              top: "50%",
-              left: "50%",
-            }}
-            height={250}
-            width={250}
-            src="/images/happy.jpg"
-            alt="happy child"
-          />
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={4}>
+            <Image
+              style={{
+                borderRadius: "4px",
+                top: "50%",
+                left: "50%",
+              }}
+              height={250}
+              width={250}
+              src="/images/happy.jpg"
+              alt="happy child"
+            />
 
-          <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
-            Happy
-          </Typography>
-        </Box>
-
-        <Box>
-          <Image
-            style={{
-              borderRadius: "4px",
-              top: "50%",
-              left: "50%",
-            }}
-            height={250}
-            width={250}
-            src="/images/small.jpg"
-            alt="small dog"
-          />
-          <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
-            Small
-          </Typography>
-        </Box>
-
-        <Box>
-          <Image
-            style={{
-              borderRadius: "4px",
-              top: "50%",
-              left: "50%",
-            }}
-            height={250}
-            width={250}
-            src="/images/strong.jpg"
-            alt="strong person"
-          />
-          <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
-            Strong
-          </Typography>
-        </Box>
-      </Grid>
+            <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+              Happy
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Image
+              style={{
+                borderRadius: "4px",
+                top: "50%",
+                left: "50%",
+              }}
+              height={250}
+              width={250}
+              src="/images/small.jpg"
+              alt="small dog"
+            />
+            <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+              Small
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Image
+              style={{
+                borderRadius: "4px",
+                top: "50%",
+                left: "50%",
+              }}
+              height={250}
+              width={250}
+              src="/images/strong.jpg"
+              alt="strong person"
+            />
+            <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+              Strong
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
     </Container>
   );
 }

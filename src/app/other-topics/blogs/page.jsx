@@ -62,7 +62,13 @@ const page = () => {
       </Typography>
       <Stack>
         <Image
-          style={{ margin: "0 auto" }}
+          style={{
+            margin: "0 auto",
+            objectFit: "contain",
+            width: "100%",
+            maxWidth: "550px",
+            height: "auto",
+          }}
           height={350}
           width={550}
           src="/images/blog.jpg"

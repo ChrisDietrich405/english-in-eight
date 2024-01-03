@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
 
           <Grid item xs={12} md={9} mb={4}>
             <Stack
-              mt={3.75}
+              mt={9.75}
               p={4}
               sx={{ backgroundColor: "#fff", borderRadius: "9px" }}
             >

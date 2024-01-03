@@ -67,7 +67,12 @@ const Blog4 = () => {
       </Stack>
       <Stack>
         <Image
-          style={{ margin: "0 auto" }}
+          style={{
+            margin: "0 auto",
+            objectFit: "contain",
+            width: "100%",
+            height: "auto",
+          }}
           height={350}
           width={550}
           src="/images/successful-english.jpg"
@@ -137,7 +142,12 @@ const Blog4 = () => {
       </Typography>
       <Stack>
         <Image
-          style={{ margin: "0 auto" }}
+          style={{
+            margin: "0 auto",
+            objectFit: "contain",
+            width: "100%",
+            height: "auto",
+          }}
           height={350}
           width={550}
           src="/images/successful-english2.jpg"
