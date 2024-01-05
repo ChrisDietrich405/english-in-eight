@@ -1,5 +1,14 @@
 import QuizForm from "@/src/components/QuizForm";
 
+import {
+  Container,
+  Stack,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
+
 import styles from "../../../styles/content-page.module.css";
 
 export const metadata = {
@@ -281,17 +290,24 @@ export default function PastPerfectContinuous() {
   ];
 
   return (
-    <main>
-      <div>
-        <div className={styles.page_title}>
-          <h1>Past Perfect Continuous</h1>
-        </div>
-        <p className={styles.grammar_explanation_paragraph}>
+    <Container>
+      <Stack>
+        <Typography
+          mb={2}
+          component="h1"
+          variant="h1"
+          sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+        >
+          Past Perfect Continuous
+        </Typography>
+      </Stack>
+      <Stack>
+        <Typography mb={2}>
           The past perfect continuous tense, also known as the past perfect
           progressive, refers to an action that was ongoing in the past and that
           was completed before another past action or point in time.
           Realistically it's not a tense we use often.
-        </p>
+        </Typography>
 
         <table className={styles.table}>
           <thead>
@@ -335,25 +351,32 @@ export default function PastPerfectContinuous() {
             </tr>
           </tbody>
         </table>
-
-        <ul className="page-examples">
-          <li>
-            Marcus <b>had been working </b> on the project all day before he
-            realized he forgot his laptop at home.
-          </li>
-          <li>
-            The children <b>had been playing</b> outside in the rain and were
-            very happy when they came inside.
-          </li>
-          <li>
-            Before the concert began, the musicians <b>had been practicing</b>{" "}
-            hard for weeks.
-          </li>
-          <li>
-            I could smell cigarettes. My mom <b>had been smoking</b>.
-          </li>
-        </ul>
-      </div>
+        <List sx={{ marginLeft: "20px" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Marcus <b>had been working </b> on the project all day before he
+              realized he forgot his laptop at home.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              The children <b>had been playing</b> outside in the rain and were
+              very happy when they came inside.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              Before the concert began, the musicians <b>had been practicing</b>{" "}
+              hard for weeks.
+            </ListItemText>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <ListItemText>
+              I could smell cigarettes. My mom <b>had been smoking</b>.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Stack>
       <QuizForm questionsArray={questionsArray} />
       <iframe
         className={styles.iframe_wrapper}
@@ -365,6 +388,6 @@ export default function PastPerfectContinuous() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+    </Container>
   );
 }

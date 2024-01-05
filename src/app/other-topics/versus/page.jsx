@@ -22,8 +22,8 @@ export default function VersusDefinition() {
           remind.
         </Typography>
       </Stack>
-      <Card style={{ padding: "16px", marginBottom: "40px" }}>
-        <Grid container spacing={2}>
+      <Card style={{ marginBottom: "40px" }}>
+        <Grid container>
           <Grid item xs={12} lg={6}>
             <Image
               height={300}

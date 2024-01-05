@@ -10,8 +10,6 @@ import {
   ListItemText,
 } from "@mui/material";
 
-import styles from "../../styles/content-page.module.css";
-
 export const metadata = {
   title: "Dependent Prepositions: A Comprehensive Guide",
   description:
