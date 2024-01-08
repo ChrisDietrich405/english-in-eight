@@ -64,7 +64,7 @@ export default function PrepositionsOfMovement() {
       title: "He walked ________ the door.",
       possibleAnswers: [
         { title: "through", correctAnswer: true },
-        { title: "at" },
+        { title: "across" },
       ],
       userAnswer: "",
       explanation:
@@ -187,10 +187,10 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 14,
-      title: "He drove _________ the dessert",
+      title: "He drove _________ the desert",
       possibleAnswers: [
         { title: "across", correctAnswer: true },
-        { title: "at" },
+        { title: "into" },
       ],
       userAnswer: "",
       explanation: "Across demonstrates movement from one side to another.",
@@ -229,7 +229,7 @@ export default function PrepositionsOfMovement() {
     },
     {
       id: 18,
-      title: "The security guards pushed their way ________ the crowd..",
+      title: "The security guards pushed their way ________ the crowd.",
       possibleAnswers: [
         { title: "through", correctAnswer: true },
         { title: "across" },

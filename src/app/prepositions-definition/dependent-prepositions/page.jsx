@@ -206,7 +206,7 @@ export default function DependentPrepositions() {
     {
       id: 20,
       title: "You shouldn't vote ______ her. She's extremely corrupt",
-      possibleAnswers: [{ title: "on" }, { title: "in", correctAnswer: true }],
+      possibleAnswers: [{ title: "on" }, { title: "for", correctAnswer: true }],
       userAnswer: "",
       explanation: "The correct preposition used with corrupt is for.",
     },

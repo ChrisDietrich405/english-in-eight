@@ -128,7 +128,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 11,
       title: "The painting is ______ the wall.",
-      possibleAnswers: [{ title: "to" }, { title: "on", correctAnswer: true }],
+      possibleAnswers: [{ title: "in" }, { title: "on", correctAnswer: true }],
       userAnswer: "",
       explanation:
         "On is used when referring to something that is on a surface.",
@@ -192,7 +192,7 @@ export default function PrepositionsOfPlace() {
     {
       id: 19,
       title: "They are ______ the museum.",
-      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "to" }],
+      possibleAnswers: [{ title: "at", correctAnswer: true }, { title: "on" }],
       userAnswer: "",
       explanation:
         "At is used when referring to something at a specific point.",
@@ -292,19 +292,7 @@ export default function PrepositionsOfPlace() {
           </ListItem>
         </List>
       </Box>
-      <Typography>
-        <b>Into</b> demonstrates entering or looking inside something.
-      </Typography>
-      <Box component="section">
-        <List sx={{ marginLeft: "20px" }}>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>She went into the house.</ListItemText>
-          </ListItem>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>They looked into the darkness.</ListItemText>
-          </ListItem>
-        </List>
-      </Box>
+
       <QuizForm questionsArray={questionsArray} />
 
       <iframe
