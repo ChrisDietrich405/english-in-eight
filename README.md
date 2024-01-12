@@ -64,6 +64,6 @@ Past Continuous Page
 
 ![image](public/github-images/github-past-continuous.png)
 
-Past Continuous Page
+Prepositions Page
 
 # ![image](public/github-images/github-prepositions.png)
