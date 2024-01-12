@@ -1,4 +1,5 @@
 import QuizForm from "@/src/components/QuizForm";
+import { presentSimple } from "@/src/app/serverAPI/present-simple";
 
 import styles from "../../../styles/content-page.module.css";
 
@@ -266,9 +267,26 @@ export default function SimplePresent() {
         </div>
         <p className={styles.grammar_explanation_paragraph}>
           The present simple is used to describe actions, events, or states that
-          are habitual, repeated, or generally true. The positive form for regular verbs is really easy. It's just
-          the verb with an extra 's' if the subject is 'he', 'she', or 'it'.
+          are habitual, repeated, or generally true. The positive form for
+          regular verbs is really easy. It's just the verb with an extra 's' if
+          the subject is 'he', 'she', or 'it'.
         </p>
+        {/* <table>
+          <tbody>
+            <tr>
+              {presentSimple.data.map((item) => {
+                return <th>{item.title}</th>;
+              })}
+            </tr>
+            <tr>
+              {presentSimple.data.sentence.map((item) => {
+                return {item[1].td_data.map((sentence) => {
+                  return <td></td>
+                })}
+              })}
+            </tr>
+          </tbody>
+        </table> */}
         <table className={styles.table}>
           <tbody>
             <tr>

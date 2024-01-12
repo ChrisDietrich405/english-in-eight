@@ -284,7 +284,6 @@ export default function UncountableAndCountable() {
         <Typography
           component="h5"
           variant="h5"
-          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
         >
           Uncountable Nouns
         </Typography>

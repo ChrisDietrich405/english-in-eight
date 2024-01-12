@@ -263,7 +263,6 @@ export default function Collective() {
         <Typography
           component="h5"
           variant="h5"
-          // sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
         >
           Examples
         </Typography>

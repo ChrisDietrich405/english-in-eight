@@ -10,9 +10,9 @@ describe("Footer component test", () => {
   it("should be able to send an email", () => {
     const { getByLabelText, getByRole } = render(<Footer />);
 
-    const name = getByLabelText("Name")
+    const name = getByLabelText("Name");
     const email = getByLabelText("Email");
-    const message = getByLabelText("Add a Message")
+    const message = getByLabelText("Add a Message");
     const buttonSubmit = getByRole("button");
 
     fireEvent.change(name, { target: { value: "john" } });
@@ -20,26 +20,4 @@ describe("Footer component test", () => {
     fireEvent.change(message, { target: { value: "a great message" } });
     fireEvent.submit(buttonSubmit);
   });
-
-  //   it("should be able to send an email", () => {
-  //     const { getByLabelText, getByRole } = render(<Footer />) // screen can search in the whole screen
-
-  //     const email = screen.getByLabelText("Email") // we are gettiung the email input
-  //     const name = screen.getByLabelText("Name")
-  //     const message = screen.getByLabelText("Add a Message")
-  //     const buttonSubmit = getByRole("button")
-
-  //     console.log(email, name, message, buttonSubmit)
-
-  //     fireEvent.change(email, { target: { value: "johndoe@mail.com" }}) // onChange={(ev) => setEmail(ev.target.value)}
-  //     fireEvent.change(name, { target: { value: "John Doe" }})
-  //     fireEvent.submit(buttonSubmit)
-  //     email.value = "johndoe@mail.com"
-  //     name.value = "John Doe"
-  //     fireEvent.change(message, { target: { value: "My beautiful test message" }})
-
-  //     expect(email.value).toBe("johndoe@mail.com")
-  //     expect(email.value).toBeTruthy()
-  //     expect(name.value).toBeTruthy()
-  //   })
 });

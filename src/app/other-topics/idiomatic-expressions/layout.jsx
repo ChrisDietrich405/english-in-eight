@@ -52,7 +52,6 @@ const Layout = ({ children }) => {
                   <ListItemText>
                     <Link
                       className={styles.link}
-                      //
                       href="/other-topics/idiomatic-expressions/expressions-list-2"
                     >
                       Expressions List 2
@@ -63,7 +62,6 @@ const Layout = ({ children }) => {
                   <ListItemText>
                     <Link
                       className={styles.link}
-                      //
                       href="/other-topics/idiomatic-expressions/expressions-list-3"
                     >
                       Expressions List 3
@@ -74,7 +72,6 @@ const Layout = ({ children }) => {
                   <ListItemText>
                     <Link
                       className={styles.link}
-                      //
                       href="/other-topics/idiomatic-expressions/expressions-list-4"
                     >
                       Expressions List 4

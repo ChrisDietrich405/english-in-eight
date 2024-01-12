@@ -39,7 +39,7 @@ export const metadata = {
     images: [
       {
         alt: "Traveling with English Image",
-        url: "/images/interview3.jpg", // Updated image URL
+        url: "/images/interview3.jpg", 
         width: 550,
         height: 350,
       },
