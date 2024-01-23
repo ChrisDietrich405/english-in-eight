@@ -277,14 +277,11 @@ export default function UncountableAndCountable() {
           variant="h1"
           sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
         >
-          Countable & Uncountable Nouns
+          Uncountable Nouns & Countable
         </Typography>
       </Stack>
       <Stack mb={2}>
-        <Typography
-          component="h5"
-          variant="h5"
-        >
+        <Typography component="h5" variant="h5">
           Uncountable Nouns
         </Typography>
         <Typography>

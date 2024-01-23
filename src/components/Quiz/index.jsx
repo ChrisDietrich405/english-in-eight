@@ -27,7 +27,6 @@ function AnswerIcon({ isAnswered }) {
 export default function Quiz(props) {
   const [disable, setDisable] = useState(false);
   const [answers, setAnswers] = useState({});
-  const [selectedAnswerTexts, setSelectedAnswerTexts] = useState({});
   const [cssProperties, setCssProperties] = useState({
     backgroundColor: "#1976d2;",
   });
@@ -42,7 +41,6 @@ export default function Quiz(props) {
       ...answers,
       [i]: "correctAnswer" in answer && answer.correctAnswer,
     });
-    setSelectedAnswerTexts({ ...selectedAnswerTexts, [i]: answer });
   };
 
   const [submitted, setSubmitted] = useState(false);
@@ -133,7 +131,6 @@ export default function Quiz(props) {
 
                   <ul>
                     {question.possibleAnswers.map((possibleAnswer, index) => {
-               
                       return (
                         <SelectAnswer
                           show={
@@ -150,7 +147,6 @@ export default function Quiz(props) {
                           possibleAnswer={possibleAnswer}
                           answers={answers}
                           i={i}
-                          selectedAnswerTexts={selectedAnswerTexts}
                           isAnsweredCorrectly={
                             i in answers && answers[i] === true
                           }
