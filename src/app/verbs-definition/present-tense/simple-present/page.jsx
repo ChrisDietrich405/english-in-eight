@@ -271,22 +271,6 @@ export default function SimplePresent() {
           regular verbs is really easy. It's just the verb with an extra 's' if
           the subject is 'he', 'she', or 'it'.
         </p>
-        {/* <table>
-          <tbody>
-            <tr>
-              {presentSimple.data.map((item) => {
-                return <th>{item.title}</th>;
-              })}
-            </tr>
-            <tr>
-              {presentSimple.data.sentence.map((item) => {
-                return {item[1].td_data.map((sentence) => {
-                  return <td></td>
-                })}
-              })}
-            </tr>
-          </tbody>
-        </table> */}
         <table className={styles.table}>
           <tbody>
             <tr>

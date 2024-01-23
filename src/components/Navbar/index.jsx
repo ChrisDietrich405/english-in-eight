@@ -48,12 +48,10 @@ function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    console.log("handleDrawerToggle");
     setMobileOpen((prevState) => !prevState);
   };
 
   const handleAccordionToggle = () => {
-    console.log("handleAccordionToggle");
     setMobileOpen(true);
   };
 
@@ -84,7 +82,7 @@ function DrawerAppBar(props) {
           return (
             <Accordion key={index}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon  />}
+                expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 onClick={handleAccordionToggle}
               >
