@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Container, Typography, Box, Stack, Grid, Item } from "@mui/material";
+import { Container, Typography, Box, Stack, Grid } from "@mui/material";
 
 export const metadata = {
   title: "Adjective Definition | English in Eight Minutes",

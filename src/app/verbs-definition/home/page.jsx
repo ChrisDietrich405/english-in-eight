@@ -1,5 +1,6 @@
 import Image from "next/image";
-import styles from "../../styles/content-page.module.css";
+
+import { Container, Typography, Box, Stack, Grid } from "@mui/material";
 
 export const metadata = {
   title: "Verb Definition | English in Eight Minutes",
@@ -44,54 +45,79 @@ export const metadata = {
 export default function VerbsDef() {
   return (
     <>
-      <div className={styles.page_title}>
-        <h1>Verb Definition</h1>
-      </div>
-      <div className={styles.page_body}>
-        <h5 className={styles.grammar_explanation_paragraph}>
-          A verb is a word used to describe an action (e.g., hear), state (e.g.,
-          love), or occurrence (e.g., happen).
-        </h5>
-      </div>
-      <div className="container">
-        <div className="container">
-          <div className="row">
-            <div className={`col-md-4 ${styles.definition_picture}`}>
-              <div className={styles.picture_wrapper}>
-                <Image
-                  src="/images/hear.jpg"
-                  alt="picture of action verb hear"
-                  width={250}
-                  height={250}
-                />
-              </div>
-              <p className={styles.picture_subtitle}>Hear</p>
-            </div>
-            <div className={`col-md-4 ${styles.definition_picture}`}>
-              <div className={styles.picture_wrapper}>
-                <Image
-                  src="/images/love.jpg"
-                  alt="picture of state verb love"
-                  width={250}
-                  height={250}
-                />
-              </div>
-              <p className={styles.picture_subtitle}>Love</p>
-            </div>
-            <div className={`col-md-4 ${styles.definition_picture}`}>
-              <div className={styles.picture_wrapper}>
-                <Image
-                  src="/images/happen.jpg"
-                  alt="picture of action verb happen"
-                  width={250}
-                  height={250}
-                />
-              </div>
-              <p className={styles.picture_subtitle}>Happen</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Container>
+        <Stack>
+          <Typography
+            mb={2}
+            component="h1"
+            variant="h1"
+            sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
+          >
+            Verb Definition
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography mb={2}>
+            A verb is a word used to describe an action (e.g., hear), state
+            (e.g., love), or occurrence (e.g., happen).
+          </Typography>
+        </Stack>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={4}>
+              <Image
+                style={{
+                  borderRadius: "4px",
+                  top: "50%",
+                  left: "50%",
+                }}
+                src="/images/hear.jpg"
+                alt="picture of action verb hear"
+                width={200}
+                height={200}
+              />
+
+              <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+                Hear
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Image
+                style={{
+                  borderRadius: "4px",
+                  top: "50%",
+                  left: "50%",
+                }}
+                src="/images/love.jpg"
+                alt="picture of state verb love"
+                width={200}
+                height={200}
+              />
+
+              <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+                Love
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Image
+                style={{
+                  borderRadius: "4px",
+                  top: "50%",
+                  left: "50%",
+                }}
+                src="/images/happen.jpg"
+                alt="picture of action verb happen"
+                width={200}
+                height={200}
+              />
+
+              <Typography variant="h5" mt={2} sx={{ textAlign: "center" }}>
+                Happen
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
     </>
   );
 }
