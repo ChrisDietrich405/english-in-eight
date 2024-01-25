@@ -1,8 +1,17 @@
 "use client";
 import { useState, useRef } from "react";
 import { toast } from "react-toastify";
-
 import Button from "@mui/material/Button";
+import {
+  Container,
+  Stack,
+  ListItem,
+  ListItemText,
+  List,
+  Box,
+  Typography,
+} from "@mui/material";
+
 import SelectAnswer from "../SelectAnswer";
 
 import styles from "./styles.module.css";
@@ -107,15 +116,15 @@ export default function Quiz(props) {
   };
 
   return (
-    <div id="scrollTo" ref={topOfQuizRef}>
-      <div className={styles.quiz_container}>
+    <Container id="scrollTo" ref={topOfQuizRef}>
+      <Box sx={{ marginBottom: "100px" }}>
         <form onSubmit={submit} onReset={reset}>
-          <div className={styles.quiz_title}>
-            <h4>{props.title}</h4>
+          <Box>
+            <Typography variant="h4">{props.title}</Typography>
             {props.subtitle ? <p>{props.subtitle} </p> : ""}
-            <h1>{props.explanation}</h1>
-          </div>
-          <ol className={styles.questions_and_answers}>
+            <Typography variant="h5">{props.explanation}</Typography>
+          </Box>
+          <List>
             {props.questions.map((question, i) => {
               return (
                 <li key={`answer-${question.id}`} className={styles.question}>
@@ -158,8 +167,8 @@ export default function Quiz(props) {
                 </li>
               );
             })}
-          </ol>
-          <div className={styles.quiz_buttons}>
+          </List>
+          <Box className={styles.quiz_buttons}>
             <Button
               className={styles.quiz_button}
               variant="contained"
@@ -188,9 +197,9 @@ export default function Quiz(props) {
                 Try More Questions
               </Button>
             )}
-          </div>
+          </Box>
         </form>
-      </div>
-    </div>
+      </Box>
+    </Container>
   );
 }
