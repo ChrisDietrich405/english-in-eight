@@ -111,7 +111,7 @@ export default function PastPerfectContinuous() {
       title: "I _________ her on the cheek.",
       possibleAnswers: [
         { title: "a. kissed", correctAnswer: true },
-        { title: "b. kiss" },
+        { title: "b. kis" },
       ],
       userAnswer: "",
       explanation: "Kissed is the past simple form for kiss.",
@@ -149,23 +149,23 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 11,
-      title: "She ____________ her friend last night.",
+      title: "She ____________ the ball.",
       possibleAnswers: [
-        { title: "a. meet" },
-        { title: "b. met", correctAnswer: true },
+        { title: "a. catched" },
+        { title: "b. caught", correctAnswer: true },
       ],
       userAnswer: "",
       explanation: "Met is the past simple form for meet.",
     },
     {
       id: 12,
-      title: "He ____________ a great book last weekend.",
+      title: "He ____________ a salad.",
       possibleAnswers: [
-        { title: "a. read", correctAnswer: true },
-        { title: "b. red" },
+        { title: "a. ate", correctAnswer: true },
+        { title: "b. eat" },
       ],
       userAnswer: "",
-      explanation: "Read is the past simple form for read.",
+      explanation: "ate is the past simple form for eat.",
     },
     {
       id: 13,
@@ -210,14 +210,14 @@ export default function PastPerfectContinuous() {
     },
     {
       id: 17,
-      title: "I didn't ____________ my keys at the house.",
+      title: "I didn't ____________ anything at the mall.",
       possibleAnswers: [
-        { title: "a. leave", correctAnswer: true },
-        { title: "b. left" },
+        { title: "a. buy", correctAnswer: true },
+        { title: "b. bought" },
       ],
       userAnswer: "",
       explanation:
-        "Left is the past simple form for leave, but because this sentence is negative leave doesn't change.",
+        "Bought is the past simple form for buy, but because this sentence is negative buy doesn't change.",
     },
     {
       id: 18,
@@ -247,8 +247,7 @@ export default function PastPerfectContinuous() {
         { title: "b. visited" },
       ],
       userAnswer: "",
-      explanation:
-        "Visited is the past simple form for visit.",
+      explanation: "Visited is the past simple form for visit.",
     },
     {
       id: 21,
@@ -317,7 +316,7 @@ export default function PastPerfectContinuous() {
       <p>
         For irregular verbs, things are more challenging. Verbs can change a
         lot. For these verbs you will need to do a lot of memorization. Notice
-        again that in the negative the verb doesn't change.
+        again that in the <b>negative the verb doesn't change.</b>
       </p>
       <table className={styles.table}>
         <thead>
@@ -357,7 +356,7 @@ export default function PastPerfectContinuous() {
       </table>
 
       <div className="page-body">
-        <p>Some irregular verbs look exactly like the root form.</p>
+        <p>Some irregular verbs that end in <b>t</b> don't change and look exactly like the root form.</p>
         <table className={styles.table}>
           <thead>
             <tr>
@@ -399,9 +398,10 @@ export default function PastPerfectContinuous() {
         <ul className="page-examples">
           <li>buy changes to bought</li>
           <li>catch changes to caught</li>
-          <li>build changes to built</li>
           <li>see changes to saw</li>
           <li>go changes to went</li>
+          <li>have changes to had</li>
+          <li>get changes to got</li>
         </ul>
       </div>
       <QuizForm questionsArray={questionsArray} />
