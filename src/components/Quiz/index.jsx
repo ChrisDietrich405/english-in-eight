@@ -4,9 +4,6 @@ import { toast } from "react-toastify";
 import Button from "@mui/material/Button";
 import {
   Container,
-  Stack,
-  ListItem,
-  ListItemText,
   List,
   Box,
   Typography,
@@ -60,10 +57,10 @@ export default function Quiz(props) {
 
     const checkedAnswers = newEvent.filter((item) => item.checked);
 
-    const allAnsweredQuestions = checkedAnswers.filter(
-      (entireQuestionObject) => {
-        const elementId = entireQuestionObject.id.match(/\d*$/g);
-
+    const allCorrectlyAnsweredQuestionsArray = checkedAnswers.filter(
+      (checkedQuestionElement) => {
+        const elementId = checkedQuestionElement.id.match(/\d*$/g);
+     
         const question = props.questions.find(
           (item) => item.id.toString() === elementId[0]
         );
@@ -76,14 +73,14 @@ export default function Quiz(props) {
           }
         });
 
-        return rightAnswer === entireQuestionObject.value;
+        return rightAnswer === checkedQuestionElement.value;
       }
     );
 
-    setNumberOfQuestionsCorrect(allAnsweredQuestions.length);
+    setNumberOfQuestionsCorrect(allCorrectlyAnsweredQuestionsArray.length);
 
     toast(
-      `You got ${allAnsweredQuestions.length} out of ${props.questions.length} correct.`,
+      `You got ${allCorrectlyAnsweredQuestionsArray.length} out of ${props.questions.length} correct.`,
       {
         autoClose: 5000,
         type: "success",
@@ -135,6 +132,7 @@ export default function Quiz(props) {
                       className="answer-icon"
                       isAnswered={i in answers}
                       isAnsweredCorrectly={i in answers && answers[i] === true}
+                      
                     />
                   )}
 
