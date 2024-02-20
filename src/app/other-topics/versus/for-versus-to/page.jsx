@@ -296,7 +296,7 @@ export default function ForVersusTo() {
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                I donated <b>to</b> Farm Santuary.
+                I donated <b>to</b> Farm Sanctuary.
               </ListItemText>
             </ListItem>
           </List>
@@ -337,7 +337,7 @@ export default function ForVersusTo() {
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                It's 3 hours <b>to</b> the Washington.
+                It's 3 hours <b>to</b> Washington.
               </ListItemText>
             </ListItem>
           </List>

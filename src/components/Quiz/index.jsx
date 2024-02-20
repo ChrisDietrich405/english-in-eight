@@ -2,12 +2,7 @@
 import { useState, useRef } from "react";
 import { toast } from "react-toastify";
 import Button from "@mui/material/Button";
-import {
-  Container,
-  List,
-  Box,
-  Typography,
-} from "@mui/material";
+import { Container, List, Box, Typography } from "@mui/material";
 
 import SelectAnswer from "../SelectAnswer";
 
@@ -60,7 +55,6 @@ export default function Quiz(props) {
     const allCorrectlyAnsweredQuestionsArray = checkedAnswers.filter(
       (checkedQuestionElement) => {
         const elementId = checkedQuestionElement.id.match(/\d*$/g);
-     
         const question = props.questions.find(
           (item) => item.id.toString() === elementId[0]
         );
@@ -123,19 +117,17 @@ export default function Quiz(props) {
           </Box>
           <List>
             {props.questions.map((question, i) => {
+              console.log(answers)
               return (
                 <li key={`answer-${question.id}`} className={styles.question}>
                   {`${question.id}. ${question.title}`}
-
                   {submitted === true && (
                     <AnswerIcon
                       className="answer-icon"
                       isAnswered={i in answers}
                       isAnsweredCorrectly={i in answers && answers[i] === true}
-                      
                     />
                   )}
-
                   <ul>
                     {question.possibleAnswers.map((possibleAnswer, index) => {
                       return (
