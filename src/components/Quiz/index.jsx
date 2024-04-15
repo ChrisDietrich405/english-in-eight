@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import Button from "@mui/material/Button";
 import { Container, List, Box, Typography } from "@mui/material";
 
-import SelectAnswer from "../SelectAnswer";
+import AnswerOptions from "../AnswerOptions";
 
 import styles from "./styles.module.css";
 
@@ -112,12 +112,9 @@ export default function Quiz(props) {
         <form onSubmit={submit} onReset={reset}>
           <Box>
             <Typography variant="h4">{props.title}</Typography>
-            {props.subtitle ? <p>{props.subtitle} </p> : ""}
-            <Typography variant="h5">{props.explanation}</Typography>
           </Box>
           <List>
             {props.questions.map((question, i) => {
-              console.log(answers)
               return (
                 <li key={`answer-${question.id}`} className={styles.question}>
                   {`${question.id}. ${question.title}`}
@@ -125,13 +122,12 @@ export default function Quiz(props) {
                     <AnswerIcon
                       className="answer-icon"
                       isAnswered={i in answers}
-                      isAnsweredCorrectly={i in answers && answers[i] === true}
                     />
                   )}
                   <ul>
                     {question.possibleAnswers.map((possibleAnswer, index) => {
                       return (
-                        <SelectAnswer
+                        <AnswerOptions
                           show={
                             index === 1 &&
                             question.possibleAnswers.filter(

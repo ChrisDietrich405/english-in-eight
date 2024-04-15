@@ -3,7 +3,7 @@ import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 import styles from "./styles.module.css";
 
-const SelectAnswer = ({
+const AnswerOptions = ({
   show,
   explanation,
   submitted,
@@ -87,4 +87,4 @@ const SelectAnswer = ({
   );
 };
 
-export default SelectAnswer;
+export default AnswerOptions;
