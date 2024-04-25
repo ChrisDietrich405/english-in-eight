@@ -6,7 +6,7 @@ import {
   Container,
   Stack,
   ListItem,
-  ListItemText,
+  ListIstemText,
   List,
   Box,
   Typography,
