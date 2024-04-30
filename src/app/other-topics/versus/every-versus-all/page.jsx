@@ -342,7 +342,7 @@ export default function EveryVersusAll() {
           </ListItem>
         </List>
       </Box>
-      <Typography component="h4">
+      <Typography component="h4" mb={2}>
         {" "}
         Hint! Remember that <b>all</b> is usually used with plural nouns (all
         students) and <b>every</b> is usually used with singular nouns (every

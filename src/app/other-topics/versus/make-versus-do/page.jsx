@@ -340,7 +340,7 @@ export default function MakeVersusDo() {
             </ListItem>
           </List>
 
-          <Typography variant="h5">
+          <Typography variant="h5" mb={2}>
             {" "}
             This lesson is not easy, so don't worry if you make a lot of
             mistakes with the quiz. Remember practice makes perfect. Do the quiz
