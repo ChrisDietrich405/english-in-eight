@@ -240,7 +240,7 @@ export default function UncountableAndCountable() {
 
     {
       id: 18,
-      title: "There _______ a lot traffic on the road this morning.",
+      title: "There _______ a lot of traffic on the road this morning.",
       possibleAnswers: [{ title: "is", correctAnswer: true }, { title: "are" }],
       userAnswer: "",
       explanation:
@@ -277,7 +277,7 @@ export default function UncountableAndCountable() {
           variant="h1"
           sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
         >
-          Uncountable Nouns & Countable
+          Uncountable Nouns & Countable Nouns
         </Typography>
       </Stack>
       <Stack mb={2}>
@@ -289,7 +289,7 @@ export default function UncountableAndCountable() {
           used to describe abstract ideas , e.g., anger. They can also be used
           for physical objects that are too small , e.g., rice. Uncountable
           nouns can be used for things that don't have shape (powders, liquids,
-          gases, etc...).
+          gases, etc...). To describe a small amount we use "a little" with uncountable nouns.
         </Typography>
       </Stack>
       <Stack>
@@ -373,7 +373,7 @@ export default function UncountableAndCountable() {
         but uncountable in English. Obviously they must follow the rules for
         uncountable nouns. Some common ones are: <b>advice</b>, <b>behavior</b>,{" "}
         <b>bread</b>, <b>furniture</b>, <b>information</b>,<b>time</b>,
-        <b>news</b>, <b>stuff</b>, <b>traffic</b>, , <b>trouble</b>,{" "}
+        <b>news</b>, <b>stuff</b>, <b>traffic</b>,<b>trouble</b>,{" "}
         <b>weather</b>, <b>work</b>.
       </Typography>
       <Typography component="h6" variant="h6">
@@ -410,7 +410,7 @@ export default function UncountableAndCountable() {
         Countable nouns are nouns we can count, e.g., 1 cat, 2 dogs. They have a
         singular and a plural form. The singular form can use "a" or "an". If
         you need to ask about the quantity of a countable noun, you ask "How
-        many?" along with the plural countable noun, e.g., How many dogs?
+        many?" along with the plural countable noun, e.g., How many dogs? To describe a small amount we use "a few" with countable nouns.
       </Typography>
       <Typography component="h6" variant="h6">
         Examples
@@ -440,7 +440,7 @@ export default function UncountableAndCountable() {
         <ListItem sx={{ display: "list-item" }}>
           <ListItemText>
             {" "}
-            She has <b>six</b> cats. She has <b>six</b> cats.
+            She has <b>six</b> cats. 
           </ListItemText>
         </ListItem>{" "}
       </List>

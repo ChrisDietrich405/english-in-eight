@@ -72,7 +72,7 @@ export default function TellVersusSay() {
         { title: "told", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "We use tell with a personal object.",
+      explanation: "We use tell with a personal object and with lies.",
     },
     {
       id: 3,
@@ -92,7 +92,7 @@ export default function TellVersusSay() {
         { title: "told", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "We usually use say without a personal object.",
+      explanation: "We use tell with a personal object.",
     },
 
     {
@@ -129,7 +129,7 @@ export default function TellVersusSay() {
     {
       id: 8,
       title:
-        "Maria  _____________ that she's going to talk with her friend about it.",
+        "Maria _____________ that she's going to talk with her friend about it.",
       possibleAnswers: [
         { title: "said", correctAnswer: true },
         { title: "told" },
@@ -145,7 +145,7 @@ export default function TellVersusSay() {
         { title: "say" },
       ],
       userAnswer: "",
-      explanation: "We use tell with a personal object.",
+      explanation: "We use tell with story (stories).",
     },
     {
       id: 10,
@@ -181,11 +181,11 @@ export default function TellVersusSay() {
       id: 13,
       title: "She _______________ me to meet her at the park.",
       possibleAnswers: [
-        { title: "told" },
-        { title: "said", correctAnswer: true },
+        { title: "told", correctAnswer: true },
+        { title: "said" },
       ],
       userAnswer: "",
-      explanation: "We usually use say without a personal object.",
+      explanation: "We use tell with a personal object.",
     },
     {
       id: 14,
@@ -206,7 +206,7 @@ export default function TellVersusSay() {
         { title: "told", correctAnswer: true },
       ],
       userAnswer: "",
-      explanation: "We use tell with a personal object.",
+      explanation: "We use tell with joke.",
     },
     {
       id: 16,
@@ -227,17 +227,17 @@ export default function TellVersusSay() {
         { title: "say" },
       ],
       userAnswer: "",
-      explanation: "We use tell with a personal object.",
+      explanation: "We use tell with a difference.",
     },
     {
       id: 18,
       title: "He _____________ his friends about the exciting trip.",
       possibleAnswers: [
-        { title: "told" },
-        { title: "said", correctAnswer: true },
+        { title: "told", correctAnswer: true },
+        { title: "said" },
       ],
       userAnswer: "",
-      explanation: "We usually use say without a personal object.",
+      explanation: "We use tell with a personal object.",
     },
     {
       id: 19,
@@ -251,13 +251,13 @@ export default function TellVersusSay() {
     },
     {
       id: 20,
-      title: "Excuse me, could you ________ the time",
+      title: "Excuse me, could you ________ me the time",
       possibleAnswers: [
         { title: "tell", correctAnswer: true },
         { title: "say" },
       ],
       userAnswer: "",
-      explanation: "We use tell with a personal object.",
+      explanation: "We use tell with time.",
     },
     {
       id: 21,
@@ -336,51 +336,6 @@ export default function TellVersusSay() {
           </ListItem>
           <ListItem sx={{ display: "list-item" }}>
             <ListItemText>tell (somebody) a story</ListItemText>
-          </ListItem>
-        </List>
-        <Typography>When we refer to languages, we use speak:</Typography>
-        <List sx={{ marginLeft: "20px" }}>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>
-              I don't speak Swahili, but I want to learn.
-            </ListItemText>
-          </ListItem>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>How many languages does Ahmad speak?</ListItemText>
-          </ListItem>
-        </List>
-        <Typography>
-          Some phrasal verbs require either talk or speak. Talk and speak in
-          these contexts are not interchangeable.
-        </Typography>
-        <List sx={{ marginLeft: "20px" }}>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>
-              His students talk back to him, because he accepts it. (talk back
-              means to be disrespectful)
-            </ListItemText>
-          </ListItem>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>
-              {" "}
-              My hearing is terrible. I always need to ask people to speak up.
-              (speak up means to speak louder)
-            </ListItemText>
-          </ListItem>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>
-              {" "}
-              I know we are fighting a lot now, but I want to talk it out (talk
-              it out means to resolve problems by talking calmly)
-            </ListItemText>
-          </ListItem>
-        </List>
-        <Typography>
-          Talk can be a noun or a verb. Speak is always only a verb.{" "}
-        </Typography>
-        <List sx={{ marginLeft: "20px" }}>
-          <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>He gave a great talk about diet.</ListItemText>
           </ListItem>
         </List>
       </Box>

@@ -76,12 +76,12 @@ export default function EveryVersusAll() {
     },
     {
       id: 3,
-      title: "I see them ______________ every Monday.",
+      title: "I see them ______________ Monday.",
       possibleAnswers: [
         { title: "all" },
         { title: "every", correctAnswer: true },
       ],
-      explanation: "Every describes the two individual days.",
+      explanation: "Every describes the individual day.",
       userAnswer: "",
     },
 
@@ -303,7 +303,7 @@ export default function EveryVersusAll() {
           </ListItem>
           <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
-              The bingo event is at park. It starts at 4 and everyone is
+              The bingo event is at the park. It starts at 4 and everyone is
               welcome.
             </ListItemText>
           </ListItem>
