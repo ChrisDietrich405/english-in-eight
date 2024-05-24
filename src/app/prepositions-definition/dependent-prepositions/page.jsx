@@ -257,7 +257,7 @@ export default function DependentPrepositions() {
           <ListItem sx={{ display: "list-item" }}>
             <ListItemText>
               {" "}
-              Forget about- You forgot about his birthday.
+              Forget about - You forgot about his birthday.
             </ListItemText>
           </ListItem>
           <ListItem sx={{ display: "list-item" }}>

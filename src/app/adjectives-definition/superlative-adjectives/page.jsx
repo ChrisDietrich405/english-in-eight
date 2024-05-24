@@ -169,98 +169,120 @@ export default function Superlatives() {
     },
     {
       id: 11,
-      title: "She shares (they) ________________ passion for cooking.",
+      title: "The movie was the ______________ (exciting) I've seen.",
       possibleAnswers: [
-        { title: "my" },
-        { title: "their", correctAnswer: true },
+        { title: "most exciting", correctAnswer: true },
+        { title: "excitingest" },
       ],
       userAnswer: "",
-      explanation: "Their is the possessive adjective for they.",
+      explanation: "Exciting is three syllables, so you must use 'most.'",
     },
+
     {
       id: 12,
-      title: "(We) _______________ cat is very playful.",
+      title: "Sophia is the ______________ (short) girl in the class.",
       possibleAnswers: [
-        { title: "His" },
-        { title: "Our", correctAnswer: true },
+        { title: "shortest", correctAnswer: true },
+        { title: "most short" },
       ],
       userAnswer: "",
-      explanation: "Our is the possessive adjective for we.",
+      explanation:
+        "Short is one syllable, so you can add est. Most short isn't technically incorrect, but it sounds strange.",
     },
+
     {
       id: 13,
-      title: "Lisa and Mark enjoy (she) _____________ company.",
+      title: "He is the _________ player on the team.",
       possibleAnswers: [
-        { title: "our" },
-        { title: "her", correctAnswer: true },
+        { title: "worst", correctAnswer: true },
+        { title: "most bad" },
       ],
       userAnswer: "",
-      explanation: "Her is the possessive adjective for she.",
+      explanation:
+        "Bad is an irregular adjective. Worst is the superlative form and you can't say most bad.",
     },
+
     {
       id: 14,
-      title: "The children found (he) _____________ lost toy.",
-      possibleAnswers: [{ title: "my" }, { title: "his", correctAnswer: true }],
+      title:
+        "This book is the ______________ (interesting) I've read.",
+      possibleAnswers: [
+        { title: "most interesting", correctAnswer: true },
+        { title: "interestingest" },
+      ],
       userAnswer: "",
-      explanation: "His is the possessive adjective for he.",
+      explanation: "Interesting is three syllables, so you must use 'most.'",
     },
+
     {
       id: 15,
-      title: "(You) _______________ friends are very kind.",
+      title: "Macs are the  ______________ (good).",
       possibleAnswers: [
-        { title: "Their", correctAnswer: true },
-        { title: "My" },
+        { title: "best", correctAnswer: true },
+        { title: "most good" },
       ],
       userAnswer: "",
-      explanation: "Their is the possessive adjective for you.",
+      explanation:
+        "Good is an irregular adjective. Best is the superlattive form and you can't say most good.",
     },
+
     {
       id: 16,
-      title: "We often visit (I) _______________ grandparents.",
+      title: "Julia is the ______________ (tall) woman in the office.",
       possibleAnswers: [
-        { title: "our", correctAnswer: true },
-        { title: "her" },
+        { title: "tallest", correctAnswer: true },
+        { title: "most tall" },
       ],
       userAnswer: "",
-      explanation: "Our is the possessive adjective for we.",
+      explanation:
+        "Tall is one syllable, so you can add est. Most tall isn't technically incorrect, but it sounds strange.",
     },
+
     {
       id: 17,
-      title: "(She) _______________ sister is a talented musician.",
-      possibleAnswers: [{ title: "My" }, { title: "Her", correctAnswer: true }],
+      title: "That city is the ______________ (crowded) in the country.",
+      possibleAnswers: [
+        { title: "most crowded", correctAnswer: true },
+        { title: "crowdedest" },
+      ],
       userAnswer: "",
-      explanation: "Her is the possessive adjective for she.",
+      explanation:
+        "Crowded is a two syllable adjective that can't use est at the end in the superlative.",
     },
+
     {
       id: 18,
-      title:
-        "The students admired (he) _____________ dedication to their education.",
+      title: "The test was the ______________ (difficult) I've taken.",
       possibleAnswers: [
-        { title: "their" },
-        { title: "his", correctAnswer: true },
+        { title: "most difficult", correctAnswer: true },
+        { title: "difficultest" },
       ],
       userAnswer: "",
-      explanation: "His is the possessive adjective for he.",
+      explanation: "Difficult is three syllables, so you must use 'most.'",
     },
+
     {
       id: 19,
-      title: "(You) _______________ book is on the table.",
+      title: "Jazz music is the ______________ (relaxing) type of music.",
       possibleAnswers: [
-        { title: "Her" },
-        { title: "Your", correctAnswer: true },
+        { title: "most relaxing", correctAnswer: true },
+        { title: "relaxingest" },
       ],
       userAnswer: "",
-      explanation: "Your is the possessive adjective for you.",
+      explanation: "Relaxing is three syllables, so you must use 'most.'",
     },
+
     {
       id: 20,
-      title: "David mentioned (we) _____________ favorite movie.",
+      title:
+        "The new restaurant is the ______________ (cheap) one in the neighborhood.",
       possibleAnswers: [
-        { title: "his" },
-        { title: "our", correctAnswer: true },
+        { title: "cheapest", correctAnswer: true },
+        { title: "most cheap" },
       ],
       userAnswer: "",
-      explanation: "Our is the possessive adjective for we.",
+      explanation:
+        "Cheap is one syllable, so you can add est. Most cheap isn't technically incorrect, but it sounds strange.",
     },
   ];
 
@@ -277,10 +299,10 @@ export default function Superlatives() {
       </Stack>
       <Stack mb={2}>
         <Typography>
-          Superlative adjectives are used to describe an object which is at the
+          Superlative adjectives are used to describe an object or person which is at the
           upper or lower limit of a quality (the tallest, the smallest, the
           fastest, the highest). They are used in sentences where a subject is
-          compared to a group of objects.
+          compared to other objects or people.
         </Typography>
       </Stack>
       <Box component="section">
@@ -308,7 +330,7 @@ export default function Superlatives() {
         </List>
         <Typography>
           There are some spelling changes. If the adjective ends in 'e', we
-          don't add another 'e', just 'est'.
+          don't add another 'e', just 'st'.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
@@ -339,7 +361,7 @@ export default function Superlatives() {
 
         <Typography>
           There are some adjectives that we need to use 'most' with, even though
-          they only have one syllable. Adding -er is incorrect for these verbs.
+          they only have one syllable. Adding -est is incorrect for these verbs.
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
@@ -383,7 +405,7 @@ export default function Superlatives() {
         </List>
 
         <Typography>
-          For adjectives with two syllables that end in 'y' we normally add 'er'
+          For adjectives with two syllables that end in 'y' we normally add 'est'
           (y generally changes to i).
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
