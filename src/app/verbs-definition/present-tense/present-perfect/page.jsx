@@ -65,7 +65,7 @@ export default function PresentPerfect() {
     },
     {
       id: 3,
-      title: "He ___________ thought about it a lot.",
+      title: "He ___________ about it a lot.",
       possibleAnswers: [
         { title: "a. have thought" },
         { title: "b. has thought", correctAnswer: true },
@@ -215,7 +215,7 @@ export default function PresentPerfect() {
     },
     {
       id: 18,
-      title: "I ___________ (decide) to move.",
+      title: "I ___________ to move.",
       possibleAnswers: [
         { title: "a. has decided" },
         { title: "b. have decided", correctAnswer: true },
@@ -225,7 +225,7 @@ export default function PresentPerfect() {
     },
     {
       id: 19,
-      title: "We ______________ (see) that series.",
+      title: "We ______________ that series.",
       possibleAnswers: [
         { title: "a. have seen", correctAnswer: true },
         { title: "b. has seen" },
@@ -235,7 +235,7 @@ export default function PresentPerfect() {
     },
     {
       id: 20,
-      title: "He ______________ (buy) all the soda in the store.",
+      title: "He ______________ all the soda in the store.",
       possibleAnswers: [
         { title: "a. have bought" },
         { title: "b. has bought", correctAnswer: true },
