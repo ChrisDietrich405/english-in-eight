@@ -365,7 +365,7 @@ export default function TalkVersusSpeaking() {
         </Typography>
         <List sx={{ marginLeft: "20px" }}>
           <ListItem sx={{ display: "list-item" }}>
-            <ListItemText>He gave a great talk about diet.</ListItemText>
+            <ListItemText>He gave a great talk (noun) about diet.</ListItemText>
           </ListItem>
         </List>
       </Box>
