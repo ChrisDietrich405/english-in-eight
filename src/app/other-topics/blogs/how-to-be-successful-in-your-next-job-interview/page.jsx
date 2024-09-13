@@ -68,7 +68,7 @@ const Blog3 = () => {
       </Stack>
       <Stack mb={2} sx={{ margin: "0 auto" }}>
         <Image
-          style={{ margin: "0 auto" }}
+          style={{ margin: "20px auto" }}
           className={styles.blog_image}
           height={350}
           width={550}
@@ -119,7 +119,7 @@ const Blog3 = () => {
       </Typography>
       <Stack>
         <Image
-          style={{ margin: "0 auto" }}
+          style={{ margin: "20px auto" }}
           className={styles.blog_image}
           height={350}
           width={550}
@@ -160,15 +160,17 @@ const Blog3 = () => {
         true. Have a friend or family member interview you and then do it again
         and again. Maybe they can give you feedback.
       </Typography>{" "}
+      <br/>
       <Typography>
-        Also, time your answers. Interview answers should be 30 seconds to four
-        minutes, depending on the question. Your response may be short (30
+        Also, time your answers. Interview answers should be thirty seconds to four
+        minutes, depending on the question. Your response may be short (thirty
         seconds to two minutes) if the question is simple. For example, if the
         hiring manager asks you to describe your strengths, you might speak for
         90 seconds to explain your biggest strength. You definitely need to be
         careful about talking too much because when we're nervous it's very
         normal to do that.&nbsp;
       </Typography>
+      <br/>
       <Card sx={{ padding: "20px" }}>
         <Typography component="h4">
           <b>Summary</b>
