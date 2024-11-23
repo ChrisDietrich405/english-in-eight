@@ -276,9 +276,104 @@ export default function ForVersusTo() {
 						variant="h1"
 						sx={{ fontSize: "2.5rem", color: "#cc1e1e;" }}
 					>
-						To versus For
+						For versus To
 					</Typography>
 				</Stack>
+
+				<Typography variant="h6" mb={2}>
+					Use For in the following situations:
+				</Typography>
+				<Typography>Benefits</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							{" "}
+							Exercising is great <b>for</b> your health.
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							I eat a lot of vegetables <b>for</b> the fiber.
+						</ListItemText>
+					</ListItem>
+				</List>
+				<Typography>Purpose (with -ing verb)</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							{" "}
+							A helmet is used <b>for</b> protecting your head.
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							This tool is used <b>for</b> cutting metal.
+						</ListItemText>
+					</ListItem>
+				</List>
+				<Typography>Assisting someone</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							{" "}
+							Could you carry these books <b>for</b> me?
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							I can cook <b>for</b> you if you're tired.
+						</ListItemText>
+					</ListItem>
+				</List>
+				<Typography>Length of time</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							{" "}
+							We’ve lived here <b>for</b> 2 years.
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>She worked there for 5 months.</ListItemText>
+					</ListItem>
+				</List>
+				<Typography variant="h6" mb={1}>
+					{" "}
+					When referring to motive/purpose/reason it get's a little complicated.
+				</Typography>
+				<Typography>
+					{" "}
+					If you follow the preposition with a noun you use <b>for</b>.
+				</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							I'm going out <b>for</b> food.
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							She's working hard <b>for</b> that possible promotion.
+						</ListItemText>
+					</ListItem>
+				</List>
+				<Typography>
+					{" "}
+					If you follow the preposition with a verb you use <b>to</b>.
+				</Typography>
+				<List>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							{" "}
+							I'm going out <b>to</b> eat.
+						</ListItemText>
+					</ListItem>
+					<ListItem sx={{ display: "list-item" }}>
+						<ListItemText>
+							I volunteer a lot <b>to</b> help others.
+						</ListItemText>
+					</ListItem>
+				</List>
 				<Stack>
 					<Typography variant="h6" mb={2}>
 						Use To in the following situations:
@@ -336,101 +431,6 @@ export default function ForVersusTo() {
 						<ListItem sx={{ display: "list-item" }}>
 							<ListItemText>
 								It's 3 hours <b>to</b> Washington.
-							</ListItemText>
-						</ListItem>
-					</List>
-					<Typography variant="h6" mb={2}>
-						Use For in the following situations:
-					</Typography>
-					<Typography>Benefits</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								{" "}
-								Exercising is great <b>for</b> your health.
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								I eat a lot of vegetables <b>for</b> the fiber.
-							</ListItemText>
-						</ListItem>
-					</List>
-					<Typography>Purpose (with -ing verb)</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								{" "}
-								A helmet is used <b>for</b> protecting your head.
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								This tool is used <b>for</b> cutting metal.
-							</ListItemText>
-						</ListItem>
-					</List>
-					<Typography>Assisting someone</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								{" "}
-								Could you carry these books <b>for</b> me?
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								I can cook <b>for</b> you if you're tired.
-							</ListItemText>
-						</ListItem>
-					</List>
-					<Typography>Length of time</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								{" "}
-								We’ve lived here <b>for</b> 2 years.
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>She worked there for 5 months.</ListItemText>
-						</ListItem>
-					</List>
-					<Typography variant="h6" mb={1}>
-						{" "}
-						When referring to motive/purpose/reason it get's a little
-						complicated.
-					</Typography>
-					<Typography>
-						{" "}
-						If you follow the preposition with a noun you use <b>for</b>.
-					</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								I'm going out <b>for</b> food.
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								She's working hard <b>for</b> that possible promotion.
-							</ListItemText>
-						</ListItem>
-					</List>
-					<Typography>
-						{" "}
-						If you follow the preposition with a verb you use <b>to</b>.
-					</Typography>
-					<List>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								{" "}
-								I'm going out <b>to</b> eat.
-							</ListItemText>
-						</ListItem>
-						<ListItem sx={{ display: "list-item" }}>
-							<ListItemText>
-								I volunteer a lot <b>to</b> help others.
 							</ListItemText>
 						</ListItem>
 					</List>
