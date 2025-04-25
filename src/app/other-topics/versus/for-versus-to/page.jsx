@@ -337,43 +337,7 @@ export default function ForVersusTo() {
 						<ListItemText>She worked there for 5 months.</ListItemText>
 					</ListItem>
 				</List>
-				<Typography variant="h6" mb={1}>
-					{" "}
-					When referring to motive/purpose/reason it get's a little complicated.
-				</Typography>
-				<Typography>
-					{" "}
-					If you follow the preposition with a noun you use <b>for</b>.
-				</Typography>
-				<List>
-					<ListItem sx={{ display: "list-item" }}>
-						<ListItemText>
-							I'm going out <b>for</b> food.
-						</ListItemText>
-					</ListItem>
-					<ListItem sx={{ display: "list-item" }}>
-						<ListItemText>
-							She's working hard <b>for</b> that possible promotion.
-						</ListItemText>
-					</ListItem>
-				</List>
-				<Typography>
-					{" "}
-					If you follow the preposition with a verb you use <b>to</b>.
-				</Typography>
-				<List>
-					<ListItem sx={{ display: "list-item" }}>
-						<ListItemText>
-							{" "}
-							I'm going out <b>to</b> eat.
-						</ListItemText>
-					</ListItem>
-					<ListItem sx={{ display: "list-item" }}>
-						<ListItemText>
-							I volunteer a lot <b>to</b> help others.
-						</ListItemText>
-					</ListItem>
-				</List>
+
 				<Stack>
 					<Typography variant="h6" mb={2}>
 						Use To in the following situations:
@@ -431,6 +395,44 @@ export default function ForVersusTo() {
 						<ListItem sx={{ display: "list-item" }}>
 							<ListItemText>
 								It's 3 hours <b>to</b> Washington.
+							</ListItemText>
+						</ListItem>
+					</List>
+					<Typography variant="h6" mb={1}>
+						{" "}
+						When referring to motive/purpose/reason it get's a little
+						complicated.
+					</Typography>
+					<Typography>
+						{" "}
+						If you follow the preposition with a noun you use <b>for</b>.
+					</Typography>
+					<List>
+						<ListItem sx={{ display: "list-item" }}>
+							<ListItemText>
+								I'm going out <b>for</b> food.
+							</ListItemText>
+						</ListItem>
+						<ListItem sx={{ display: "list-item" }}>
+							<ListItemText>
+								She's working hard <b>for</b> that possible promotion.
+							</ListItemText>
+						</ListItem>
+					</List>
+					<Typography>
+						{" "}
+						If you follow the preposition with a verb you use <b>to</b>.
+					</Typography>
+					<List>
+						<ListItem sx={{ display: "list-item" }}>
+							<ListItemText>
+								{" "}
+								I'm going out <b>to</b> eat.
+							</ListItemText>
+						</ListItem>
+						<ListItem sx={{ display: "list-item" }}>
+							<ListItemText>
+								I volunteer a lot <b>to</b> help others.
 							</ListItemText>
 						</ListItem>
 					</List>
