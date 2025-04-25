@@ -341,10 +341,10 @@ export default function MakeVersusDo() {
 
 				<Typography variant="h5" mb={2}>
 					{" "}
-					This lesson is not easy, so don't worry if you make a lot of mistakes
-					with the quiz. Sometimes the difference between make and do isn't
-					clear and also there are many exceptions to the above rules. Remember
-					practice makes perfect. Do the quiz as many time as you need.{" "}
+					This lesson isn’t easy, so don’t worry if you make a lot of mistakes
+					on the quiz. Sometimes the difference between make and do isn’t clear,
+					and there are also many exceptions to the rules above. Remember,
+					practice makes perfect. Do the quiz as many times as you need.
 				</Typography>
 			</Box>
 
